@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/How to make a Release - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/How_to_make_a_Release","wgTitle":"ITK/How to make a Release","wgCurRevisionId":63977,"wgRevisionId":63977,"wgArticleId":1394,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK/How_to_make_a_Release","wgRelevantArticleId":1394,"wgRequestId":"7413e0fa699f8ec56a2a6d49","wgCSPNonce":!1,"wgIsProbablyEditable":!1,
+"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_How_to_make_a_Release","wgInternalRedirectTargetUrl":"/Wiki/ITK/How_to_make_a_Release"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.monobook.mobile"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<!--[if lt IE 9]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/screen-desktop.css?74a6a" media="screen"/><![endif]--><!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE60Fixes.css?1208f" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.34.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://itk.org/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://itk.org/Wiki/ITK/How_to_make_a_Release"/>
+<!--[if lt IE 9]><script src="/Wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_How_to_make_a_Release rootpage-ITK skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">ITK/How to make a Release</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From KitwarePublic</div><div id="contentSub" lang="en" dir="ltr"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_How_to_make_a_Release&amp;redirect=no" class="mw-redirect" title="ITK How to make a Release">ITK How to make a Release</a>)</span></div><div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;"><strong> Warning: </strong>The current authoritative resource is <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITK/blob/master/Documentation/Maintenance/Release.md">GitHub release documentation</a>.</div>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#How_To_Make_an_ITK_Release"><span class="tocnumber">1</span> <span class="toctext">How To Make an ITK Release</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Bug_fix_release_general_steps"><span class="tocnumber">1.1</span> <span class="toctext">Bug fix release general steps</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Integrate_bug_fixes_in_the_release_branch"><span class="tocnumber">1.2</span> <span class="toctext">Integrate bug fixes in the release branch</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Pre-tag_activities"><span class="tocnumber">1.3</span> <span class="toctext">Pre-tag activities</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Tag_the_ITK_repository"><span class="tocnumber">1.4</span> <span class="toctext">Tag the ITK repository</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Update_your_repository_with"><span class="tocnumber">1.4.1</span> <span class="toctext">Update your repository with</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Tag_with_a_branch_point_reference"><span class="tocnumber">1.4.2</span> <span class="toctext">Tag with a branch point reference</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Update_the_release_branch"><span class="tocnumber">1.4.3</span> <span class="toctext">Update the release branch</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#Mark_the_release_as_resolved_on_the_issue_tracker"><span class="tocnumber">1.5</span> <span class="toctext">Mark the release as resolved on the issue tracker</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Prepare_Release_Notes"><span class="tocnumber">1.6</span> <span class="toctext">Prepare Release Notes</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Add_New_Remote_Modules_to_Nightly_Builds"><span class="tocnumber">1.7</span> <span class="toctext">Add New Remote Modules to Nightly Builds</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Send_Contributor_Momentos"><span class="tocnumber">1.8</span> <span class="toctext">Send Contributor Momentos</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Archive_ExternalData"><span class="tocnumber">1.9</span> <span class="toctext">Archive ExternalData</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Prepare_tarballs"><span class="tocnumber">1.10</span> <span class="toctext">Prepare tarballs</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="#InsightToolkit_tarball"><span class="tocnumber">1.10.1</span> <span class="toctext">InsightToolkit tarball</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#ITK_Software_Guide"><span class="tocnumber">1.11</span> <span class="toctext">ITK Software Guide</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="#Prepare_the_print_version"><span class="tocnumber">1.11.1</span> <span class="toctext">Prepare the print version</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Update_the_HTML_pages"><span class="tocnumber">1.11.2</span> <span class="toctext">Update the HTML pages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-19"><a href="#ITK_Sphinx_Examples"><span class="tocnumber">1.12</span> <span class="toctext">ITK Sphinx Examples</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#ITK_Wiki_Examples"><span class="tocnumber">1.13</span> <span class="toctext">ITK Wiki Examples</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Generating_Doxygen_Documentation"><span class="tocnumber">1.14</span> <span class="toctext">Generating Doxygen Documentation</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Copy_the_files_to_the_FTP_directory_in_public.kitware.com"><span class="tocnumber">1.15</span> <span class="toctext">Copy the files to the FTP directory in public.kitware.com</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Copy_the_files_to_SourceForge"><span class="tocnumber">1.16</span> <span class="toctext">Copy the files to SourceForge</span></a>
+<ul>
+<li class="toclevel-3 tocsection-24"><a href="#Using_The_New_.282010.29_Interface"><span class="tocnumber">1.16.1</span> <span class="toctext">Using The New (2010) Interface</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-25"><a href="#Update_the_HTML_Download_page"><span class="tocnumber">1.17</span> <span class="toctext">Update the HTML Download page</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Update_the_HTML_Documentation_page"><span class="tocnumber">1.18</span> <span class="toctext">Update the HTML Documentation page</span></a>
+<ul>
+<li class="toclevel-3 tocsection-27"><a href="#Documentation.htm"><span class="tocnumber">1.18.1</span> <span class="toctext">Documentation.htm</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-28"><a href="#Update_the_Release_Notes_in_the_Wiki"><span class="tocnumber">1.19</span> <span class="toctext">Update the Release Notes in the Wiki</span></a>
+<ul>
+<li class="toclevel-3 tocsection-29"><a href="#Add_entry_for_next_planned_release"><span class="tocnumber">1.19.1</span> <span class="toctext">Add entry for next planned release</span></a></li>
+<li class="toclevel-3 tocsection-30"><a href="#Update_the_Releases_page"><span class="tocnumber">1.19.2</span> <span class="toctext">Update the Releases page</span></a></li>
+<li class="toclevel-3 tocsection-31"><a href="#Update_.22What.27s_New_in_Release_x.x.22_Wiki_Page"><span class="tocnumber">1.19.3</span> <span class="toctext">Update "What's New in Release x.x" Wiki Page</span></a></li>
+<li class="toclevel-3 tocsection-32"><a href="#Update_.22What_has_Changed_since_previous_release.22"><span class="tocnumber">1.19.4</span> <span class="toctext">Update "What has Changed since previous release"</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-33"><a href="#Update_Insight_Journal_.28deprecated.29"><span class="tocnumber">1.20</span> <span class="toctext"><s>Update Insight Journal</s> (deprecated)</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#Update_JIRA_issue_tracker"><span class="tocnumber">1.21</span> <span class="toctext">Update JIRA issue tracker</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#Further_Testing"><span class="tocnumber">1.22</span> <span class="toctext">Further Testing</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="#Notes"><span class="tocnumber">1.23</span> <span class="toctext">Notes</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="How_To_Make_an_ITK_Release">How To Make an ITK Release</span></h1>
+<p>This page describes the sequence of steps required for making an ITK release. There are typically two feature releases a year, around December and June, and one to three bug fixes between feature releases.
+</p>
+<h2><span class="mw-headline" id="Bug_fix_release_general_steps">Bug fix release general steps</span></h2>
+<ol><li>Create tag (with GPG signature) for release. Do not forget to update ITK revision number in CMakeLists.txt.</li>
+<li>Create release notes: <pre>git shortlog --no-merges v4.11.0..release</pre></li>
+<li>Write blog post in a google doc and share it with the Comm’ team.</li>
+<li>Use same text (2) to prepare mailing list message</li>
+<li>Create tarballs and upload them on SourceForge</li>
+<li>Send email to Comm’ team so they can update links to tarballs on <a rel="nofollow" class="external text" href="http://www.itk.org">www.itk.org</a>. Verify that links work!</li>
+<li>Send email to mailing list (user, develop, community), add post in the <a rel="nofollow" class="external text" href="https://plus.google.com/u/0/communities/111375098792764998322">ITKBarCamp Google+ community</a> and publish blog post.</li></ol>
+<p><b>For details of each step, refer to the sections below.</b>
+</p>
+<h2><span class="mw-headline" id="Integrate_bug_fixes_in_the_release_branch">Integrate bug fixes in the release branch</span></h2>
+<ul><li>Update master and release branches</li></ul>
+<pre>git fetch
+git checkout master
+git reset --hard origin/master
+git checkout release
+git reset --hard origin/release</pre>
+<ul><li>List differences between last release and current release branch</li></ul>
+<pre>git shortlog --no-merges v4.10.0..release</pre>
+<ul><li>Merge bug fix commits in release. Topic branch should be named &lt;bug-name&gt;-for-release
+<ul><li>If topic branch was created from release branch, checkout topic in new branch (see command lines on gerrit)</li>
+<li>If topic branch was created on master, cherry-pick commit (see command line on gerrit) on a topic branch created off release. The commit will be visible twice in the history once release in merged into master.</li>
+<li>Merge new branch on release: <pre>git merge &lt;bug-name&gt;-for-release --no-ff</pre></li>
+<li>Update gerrit: write “Merged to release.” in merged topic.</li></ul></li>
+<li>Merge release into master (so master keeps track of release history)</li></ul>
+<pre>git checkout master
+git pull
+git merge release
+git push origin master release</pre>
+<ul><li>For patches that need to be merged to the "release-3.20" branch, they are first merged to release-3.20, then release-3.20 is merged to the release branch with 'git merge -s ours' to avoid a huge number of merge conflicts. Then, release is merged into master.</li></ul>
+<h2><span class="mw-headline" id="Pre-tag_activities">Pre-tag activities</span></h2>
+<ul><li>Make sure to update the versions in the top level CMakeLists.txt as described below
+<ul><li>For bugfix releases, this is done before the tag.  For feature releases, this is done after the final tag.</li></ul></li>
+<li>Make sure all new remote modules are built in by the Doxygen build</li>
+<li>Update the WikiExamples and SphinxExamples remote modules.</li></ul>
+<h2><span class="mw-headline" id="Tag_the_ITK_repository">Tag the ITK repository</span></h2>
+<p>Tagging the repository should only be done with the agreement of the developers after a tcon.
+</p>
+<h3><span class="mw-headline" id="Update_your_repository_with">Update your repository with</span></h3>
+<p>use the commmand 
+</p>
+<pre>  git checkout master
+  git pull
+</pre>
+<p>to make sure that your source tree is updated. This must correspond
+to a source tree that has been fully tested in the Dashboard.
+</p><p>When tagging a bugfix release on the <i>release</i> branch, make sure to bump the <i>ITK_VERSION_PATCH</i> variable in the top level <i>CMakeLists.txt</i> before tagging.  When tagging a feature release, make sure to bump the <i>ITK_VERSION_MINOR</i> version on the <i>master</i> branch after tagging.
+</p>
+<h3><span class="mw-headline" id="Tag_with_a_branch_point_reference">Tag with a branch point reference</span></h3>
+<p><i>Note:</i>  At this time, Brad King, Matt McCormick, Francois Budin, or Jean-Christophe Fillion-Robin are the person to do this because of their trusted GPG key.
+</p><p>In the source tree that you just updated, use the command
+</p>
+<pre> git tag -m "ITK 4.5-rc03" -s v4.5rc03 f9d99ca3ad00116393c4e2ce899beb00695ebb24
+</pre>
+<p><br />
+where, of course you change v4.5rc03 for the correct release number and the hash to the correct commit.
+</p><p>Push it to the repository
+</p>
+<pre> git push origin v4.5rc03
+</pre>
+<h3><span class="mw-headline" id="Update_the_release_branch">Update the release branch</span></h3>
+<p>Update the release branch only during features releases after the tag for the release. Perform a fast-forward merge of master into release:
+</p>
+<pre> git checkout release
+ git reset --hard origin/release
+ git merge --ff-only &lt;version tag&gt;
+ git push origin release
+ git checkout master
+</pre>
+<p>This will not create a new commit, only move the release branch to the tag, i.e. it will be fast forward.
+</p><p>For minor releases, merge release branch into master branch as for a normal commit, and resolve conflict (arising from mismatch in version number) by keeping master branch versions.
+</p>
+<h2><span class="mw-headline" id="Mark_the_release_as_resolved_on_the_issue_tracker">Mark the release as resolved on the issue tracker</span></h2>
+<p><a rel="nofollow" class="external text" href="https://issues.itk.org/jira/plugins/servlet/project-config/ITK/versions">Projects -&gt; ITK -&gt; Versions</a>
+</p><p>Schedule the next release, and update the <a href="/Wiki/ITK/Release_Schedule" title="ITK/Release Schedule"> Release Schedule</a> page.
+</p>
+<h2><span class="mw-headline" id="Prepare_Release_Notes">Prepare Release Notes</span></h2>
+<p>Release notes are prepared in a Google Doc.
+</p><p>A list of authors and new authors can be computed with <a rel="nofollow" class="external text" href="https://gist.github.com/thewtex/5045b8e13b5d12b8fdcf">this script</a>.
+</p><p>Todo: Add more description of the structure of release notes.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Add_New_Remote_Modules_to_Nightly_Builds">Add New Remote Modules to Nightly Builds</span></h2>
+<p>Some builds may be difficult to add due to third-party dependencies.
+</p>
+<h2><span class="mw-headline" id="Send_Contributor_Momentos">Send Contributor Momentos</span></h2>
+<p>This file:
+</p>
+<pre> <a rel="nofollow" class="external free" href="https://github.com/thewtex/vtkGEB/blob/itk/itkgeb.stl">https://github.com/thewtex/vtkGEB/blob/itk/itkgeb.stl</a>
+</pre>
+<p>can be ordered from ShapeWays and sent to contributors. Deb Howell has generated excellent packaging.
+</p>
+<h2><span class="mw-headline" id="Archive_ExternalData">Archive ExternalData</span></h2>
+<p>Set the environmental or CMake variable <i>ExternalData_OBJECT_STORES</i> to a local directory. E.g.
+</p>
+<pre> export ExternalData_OBJECT_STORES=${HOME}/data
+</pre>
+<p>Pre-populate the store with the contents of the 'InsightData' tarballs from a previous release. Once the tarball extracted, move the content of its subfolder called .ExternalData in your local ExternalData_OBJECT_STORES directory.
+</p><p>Then, from the ITK build directory, configure ITK, enable <i>ITK_WRAP_PYTHON</i>, <i>ITK_LEGACY_SILENT</i> , <i>BUILD_TESTING</i> and <i>BUILD_EXAMPLES</i>.
+</p><p>If you have previously enabled remote modules using the same ITK source directory, either verify that they are enabled in your
+current build, or remove their source directory that has been added inside ITK source directory (Modules/Remote/{name_of_remote_module}).
+</p><p>Build the <i>ITKData</i> target
+</p>
+<pre> make ITKData
+</pre>
+<p>This will download new testing data since the previous release.
+</p><p>Next, run the script from within the ITK source directory:
+</p>
+<pre> ./Utilities/Maintenance/ContentLinkSynchronization.sh ${ExternalData_OBJECT_STORES}
+</pre>
+<p><b>Do not use <i>--cleanup</i> as for the purpose of the GitHub resource, it is important to keep the older files: some are from older revisions of ITK, and people continue to use the older versions of ITK and request the testing data.</b>
+</p><p>This is will verify all contents, fully populate the <i>MD5/</i> and <i>SHA512/</i> directories in the object store, and create any missing <i>.md5</i> or <i>.sha512</i> content links. If any new content link files are created, commit the result.
+</p><p>Next, archive the data on data.kitware.com. Create a folder, e.g. <i>4.11</i>, in <a rel="nofollow" class="external text" href="https://data.kitware.com/#collection/57b5c9e58d777f126827f5a1/folder/57b672b48d777f10f269651a">ITK/ITKTestingData</a>
+</p>
+<pre> ./Utilities/Maintenance/ArchiveTestingDataOnGirder.py --object-store ${HOME}/data --parent-id &lt;the-girder-id-of-the-folder-created&gt; --api-key &lt;your-girder-user-api-key&gt;
+</pre>
+<p>This script requires the <i>girder-client</i> Python package install from Girder master, November 2016 or later, (Girder &gt;2.0.0).
+</p><p>Run the script
+</p>
+<pre> ./Utilities/Maintenance/ArchiveTestingDataOnMidas.py
+</pre>
+<p>to upload the testing data from a local store on the ITK <a rel="nofollow" class="external free" href="https://midas3.kitware.com/midas/">https://midas3.kitware.com/midas/</a> and <a rel="nofollow" class="external free" href="http://slicer.kitware.com/midas3/">http://slicer.kitware.com/midas3/</a> Community.
+</p><p>
+This script requires that <a rel="nofollow" class="external text" href="http://pydas.readthedocs.org/en/latest/">pydas</a> is installed. Note: If you get the following error message: </p><pre>pydas.exceptions.InvalidPolicy: 'Request failed with HTTP status code 200, Midas Server error code -151, and response content {"stat":"fail","message":"Invalid policy or itemid","code":"-151"}'</pre><p> make sure you have the permissions to write in the ITK collection on the Midas server.
+</p><p><br />
+Archive the InsightData contents on ITK's file server at Kitware
+</p>
+<pre> rsync -v -r /tmp/InsightToolkit-4.9.0/.ExternalData/MD5/ public:/projects/Insight/WWW/InsightWeb/files/ExternalData/MD5/
+</pre>
+<p>Update the data archive at <a rel="nofollow" class="external free" href="https://github.com/InsightSoftwareConsortium/ITKTestingData">https://github.com/InsightSoftwareConsortium/ITKTestingData</a>
+</p>
+<h2><span class="mw-headline" id="Prepare_tarballs">Prepare tarballs</span></h2>
+<h4><span class="mw-headline" id="InsightToolkit_tarball">InsightToolkit tarball</span></h4>
+<p>Once the repository has been tagged, we use the following script in the repository to create the tarballs:
+</p>
+<pre>   Utilities/Maintenance/SourceTarball.bash --tgz --txz --zip
+</pre>
+<p>Note: tarballs can be created from a specific commit. The user can manually specify the version of ITK used to name the output files:
+</p>
+<pre>   Utilities/Maintenance/SourceTarball.bash -v 4.10.1 11f687df0347df9c1fee757745c1f1976ec3cbfe
+</pre>
+<p>After the tarballs have been uploaded to SourceForge, check their MD5 sums (the "i" info button on Sourceforge.net and locally with the 'md5sum' command). Also, download them from SourceForge and run an Experimental build on Linux, OSX, and Windows.
+</p>
+<h2><span class="mw-headline" id="ITK_Software_Guide">ITK Software Guide</span></h2>
+<p>Bump the ITK version in Superbuild/ExternalITKv4.cmake.
+</p><p>Set the <i>DRAFT_WATERMARK</i> CMake varable to OFF to remove the draft watermark.
+</p><p>Set the <i>PDF_QUALITY_LEVEL</i> CMake configuration option to "Screen" for the electronic version and "Printer" for the print version.
+</p><p>Turn on <i>GENERATE_HTML</i>.
+</p><p>To create ItkSoftwareGuide.pdf to put at itk.org/ItkSoftwareGuide.pdf from InsightSoftwareGuide-Book{1,2}-4.X.0.pdf, use pdftk
+</p>
+<pre> pdftk ITKSoftwareGuide-Book1.pdf ITKSoftwareGuide-Book2.pdf cat output /tmp/ItkSoftwareGuide.pdf
+</pre>
+<h3><span class="mw-headline" id="Prepare_the_print_version">Prepare the print version</span></h3>
+<p>Set the <i>PDF_QUALITY_LEVEL</i> to "Printer", and rebuild.
+</p><p>Remove the junk initial page, and then also one of the blank pages so pages fall on "left-side / right-side" as formatted.
+</p>
+<pre> pdftk ITKSoftwareGuide-Book1.pdf cat 2-3 5-end output /tmp/ITKSoftwareGuide-Book1.pdf
+ pdftk ITKSoftwareGuide-Book2.pdf cat 2-3 5-end output /tmp/ITKSoftwareGuide-Book2.pdf
+</pre>
+<h3><span class="mw-headline" id="Update_the_HTML_pages">Update the HTML pages</span></h3>
+<p>rsync the newly generated pages to the web server.
+</p>
+<pre>rsync -rt html/ kitware@public:/projects/Insight/WWW/InsightWeb/ITKSoftwareGuide/html
+</pre>
+<h2><span class="mw-headline" id="ITK_Sphinx_Examples">ITK Sphinx Examples</span></h2>
+<p>Bump the Superbuild ITK version in Superbuild/External-ITK.cmake.
+</p><p>Rendered versions (epub, pdf, html) can be downloaded from the <a rel="nofollow" class="external text" href="http://itk.org/ITKExamples/Documentation/Download/index.html">download page</a> and rename them.
+</p><p>Create the source tarballs.
+</p><p>Set the prefix and tag:
+</p>
+<pre> tag=$(git describe)
+ prefix=InsightSphinxExamples-4.10.0
+</pre>
+<p>Generate .zip and .tar.gz:
+</p>
+<pre> git archive --format=tar --prefix=${prefix}/ --output=${prefix}.tar ${tag}
+ gzip -9  ${prefix}.tar
+ git archive --format=zip -9 --prefix=${prefix}/ --output=${prefix}.zip ${tag}
+</pre>
+<h2><span class="mw-headline" id="ITK_Wiki_Examples">ITK Wiki Examples</span></h2>
+<p>Download the latest examples:
+</p>
+<pre> version=4.12.0
+</pre>
+<pre> wget -O ITKWikiExamples-master.zip <a rel="nofollow" class="external free" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/archive/master.zip">https://github.com/InsightSoftwareConsortium/ITKWikiExamples/archive/master.zip</a> 
+ unzip ITKWikiExamples-master.zip
+ mv ITKWikiExamples-master InsightWikiExamples-${version}
+ zip -r InsightWikiExamples-${version}.zip InsightWikiExamples-${version}
+ tar cvf InsightWikiExamples-${version}.tar InsightWikiExamples-${version}
+ gzip -9 InsightWikiExamples-${version}.tar
+</pre>
+<h2><span class="mw-headline" id="Generating_Doxygen_Documentation">Generating Doxygen Documentation</span></h2>
+<p><b>Note</b>: links to the nightly generated Doxygen can be found in the footer of the Doxygen HTML pages.
+Use the files to upload and create InsightDoxygenDocTag-4.11.0.gz, InsightDoxygenXml-4.11.0.tar.gz, InsightDoxygenDocHtml-4.11.0.tar.gz.s 
+</p><p>Prior to the release, new Remote Modules should be enabled in the Doxygen build's configuration.
+</p><p><br />
+</p>
+<ul><li>Run CMake in the binary build and enable  BUILD_DOXYGEN</li>
+<li>Do Configure and Generate in CMake</li>
+<li>Go to the binary directory</li>
+<li>Type   "make Documentation"</li>
+<li>Move into the directory Utilities/ ( cd Utilities/ )</li>
+<li>Rename the Doxygen directory as DoxygenInsightToolkit-3.4.0 (of course with the appropriate release number)</li>
+<li>Tar it with the command: tar -cf DoxygenInsightToolkit-3.4.0.tar DoxygenInsightToolkit-3.4.0</li>
+<li>Compress it with the command: gzip -9 DoxygenInsightToolkit-3.4.0.tar</li></ul>
+<p>Historical note: Before ITK 3.8, The documentation used to be generated in a directory called Documentation/Doxygen.
+</p>
+<ul><li>In Public do:
+<ul><li>Copy documentation to:     /projects/Insight/Doxygen
+<ul><li>Create a subdirectory Insight34-doxygen/Documentation/Doxygen</li>
+<li>The final directory will look like: /projects/Insight/Doxygen/Insight34-doxygen/Documentation/Doxygen</li>
+<li>and at that level copy the "html" directory and the InsightToolkit.tag file.</li></ul></li>
+<li>Create symbolic link at:   /projects/Insight/WWW/InsightWeb</li>
+<li>(<b>DEPRECATED</b> - last release 4.1) <s>Create symbolic link at:   /projects/Insight/WWW/InsightDocuments/Web </s></li></ul></li></ul>
+<h2><span class="mw-headline" id="Copy_the_files_to_the_FTP_directory_in_public.kitware.com">Copy the files to the FTP directory in public.kitware.com</span></h2>
+<pre> scp   InsightData-4.12.0.tar.gz                  kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightData-4.12.0.tar.xz                  kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightData-4.12.0.zip                     kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightToolkit-4.12.0.tar.gz               kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightToolkit-4.12.0.tar.xz               kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightToolkit-4.12.0.zip                  kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ <s>scp   InsightApplications-4.12.0.tar.gz          kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12</s>
+ <s>scp   InsightApplications-4.12.0.zip             kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12</s>
+ scp   InsightDoxygenDocHtml-4.12.0.tar.gz        kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightDoxygenDocTag-4.12.0.tar.gz         kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightDoxygenDocXml-4.12.0.tar.gz         kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   ItkSoftwareGuide.pdf                       kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightSoftwareGuide-Book1-4.12.0.pdf      kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightSoftwareGuide-Book2-4.12.0.pdf      kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightSoftwareGuideHtml-4.12.0.tar.gz     kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightWikiExamples-4.12.0.tar.gz          kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+ scp   InsightWikiExamples-4.12.0.zip             kitware@public:/projects/Insight/WWW/InsightWeb/files/v4.12
+</pre>
+<pre> ssh kitware@public
+ cd /projects/Insight/WWW/InsightWeb
+ rm ItkSoftwareGuide.pdf
+ ln -s files/v4.12/ItkSoftwareGuide.pdf ItkSoftwareGuide.pdf
+</pre>
+<h2><span class="mw-headline" id="Copy_the_files_to_SourceForge">Copy the files to SourceForge</span></h2>
+<p>This is to be done only by 
+</p>
+<ul><li>Ken Martin at Kitware</li>
+<li>Brad King at Kitware</li>
+<li>Matt McCormick at Kitware</li>
+<li>Francois Budin at Kitware</li>
+<li>Brad Lowekamp at NLM</li></ul>
+<h3><span id="Using_The_New_(2010)_Interface"></span><span class="mw-headline" id="Using_The_New_.282010.29_Interface">Using The New (2010) Interface</span></h3>
+<p>Go to this page
+</p>
+<pre>  <a rel="nofollow" class="external free" href="https://sourceforge.net/downloads/itk/itk/">https://sourceforge.net/downloads/itk/itk/</a>
+</pre>
+<p>and provide user name and password
+</p><p>Then 
+</p>
+<ul><li>Use the "Add Folder" button to create a folder for the release.</li>
+<li>Click on the folder to open it</li>
+<li>Use the "Add File" button to upload files. The interface allows you to select multiple files for simultaneous upload.</li></ul>
+<p>After uploading, make sure to check the hashes on the uploads.  These can be shown with the "(i)" button next to the file.
+</p><p><b>Large files</b>, like the Doxygen HTML tarball, <b>need to be uploaded with scp</b>, a la:
+</p>
+<pre> scp InsightDoxygenDocHtml-4.7.0.tar.gz mmmccormic@frs.sourceforge.net:/home/frs/project/itk/itk/4.7/InsightDoxygenDocHtml-4.7.0.tar.gz
+</pre>
+<h2><span class="mw-headline" id="Update_the_HTML_Download_page">Update the HTML Download page</span></h2>
+<p>Contact Communications at Kitware in order to
+</p>
+<ul><li>Update the Download HTML page: <a rel="nofollow" class="external free" href="http://www.itk.org/ITK/resources/software.html">http://www.itk.org/ITK/resources/software.html</a></li>
+<li>Produce a press release</li>
+<li>Update <a rel="nofollow" class="external free" href="http://itk.org/ItkSoftwareGuide.pdf">http://itk.org/ItkSoftwareGuide.pdf</a></li></ul>
+<h2><span class="mw-headline" id="Update_the_HTML_Documentation_page">Update the HTML Documentation page</span></h2>
+<h3><span class="mw-headline" id="Documentation.htm">Documentation.htm</span></h3>
+<p>Contact Communications at Kitware in order to update the page:
+</p>
+<pre>  <a rel="nofollow" class="external free" href="http://www.itk.org/ITK/help/documentation.html">http://www.itk.org/ITK/help/documentation.html</a>
+</pre>
+<p>The content should be updated to point to the Doxygen documentation of the current release
+</p>
+<h2><span class="mw-headline" id="Update_the_Release_Notes_in_the_Wiki">Update the Release Notes in the Wiki</span></h2>
+<h3><span class="mw-headline" id="Add_entry_for_next_planned_release">Add entry for next planned release</span></h3>
+<p>Delete the old entry and add a new entry in the <a href="/Wiki/ITK/Release_Schedule" title="ITK/Release Schedule"> scheduled releases page</a>
+</p>
+<h3><span class="mw-headline" id="Update_the_Releases_page">Update the Releases page</span></h3>
+<p>Add the "What's New" and "What's Changed" entries to the <a href="/Wiki/ITK/Releases" title="ITK/Releases"> Releases</a> page.
+</p>
+<h3><span id="Update_&quot;What's_New_in_Release_x.x&quot;_Wiki_Page"></span><span class="mw-headline" id="Update_.22What.27s_New_in_Release_x.x.22_Wiki_Page">Update "What's New in Release x.x" Wiki Page</span></h3>
+<p>Update this web-page with the e-mail sent to the ITK mailing indicating the notable changes and other important information about the release.
+</p>
+<h3><span id="Update_&quot;What_has_Changed_since_previous_release&quot;"></span><span class="mw-headline" id="Update_.22What_has_Changed_since_previous_release.22">Update "What has Changed since previous release"</span></h3>
+<p>From a Linux system, cd into an ITK Git directory and run 
+</p>
+<pre> git shortlog --topo-order --no-merges v4.0.0..v4.1.0
+</pre>
+<p>Delete the KWRobot time stamp commits.
+</p>
+<h2><span id="Update_Insight_Journal_(deprecated)"></span><span class="mw-headline" id="Update_Insight_Journal_.28deprecated.29"><s>Update Insight Journal</s> (deprecated)</span></h2>
+<p><s>Contact Zack and request to do the following:
+</s></p><s></s><ul><s><li>Install new ITK version in the Insight Journal testing environment</li>
+</s><li><s>Update IJMacros.txt: Add the just released version of ITK</s></li></ul>
+<h2><span class="mw-headline" id="Update_JIRA_issue_tracker">Update JIRA issue tracker</span></h2>
+<ul><li>Create a new version to make possible for users to report bug pertaining to that specific ITK release
+<ul><li>Create the next release target milestone with Administration -&gt; ITK -&gt; Versions -&gt; Add</li>
+<li>Release the current release milestone with Agile -&gt; Classic ... -&gt; Right click the release on the left -&gt; Release</li></ul></li></ul>
+<h2><span class="mw-headline" id="Further_Testing">Further Testing</span></h2>
+<p>The purpose of this testing is to replicate the experience that a user may have when trying the new release.
+</p><p>This means that a number of ITK developers should download the tarballs or do Git checkouts with the release tag, and build the toolkit in as many configuration as possible.
+</p>
+<h2><span class="mw-headline" id="Notes">Notes</span></h2>
+<ul><li>ITK minor releases (patch) do not have a tagged release candidate.</li></ul>
+<p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20200929125536
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.032 seconds
+Real time usage: 0.036 seconds
+Preprocessor visited node count: 173/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 1176/2097152 bytes
+Template argument size: 531/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 675/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    9.211      1 -total
+ 69.87%    6.436      1 Template:Warning
+ 41.24%    3.799      1 Template:META_Box_Red
+ 23.12%    2.130      1 Template:ITK/Template/Footer
+ 19.81%    1.825      1 Template:META_Box
+ 10.58%    0.975      1 Template:ITK/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:1394-0!canonical and timestamp 20200929125536 and revision id 63977
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://itk.org/Wiki/index.php?title=ITK/How_to_make_a_Release&amp;oldid=63977">https://itk.org/Wiki/index.php?title=ITK/How_to_make_a_Release&amp;oldid=63977</a>"</div>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div><!-- end content --><div class="visualClear"></div></div></div><div class="visualClear"></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/How_to_make_a_Release" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/How_to_make_a_Release&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/How_to_make_a_Release&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="/Wiki/index.php?title=ITK/How_to_make_a_Release&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label"><h3 id="p-cactions-mobile-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main-mobile" class="selected"><a href="/Wiki/ITK/How_to_make_a_Release" title="Page">Page</a></li><li id="ca-talk-mobile" class="new"><a href="/Wiki/index.php?title=Talk:ITK/How_to_make_a_Release&amp;action=edit&amp;redlink=1" rel="discussion" title=" (page does not exist)">Discussion</a></li><li id="ca-more"><a href="#p-cactions">More</a></li><li id="ca-tools"><a href="#p-tb" title="Tools">Tools</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FHow+to+make+a+Release" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="/Wiki/Main_Page" class="mw-wiki-logo" title="Visit the main page"></a></div><div id="sidebar"><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search KitwarePublic" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>  <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK/How_to_make_a_Release" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK/How_to_make_a_Release" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/Wiki/index.php?title=ITK/How_to_make_a_Release&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/Wiki/index.php?title=ITK/How_to_make_a_Release&amp;oldid=63977" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/Wiki/index.php?title=ITK/How_to_make_a_Release&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div></div><a href="#sidebar" title="navigation" class="menu-toggle" id="sidebar-toggle"></a><a href="#p-personal" title="user tools" class="menu-toggle" id="p-personal-toggle"></a><a href="#globalWrapper" title="back to top" class="menu-toggle" id="globalWrapper-toggle"></a></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 16 October 2019, at 10:13.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li><li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li></ul></div></div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.032","walltime":"0.036","ppvisitednodes":{"value":173,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":1176,"limit":2097152},"templateargumentsize":{"value":531,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":675,"limit":5000000},"timingprofile":["100.00%    9.211      1 -total"," 69.87%    6.436      1 Template:Warning"," 41.24%    3.799      1 Template:META_Box_Red"," 23.12%    2.130      1 Template:ITK/Template/Footer"," 19.81%    1.825      1 Template:META_Box"," 10.58%    0.975      1 Template:ITK/Template/Categories"]},"cachereport":{"timestamp":"20200929125536","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":275});});</script></body></html>

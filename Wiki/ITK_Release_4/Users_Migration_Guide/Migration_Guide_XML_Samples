@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK Release 4/Users Migration Guide/Migration Guide XML Samples - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c33fdad96b7458e78943951a","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples","wgTitle":"ITK Release 4/Users Migration Guide/Migration Guide XML Samples","wgCurRevisionId":33803,"wgRevisionId":33803,"wgArticleId":8038,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples","wgRelevantArticleId":8038,"wgIsProbablyEditable":!1,
+"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.pygments":"ready","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Users_Migration_Guide_Migration_Guide_XML_Samples rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK Release 4/Users Migration Guide/Migration Guide XML Samples</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK_Release_4" class="mw-redirect" title="ITK Release 4">ITK Release 4</a>&lrm; | <a href="/Wiki/ITK_Release_4/Users_Migration_Guide" title="ITK Release 4/Users Migration Guide">Users Migration Guide</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><h1><span class="mw-headline" id="Sample_Files">Sample Files</span></h1>
+<p>The wiki is not particularly friendly about uploading xml documents (security issue I think), so the following page shows two examples directly.
+</p><p><a href="/Wiki/ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Format" title="ITK Release 4/Users Migration Guide/Migration Guide XML Format">Format Specification</a>
+</p>
+<h2><span class="mw-headline" id="Example_1_-_Move_GetLength_and_SetLength_from_MeasurementVectorTraits_to_NumericTraits">Example 1 - Move GetLength and SetLength from MeasurementVectorTraits to NumericTraits</span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+
+<span class="c">&lt;!--***************************************************************************</span>
+<span class="c">**</span>
+<span class="c">** MoveGetSetLengthMeasurementVectorTraits.xml</span>
+<span class="c">**</span>
+<span class="c">** This file provides a sample of an ITKv4 Migration guide XML document. The</span>
+<span class="c">** goal of these documents is to encode all information about changes to the</span>
+<span class="c">** ITK API between the v3.X releases and v4.0. Each migration document consists</span>
+<span class="c">** of a single &lt;Change&gt; element and a set of associated child elements. The</span>
+<span class="c">** &lt;Change&gt; element has a set of required child elements and a set of</span>
+<span class="c">** additional optional child elements which can be used to automatically</span>
+<span class="c">** identify locations in user code where the API change will mandate updates.</span>
+<span class="c">** In the case of simple changes, these rules can be used to automatically fix</span>
+<span class="c">** user code with the migration tool.</span>
+<span class="c">**</span>
+<span class="c">** REQUIRED CHILD ELEMENTS:</span>
+<span class="c">**</span>
+<span class="c">**    - &lt;Title&gt;: Title of the guide page for publication.</span>
+<span class="c">**</span>
+<span class="c">**    - &lt;Description&gt;: English description of what changes were made along with</span>
+<span class="c">**      rational for making them.</span>
+<span class="c">**</span>
+<span class="c">**    - &lt;SampleCode&gt;: Code snippet either manually written or automatically</span>
+<span class="c">**      harvested from the patch&#39;s changes that illustrates how to update the</span>
+<span class="c">**      API from the old version to the new version. This element must contain</span>
+<span class="c">**      two child elements, &lt;Old&gt; and &lt;New&gt;. As their names suggest, these two</span>
+<span class="c">**      elements contain the snippets of old API code and new API code .</span>
+<span class="c">**</span>
+<span class="c">**    - &lt;FileList&gt;: A list of all files that were changed in association with</span>
+<span class="c">**      the API change. File names should be specified relative to the base</span>
+<span class="c">**      source directory for ITK.</span>
+<span class="c">**</span>
+<span class="c">**    - &lt;Gerrit-ChangeId&gt;: This element links the API change to the Gerrit</span>
+<span class="c">**      entry used to review the change.</span>
+<span class="c">**</span>
+<span class="c">** OPTIONAL CHILD ELEMENTS:</span>
+<span class="c">**</span>
+<span class="c">**    - &lt;ApplicationFixLink&gt;: A link to git changes made when fixing</span>
+<span class="c">**      sequestered applications that broke due to the API change.</span>
+<span class="c">**</span>
+<span class="c">**    - &lt;MigrationFix-Automatic&gt;: A rule for the migration tool that can</span>
+<span class="c">**      automatically fix errors in user code. The current list of automatic</span>
+<span class="c">**      fix types is:</span>
+<span class="c">**</span>
+<span class="c">**      - &quot;FileRename&quot;: Find and replace the file name with the new one. Must</span>
+<span class="c">**        include &lt;Old&gt; and &lt;New&gt; child elements.</span>
+<span class="c">**</span>
+<span class="c">**      - &quot;ClassRename&quot;: Find and replace the name of a class. Must include</span>
+<span class="c">**        &lt;Old&gt; and &lt;New&gt; child elements.</span>
+<span class="c">**</span>
+<span class="c">**      - &quot;ClassMove&quot;: Include the new location of the class. Must include</span>
+<span class="c">**        &lt;Old&gt; and &lt;New&gt; child elements. Will warn the user that the old</span>
+<span class="c">**        include file may be able to be removed but will not automatically</span>
+<span class="c">**        remove it.</span>
+<span class="c">**</span>
+<span class="c">**      - &quot;MethodRename&quot;: Find and replace the name of the method. Must include</span>
+<span class="c">**        &lt;Old&gt; and &lt;New&gt; child elements.</span>
+<span class="c">**</span>
+<span class="c">**      - &quot;MethodMove&quot;: Find and replace the name of a method. Only works if</span>
+<span class="c">**        the method&#39;s signature hasn&#39;t changed. Must include &lt;Old&gt; and &lt;New&gt;</span>
+<span class="c">**        child elements.</span>
+<span class="c">**</span>
+<span class="c">**      - &quot;NamespaceChange&quot;: Find object from the old namespace and update its</span>
+<span class="c">**        namespace. This may not fix instances where &quot;using namespace&quot; is used</span>
+<span class="c">**        so the migration tool should warn the user wherever the object&#39;s</span>
+<span class="c">**        signature is found without a namespace attached. Must include &lt;Old&gt;</span>
+<span class="c">**        and &lt;New&gt; child elements.</span>
+<span class="c">**</span>
+<span class="c">**    - &lt;MigrationFix-Manual&gt;: A rule for the migration tool that can not be</span>
+<span class="c">**      automatcally fixed, but can be automatically identified. These rules</span>
+<span class="c">**      will cause the migration tool to flag a section of the code for</span>
+<span class="c">**      revision. The current type list is:</span>
+<span class="c">**</span>
+<span class="c">**      - &quot;MethodRefactor&quot;: Flag the user anywhere the changed method is</span>
+<span class="c">**        called. Should be used any time a method&#39;s signature changes. Must</span>
+<span class="c">**        include an &lt;Old&gt; child element.</span>
+<span class="c">**</span>
+<span class="c">**      - &quot;GeneralRefactor&quot;: Flag the user anywhere that the text specified in</span>
+<span class="c">**        the &lt;Old&gt; child element is found.</span>
+<span class="c">**</span>
+<span class="c">****************************************************************************--&gt;</span>
+
+<span class="nt">&lt;Change&gt;</span>
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** Title for the published page</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;Title&gt;</span>
+  Move GetLength and SetLength Functions from MeasurementVectorTraits to NumericTraits
+  <span class="nt">&lt;/Title&gt;</span>
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** English language description of what was changed and why</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;Description&gt;</span>
+  In an attempt to consolidate the numeric traits api, we are moving all
+  functionality from Code/Numerics/Statistics/itkMeasurementVectorTraits.h into
+  the individual NumericTraits files in Code/Common.
+  <span class="nt">&lt;/Description&gt;</span>
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** Sample code to illustrate the fix process</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;SampleCode&gt;</span>
+    <span class="nt">&lt;OldCode&gt;</span>
+    MeasurementVectorType mv;
+    MeasurementVectorTraits::SetLength( mv, 3 );
+    unsigned int length = MeasurementVectorTraits::GetLength( mv );
+    <span class="nt">&lt;/OldCode&gt;</span>
+
+    <span class="nt">&lt;NewCode&gt;</span>
+    MeasurementVectorType mv;
+    NumericTraits<span class="ni">&amp;lt;</span>MeasurementVectorType<span class="ni">&amp;gt;</span>::SetLength( mv, 3 );
+    unsigned int length = NumericTraits<span class="ni">&amp;lt;</span>MeasurementVectorType<span class="ni">&amp;gt;</span>::GetLength( mv );
+    <span class="nt">&lt;/NewCode&gt;</span>
+  <span class="nt">&lt;/SampleCode&gt;</span>
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** List of all files that were changed (might be automatically populated by</span>
+<span class="c">  ** git hook?)</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;FileList&gt;</span>
+  Code/Common/itkNumericTraitsArrayPixel.h
+  Code/Common/itkNumericTraitsCovariantVectorPixel.h
+  Code/Common/itkNumericTraitsDiffusionTensor3DPixel.h
+  Code/Common/itkNumericTraitsFixedArrayPixel.h
+  Code/Common/itkNumericTraitsPointPixel.h
+  Code/Common/itkNumericTraitsRGBAPixel.h
+  Code/Common/itkNumericTraitsRGBPixel.h
+  Code/Common/itkNumericTraitsStdVector.h
+  Code/Common/itkNumericTraitsTensorPixel.h
+  Code/Common/itkNumericTraitsVariableLengthVectorPixel.h
+  Code/Common/itkNumericTraitsVectorPixel.h
+  Code/Numerics/Statistics/itkCovarianceSampleFilter.txx
+  Code/Numerics/Statistics/itkDistanceMetric.h
+  Code/Numerics/Statistics/itkDistanceMetric.txx
+  Code/Numerics/Statistics/itkEuclideanDistanceMetric.txx
+  Code/Numerics/Statistics/itkEuclideanSquareDistanceMetric.txx
+  Code/Numerics/Statistics/itkExpectationMaximizationMixtureModelEstimator.txx
+  Code/Numerics/Statistics/itkGaussianMembershipFunction.txx
+  Code/Numerics/Statistics/itkGaussianMixtureModelComponent.txx
+  Code/Numerics/Statistics/itkImageToListSampleFilter.txx
+  Code/Numerics/Statistics/itkKdTree.txx
+  Code/Numerics/Statistics/itkKdTreeBasedKmeansEstimator.h
+  Code/Numerics/Statistics/itkKdTreeBasedKmeansEstimator.txx
+  Code/Numerics/Statistics/itkKdTreeGenerator.txx
+  Code/Numerics/Statistics/itkListSample.txx
+  Code/Numerics/Statistics/itkMahalanobisDistanceMetric.txx
+  Code/Numerics/Statistics/itkManhattanDistanceMetric.txx
+  Code/Numerics/Statistics/itkMeasurementVectorTraits.h
+  Code/Numerics/Statistics/itkMembershipFunctionBase.h
+  Code/Numerics/Statistics/itkSample.h
+  Code/Numerics/Statistics/itkSampleToHistogramFilter.txx
+  Code/Numerics/Statistics/itkScalarImageToHistogramGenerator.txx
+  Code/Numerics/Statistics/itkStandardDeviationPerComponentSampleFilter.txx
+  Code/Numerics/Statistics/itkStatisticsAlgorithm.txx
+  Code/Numerics/Statistics/itkWeightedCentroidKdTreeGenerator.txx
+  Code/Numerics/Statistics/itkWeightedCovarianceSampleFilter.txx
+  Testing/Code/Numerics/Statistics/CMakeLists.txt
+  Testing/Code/Numerics/Statistics/itkDistanceToCentroidMembershipFunctionTest.cxx
+  Testing/Code/Numerics/Statistics/itkEuclideanDistanceMetricTest.cxx
+  Testing/Code/Numerics/Statistics/itkEuclideanSquareDistanceMetricTest.cxx
+  Testing/Code/Numerics/Statistics/itkGaussianMembershipFunctionTest.cxx
+  Testing/Code/Numerics/Statistics/itkListSampleTest.cxx
+  Testing/Code/Numerics/Statistics/itkMahalanobisDistanceMetricTest.cxx
+  Testing/Code/Numerics/Statistics/itkManhattanDistanceMetricTest.cxx
+  Testing/Code/Numerics/Statistics/itkMembershipSampleTest1.cxx
+  Testing/Code/Numerics/Statistics/itkMembershipSampleTest2.cxx
+  Testing/Code/Numerics/Statistics/itkMembershipSampleTest3.cxx
+  Testing/Code/Numerics/Statistics/itkMembershipSampleTest4.cxx
+  Testing/Code/Numerics/Statistics/itkSampleClassifierFilterTest1.cxx
+  Testing/Code/Numerics/Statistics/itkSampleClassifierFilterTest2.cxx
+  Testing/Code/Numerics/Statistics/itkSampleClassifierFilterTest3.cxx
+  Testing/Code/Numerics/Statistics/itkSampleClassifierFilterTest4.cxx
+  Testing/Code/Numerics/Statistics/itkSampleClassifierFilterTest5.cxx
+  Testing/Code/Numerics/Statistics/itkSampleClassifierFilterTest6.cxx
+  Testing/Code/Numerics/Statistics/itkStatisticsTests.cxx
+  Testing/Code/Numerics/Statistics/itkWeightedCentroidKdTreeGeneratorTest8.cxx
+  Testing/Code/Numerics/Statistics/itkWeightedCentroidKdTreeGeneratorTest9.cxx
+  Testing/Code/Numerics/Statistics/itkWeightedCovarianceSampleFilterTest2.cxx
+  <span class="nt">&lt;/FileList&gt;</span>
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** The asociated Gerrit entry for this API change</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;Gerrit-ChangeId&gt;</span>
+  Ie78170c85c29a5d030e5ab605610878fe67d75c2
+  <span class="nt">&lt;/Gerrit-ChangeId&gt;</span>
+
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** Migration guide rules</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;MigrationFix-Manual</span> <span class="na">type=</span><span class="s">&quot;MethodRefactor&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Old&gt;</span>
+    MeasurementVectorTraits::GetLength
+    <span class="nt">&lt;/Old&gt;</span>
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual</span> <span class="na">type=</span><span class="s">&quot;MethodRefactor&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Old&gt;</span>
+    MeasurementVectorTraits::SetLength
+    <span class="nt">&lt;/Old&gt;</span>
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+
+<span class="nt">&lt;/Change&gt;</span>
+</pre></div>
+<h2><span class="mw-headline" id="Example_2_-_Improve_Attribute_Names_for_Label_Objects">Example 2 - Improve Attribute Names for Label Objects</span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+
+<span class="c">&lt;!--***************************************************************************</span>
+<span class="c">**</span>
+<span class="c">** MoveGetSetLengthMeasurementVectorTraits.xml</span>
+<span class="c">**</span>
+<span class="c">** This is the second sample Migration Guide XML document. For full details,</span>
+<span class="c">** see MoveGetSetLengthMeasurementVectorTraits.xml. One aditional required</span>
+<span class="c">** element has been added which is &lt;Title&gt;. This will be used for the title of</span>
+<span class="c">** the migration guide page.</span>
+<span class="c">**</span>
+<span class="c">****************************************************************************--&gt;</span>
+
+<span class="nt">&lt;Change&gt;</span>
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** Title for the published page</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;Title&gt;</span>
+  Improve Attribute Names for Labels
+  <span class="nt">&lt;/Title&gt;</span>
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** English language description of what was changed and why</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;Description&gt;</span>
+  This change updates the attribute names for the LabelObject system.  The
+  changes are:
+
+  BinaryElongation        -&gt; Elongation
+  BinaryFlatness          -&gt; Flatness
+  BinaryPrincipalMoments  -&gt; PrincipalMoments
+  BinaryPrincipalAxes     -&gt; PrincipalAxes
+  Elongation              -&gt; WeightedElongation
+  EquivalentEllipsoidSize -&gt; EquivalentEllipsoidDiameter
+  EquivalentPerimeter     -&gt; EquivalentSphericalPerimeter
+  EquivalentRadius        -&gt; EquivalentSphericalRadius
+  Flatness                -&gt; WeightedFlatness
+  PhysicalSizeOnBorder    -&gt; PerimeterOnBorder
+  Region                  -&gt; BoundingBox
+  PrincipalAxes           -&gt; WeightedPrincipalAxes
+  PrincipalMoments        -&gt; WeightedPrincipalMoments
+  Sigma                   -&gt; StandardDeviation
+  Size                    -&gt; NumberOfPixels
+  SizeOnBorder            -&gt; NumberOfPixelsOnBorder
+  <span class="nt">&lt;/Description&gt;</span>
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** Sample code to illustrate the fix process</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;SampleCode&gt;</span>
+    <span class="nt">&lt;OldCode&gt;</span>
+    typedef ShapeLabelObject LabelObjectType;
+    LabelObjectType::Pointer labelObject;
+    LabelObjectType::RegionType region = labelObject-&gt;GetRegion();
+    <span class="nt">&lt;/OldCode&gt;</span>
+
+    <span class="nt">&lt;NewCode&gt;</span>
+    typedef TLabelObject LabelObjectType;
+    LabelObjectType::Pointer labelObject;
+    LabelObjectType::RegionType region = labelObject-&gt;GetBoundingBox();
+    <span class="nt">&lt;/NewCode&gt;</span>
+  <span class="nt">&lt;/SampleCode&gt;</span>
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** List of all files that were changed (might be automatically populated by</span>
+<span class="c">  ** git hook?)</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;FileList&gt;</span>
+  Code/Review/itkBinaryFillholeImageFilter.txx
+  Code/Review/itkBinaryGrindPeakImageFilter.txx
+  Code/Review/itkBinaryShapeKeepNObjectsImageFilter.txx
+  Code/Review/itkBinaryShapeOpeningImageFilter.txx
+  Code/Review/itkLabelMapUtilities.h
+  Code/Review/itkLabelShapeKeepNObjectsImageFilter.txx
+  Code/Review/itkLabelShapeOpeningImageFilter.txx
+  Code/Review/itkShapeKeepNObjectsLabelMapFilter.txx
+  Code/Review/itkShapeLabelMapFilter.txx
+  Code/Review/itkShapeLabelObject.h
+  Code/Review/itkShapeLabelObjectAccessors.h
+  Code/Review/itkShapeOpeningLabelMapFilter.txx
+  Code/Review/itkShapeRelabelImageFilter.txx
+  Code/Review/itkShapeRelabelLabelMapFilter.txx
+  Code/Review/itkShapeUniqueLabelMapFilter.txx
+  Code/Review/itkStatisticsLabelMapFilter.txx
+  Code/Review/itkStatisticsLabelObject.h
+  Code/Review/itkStatisticsLabelObjectAccessors.h
+  Testing/Code/Review/itkAttributePositionLabelMapFilterTest1.cxx
+  Testing/Code/Review/itkAttributeUniqueLabelMapFilterTest1.cxx
+  Testing/Code/Review/itkLabelMapToAttributeImageFilterTest1.cxx
+  Testing/Code/Review/itkShapeLabelObjectAccessorsTest1.cxx
+  <span class="nt">&lt;/FileList&gt;</span>
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** The asociated Gerrit entry for this API change</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;Gerrit-ChangeId&gt;</span>
+  Ib5bdca1cd1809490f1c5a0f991c7cc2714d33c70
+  <span class="nt">&lt;/Gerrit-ChangeId&gt;</span>
+
+
+  <span class="c">&lt;!--</span>
+<span class="c">  ** Migration tool rules</span>
+<span class="c">  **--&gt;</span>
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  BinaryElongation
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  BINARY_ELONGATION
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  BinaryFlatness
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  BINARY_FLATNESS
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  BinaryPrincipalMoments
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  BINARY_PRINCIPAL_MOMENTS
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  BinaryPrincipalAxes
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  BINARY_PRINCIPAL_AXES
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  Elongation
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  ELONGATION
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  EquivalentEllipsoidSize
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  EQUIVALENT_ELLIPSOID_SIZE
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  EquivalentPerimeter
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  EQUIVALENT_PERIMETER
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  EquivalentRadius
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  EQUIVALENT_RADIUS
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  Flatness
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  FLATNESS
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  PhysicalSizeOnBorder
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  PHYSICAL_SIZE_ON_BORDER
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  Region
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  REGION
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  PrincipalAxes
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  PRINCIPAL_AXES
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  PrincipalMoments
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  PRINCIPAL_MOMENTS
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  Sigma
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  SIGMA
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  Size
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  SIZE
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  SizeOnBorder
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+  <span class="nt">&lt;MigrationFix-Manual&gt;</span>
+  SIZE_ON_BORDER
+  <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
+
+<span class="nt">&lt;/Change&gt;</span>
+</pre></div>
+<!-- 
+NewPP limit report
+Cached time: 20220924101440
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.016 seconds
+Real time usage: 0.395 seconds
+Preprocessor visited node count: 17/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 21744/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8038-0!canonical and timestamp 20220924101440 and revision id 33803. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples&amp;oldid=33803">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples&amp;oldid=33803</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK+Release+4%2FUsers+Migration+Guide%2FMigration+Guide+XML+Samples" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples&amp;oldid=33803" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 5 November 2010, at 18:23.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.016","walltime":"0.395","ppvisitednodes":{"value":17,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":21744,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220924101440","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":68});});</script>
+</body></html>

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4.9 Changed From Previous - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"953dc07289dd7ff1b6e351bb","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4.9_Changed_From_Previous","wgTitle":"ITK/Release 4.9 Changed From Previous","wgCurRevisionId":58894,"wgRevisionId":58894,"wgArticleId":12692,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4.9_Changed_From_Previous","wgRelevantArticleId":12692,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};
+RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_9_Changed_From_Previous rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Release 4.9 Changed From Previous</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Changes from v4.9rc03..v4.9.0
+</p>
+<hr />
+<p>Bill Hoffman (3):
+</p>
+<pre>     COMP: fix 64 bit build warnings with windows auto-export on.
+     COMP: work around for VS 2015 optimizer bug causing test failures.
+     COMP: work around for VS 2015 optimizer bug causing test failures.
+</pre>
+<p>Bradley Lowekamp (1):
+</p>
+<pre>     BUG: Fix precision with accumulation and scaling in AdaptiveHistogram
+</pre>
+<p>Davis Vigneault (1):
+</p>
+<pre>     COMP: Include itkMacro.h in itkTestingMacros.h
+</pre>
+<p>Dzenan Zukic (1):
+</p>
+<pre>     COMP: fix itkStaticAssert warnings with clang++
+</pre>
+<p>Hans Johnson (6):
+</p>
+<pre>     COMP: BSD command lines do not have --version
+     COMP: Respect CMAKE_CXX_STANDARD during config
+     COMP: Clang Override warnings removed
+     BUG: Download URL was wrong for macosx
+     COMP: The ComputeUpdate function is needed
+     COMP: Incomplete solution for operators corrected
+</pre>
+<p>Hyun Jae Kang (12):
+</p>
+<pre>     COMP: Fixed the compiler error of ITKCommon2TestDriver on OSX 10.6
+     BUG: Fixed the runtime crash of vnl_test_complex on OSX 10.6
+     BUG: Fixed the runtime crash of itkTimeProbeTest2
+     BUG: Fixed the runtime crash of VideoSourceTest on OSX 10.6
+     BUG: Fixed the runtime crash of ITKReviewTestDriver on OSX 10.6
+     BUG: Fixed the runtime crash of ITKFastMarchingTestDriver's tests on OSX 10.6
+     COMP: Fixed the data conversion warning messages of itkResourceProbe
+     BUG: Fixed the runtime crash of ITKStatisticsTestDriver tests on OSX 10.6
+     BUG: Fixed the runtime crash of itkBinaryShapeOpeningImageFilterTest1
+     BUG: Fixed the runtime crash of test_pow_log on OSX 10.6
+     BUG: Fixed the runtime crash of vnl_test_numeric_traits
+     BUG: Exclude a test code of ITKLabelMapTestDriver on OSX 10.6
+</pre>
+<p>Isaiah Norton (1):
+</p>
+<pre>     COMP: fix build with -std=c++11 when ITK/VXL initially configured without
+</pre>
+<p>Jon Haitz Legarreta (1):
+</p>
+<pre>     BUG: Fix OpenCVBridge bug for two-byte images.
+</pre>
+<p>Lucas Gandel (2):
+</p>
+<pre>     BUG: Change CMAKE_SOURCE_DIR to CMAKE_CURRENT_SOURCE_DIR
+     BUG: Fix multiple external modules wrapping
+</pre>
+<p>Martin Michlmayr (1):
+</p>
+<pre>     COMP: fixed error "Dunno about this gcc" for gcc 6
+</pre>
+<p>Matthew McCormick (22):
+</p>
+<pre>     BUG: Do not perform dynamic_cast in CompositeIOTransformIOHelper.
+     COMP: Do not set property on itkhdf5 with ITK_USE_SYSTEM_HDF5.
+     DOC: Update the location of the GNUPlot Software Guide scripts.
+     DOC: Update the Software Guide repo location in Examples/README.txt.
+     COMP: Add export specification for itk::ResourceProbe.
+     COMP: Require NO_MODULE with DCMTK find_package.
+     COMP: Update CastXML revision for C++14 VS 2015.
+     BUG: Fix PythonTransformCoverage test for Python 3.4.
+     BUG: Fix PythonExtras test with Python 3.
+     BUG: Fix PythonTypemaps tests with Python 3.
+     ENH: Do not force shared libraries when wrapping.
+     DOC: Update WikiExamples to 2016-10-20
+     BUG: BUILD_TESTING should be not advanced.
+     COMP: Use enum in itkStaticConstMacro for old GCC.
+     BUG: Correct FlatStructuringElement wrapping location.
+     BUG: Correct itkStaticConstMacro GCC version comparison operator.
+     BUG: Improve GCC detection in itkStaticAssert.h preprocessor macro.
+     BUG: Fix OpenCV version check.
+     DOC: Update the SphinxExamples Remote Module.
+     COMP: Wrap FlatStructuringElement before other classes.
+     COMP: Workaround inconsistent OpenCV pre-processor variables.
+     COMP: Update CastXML to support wrapping with GCC 6.
+</pre>
+<p>Michka Popoff (3):
+</p>
+<pre>     ENH: Allow Python 3 wrapping for Glue and Review Modules with VTK 7
+     COMP: Re-enable review module for python 3 and older VTK's
+     ENH: Use importlib for python 3.4 instead of imp
+</pre>
+<p>Nick Tustison (1):
+</p>
+<pre>     ENH:  Accommodate epsilon error on left side.
+</pre>
+<p>Sean McBride (1):
+</p>
+<pre>     DOC: Update some woefully out-of-date GDCM comments, and typos
+</pre>
+<p>Seun Odutola (1):
+</p>
+<pre>     BUG: Improved itkAnalyzeImageIO to handle case insensitive extensions
+</pre>
+<p>Sumedha Singla (3):
+</p>
+<pre>     ENH: Fixed the numeric traits for datatypes
+     DOC: Added a comment to support the changes in numeric traits datatypes.
+     BUG: Invalid memory access of itk::NotAlmostEquals Bug#ITK-3403
+</pre>
+<p><br />
+Changes from v4.9rc02..v4.9rc03
+</p>
+<hr />
+<p>Alexis Girault (1):
+</p>
+<pre>     BUG: Implement SetAutoMinimumMaximum in itkScalarImageToHistogramGenerator
+</pre>
+<p>Bill Lorensen (1):
+</p>
+<pre>     BUG: nifti_read_subregion_image was leaking file pointers
+</pre>
+<p>Brad King (7):
+</p>
+<pre>     ENH: Teach ITK module macros to support independent header-only modules
+     ENH: Add script to import KWIML library source code
+     ENH: Add `ITKKWIML` module to provide external KWIML library
+     ENH: Port TIFF integer types from KWSys to KWIML
+     ENH: Port LSM integer types from KWSys to KWIML
+     ENH: Port itkIntTypes.h from KWSys to KWIML
+     ENH: Drop KWSys FundamentalType component
+</pre>
+<p>Bradley Lowekamp (1):
+</p>
+<pre>     ENH: Add option to choose scheme for git download
+</pre>
+<p>Davis Vigneault (1):
+</p>
+<pre>     STYLE: Use cstdlib return macros in ITK examples
+</pre>
+<p>Dženan Zukić (3):
+</p>
+<pre>     BUG: do not pass 0,0,0 to Versor.Set()
+     STYLE: Removing the unused NeighborhoodRadius property
+     ENH: Write out transform in DeformableRegistration15
+</pre>
+<p>Gert Wollny (1):
+</p>
+<pre>     BUG: Remove double-conversion from public interface, use system.
+</pre>
+<p>Hyun Jae Kang (8):
+</p>
+<pre>     ENH: Create a test for the SpawnThread function ( ITK-3317)
+     STYLE: Remove an unnecessary file (-w) from source code
+     BUG: Fixed the failed case of itkStdStreamStateSaveTest on OS X 10.8
+     BUG: Fixed the failed test case of itkThreadPoolTest on OS X 10.8
+     BUG: Fixed a failed test of ITKDistanceMapTestDriver
+     BUG: Fixed the failed test VideoSourceTest
+     PERF: Improve the performance of a test of ITKRegistrationMethodsv4TestDriver
+     COMP: Fixed the compiler error of itkDisplacementFieldToBSplineImageFilterTest
+</pre>
+<p>Jean-Christophe Fillion-Robin (25):
+</p>
+<pre>     BUG: Build ITKIOTransformHDF5 as shared library. See #3393
+     BUG: Build ITKIOTransformMINC as shared library. See #3393
+     BUG: Build ITKIOTransformMatlab as shared library. See #3393
+     BUG: Build ITKIOTransformInsightLegacy as shared library. See #3393
+     STYLE: TransformIOFactory: Remove obsolete declaration. See #3393
+     COMP: TransformIOFactory: Add missing ctor/dtor from hxx file. See #3393
+     COMP: TransformFileWriter: Remove method "OpenStream()" without definition
+     COMP: TransformFileReaderTemplate: Remove undefined method "CreateTransform()"
+     ENH: Update ITKIOPhilipsREC to allow static initialization. See #3393
+     ENH: Update ITKIOTransformMINC to allow static initialization. See #3393
+     COMP: MINC: Fix VS2008 "unknown round" build error. See #3393
+     COMP: MINC: Fix VS2008 "unknown arpa/inet.h" build error. See #3393
+     COMP: Configure ENABLE_SHARED into &lt;ModuleName&gt;.cmake file. See #3393
+     COMP: Fix configuration of IOFactory header. See #3393
+     STYLE: UseITK: Removed redundant code setting ImageIO factory name. See #3393
+     STYLE: UseITK: Re-factor introducing _configure_IOFactoryRegisterManager
+     STYLE: UseITK: Set TransformIO factory and module name using convention.
+     BUG: Ensure Image IO factories are registered once. See #3393
+     BUG: Ensure Transform IO factories are registered once.
+     COMP: ITKIOXML: Fix VS11 "already defined std::string" link error. See #3393
+     BUG: TransformIO: Implement explicit template instantiation using "extern".
+     COMP: TransformIO: Fix VS build errors removing extra EXPORT
+     COMP: TransformIO: Handle compiler not supporting "pragma diagnostic".
+     COMP: TransformIO: TransformFile(Reader|Writer) still need to be exported.
+     COMP: TransformIO: Fix explicit instantiation approach
+</pre>
+<p>Johan Andruejol (1):
+</p>
+<pre>     ENH: Add ITK_RUNTIME_LIBRARY_DIRS for external projects
+</pre>
+<p>KWIML Upstream (1):
+</p>
+<pre>     KWIML 2015-12-09 (43f9f8d0)
+</pre>
+<p>Lucas Gandel (1):
+</p>
+<pre>     BUG: PhysicsBasedNonRigidRegistrationMethod test failure on Debian 32bit
+</pre>
+<p>Matthew McCormick (16):
+</p>
+<pre>     COMP: Fix PointDimension reference in AzimuthElevationToCartesian test.
+     STYLE: Improve scoping in AzimuthElevationToCartesian test.
+     STYLE: Explicitly mark the ProcessObject methods virtual in SignedMaurer.
+     BUG: Do not try to install targets that do not exist when building externally.
+     BUG: ITKIOMeta needs a public dependency on ITKMetaIO.
+     COMP: Update LesionSizingToolkit for external build and style test failures.
+     BUG: Add CMake OpenCV export code to ITKVideoBridgeOpenCV.
+     COMP: Improve compatibility with OpenCV 3.
+     DOC: Fix class references in StatisticsLabelMapFilter.
+     STYLE: Improved readability of itkStatisticsUniqueLabelMapFilterTest1.
+     DOC: Correct ReverseOrdering description in ShapeUniqueLabelMapFilter.
+     STYLE: Add own copy of GenerateExportHeader
+     COMP: Create _TEMPLATE_EXPORT macros.
+     COMP: TransformIOBaseTemplate must be explicitly instantiated.
+     BUG: Do not use dynamic_cast for DisplacementFieldType in HDF5 test.
+     COMP: Do not use string(MAKE_C_IDENTIFIER with CMake &lt; 2.8.12
+</pre>
+<p>Max Smolens (1):
+</p>
+<pre>     BUG: VoronoiSegmentationRGBImageFilter: add pixel dimension check
+</pre>
+<p>Mikhail Isakov (1):
+</p>
+<pre>     DOC: correction in DiffusionTensor3D Reconstruction
+</pre>
+<p>Ricardo Ortiz (1):
+</p>
+<pre>     BUG: Set itkBinaryImageTo*LabelMapFilter foreground/background values
+</pre>
+<p>Seun Odutola (1):
+</p>
+<pre>     BUG: absolute value of tolerance taken to cater for negative spacing
+</pre>
+<p>Shawn Waldon (1):
+</p>
+<pre>     COMP: OSX set deployment target when building fftw
+</pre>
+<p>Simon Alexander (4):
+</p>
+<pre>     STYLE: Change to make git bash on windows happy with the function name
+     COMP: fixes for visual studio 2015update1 x86 in release mode
+     COMP: fixes for visual studio 2015update1 x86 in release mode
+     COMP: fixes for visual studio 2015update1 x86 in release mode
+</pre>
+<p>Sreekanth Arikatla (2):
+</p>
+<pre>     BUG: Resolved const correctness in itkMatrix.h
+     ENH: Fixes the symmetry of AzimuthElevationToCartesianTransform and adds tests
+</pre>
+<p>Changes from v4.9rc01..v4.9rc02
+</p>
+<hr />
+<p>Bill Lorensen (1):
+</p>
+<pre>     BUG: Valgrind detected an invalid read
+</pre>
+<p>Davis Vigneault (1):
+</p>
+<pre>     STYLE: Address some warnings when running cppcheck
+</pre>
+<p>Hyun Jae Kang (2):
+</p>
+<pre>     COMP: Fixed a warning message of data-conversion on VS14
+     COMP: Update KWStyle to remove format-string warning message
+</pre>
+<p>Matthew McCormick (3):
+</p>
+<pre>     DOC: Remove invalid wrapping example.
+     BUG: Wrap AdaptiveEqualizationHistogram.
+     COMP: Ignore Doxygen endcond warning in itkIsConvertible.h.
+</pre>
+<p>Seun Odutola (1):
+</p>
+<pre>     COMP: Corrected minc2.h path installation from libsrc2/minc2.h to minc2.h
+</pre>
+<p>Ziv Yaniv (2):
+</p>
+<pre>     BUG: Affine transformation was estimated without sufficient number of points.
+     BUG: fixed BSpline initializer crash when reference image not set.
+</pre>
+<p><br />
+Changes from v4.8.0..v4.9rc01
+</p>
+<hr />
+<p>Abhishek Tiwari (1):
+</p>
+<pre>     BUG: "tmpImageIndex" not initialized to 0.
+</pre>
+<p>Adam Snyder (1):
+</p>
+<pre>     PERF: Reworked MMI Threading using a per-thread buffer
+</pre>
+<p>Alexander Leinoff (6):
+</p>
+<pre>     ENH: Adds IsInteger and IsSigned to NumericTraits.
+     COMP: Doxygen itkMath.h 'OneValue()' could not be resolved.
+     ENH: Adds ExactlyEquals and NotExactlyEquals functions to itkMath.h
+     COMP: Removes floating-point equality checks
+     ENH: COMP: Adds support for complex values to Math::AlmostEquals
+     ENH: Updates fftw dependency
+</pre>
+<p>Arnaud Gelas (5):
+</p>
+<pre>     COMP: fix warning (unused local typedef)
+     COMP: simplify ITKVideoBridgeOpenCV dependency
+     DOC: add doxgen documentation for BinaryImageToLevelSetImageAdaptor
+     ENH: add tests to exercise itk::ThreadedIteratorRangePartitioner
+     COMP: fix compilation error with OpenCV2 and OpenCV3
+</pre>
+<p>Betsy McPhail (1):
+</p>
+<pre>     BUG: Improve buffer alignment in OctreeNode .
+</pre>
+<p>Bill Hoffman (2):
+</p>
+<pre>     ENH: Use new CMake Windows export symbol dll feature.
+     COMP: Put vnl_export.h in the list of sources so it gets installed.
+</pre>
+<p>Bill Lorensen (4):
+</p>
+<pre>     COMP: VTkGlue linker errors
+     BUG: Inappropriate use of AlmostEquals
+     ENH: Bump tag for wiki examples
+     ENH: Better layout strategy
+</pre>
+<p>Brad King (3):
+</p>
+<pre>     ENH: Remove use of include &lt;itksys/ios/*&gt; and itksys_ios::*
+     ENH: Remove use of include &lt;itksys/stl/*&gt; and itksys_stl::*
+     ENH: Update CMake Policy settings in Testing/TestExternal project
+</pre>
+<p>Bradley Lowekamp (31):
+</p>
+<pre>     BUG: Avoid null deference in PrintSelf with default construction
+     ENH: Enable base classes for templates of landmark initializer
+     STYLE: Use "Swap" for ITK member name
+     BUG: Demonstrate Eigen analysis failure
+     BUG: Fix computation of Eigen analysis
+     ENH: Update DiscreteHessianGaussian Test baseline
+     ENH: Correctly demonstrate float point Eigen failure
+     ENH: compile vnl_math_hypot, and use at least double
+     ENH: Adding initial update script from used libpng version.
+     ENH: removing non-subtree files for itkpng
+     ENH: Ported ITK changes for building to subtree merged code
+     ENH: Update libpng update script for v1.6.9
+     BUG: Use ParameterValueType for computation of landmark affine
+     ENH: Wrap LandmarkBasedTransformInitializer
+     BUG: Avoid potential exception in itk::Object::UnRegister
+     ENH: Update itkpng zlib, configuration, and rename
+     ENH: Update itkpng name mangling
+     BUG: Use const pointer in Set method for constant ReferenceImage ivar
+     BUG: Increase tolerance for PhysicsBasedNonRigidRegistrationMethod
+     BUG: Demonstrate side effect on registration due to BSplineScatter change
+     ENH: Move MovingHistogramImageFilter base classes to ImageFilterBase
+     BUG: Avoid potential exception in itk::Object::UnRegister
+     BUG: Avoid null deference in PrintSelf with default construction
+     BUG: Use const pointer in Set method for constant ReferenceImage ivar
+     ENH: Optimize AdaptiveHistogramEqualization with MovingHistogram base
+     COMP: address sign unsigned comparison warning
+     COMP: Address signed unsigned comparison warning
+     COMP: Address unused member variable and methods in anonymous ns
+     BUG: Fix segfault when with empty IsolatedWatershed Threshold range
+     BUG: Adjust intensity tolerance for PhysicsBasedNonRigid test
+     BUG: Reduce number of targets with MSVC
+</pre>
+<p>Davis Vigneault (7):
+</p>
+<pre>     DOC: Minor improvements to segmentation examples.
+     DOC: Expanded Canny Edge Detection Example
+     DOC: Expanded TreeContainer Example
+     COMP: Warnings in itkVTKImageExport when compiling with c++11
+     COMP: Warnings in FFTW Classes when compiling with c++11
+     COMP: Update Git Tag for Subdivision Module
+     COMP: Warnings in FFTW Classes when compiling with c++11
+</pre>
+<p>Dženan Zukić (1):
+</p>
+<pre>     STYLE: better formatting of the "usage" message
+</pre>
+<p>Eugene Prilepin (1):
+</p>
+<pre>     BUG: Fix a template name formation in python wrappings
+</pre>
+<p>Floris Berendsen (1):
+</p>
+<pre>     STYLE: Improve naming conventions in comments.
+</pre>
+<p>Hans Johnson (29):
+</p>
+<pre>     STYLE: Instrument for FixedParameters typedef
+     BUG: Demonstrate DisplacementTransformFailure
+     BUG: FixedParameters should be double precision
+     STYLE: Minor code style issues for MGHIO
+     COMP: Update to version for WikiExamples
+     ENH: Update Sphinx for ITK 4.8.0
+     ENH: Update MGHIO to be shared lib
+     ENH: Provide consistent floating point comparisons
+     BUG: Fix MGHIO to fix write failures
+     PERF: Remove floating point as sentinal value
+     COMP: Const correctness needs to be maintained
+     BUG: Preserve backwards compatibility
+     DOC: Provide consistent naming in comments
+     ENH: Conversion between transform type tolerance
+     STYLE: Prefer initialization to assignment
+     ENH: Missing ITK_OVERRIDE
+     COMP: Need to propagate ITKGDCM
+     COMP: Need to propagate ITKGDCM
+     COMP: Add missing ITK_OVERRIDE
+     STYLE: Minor code style issues for MGHIO
+     COMP: Update to version for WikiExamples
+     ENH: Update Sphinx for ITK 4.8.0
+     ENH: Update MGHIO to be shared lib
+     BUG: Fix MGHIO to fix write failures
+     ENH: C++11 allows for rigorous =delete
+     COMP: Remove unnecessary failing assert test
+     ENH: Ignore internal files for the Clion editor
+     COMP: Fix VNL compilation for wider C++11 support
+     BUG: In configuration test need to mirror code
+</pre>
+<p>Hyun Jae Kang (27):
+</p>
+<pre>     BUG: Remove std::cout calls from class
+     BUG: Avoid an unexpected output of static_cast
+     BUG: Update python example codes for ImageRegistration
+     BUG: Retrieve the missed wrap file
+     BUG: itkVTKImageIO class does not handle blank lines in VTK file header.
+     BUG: Fix HDF5 CMake configuration with VS2015
+     BUG: Fix a compilation issue on ITK4 with FFTW and shared libraries
+     BUG: Fixed older XCode linking error
+     ENH: Use CastXML binaries when building with x86_64 Mac OS X
+     BUG: Remove std::cout calls from class
+     BUG: itkVTKImageIO class does not handle blank lines in VTK file header.
+     BUG: Fixed older XCode linking error
+     ENH: Add automatic KWStyle build and configuration setup
+     COMP: KWStyle shadow, format-nonliteral and autological-compare warning.
+     COMP: Fixed the warning messages from itkGPU Module
+     COMP: Fixed a warning message of unused-private-field
+     COMP: Apply latest version of KWStyle
+     COMP: Update KWStyle to fix its additional warning messages
+     COMP: Update KWStyle to fix its additional warning messages
+     COMP: Fix data-conversion warning messages on Windows
+     ENH: Update itkResourceProbe to calculate statistical data
+     COMP: Fix data-conversion warning messages on VS14
+     COMP: Fixed 'std::sqrt'&#160;: ambiguous call to overloaded function
+     ENH: Update the Report() function of itkResourceProbesCollectorBase
+     COMP: Fix data-conversion warning message on itkResourceProbe
+     COMP: Fix additional warning messages of KWStyle
+     COMP: Fix data-conversion warning messages
+</pre>
+<p>Jon Haitz Legarreta (6):
+</p>
+<pre>     ENH: Add test for itkStatisticsUniqueLabelMapFilter
+     BUG: Fix compilation issues for StatisticsUniqueLabelMapFilterTest
+     BUG: Fix comparison issues for itkStatisticsUniqueLabelMapFilter
+     BUG: Test for StatisticsUniqueLabelMapFilter stability
+     ENH: Add test for itkParametricStpaceToImageSpaceFilter
+     ENH: Improve code coverage for itkParametricSpaceToImageSpaceMeshFilter
+</pre>
+<p>Julien Michel (1):
+</p>
+<pre>     ENH: Support of VectorImage as template parameters for WarpImageFilter
+</pre>
+<p>Junjie Bai (2):
+</p>
+<pre>     BUG: ConvertLabelMap with different LabelMapTypes
+     BUG: LabelObject CopyAttribute support different LabelObject type
+</pre>
+<p>KWSys Robot (4):
+</p>
+<pre>     KWSys 2015-07-10 (c9336bcf)
+     KWSys 2015-07-30 (f63febb7)
+     KWSys 2015-08-24 (cdaf522c)
+     KWSys 2015-08-28 (dc3fdd7f)
+</pre>
+<p>LIBPNG Upstream (2):
+</p>
+<pre>     PNG 2009-04-06 (e68f5a36)
+     PNG 2014-02-05 (3e753eb8)
+</pre>
+<p>Laurentiu Nicola (2):
+</p>
+<pre>     PERF: Avoid temporary smartptr in ProcessObject::GetInput
+     PERF: Optimize WarpImageFilter by avoiding refcount bouncing
+</pre>
+<p>Luc Hermitte (8):
+</p>
+<pre>     PERF: itk::Image::GetPixel() performance improvment.
+     PERF: Performance enhancements on VariableLengthVectors 1/...
+     ENH: Dependencies on itkVariableLengthVector.h reduced
+     BUG: Error in VariableLengthVector Unit Tests
+     PERF: Performance enhancements on VLV 2/...
+     PERF: Performances enhancements on VLV 3/...
+     COMP: Fix signed/unsigned warnings
+     BUG: std::copy/fill on empty VLV
+</pre>
+<p>Lucas Gandel (4):
+</p>
+<pre>     ENH: Move ImageToPathFilter from ITKReview to ITKPath module.
+     BUG: Fixing ImageToPathFilter wrapping call from Review Module
+     STYLE: Fix KWStyle dashboard errors
+     BUG: Fix external module BUILD_SHARED_LIBS status
+</pre>
+<p>Mathieu Malaterre (1):
+</p>
+<pre>     BUG: Name mangle the included expat third party library.
+</pre>
+<p>Matthew McCormick (94):
+</p>
+<pre>     ENH: Change itkSystemInformationTest to itkCMakeConfigurationTest.
+     ENH: Add AnisotropicDiffusionLBR Remote Module.
+     ENH: Bump ITK version to 4.9.0.
+     BUG: Remove std::cout calls from classes.
+     COMP: Remove unused argument in ConditionVariableNoThreads.
+     BUG: Implement UpdateLargestPossibleRegion for ImageToVTKImageFilter.
+     COMP: Add link interface specification for wrapping target_link_libraries.
+     STYLE: Fix indentation in itkMINCTransformIOFactory.cxx.
+     COMP: Fix MINCTransformIO factory registration.
+     COMP: Add -D_LARGEFILE64_SOURCE for HDF5 with Emscripten-1.
+     COMP: Remove unknown doxygen command in AnisotropicDiffusionLBR.
+     BUG: Initialize mutex for 32 bit AtomicInt.
+     ENH: Use CastXML binaries when building with x86_64 Linux.
+     STYLE: Rename gccxml -&gt; castxml in {idx,igenerator}.py.
+     COMP: Disable the gold linker for static builds on Ubuntu 14.04.
+     ENH: Use Windows binaries for CastXML.
+     ENH: Add better scoping in igenerator.py.
+     BUG: Fix CMAKE_BUILD_TYPE initialization with Ninja + MSVC.
+     BUG: LevelSetsv4 used signed char instead of char.
+     ENH: Add better scoping to idx.py.
+     COMP: Define newSize and oldSize in VariableLengthVector.
+     STYLE: Use prefix increment operator in ImageBase.
+     DOC: Correct spelling of Continuous.
+     ENH: Add more progress information to IterativeClosestPoint2.
+     BUG: Build BridgeNumPy with Visual Studio.
+     ENH: Add ITKModuleExternal.cmake
+     COMP: Wrap Image&lt; bool, D &gt; for FlatStructuringElement.
+     BUG: Use CastXML binary built in Release.
+     BUG: ContinuousIndex should not be templated over TCoordRep.
+     COMP: Set CMP0054 to new.
+     COMP: Address line length too long for Software Guide.
+     COMP: Fix CannyEdgeDetectionImageFilter.cxx types.
+     BUG: Support Python 3 wrapping module initialization.
+     BUG: Update itkTemplate.py for Python 3.
+     BUG: Update itkExtras.py for Python 3.
+     BUG: Prevent Python callback addition recursion.
+     BUG: Fix test scripts for Python 3.
+     BUG: Replace __GCCXML__ with CABLE_CONFIGURATION.
+     ENH: Allow projects to build against an external module.
+     ENH: Replace CABLE_CONFIGURATION with ITK_WRAPPING_PARSER.
+     ENH: Rename _cable_ to _wrappers_.
+     BUG: Replace __GCCXML__ with CABLE_CONFIGURATION.
+     BUG: Define ITK_WRAPPING_PARSER when wrapping.
+     COMP: Do not use C++11 alignas in itkAlignedTypedef.
+     ENH: Bump CMakeLists.txt version to 4.8.1.
+     BUG: Pass the CMAKE_CXX_FLAGS to castxml.
+     ENH: Bump CastXML version to 2015-30-29.
+     ENH: Bump LLVM / Clang to 3.7.0.
+     COMP: Avoid itklibminc linking with ITK_USE_SYSTEM_HDF5.
+     COMP: Add missing ITKIOImageBase dependency for ITKTransformMINC.
+     COMP: Use itkSimpleNewMacro in ThreadedIteratorRangePartitionerTest.
+     ENH: Add wrapping support for building modules externally.
+     BUG: Fix KWStyle test paths when building a module externally.
+     ENH: Add Cuberille Remote module.
+     COMP: Remove carriage returns from Cuberille remote.
+     COMP: Remove unused argument in ConditionVariableNoThreads.
+     DOC: Correct spelling of Continuous.
+     ENH: Bump the MinimalPathExtraction Remote to 2015-10-20.
+     COMP: Fix KernelTransform SetFixedParameters argument type.
+     STYLE: Use prefix increment operator in ImageBase.
+     COMP: Use ITK's pygccxml by correctly setting up the sys.path
+     Revert "COMP: Put vnl_export.h in the list of sources so it gets installed."
+     BUG: Revert "BUG: ConvertLabelMap with different LabelMapTypes"
+     ENH: Marking wrapping CMake configuration variables as advanced.
+     STYLE: Rename CASTXML to CASTXML_EXECUTABLE.
+     COMP: Non-virtual copy attribute members in LabelMap cannot have override.
+     COMP: Add wrapping for AdaptiveHistogramEqualizationImageFilter.
+     COMP: Add itkMacro.h to itkPromoteType.h for ITK_EXCEPT.
+     ENH: Remove CMake version check in ITKModuleHeaderTest.cmake
+     BUG: Improve KWStyle ExternalProject utilization.
+     ENH: Remove old KWStyle build script.
+     COMP: Address VariableLengthVector Doxygen rhs @param not found.
+     ENH: Rename WRAPPING_LIBRARY_GROUPS to WRAPPING_SUBMODULE_ORDER.
+     ENH: Install Python bindings into site-packages.
+     ENH: Improve readability of Python site-packages path detection.
+     COMP: DiscreteGaussianDerivativeImageFilter unsigned expression warning.
+     BUG: ITKCommon publically depends on ITKDoubleConversion.
+     COMP: Improve scoping in CovariantVectorGeometryTest.
+     ENH: Improves names and export of module dependencies.
+     STYLE: Improve namespace bracket style in itkIsConvertible.
+     COMP: Set CMP0054 to new.
+     BUG: Remove unused wrapping files.
+     BUG: Do install install wrapping development files.
+     ENH: Add WRAP_ITK_INSTALL_COMPONENT_IDENTIFIER.
+     BUG: Remove duplicate inclusion of wrapping submodules.
+     COMP: Do not use C++ style comments for Doxygen cond.
+     BUG: Fix detection of the gold linker.
+     BUG: Update Python package installation locations.
+     ENH: Bump CMakeLists.txt version to 4.8.2.
+     ENH: Change BUILD_EXAMPLES default to OFF.
+     BUG: Use 'from itk import ITKCommon' in module2module test.
+     COMP: Link to VTK Python when built with Kits support.
+     BUG: Install itk_minc2.h header.
+     COMP: ITKIOMINC has a public dependency on ITKIOImageBase.
+</pre>
+<p>Michka Popoff (9):
+</p>
+<pre>     ENH: Update to swig 3.0.7
+     ENH: Do not link against specific Python library on OS X
+     COMP: Fix wrapping warnings when building with ITK_WRAP_IMAGE_DIMS=2
+     COMP: Add missing wrapping for TransformBase
+     COMP: Use ITK's pygccxml by correctly setting up the sys.path
+     COMP: Disable incompatible modules when using Python 3 wrapping
+     COMP: Move MovingHistogramImageFilterBase wrapping to ImageFilterBase module
+     COMP: Disable incompatible modules when using Python 3 wrapping
+     ENH: Allow operations on Indexes and Offsets in Python
+</pre>
+<p>Mikhail Isakov (1):
+</p>
+<pre>     BUG: DiffusionTensor3DReconstruction segfault if no baseline image
+</pre>
+<p>Nick Tustison (5):
+</p>
+<pre>     BUG:  Set a default b-spline epsilon.
+     ENH: Adding testing for closed loop.
+     BUG:  Updating B-spline classes with the same epsilon strategy.
+     PERF:  Switch vnl_vectors for fixed arrays.
+     ENH:  Point-set registration with time-varying B-spline.
+</pre>
+<p>Olivier Commowick (3):
+</p>
+<pre>     BUG: Correct discrepancy in tridiagonal reduction wrt VNL eigen system
+     BUG: Correct under/overflows in vnl_math_hypot (taken from pythag from V3P)
+     BUG: Switch eigenvalues computation to double
+</pre>
+<p>Pablo Hernandez-Cerdan (2):
+</p>
+<pre>     ENH: Help class for itkFlatStructuringElement with constructor from images.
+     COMP: Fix test errors and warnings in FlatStructuringElement.
+</pre>
+<p>Seun Odutola (1):
+</p>
+<pre>     COMP: Fixed name clash with Apple header (check Macro), renamed check to Check
+</pre>
+<p>Shawn Waldon (1):
+</p>
+<pre>     COMP: Set target OS X version in environment for tools using compiler
+</pre>
+<p>Simon Alexander (1):
+</p>
+<pre>     BUG: incorrect closest point computation
+</pre>
+<p>Tobias Wood (2):
+</p>
+<pre>     BUG: LBFGSB was printing messages even with debug switched off.
+     BUG: Removed an unguarded print statement.
+</pre>
+<p>Vladimir S. FONOV (9):
+</p>
+<pre>     BUG: Missing ITKIOMINC_EXPORT on __Private()
+     COMP: Changing the order of HDF5 library components
+     COMP: Splitting up IOMINC module into two parts: MINC and Transform
+     STYLE: updated comments to properly reference LIBMINC
+     ENH: Add script to merge upstream MINC as a subtree
+     MINC 2015-07-23 (c033d431)
+     COMP: Update MINC CMake code
+     MINC 2015-08-18 (6d7e3ba8)
+     MINC 2015-09-13 (95cd5374)
+</pre>
+<p>Xiaoxiao Liu (1):
+</p>
+<pre>     DOC: update email address for xiaoxiao.
+</pre>
+<p>Zach Williamson (10):
+</p>
+<pre>     BUG: Use correct libraries for ImageFusion tests
+     ENH: Consolidate Library Dependencies
+     COMP: Add a missing link to Review module
+     COMP: Use correct linking macro in DCMTK
+     BUG: Use correct libraries for TestKernel tests
+     COMP: Fix inconsistant naming of GPUPDEDeformableRegistration
+     ENH: Use new linking system macros
+     PERF: Avoid searching private dependencies for include directories
+     COMP: Recover missing dependencies
+     ENH: use new linking macros in Filtering module
+</pre>
+<p><br />
+ITK Sphinx Examples Changelog
+</p>
+<hr />
+<p>Brad King (1):
+</p>
+<pre>     ENH: Remove use of itksys_ios::*
+</pre>
+<p>Dženan Zukić (1):
+</p>
+<pre>     ENH: Avoid warning window when the directory does not contain any DICOM series
+</pre>
+<p>Hans Johnson (1):
+</p>
+<pre>     BUG: FixedParameters different from Parameters
+</pre>
+<p>Matt McCormick (38):
+</p>
+<pre>     ENH: Bump ITK ExternalProject to v4.8.0.
+     COMP: Do not try to add html files twice to the tarballs.
+     BUG: Turn off ITK modules when superbuild options are disabled.
+     DOC: Consistently refer to source directory in length warning.
+     BUG: Use os.path.sep for CreateNewExample.py on both Unix and Windows.
+     ENH: Use a StringIO for the headers content in CreateNewExample.
+     ENH: Make CreateNewExample compatible with Python 3.
+     ENH: Enable BridgeNumPy in the Superbuild when NumPy available.
+     ENH: Silence gitstats execution.
+     ENH: Add sphinx-bootstrap-theme submodule.
+     ENH: Update ITK ExternalProject to 4.9rc02.
+     COMP: Support OpenCV 3.0.0.
+     BUG: Pass the Sphinx output components in the superbuild.
+     BUG: Work around epub output filename irregularity.
+     ENH: Use side-by-side images in Binary Mathematical Morphology.
+     ENH: Use all caps in Binary Mathematical Morphology examples.
+     ENH: Move the Download button location.
+     BUG: Rename CreateAnApplyCustomColormap -&gt; CreateACustomColorMap.
+     ENH: Use note directive in CreateACustomColorMap.
+     ENH: Move ITkExampleMacros.cmake into the CMake/ directory.
+     STYLE: Use more standard spacing in ITKExamplesMacros.cmake.
+     DOC: Improve TryCatchException result rendering and synopsis.
+     DOC: Update the Download page image for the bootstrap layout.
+     ENH: Use presence of Code.py to create Python baseline comparison tests.
+     DOC: Fix ComputeTimeBetweenPoints output rendering.
+     ENH: Add Python version of ComputeTimeBetweenPoints.
+     ENH: Demonstrate Report() in ComputeTimeBetweenPoints.
+     ENH: Add Python superbuild.
+     COMP: Fix type of Sphinx output variables.
+     BUG: Ensure that the JavaScript files get copied to HTML output.
+     COMP: Fix ConceptCheckingIsFloatingPoint index entry.
+     BUG: Avoid system installation without superbuild Python.
+     COMP: Find ITKExamplesMacros.cmake when build as a Remote Module.
+     COMP: Support OpenCV 3 in ConvertAnITKGrayScaleImageToCVMat.
+     COMP: Support double typed FixedParameters in ITK 4.9.0
+     BUG: Do not run Python comparison tests without ITK_WRAP_PYTHON.
+     BUG: Correct CreateACustomColorMapTestPython test name.
+     ENH: Bump ITK ExternalProject to 4.9.0.
+</pre>
+<p>Michka Popoff (4):
+</p>
+<pre>     ENH: Add ImageRegistration1 example
+     COMP: Fix images in 2D Translation Registration
+     ENH: Add AddOffsetToIndex Python example
+     ENH: Add missing licence headers and hide headers in doc
+</pre>
+<p><br />
+ITK Software Guide Changelog
+</p>
+<hr />
+<p>Matt McCormick (9):
+</p>
+<pre>     COMP: Address missing bracket and backslash escapes.
+     BUG: Fix backslash specification in Windows PATH.
+     DOC: Recommend the Release build configuration when wrapping.
+     DOC: Document .GetTypes and Python type conversion.
+     DOC: Add chapter on how to create a module.
+     COMP: Do not set PYTHONCXXPARSER with find_program.
+     ENH: Update ITK ExternalProject to v4.9rc01.
+     DOC: Corrections to formatting of wrapping content.
+     ENH: Bump ITK ExternalProject version to v4.9.0.
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20220819042657
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.012 seconds
+Real time usage: 0.012 seconds
+Preprocessor visited node count: 1/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 1/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:12692-0!canonical and timestamp 20220819042657 and revision id 58894. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4.9_Changed_From_Previous&amp;oldid=58894">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4.9_Changed_From_Previous&amp;oldid=58894</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4.9_Changed_From_Previous" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4.9_Changed_From_Previous&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4.9_Changed_From_Previous">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4.9_Changed_From_Previous&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4.9_Changed_From_Previous&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4.9_Changed_From_Previous" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4.9_Changed_From_Previous&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4.9+Changed+From+Previous" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4.9_Changed_From_Previous" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4.9_Changed_From_Previous" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4.9_Changed_From_Previous&amp;oldid=58894" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4.9_Changed_From_Previous&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 2 February 2016, at 21:10.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.012","walltime":"0.012","ppvisitednodes":{"value":1,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220819042657","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":95});});</script>
+</body></html>

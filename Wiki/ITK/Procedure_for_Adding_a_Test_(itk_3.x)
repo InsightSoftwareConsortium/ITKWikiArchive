@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Procedure for Adding a Test (itk 3.x) - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"7fae4e6e32bc88af391ad233","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Procedure_for_Adding_a_Test_(itk_3.x)","wgTitle":"ITK/Procedure for Adding a Test (itk 3.x)","wgCurRevisionId":62981,"wgRevisionId":62981,"wgArticleId":8746,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia shortcut box first parameter needs fixing","Inactive project pages"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Procedure_for_Adding_a_Test_(itk_3.x)","wgRelevantArticleId":8746,"wgIsProbablyEditable":!1,
+"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Procedure_for_Adding_a_Test_itk_3_x rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Procedure for Adding a Test (itk 3.x)</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><table class="metadata plainlinks ambox ambox-notice" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/30px-Historical.svg.png" decoding="async" width="30" height="38" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/45px-Historical.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/60px-Historical.svg.png 2x" /></div></td><td class="mbox-text"><span class="mbox-text-span">{{#switch:|User|User talk=<b>This user {{#ifeq:ITK|ITK/Procedure for Adding a Test (itk 3.x)||sub}}page is currently inactive and is retained for historical reference.</b> {{#if: |It was last updated {{{last}}}.}}<br />If you want to revive discussion regarding the subject, you might try contacting <a href="/Wiki/index.php?title=User_talk:ITK&amp;action=edit&amp;redlink=1" class="new" title="User talk:ITK (page does not exist)">the user in question</a> or seeking broader input via a forum such as the <a href="http://www.wikipedia.org/wiki/Village_pump_(proposals)" class="extiw" title="wikipedia:Village pump (proposals)">village pump</a>.|#default={{#switch:{{{type}}}|policy=<b>This former <a href="http://www.wikipedia.org/wiki/Policies_and_guidelines" class="extiw" title="wikipedia:Policies and guidelines">Wikipedia policy</a>, no longer backed by community consensus, is retained for historical reference.</b>|guideline=<b>This former <a href="http://www.wikipedia.org/wiki/Policies_and_guidelines" class="extiw" title="wikipedia:Policies and guidelines">Wikipedia guideline</a>, no longer backed by community consensus, is retained for historical reference.</b>|
+<p>|section=<b>This section is currently out-of-date and may contain errors but is retained for historical reference. </b>{{#if: || For peer-reviewed, authoritative guidance on ITK, see <a rel="nofollow" class="external text" href="https://itk.org/ITKSoftwareGuide/html/">The ITK Software Guide.</a>. Additional guidance can be found via the <a rel="nofollow" class="external text" href="https://itk.org/ITK/help/mailing.html">mailing lists</a>.}}
+</p>
+|woundup=<b>This page has been closed down by <a href="http://www.wikipedia.org/wiki/Consensus" class="extiw" title="wikipedia:Consensus">community consensus</a>, and is retained only for historical reference.</b> For peer-reviewed, authoritative guidance on ITK, see <a rel="nofollow" class="external text" href="https://itk.org/ITKSoftwareGuide/html/">The ITK Software Guide.</a> If you wish to restart discussion on the status of this page, seek community input via the <a rel="nofollow" class="external text" href="https://itk.org/ITK/help/mailing.html">mailing lists</a>].|#default=<b>This section is currently out-of-date and may contain errors but is retained for historical reference. </b>{{#if: || For peer-reviewed, authoritative guidance on ITK, see <a rel="nofollow" class="external text" href="https://itk.org/ITKSoftwareGuide/html/">The ITK Software Guide.</a> Additional guidance can be found via the <a rel="nofollow" class="external text" href="https://discourse.itk.org">ITK Discourse</a>.}}}} {{#if: |{{{comment}}}|}} {{#if: |It was last updated {{{last}}}.}}  }}</span></td><td class="mbox-imageright"><div style="width:52px">{{#if: | <div role="note" class="shortcutbox plainlist noprint" style="float: right; border: 1px solid #aaa; background: #fff; margin: 0; padding: 0.3em; text-align: center; line-height: 1.4em; font-weight: bold; font-size: smaller;">{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if: |<span id=""></span> }}<a href="http://www.wikipedia.org/wiki/Shortcut" class="extiw" title="wikipedia:Shortcut">Shortcut{{#if:|s}}</a>:<ul>{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if: |<li>[[ ]]</li>}}</ul>
+</div>{{#if:
+<p>| {{#ifexist:
+</p>
+<pre> | 
+ |
+ }} 
+</pre>
+}} }}</div></td></tr></tbody></table><p>{{#switch:|User|User talk=|#default={{#ifeq:{{{category}}}|no||}}}}
+</p><p><br />
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#How_to_Add_a_Test_to_ITK"><span class="tocnumber">1</span> <span class="toctext">How to Add a Test to ITK</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Write_the_test"><span class="tocnumber">1.1</span> <span class="toctext">Write the test</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Naming_the_test_file"><span class="tocnumber">1.1.1</span> <span class="toctext">Naming the test file</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Writing_the_content"><span class="tocnumber">1.1.2</span> <span class="toctext">Writing the content</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#Test_Drivers"><span class="tocnumber">1.2</span> <span class="toctext">Test Drivers</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#How_to_Add_a_Test"><span class="tocnumber">1.3</span> <span class="toctext">How to Add a Test</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Add_the_Test_to_the_List_in_the_CMakelists.txt_file"><span class="tocnumber">1.3.1</span> <span class="toctext">Add the Test to the List in the CMakelists.txt file</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#ADD_TEST"><span class="tocnumber">1.3.2</span> <span class="toctext">ADD_TEST</span></a>
+<ul>
+<li class="toclevel-4 tocsection-9"><a href="#Minimum_Case"><span class="tocnumber">1.3.2.1</span> <span class="toctext">Minimum Case</span></a></li>
+<li class="toclevel-4 tocsection-10"><a href="#Passing_arguments"><span class="tocnumber">1.3.2.2</span> <span class="toctext">Passing arguments</span></a></li>
+<li class="toclevel-4 tocsection-11"><a href="#Adding_regression_Testing"><span class="tocnumber">1.3.2.3</span> <span class="toctext">Adding regression Testing</span></a></li>
+<li class="toclevel-4 tocsection-12"><a href="#Tests_that_output_temporary_data"><span class="tocnumber">1.3.2.4</span> <span class="toctext">Tests that output temporary data</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="#Run_the_Test_locally"><span class="tocnumber">1.4</span> <span class="toctext">Run the Test locally</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Submit_an_Experimental_build"><span class="tocnumber">1.5</span> <span class="toctext">Submit an Experimental build</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Adding_testing_baseline_data"><span class="tocnumber">1.6</span> <span class="toctext">Adding testing baseline data</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<p>Appropriate testing is the most important aspects of writing software.
+</p>
+<h1><span class="mw-headline" id="How_to_Add_a_Test_to_ITK">How to Add a Test to ITK</span></h1>
+<p><b>NOTE:</b> ITKv4 has a new simpler procedure for adding tests. ITKv3's procedure is described <a href="/Wiki/ITKv3_Procedure_for_Adding_a_Test" title="ITKv3 Procedure for Adding a Test">here</a>.
+</p><p>The general procedure involves the following steps
+</p>
+<ul><li>Write the test</li>
+<li>Add the Test to the <i>CMakeLists.txt</i> file</li>
+<li>Run the Test locally</li>
+<li>Submit an Experimental build</li>
+<li>Commit the Test</li></ul>
+<h2><span class="mw-headline" id="Write_the_test">Write the test</span></h2>
+<h3><span class="mw-headline" id="Naming_the_test_file">Naming the test file</span></h3>
+<p>Unit tests should be named with the name of the class they are testing and the word Test at the end.
+</p><p>For example:
+</p>
+<ul><li>class itkBMPImageIO will have a test called itkBMPImageIOTest.cxx</li>
+<li>class itkIndex will have a test called itkIndexTest.cxx</li></ul>
+<p>Sometimes it may be necessary to have multiple tests, in which case a number will be added after the "Test" string of the name.
+</p><p>For example:
+</p>
+<ul><li>itkBMPImageIOTest.cxx</li>
+<li>itkBMPImageIOTest2.cxx</li>
+<li>itkBMPImageIOTest3.cxx</li></ul>
+<p>Note that we skip the "1" entry. It is implicitly the first test.
+</p>
+<h3><span class="mw-headline" id="Writing_the_content">Writing the content</span></h3>
+<p>The test file must contain a function that has the <b>EXACT</b> same
+name as the file (without the extension).
+</p><p>For example, the file itkBMPImageIOTest.cxx must contain a function
+</p>
+<pre>    int itkBMPImageIOTest( int argc, char * argv [] )
+</pre>
+<p>The function must have a return value, and must be one of the
+following two options:
+</p>
+<ul><li>EXIT_FAILURE</li>
+<li>EXIT_SUCCESS</li></ul>
+<p><b>NOTE:</b> Input for tests should reside in <i>Testing/Data/Input</i> or
+<i>Examples/Data</i>. Tests should not depend on the output of another
+test. All tests are not necessarily run in the same session. So each
+test should be able to run with a clean Testing/Temporary directory.
+</p>
+<h2><span class="mw-headline" id="Test_Drivers">Test Drivers</span></h2>
+<p>ITK uses test drivers to manage the very large numbers of unit test. A
+test driver aggregates many tests into a single executable by
+registering all of them as functions.
+</p><p>Prior to ITKv4, test drivers resided in the source tree and it was the
+responsibility of the developer to maintain these files. ITKv4 uses
+the CMake test driver generator. The generated test driver is created
+by CMake in the binary tree of the test directory.
+</p><p>As a general guideline, there is one Test driver per major
+directory. The test driver is named after the directory that it is
+testing.
+</p><p>For example, the classes in the directory
+</p>
+<pre>   Insight/Code/Algorithms
+</pre>
+<p>are tested by files in the directory
+</p>
+<pre>   Insight/Testing/Code/Algorithms
+</pre>
+<p>and will use a test driver file called
+</p>
+<pre>   AlgorithmsCxxTests.cxx
+</pre>
+<h2><span class="mw-headline" id="How_to_Add_a_Test">How to Add a Test</span></h2>
+<p><b>NOTE: This procedure has changed since ITKv3.</b>
+</p>
+<h3><span class="mw-headline" id="Add_the_Test_to_the_List_in_the_CMakelists.txt_file">Add the Test to the List in the CMakelists.txt file</span></h3>
+<p>Tests are added by listing them in the CMakeLists.txt file of the Testing/Code/KIT directory. Each Testing CMakeLists.txt file follows a convention.
+</p><p>For example, the CMakeLists.txt file in Testing/Code/BasicFilters has this structure:
+</p>
+<pre>set(KIT BasicFilters)
+set(KIT_LIBS ITKIO ITKNumeris ITKStatistics)
+</pre>
+<p>Add new tests source files to this list. 
+</p>
+<pre>set(KitTests
+  itkAbsImageFilterAndAdaptorTest
+  itkAbsoluteValueDifferenceImageFilterTest
+...
+  itkZeroCrossingImageFilterTest
+)
+</pre>
+<p>The macro
+</p>
+<pre>CreateTestDriver(${KIT} "${KIT_LIBS}" "${KitTests}" TestDriver)
+</pre>
+<p>generates the C++ code for this test driver and place it in the binary directory for the tests (in this example, ITK_BINARY_DIR/Testing/Code/BasicFilters/BasicFiltersCxxTests.cxx)
+</p>
+<h3><span class="mw-headline" id="ADD_TEST">ADD_TEST</span></h3>
+<h4><span class="mw-headline" id="Minimum_Case">Minimum Case</span></h4>
+<p>Add a line like the following
+</p>
+<pre> ADD_TEST(itkBMPImageIOTest5
+    ${TestDriver} 
+    itkBMPImageIOTest2 
+    )
+</pre>
+<p>where
+</p>
+<ul><li>itkBMPImageIOTest5 is a symbolic name for the tests. This is the name that ctest will use, and the one that will appear in a Dashboard</li>
+<li>${TestDriver} is the CMake variable containing the executable for that directory.</li>
+<li>itkBMPImageIOTest2 is the name of the test itself, and it must match the test filename and the name of the function inside the test file.</li></ul>
+<h4><span class="mw-headline" id="Passing_arguments">Passing arguments</span></h4>
+<p>Some tests may require command line arguments. In that case, these arguments can be added after the name of the tests function. For example
+</p>
+<pre> ADD_TEST(itkBMPImageIOTest5
+    ${TestDriver} 
+    itkBMPImageIOTest2 
+    ${ITK_DATA_ROOT}/Input/image_color.bmp
+    ${ITK_TEST_OUTPUT_DIR}/image_color.bmp)
+    )
+</pre>
+<p>will pass two BMP images as arguments to the test.
+</p>
+<h4><span class="mw-headline" id="Adding_regression_Testing">Adding regression Testing</span></h4>
+<p>Some test may produce images as output, in which case we should add regression testing instructions that make possible to compare the test output against a baseline image.
+</p><p>A typical case will look like:
+</p>
+<pre>ADD_TEST(itkBMPImageIOTest5
+    ${TestDriver} 
+    --compare ${ITK_DATA_ROOT}/Baseline/IO/image_color.bmp
+              ${ITK_TEST_OUTPUT_DIR}/image_color.bmp
+    itkBMPImageIOTest2 
+    ${ITK_DATA_ROOT}/Input/image_color.bmp
+    ${ITK_TEST_OUTPUT_DIR}/image_color.bmp)
+    )
+</pre>
+<p>Note that the "--compare" string goes just after the name of the executable, and it is followed by the filename of the baseline image and the filename of the test output.
+</p><p>Since different platforms may produce slightly different, but still acceptable, results; the regression testing system allows users to define a tolerance for the comparison. Three different tolerances are available
+</p>
+<ul><li>--compareIntensityTolerance</li>
+<li>--compareRadiusTolerance</li>
+<li>--compareNumberOfPixelsTolerance</li></ul>
+<p><br />
+<b>compareIntensityTolerance</b> sets the intensity difference after which two pixels are considered to be different. For example, if this tolerance is set to 5, then a pixel with value 123 is considered to be the same as pixels with values in the range [118,128].
+</p><p><b>compareNumberOfPixelsTolerance</b> defines a Manhattan-type neighborhood around a pixel. When comparing pixel A from one image to pixel B in another image, all pixels in the neighborhood of pixel B are compared against pixel A, The most similar one is selected and then their intendity difference is tested against <b>compareIntensityTolerance</b>. If the difference is larger, then the pixel "FAILS" the comparison.
+</p><p><b>compareNumberOfPixelsTolerance</b> defines how many pixels can be accepted to fail, and still consider the two images to be the same. If more than <b>compareNumberOfPixelsTolerance</b> failed the comparison, then the test will <b>FAIL</b> and a difference image between the test output and the baseline will be produced and posted in the Dashboard.
+</p><p>WARNING: Tolerances must be used sparingly. Before adding a tolerance, you must exhaust the options for making sure that there is not a bug in the test, or a bug in the class, that is being revealed by the test failure in that platform. Once you demonstrate that a tolerance is needed, add just enough of a tolerance to make the test pass. Do not over-relax the test, because then it will lose its capacity for detecting real failures in the future, and it will end up providing a false sense of security.
+</p><p>A test with regression verification and tolerances will look like
+</p><p><br />
+</p>
+<pre>ADD_TEST(itkBMPImageIOTest5
+    ${IO_TESTS} 
+    --compare ${ITK_DATA_ROOT}/Baseline/IO/image_color.bmp
+              ${ITK_TEST_OUTPUT_DIR}/image_color.bmp
+    --compareIntensityTolerance 5
+    --compareRadiusTolerance 1
+    --compareNumberOfPixelsTolerance 25
+    itkBMPImageIOTest2 
+    ${ITK_DATA_ROOT}/Input/image_color.bmp
+    ${ITK_TEST_OUTPUT_DIR}/image_color.bmp)
+    )
+</pre>
+<p>This test will consider two pixels to be different only if their intensity values differ by more than <b>5</b> units. It will compare a pixels with the 3x3 neighborhood of the other pixel (in 2D), and it will tolerate 25 pixel failures. Pixel failures above that value it will result in the test failing, and a difference image being posted to the Dashboard.
+</p>
+<h4><span class="mw-headline" id="Tests_that_output_temporary_data">Tests that output temporary data</span></h4>
+<p>Often tests will produce an image that will be compared to a baseline using the --compare method described above. In order for the image to end up in ${ITK_TEST_OUTPUT_DIR}, you must pass either that directory or the full file name of the output file to the test. As an example, say that itkMyFilterTest produces an image called MyFilterTest.png that should be compared to a baseline image of the same name. The below statement, along with using argv[1] as the output file name in the test, would cause the output image to be produced in the correct directory to be compared.
+</p>
+<pre>ADD_TEST(itkMyFilterTest
+    ${TestDriver} 
+    --compare ${ITK_DATA_ROOT}/Baseline/Filtering/MyFilterTest.png
+              ${ITK_TEST_OUTPUT_DIR}/MyFilterTest.png
+    itkMyFilterTest
+    ${ITK_TEST_OUTPUT_DIR}/MyFilterTest.png)
+    )
+</pre>
+<h2><span class="mw-headline" id="Run_the_Test_locally">Run the Test locally</span></h2>
+<p>Rerun CMake on your project in order to include the new test in the project configuration of your native build system.
+</p><p>Run the test by calling
+</p>
+<pre>  ctest -V -R TestName
+</pre>
+<p>Where "TestName" is a regular expression that identifies the test or tests that you want to run.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Submit_an_Experimental_build">Submit an Experimental build</span></h2>
+<p>You can do this by calling
+</p>
+<pre>   ctest -D Experimental
+</pre>
+<p>or
+</p>
+<pre>   make Experimental
+</pre>
+<p>or in Windows, Visual Studio, by selecting the Experimental project and invoking "Build" on int.
+</p>
+<h2><span class="mw-headline" id="Adding_testing_baseline_data">Adding testing baseline data</span></h2>
+<p>Please see <a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/ITK/Git/Develop/Data">this page</a> for instructions on adding baseline images.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20220812141359
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.066 seconds
+Real time usage: 0.795 seconds
+Preprocessor visited node count: 153/1000000
+Post‐expand include size: 9864/2097152 bytes
+Template argument size: 4/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+Lua time usage: 0.030/7 seconds
+Lua virtual size: 5324800/52428800 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   78.724      1 Template:Historical
+100.00%   78.724      1 -total
+ 96.57%   76.027      1 Template:Mbox
+  4.20%    3.306      1 Template:Ombox/shortcut
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8746-0!canonical and timestamp 20220812141358 and revision id 62981. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Procedure_for_Adding_a_Test_(itk_3.x)&amp;oldid=62981">https://public.kitware.com/Wiki/index.php?title=ITK/Procedure_for_Adding_a_Test_(itk_3.x)&amp;oldid=62981</a>"</div></div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/Wiki/index.php?title=Category:Wikipedia_shortcut_box_first_parameter_needs_fixing&amp;action=edit&amp;redlink=1" class="new" title="Category:Wikipedia shortcut box first parameter needs fixing (page does not exist)">Wikipedia shortcut box first parameter needs fixing</a></li><li><a href="/Wiki/index.php?title=Category:Inactive_project_pages&amp;action=edit&amp;redlink=1" class="new" title="Category:Inactive project pages (page does not exist)">Inactive project pages</a></li></ul></div></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Procedure_for_Adding_a_Test_(itk_3.x)" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Procedure_for_Adding_a_Test_(itk_3.x)&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Procedure_for_Adding_a_Test_(itk_3.x)">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Procedure_for_Adding_a_Test_(itk_3.x)&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Procedure_for_Adding_a_Test_(itk_3.x)&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Procedure_for_Adding_a_Test_(itk_3.x)" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Procedure_for_Adding_a_Test_(itk_3.x)&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FProcedure+for+Adding+a+Test+%28itk+3.x%29" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Procedure_for_Adding_a_Test_(itk_3.x)" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Procedure_for_Adding_a_Test_(itk_3.x)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Procedure_for_Adding_a_Test_(itk_3.x)&amp;oldid=62981" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Procedure_for_Adding_a_Test_(itk_3.x)&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 28 January 2019, at 18:47.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.066","walltime":"0.795","ppvisitednodes":{"value":153,"limit":1000000},"postexpandincludesize":{"value":9864,"limit":2097152},"templateargumentsize":{"value":4,"limit":2097152},"expansiondepth":{"value":8,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%   78.724      1 Template:Historical","100.00%   78.724      1 -total"," 96.57%   76.027      1 Template:Mbox","  4.20%    3.306      1 Template:Ombox/shortcut"]},"scribunto":{"limitreport-timeusage":{"value":"0.030","limit":"7"},"limitreport-virtmemusage":{"value":5324800,"limit":52428800},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20220812141359","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":70});});</script>
+</body></html>

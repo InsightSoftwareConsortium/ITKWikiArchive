@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter","wgTitle":"ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter","wgCurRevisionId":50963,"wgRevisionId":50963,"wgArticleId":9391,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter",
+"wgRelevantArticleId":9391,"wgRequestId":"fbd24796ab49425b657182d0","wgCSPNonce":!1,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.monobook.mobile"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<!--[if lt IE 9]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/screen-desktop.css?74a6a" media="screen"/><![endif]--><!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE60Fixes.css?1208f" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.34.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://itk.org/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/Wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Examples_WishList_LevelSets_SignedDanielssonDistanceMapImageFilter rootpage-ITK skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From KitwarePublic</div><div id="contentSub" lang="en" dir="ltr"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Examples" title="ITK/Examples">Examples</a></span></div><div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#SignedDanielssonDistanceMapImageFilter.cxx"><span class="tocnumber">1</span> <span class="toctext">SignedDanielssonDistanceMapImageFilter.cxx</span></a></li>
+<li class="toclevel-1"><a href="#CMakeLists.txt"><span class="tocnumber">2</span> <span class="toctext">CMakeLists.txt</span></a></li>
+<li class="toclevel-1"><a href="#Download_and_Build_SignedDanielssonDistanceMapImageFilter"><span class="tocnumber">3</span> <span class="toctext">Download and Build SignedDanielssonDistanceMapImageFilter</span></a></li>
+<li class="toclevel-1"><a href="#Building_All_of_the_Examples"><span class="tocnumber">4</span> <span class="toctext">Building All of the Examples</span></a></li>
+<li class="toclevel-1"><a href="#ItkVtkGlue"><span class="tocnumber">5</span> <span class="toctext">ItkVtkGlue</span></a>
+<ul>
+<li class="toclevel-2"><a href="#ITK_.3E.3D_4"><span class="tocnumber">5.1</span> <span class="toctext">ITK &gt;= 4</span></a></li>
+<li class="toclevel-2"><a href="#ITK_.3C_4"><span class="tocnumber">5.2</span> <span class="toctext">ITK &lt; 4</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="SignedDanielssonDistanceMapImageFilter.cxx">SignedDanielssonDistanceMapImageFilter.cxx</span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;itkImage.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;itkImageFileWriter.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;itkBinomialBlurImageFilter.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;itkRescaleIntensityImageFilter.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;itkSignedDanielssonDistanceMapImageFilter.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;itkContourExtractor2DImageFilter.h&quot;</span><span class="cp"></span>
+
+<span class="k">typedef</span> <span class="n">itk</span><span class="o">::</span><span class="n">Image</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span>  <span class="n">UnsignedCharImageType</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">itk</span><span class="o">::</span><span class="n">Image</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span>  <span class="n">FloatImageType</span><span class="p">;</span>
+ 
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">CreateImage</span><span class="p">(</span><span class="n">UnsignedCharImageType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">image</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+  <span class="n">UnsignedCharImageType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">image</span> <span class="o">=</span> <span class="n">UnsignedCharImageType</span><span class="o">::</span><span class="n">New</span><span class="p">();</span>
+  <span class="n">CreateImage</span><span class="p">(</span><span class="n">image</span><span class="p">);</span>
+  
+  <span class="k">typedef</span>  <span class="n">itk</span><span class="o">::</span><span class="n">SignedDanielssonDistanceMapImageFilter</span><span class="o">&lt;</span> <span class="n">UnsignedCharImageType</span><span class="p">,</span> <span class="n">FloatImageType</span>  <span class="o">&gt;</span> <span class="n">SignedDanielssonDistanceMapImageFilterType</span><span class="p">;</span>
+  <span class="n">SignedDanielssonDistanceMapImageFilterType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">signedDanielssonDistanceMapImageFilter</span> <span class="o">=</span> <span class="n">SignedDanielssonDistanceMapImageFilterType</span><span class="o">::</span><span class="n">New</span><span class="p">();</span>
+  <span class="n">signedDanielssonDistanceMapImageFilter</span><span class="o">-&gt;</span><span class="n">SetInput</span><span class="p">(</span><span class="n">image</span><span class="p">);</span>
+  <span class="n">signedDanielssonDistanceMapImageFilter</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">();</span>
+
+  <span class="p">{</span>
+  <span class="k">typedef</span> <span class="n">itk</span><span class="o">::</span><span class="n">RescaleIntensityImageFilter</span><span class="o">&lt;</span> <span class="n">FloatImageType</span><span class="p">,</span> <span class="n">UnsignedCharImageType</span> <span class="o">&gt;</span> <span class="n">RescaleFilterType</span><span class="p">;</span>
+  <span class="n">RescaleFilterType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">rescaleFilter</span> <span class="o">=</span> <span class="n">RescaleFilterType</span><span class="o">::</span><span class="n">New</span><span class="p">();</span>
+  <span class="n">rescaleFilter</span><span class="o">-&gt;</span><span class="n">SetInput</span><span class="p">(</span><span class="n">signedDanielssonDistanceMapImageFilter</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">());</span>
+  <span class="n">rescaleFilter</span><span class="o">-&gt;</span><span class="n">SetOutputMinimum</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="n">rescaleFilter</span><span class="o">-&gt;</span><span class="n">SetOutputMaximum</span><span class="p">(</span><span class="mi">255</span><span class="p">);</span>
+  <span class="n">rescaleFilter</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">();</span>
+
+  <span class="k">typedef</span>  <span class="n">itk</span><span class="o">::</span><span class="n">ImageFileWriter</span><span class="o">&lt;</span> <span class="n">UnsignedCharImageType</span>  <span class="o">&gt;</span> <span class="n">WriterType</span><span class="p">;</span>
+  <span class="n">WriterType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">writer</span> <span class="o">=</span> <span class="n">WriterType</span><span class="o">::</span><span class="n">New</span><span class="p">();</span>
+  <span class="n">writer</span><span class="o">-&gt;</span><span class="n">SetFileName</span><span class="p">(</span><span class="s">&quot;output.png&quot;</span><span class="p">);</span>
+  <span class="n">writer</span><span class="o">-&gt;</span><span class="n">SetInput</span><span class="p">(</span><span class="n">rescaleFilter</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">());</span>
+  <span class="n">writer</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">();</span>
+  <span class="p">}</span>
+  
+  <span class="k">typedef</span> <span class="n">itk</span><span class="o">::</span><span class="n">ContourExtractor2DImageFilter</span> <span class="o">&lt;</span><span class="n">FloatImageType</span><span class="o">&gt;</span> <span class="n">ContourExtractor2DImageFilterType</span><span class="p">;</span>
+  <span class="n">ContourExtractor2DImageFilterType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">contourExtractor2DImageFilter</span> <span class="o">=</span> <span class="n">ContourExtractor2DImageFilterType</span><span class="o">::</span><span class="n">New</span><span class="p">();</span>
+  <span class="n">contourExtractor2DImageFilter</span><span class="o">-&gt;</span><span class="n">SetInput</span><span class="p">(</span><span class="n">signedDanielssonDistanceMapImageFilter</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">());</span>
+  <span class="n">contourExtractor2DImageFilter</span><span class="o">-&gt;</span><span class="n">SetContourValue</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="n">contourExtractor2DImageFilter</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">();</span>
+  
+  <span class="k">for</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">contourId</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">contourId</span> <span class="o">&lt;</span> <span class="n">contourExtractor2DImageFilter</span><span class="o">-&gt;</span><span class="n">GetNumberOfOutputs</span><span class="p">();</span> <span class="o">++</span><span class="n">contourId</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Contour &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">contourId</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; has &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">contourExtractor2DImageFilter</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">(</span><span class="n">contourId</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">GetVertexList</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; points.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+  
+  <span class="k">return</span> <span class="n">EXIT_SUCCESS</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="kt">void</span> <span class="nf">CreateImage</span><span class="p">(</span><span class="n">UnsignedCharImageType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">image</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="c1">// Create an image</span>
+  <span class="n">itk</span><span class="o">::</span><span class="n">Index</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">&gt;</span> <span class="n">start</span><span class="p">;</span>
+  <span class="n">start</span><span class="p">.</span><span class="n">Fill</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+ 
+  <span class="n">itk</span><span class="o">::</span><span class="n">Size</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">&gt;</span> <span class="n">size</span><span class="p">;</span>
+  <span class="n">size</span><span class="p">.</span><span class="n">Fill</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+ 
+  <span class="n">itk</span><span class="o">::</span><span class="n">ImageRegion</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">&gt;</span> <span class="n">region</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">size</span><span class="p">);</span>
+  <span class="n">image</span><span class="o">-&gt;</span><span class="n">SetRegions</span><span class="p">(</span><span class="n">region</span><span class="p">);</span>
+  <span class="n">image</span><span class="o">-&gt;</span><span class="n">Allocate</span><span class="p">();</span>
+  <span class="n">image</span><span class="o">-&gt;</span><span class="n">FillBuffer</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+ 
+  <span class="cm">/*</span>
+<span class="cm">  // Create a line of white pixels</span>
+<span class="cm">  for(unsigned int i = 40; i &lt; 60; ++i)</span>
+<span class="cm">    {</span>
+<span class="cm">    itk::Index&lt;2&gt; pixel;</span>
+<span class="cm">    pixel.Fill(i);</span>
+<span class="cm">    image-&gt;SetPixel(pixel, 255);</span>
+<span class="cm">    }</span>
+<span class="cm">  */</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="n">itk</span><span class="o">::</span><span class="n">Index</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">&gt;</span> <span class="n">pixel</span><span class="p">;</span>
+    <span class="n">pixel</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span>
+    <span class="n">pixel</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+    <span class="n">image</span><span class="o">-&gt;</span><span class="n">SetPixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+  
+    <span class="n">pixel</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+    <span class="n">pixel</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span>
+    <span class="n">image</span><span class="o">-&gt;</span><span class="n">SetPixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+  
+    <span class="n">pixel</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+    <span class="n">pixel</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
+    <span class="n">image</span><span class="o">-&gt;</span><span class="n">SetPixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+    
+    <span class="n">pixel</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+    <span class="n">pixel</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
+    <span class="n">image</span><span class="o">-&gt;</span><span class="n">SetPixel</span><span class="p">(</span><span class="n">pixel</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
+    <span class="p">}</span>
+
+  <span class="k">typedef</span>  <span class="n">itk</span><span class="o">::</span><span class="n">ImageFileWriter</span><span class="o">&lt;</span> <span class="n">UnsignedCharImageType</span>  <span class="o">&gt;</span> <span class="n">WriterType</span><span class="p">;</span>
+  <span class="n">WriterType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">writer</span> <span class="o">=</span> <span class="n">WriterType</span><span class="o">::</span><span class="n">New</span><span class="p">();</span>
+  <span class="n">writer</span><span class="o">-&gt;</span><span class="n">SetFileName</span><span class="p">(</span><span class="s">&quot;input.png&quot;</span><span class="p">);</span>
+  <span class="n">writer</span><span class="o">-&gt;</span><span class="n">SetInput</span><span class="p">(</span><span class="n">image</span><span class="p">);</span>
+  <span class="n">writer</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.9.5</span><span class="p">)</span>
+
+<span class="nb">project</span><span class="p">(</span><span class="s">SignedDanielssonDistanceMapImageFilter</span><span class="p">)</span>
+
+<span class="nb">find_package</span><span class="p">(</span><span class="s">ITK</span> <span class="s">REQUIRED</span><span class="p">)</span>
+<span class="nb">include</span><span class="p">(</span><span class="o">${</span><span class="nv">ITK_USE_FILE</span><span class="o">}</span><span class="p">)</span>
+<span class="nb">if</span> <span class="p">(</span><span class="s">ITKVtkGlue_LOADED</span><span class="p">)</span>
+  <span class="nb">find_package</span><span class="p">(</span><span class="s">VTK</span> <span class="s">REQUIRED</span><span class="p">)</span>
+  <span class="nb">include</span><span class="p">(</span><span class="o">${</span><span class="nv">VTK_USE_FILE</span><span class="o">}</span><span class="p">)</span>
+<span class="nb">endif</span><span class="p">()</span>
+
+<span class="nb">add_executable</span><span class="p">(</span><span class="s">SignedDanielssonDistanceMapImageFilter</span> <span class="s">MACOSX_BUNDLE</span> <span class="s">SignedDanielssonDistanceMapImageFilter.cxx</span><span class="p">)</span>
+
+<span class="nb">if</span><span class="p">(</span> <span class="s2">&quot;${ITK_VERSION_MAJOR}&quot;</span> <span class="s">LESS</span> <span class="s">4</span> <span class="p">)</span>
+  <span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">SignedDanielssonDistanceMapImageFilter</span> <span class="s">ITKReview</span> <span class="o">${</span><span class="nv">ITK_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
+<span class="nb">else</span><span class="p">(</span> <span class="s2">&quot;${ITK_VERSION_MAJOR}&quot;</span> <span class="s">LESS</span> <span class="s">4</span> <span class="p">)</span>
+  <span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">SignedDanielssonDistanceMapImageFilter</span> <span class="o">${</span><span class="nv">ITK_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
+<span class="nb">endif</span><span class="p">(</span> <span class="s2">&quot;${ITK_VERSION_MAJOR}&quot;</span> <span class="s">LESS</span> <span class="s">4</span> <span class="p">)</span>
+</pre></div>
+<h2><span class="mw-headline" id="Download_and_Build_SignedDanielssonDistanceMapImageFilter">Download and Build SignedDanielssonDistanceMapImageFilter</span></h2>
+<p>Click <a rel="nofollow" class="external text" href="https://github.com/lorensen/ITKWikiExamplesTarballs/raw/master/SignedDanielssonDistanceMapImageFilter.tar">here to download <i>SignedDanielssonDistanceMapImageFilter</i></a> and its <i>CMakeLists.txt</i> file.
+Once the tarball <i>SignedDanielssonDistanceMapImageFilter.tar</i> has been downloaded and extracted,
+</p>
+<pre>cd SignedDanielssonDistanceMapImageFilter/build
+</pre>
+<ul><li>If ITK is installed:</li></ul>
+<pre>cmake ..
+</pre>
+<ul><li>If ITK is not installed but compiled on your system, you will need to specify <b>the path to your ITK build</b>:</li></ul>
+<pre>cmake -DITK_DIR:PATH=<b>/home/me/itk_build</b> ..
+</pre>
+<p>Build the project:
+</p>
+<pre>make
+</pre>
+<p>and run it:
+</p>
+<pre>./SignedDanielssonDistanceMapImageFilter
+</pre>
+<p><b>WINDOWS USERS PLEASE NOTE:</b> Be sure to add the ITK bin directory to your path. This will resolve the ITK dll's at run time.
+</p>
+<h2><span class="mw-headline" id="Building_All_of_the_Examples">Building All of the Examples</span></h2>
+<p>Many of the examples in the ITK Wiki Examples Collection require VTK. You can build all of the the examples by following <a href="/Wiki/ITK/Examples/Instructions/ForUsers#Build_all_of_the_examples" title="ITK/Examples/Instructions/ForUsers">these instructions</a>. If you are a new VTK user, you may want to try the <a href="/Wiki/ITK/Examples/Instructions/ForUsers#Use_the_Superbuild_to_build_a_proper_VTK_and_ITK" title="ITK/Examples/Instructions/ForUsers">Superbuild</a> which will build a proper ITK and VTK.
+</p>
+<h2><span class="mw-headline" id="ItkVtkGlue">ItkVtkGlue</span></h2>
+<h3><span id="ITK_&gt;=_4"></span><span class="mw-headline" id="ITK_.3E.3D_4">ITK &gt;= 4</span></h3>
+<p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
+</p>
+<h3><span id="ITK_&lt;_4"></span><span class="mw-headline" id="ITK_.3C_4">ITK &lt; 4</span></h3>
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20211130223032
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.031 seconds
+Real time usage: 0.286 seconds
+Preprocessor visited node count: 30/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 2145/2097152 bytes
+Template argument size: 418/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 17804/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  129.065      1 Template:ITKCMakeLists
+100.00%  129.065      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9391-0!canonical and timestamp 20211130223032 and revision id 50963
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://itk.org/Wiki/index.php?title=ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;oldid=50963">https://itk.org/Wiki/index.php?title=ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;oldid=50963</a>"</div>
+<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div><!-- end content --><div class="visualClear"></div></div></div><div class="visualClear"></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="/Wiki/index.php?title=ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label"><h3 id="p-cactions-mobile-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main-mobile" class="selected"><a href="/Wiki/ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter" title="Page">Page</a></li><li id="ca-talk-mobile" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;action=edit&amp;redlink=1" rel="discussion" title=" (page does not exist)">Discussion</a></li><li id="ca-more"><a href="#p-cactions">More</a></li><li id="ca-tools"><a href="#p-tb" title="Tools">Tools</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FExamples%2FWishList%2FLevelSets%2FSignedDanielssonDistanceMapImageFilter" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="/Wiki/Main_Page" class="mw-wiki-logo" title="Visit the main page"></a></div><div id="sidebar"><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search KitwarePublic" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>  <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/Wiki/index.php?title=ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/Wiki/index.php?title=ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;oldid=50963" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/Wiki/index.php?title=ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div></div><a href="#sidebar" title="navigation" class="menu-toggle" id="sidebar-toggle"></a><a href="#p-personal" title="user tools" class="menu-toggle" id="p-personal-toggle"></a><a href="#globalWrapper" title="back to top" class="menu-toggle" id="globalWrapper-toggle"></a></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 25 December 2012, at 12:18.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li><li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li></ul></div></div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.031","walltime":"0.286","ppvisitednodes":{"value":30,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":2145,"limit":2097152},"templateargumentsize":{"value":418,"limit":2097152},"expansiondepth":{"value":5,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":17804,"limit":5000000},"timingprofile":["100.00%  129.065      1 Template:ITKCMakeLists","100.00%  129.065      1 -total"]},"cachereport":{"timestamp":"20211130223032","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":299});});</script></body></html>

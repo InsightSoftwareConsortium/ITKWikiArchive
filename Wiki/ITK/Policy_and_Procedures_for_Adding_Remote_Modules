@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Policy and Procedures for Adding Remote Modules - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"402fabd236e95ac8d2ced568","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Policy_and_Procedures_for_Adding_Remote_Modules","wgTitle":"ITK/Policy and Procedures for Adding Remote Modules","wgCurRevisionId":60846,"wgRevisionId":60846,"wgArticleId":10396,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Policy_and_Procedures_for_Adding_Remote_Modules","wgRelevantArticleId":10396,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,
+"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Policy_and_Procedures_for_Adding_Remote_Modules rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Policy and Procedures for Adding Remote Modules</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Remote modules are downloaded at CMake configuration time into the <i>Remote</i> module group, i.e. into the <i>Modules/Remote</i> directory of the repository tree.  A Remote Module can be enabled by setting the target <i>Module_&lt;module name&gt;</i> CMake configuration variable to <i>ON</i> just like other ITK Modules.
+</p>
+<h1><span class="mw-headline" id="Purpose_of_Remote_Modules">Purpose of Remote Modules</span></h1>
+<p>The new modularization resulting from the ITKv4 effort provides a new level of
+organization and extensibility to the toolkit.  A module that follows the
+directory layout and has the required ITK modularization CMake content that is
+placed in one of the Module Groups of the repository will be automatically picked
+up and added to the build.
+</p><p>While individuals or organizations can work on their own private modules and
+optionally make these modules publically available, the listing of Remote modules
+in the main ITK repository has two benefits:
+</p>
+<ol><li>Amalgation of modules prevents the need for module consumers to spend an extended effort searching for algorithm implementations.</li>
+<li>Integration of the Remotes into the repository make it trivial to download the module and automatic fetch it in a build.</li></ol>
+<p>Good candidates for addition to the collection can be
+</p>
+<ul><li>ITK based code that have additional third-party dependencies not bundled with the toolkit.</li>
+<li>New algorithms or implementations seeking greater exposure and adoption.</li>
+<li>Algorithms that hope to eventually be integrated into the toolkit.</li>
+<li>Niche algorithms with limited application.</li>
+<li>Modules in progress that do not yet have the test coverage and cross-platform standards required by the main toolkit.</li></ul>
+<p>In general, the Remote Module system is medium for articles submitted in the Insight Journal to see greater adoption or transition into the toolkit.
+</p>
+<h1><span class="mw-headline" id="Policy_for_Adding_and_Removing_Remote_Modules">Policy for Adding and Removing Remote Modules</span></h1>
+<p>A module can be added to the list of remotes if it satifies the following criteria:
+</p>
+<ul><li>There is an article in an open access journal (such as the Insight Journal) describing the theory behind and usage of the module.</li>
+<li>There is a nightly build against ITK master on the CDash dashboard that builds and passes tests successfully.</li>
+<li>A name and contact email exists for the dashboard build.  The maintainer of the dashboard build does not necessarily need to be the original author of the Insight Journal article.</li>
+<li>The license should be compatible with the rest of the toolkit.  That is, it should be an <a rel="nofollow" class="external text" href="http://opensource.org/licenses">OSI approved license</a> without copyleft or non-commercial restrictions.  Ideally, it should be an Apache 2.0 license assigned to the "Insight Software Consortium" as found in the rest of the toolkit.</li></ul>
+<p>At the beginning of the release candidate phase of a release, maintainers of failing module dashboard builds will be contacted.  If a module's dashboard submission is still failing at the last release candidate tagging, it will be removed before the final release.
+</p><p>Module names must be unique.
+</p><p>At no time in the future should a module in the main repository depend on Remote module.
+</p>
+<h1><span class="mw-headline" id="Procedure_for_Adding_a_Remote_Module">Procedure for Adding a Remote Module</span></h1>
+<ol><li>Publish an open access article describing the module in an online journal like the <a rel="nofollow" class="external text" href="http://insight-journal.org/">Insight Journal</a>.</li>
+<li><a href="/Wiki/ITK/Git/Develop" title="ITK/Git/Develop">Submit a Gerrit patch</a> that adds a file named Modules/Remote/&lt;module name&gt;.remote.cmake.  This file must have the following:
+<ol><li>Dashboard maintainer name and email in the comments.</li>
+<li>A call to the itk_fetch_module CMake function (documented in CMake/ITKModuleRemote.cmake) whose arguments are:
+<ol><li>The name of the remote module; <b>Note that in each &lt;remote module name&gt;.remote.cmake, the first argument of the function itk_fetch_module() is the name of the remote module, and it has to be consistent with the module name defined in the corresponding itk-module.cmake. To better distinguish the remote modules from the internal ITK modules, the names of the remote modules should NOT contain the "ITK" string prefix.</b></li>
+<li>A short description of the module with the handle to the open access article.</li>
+<li>URL's describing the location and version of the code to download. The version should be a specific hash or tag (not "master").</li></ol></li></ol></li></ol>
+<!-- 
+NewPP limit report
+Cached time: 20250116161730
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.005 seconds
+Real time usage: 0.006 seconds
+Preprocessor visited node count: 9/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:10396-0!canonical and timestamp 20250116161730 and revision id 60846. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;oldid=60846">https://public.kitware.com/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;oldid=60846</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FPolicy+and+Procedures+for+Adding+Remote+Modules" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;oldid=60846" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 8 September 2016, at 20:34.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.005","walltime":"0.006","ppvisitednodes":{"value":9,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20250116161730","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":83});});</script>
+</body>
+</html>

@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/MetaIO/Documentation - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d6b89ad9dbdd6af8810246a6","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/MetaIO/Documentation","wgTitle":"ITK/MetaIO/Documentation","wgCurRevisionId":64647,"wgRevisionId":64647,"wgArticleId":2915,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/MetaIO/Documentation","wgRelevantArticleId":2915,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":
+"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_MetaIO_Documentation rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/MetaIO/Documentation</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/MetaIO" title="ITK/MetaIO">MetaIO</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Abstract"><span class="tocnumber">1</span> <span class="toctext">Abstract</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Introduction_and_Installation"><span class="tocnumber">2</span> <span class="toctext">Introduction and Installation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Obtaining_MetaIO"><span class="tocnumber">2.1</span> <span class="toctext">Obtaining MetaIO</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Installing_The_MetaIO_Package"><span class="tocnumber">2.2</span> <span class="toctext">Installing The MetaIO Package</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#ITK_MetaIO"><span class="tocnumber">2.2.1</span> <span class="toctext">ITK MetaIO</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#VTK_MetaIO"><span class="tocnumber">2.2.2</span> <span class="toctext">VTK MetaIO</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Stand_Alone_MetaIO"><span class="tocnumber">2.2.3</span> <span class="toctext">Stand Alone MetaIO</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Quick_Start"><span class="tocnumber">2.3</span> <span class="toctext">Quick Start</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Data_conversion_via_MetaHeaders"><span class="tocnumber">2.3.1</span> <span class="toctext">Data conversion via MetaHeaders</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Using_MetaImageImporter"><span class="tocnumber">2.3.2</span> <span class="toctext">Using MetaImageImporter</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Reading_a_Brick-of-Bytes_(an_N-Dimensional_volume_in_a_single_file)"><span class="tocnumber">2.3.3</span> <span class="toctext">Reading a Brick-of-Bytes (an N-Dimensional volume in a single file)</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Reading_DICOM_and_Other_One-Slice-Per-File_Data_Formats"><span class="tocnumber">2.3.4</span> <span class="toctext">Reading DICOM and Other One-Slice-Per-File Data Formats</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="#MetaIO_Library_Architecture"><span class="tocnumber">2.4</span> <span class="toctext">MetaIO Library Architecture</span></a>
+<ul>
+<li class="toclevel-3 tocsection-14"><a href="#MetaObjects"><span class="tocnumber">2.4.1</span> <span class="toctext">MetaObjects</span></a>
+<ul>
+<li class="toclevel-4 tocsection-15"><a href="#Constructors"><span class="tocnumber">2.4.1.1</span> <span class="toctext">Constructors</span></a></li>
+<li class="toclevel-4 tocsection-16"><a href="#Member_functions"><span class="tocnumber">2.4.1.2</span> <span class="toctext">Member functions</span></a></li>
+<li class="toclevel-4 tocsection-17"><a href="#Field_descriptions"><span class="tocnumber">2.4.1.3</span> <span class="toctext">Field descriptions</span></a></li>
+<li class="toclevel-4 tocsection-18"><a href="#Associated_transformations"><span class="tocnumber">2.4.1.4</span> <span class="toctext">Associated transformations</span></a></li>
+<li class="toclevel-4 tocsection-19"><a href="#Example"><span class="tocnumber">2.4.1.5</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-20"><a href="#Types_of_MetaObjects"><span class="tocnumber">2.5</span> <span class="toctext">Types of MetaObjects</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="#MetaBlob"><span class="tocnumber">2.5.1</span> <span class="toctext">MetaBlob</span></a>
+<ul>
+<li class="toclevel-4 tocsection-22"><a href="#Example_2"><span class="tocnumber">2.5.1.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-23"><a href="#MetaEllipse"><span class="tocnumber">2.5.2</span> <span class="toctext">MetaEllipse</span></a>
+<ul>
+<li class="toclevel-4 tocsection-24"><a href="#Example_3"><span class="tocnumber">2.5.2.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-25"><a href="#MetaGroup"><span class="tocnumber">2.5.3</span> <span class="toctext">MetaGroup</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="#MetaImage"><span class="tocnumber">2.5.4</span> <span class="toctext">MetaImage</span></a>
+<ul>
+<li class="toclevel-4 tocsection-27"><a href="#Constructors_2"><span class="tocnumber">2.5.4.1</span> <span class="toctext">Constructors</span></a></li>
+<li class="toclevel-4 tocsection-28"><a href="#Member_functions_2"><span class="tocnumber">2.5.4.2</span> <span class="toctext">Member functions</span></a></li>
+<li class="toclevel-4 tocsection-29"><a href="#Field_descriptions_2"><span class="tocnumber">2.5.4.3</span> <span class="toctext">Field descriptions</span></a></li>
+<li class="toclevel-4 tocsection-30"><a href="#Example_4"><span class="tocnumber">2.5.4.4</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-31"><a href="#MetaLandmark"><span class="tocnumber">2.5.5</span> <span class="toctext">MetaLandmark</span></a>
+<ul>
+<li class="toclevel-4 tocsection-32"><a href="#Example_5"><span class="tocnumber">2.5.5.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-33"><a href="#MetaLine"><span class="tocnumber">2.5.6</span> <span class="toctext">MetaLine</span></a>
+<ul>
+<li class="toclevel-4 tocsection-34"><a href="#Example_6"><span class="tocnumber">2.5.6.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-35"><a href="#MetaSurface"><span class="tocnumber">2.5.7</span> <span class="toctext">MetaSurface</span></a>
+<ul>
+<li class="toclevel-4 tocsection-36"><a href="#Example_7"><span class="tocnumber">2.5.7.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-37"><a href="#MetaTube"><span class="tocnumber">2.5.8</span> <span class="toctext">MetaTube</span></a>
+<ul>
+<li class="toclevel-4 tocsection-38"><a href="#Example_8"><span class="tocnumber">2.5.8.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-39"><a href="#MetaScene"><span class="tocnumber">2.5.9</span> <span class="toctext">MetaScene</span></a>
+<ul>
+<li class="toclevel-4 tocsection-40"><a href="#Member_functions_3"><span class="tocnumber">2.5.9.1</span> <span class="toctext">Member functions</span></a></li>
+<li class="toclevel-4 tocsection-41"><a href="#Example_9"><span class="tocnumber">2.5.9.2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-4 tocsection-42"><a href="#Output_File_Example"><span class="tocnumber">2.5.9.3</span> <span class="toctext">Output File Example</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-43"><a href="#Spatial_Objects"><span class="tocnumber">2.6</span> <span class="toctext">Spatial Objects</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="#Reference:_Tags_of_MetaImage"><span class="tocnumber">2.7</span> <span class="toctext">Reference: Tags of MetaImage</span></a>
+<ul>
+<li class="toclevel-3 tocsection-45"><a href="#MetaObject_Tags"><span class="tocnumber">2.7.1</span> <span class="toctext">MetaObject Tags</span></a></li>
+<li class="toclevel-3 tocsection-46"><a href="#Tags_Added_by_MetaImage"><span class="tocnumber">2.7.2</span> <span class="toctext">Tags Added by MetaImage</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Abstract">Abstract</span></h1>
+<p>MetaImage is the text-based tagged file format for medical images that resulted. We have now extended that file format to support a variety of objects that occur in medicine such a tubes (for vessels, needles, etc.), blobs (for arbitrary shaped objects), cubes, spheres, etc. The complete library is known at MetaIO.
+</p><p>The central code of MetaImage/MetaIO is quite stable.   MetaImage has been in use for several years by a wide range of research at UNC, Chapel Hill.   New features are occasionally added, but backward compatibility will always be maintained.
+</p>
+<h1><span class="mw-headline" id="Introduction_and_Installation">Introduction and Installation</span></h1>
+<h2><span class="mw-headline" id="Obtaining_MetaIO">Obtaining MetaIO</span></h2>
+<p>The upstream MetaIO Git repository:
+</p>
+<ul><li><a rel="nofollow" class="external free" href="https://github.com/Kitware/MetaIO">https://github.com/Kitware/MetaIO</a></li></ul>
+<p>MetaIO is being distributed with the following packages:
+</p>
+<ul><li>National Library of Medicine’s Insight Toolkit (ITK) for medical image segmentation and registration:
+<ul><li><a rel="nofollow" class="external free" href="http://www.itk.org">http://www.itk.org</a></li></ul></li>
+<li>Kitware's Visualization Toolkit (VTK)
+<ul><li><a rel="nofollow" class="external free" href="http://www.vtk.org">http://www.vtk.org</a></li></ul></li></ul>
+<h2><span class="mw-headline" id="Installing_The_MetaIO_Package">Installing The MetaIO Package</span></h2>
+<p>MetaIO is a hierarchy of C++ classes and functions.   We have yet to find a modern C++ compiler that does not compile MetaIO.   Know compatible compilers include G++ v2.95 and beyond (and probably previous), Microsoft Visual C++ 6.0, Sun’s CC on Solaris 2.6 and beyond, Intel compiler and compilers on other workstations including HPs, SGIs, and Alpha systems.   Please contact us (Stephen R. Aylward, stephen.aylward@kitware.com or Julien Jomier, julien.jomier@kitware.com) if you encounter any incompatibilities between our code and your compiler.
+</p><p>MetaIO should be built as part of the standard ITK and VTK installations.  It is also quite easy to use MetaIO from within these toolkits without using the rest of the toolkit.   
+</p>
+<h3><span class="mw-headline" id="ITK_MetaIO">ITK MetaIO</span></h3>
+<p>The hierarchy of the software in the stand-alone MetaIO package is as follows:
+</p>
+<ul><li>MetaIO/
+<ul><li>doc/</li>
+<li>tests/</li></ul></li></ul>
+<p>The top level contains the source files, the header files, and the CMakeLists.txt file that is used by the CMake program to compile MetaIO. This document and the MetaObjects www pages are in the doc directory. A sequence of simple tests is available in the tests directory.
+</p><p>The hierarchy of the software in the Insight and InsightApplications distributions is as follows:
+</p>
+<ul><li>Insight
+<ul><li>Code/Utilities/MetaIO/
+<ul><li>doc/</li>
+<li>tests/</li></ul></li></ul></li>
+<li>InsightApplications
+<ul><li>MetaImageImporter</li>
+<li>ImageViewer (formerly MetaImageViewer)</li>
+<li>ColorImageViewer (formerly MetaColorImageViewer)</li>
+<li>MetaImageReadWrite</li></ul></li></ul>
+<p>Routines that wrap MetaIO for ITK's image IO object factory are in
+</p>
+<ul><li>Insight/Code/IO/
+<ul><li>itkMetaImageReader, itkMetaImageWriter</li></ul></li></ul>
+<p>Routines that wrap MetaIO for reading and writing ITKS's Spatial Objects (tubes, blobs, ellipses, meshes, etc.) are in
+</p>
+<ul><li>Insight/Code/SpatialObject</li></ul>
+<p>Certain examples, such as the MetaImageViewer, also require FLTK (a cross-platform user interface library available from <a rel="nofollow" class="external free" href="http://fltk.org">http://fltk.org</a>). Install FLTK and then ITK and then InsightApplications to have every MetaIO example built. Numerous other examples and applications in InsightApplications also rely on FLTK.
+</p><p>See the file /Insight/Examples/MetaImageReadWrite for a working example on how to develop a program using MetaImage for IO.
+</p>
+<h3><span class="mw-headline" id="VTK_MetaIO">VTK MetaIO</span></h3>
+<p>The hierarchy of the software in the Visualization toolkit is as follows:
+</p>
+<ul><li>VTK/Utilitites
+<ul><li>vtkmetaio</li></ul></li>
+<li>VTK/IO</li></ul>
+<h3><span class="mw-headline" id="Stand_Alone_MetaIO">Stand Alone MetaIO</span></h3>
+<p>MetaIO can also be compiled outside of these toolkits.  This is left as an exercise to the user (hint: requires the kwsys and zlib libraries).   Instead of a stand-alone installation, we highly recommend using the distribution in ITK - if you build ITK, you get MetaIO for free!
+</p>
+<h2><span class="mw-headline" id="Quick_Start">Quick Start</span></h2>
+<h3><span class="mw-headline" id="Data_conversion_via_MetaHeaders">Data conversion via MetaHeaders</span></h3>
+<p>This section assumes that you have data that you wish to process using an application that reads MetaImages.   This section gives examples on how “convert” your data to the MetaImage format.
+</p><p>For uncompressed data, “conversion” to MetaImage is actually just a matter of specifying a MetaImage Headerfile (a “MetaHeader”) that describes and points to the file(s) containing your data.
+</p>
+<ul><li>Uncompressed data is data stored in a raw format, possibly with a header, as is often the case for DICOM, BMP, and PNG formatted images.</li></ul>
+<p>For compressed data, you must first convert your data to a non-compressed format. One of the most robust image conversion software packages is ImageMagick (<a rel="nofollow" class="external free" href="http://www.imagemagick.org/">http://www.imagemagick.org/</a>; Unix and PC versions available). It has an application called “convert” that handles most of the popular 2D image formats.
+</p>
+<ul><li>Compressed data is includes JPEG or GIF formats as well as select PNG and TIFF images.</li></ul>
+<h3><span class="mw-headline" id="Using_MetaImageImporter">Using MetaImageImporter</span></h3>
+<p>MetaImageImporter asks a series of questions about your data and then produces a MetaImage header file that points to your data and allows the MetaIO library to read your data.
+</p><p>MetaImageImporter is part of the InsightApplications repository.  See <a rel="nofollow" class="external free" href="http://www.itk.org">http://www.itk.org</a> for information on downloading and installing InsightApplications - the companion to the Insight repository.
+</p><p>MetaImageImporter now has a QT graphical user interface. Please see the <a href="/Wiki/KWPublic/Applications/MetaImageImporter" title="KWPublic/Applications/MetaImageImporter">documentation</a>.
+</p><p>Otherwise, the following two sub-sections will step you through the conversion process.  The first sub-section applies if all of your data is in one file, i.e., is a "brick-of-bytes".   The second sub-section applies if your data is spread across files, e.g., is dicom or a tiff sequence.
+</p>
+<h3><span id="Reading_a_Brick-of-Bytes_.28an_N-Dimensional_volume_in_a_single_file.29"></span><span class="mw-headline" id="Reading_a_Brick-of-Bytes_(an_N-Dimensional_volume_in_a_single_file)">Reading a Brick-of-Bytes (an N-Dimensional volume in a single file)</span></h3>
+<p>A “brick of bytes” is a volume of image data stored in a single file possibly with preceding and trailing non-image data.  A volume can be of any dimension (1 dimensional to N dimensional).
+</p><p>To correctly load these images, the minimal information that you need to know is:
+</p>
+<ol><li>Number of dimensions</li>
+<li>Size of each dimension</li>
+<li>Data type</li>
+<li>Name of the data file</li></ol>
+<p>For example, let’s say the data was 3 dimensional, had 256 x 256 x 64 voxels, used an unsigned short to represent the value at each voxel, and was stored in the file “image.raw”. The resulting MetaHeader (our naming convention would call this file “image.mhd”) file would read
+</p>
+<pre>ObjectType = Image
+NDims = 3
+DimSize = 256 256 64
+ElementType = MET_USHORT
+ElementDataFile = image.raw	(this tag must be last in a MetaImageHeader)
+</pre>
+<p>That’s it, but this assumes quite a bit about the image data.   Specifically, it assumes
+</p>
+<ol><li>There are not any non-image data bytes (header data) at the beginning of the image data file “image.raw”.</li>
+<li>The voxels are cubes – the distance spanned by and between a voxel in each coordinate direction is 1 “unit”, e.g., 1x1x1mm voxel size and voxel spacing</li>
+<li>The byte-order of the data in image.raw matches the byte ordering native to the machine the application is running on (e.g., PC’s use LSB ordering and Suns/Macs use MSB ordering).</li></ol>
+<p>If these assumptions are false, the data will not be loaded correctly by the application.   To fix these problems, MetaIO allows you to specify additional tag/value pairs in the header:
+</p>
+<ol><li>To skip the header bytes in the image data file, use</li></ol>
+<pre>HeaderSize = X
+</pre>
+<p>where X is the number of bytes to skip at the beginning of the file before reading image data.   If you know there are no trailing bytes (extra bytes at the end of the file) you can specify
+</p>
+<pre>HeaderSize = -1
+</pre>
+<p>and MetaImage will automatically calculate the number of extract bytes in the data file, assume they those bytes are at the head of the data file, and automatically skip them before beginning to read the image data.
+</p>
+<ol><li>To specify the spacing of the voxels, use</li></ol>
+<pre>ElementSpacing = X Y Z
+</pre>
+<p>where X is the distance between of the centers of the voxels along the x-dimension, Y is the spacing in the y-dimension, and Z is the spacing in the z-dimension.   Therefore, to specify a 1x1x3mm voxel spacing, use
+</p>
+<pre>ElementSpacing = 1 1 3
+</pre>
+<p>NOTE: If ElementSpacing is not specified, it is assumed to be equal to ElementSize. If neither is specified, both are assumed to be 1.
+</p>
+<ol><li>To specify a voxel size, use</li></ol>
+<pre>ElementSize = X Y Z
+</pre>
+<p>where X Y Z represent the size in the x, y, and z-dimensions respectively.
+</p><p>NOTE: If ElementSize is not specified, it is assumed to be equal to ElementSpacing. If neither is specified, both are assumed to be 1.
+</p>
+<ol><li>To specify a particular byte ordering, use</li></ol>
+<pre>ElementByteOrderMSB = True
+</pre>
+<p>or
+</p>
+<pre>ElementByteOrderMSB = False
+</pre>
+<p>MSB (aka big-endian) ordering is common to SPARC and Motorola processors (e.g., Macintoshes).   LSB (aka little-endian) ordering is common to Intel processors (e.g., PC compatibles).
+</p><p>Putting it all together, to “convert” a file containing the image data in a continuous block at the end of the file, specify the header
+</p>
+<pre>ObjectType = Image
+NDims = 3
+DimSize = 256 256 64
+ElementType = MET_USHORT
+HeaderSize = -1
+ElementSize = 1 1 3
+ElementSpacing = 1 1 1
+ElementByteOrderMSB = False
+ElementDataFile = image.raw
+</pre>
+<h3><span class="mw-headline" id="Reading_DICOM_and_Other_One-Slice-Per-File_Data_Formats">Reading DICOM and Other One-Slice-Per-File Data Formats</span></h3>
+<p>If the data is split into one slice per file, as is done with most DICOM object files, only the ElementDataFile tag’s option needs to change.  Note that 3D DICOM object files are becoming popular, and some such DICOM files can be read using the above, volume, technique.
+</p><p>Since the MetaLibrary cannot directly parse DICOM headers, those headers must be skipped and the user must specify the image dimensions and other essential image information.   For DICOM files, the MetaLibrary must automatically calculate the header size of each file (luckily for almost every DICOM object the image data is stored at the end of the file).  For this reason, this method only works for uncompressed files.
+</p><p>To specify which files comprise the volume, they can be specified as an ordered list in the MetaHeader using the ElementDataFile=LIST option. The filenames should be listed at the end of the MetaHeader, after the ElementDataFile option, and the filenames should be separated by whitespace:
+</p>
+<pre>ObjectType = Image
+NDims = 3
+DimSize = 512 512 100
+ElementType = MET_USHORT
+HeaderSize = -1
+ElementSize = 1 1 3
+ElementSpacing = 1 1 1
+ElementByteOrderMSB = False
+ElementDataFile = LIST
+filenameOfSlice1
+filenameOfSlice2
+filenameOfSlice3
+filenameOfSlice4
+.
+. (one hundred filenames must be specified to specify the 100 slices in the volume)
+.
+</pre>
+<p>This method works even if there are spaces in the file paths and file names.
+</p><p>Notice that this method can become tedious if a large number of files need to be read.  To alleviate this, a second way of specifying a series of files can be used if the filenames are numerically distinguished.   That is, the file names should be able to be specified using a numeric substitution into a c-style printf-string, for a range of values.  In pseudo-code:
+</p>
+<pre>for i=numBegin to numEnd step numStep
+ sprintf(sliceName, “baseName.%03d”, i);
+end
+</pre>
+<p>The parameters of this system are numBegin, numEnd, numStep, and the c-style printf string (e.g., “baseName.%03d”).   The begin, end, and step parameters appear in order after the c-style printf string:
+</p>
+<pre>ObjectType = Image
+NDims = 3
+DimSize = 512 512 100
+ElementType = MET_USHORT
+HeaderSize = -1
+ElementSize = 1 1 3
+ElementSpacing = 1 1 1
+ElementByteOrderMSB = False
+ElementDataFile = baseName.%03d 1 100 1
+</pre>
+<p>The above MetaImage header will cause the files “baseName.001” to “baseName.100” to be read to create a 100-slice volume.  This method works even if there are spaces in the file paths and file names.  However, when spaces are present in the file path and/or file name, all three parameters (begin, end, and step) need to be specified as the last parameters.  The remaining parameters (initially parsed based on spaces) are then joined back together (including spaces) to generate the file name.
+</p><p>In some cases, it may be helpful to skip slices in the volume.   Changing the slice spacing and the ElementDataFileNumStep enacts this…
+</p>
+<pre>ObjectType = Image
+NDims = 3
+DimSize = 512 512 50
+ElementType = MET_USHORT
+HeaderSize = -1
+ElementSize = 1 1 3
+ElementSpacing = 1 1 2
+ElementByteOrderMSB = False
+ElementDataFile = baseName.%03d 1 100 2
+</pre>
+<p>The complete set of MetaImage Tags are given in the Reference section of this document. The next section discusses how to use the MetaImage Library for image reading and writing in your own programs.
+</p>
+<h2><span class="mw-headline" id="MetaIO_Library_Architecture">MetaIO Library Architecture</span></h2>
+<p>The base class of the MetaIO library is the MetaObject class.   It defines a base set of tags that are common to all metaObjects such as MetaImages, MetaTubes, etc.
+</p><p>The tags are defined using the protected member functions SetupReadFields and SetupWriteFields.  These functions create a list of MetaFieldRecords to define the name, type, interdependence, and necessity of each tag.  Helper functions for defining the fields are in MetaUtils.cxx.  The types are defined via enums in MetaTypes.h
+</p><p>The derived classes add tags to the list via their own SetupReadFields and SetupWriteFields member functions. The MetaImage subclass also re-implements the Read and Write methods since non tag data (i.e., the pixel values) must also be read.   Compare the derived classes for MetaCube and MetaImage.
+</p>
+<h3><span class="mw-headline" id="MetaObjects">MetaObjects</span></h3>
+<p>In this section we describe the metaObjects which have been implemented already. If you want to implement other objects, you can easily derive these classes.  metaObject is the base class for metaIO. metaScene and metaGroup are also a useful objects that support multiple metaObjects.
+All these objects are described in details next.
+</p>
+<h4><span class="mw-headline" id="Constructors">Constructors</span></h4>
+<p>Simple constructor
+</p>
+<pre>     MetaObject(void);
+</pre>
+<p>Read a metafile and store the result in the current object
+</p>
+<pre>     MetaObject(const char * _fileName);
+</pre>
+<p>Define the dimension of the object at construction time.
+</p>
+<pre>     MetaObject(unsigned int dim);
+</pre>
+<h4><span class="mw-headline" id="Member_functions">Member functions</span></h4>
+<p>Specify the filename to read (Optional)
+</p>
+<pre>     void  FileName(const char *_fileName);
+     const char  * FileName(void) const;
+</pre>
+<p>Read a MetaFile
+</p>
+<pre>     bool  Read(const char * _fileName=NULL);
+    
+</pre>
+<p>Write a MetaFile 
+</p>
+<pre>    bool  Write(const char * _fileName=NULL);
+     virtual bool Append(const char *_headName=NULL);
+</pre>
+<p>Print the info about the metaObject
+</p>
+<pre>     virtual void  PrintInfo(void) const;
+</pre>
+<p>Clear the information as well as the data of the metObject
+</p>
+<pre>     virtual void Clear(void);
+</pre>
+<h4><span class="mw-headline" id="Field_descriptions">Field descriptions</span></h4>
+<p>Name:
+</p>
+<pre>     void  Name(const char *_Name);
+     const char  * Name(void) const;
+</pre>
+<p>Color: 
+</p>
+<pre>     const float * Color(void) const;
+     void  Color(float _r, float _g, float _b, float _a);
+     void  Color(const float * _color);
+
+</pre>
+<p>ID:
+ID number of the current metaObject
+</p>
+<pre>     void ID(int _id);
+     int  ID(void) const;
+</pre>
+<p>Parent ID:
+ID number of the parent  metaObject
+</p>
+<pre>     void  ParentID(int _parentId);
+     int   ParentID(void) const;
+</pre>
+<p>Binary Data:
+Specify if the data is binary or not
+</p>
+<pre>     void  BinaryData(bool _binaryData);
+     bool  BinaryData(void) const;
+</pre>
+<p>Binary Data Byte Order:
+</p>
+<pre>     void  BinaryDataByteOrderMSB(bool _binaryDataByteOrderMSB);
+     bool  BinaryDataByteOrderMSB(void) const;
+</pre>
+<p>Comments:
+</p>
+<pre>     const char  * Comment(void) const;
+     void    Comment(const char * _comment);
+</pre>
+<p>Object Typename and optional subtype  (i.e. the type of the object)
+</p>
+<pre>     const char  * ObjectTypeName(void) const;
+     void    ObjectTypeName(const char * _objectTypeName);
+     const char  * ObjectSubTypeName(void) const;
+     void    ObjectSubTypeName(const char * _objectSubTypeName);
+</pre>
+<h4><span class="mw-headline" id="Associated_transformations">Associated transformations</span></h4>
+<p>Physical location (in millimeters and with respect to  machine coordinate system or the patient) of the first element in the image. Physical orientation of the object is defined as an NDims x NDims matrix that is serialized in a column-major format in MetaIO files.
+</p><p>Offset: (equiv. to position and origin)
+</p>
+<pre>     const float * Offset(void) const;
+     float Offset(int _i) const;
+     void  Offset(const float * _position);
+     void  Offset(int _i, float _value);
+</pre>
+<p>Position: (equiv. to offset and origin)
+</p>
+<pre>     const float * Position(void) const;
+     float Position(int _i) const;
+     void  Position(const float * _position);
+     void  Position(int _i, float _value);
+</pre>
+<p>Origin: (equiv. to offset and position)
+</p>
+<pre>     const float * Origin(void) const;
+     float Origin(int _i) const;
+     void  Origin(const float * _position);
+     void  Origin(int _i, float _value);
+</pre>
+<p><br />
+Rotation: (equiv. to orientation and transformMatrix)
+</p>
+<pre>     const float * Rotation(void) const;
+     float Rotation(int _i, int _j) const;
+     void  Rotation(const float * _orientation);
+     void  Rotation(int _i, int _j, float _value);
+</pre>
+<p>Orientation: (equiv. to rotation and transformMatrix)
+</p>
+<pre>     const float * Orientation(void) const;
+     float Orientation(int _i, int _j) const;
+     void  Orientation(const float * _orientation);
+     void  Orientation(int _i, int _j, float _value);
+</pre>
+<p>TransformMatrix: (equiv. to rotation and orientation)
+</p>
+<pre>     const float * TransformMatrix(void) const;
+     float TransformMatrix(int _i, int _j) const;
+     void  TransformMatrix(const float * _transformMatrix);
+     void  TransformMatrix(int _i, int _j, float _value);
+</pre>
+<p>Center of rotation of the object:
+</p>
+<pre>     const float * CenterOfRotation(void) const;
+     float CenterOfRotation(int _i) const;
+     void  CenterOfRotation(const float * _position);
+     void  CenterOfRotation(int _i, float _value);
+</pre>
+<p>Anatomical Orientation:
+</p>
+<pre>     const char * AnatomicalOrientationAcronym(void) const;
+     const MET_OrientationEnumType * AnatomicalOrientation(void) const;
+     MET_OrientationEnumType AnatomicalOrientation(int _dim) const;
+     void AnatomicalOrientation(const char *_ao);
+     void AnatomicalOrientation(const MET_OrientationEnumType *_ao);
+     void AnatomicalOrientation(int _dim, MET_OrientationEnumType _ao);
+     void AnatomicalOrientation(int _dim, char ao);
+</pre>
+<p><br />      
+Element Spacing:
+Physical Spacing (in same units as position)
+</p>
+<pre>     const float * ElementSpacing(void) const;
+     float ElementSpacing(int _i) const;
+     void  ElementSpacing(const float * _elementSpacing);
+     void  ElementSpacing(int _i, float _value);
+</pre>
+<p><br />
+</p><p>For simplicity, some dynamic functions have been recently added.  They allow the user to add fields dynamically.
+</p><p>The function AddUserField is defined by:
+</p>
+<pre>     template &lt;class T&gt;
+     bool AddUserField(const char* _fieldName,MET_ValueEnumType _type, int _length,
+                       T *_v,bool _required=true,int _dependsOn=-1 )
+ 
+</pre>
+<p>The user may also want to clear the fields created by using 
+</p>
+<pre>ClearUserFields().
+</pre>
+<p>To determine the value of a field
+</p>
+<pre>     void* GetUserField(const char* _name);
+</pre>
+<p>Note: When using GetUserField() function, the user is responsible for the deletion of the pointer created. See the following example for details.
+</p>
+<h4><span class="mw-headline" id="Example">Example</span></h4>
+<pre> /** We create a simple 3D metaObject with some properties */
+ MetaObject tObj(3); // Create a 3D metaObject
+ tObj.FileName("testObject.txt"); // Define the name of the file
+ tObj.Comment("TestObject"); // Add some comments
+ tObj.ObjectTypeName("Object"); // Define the type of the object
+ tObj.ObjectSubTypeName("MinorObject"); // and the subtype as well
+
+ /** We now define the position and the orientation as well as the spacing of the created object */
+ // The position part
+ tObj.Position(0, 1);
+ tObj.Position(1, 2);
+ tObj.Position(2, 3);
+
+ // The orientation part
+ float orient[9];
+ int i;
+ for(i=0; i&lt;9; i++)
+   {
+   orient[i] = 0;
+   }
+ orient[0] = 1;
+ orient[5] = 1;
+ orient[7] = 1;
+ tObj.Orientation(orient);
+
+ // The element spacing part
+ tObj.ElementSpacing(0, 1);
+ tObj.ElementSpacing(1, 2);
+ tObj.ElementSpacing(2, 1);
+
+
+ /** Add user's defined fields */
+ tObj.AddUserField("MyName", MET_STRING, strlen("JulienAndStephen"), "JulienAndStephen");
+
+ /** Write the object */
+ tObj.Write();
+
+ /** Clear completely the object */
+ tObj.Clear();
+ tObj.ClearUserFields();
+ 
+ /** Specify that we want to read the field  ‘MyName’ */
+ tObj.AddUserField("MyName", MET_STRING);
+
+ /** Read the object */
+ tObj.Read("testObject.txt");
+
+ /** Print the object */
+ tObj.PrintInfo();
+</pre>
+<pre> /** Get the name in the file */
+ char* name = static_cast&lt;char*&gt;(tObj.GetUserField("MyName"));
+ std::cout &lt;&lt; name &lt;&lt; std::endl;
+
+ /** delete the allocated pointer */
+ delete [] name;
+</pre>
+<h2><span class="mw-headline" id="Types_of_MetaObjects">Types of MetaObjects</span></h2>
+<p>All of the following objects derive from metaObject.
+</p>
+<h3><span class="mw-headline" id="MetaBlob">MetaBlob</span></h3>
+<p>A blob is defined by a list of points that describe the object. The points can be inside the object (if obtained by connected-component for instance) or only on the surface. Note that a color (RGBA) can be associated which each point.
+</p><p>The required fields are:
+</p>
+<ul><li>The number of points defining the object:</li></ul>
+<pre>NPoints(int npnt);
+</pre>
+<ul><li>How the position of the points is stored in the file. By default the configuration is x y z red green blue alpha</li></ul>
+<pre>PointDim(const char* pointDim);
+</pre>
+<p>To access the internal list of points user should use the GetPoints() function which returns the internal list by reference. Note that the list is a list of pointers to point and is deleted automatically by the object itself so the user does not need to free the allocated memory.
+</p>
+<h4><span class="mw-headline" id="Example_2">Example</span></h4>
+<pre> /** Create a 3D blob */
+ MetaBlob blob(3);
+ blob.ID(0); // define the ID of the blob
+
+ /** Add 10 points to the blob */
+ BlobPnt* pnt;
+
+ unsigned int i;
+ for(i=0;i&lt;10;i++)
+   {
+   pnt = new BlobPnt(3);
+   pnt-&gt;m_X[0]=(float)0.2;
+   pnt-&gt;m_X[1]=i;
+   pnt-&gt;m_X[2]=i;
+   blob.GetPoints().push_back(pnt); // push the created point into the list of points
+   }
+  
+ /** Write the blob in binary format */
+ blob.BinaryData(true);
+ blob.ElementType(MET_FLOAT);
+ blob.Write("myBlob.meta");
+
+ /** Read the file */
+ blob.Read("myBlob.meta"); 
+ blob.PrintInfo();
+</pre>
+<pre> /** Access the list of points */
+ std::cout &lt;&lt; "Accessing pointlist..." &lt;&lt; std::endl;
+
+ MetaBlob::PointListType plist =  blob.GetPoints();
+ MetaBlob::PointListType::const_iterator it = plist.begin();
+ 
+ while(it&#160;!= plist.end())
+   {
+   for(unsigned int d = 0; d &lt; 3; d++)
+     {
+     std::cout &lt;&lt; (*it)-&gt;m_X[d] &lt;&lt; " ";
+     }
+   std::cout &lt;&lt; std::endl;
+   it++;
+   }
+</pre>
+<h3><span class="mw-headline" id="MetaEllipse">MetaEllipse</span></h3>
+<p>MetaEllipse is an N-Dimensional object to define ellipsoids like circles, spheres or even hyper-ellipsoids.
+</p>
+<pre>The only field you need to provide is the Radius.
+</pre>
+<p>There are several ways to input the radius:
+</p>
+<ol><li>As an array of floats: void  Radius(const float* radius);</li>
+<li>As a single value which means that we are defining an hyper-sphere: void  Radius(float radius);</li>
+<li>A convenient way to define a 2D ellipse:  void  Radius(float r1,float r2);</li>
+<li>A convenient way to define a 3D ellipse: void  Radius(float r1,float r2, float r3);</li></ol>
+<h4><span class="mw-headline" id="Example_3">Example</span></h4>
+<pre> /** Create a sphere */
+ MetaEllipse  myEllipse (3);
+ myEllipse -&gt;Radius(3); // radius of  3
+
+</pre>
+<h3><span class="mw-headline" id="MetaGroup">MetaGroup</span></h3>
+<p>MetaGroup does not have added functionalities compared to metaObject. It allows to group object in a metafile.
+</p>
+<h3><span class="mw-headline" id="MetaImage">MetaImage</span></h3>
+<h4><span class="mw-headline" id="Constructors_2">Constructors</span></h4>
+<p>Simple constructor by specifying the filename
+</p>
+<pre>MetaImage(const char *_headerName);   
+</pre>
+<p>Constructor by shared memory 
+</p>
+<pre>MetaImage(MetaImage *_im);  
+</pre>
+<p>Other constructors
+</p>
+<pre>MetaImage(int _nDims, 
+          const int * _dimSize,
+          const float *_elementSpacing,
+          MET_ValueEnumType _elementType,
+          int _elementNumberOfChannels=1,
+          void *_elementData=NULL);
+</pre>
+<pre>MetaImage(int _x, int _y, 
+          float _elementSpacingX, 
+          float _elementSpacingY,
+          MET_ValueEnumType _elementType, 
+          int _elementNumberOfChannels=1,
+          void *_elementData=NULL);
+</pre>
+<pre>MetaImage(int _x, int _y, int _z, 
+          float _elementSpacingX,
+          float _elementSpacingY,
+          float _elementSpacingZ, 
+          MET_ValueEnumType _elementType,
+          int _elementNumberOfChannels=1,
+          void *_elementData=NULL);
+</pre>
+<h4><span class="mw-headline" id="Member_functions_2">Member functions</span></h4>
+<p>HeaderSize: Return the size of the header.
+</p>
+<pre>   int  HeaderSize(void) const;
+</pre>
+<p>Quantity: Total number of elements in the image.
+</p>
+<pre>   int   Quantity(void) const;
+</pre>
+<p>SubQuantity: Number of elements in image spanning sub-dimensions. E.g., elements per line, 2D sub-image, 3D sub-volume.
+</p>
+<pre>   const int * SubQuantity(void) const;      
+   int   SubQuantity(int _i) const;  
+</pre>
+<p>ElementMin/Max: The default max returned is the largest allowed by ElemNBytes (12 bit uint16_t will give 4096 max). This may not represent the true max.   Use _reCalc=true to force a calcuation of the actual max element value.
+</p>
+<pre>   bool  ElementMinMaxValid(void) const;
+   void  ElementMinMaxValid(bool _elementMinMaxValid);
+   void  ElementMinMaxRecalc(void);
+   double ElementMin(void) const;    
+   void  ElementMin(double _elementMin);
+   double ElementMax(void) const;
+   void  ElementMax(double _elementMax);
+</pre>
+<p>ElementByteOrderSwap: These functions are available only after ReadImageData() or if _read_and_close=TRUE when read
+</p>
+<pre>   void  ElementByteOrderSwap(void);
+   bool  ElementByteOrderFix(void);
+</pre>
+<p><br />
+ConverTo: Converts to a new data type. Rescales using Min and Max.
+</p>
+<pre>   bool  ConvertElementDataTo(MET_ValueEnumType _elementType=MET_UCHAR,
+                      double _toMin=0, double _toMax=0);
+</pre>
+<h4><span class="mw-headline" id="Field_descriptions_2">Field descriptions</span></h4>
+<p>Modality: Specify the modality of the image
+</p>
+<pre>   MET_ImageModalityEnumType  Modality(void) const;
+   void Modality(MET_ImageModalityEnumType _modality);
+</pre>
+<p>Dimension size: Specify the size of the image in each dimension
+</p>
+<pre>   void  DimSize(const int * _dimSize);
+   void  DimSize(int _i, int _value);
+</pre>
+<p>SequenceID: DICOM designation of this image relative to other images acquired at the same time
+</p>
+<pre>   const float * SequenceID(void) const;
+   float SequenceID(int _i) const;
+   void  SequenceID(const float * _sequenceID);
+   void  SequenceID(int _i, float _value);
+</pre>
+<p>ElementSize: Optional Field. Physical size (in MM) of each element in the image  (0 = xSize, 1 = ySize, 2 = zSize)
+</p>
+<pre>   const float * ElementSize(void) const;
+   float ElementSize(int i) const;
+   void  ElementSize(const float * _pointSize);
+   void  ElementSize(int _i, float _value);
+</pre>
+<p>ElementType: Pixel type
+</p>
+<pre>   MET_ValueEnumType ElementType(void) const;
+   void  ElementType(MET_ValueEnumType _elementType);
+</pre>
+<p>ElementNumberOfChannels: Number of channels
+</p>
+<pre>   int   ElementNumberOfChannels(void) const;
+   void  ElementNumberOfChannels(int _elementNumberOfChannels);
+</pre>
+<p>ElementData: Returns a pointer to the data. 
+</p>
+<pre>   void * ElementData(void);
+   double ElementData(int _i) const;
+   void  ElementData(void * _data);
+   bool  ElementData(int _i, double _v);
+</pre>
+<p>ElementDataFileName: Set/Get the filename
+</p>
+<pre>   const char * ElementDataFileName(void) const;
+   void ElementDataFileName(const char * _dataFileName);
+</pre>
+<h4><span class="mw-headline" id="Example_4">Example</span></h4>
+<pre>ObjectType = Image
+NDims = 2
+BinaryData = True
+BinaryDataByteOrderMSB = False
+ElementSpacing = 1 2
+DimSize = 8 8
+ElementType = MET_CHAR
+ElementDataFile = LOCAL
+[Pixel Data]
+</pre>
+<h3><span class="mw-headline" id="MetaLandmark">MetaLandmark</span></h3>
+<p>MetaLandmark is a simple list of landmarks.
+</p><p>The number of landmarks defining the object is set using the function
+</p>
+<pre>NPoints(int npnt);
+</pre>
+<p>How the position of the points is stored in the file: By default the configuration is x y z red green blue alpha
+</p>
+<pre>PointDim(const char* pointDim);
+</pre>
+<p>To access the internal list of points user should use the GetPoints() function which returns the internal list by reference. Note that the list is a list of pointers to point and is deleted automatically by the object itself so the user does not need to free the allocated memory.
+</p>
+<h4><span class="mw-headline" id="Example_5">Example</span></h4>
+<pre> /** Create a 3D Landmark */
+ MetaLandmark Landmark(3);
+ Landmark.ID(0);
+ LandmarkPnt* pnt;
+</pre>
+<pre> /** Add some landmarks to the list of landmark points*/
+ for(unsigned int i=0;i&lt;10;i++)
+   {
+   pnt = new LandmarkPnt(3);
+   pnt-&gt;m_X[0]=(float)0.2;
+   pnt-&gt;m_X[1]=i;
+   pnt-&gt;m_X[2]=i;
+   Landmark.GetPoints().push_back(pnt);
+   }
+ 
+</pre>
+<h3><span class="mw-headline" id="MetaLine">MetaLine</span></h3>
+<p>A metaLine is actually a polyline defined by a list of connected points.
+A point on the line has a given position, a normal and a color.
+</p><p>To set the position the local variable m_X should be filled in the point structure. The variable m_V which is a double pointer to a float is used to assess the normal. The normal has the dimension of the object minus one since a metaLine in a 3D space will have two normals (a plane).
+</p><p>Note that the user does not need to allocate the memory for those variables, this is done automatically in the constructor of the point.
+</p><p>To access the internal list of points user should use the GetPoints() function which returns the internal list by reference. Note that the list is a list of pointers to point and is deleted automatically by the object itself so the user does not need to free the allocated memory.
+</p>
+<h4><span class="mw-headline" id="Example_6">Example</span></h4>
+<pre> /** Create a 3D MetaLine */
+ MetaLine Line(3);
+ LinePnt* pnt;
+
+ for(unsigned int i=0;i&lt;10;i++)
+   {
+   pnt = new LinePnt(3);
+
+   /** Define the position */
+   pnt-&gt;m_X[0]=(float)0.2;
+   pnt-&gt;m_X[1]=i;
+   pnt-&gt;m_X[2]=i;
+</pre>
+<pre>   /** Define the normals */
+   pnt-&gt;m_V[0][0]=(float)0.3;
+   pnt-&gt;m_V[0][1]=i;
+   pnt-&gt;m_V[0][2]=i;
+   pnt-&gt;m_V[1][0]=(float)0.4;
+   pnt-&gt;m_V[1][1]=i+1;
+   pnt-&gt;m_V[1][2]=i+1;
+   Line-&gt;GetPoints().push_back(pnt);
+   }
+  
+ /** Write the result */
+ Line.BinaryData(true);
+ Line.Write("myLine.meta");
+</pre>
+<h3><span class="mw-headline" id="MetaSurface">MetaSurface</span></h3>
+<p>The definition of a metaSurface is quite similar to the metaLine’s, except for the normal which is only a NDim vector (i.e. an array of floats) where NDim is the dimension of the metaObject.
+</p><p>To access the internal list of points user should use the GetPoints() function which returns the internal list by reference. Note that the list is a list of pointers to point and is deleted automatically by the object itself so the user does not need to free the allocated memory.
+</p>
+<h4><span class="mw-headline" id="Example_7">Example</span></h4>
+<pre> MetaSurface surface(3);
+ SurfacePnt* pnt;
+
+ for(unsigned int i=0;i&lt;10;i++)
+   {
+   pnt = new SurfacePnt(3);
+ 
+   /** Position */
+   pnt-&gt;m_X[0]=(float)0.2;
+   pnt-&gt;m_X[1]=i;
+   pnt-&gt;m_X[2]=i;
+
+   /* Normal */
+   pnt-&gt;m_V[0]=(float)0.8;
+   pnt-&gt;m_V[1]=i;
+   pnt-&gt;m_V[2]=i;
+   surface-&gt;GetPoints().push_back(pnt);
+   }
+</pre>
+<h3><span class="mw-headline" id="MetaTube">MetaTube</span></h3>
+<p>A metaTube is a tubular structure defined by a list of connected points (like a metaLine) but more fields have been added for a complete representation, especially the one of blood vessels.
+To specify a point that belongs to the tube, the user can define: the position, the radius at that point, the normal(s), the tangent,  the color, the Identification number, the medialness, the branchness, the ridgeness, and three alpha values that represents the ratio of the eigen values at that points. 
+</p><p>Note that metaTube supports only 2D and 3D tubes.
+</p><p>Also  for a metaTube, the ID of the root can be specified by the command Root(int rootID) and the ID of the parent point can also be assessed using ParentPoint(int parentpoint).
+</p><p>To access the internal list of points user should use the GetPoints() function which returns the internal list by reference. Note that the list is a list of pointers to point and is deleted automatically by the object itself so the user does not need to free the allocated memory.
+</p>
+<h4><span class="mw-headline" id="Example_8">Example</span></h4>
+<pre> /** Create a 3D tube*/
+ MetaTube* tube1 = new MetaTube(3);
+ tube1-&gt;ID(0);
+
+ /** Add 10 points to the list of tubePoints */
+ TubePnt* pnt;
+ for(unsigned int i=0;i&lt;10;i++)
+   {
+   pnt = new TubePnt(3);
+
+   pnt-&gt;m_X[0]=i; // position
+   pnt-&gt;m_X[1]=i;
+   pnt-&gt;m_X[2]=i;
+   pnt-&gt;m_R=i; // radius
+   tube1-&gt;GetPoints().push_back(pnt);
+   }
+ 
+</pre>
+<h3><span class="mw-headline" id="MetaScene">MetaScene</span></h3>
+<p>A metaScene is a metaObject that contains a flat list of metaObjects.
+</p>
+<h4><span class="mw-headline" id="Member_functions_3">Member functions</span></h4>
+<p>Add an object to the scene:
+</p>
+<pre>  void AddObject(MetaObject* object);
+</pre>
+<p>Return the number of objects in the scene:
+</p>
+<pre>  int   NObjects(void) const;
+</pre>
+<p>Get a list of objects present in the scene:
+</p>
+<pre>  ObjectListType * GetObjectList(void) {return &amp; m_ObjectList;}
+</pre>
+<h4><span class="mw-headline" id="Example_9">Example</span></h4>
+<pre> /** Define a 3D Scene */
+ MetaScene scene(3);
+
+ MetaEllipse * e1 = new MetaEllipse(3);
+ e1-&gt;ID(0);
+ e1-&gt;Radius(3);
+
+ MetaGroup g0;
+ MetaGroup * g1 = new MetaGroup(3);
+ g1-&gt;ID(2);
+
+ s-&gt;AddObject(g1);
+ s-&gt;AddObject(e1);
+
+ s-&gt;Write("scene.scn");
+ scene.Clear();
+
+ s-&gt;Read("scene.scn");
+
+</pre>
+<h4><span class="mw-headline" id="Output_File_Example">Output File Example</span></h4>
+<p>Here is the example of a metafile with a scene that contains metaObjects
+</p>
+<pre>ObjectType = Scene
+NDims = 3
+NObjects = 3
+ObjectType = Group
+NDims = 3
+ID = 2
+EndGroup = 
+ObjectType = Ellipse
+NDims = 3
+ID = 0
+ParentID = 2
+Radius = 1 2 3
+ObjectType = Line
+NDims = 3
+ID = 0
+BinaryData = False
+BinaryDataByteOrderMSB = False
+ElementType = MET_FLOAT
+PointDim = x y z v1x v1y v1z
+NPoints = 3
+Points = 
+1 2 3 0 0 0
+1 2 3 0 0 0
+1 2 3 0 0 0
+ObjectType = Landmark
+NDims = 3
+ID = 0
+BinaryData = True
+BinaryDataByteOrderMSB = False
+ElementType = MET_FLOAT
+PointDim = x y z red green blue alpha
+NPoints = 2
+Points = 
+1 2 3 1.0 0.0 0.0 1.0
+1 2 3 1.0 0.0 0.0 1.0
+1 2 3 1.0 0.0 0.0 1.0 
+</pre>
+<h2><span class="mw-headline" id="Spatial_Objects">Spatial Objects</span></h2>
+<p>MetaIO has also been chosen to support Spatial Objects IO.  To obtain a complete documentation of Spatial Objects and how to read/write them out please see the Insight user’s manual available at www.itk.org.
+</p>
+<h2><span class="mw-headline" id="Reference:_Tags_of_MetaImage">Reference: Tags of MetaImage</span></h2>
+<h3><span class="mw-headline" id="MetaObject_Tags">MetaObject Tags</span></h3>
+<p>The tags of MetaObject are:
+</p>
+<ul><li>Comment
+<ul><li>MET_STRING</li>
+<li>User defined - arbitrary</li></ul></li>
+<li>ObjectType
+<ul><li>MET_STRING</li>
+<li>Defined by derived objects – e.g., Tube, Image</li></ul></li>
+<li>ObjectSubType
+<ul><li>MET_STRING</li>
+<li>Defined by derived objects – currently not used</li></ul></li>
+<li>TransformType
+<ul><li>MET_STRING</li>
+<li>Defined by derived objects – e.g., Rigid</li></ul></li>
+<li>NDims
+<ul><li>MET_INT</li>
+<li>Defined at object instantiation</li></ul></li>
+<li>Name
+<ul><li>MET_STRING</li>
+<li>User defined</li></ul></li>
+<li>ID
+<ul><li>MET_INT</li>
+<li>User defined else -1</li></ul></li>
+<li>ParentID
+<ul><li>MET_INT</li>
+<li>User defined else -1</li></ul></li>
+<li>BinaryData
+<ul><li>MET_STRING</li>
+<li>Are the data associated with this object stored at Binary or ASCII</li>
+<li>Defined by derived objects</li></ul></li>
+<li>ElementByteOrderMSB
+<ul><li>MET_STRING</li></ul></li>
+<li>BinaryDataByteOrderMSB
+<ul><li>MET_STRING</li></ul></li>
+<li>Color
+<ul><li>MET_FLOAT_ARRAY[4]</li>
+<li>R, G, B, alpha (opacity)</li></ul></li>
+<li>Position
+<ul><li>MET_FLOAT_ARRAY[NDims]</li>
+<li>X, Y, Z,… of real-world coordinate of 0,0,0 index of image)</li></ul></li>
+<li>Orientation
+<ul><li>MET_FLOAT_MATRIX[NDims][NDims]</li>
+<li>[0][0],[0][1],[0][2] specify X, Y, Z… direction in real-world of X-axis of image</li>
+<li>[1][0],[1][1],[1][2] specify X, Y, Z… direction in real-world of Y-axis of image, etc.</li></ul></li>
+<li>AnatomicalOrientation
+<ul><li>MET_STRING</li>
+<li>This is a convenience tag, to be used and maintained by applications.  Changing this tag in a MetaIO file or via the MetaIO API will not cause the MetaIO library to resample or change the direction matrix of an image.  It is up to an application to correctly read, write, and maintain this tag.</li>
+<li>The history of the interpretation of this tag is as follows:
+<ul><li>Labels: The labels used to define a space can be "from" labels or "to" labels, where "from" labels define the relative physical location of the origin of a space and "to" labels define the physical direction of movement of a space - thereby RAI "from" space is the same as LPS "to" space.   DICOM, ITK, and nearly every application consider label space to be "to" labels.</li>
+<li>In an LPS "to" space ("to" space will be assumed in the remainder of this discussion), when moving in the x,y,z-directions of space, then you are physically moving to the left.</li>
+<li>The direction matrix specifies how "index" i,j,k-directions (sometimes referred to as the in-memory directions of an image) map into x,y,z-directions. Changing the direction matrix will never change the fact that you're in an LPS space, but changing a direction matrix will change how moving along the i-index direction maps to a movement in the LPS space.</li>
+<li>Originally, AnatomicalOrientation was intended to define the space (LPS, RAS, etc) of an image; however, in early 2000s, its implementation was changed (and its documentation became unclear) to define how a patient was oriented in index space (it assumed an LPS space, and thus it became redundant with the direction matrix).  These changes seem to have coincided with ITK's introduction of a direction matrix (thanks goes to Alexis Girault for hunting down this history!). For the past fifteen years++, ITK writes AnatomicOrientation based on the direction matrix and assumes an LPS space.   See the code in itkSpatialOrientation.h that specifies a 3-letter code derived from an image's direction matrix and that 3-letter code is then used to specify the AnatomicalOrientation tag in MetaIO.</li>
+<li>Moving forward, when implementing new applications, it is recommended that developers use the definition currently implemented by ITK.  It represents the most common use of MetaIO.</li></ul></li></ul></li>
+<li>ElementSpacing
+<ul><li>MET_FLOAT_ARRAY[NDims]</li>
+<li>The distance between voxel centers</li></ul></li></ul>
+<h3><span class="mw-headline" id="Tags_Added_by_MetaImage">Tags Added by MetaImage</span></h3>
+<p>In addition to the above tags, MetaImage provides the following tags:
+</p>
+<ul><li>DimSize
+<ul><li>MET_INT_ARRAY[NDims]</li>
+<li>Number of elements per axis in data</li></ul></li>
+<li>HeaderSize
+<ul><li>MET_INT</li>
+<li>Number of Bytes to skip at the head of each data file.</li>
+<li>Specify –1 to have MetaImage calculate the header size based on the assumption that the data occurs at the end of the file.</li>
+<li>Specify 0 if the data occurs at the begining of the file.</li></ul></li>
+<li>Modality
+<ul><li>MET_STRING</li>
+<li>One of enum type: MET_MOD_CT, MET_MOD_MR, MET_MOD_US…  See <a rel="nofollow" class="external text" href="https://github.com/Kitware/MetaIO/blob/ffe3ce141c5a2394e40a0ecbe2a667cc0566baf5/src/metaImageTypes.h#L21">metaImageTypes.h</a></li></ul></li>
+<li>SequenceID
+<ul><li>MET_INT_ARRAY[4]</li>
+<li>Four values comprising a DICOM sequence: Study, Series, Image numbers</li></ul></li>
+<li>ElementMin
+<ul><li>MET_FLOAT</li>
+<li>Minimum value in the data</li></ul></li>
+<li>ElementMax
+<ul><li>MET_FLOAT</li>
+<li>Maximum value in the data</li></ul></li>
+<li>ElementNumberOfChannels
+<ul><li>MET_INT</li>
+<li>Number of values (of type ElementType) per voxel</li></ul></li>
+<li>ElementSize
+<ul><li>MET_FLOAT_ARRAY[NDims]</li>
+<li>Physical size of each voxel</li></ul></li>
+<li>ElementType
+<ul><li>MET_STRING</li>
+<li>One of enum type: MET_UCHAR, MET_CHAR… See <a rel="nofollow" class="external text" href="https://github.com/Kitware/MetaIO/blob/ffe3ce141c5a2394e40a0ecbe2a667cc0566baf5/src/metaTypes.h#L63-94">metaTypes.h</a></li></ul></li>
+<li>ElementDataFile
+<ul><li>MET_STRING</li>
+<li>One of the following:
+<ul><li>Name of the file to be loaded</li>
+<li>A printf-style string followed by the min, max, and step values to be used to pass an argument to the string to create list of file names to be loaded (must be (N-1)D blocks of data per file).</li>
+<li>LIST [X] – This specifies that starting on the next line is a list of files (one filename per line) in which the data is stored.   Each file (by default) contains an (N-1)D block of data. If a second argument is given, its first character must be a number that specifies the dimension of the data in each file. For example ElementDataFile = LIST 2D means that there will be a 2D block of data per file.</li>
+<li>LOCAL – Indicates that the data begins at the beginning of the next line.</li></ul></li></ul></li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20220419150415
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.035 seconds
+Real time usage: 0.036 seconds
+Preprocessor visited node count: 138/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:2915-0!canonical and timestamp 20220419150415 and revision id 64647. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/MetaIO/Documentation&amp;oldid=64647">https://public.kitware.com/Wiki/index.php?title=ITK/MetaIO/Documentation&amp;oldid=64647</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/MetaIO/Documentation" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/MetaIO/Documentation&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/MetaIO/Documentation">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/MetaIO/Documentation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/MetaIO/Documentation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/MetaIO/Documentation" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/MetaIO/Documentation&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FMetaIO%2FDocumentation" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/MetaIO/Documentation" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/MetaIO/Documentation" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/MetaIO/Documentation&amp;oldid=64647" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/MetaIO/Documentation&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 26 October 2021, at 20:38.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.035","walltime":"0.036","ppvisitednodes":{"value":138,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220419150415","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":81});});</script>
+</body></html>

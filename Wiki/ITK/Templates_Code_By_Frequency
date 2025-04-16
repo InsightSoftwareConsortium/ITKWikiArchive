@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>ITK/Templates Code By Frequency - KitwarePublic</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="generator" content="MediaWiki 1.23.8" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://www.itk.org/Wiki/api.php?action=rsd" />
+<link rel="copyright" href="https://creativecommons.org/licenses/by/2.5/" />
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
+<script src="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Templates_Code_By_Frequency","wgTitle":"ITK/Templates Code By Frequency","wgCurRevisionId":45947,"wgRevisionId":45947,"wgArticleId":2251,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK/Templates_Code_By_Frequency","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-js:7:6fb34dd1cd86154205b858dd017713f7 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Templates_Code_By_Frequency skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">ITK/Templates Code By Frequency</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From KitwarePublic</div>
+		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><pre>
+  20: MetaDataObject&lt;std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;
+  15: MetaDataObject&lt;itk::SpatialOrientation::ValidCoordinateOrientationFlags&gt;
+  12: Transform&lt;double, 3u, 3u&gt;
+  12: SpatialOrientationAdapter&lt;3&gt;
+  12: ScalableAffineTransform&lt;double, 3u&gt;
+  12: OrientationAdapterBase&lt;itk::SpatialOrientation::ValidCoordinateOrientationFlags, 3u&gt;
+  12: MatrixOffsetTransformBase&lt;double, 3u, 3u&gt;
+  12: ImageRegion&lt;3u&gt;
+  12: fem::ElementStd&lt;4u, 2u, itk::fem::Element&gt;
+  12: fem::ElementStd&lt;3u, 2u, itk::fem::Element&gt;
+  12: AffineTransform&lt;double, 3u&gt;
+   9: VectorContainer&lt;unsigned long, itk::Point&lt;double, 3u&gt; &gt;
+   9: TreeNode&lt;itk::SpatialObject&lt;3u&gt;*&gt;
+   9: SpatialObjectTreeNode&lt;3u&gt;
+   9: SpatialObjectProperty&lt;float&gt;
+   9: SpatialObject&lt;3u&gt;
+   9: fem::ElementStd&lt;8u, 3u, itk::fem::Element&gt;
+   9: fem::ElementStd&lt;6u, 2u, itk::fem::Element&gt;
+   9: fem::ElementStd&lt;4u, 3u, itk::fem::Element&gt;
+   9: fem::ElementStd&lt;2u, 2u, itk::fem::Element&gt;
+   9: BoundingBox&lt;unsigned long, 3, double, itk::VectorContainer&lt;unsigned long, itk::Point&lt;double, 3u&gt; &gt; &gt;
+   9: AffineGeometryFrame&lt;double, 3u&gt;
+   6: vector&lt;itk::Point&lt;double, 3u&gt;, std::allocator&lt;itk::Point&lt;double, 3u&gt; &gt; &gt;
+   6: _Vector_base&lt;itk::Point&lt;double, 3u&gt;, std::allocator&lt;itk::Point&lt;double, 3u&gt; &gt; &gt;
+   6: SpatialObjectPoint&lt;3u&gt;
+   6: PointBasedSpatialObject&lt;3u&gt;
+   6: Path&lt;double, itk::ContinuousIndex&lt;double, 2u&gt;, 2u&gt;
+   6: ParametricPath&lt;2u&gt;
+   6: MetaDataObject&lt;short&gt;
+   6: MetaDataObject&lt;int&gt;
+   6: MetaDataObject&lt;float&gt;
+   6: GroupSpatialObject&lt;3u&gt;
+   5: fem::Element3DStrain&lt;itk::fem::Element3DC0LinearTetrahedron&gt;
+   5: fem::Element3DStrain&lt;itk::fem::Element3DC0LinearHexahedron&gt;
+   5: fem::Element3DMembrane&lt;itk::fem::Element3DC0LinearTetrahedron&gt;
+   5: fem::Element3DMembrane&lt;itk::fem::Element3DC0LinearHexahedron&gt;
+   5: fem::Element2DStress&lt;itk::fem::Element2DC0LinearTriangular&gt;
+   5: fem::Element2DStress&lt;itk::fem::Element2DC0LinearQuadrilateral&gt;
+   5: fem::Element2DStrain&lt;itk::fem::Element2DC0LinearTriangular&gt;
+   5: fem::Element2DStrain&lt;itk::fem::Element2DC0LinearQuadrilateral&gt;
+   5: fem::Element2DMembrane&lt;itk::fem::Element2DC0LinearTriangular&gt;
+   5: fem::Element2DMembrane&lt;itk::fem::Element2DC0LinearQuadrilateral&gt;
+   3: XMLWriterBase&lt;itk::PolygonGroupSpatialObject&lt;3u&gt; &gt;
+   3: XMLReader&lt;itk::PolygonGroupSpatialObject&lt;3u&gt; &gt;
+   3: VersorTransform&lt;double&gt;
+   3: VersorRigid3DTransform&lt;double&gt;
+   3: VectorContainer&lt;unsigned int, double&gt;
+   3: ValarrayImageContainer&lt;unsigned long, float&gt;
+   3: TubeSpatialObjectPoint&lt;3u&gt;
+   3: TubeSpatialObject&lt;3u, itk::DTITubeSpatialObjectPoint&lt;3u&gt; &gt;
+   3: TranslationTransform&lt;double, 3u&gt;
+   3: Transform&lt;float, 2u, 2u&gt;
+   3: Transform&lt;double, 3u, 2u&gt;
+   3: Transform&lt;double, 2u, 2u&gt;
+   3: SimpleMemberCommand&lt;itk::SimpleFilterWatcher&gt;
+   3: Similarity2DTransform&lt;double&gt;
+   3: ScaleTransform&lt;double, 3u&gt;
+   3: ScaleTransform&lt;double, 2u&gt;
+   3: ScaleSkewVersor3DTransform&lt;double&gt;
+   3: ScaleLogarithmicTransform&lt;double, 3u&gt;
+   3: Rigid3DTransform&lt;double&gt;
+   3: Rigid3DPerspectiveTransform&lt;double&gt;
+   3: Rigid2DTransform&lt;float&gt;
+   3: Rigid2DTransform&lt;double&gt;
+   3: ReceptorMemberCommand&lt;itk::SingleValuedNonLinearVnlOptimizer&gt;
+   3: QuaternionRigidTransform&lt;double&gt;
+   3: PolygonSpatialObject&lt;3u&gt;
+   3: PolygonGroupSpatialObject&lt;3u&gt;
+   3: Path&lt;unsigned int, itk::Offset&lt;2u&gt;, 2u&gt;
+   3: Octree&lt;unsigned short, 2u, itk::Brains2MaskMappingFunction&lt;unsigned short&gt; &gt;
+   3: Octree&lt;unsigned long, 2u, itk::Brains2MaskMappingFunction&lt;unsigned long&gt; &gt;
+   3: Octree&lt;unsigned int, 2u, itk::Brains2MaskMappingFunction&lt;unsigned int&gt; &gt;
+   3: Octree&lt;unsigned char, 2u, itk::Brains2MaskMappingFunction&lt;unsigned char&gt; &gt;
+   3: Octree&lt;short, 2u, itk::Brains2MaskMappingFunction&lt;short&gt; &gt;
+   3: Octree&lt;long, 2u, itk::Brains2MaskMappingFunction&lt;long&gt; &gt;
+   3: Octree&lt;int, 2u, itk::Brains2MaskMappingFunction&lt;int&gt; &gt;
+   3: Octree&lt;float, 2u, itk::Brains2MaskMappingFunction&lt;float&gt; &gt;
+   3: Octree&lt;double, 2u, itk::Brains2MaskMappingFunction&lt;double&gt; &gt;
+   3: Octree&lt;char, 2u, itk::Brains2MaskMappingFunction&lt;char&gt; &gt;
+   3: MetaDataObject&lt;std::vector&lt;std::vector&lt;double, std::allocator&lt;double&gt; &gt;, std::allocator&lt;std::vector&lt;double, std::allocator&lt;double&gt; &gt; &gt; &gt; &gt;
+   3: MetaDataObject&lt;itk::Array&lt;float&gt; &gt;
+   3: MetaDataObject&lt;double&gt;
+   3: MemberCommand&lt;itk::ProgressAccumulator&gt;
+   3: MatrixOffsetTransformBase&lt;float, 2u, 2u&gt;
+   3: MatrixOffsetTransformBase&lt;double, 2u, 2u&gt;
+   3: ImportImageContainer&lt;unsigned long, itk::fem::Element const*&gt;
+   3: ImageRegionIterator&lt;itk::Image&lt;itk::fem::Element const*, 3u&gt; &gt;
+   3: ImageRegionConstIterator&lt;itk::Image&lt;itk::fem::Element const*, 3u&gt; &gt;
+   3: Image&lt;itk::fem::Element const*, 3u&gt;
+   3: ImageConstIterator&lt;itk::Image&lt;itk::fem::Element const*, 3u&gt; &gt;
+   3: ImageBase&lt;3u&gt;
+   3: IdentityTransform&lt;double, 3u&gt;
+   3: IdentityTransform&lt;double, 2u&gt;
+   3: FunctionBase&lt;double, double&gt;
+   3: FixedCenterOfRotationAffineTransform&lt;double, 3u&gt;
+   3: fem::Element2DStress&lt;itk::fem::Element2DC0QuadraticTriangular&gt;
+   3: fem::Element2DStrain&lt;itk::fem::Element2DC0QuadraticTriangular&gt;
+   3: fem::Element1DStress&lt;itk::fem::Element2DC0LinearLine&gt;
+   3: Euler3DTransform&lt;double&gt;
+   3: Euler2DTransform&lt;double&gt;
+   3: EllipseSpatialObject&lt;3u&gt;
+   3: DTITubeSpatialObjectPoint&lt;3u&gt;
+   3: DTITubeSpatialObject&lt;3u&gt;
+   3: CreateObjectFunction&lt;itk::VTKImageIO&gt;
+   3: CreateObjectFunction&lt;itk::VersorTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::VersorRigid3DTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::TranslationTransform&lt;double, 3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::TIFFImageIO&gt;
+   3: CreateObjectFunction&lt;itk::StimulateImageIO&gt;
+   3: CreateObjectFunction&lt;itk::SiemensVisionImageIO&gt;
+   3: CreateObjectFunction&lt;itk::ScaleTransform&lt;double, 3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::ScaleTransform&lt;double, 2u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::ScaleSkewVersor3DTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::ScaleLogarithmicTransform&lt;double, 3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::ScalableAffineTransform&lt;double, 3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::Rigid3DTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::Rigid3DPerspectiveTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::Rigid2DTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::QuaternionRigidTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::PNGImageIO&gt;
+   3: CreateObjectFunction&lt;itk::NrrdImageIO&gt;
+   3: CreateObjectFunction&lt;itk::NiftiImageIO&gt;
+   3: CreateObjectFunction&lt;itk::MetaImageIO&gt;
+   3: CreateObjectFunction&lt;itk::LSMImageIO&gt;
+   3: CreateObjectFunction&lt;itk::JPEGImageIO&gt;
+   3: CreateObjectFunction&lt;itk::IdentityTransform&lt;double, 3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::IdentityTransform&lt;double, 2u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::GroupSpatialObject&lt;3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::GiplImageIO&gt;
+   3: CreateObjectFunction&lt;itk::GEAdwImageIO&gt;
+   3: CreateObjectFunction&lt;itk::GE5ImageIO&gt;
+   3: CreateObjectFunction&lt;itk::GE4ImageIO&gt;
+   3: CreateObjectFunction&lt;itk::GDCMImageIO&gt;
+   3: CreateObjectFunction&lt;itk::FixedCenterOfRotationAffineTransform&lt;double, 3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::Euler3DTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::Euler2DTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::EllipseSpatialObject&lt;3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::DTITubeSpatialObject&lt;3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::DICOMImageIO2&gt;
+   3: CreateObjectFunction&lt;itk::DicomImageIO&gt;
+   3: CreateObjectFunction&lt;itk::CenteredSimilarity2DTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::CenteredRigid2DTransform&lt;float&gt; &gt;
+   3: CreateObjectFunction&lt;itk::CenteredEuler3DTransform&lt;double&gt; &gt;
+   3: CreateObjectFunction&lt;itk::CenteredAffineTransform&lt;double, 3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::CenteredAffineTransform&lt;double, 2u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::Brains2MaskImageIO&gt;
+   3: CreateObjectFunction&lt;itk::BMPImageIO&gt;
+   3: CreateObjectFunction&lt;itk::BioRadImageIO&gt;
+   3: CreateObjectFunction&lt;itk::AnalyzeImageIO&gt;
+   3: CreateObjectFunction&lt;itk::AffineTransform&lt;double, 3u&gt; &gt;
+   3: CreateObjectFunction&lt;itk::AffineTransform&lt;double, 2u&gt; &gt;
+   3: ChainCodePath&lt;2u&gt;
+   3: CenteredSimilarity2DTransform&lt;double&gt;
+   3: CenteredRigid2DTransform&lt;float&gt;
+   3: CenteredEuler3DTransform&lt;double&gt;
+   3: CenteredAffineTransform&lt;double, 3u&gt;
+   3: CenteredAffineTransform&lt;double, 2u&gt;
+   3: BlobSpatialObject&lt;3u&gt;
+   3: AffineTransform&lt;double, 2u&gt;
+   2: Vector&lt;unsigned short, 7u&gt;
+   2: Vector&lt;unsigned short, 6u&gt;
+   2: Vector&lt;unsigned short, 5u&gt;
+   2: Vector&lt;unsigned short, 4u&gt;
+   2: Vector&lt;unsigned short, 3u&gt;
+   2: Vector&lt;unsigned short, 2u&gt;
+   2: Vector&lt;unsigned long, 7u&gt;
+   2: Vector&lt;unsigned long, 6u&gt;
+   2: Vector&lt;unsigned long, 5u&gt;
+   2: Vector&lt;unsigned long, 4u&gt;
+   2: Vector&lt;unsigned long, 3u&gt;
+   2: Vector&lt;unsigned long, 2u&gt;
+   2: Vector&lt;unsigned int, 7u&gt;
+   2: Vector&lt;unsigned int, 6u&gt;
+   2: Vector&lt;unsigned int, 5u&gt;
+   2: Vector&lt;unsigned int, 4u&gt;
+   2: Vector&lt;unsigned int, 3u&gt;
+   2: Vector&lt;unsigned int, 2u&gt;
+   2: Vector&lt;unsigned char, 7u&gt;
+   2: Vector&lt;unsigned char, 6u&gt;
+   2: Vector&lt;unsigned char, 5u&gt;
+   2: Vector&lt;unsigned char, 4u&gt;
+   2: Vector&lt;unsigned char, 3u&gt;
+   2: Vector&lt;unsigned char, 2u&gt;
+   2: Vector&lt;short, 7u&gt;
+   2: Vector&lt;short, 6u&gt;
+   2: Vector&lt;short, 5u&gt;
+   2: Vector&lt;short, 4u&gt;
+   2: Vector&lt;short, 3u&gt;
+   2: Vector&lt;short, 2u&gt;
+   2: Vector&lt;long, 7u&gt;
+   2: Vector&lt;long, 6u&gt;
+   2: Vector&lt;long, 5u&gt;
+   2: Vector&lt;long, 4u&gt;
+   2: Vector&lt;long, 3u&gt;
+   2: Vector&lt;long, 2u&gt;
+   2: Vector&lt;int, 7u&gt;
+   2: Vector&lt;int, 6u&gt;
+   2: Vector&lt;int, 5u&gt;
+   2: Vector&lt;int, 4u&gt;
+   2: Vector&lt;int, 3u&gt;
+   2: Vector&lt;int, 2u&gt;
+   2: Vector&lt;float, 7u&gt;
+   2: Vector&lt;float, 6u&gt;
+   2: Vector&lt;float, 5u&gt;
+   2: Vector&lt;float, 4u&gt;
+   2: Vector&lt;float, 3u&gt;
+   2: Vector&lt;float, 2u&gt;
+   2: Vector&lt;double, 7u&gt;
+   2: Vector&lt;double, 6u&gt;
+   2: Vector&lt;double, 5u&gt;
+   2: Vector&lt;double, 4u&gt;
+   2: Vector&lt;double, 3u&gt;
+   2: Vector&lt;double, 2u&gt;
+   2: Vector&lt;char, 7u&gt;
+   2: Vector&lt;char, 6u&gt;
+   2: Vector&lt;char, 5u&gt;
+   2: Vector&lt;char, 4u&gt;
+   2: Vector&lt;char, 3u&gt;
+   2: Vector&lt;char, 2u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned short, 6u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned short, 5u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned short, 4u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned short, 3u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned long, 6u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned long, 5u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned long, 4u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned long, 3u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned int, 6u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned int, 5u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned int, 4u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned int, 3u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned char, 6u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned char, 5u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned char, 4u&gt;
+   2: SymmetricSecondRankTensor&lt;unsigned char, 3u&gt;
+   2: SymmetricSecondRankTensor&lt;short, 6u&gt;
+   2: SymmetricSecondRankTensor&lt;short, 5u&gt;
+   2: SymmetricSecondRankTensor&lt;short, 4u&gt;
+   2: SymmetricSecondRankTensor&lt;short, 3u&gt;
+   2: SymmetricSecondRankTensor&lt;long, 6u&gt;
+   2: SymmetricSecondRankTensor&lt;long, 5u&gt;
+   2: SymmetricSecondRankTensor&lt;long, 4u&gt;
+   2: SymmetricSecondRankTensor&lt;long, 3u&gt;
+   2: SymmetricSecondRankTensor&lt;int, 6u&gt;
+   2: SymmetricSecondRankTensor&lt;int, 5u&gt;
+   2: SymmetricSecondRankTensor&lt;int, 4u&gt;
+   2: SymmetricSecondRankTensor&lt;int, 3u&gt;
+   2: SymmetricSecondRankTensor&lt;float, 6u&gt;
+   2: SymmetricSecondRankTensor&lt;float, 5u&gt;
+   2: SymmetricSecondRankTensor&lt;float, 4u&gt;
+   2: SymmetricSecondRankTensor&lt;float, 3u&gt;
+   2: SymmetricSecondRankTensor&lt;double, 6u&gt;
+   2: SymmetricSecondRankTensor&lt;double, 5u&gt;
+   2: SymmetricSecondRankTensor&lt;double, 4u&gt;
+   2: SymmetricSecondRankTensor&lt;double, 3u&gt;
+   2: SymmetricSecondRankTensor&lt;char, 6u&gt;
+   2: SymmetricSecondRankTensor&lt;char, 5u&gt;
+   2: SymmetricSecondRankTensor&lt;char, 4u&gt;
+   2: SymmetricSecondRankTensor&lt;char, 3u&gt;
+   2: RGBPixel&lt;unsigned short&gt;
+   2: RGBPixel&lt;unsigned long&gt;
+   2: RGBPixel&lt;unsigned int&gt;
+   2: RGBPixel&lt;unsigned char&gt;
+   2: RGBPixel&lt;short&gt;
+   2: RGBPixel&lt;long&gt;
+   2: RGBPixel&lt;int&gt;
+   2: RGBPixel&lt;float&gt;
+   2: RGBPixel&lt;double&gt;
+   2: RGBPixel&lt;char&gt;
+   2: RGBAPixel&lt;unsigned short&gt;
+   2: RGBAPixel&lt;unsigned long&gt;
+   2: RGBAPixel&lt;unsigned int&gt;
+   2: RGBAPixel&lt;unsigned char&gt;
+   2: RGBAPixel&lt;short&gt;
+   2: RGBAPixel&lt;long&gt;
+   2: RGBAPixel&lt;int&gt;
+   2: RGBAPixel&lt;float&gt;
+   2: RGBAPixel&lt;double&gt;
+   2: RGBAPixel&lt;char&gt;
+   2: Offset&lt;4u&gt;
+   2: Offset&lt;3u&gt;
+   2: Offset&lt;2u&gt;
+   2: MetaDataObject&lt;unsigned int&gt;
+   2: MetaDataObject&lt;itk::Array&lt;double&gt; &gt;
+   2: FixedArray&lt;unsigned short, 7u&gt;
+   2: FixedArray&lt;unsigned short, 6u&gt;
+   2: FixedArray&lt;unsigned short, 5u&gt;
+   2: FixedArray&lt;unsigned short, 4u&gt;
+   2: FixedArray&lt;unsigned short, 3u&gt;
+   2: FixedArray&lt;unsigned short, 2u&gt;
+   2: FixedArray&lt;unsigned short, 21u&gt;
+   2: FixedArray&lt;unsigned short, 15u&gt;
+   2: FixedArray&lt;unsigned short, 10u&gt;
+   2: FixedArray&lt;unsigned long, 7u&gt;
+   2: FixedArray&lt;unsigned long, 6u&gt;
+   2: FixedArray&lt;unsigned long, 5u&gt;
+   2: FixedArray&lt;unsigned long, 4u&gt;
+   2: FixedArray&lt;unsigned long, 3u&gt;
+   2: FixedArray&lt;unsigned long, 2u&gt;
+   2: FixedArray&lt;unsigned long, 21u&gt;
+   2: FixedArray&lt;unsigned long, 15u&gt;
+   2: FixedArray&lt;unsigned long, 10u&gt;
+   2: FixedArray&lt;unsigned int, 7u&gt;
+   2: FixedArray&lt;unsigned int, 6u&gt;
+   2: FixedArray&lt;unsigned int, 5u&gt;
+   2: FixedArray&lt;unsigned int, 4u&gt;
+   2: FixedArray&lt;unsigned int, 3u&gt;
+   2: FixedArray&lt;unsigned int, 2u&gt;
+   2: FixedArray&lt;unsigned int, 21u&gt;
+   2: FixedArray&lt;unsigned int, 15u&gt;
+   2: FixedArray&lt;unsigned int, 10u&gt;
+   2: FixedArray&lt;unsigned char, 7u&gt;
+   2: FixedArray&lt;unsigned char, 6u&gt;
+   2: FixedArray&lt;unsigned char, 5u&gt;
+   2: FixedArray&lt;unsigned char, 4u&gt;
+   2: FixedArray&lt;unsigned char, 3u&gt;
+   2: FixedArray&lt;unsigned char, 2u&gt;
+   2: FixedArray&lt;unsigned char, 21u&gt;
+   2: FixedArray&lt;unsigned char, 15u&gt;
+   2: FixedArray&lt;unsigned char, 10u&gt;
+   2: FixedArray&lt;short, 7u&gt;
+   2: FixedArray&lt;short, 6u&gt;
+   2: FixedArray&lt;short, 5u&gt;
+   2: FixedArray&lt;short, 4u&gt;
+   2: FixedArray&lt;short, 3u&gt;
+   2: FixedArray&lt;short, 2u&gt;
+   2: FixedArray&lt;short, 21u&gt;
+   2: FixedArray&lt;short, 15u&gt;
+   2: FixedArray&lt;short, 10u&gt;
+   2: FixedArray&lt;long, 7u&gt;
+   2: FixedArray&lt;long, 6u&gt;
+   2: FixedArray&lt;long, 5u&gt;
+   2: FixedArray&lt;long, 4u&gt;
+   2: FixedArray&lt;long, 3u&gt;
+   2: FixedArray&lt;long, 2u&gt;
+   2: FixedArray&lt;long, 21u&gt;
+   2: FixedArray&lt;long, 15u&gt;
+   2: FixedArray&lt;long, 10u&gt;
+   2: FixedArray&lt;int, 7u&gt;
+   2: FixedArray&lt;int, 6u&gt;
+   2: FixedArray&lt;int, 5u&gt;
+   2: FixedArray&lt;int, 4u&gt;
+   2: FixedArray&lt;int, 3u&gt;
+   2: FixedArray&lt;int, 2u&gt;
+   2: FixedArray&lt;int, 21u&gt;
+   2: FixedArray&lt;int, 15u&gt;
+   2: FixedArray&lt;int, 10u&gt;
+   2: FixedArray&lt;float, 7u&gt;
+   2: FixedArray&lt;float, 6u&gt;
+   2: FixedArray&lt;float, 5u&gt;
+   2: FixedArray&lt;float, 4u&gt;
+   2: FixedArray&lt;float, 3u&gt;
+   2: FixedArray&lt;float, 2u&gt;
+   2: FixedArray&lt;float, 21u&gt;
+   2: FixedArray&lt;float, 15u&gt;
+   2: FixedArray&lt;float, 10u&gt;
+   2: FixedArray&lt;double, 7u&gt;
+   2: FixedArray&lt;double, 6u&gt;
+   2: FixedArray&lt;double, 5u&gt;
+   2: FixedArray&lt;double, 4u&gt;
+   2: FixedArray&lt;double, 3u&gt;
+   2: FixedArray&lt;double, 2u&gt;
+   2: FixedArray&lt;double, 21u&gt;
+   2: FixedArray&lt;double, 15u&gt;
+   2: FixedArray&lt;double, 10u&gt;
+   2: FixedArray&lt;char, 7u&gt;
+   2: FixedArray&lt;char, 6u&gt;
+   2: FixedArray&lt;char, 5u&gt;
+   2: FixedArray&lt;char, 4u&gt;
+   2: FixedArray&lt;char, 3u&gt;
+   2: FixedArray&lt;char, 2u&gt;
+   2: FixedArray&lt;char, 21u&gt;
+   2: FixedArray&lt;char, 15u&gt;
+   2: FixedArray&lt;char, 10u&gt;
+   2: DiffusionTensor3D&lt;unsigned short&gt;
+   2: DiffusionTensor3D&lt;unsigned long&gt;
+   2: DiffusionTensor3D&lt;unsigned int&gt;
+   2: DiffusionTensor3D&lt;unsigned char&gt;
+   2: DiffusionTensor3D&lt;short&gt;
+   2: DiffusionTensor3D&lt;long&gt;
+   2: DiffusionTensor3D&lt;int&gt;
+   2: DiffusionTensor3D&lt;float&gt;
+   2: DiffusionTensor3D&lt;double&gt;
+   2: DiffusionTensor3D&lt;char&gt;
+   2: CovariantVector&lt;unsigned short, 7u&gt;
+   2: CovariantVector&lt;unsigned short, 6u&gt;
+   2: CovariantVector&lt;unsigned short, 5u&gt;
+   2: CovariantVector&lt;unsigned short, 4u&gt;
+   2: CovariantVector&lt;unsigned short, 3u&gt;
+   2: CovariantVector&lt;unsigned short, 2u&gt;
+   2: CovariantVector&lt;unsigned long, 7u&gt;
+   2: CovariantVector&lt;unsigned long, 6u&gt;
+   2: CovariantVector&lt;unsigned long, 5u&gt;
+   2: CovariantVector&lt;unsigned long, 4u&gt;
+   2: CovariantVector&lt;unsigned long, 3u&gt;
+   2: CovariantVector&lt;unsigned long, 2u&gt;
+   2: CovariantVector&lt;unsigned int, 7u&gt;
+   2: CovariantVector&lt;unsigned int, 6u&gt;
+   2: CovariantVector&lt;unsigned int, 5u&gt;
+   2: CovariantVector&lt;unsigned int, 4u&gt;
+   2: CovariantVector&lt;unsigned int, 3u&gt;
+   2: CovariantVector&lt;unsigned int, 2u&gt;
+   2: CovariantVector&lt;unsigned char, 7u&gt;
+   2: CovariantVector&lt;unsigned char, 6u&gt;
+   2: CovariantVector&lt;unsigned char, 5u&gt;
+   2: CovariantVector&lt;unsigned char, 4u&gt;
+   2: CovariantVector&lt;unsigned char, 3u&gt;
+   2: CovariantVector&lt;unsigned char, 2u&gt;
+   2: CovariantVector&lt;short, 7u&gt;
+   2: CovariantVector&lt;short, 6u&gt;
+   2: CovariantVector&lt;short, 5u&gt;
+   2: CovariantVector&lt;short, 4u&gt;
+   2: CovariantVector&lt;short, 3u&gt;
+   2: CovariantVector&lt;short, 2u&gt;
+   2: CovariantVector&lt;long, 7u&gt;
+   2: CovariantVector&lt;long, 6u&gt;
+   2: CovariantVector&lt;long, 5u&gt;
+   2: CovariantVector&lt;long, 4u&gt;
+   2: CovariantVector&lt;long, 3u&gt;
+   2: CovariantVector&lt;long, 2u&gt;
+   2: CovariantVector&lt;int, 7u&gt;
+   2: CovariantVector&lt;int, 6u&gt;
+   2: CovariantVector&lt;int, 5u&gt;
+   2: CovariantVector&lt;int, 4u&gt;
+   2: CovariantVector&lt;int, 3u&gt;
+   2: CovariantVector&lt;int, 2u&gt;
+   2: CovariantVector&lt;float, 7u&gt;
+   2: CovariantVector&lt;float, 6u&gt;
+   2: CovariantVector&lt;float, 5u&gt;
+   2: CovariantVector&lt;float, 4u&gt;
+   2: CovariantVector&lt;float, 3u&gt;
+   2: CovariantVector&lt;float, 2u&gt;
+   2: CovariantVector&lt;double, 7u&gt;
+   2: CovariantVector&lt;double, 6u&gt;
+   2: CovariantVector&lt;double, 5u&gt;
+   2: CovariantVector&lt;double, 4u&gt;
+   2: CovariantVector&lt;double, 3u&gt;
+   2: CovariantVector&lt;double, 2u&gt;
+   2: CovariantVector&lt;char, 7u&gt;
+   2: CovariantVector&lt;char, 6u&gt;
+   2: CovariantVector&lt;char, 5u&gt;
+   2: CovariantVector&lt;char, 4u&gt;
+   2: CovariantVector&lt;char, 3u&gt;
+   2: CovariantVector&lt;char, 2u&gt;
+   2: Array&lt;float&gt;
+   2: Array&lt;double&gt;
+</pre>
+<p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td bgcolor="#F9F9F9"> <center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></table>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.028 seconds
+Real time usage: 0.030 seconds
+Preprocessor visited node count: 8/1000000
+Preprocessor generated node count: 40/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:2251-0!*!0!*!*!*!* and timestamp 20150924143110 and revision id 45947
+ -->
+</div><div class="printfooter">
+Retrieved from "<a href="http://www.itk.org/Wiki/index.php?title=ITK/Templates_Code_By_Frequency&amp;oldid=45947">http://www.itk.org/Wiki/index.php?title=ITK/Templates_Code_By_Frequency&amp;oldid=45947</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Templates_Code_By_Frequency" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Templates_Code_By_Frequency&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Templates_Code_By_Frequency&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="/Wiki/index.php?title=ITK/Templates_Code_By_Frequency&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="/Wiki/User:207.241.237.227" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">207.241.237.227</a></li>
+				<li id="pt-anontalk"><a href="/Wiki/User_talk:207.241.237.227" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li>
+				<li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FTemplates+Code+By+Frequency" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				<li id="pt-createaccount"><a href="/Wiki/Special:RequestAccount">Request account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="/Wiki/Main_Page" style="background-image: url(/Wiki/images/KWLogo.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="/Wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" placeholder="Search" title="Search KitwarePublic [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+
+					</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK/Templates_Code_By_Frequency" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK/Templates_Code_By_Frequency" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="/Wiki/index.php?title=ITK/Templates_Code_By_Frequency&amp;oldid=45947" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="/Wiki/index.php?title=ITK/Templates_Code_By_Frequency&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-coll-print_export" role="navigation">
+		<h3>Print/export</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="coll-create_a_book"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ITK%2FTemplates+Code+By+Frequency">Create a book</a></li>
+				<li id="coll-download-as-rl"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ITK%2FTemplates+Code+By+Frequency&amp;oldid=45947&amp;writer=rl">Download as PDF</a></li>
+				<li id="t-print"><a href="/Wiki/index.php?title=ITK/Templates_Code_By_Frequency&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-copyrightico">
+		<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" /></a>
+	</div>
+	<div id="f-poweredbyico">
+		<a href="//www.mediawiki.org/"><img src="/Wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 11 February 2012, at 17:14.</li>
+		<li id="viewcount">This page has been accessed 6,101 times.</li>
+		<li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+		<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li>
+		<li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"ready","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":227});
+}</script></body></html>

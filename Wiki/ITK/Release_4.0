@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4 Planning - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"0dda6c420eeda2bc6e9b90f6","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4_Planning","wgTitle":"ITK/Release 4 Planning","wgCurRevisionId":45198,"wgRevisionId":45198,"wgArticleId":3205,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4_Planning","wgRelevantArticleId":3205,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK/Release_4.0",
+"wgInternalRedirectTargetUrl":"/Wiki/ITK/Release_4_Planning"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4_Planning"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Planning rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Release 4 Planning</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK/Release_4.0&amp;redirect=no" class="mw-redirect" title="ITK/Release 4.0">ITK/Release 4.0</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#ITK_Version_4"><span class="tocnumber">1</span> <span class="toctext">ITK Version 4</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Download"><span class="tocnumber">1.1</span> <span class="toctext">Download</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Release_Notes"><span class="tocnumber">1.2</span> <span class="toctext">Release Notes</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#LICENSE_Change"><span class="tocnumber">1.3</span> <span class="toctext">LICENSE Change</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Revision_Control"><span class="tocnumber">1.4</span> <span class="toctext">Revision Control</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Code_Review"><span class="tocnumber">1.5</span> <span class="toctext">Code Review</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Modern_C++"><span class="tocnumber">1.6</span> <span class="toctext">Modern C++</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Wrapping"><span class="tocnumber">1.7</span> <span class="toctext">Wrapping</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Simplify"><span class="tocnumber">1.8</span> <span class="toctext">Simplify</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Modularize"><span class="tocnumber">1.9</span> <span class="toctext">Modularize</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Testing_Crowdsourcing"><span class="tocnumber">1.10</span> <span class="toctext">Testing Crowdsourcing</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Improve_Software_Process"><span class="tocnumber">1.11</span> <span class="toctext">Improve Software Process</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Data_Management"><span class="tocnumber">1.11.1</span> <span class="toctext">Data Management</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Distributed_Testing_(cdash@home)"><span class="tocnumber">1.11.2</span> <span class="toctext">Distributed Testing (cdash@home)</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Testing_Framework"><span class="tocnumber">1.11.3</span> <span class="toctext">Testing Framework</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Coding_Style"><span class="tocnumber">1.11.4</span> <span class="toctext">Coding Style</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="#Revise"><span class="tocnumber">1.12</span> <span class="toctext">Revise</span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="#FEM"><span class="tocnumber">1.12.1</span> <span class="toctext">FEM</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Level_Sets"><span class="tocnumber">1.12.2</span> <span class="toctext">Level Sets</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#DICOM"><span class="tocnumber">1.12.3</span> <span class="toctext">DICOM</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#Image_Registration_Framework"><span class="tocnumber">1.12.4</span> <span class="toctext">Image Registration Framework</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Spatial_Objects"><span class="tocnumber">1.12.5</span> <span class="toctext">Spatial Objects</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#Global_Code_Review"><span class="tocnumber">1.12.6</span> <span class="toctext">Global Code Review</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-24"><a href="#Accelerate"><span class="tocnumber">1.13</span> <span class="toctext">Accelerate</span></a>
+<ul>
+<li class="toclevel-3 tocsection-25"><a href="#GPU"><span class="tocnumber">1.13.1</span> <span class="toctext">GPU</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="#Numerical_Libraries"><span class="tocnumber">1.13.2</span> <span class="toctext">Numerical Libraries</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-27"><a href="#Release_schedules"><span class="tocnumber">1.14</span> <span class="toctext">Release schedules</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-28"><a href="#The_Team"><span class="tocnumber">2</span> <span class="toctext">The Team</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#Wish_List"><span class="tocnumber">3</span> <span class="toctext">Wish List</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#Migration_Plan_(Developers)"><span class="tocnumber">4</span> <span class="toctext">Migration Plan (Developers)</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#Migration_Guide_(for_Users)"><span class="tocnumber">5</span> <span class="toctext">Migration Guide (for Users)</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="#Software_Guide_(Update)"><span class="tocnumber">6</span> <span class="toctext">Software Guide (Update)</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="#A2D2_Projects"><span class="tocnumber">7</span> <span class="toctext">A2D2 Projects</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="#New_Fields"><span class="tocnumber">8</span> <span class="toctext">New Fields</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#Discussion_Points"><span class="tocnumber">9</span> <span class="toctext">Discussion Points</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="#Outreach"><span class="tocnumber">10</span> <span class="toctext">Outreach</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="#New_Code_Contribution_Process"><span class="tocnumber">11</span> <span class="toctext">New Code Contribution Process</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="ITK_Version_4">ITK Version 4</span></h1>
+<p>This work is supported by ARRA funding from the NLM. The <a rel="nofollow" class="external text" href="http://visual.nlm.nih.gov/itk/itk2010/agenda.html">kick-off meeting</a> for this project took place from June 28-July 2 2010 in Bethesda. A beta version of the software will be available by the end of March 2011. Bug fixes will continue to be contributed to the ITK version 3 code. 
+</p>
+<h2><span class="mw-headline" id="Download">Download</span></h2>
+<ul><li><a href="/Wiki/ITK_Release_4/Download" title="ITK Release 4/Download">Download</a></li></ul>
+<h2><span class="mw-headline" id="Release_Notes">Release Notes</span></h2>
+<ul><li><a href="/Wiki/ITK_Release_4/Migration_Plan/Release_Notes" class="mw-redirect" title="ITK Release 4/Migration Plan/Release Notes">Release Notes</a></li></ul>
+<h2><span class="mw-headline" id="LICENSE_Change">LICENSE Change</span></h2>
+<p>Starting with ITKv4-Alpha-01, the ITK toolkit is distributed under the Apache 2.0 License.
+</p><p>More details here:
+</p>
+<ul><li><a href="/Wiki/ITK_Release_4/Licensing" title="ITK Release 4/Licensing">Licensing</a></li></ul>
+<h2><span class="mw-headline" id="Revision_Control">Revision Control</span></h2>
+<ul><li>Adopt a modern revision control system
+<ul><li>Move from cvs to <a rel="nofollow" class="external text" href="http://git-scm.com">git</a> for distributed source code management</li>
+<li><a href="/Wiki/ITK/Git" title="ITK/Git">ITK Git Instructions</a></li></ul></li></ul>
+<h2><span class="mw-headline" id="Code_Review">Code Review</span></h2>
+<ul><li>Adopt a code review system
+<ul><li><a rel="nofollow" class="external text" href="http://review.source.kitware.com/p/ITK">ITK Gerrit</a></li>
+<li>Powered by <a rel="nofollow" class="external text" href="http://code.google.com/p/gerrit/">Gerrit Code Review</a></li></ul></li></ul>
+<h2><span id="Modern_C.2B.2B"></span><span class="mw-headline" id="Modern_C++">Modern C++</span></h2>
+<ul><li><a href="/Wiki/ITK_Release_4/Modern_C%2B%2B" title="ITK Release 4/Modern C++">Modern C++</a></li></ul>
+<ul><li>Take advantage of advances in C++
+<ul><li>Target popular compilers that are compatible with the C++98 and/or C++03 standard (<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/C%2B%2B03#Language_standard">http://en.wikipedia.org/wiki/C%2B%2B03#Language_standard</a>).</li>
+<li>Specifically remove support for Visual Studio prior to 7.1 (e.g., 6 and 7.0),  Borland version 5.5, Sun Studio compilers prior to 5.9, IRIX compilers, MWORKS compilers, cygwin 1.5 (newer versions may work, but are not being targeted), and gcc prior to 3.4</li></ul></li></ul>
+<h2><span class="mw-headline" id="Wrapping">Wrapping</span></h2>
+<ul><li>Improved ITK Wrapping at the class level (WrapITK)
+<ul><li><a href="/Wiki/ITK_Release_4/Wrapping" class="mw-redirect" title="ITK Release 4/Wrapping">Wrapping</a></li>
+<li>Particularly for Python 2.x, Python 3, Java and C#</li></ul></li></ul>
+<h2><span class="mw-headline" id="Simplify">Simplify</span></h2>
+<ul><li>Addition of <a href="/Wiki/ITK_Release_4/SimpleITK" class="mw-redirect" title="ITK Release 4/SimpleITK">Simple ITK Layer</a></li></ul>
+<h2><span class="mw-headline" id="Modularize">Modularize</span></h2>
+<ul><li>Refactor for <a href="/Wiki/ITK_Release_4/Modularization" class="mw-redirect" title="ITK Release 4/Modularization">Modularity</a>
+<ul><li>ITKCore, ITKRegistrationModule, and Optional Modules</li></ul></li></ul>
+<h2><span class="mw-headline" id="Testing_Crowdsourcing">Testing Crowdsourcing</span></h2>
+<ul><li><a href="/Wiki/ITK_Release_4/Testing_Crowdsourcing" title="ITK Release 4/Testing Crowdsourcing">Testing Crowdsourcing</a></li></ul>
+<h2><span class="mw-headline" id="Improve_Software_Process">Improve Software Process</span></h2>
+<ul><li>Enhanced project management tools and software processes</li></ul>
+<h3><span class="mw-headline" id="Data_Management">Data Management</span></h3>
+<ul><li>Better management for <a href="/Wiki/ITK_Release_4/Testing_Data" class="mw-redirect" title="ITK Release 4/Testing Data">Testing Data</a></li>
+<li>Data Collection <a href="/Wiki/ITK_Release_4/Data_Collection" title="ITK Release 4/Data Collection">MIDAS</a></li></ul>
+<h3><span id="Distributed_Testing_.28cdash.40home.29"></span><span class="mw-headline" id="Distributed_Testing_(cdash@home)">Distributed Testing (cdash@home)</span></h3>
+<ul><li>Testing On Demand <a href="/Wiki/ITK_Release_4/Testing_On_Demand" class="mw-redirect" title="ITK Release 4/Testing On Demand">cdash@home</a></li></ul>
+<h3><span class="mw-headline" id="Testing_Framework">Testing Framework</span></h3>
+<ul><li><a href="/Wiki/ITK_Release_4/UnitTesting" class="mw-redirect" title="ITK Release 4/UnitTesting">New unit testing framework</a> based on <a rel="nofollow" class="external text" href="http://code.google.com/p/googletest/">Google Test</a>
+<ul><li>Particularly to support module development, testing, and maintenance</li></ul></li></ul>
+<h3><span class="mw-headline" id="Coding_Style">Coding Style</span></h3>
+<ul><li><a href="/Wiki/ITK_Release_4/Coding_Style" class="mw-redirect" title="ITK Release 4/Coding Style">Coding Style</a></li></ul>
+<h2><span class="mw-headline" id="Revise">Revise</span></h2>
+<h3><span class="mw-headline" id="FEM">FEM</span></h3>
+<ul><li><a href="/Wiki/Refactoring_itk::FEM_framework_-_V4" title="Refactoring itk::FEM framework - V4">Refactoring itk::FEM framework - V4</a></li></ul>
+<h3><span class="mw-headline" id="Level_Sets">Level Sets</span></h3>
+<ul><li><a href="/Wiki/Refactoring_Level-Set_framework_-_V4" title="Refactoring Level-Set framework - V4">Refactoring Level-Set framework - V4</a></li></ul>
+<h3><span class="mw-headline" id="DICOM">DICOM</span></h3>
+<ul><li>Improved DICOM support
+<ul><li><a href="/Wiki/ITK_Release_4/DICOM" class="mw-redirect" title="ITK Release 4/DICOM">DICOM</a></li>
+<li>Including communications with PACS</li>
+<li>Support Streaming interface</li>
+<li>Add filter to support Siemens MOSAIC images</li>
+<li>Information Object Definition verification</li></ul></li></ul>
+<h3><span class="mw-headline" id="Image_Registration_Framework">Image Registration Framework</span></h3>
+<ul><li><a href="/Wiki/ITK_Release_4/Enhancing_Image_Registration_Framework" class="mw-redirect" title="ITK Release 4/Enhancing Image Registration Framework">Enhancing Image Registration Framework</a></li></ul>
+<h3><span class="mw-headline" id="Spatial_Objects">Spatial Objects</span></h3>
+<ul><li><a href="/Wiki/ITK_Release_4/SpatialObjects" class="mw-redirect" title="ITK Release 4/SpatialObjects"> Spatial Object Refactoring project page</a></li></ul>
+<h3><span class="mw-headline" id="Global_Code_Review">Global Code Review</span></h3>
+<ul><li><a href="/Wiki/ITK_Release_4/Global_Code_Review" class="mw-redirect" title="ITK Release 4/Global Code Review"> Global Code Review</a></li></ul>
+<h2><span class="mw-headline" id="Accelerate">Accelerate</span></h2>
+<h3><span class="mw-headline" id="GPU">GPU</span></h3>
+<ul><li><a href="/Wiki/ITK_Release_4/GPU_Acceleration" class="mw-redirect" title="ITK Release 4/GPU Acceleration">GPU Acceleration - V4</a>
+<ul><li>With support for distributed computing in the future</li></ul></li></ul>
+<ul><li><a href="/Wiki/GPU_Acceleration_-_V4" title="GPU Acceleration - V4">GPU Acceleration - V4 (deprecated link)</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Numerical_Libraries">Numerical Libraries</span></h3>
+<ul><li><a href="/Wiki/ITK_Release_4/Refactor_Numerical_Libraries" class="mw-redirect" title="ITK Release 4/Refactor Numerical Libraries">Refactor Numerical Libraries</a></li></ul>
+<h2><span class="mw-headline" id="Release_schedules">Release schedules</span></h2>
+<ul><li><a href="/Wiki/ITK_Release_4/ReleaseSchedules" title="ITK Release 4/ReleaseSchedules">Release Schedules</a></li></ul>
+<h1><span class="mw-headline" id="The_Team">The Team</span></h1>
+<p><a href="/Wiki/ITK_Release_4/The_Team" title="ITK Release 4/The Team">The Team</a>
+</p>
+<h1><span class="mw-headline" id="Wish_List">Wish List</span></h1>
+<p><a href="/Wiki/ITK_Release_4/Wish_List" title="ITK Release 4/Wish List">Wish List</a>
+</p>
+<h1><span id="Migration_Plan_.28Developers.29"></span><span class="mw-headline" id="Migration_Plan_(Developers)">Migration Plan (Developers)</span></h1>
+<p><a href="/Wiki/ITK_Release_4/Migration_Plan" class="mw-redirect" title="ITK Release 4/Migration Plan">Migration Plan</a>
+</p>
+<h1><span id="Migration_Guide_.28for_Users.29"></span><span class="mw-headline" id="Migration_Guide_(for_Users)">Migration Guide (for Users)</span></h1>
+<p><a href="/Wiki/ITK_Release_4/Users_Migration_Guide" title="ITK Release 4/Users Migration Guide">Users Migration Guide</a>
+</p>
+<h1><span id="Software_Guide_.28Update.29"></span><span class="mw-headline" id="Software_Guide_(Update)">Software Guide (Update)</span></h1>
+<p><a href="/Wiki/ITK_Release_4/Software_Guide_Update" title="ITK Release 4/Software Guide Update">Software Guide Update</a>
+</p>
+<h1><span class="mw-headline" id="A2D2_Projects">A2D2 Projects</span></h1>
+<p><a href="/Wiki/ITK_Release_4/A2D2_Projects" title="ITK Release 4/A2D2 Projects">A2D2 Projects</a>
+</p>
+<h1><span class="mw-headline" id="New_Fields">New Fields</span></h1>
+<p>ITKv4 will provide improved support for 
+</p>
+<ul><li><a href="/Wiki/ITK_Release_4/Video" title="ITK Release 4/Video">Video</a></li>
+<li><a href="/Wiki/ITK_Release_4/Microscopy" title="ITK Release 4/Microscopy">Microscopy</a></li>
+<li><a href="/Wiki/ITK_Release_4/Remote_Sensing" title="ITK Release 4/Remote Sensing">Remote Sensing</a></li></ul>
+<h1><span class="mw-headline" id="Discussion_Points">Discussion Points</span></h1>
+<p><a href="/Wiki/ITK_Release_4/Discussion_Points" title="ITK Release 4/Discussion Points">Discussion Points</a>
+</p>
+<h1><span class="mw-headline" id="Outreach">Outreach</span></h1>
+<p><a href="/Wiki/ITK_Release_4/Outreach" class="mw-redirect" title="ITK Release 4/Outreach">Outreach</a>
+</p>
+<h1><span class="mw-headline" id="New_Code_Contribution_Process">New Code Contribution Process</span></h1>
+<p><a href="/Wiki/ITK_Release_4/New_Code_Contribution_Process" class="mw-redirect" title="ITK Release 4/New Code Contribution Process">New Code Contribution Process</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20220812181139
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.020 seconds
+Real time usage: 0.021 seconds
+Preprocessor visited node count: 145/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3205-0!canonical and timestamp 20220812181139 and revision id 45198. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4_Planning&amp;oldid=45198">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4_Planning&amp;oldid=45198</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4_Planning" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4_Planning&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4_Planning">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4_Planning&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4_Planning&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4_Planning" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4_Planning&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4+Planning" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4_Planning" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4_Planning" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4_Planning&amp;oldid=45198" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4_Planning&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 20 January 2012, at 15:59.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.020","walltime":"0.021","ppvisitednodes":{"value":145,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220812181139","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":75});});</script>
+</body></html>

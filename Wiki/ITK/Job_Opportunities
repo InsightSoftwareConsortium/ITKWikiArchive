@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Job Opportunities - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"34f11681673bf13a71f7b267","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Job_Opportunities","wgTitle":"ITK/Job Opportunities","wgCurRevisionId":58564,"wgRevisionId":58564,"wgArticleId":647,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Job_Opportunities","wgRelevantArticleId":647,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready",
+"user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Job_Opportunities rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Job Opportunities</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Please feel free to post announcements for jobs and positions that are related to ITK and applicants with ITK experience.  Once the position has been fulfilled, please update the entry accordingly.
+</p><p>Please note that they are <b>listed according to their post date</b>, and not their deadline, as this information is missing in some cases. Past positions are kept for the sake of maintaining a small history of them.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Current_positions_(2014-2015)"><span class="tocnumber">1</span> <span class="toctext">Current positions (2014-2015)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Multiple_Software_Engineer_Positions_at_Intel"><span class="tocnumber">1.1</span> <span class="toctext">Multiple Software Engineer Positions at Intel</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Two_Software_and_Scientist_Positions_at_Imascap,_France"><span class="tocnumber">1.2</span> <span class="toctext">Two Software and Scientist Positions at Imascap, France</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Past_positions"><span class="tocnumber">2</span> <span class="toctext">Past positions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Year_2013"><span class="tocnumber">2.1</span> <span class="toctext">Year 2013</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Internship_position_for_developing_a_MR_CAD_tool"><span class="tocnumber">2.1.1</span> <span class="toctext">Internship position for developing a MR CAD tool</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#PhD_position_in_multi-modal_image_processing,_b&lt;&gt;com_Brest,_France"><span class="tocnumber">2.1.2</span> <span class="toctext">PhD position in multi-modal image processing, b&lt;&gt;com Brest, France</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#Year_2012"><span class="tocnumber">2.2</span> <span class="toctext">Year 2012</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Technology_Officer_in_Biomedical_Image_Computing_&amp;_Modelling,_University_of_Sheffield,_UK"><span class="tocnumber">2.2.1</span> <span class="toctext">Technology Officer in Biomedical Image Computing &amp; Modelling, University of Sheffield, UK</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Job_-_Software_Engineer_in_medical_image_processing_(medInria)_-_INRIA_Rennes_-_France"><span class="tocnumber">2.2.2</span> <span class="toctext">Job - Software Engineer in medical image processing (medInria) - INRIA Rennes - France</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Job_-_Software_Engineer_/_Research_Specialist_Lead_-_Emory_University_/_Georgia_Tech"><span class="tocnumber">2.2.3</span> <span class="toctext">Job - Software Engineer / Research Specialist Lead  - Emory University / Georgia Tech</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="#Year_2011"><span class="tocnumber">2.3</span> <span class="toctext">Year 2011</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#ITK-SNAP_Software_Developer_-_University_of_Pennsylvania"><span class="tocnumber">2.3.1</span> <span class="toctext">ITK-SNAP Software Developer - University of Pennsylvania</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Software_Engineer(s)-Electrical_Geodesics,_Inc."><span class="tocnumber">2.3.2</span> <span class="toctext">Software Engineer(s)-Electrical Geodesics, Inc.</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Master_training_position,_INRIA_Sophia_Antipolis,_France:_Prediction_of_Cardiac_Electrophysiology_Signal_Characteristics_from_Image_Features"><span class="tocnumber">2.3.3</span> <span class="toctext">Master training position, INRIA Sophia Antipolis, France: Prediction of Cardiac Electrophysiology Signal Characteristics from Image Features</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Year_2010"><span class="tocnumber">2.4</span> <span class="toctext">Year 2010</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="#Postdoctoral_Position:_MIT/Harvard_Medical_School,_Cambridge/Boston,_MA"><span class="tocnumber">2.4.1</span> <span class="toctext">Postdoctoral Position: MIT/Harvard Medical School, Cambridge/Boston, MA</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Two_Postdoctoral_Positions:_Harvard_Medical_School,_Boston,_MA"><span class="tocnumber">2.4.2</span> <span class="toctext">Two Postdoctoral Positions: Harvard Medical School, Boston, MA</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Research_Scientist_(Junior)_-_Image_and_Signal_Processing_-_Rennes,France"><span class="tocnumber">2.4.3</span> <span class="toctext">Research Scientist (Junior) - Image and Signal Processing - Rennes,France</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-20"><a href="#Year_2009"><span class="tocnumber">2.5</span> <span class="toctext">Year 2009</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="#Software_Engineer_(Junior)_-_Harvard_Medical_School"><span class="tocnumber">2.5.1</span> <span class="toctext">Software Engineer (Junior) - Harvard Medical School</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Computer_Programming_-_Image_Guided_Intervention"><span class="tocnumber">2.5.2</span> <span class="toctext">Computer Programming - Image Guided Intervention</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-23"><a href="#Year_2008"><span class="tocnumber">2.6</span> <span class="toctext">Year 2008</span></a>
+<ul>
+<li class="toclevel-3 tocsection-24"><a href="#Staff_Scientist_-_Medical_Image_Processing"><span class="tocnumber">2.6.1</span> <span class="toctext">Staff Scientist - Medical Image Processing</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="#Research_Developer_-_Medical_Imaging"><span class="tocnumber">2.6.2</span> <span class="toctext">Research Developer - Medical Imaging</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="#Post-doctoral_Research_Openings_at_Rensselaer_Polytechnic_Institute"><span class="tocnumber">2.6.3</span> <span class="toctext">Post-doctoral Research Openings at Rensselaer Polytechnic Institute</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#Senior_Developer_-_Medical_Image_Processing"><span class="tocnumber">2.6.4</span> <span class="toctext">Senior Developer  - Medical Image Processing</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="#Software_Engineer,_Intuitive_Surgical_Inc.,_Sunnyvale_California"><span class="tocnumber">2.6.5</span> <span class="toctext">Software Engineer, Intuitive Surgical Inc., Sunnyvale California</span></a></li>
+<li class="toclevel-3 tocsection-29"><a href="#Research_Scientist_Position_in_Medical_Imaging_in_Brisbane,_Australia"><span class="tocnumber">2.6.6</span> <span class="toctext">Research Scientist Position in Medical Imaging in Brisbane, Australia</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-30"><a href="#Year_2007"><span class="tocnumber">2.7</span> <span class="toctext">Year 2007</span></a>
+<ul>
+<li class="toclevel-3 tocsection-31"><a href="#Summer_2007:_National_Institutes_of_Health_Postdoc"><span class="tocnumber">2.7.1</span> <span class="toctext">Summer 2007: National Institutes of Health Postdoc</span></a></li>
+<li class="toclevel-3 tocsection-32"><a href="#August_2007_to_sept._2008:_Caltech_&amp;_Harvard_Medical_School"><span class="tocnumber">2.7.2</span> <span class="toctext">August 2007 to sept. 2008: Caltech &amp; Harvard Medical School</span></a></li>
+<li class="toclevel-3 tocsection-33"><a href="#Spring_2007:_University_of_Texas_-_M._D._Anderson_Cancer_Center"><span class="tocnumber">2.7.3</span> <span class="toctext">Spring 2007: University of Texas - M. D. Anderson Cancer Center</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-34"><a href="#Year_2006"><span class="tocnumber">2.8</span> <span class="toctext">Year 2006</span></a>
+<ul>
+<li class="toclevel-3 tocsection-35"><a href="#May_2006:_National_Institutes_of_Health_Staff_Scientist_Position"><span class="tocnumber">2.8.1</span> <span class="toctext">May 2006: National Institutes of Health Staff Scientist Position</span></a></li>
+<li class="toclevel-3 tocsection-36"><a href="#Spring_2006:_National_Institutes_of_Health_Postdoc"><span class="tocnumber">2.8.2</span> <span class="toctext">Spring 2006: National Institutes of Health Postdoc</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-37"><a href="#Year_2005"><span class="tocnumber">2.9</span> <span class="toctext">Year 2005</span></a>
+<ul>
+<li class="toclevel-3 tocsection-38"><a href="#Spring/Summer_2005:_National_Institutes_of_Health_Postdoc"><span class="tocnumber">2.9.1</span> <span class="toctext">Spring/Summer 2005: National Institutes of Health Postdoc</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-39"><a href="#Year_2004"><span class="tocnumber">2.10</span> <span class="toctext">Year 2004</span></a>
+<ul>
+<li class="toclevel-3 tocsection-40"><a href="#November_2004:_Kitware"><span class="tocnumber">2.10.1</span> <span class="toctext">November 2004: Kitware</span></a></li>
+<li class="toclevel-3 tocsection-41"><a href="#Nov_2004:_National_Institutes_of_Health_Staff_Scientist"><span class="tocnumber">2.10.2</span> <span class="toctext">Nov 2004: National Institutes of Health  Staff Scientist</span></a></li>
+<li class="toclevel-3 tocsection-42"><a href="#June_2004:_Computer_Vision_Research_Position"><span class="tocnumber">2.10.3</span> <span class="toctext">June 2004: Computer Vision Research Position</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span id="Current_positions_.282014-2015.29"></span><span class="mw-headline" id="Current_positions_(2014-2015)">Current positions (2014-2015)</span></h1>
+<h2><span class="mw-headline" id="Multiple_Software_Engineer_Positions_at_Intel">Multiple Software Engineer Positions at Intel</span></h2>
+<p>Posted: May. 16th 2014
+</p><p><b>Description</b>:
+The individual will participate in the development of next generation computational lithography tools, which are an important contributor to Intel's march along Moore's Law. The job role includes research and development work for creating new numerical models and algorithms that enable extracting even more resolution out of existing 193nm steppers. The duties also include image analysis, software performance optimization, parallel programming, computational geometry as well as supporting mission critical software in a production environment. The position requires working in a team with other developers, and interfacing with a large technology development organization. Good communication skills with demonstrated attention to detail and results orientation are required.
+</p><p><b>Minimum Qualifications</b>:
+</p>
+<ul><li>PhD degree in Computer Science, Physics, Electrical Engineering, Mechanical Engineering, or a related engineering discipline</li></ul>
+<p>Note: due to the multi-disciplinary nature of the work our team is comprised of world leading experts in fields ranging from Optics/Electromagnetism to Chemical Engineering and Robotics
+</p>
+<ul><li>Demonstrated coding proficiency, preferably in C++</li></ul>
+<p><b>Preferred Qualifications</b>:
+Background in one or more of the following areas:
+</p>
+<ul><li>Computer Vision &amp; Machine Learning</li>
+<li>Optics &amp; Electromagnetics Theory</li>
+<li>Parallel Programming and algorithms</li>
+<li>Numerical modeling</li>
+<li>Computational geometry</li>
+<li>Computational lithography methods</li>
+<li>Linear/Non-linear optimization</li>
+<li>Big data, Database Systems, UI</li></ul>
+<p><b>Job Location</b>:
+Hillsboro, Oregon. Located in the beautiful Portland Metro Area, 15 miles west of downtown Portland, Intel Oregon is the largest and most complex site in the world, a global center of semiconductor research and manufacturing, and the largest private employer in the state.
+</p><p><b>About Our Team</b>:
+We are a highly motivated multi-disciplinary team whose expertise range from computer engineering to physics, electrical engineering to chemical engineering. Our team produces world class solutions for computational lithography systems and has won several Intel achievement awards as well as software quality awards. 
+</p><p>Interested individuals should forward their resumes to cemal.c.bilgin@intel.com
+</p><p><br />
+</p>
+<h2><span id="Two_Software_and_Scientist_Positions_at_Imascap.2C_France"></span><span class="mw-headline" id="Two_Software_and_Scientist_Positions_at_Imascap,_France">Two Software and Scientist Positions at Imascap, France</span></h2>
+<p>Posted: Dec. 1st 2015
+</p><p>Founded in Brest, France 2009, Imascap develops and markets software solutions for planning and performing orthopeadic surgery procedures. Our key to success is our top notch creative team, which developed patented innovative products, now exported to 19 countries in the world. In 2014, Jean Chaoui, CEO of the Imascap team, has even scooped the 'Innovator under 35' of the prestigious MIT price. To further accelerate our expansion and introduce new products, we are looking for a software developer and a research scientist.
+</p><p>The software developer and the research scientist are an integral part of our Imascap team. With a focus on new product development, they closely cooperate with other developers, scientists, quality engineers and surgeons, while directly reporting to the R&amp;D director.
+</p><p>For these positions, we are looking for a software developer and a research scientist having a solid track record in software development and/or medical imaging software development. Key responsibilities for this role include
+</p>
+<ul><li>Creation, validation, deployment and support of the software products</li>
+<li>Development of new software modules and participation to the realization of clinical prototypes</li></ul>
+<p>As a candidate, you should have:
+</p>
+<ul><li>an education in Computer Science, Engineering or related discipline (Ph.D. preferred for the scientist position or engineering school/Master's Degree M2)</li>
+<li>a strong background in image-processing, computer-vision, and computer-graphics for the scientist position</li>
+<li>Excellent programming skills in C++, Qt and 2D/3D processing libraries for the software developer position</li>
+<li>software architecture (e.g. design pattern)</li>
+<li>Fluent English is mandatory. French is a plus but not mandatory.</li>
+<li>Knowledge of medical imaging (image processing and 3D) is beneficial but not required for the software developer</li></ul>
+<h1><span class="mw-headline" id="Past_positions">Past positions</span></h1>
+<h2><span class="mw-headline" id="Year_2013">Year 2013</span></h2>
+<h3><span class="mw-headline" id="Internship_position_for_developing_a_MR_CAD_tool">Internship position for developing a MR CAD tool</span></h3>
+<p>Posted: Oct. 29th 2013
+</p><p>Eigen is making a difference in patient outcomes and care with our innovative medical imaging products, and we’re looking for a software engineer to join our team.
+ProFuse, our MRI image fusion product, is being used on patients daily to provide accurate, repeatable biopsies, with the assistance of Eigen’s mechanical guidance. We have a list of improvements in mind to make the system even better, and that’s where you can help us. We need a quality-focused software intern who’s familiar with C++ - if you know the QT framework, so much the better. You’ll be working with our existing team to add features, and lay the foundation for our next generation of products.
+</p><p>Requirements:
+-In progress degree in Computer Science, Mathematics, Physics, Engineering, Medical Imaging or related discipline.
+-UI/UX programming experience.
+-Strong interpersonal and communication skills.
+-Knowledgeable and experienced with C++ language.
+</p><p>Desirable but not required:
+-Experience with medical devices, avionics, or other regulated technical products.
+-Familiarity with ITK and VTK libraries.
+-Experience with CMake build system.
+-Image processing background strongly preferred.
+-Strong mathematics background.
+-GPU programming experience (CUDA).
+</p><p>This is a 6 month internship, on-site at our Grass Valley, CA location, but could lead to a full time W2 position.
+</p><p>Please send your resumes to hr@eigen.com.
+</p>
+<h3><span id="PhD_position_in_multi-modal_image_processing.2C_b.3C.3Ecom_Brest.2C_France"></span><span class="mw-headline" id="PhD_position_in_multi-modal_image_processing,_b&lt;&gt;com_Brest,_France">PhD position in multi-modal image processing, b&lt;&gt;com Brest, France</span></h3>
+<p>Posted: Oct. 28th 2013
+</p><p>It is increasingly common to combine multiple methods of treatment, i.e., treatment modalities, with the intention to improve patient outcomes and reduce complications. Each treatment modality may consist of (1) multiple images acquired by one or more modalities (e.g. PET and CT) and (2) contextual information (e.g. clinical reports). To improve patient outcome, one approach is to unify the imaging information and the context information so that the therapy planning, therapy guidance and post-treatment evaluation are simplified. In practice, whereas Picture Archive and Communication Systems (PACS), employed in hospital, store multi-modal images and contextual information, simultaneous re-use of both information cannot be done in a simple fashion.
+</p><p>This Ph.D. will focus on the integration of multi-modal imaging information accrued by contextual information extracted from a PACS.
+</p><p>A first problem to address is the analysis of multi-modal images (e.g., PET/CT). This analysis requires, for example, image processing (image quality improvement or image artifact reduction) followed by image analysis (segmentation or biomarker extraction). A second problem to investigate is the association of quantitative parameters extracted from multi-modal images with other contextual information. This also involves the automatic generation of clinical reports both associating results of multi-parameter image analysis and contextual information, with the goal of assisting physicians with clinical decisions. It is intended that this Ph.D. will lead to a Clinical Decision Support System demonstrator dedicated to a specific context/pathology (e.g. oncology or neurology).
+</p><p>The PhD fellowship is funded by b&lt;&gt;com (<a rel="nofollow" class="external free" href="http://b-com.com">http://b-com.com</a>) which is a Technology Research Institute located in Brest, Rennes and Lannion (France). This Ph.D thesis will be carried out under the supervision of M. Hatt (research associate, INSERM) and G. Coatrieux, Assistant Professor (Telecom Bretagne) and located at b&lt;&gt;com on the Brest-Iroise Science and Technology Park.
+</p><p>Expected qualifications:
+- Minimum MSc degree (Computer Science)
+- Experience in developing medical imaging applications is desirable
+- Prior experience in image analysis, pattern recognition and computer vision
+- Programming experience in C++
+</p><p>Contact: Please send your resume to job@b-com.com
+</p>
+<h2><span class="mw-headline" id="Year_2012">Year 2012</span></h2>
+<h3><span id="Technology_Officer_in_Biomedical_Image_Computing_.26_Modelling.2C_University_of_Sheffield.2C_UK"></span><span class="mw-headline" id="Technology_Officer_in_Biomedical_Image_Computing_&amp;_Modelling,_University_of_Sheffield,_UK">Technology Officer in Biomedical Image Computing &amp; Modelling, University of Sheffield, UK</span></h3>
+<p><b> Computational Imaging and Simulation Technologies in Biomedicine (CISTIB), University of Sheffield, UK </b> 
+</p><p>Posted: Nov 5th 2012 \
+Closes: Nov 21st 2012
+</p><p><i>* About Sheffield </i>
+</p><p>Mechanical Engineering has been a major discipline in the University of Sheffield since its foundation in 1905.  In the most recent Research Assessment Exercise the Department came second in the country in the league table of Mechanical Engineering departments, and achieved an "Excellent" rating in the last Teaching Quality Assessment.  The Department currently has 41 members of academic staff who support the learning and development of an ever-growing undergraduate and postgraduate student body. For more information on the Department please see our web site <a rel="nofollow" class="external free" href="http://www.shef.ac.uk/mecheng/">http://www.shef.ac.uk/mecheng/</a>.
+</p><p>The INSIGNEO Institute for in silico Medicine is an initiative between the Faculty of Engineering and the Faculty of Medicine at the University of Sheffield and the Sheffield Teaching Hospitals Foundation Trust. INSIGNEO will realise the scientific ambition behind the Virtual Physiological Human (VPH), producing a transformational impact on healthcare. INSIGNEO performs cutting edge research in areas of fundamental and applied biomedical modelling, imaging and informatics. It will pursue the research agenda of the VPH initiative; in particular, in the first five years it will focus on the Digital Patient, In Silico Clinical Trials, and Personal Health Forecasting. It will achieve transformational impact on healthcare through multidisciplinary collaboration in strategic areas, which initially will include personalised treatments and independent, active and healthy ageing.
+</p><p>The Computational Imaging and Simulation Technologies in Biomedicine (CISTIB) Group at the University of Sheffield is part of INSIGNEO. CISTIB focuses on algorithmic and applied research in the areas of computational imaging, modeling and simulation. CISTIB is working in different areas of medical image segmentation, statistical shape analysis, pattern recognition and image-based personalized computational electro-mechanics and fluid dynamics, and modeling of virtual interventions with endovascular and cardiac rhythm management devices. The centre hosts academic members from the University of Sheffield as well as research fellows, research associates, PhD Students and scientific software developers forming a cross-disciplinary team of biomedical engineers, computer scientists, electrical engineers, mechanical engineers, physicists, and mathematicians. 
+</p><p>The main objective of CISTIB is to contribute to the development of technologies for advanced screening, diagnostics, interventional guidance and therapy planning of cardio- and neurovascular diseases as well as growing activity in the musculo-skeletal system. Converging technologies such as computational imaging, computational physiology and virtual implantation of medical devices are integrated with state of the art multimodal acquisition systems to achieve an enhanced interpretation of human physiology and pathology and supply integrative approaches for in silico medical device customization, optimization and image-based efficacy assessment. Core technologies include spatial and temporal image segmentation, non-rigid image registration, multimodal image fusion, pattern recognition, statistical shape analysis, multi-view geometry, image-based tissue property estimation, tissue deformation quantification, computational geometry, image-based mesh generation, computational fluid dynamics and electro-mechanical simulation.
+</p><p>CISTIB fosters basic and applied research and promotes technology transfer to industry. It participates to a number of national and international research projects funded by the European Commission, and holds collaborations with several national and international companies. CISTIB also very close cooperation with clinical centers at the local level and worldwide and has a strong clinically-oriented translational vision.
+</p><p><i> * Open positions </i>
+</p><p>You will lead and coordinate a team of Scientific Software Developers that will produce prototypes for applied research projects, clinical translation projects, and technology assessment studies. Your work will also support the research program within CISTIB by enabling its researchers to effectively implement new methods and algorithms. Those prototype technologies that are found to be effective will be translated into commercially available products and services, by means of IPR exploitation agreements with existing companies, or by creating dedicated spin-off companies. The ideal candidate has a considerable experience in managing Technical teams. Previous experience in the area of software development related to the Virtual Physiological Human initiative would be an advantage. Your skill set should be properly balanced between experience on research projects and software management to act as an interface between the needs of the technological and clinical researchers of the centre, and the software developers. All development activities should be steered toward the establishment of a portfolio of methods and technologies (i.e. libraries, software frameworks, etc.). You will play a key role in attracting significant research and technological development funding, in collaboration with other CISTIB members, both from public and private sources.
+</p><p>We are interested in individuals with excellent communication and leadership skills, able to work in a multidisciplinary and international team and contribute to the visibility of the centre in the international scientific community. The ability to interact with other disciplines is essential. The candidate will cooperate with members of the lab working on related topics as well as with our collaborators at several academic institutions in UK and across Europe.
+</p><p><i> * How to apply </i>
+</p><p>More information and application through <a rel="nofollow" class="external free" href="http://sheffield.ac.uk/jobs">http://sheffield.ac.uk/jobs</a> reference UOS005565.
+</p>
+<h3><span id="Job_-_Software_Engineer_in_medical_image_processing_.28medInria.29_-_INRIA_Rennes_-_France"></span><span class="mw-headline" id="Job_-_Software_Engineer_in_medical_image_processing_(medInria)_-_INRIA_Rennes_-_France">Job - Software Engineer in medical image processing (medInria) - INRIA Rennes - France</span></h3>
+<p>Posted June 26, 2012
+</p><p>R&amp;D Experienced software engineer / Good knowledge of ITK, VTK and Qt
+</p><p>As part of the development of medInria (<a rel="nofollow" class="external text" href="http://med.inria.fr">med.inria.fr</a>), we are proposing a new position for an experienced engineer at Inria Rennes, France (Visages team), starting from october 2012. The recruited person will work among the national team developing medInria, to develop core features and specific medical image processing plugins from the Visages team. More details on the position are available on <a rel="nofollow" class="external text" href="https://www.irisa.fr/visages/_media/positions/position_medinria_nt_2012.pdf">the position sheet</a>.
+</p><p><br />
+</p>
+<h3><span id="Job_-_Software_Engineer_.2F_Research_Specialist_Lead_-_Emory_University_.2F_Georgia_Tech"></span><span class="mw-headline" id="Job_-_Software_Engineer_/_Research_Specialist_Lead_-_Emory_University_/_Georgia_Tech">Job - Software Engineer / Research Specialist Lead  - Emory University / Georgia Tech</span></h3>
+<p>Posted June 8, 2012
+</p><p>Research Specialist Lead / Software Engineer
+</p><p>This position offers great opportunities to work in a high-quality academic environment at Emory University and Georgia Institute of Technology, Atlanta, Georgia, USA. The joint Department of Biomedical Engineering (BME) of Emory University and Georgia Institute of Technology provides one of the top BME programs to foster the next generation of leaders in biomedical engineering worldwide. The Department of Radiology and Imaging Sciences at Emory University School of Medicine provides one of the best education, training and research programs in the country. Successful applicant would work under the supervision of the principal investigator and will collaborate with other faculty members, clinicians, researchers, post-doctoral fellows, graduate and undergraduate students in a research team. This person would be involved in projects focused on multimodality medical imaging (ultrasound, PET/CT, and MRI) with emphasis on medical image analysis and image-guided interventions. As a regular staff of Emory University, this person and her/his family would be eligible for a full range of Emory benefits including health and dental insurance, tuition, and other benefits.  
+</p><p>JOB DESCRIPTION: Under minimal supervision, modifies and writes software programs for image processing and analysis. Develops requirements and specifications and implements computer algorithms in software programs. Performs image quantification using commercial software systems or home-made software programs.  Uses independent judgment in applying or adapting scientific techniques. Assists in planning and scheduling research procedures. Performs a variety of laboratory tests and procedures. Analyzes and interprets results of studies. Reviews literature for related research developments and techniques and compiles findings. Monitors laboratory processes to maintain quality assurance standards. Records results of studies, compiles and analyzes data and prepares charts and graphs. Performs related responsibilities as required. 
+</p><p>MINIMUM QUALIFICATIONS: Bachelor's or Master’s degree in computer science, mathematics, electrical engineering, biomedical engineering, or other related fields, and two years of working experience, or equivalent combination of experience, education, and training. Two years of experience in software programming is required. Programming experience with IDL, C++, and MATLAB is preferred. Basic knowledge in medical image processing and analysis is required. Knowledge in medical imaging such as MRI, PET, CT, and ultrasound is a plus but not required. 
+</p><p>CONTACT:
+Baowei Fei, PhD, EngD,
+Georgia Cancer Coalition Distinguished Scholar
+Director of Quantitative BioImaging Laboratory (QBIL)
+Emory University and Georgia Institute of Technology
+1841 Clifton Road NE, Atlanta, GA 30329, USA
+Email: bfei@gatech.edu
+</p><p><br />
+To apply for the position, send CV and Personal Statement to bfei@gatech.edu  
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Year_2011">Year 2011</span></h2>
+<h3><span class="mw-headline" id="ITK-SNAP_Software_Developer_-_University_of_Pennsylvania">ITK-SNAP Software Developer - University of Pennsylvania</span></h3>
+<p>Posted Dec 5, 2011
+</p><p>The Penn Image Computing and Science Laboratory (PICSL) seeks a qualified C++ programmer to support the development of ITK-SNAP, an interactive software application for biomedical image segmentation. The programmer will work with the principal investigator on an NIH-funded grant to develop the next-generation GUI for ITK-SNAP, accelerate the tool=92s performance, and incorporate multi-modality image segmentation algorithms. Applicants must have a Bachelors degree in computer science or related field. Minimal qualifications are
+</p>
+<ul><li>C++ programming (4 years experience)</li>
+<li>Experience with user interface programming, preferably Qt</li>
+<li>Strong interpersonal and communication skills, and ability to work</li></ul>
+<p>independently
+</p><p>Applicants with expertise in the following ares are particularly encouraged to apply:
+</p>
+<ul><li>Familiarity with ITK and VTK libraries, and CMake build system</li>
+<li>Image processing, computer vision, and computer graphics</li>
+<li>Strong mathematics background</li>
+<li>GPU programming experience (CUDA, OpenCL)</li>
+<li>Experience working in a research environment</li>
+<li>Advanced degree in related field</li></ul>
+<p>PICSL is a dynamic and growing research group involved in many exciting biomedical imaging projects, including development of novel analysis methodologies; application of the state-of-the-art techniques to clinical studies; and translational research. PICSL is located in Philadelphia, a vibrant city that offers many professional and cultural opportunities. PICSL fosters a friendly, noncompetitive, collaborative environment where each individual member of the laboratory is able to thrive, while also effectively contributing to the group=92s overall programmatic aims.
+</p><p>The position is funded by a federal grant. Continued employment is subject to performance and availability of grant funding. PICSL has an excellent track record of obtaining research funding and personnel retention. The position features a competitive compensation package with generous fringe benefits.
+</p><p>The University of Pennsylvania is an equal opportunity, affirmative action employer. Women and minority candidates are strongly encouraged to apply.
+</p><p>Interested candidates should send an email to the address below. Please include the words =93snap developer=94 on the subject line. Include a brief statement of qualifications relevant to the project, a CV or resume, and a list of 3 references.
+</p><p>Paul Yushkevich, Ph.D.
+Assistant Professor
+Penn Image Computing and Science Laboratory (PICSL)
+Department of Radiology
+University of Pennsylvania
+</p><p>Email: pauly2 [at] mail [.] med [.] upenn [.] edu
+<a rel="nofollow" class="external free" href="http://picsl.upenn.edu">http://picsl.upenn.edu</a>
+<a rel="nofollow" class="external free" href="http://itksnap.org">http://itksnap.org</a>
+</p><p><br />
+</p>
+<h3><span id="Software_Engineer.28s.29-Electrical_Geodesics.2C_Inc."></span><span class="mw-headline" id="Software_Engineer(s)-Electrical_Geodesics,_Inc.">Software Engineer(s)-Electrical Geodesics, Inc.</span></h3>
+<p>Electrical Geodesics, Inc. (www.egi.com), an international medical device company in the neurology/neuroscience field, is seeking to fill “three” software engineer position. The Software Engineer is responsible for software related product development, product engineering activities, and grant support.
+</p><p>Opening 1Requirements:
+• Bachelor's degree in Computer Science, Mathematics, or strongly related field
+• C++ (Objective-C a plus)
+</p>
+<pre>Make, CMake, and other build environment expertise.
+</pre>
+<p>• VTK, ITK, Tcl/Tk
+</p><p>Desired Experiences:
+</p><p>• MRI Processing
+• Cross platform development (Mac, Linux, Windows) experience a plus.
+</p><p>Opening 2 Requirements:
+• Bachelor's degree in Computer Science, Mathematics, or strongly related field
+• 2 years experience in a multi-platform environment.
+• Java, C, C++ (Objective-C a plus).
+</p><p>Opening 3 Requirements:
+• Bachelor's degree in Computer Science, Mathematics, or strongly related field
+• 2 years experience in a multi-platform environment.
+• Java (principle), C, C++ (Objective-C a plus)
+• Strong knowledge of application server environments.
+• Strong profiency in database engineering, and demonstrable knowledge of SQL.
+• Experience with Netbeans or Eclipse (and comfortable to use either).
+</p><p>Full Time, exempt, salary position with benefits.
+</p><p>To apply for any of the above openings, resume and cover letter should be sent to dmarquez@egi.com
+</p><p><br />
+</p>
+<h3><span id="Master_training_position.2C_INRIA_Sophia_Antipolis.2C_France:_Prediction_of_Cardiac_Electrophysiology_Signal_Characteristics_from_Image_Features"></span><span class="mw-headline" id="Master_training_position,_INRIA_Sophia_Antipolis,_France:_Prediction_of_Cardiac_Electrophysiology_Signal_Characteristics_from_Image_Features">Master training position, INRIA Sophia Antipolis, France: Prediction of Cardiac Electrophysiology Signal Characteristics from Image Features</span></h3>
+<p>The aim of this project is to analyse both cardiac images and electrophysiology signals in order to explore correlations. Developped features will be mapped on a 3D mesh and overlaid on anatomical images of the heart in order to guide interventions. This project will require image analysis, registration for correlating anatomical and functional information, and machine learning. This project will be in collaboration with Bordeaux University Hospital.
+</p><p>More information can be found in the detailed job description: 
+</p><p><a rel="nofollow" class="external free" href="http://www-sop.inria.fr/asclepios/recrutement/MasterTrainingINRIA2011.pdf">http://www-sop.inria.fr/asclepios/recrutement/MasterTrainingINRIA2011.pdf</a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Year_2010">Year 2010</span></h2>
+<h3><span id="Postdoctoral_Position:_MIT.2FHarvard_Medical_School.2C_Cambridge.2FBoston.2C_MA"></span><span class="mw-headline" id="Postdoctoral_Position:_MIT/Harvard_Medical_School,_Cambridge/Boston,_MA">Postdoctoral Position: MIT/Harvard Medical School, Cambridge/Boston, MA</span></h3>
+<ul><li>Posted on December 3rd 2010</li></ul>
+<p>Location: Cambridge/Boston, MA
+Type: Postdoctoral position in Medical Robotics
+Expires:January 01, 2011
+</p><p>Job description: We are currently seeking an engineer/computer scientist to join our dynamic team that is developing image-guided robots for accurate and efficient tumor ablation. The person will ideally have medical image processing experience and will be developing user interfaces for controlling robots using information in the medical imaging data.
+</p><p>Our group involves a collaboration between the Massachusetts Institute of Technology, Massachusetts General Hospital and Brigham and Women's Hospital and has a large amount of technical and clinical expertise in this area.
+</p><p>Information regarding the open positions and desired qualifications can be provided upon request. Graduate students, post-doc and recent graduates will all be considered. Interested candidates should send a CV and a brief paragraph along to Dr. Conor Walsh at walshcj@mit.edu.
+</p><p><br />
+</p>
+<h3><span id="Two_Postdoctoral_Positions:_Harvard_Medical_School.2C_Boston.2C_MA"></span><span class="mw-headline" id="Two_Postdoctoral_Positions:_Harvard_Medical_School,_Boston,_MA">Two Postdoctoral Positions: Harvard Medical School, Boston, MA</span></h3>
+<ul><li>Posted on November 30th 2010</li></ul>
+<p>Website:<a rel="nofollow" class="external free" href="http://http://vcp.med.harvard">http://http://vcp.med.harvard</a>
+Location: Boston, MA
+Type: Postdoctoral
+Expires:January 22, 2011
+</p><p>Job description: Applications are invited for two postdoctoral-level positions on a collaborative project funded by the European Human Frontiers Programme between the laboratories of Alfonso Martinez-Arias in the Department of Genetics at the University of Cambridge, UK, Kat Hadjantonakis in the Developmental Biology Program at Memorial Sloan Kettering Cancer Center in New York and Jeremy Gunawardena in the Department of Systems Biology at Harvard Medical School in Boston. The project centres on analysing signalling and gene regulation networks in the pre-implantation mouse embryo and in mouse embryonic stem cells, using quantitative measurements, 4D whole-embryo imaging, microfluidic devices and mathematical modelling. The first position is with Hadjantonakis in New York to develop a quantitative image analysis platform for 4D mouse embryo imaging. The successful applicant will need strong technical capabilities in live-cell image analysis, familiarity with software tool development with a focus on usability and the desire to work in close collaboration with experimentalists. The second position is with Gunawardena in Boston to analyse mouse ES cells using microfluidic devices and modelling. The successful applicant will have experience studying mammalian cells in culture using quantitative experimental methods, an interest in exploiting microfluidic technologies and an ability to work with mathematical models of molecular networks. Both positions will require occasional travel between the sites and an annual visit to Cambridge, UK. Interested candidates are asked to send a CV and the contact details of two referees to one of the two addresses below, along with a cover letter stating clearly why his or her background is appropriate for the corresponding position. The deadline for applications is 31 December 2010.
+</p><p>Kat Hadjantonakis
+Developmental Biology Program
+Sloan-Kettering Institute
+New York, NY 10065,
+USA
+<a rel="nofollow" class="external free" href="http://www.ski.edu/hadjantonakis">http://www.ski.edu/hadjantonakis</a>
+</p><p>Jeremy Gunawardena
+Department of Systems Biology
+Harvard Medical School
+200 Longwood Avenue
+Boston, MA 02115
+USA
+</p><p>By e-mail to Nicole Wong, Nicole_Wong@hms.harvard.edu
+</p><p><a rel="nofollow" class="external free" href="http://vcp.med.harvard.edu/">http://vcp.med.harvard.edu/</a>
+</p>
+<h3><span id="Research_Scientist_.28Junior.29_-_Image_and_Signal_Processing_-_Rennes.2CFrance"></span><span class="mw-headline" id="Research_Scientist_(Junior)_-_Image_and_Signal_Processing_-_Rennes,France">Research Scientist (Junior) - Image and Signal Processing - Rennes,France</span></h3>
+<ul><li>Posted on September 14th 2010</li></ul>
+<p>Bruce Junior Chair position
+</p><p><a rel="nofollow" class="external free" href="http://www.rbucewest.ueb.eu/">http://www.rbucewest.ueb.eu/</a>
+</p><p>R-Buce Junior Chair position in Biomedical Engineering.
+</p><p>The UEB - UR1 seeks research scientist applicants working in the broad field of biomedical engineering, with particular focus on themes at the frontiers of ICT and health. Of special interest are the following topics: model-based bio-signal / bio-imaging processing and interpretation, integrative modeling, knowledge-based information representation and interpretation.
+</p><p>The UEB - UR 1 laboratories involved in biomedical engineering have strong clinical partnerships with a number of medical institutions, including the Rennes University Hospital and the Centre of Cancer Eugène Marquis at Rennes.
+</p><p>Qualified candidates working in the broad area of biomedical engineering, developing computational tools or multiscale systems-based techniques are encouraged to apply. Required qualifications include a doctorate in engineering or a related field with an outstanding record of publications in internationally recognized journals.
+</p><p>Interested persons should submit detailed curriculum vitae including academic and professional experience, a list of peer-reviewed publications and any other technical documents relevant to the application.
+</p><p>salary range&#160;: ~40kE/year + relocation
+</p><p>Please send cover letter and resume to Oscar Acosta / Lotfi Senhadji 
+(Oscar.Acosta@univ-rennes1.fr, Lotfi.Senhadji@univ-rennes1.fr)  
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Year_2009">Year 2009</span></h2>
+<h3><span id="Software_Engineer_.28Junior.29_-_Harvard_Medical_School"></span><span class="mw-headline" id="Software_Engineer_(Junior)_-_Harvard_Medical_School">Software Engineer (Junior) - Harvard Medical School</span></h3>
+<ul><li>Posted on August 14th 2009</li></ul>
+<p>The Megason Laboratory in the Department of Systems Biology at Harvard Medical School seeks to hire a Software Engineer for participating in the continued development of GoFigure. The lab’s goal is to understand embryonic development as the execution of a program in our genome. We seek to upload embryonic development into a virtual life form called the Digital Fish through the use of genetics, molecular imaging, and information technology (www.digitalfish.org). The Software Engineer will be responsible for participating in the continued development of the principle software application for this endeavor called GoFigure. GoFigure recognizes and tracks cells in extremely large 4-dimensional (xyzt) image sets and digitizes that data into a database. GoFigure is written in C++, is cross-platform and uses Qt, MySQL, VTK (the Visualization Toolkit), ITK (Insight Segmentation and Registration Toolkit), CMake. The project is managed using Subversion, Doxygen for documentation generation, CTest and CDash for testing. The successful applicant should have a strong background in programming and work well in an academic environment. Interests in application development, image processing, microscopy, and systems biology are also a plus.
+</p><p><b>Job Duties</b>
+</p>
+<ul><li>Participate in software development project for GoFigure. GoFigure is developed by a team of ~4 which is lead by a Senior Research Engineer</li>
+<li>Responsible for the development and testing of code as specified by management (senior software engineer and lab director). Incumbent will write code and will assist management in integration of code into GoFigure</li>
+<li>Performs ongoing modifications and solution alternatives to accomplish research requirements of GoFigure software</li>
+<li>Collaborates with researchers to define new strategies, approaches, methods and techniques to enhance research efforts</li>
+<li>Participate in regular lab meetings, journal club presentations, and retreats</li>
+<li>Other duties as assigned</li></ul>
+<p>Please send cover letter and resume to Sean Megason
+(megason@hms.harvard.edu) 
+</p>
+<h3><span class="mw-headline" id="Computer_Programming_-_Image_Guided_Intervention">Computer Programming - Image Guided Intervention</span></h3>
+<ul><li>Posted Aug 2009,</li></ul>
+<p>Department of Medicine at Harvard Medical School and Beth Israel Deaconess Medical Center is looking to hire a full time software engineer with strong background in computer vision and ITK/VTK. Intrested applicant should send a CV to&#160;:
+</p><p>Reza Nezafat, Ph.D. rnezafat@bidmc.harvard.edu
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Year_2008">Year 2008</span></h2>
+<h3><span class="mw-headline" id="Staff_Scientist_-_Medical_Image_Processing">Staff Scientist - Medical Image Processing</span></h3>
+<ul><li>Posted:         November, 2008</li></ul>
+<p>The Department of Radiology is seeking a Staff Scientist to support our research and clinical efforts in image processing (virtual endoscopy, volumetric visualization, segmentation, registration and algorithm development) and computer-aided diagnosis (feature extraction, classification, database development). In particular, advanced skills in image segmentation (level sets, active shape/appearance models, etc.) and machine learning are sought. The incumbent will work closely with a team of computer scientists and engineers.  Applicants with a proven track record as evidenced by peer-reviewed publications on medical applications of image processing and having advanced mathematical and computer skills are encouraged to apply.  Demonstrated expertise in C++ and ITK (NLM’s Insight Toolkit) are required. The candidate should have a Ph.D. in Computer Science, Electrical or Biomedical Engineering, Mathematics, Biophysics or Physics.  Salary commensurate with experience. Applications should include a CV, brief statement of research interests, and three letters of reference.  Applications are due 4 weeks after posting of this announcement.  DHHS and NIH are Equal Opportunity Employers.
+</p><p>Address applications to:
+</p>
+<pre> Ronald Summers, M.D., Ph.D.
+ Chief, Clinical Image Processing Service 
+ and Virtual Endoscopy and Computer-Aided Diagnosis Laboratory
+ Radiology and Imaging Sciences
+ National Institutes of Health Clinical Center
+ Building 10 Room 1C368X MSC 1182
+ Bethesda, MD  20892-1182
+ E-mail: rms@nih.gov
+ Web site: <a rel="nofollow" class="external free" href="http://www.cc.nih.gov/drd/summers.html">http://www.cc.nih.gov/drd/summers.html</a>
+</pre>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Research_Developer_-_Medical_Imaging">Research Developer - Medical Imaging</span></h3>
+<p><b>About Calgary Scientific</b>
+</p><p>Calgary Scientific Inc. (CSI) is a software and intellectual property (IP) development company specializing in sophisticated digital signal, image processing and analysis technology. Our current product line includes customer focused applications for medical imaging and seismic data imaging. These applications offer innovative tools to help professionals to better interpret and analyze data through core innovations around which CSI applications are developed.
+</p><p>Calgary Scientific is a privately held company with offices in Calgary, Alberta, Canada. The company was formed in 2003 to commercialize leading edge intellectual property into market leading software applications.
+</p><p>Calgary Scientific works with research teams and individuals across multiple Universities to generate, refine, test, and commercialize breakthrough innovation into market driven commercial applications.
+</p><p><b>Research Developer – Medical Imaging Role</b>
+</p><p>We are looking for several full-time Research Developers with Medical Image Processing skills who are willing to relocate to Calgary, Alberta, Canada. Duties will include:
+</p>
+<ul><li>Incorporating cutting edge research code from around the world into our production quality, C++ core technologies</li></ul>
+<ul><li>Working with Research Scientists and Research Associates on various medical image processing algorithms</li></ul>
+<ul><li>Working with QA to design and develop unit and validation tests that meet our ISO 13485 and ISO 14971 requirements</li></ul>
+<ul><li>Working directly with Agile Product Teams to ensure the rapid integration of new technologies into various medical applications</li></ul>
+<p>This is an excellent opportunity to contribute to the commercialization of market-driven medical imaging applications.
+</p><p><b>Required Experience/Skills:</b>
+</p>
+<ul><li>Degree in Engineering, Physics, Computer Science, or related fields</li></ul>
+<ul><li>5 or more years of experience in C++ development</li></ul>
+<ul><li>1 or more years of matlab and OpenGL experience</li></ul>
+<ul><li>Applied or advanced math training, particularly in medical image processing or artificial intelligence</li></ul>
+<ul><li>Demonstrated ability to learn new technologies</li></ul>
+<ul><li>Desire to contribute to the successful commercialization of leading-edge technology</li></ul>
+<p><b>Beneficial Experience/Skills:</b>
+</p>
+<ul><li>Algorithm development using ITK</li></ul>
+<ul><li>Working within an ISO certified environment</li></ul>
+<p>Applications can be sent to careers@calgaryscientific.com
+</p><p>Please see <a rel="nofollow" class="external free" href="http://www.calgaryscientific.com/company/careers.html">http://www.calgaryscientific.com/company/careers.html</a> for additional opportunities.
+</p>
+<h3><span class="mw-headline" id="Post-doctoral_Research_Openings_at_Rensselaer_Polytechnic_Institute">Post-doctoral Research Openings at Rensselaer Polytechnic Institute</span></h3>
+<p>The FARSIGHT project has openings for several post-doctoral associates (or experienced individuals with a Masters degree), starting May 1, 2008. This project is developing an open-source 4-D/5-D image analysis toolkit for advanced biological microscopy of brain tissue, tumors, and immune system components. The required skills include 
+</p>
+<ul><li>High-quality C++ programming,</li>
+<li>3-D image processing (segmentation, classification, registration), and</li>
+<li>3-D graphics programming.</li></ul>
+<p>Prior exposure to ITK and/or VTK, and disciplined software development processes is highly desirable. 
+</p><p>These positions are renewable annually. 
+</p><p>Please contact 
+Prof. Roysam 
+by email: Roysam@ecse.rpi.edu.
+</p>
+<pre> Badri Roysam
+ Professor, Department of Electrical, Computer and Systems Engineering
+ Associate Director, NSF Center for Subsurface Sensing &amp; Imaging Systems (CenSSIS ERC)
+ Rensselaer Polytechnic Institute
+ 110 8th Street, Troy, New York 12180-3590.
+ Office(JEC 7010): 518-276-8067, Lab(JEC 6308): 518-276-8207, Fax: 518-276-8715
+ Web: <a rel="nofollow" class="external free" href="http://www.ecse.rpi.edu/~roysam">http://www.ecse.rpi.edu/~roysam</a>
+</pre>
+<h3><span class="mw-headline" id="Senior_Developer_-_Medical_Image_Processing">Senior Developer  - Medical Image Processing</span></h3>
+<p>Status: Filled
+</p><p>Please see <a rel="nofollow" class="external free" href="http://www.calgaryscientific.com/company/careers.html">http://www.calgaryscientific.com/company/careers.html</a> for additional opportunities.
+</p><p><br />
+</p>
+<h3><span id="Software_Engineer.2C_Intuitive_Surgical_Inc..2C_Sunnyvale_California"></span><span class="mw-headline" id="Software_Engineer,_Intuitive_Surgical_Inc.,_Sunnyvale_California">Software Engineer, Intuitive Surgical Inc., Sunnyvale California</span></h3>
+<p>The da Vinci(r) Surgical system includes six manipulator arms with a total of 41 degrees of freedom, along with a stereo endoscope and 3D video display, with over 600 installations worldwide.  Surgeons use it to perform tens of thousands of minimally invasive surgeries per year.  da Vinci represents an outstanding platform for the development and application of new technologies to surgery. This position offers an opportunity for a candidate with exceptional software development skills to work on projects ranging from blue-sky research to those ready for transition to product development groups.  A successful candidate will be equally comfortable leading architecture development and producing high-quality implementations that lend themselves to re-use, testing, and productization.  He or she must excel in a high energy team, must have excellent communication skills and must be able to balance independent production of results with the need to collaborate during planning, system integration, and testing of larger projects. This engineer will work closely with other members of the Applied Research Group and several product development groups on algorithm development, implementation, and systems integration.
+</p><p>For more details, as well as to upload a resume, please visit our OpenHire listing:
+</p>
+<ul><li>Position:       Software Engineer</li>
+<li>Tracking Code:  220333-609</li>
+<li>Posted:         November, 2007</li>
+<li>URL:            <a rel="nofollow" class="external free" href="http://hostedjobs.openhire.com/epostings/jobs/submit.cfm?fuseaction=dspjob&amp;id=23&amp;jobid=220333&amp;company_id=15609&amp;version=1&amp;source=ONLINE&amp;JobOwner=956377&amp;level=levelid1&amp;levelid1=10630&amp;parent=Engineering&amp;startflag=2&amp;CFID=8647986&amp;CFTOKEN=46344848">http://hostedjobs.openhire.com/epostings/jobs/submit.cfm?fuseaction=dspjob&amp;id=23&amp;jobid=220333&amp;company_id=15609&amp;version=1&amp;source=ONLINE&amp;JobOwner=956377&amp;level=levelid1&amp;levelid1=10630&amp;parent=Engineering&amp;startflag=2&amp;CFID=8647986&amp;CFTOKEN=46344848</a></li></ul>
+<p><br />
+</p>
+<h3><span id="Research_Scientist_Position_in_Medical_Imaging_in_Brisbane.2C_Australia"></span><span class="mw-headline" id="Research_Scientist_Position_in_Medical_Imaging_in_Brisbane,_Australia">Research Scientist Position in Medical Imaging in Brisbane, Australia</span></h3>
+<p>CSIRO ICT centre is seeking to fill several positions at the scientist and post-doctoral level to work on neuro-degenerative diseases and brain tumour characterization.
+The Biomedical Imaging team part of the Australian e-Health Research centre is a leading Australian medical imaging research group, with a well developed expertise in image registration, extraction of quantitative information (shape, volume, texture), morphometry, soft-tissue modelling (3D meshing, visual and haptic interaction) and data classification. The successful applicants will be involved in activities focused on the development and application of novel techniques for segmentation, registration and analysis of PET and MR images. These positions offer the opportunity to work in a high quality research environment, with strong clinical collaboration. The research scientists and post-doctoral fellows will join a large team (&gt;20 scientists, post-doctoral fellows, and students) in an exciting working environment ideally located in one of the fastest growing city in Australia close to many attractions and beautiful beaches.
+More details can be found on the CSIRO career website: 
+<a rel="nofollow" class="external free" href="https://recruitment.csiro.au/asp/job_details.asp?RefNo=2008%2F487">https://recruitment.csiro.au/asp/job_details.asp?RefNo=2008%2F487</a>
+<a rel="nofollow" class="external free" href="https://recruitment.csiro.au/asp/job_details.asp?RefNo=2008%2F9">https://recruitment.csiro.au/asp/job_details.asp?RefNo=2008%2F9</a>
+For further information please contact 
+Olivier Salvado, PhD
+Team Leader Biomedical Imaging
+olivier.salvado@csiro.au
+</p><p>CSIRO ICT Centre
+Australian e-Health Research Centre (AEHRC)
+Phone: +61 7 3024 1658
+Fax: +61 7 3024 1690
+Mobile: +61 4 0388 2249
+web: <a rel="nofollow" class="external free" href="http://www.aehrc.net/">http://www.aehrc.net/</a>
+</p>
+<h2><span class="mw-headline" id="Year_2007">Year 2007</span></h2>
+<h3><span class="mw-headline" id="Summer_2007:_National_Institutes_of_Health_Postdoc">Summer 2007: National Institutes of Health Postdoc</span></h3>
+<p>Post-doctoral fellowships are available in clinical image processing. Specific interest areas are image processing (virtual endoscopy, volumetric visualization, image segmentation, registration, fusion, and algorithm development) and computer-aided diagnosis (feature extraction, classification, and databases). Fellows have access to state-of-the-art whole body MRI, multi-row detector CT and advanced graphics workstations. Candidates must have or soon expect to receive doctorates in applied mathematics or computer science. Applicants with a proven track record as evidenced by peer-reviewed publications on image processing or computer visualization and having strong software development and C++ skills are encouraged to apply. Initial appointment is for two years and is renewable thereafter on a periodic basis. NIH is an equal opportunity employer.
+</p><p>Address applications to: 
+Jianhua Yao, Ph.D. 
+Clinical Image Processing Service 
+Department of Radiology 
+National Institutes of Health 
+10 Center Drive Bethesda, MD 20892-1182 
+E-mail: jyao@cc.nih.gov 
+</p><p><br />
+</p>
+<h3><span id="August_2007_to_sept._2008:_Caltech_.26_Harvard_Medical_School"></span><span class="mw-headline" id="August_2007_to_sept._2008:_Caltech_&amp;_Harvard_Medical_School">August 2007 to sept. 2008: Caltech &amp; Harvard Medical School</span></h3>
+<p>The Caltech Center of Excellence in Genomic Science (CEGS) is a newly funded initiative that’s driven to digitize life. Our goal is to understand embryonic development as the execution of a program in our genome. We seek to upload embryonic development into a virtual life form called the Digital Fish through the use of genetics, molecular imaging, and information technology. Our approach called “in toto imaging” is to use confocal/2-photon imaging to image all the cells in developing transgenic zebrafish embryos and special software we are developing called GoFigure to extract complete cell lineages and gene expression patterns.
+</p><p>We are looking for people with strong experience in C++ programming and VTK/ITK to join our GoFigure development team. There are a number of significant image analysis problems we are addressing including: segmenting cells in space, across time, and across cell division; quantitating protein expression patterns and subcellular localization; developing a standard, cell-based, 4-d atlas of embryonic development; and registering molecular data from thousands of different embryos onto this atlas.
+</p><p>There are opportunities at the graduate, post-doc, and staff levels. The successful applicant would join our team at Caltech in Pasadena/LA soon and then move with us to my new lab in the Department of Systems Biology at Harvard Medical School in Boston in summer 2008. To apply, please send a cover letter, CV, and letters of reference to me by email (megason@caltech.edu).
+</p><p>For more information please see below:
+www.digitalfish.org &lt;<a rel="nofollow" class="external free" href="http://www.digitalfish.org/">http://www.digitalfish.org/</a>&gt; 
+or talk to Alexandre Gouaillard or myself at the upcoming NAMIC meeting in Boston ( june 2007 ).
+<a rel="nofollow" class="external free" href="http://www.na-mic.org/Wiki/index.php/NA-MIC_NCBC_Collaboration:3D%2Bt_Cells_Lineage:GoFigure">http://www.na-mic.org/Wiki/index.php/NA-MIC_NCBC_Collaboration:3D%2Bt_Cells_Lineage:GoFigure</a>
+</p><p>Sean Megason
+</p>
+<h3><span class="mw-headline" id="Spring_2007:_University_of_Texas_-_M._D._Anderson_Cancer_Center">Spring 2007: University of Texas - M. D. Anderson Cancer Center</span></h3>
+<p>The Image Processing &amp; Visualization Laboratory (IPVL) has opened positions for a Programmer Analyst, Post Doctorate and Research Scientist to support its core mission in America’s largest cancer center.
+</p><p>Images handled by the IPVL span the full spectrum of human and animal (small to large) imaging instrumentation for applications that range from research to clinic, all in direct and close interaction with departments and investigators throughout the institution. Computer equipment includes high-end clinical workstations and software, as well as high-end platforms under Windows, Linux or OSX for developments with OpenSource toolkits, IDL or MatLab. Other available equipment include database and compute servers (Windows, Unix/Solaris/Linux), as well as a state-of-the-art 512 CPUs cluster and 32 CPUs SMP, both shared with the institution and entirely dedicated to research.
+</p><p>The successful candidates will need to demonstrate – in various capacities that depend on the targeted position - expertise and interest in the design, development, implementation or exploitation of advanced imaging applications, ideally in a biomedical setting and with multidimensional, multimodality and quantitative imaging for clinical and research applications. Topics of particular interests are 3D+ imaging (e.g., rendering, segmentation, navigation), non-rigid registration, parametric and quantitative imaging, kinetic modeling, etc. Expertise in modern and relevant languages and toolkits (e.g., C/C++, VTK, ITK, IGSTK) as well as in matching development tools and environments is considered an asset.
+</p><p>If you believe your experience matches any of these profiles, please send your CV and other relevant information (e.g., three references, statement of interest/qualification for the specific position) to:
+</p>
+<pre>Dr. Luc Bidaut, Ph.D.
+Director of the IPVL
+E-mail: lbidaut at mdanderson dot org
+</pre>
+<h2><span class="mw-headline" id="Year_2006">Year 2006</span></h2>
+<h3><span class="mw-headline" id="May_2006:_National_Institutes_of_Health_Staff_Scientist_Position">May 2006: National Institutes of Health Staff Scientist Position</span></h3>
+<pre><b>Staff Scientist</b>
+Medical Image Processing
+Warren G. Magnuson Clinical Center  Department of Radiology
+National Institutes of Health
+U.S. Department of Health and Human Services
+</pre>
+<p>The Department of Radiology is seeking a Staff Scientist to support our research and clinical efforts in image processing (virtual endoscopy, volumetric visualization, segmentation, registration and algorithm development) and computer-aided diagnosis (feature extraction, classification, database development). In particular, advanced skills in image segmentation (level sets, active shape/appearance models, etc.) and machine learning are sought. The incumbent will work closely with a team of computer scientists and engineers.  Applicants with a proven track record as evidenced by peer-reviewed publications on medical applications of image processing and having advanced mathematical and computer skills are encouraged to apply.  Demonstrated expertise in C++ and ITK (NLMâ€™s Insight Toolkit) are required. The candidate should have a Ph.D. in Computer Science, Electrical or Biomedical Engineering, Mathematics, Biophysics or Physics.  Salary commensurate with experience. Applicati!
+ons should include a CV, brief statement of research interests, and three letters of reference.  Applications are due 6 weeks after posting of this announcement.  DHHS and NIH are Equal Opportunity Employers.
+</p>
+<ul><li>Address applications to:</li></ul>
+<pre>Ronald Summers, M.D., Ph.D.
+Chief, Clinical Image Processing Service
+     and Virtual Endoscopy and Computer-Aided Diagnosis Laboratory
+Department of Radiology
+National Institutes of Health
+Building 10 Room 1C660
+Bethesda, MD  20892-1182
+E-mail: rms at nih dot gov
+Web site: <a rel="nofollow" class="external free" href="http://www.cc.nih.gov/drd/summers.html">http://www.cc.nih.gov/drd/summers.html</a> 
+</pre>
+<h3><span class="mw-headline" id="Spring_2006:_National_Institutes_of_Health_Postdoc">Spring 2006: National Institutes of Health Postdoc</span></h3>
+<pre> <b>Post-doctoral Fellowship</b>
+ Medical Image Processing – Computer-Aided Detection
+ Warren G. Magnuson Clinical Center 
+ Department of Radiology
+ National Institutes of Health
+ U.S. Department of Health and Human Services
+</pre>
+<p>A post-doctoral fellowship is available in three-dimensional radiology image processing.  Specific interest areas are virtual endoscopy, volumetric visualization, image segmentation, registration and computer-aided detection (including feature extraction, classification, image databases and observer performance analysis [ROC]).  In particular, advanced skills in image segmentation (level sets, active shape/appearance models, etc.) are sought. Fellows have access to state-of-the-art whole body MRI, multi-detector helical CT, advanced graphics workstations (Windows PC) and Beowulf massively parallel processing cluster. Candidates must have or soon expect to receive doctorates in physics, biophysics, mathematics, statistics, biomedical engineering or computer science. Applicants with a proven track record as evidenced by peer-reviewed publications on medical applications of computer visualization and image processing and having advanced mathematical and computer skills are encouraged to apply.  Initial appointment is for one to two years and is renewable thereafter on a periodic basis.  Applications should include a CV, brief statement of research interests and three letters of reference.  Applications are due 6 weeks after posting of this announcement.  DHHS and NIH are Equal Opportunity Employers.
+</p>
+<ul><li>Address applications to:</li></ul>
+<pre> Ronald Summers, M.D., Ph.D.
+ Chief, Clinical Image Processing Service
+      and Virtual Endoscopy and Computer-Aided Diagnosis Laboratory
+ Department of Radiology
+ National Institutes of Health
+ Building 10 Room 1C660
+ Bethesda, MD  20892-1182
+ E-mail: rms at nih dot gov
+ Web site: <a rel="nofollow" class="external free" href="http://www.cc.nih.gov/drd/summers.html">http://www.cc.nih.gov/drd/summers.html</a>
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Year_2005">Year 2005</span></h2>
+<h3><span id="Spring.2FSummer_2005:_National_Institutes_of_Health_Postdoc"></span><span class="mw-headline" id="Spring/Summer_2005:_National_Institutes_of_Health_Postdoc">Spring/Summer 2005: National Institutes of Health Postdoc</span></h3>
+<pre><b>Post-doctoral Fellowship</b>
+Medical Image Processing
+Department of Radiology
+National Institutes of Health
+Department of Health and Human Services
+</pre>
+<p>A Post-doctoral fellowship is available in three-dimensional medical
+imaging.  Specific interest areas are image processing (virtual endoscopy,
+volumetric visualization, image segmentation, registration, fusion, and
+algorithm development) and computer-aided diagnosis (feature extraction,
+classification, and databases).  Fellows have access to state-of-the-art
+whole body MRI, 16-row detector CT+PET and advanced graphics workstations (PC and Beowulf cluster). Candidates must have or soon expect to receive
+doctorates in applied mathematics or computer science. Applicants with a
+proven track record as evidenced by peer-reviewed publications on image 
+processing and having strong software development and C++ skills are encouraged to apply. GPU shader programming experience is a plus. Applications should include a CV and a brief statement of research interests. NIH is an equal opportunity employer. If a US work permit is not available, then the only visa the NIH can provide for this position is a J visa.
+</p>
+<ul><li>Address applications to:</li></ul>
+<pre>Ingmar Bitter, Ph.D.
+Clinical Image Processing Services
+Diagnostic Radiology Department
+National Institutes of Health
+Building 10 Room 1C660
+Bethesda, MD 20892-1182
+E-mail: ibitter at nih dot gov
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Year_2004">Year 2004</span></h2>
+<h3><span class="mw-headline" id="November_2004:_Kitware">November 2004: Kitware</span></h3>
+<p>Kitware is seeking to fill positions immediately. We are looking for people who will relocate to the Albany, NY USA area, are willing to work in a small company, and show flexibility in work assignments. Important skills  include proficiency in C++, scientific software development, medical image  analysis, and/or ITK. Individuals demonstrating expertise in areas that  significantly extend Kitware's software skill base are particularly  favored. Please send your resume to kitware at kitware.com.
+</p><p>Will
+</p>
+<pre>William J. Schroeder, Ph.D.
+Kitware, Inc.
+28 Corporate Drive, Suite 204
+Clifton Park, NY 12065
+will.schroeder at kitware.com
+1-518-371-3971 x102 (phone)
+1-518-371-3971 (fax) 
+</pre>
+<p>(<a rel="nofollow" class="external text" href="http://public.kitware.com/pipermail/insight-users/2004-July/009562.html">Original post</a>)
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Nov_2004:_National_Institutes_of_Health_Staff_Scientist">Nov 2004: National Institutes of Health  Staff Scientist</span></h3>
+<pre> Warren G. Magnuson Clinical Center
+ National Institutes of Health
+ U.S. Department of Health and Human Services
+</pre>
+<pre> <b>Staff Scientist</b>
+ <b>Medical Image Processing</b>
+</pre>
+<p><br />
+The Department of Radiology is seeking a Staff Scientist to support our research efforts in image processing (virtual endoscopy, volumetric visualization, segmentation, registration and algorithm development) and computer-aided diagnosis (feature extraction, classification, database development). In particular, advanced skills in image segmentation (level sets, active shape/appearance models, etc.) are sought. The incumbent will work closely with a team of computer scientists and engineers.  Applicants with a proven track record as evidenced by peer-reviewed publications on medical applications of image processing and having advanced mathematical and computer skills are encouraged to apply.  Demonstrated expertise in C++ and ITK (NLM’s Insight Toolkit) are required. The candidate should have a Ph.D. in Electrical or Biomedical Engineering, Computer Science, Mathematics, Biophysics or Physics.  Salary commensurate with experience. Applications should include a CV, brief statement of research interests, and three letters of reference.  Applications are due 6 weeks after posting of this announcement.  DHHS and NIH are Equal Opportunity Employers.
+</p>
+<pre> Address applications to:
+ Ronald Summers, M.D., Ph.D.
+ Chief, Clinical Image Processing Service
+      and Virtual Endoscopy and Computer-Aided Diagnosis Laboratory
+ Department of Radiology
+ National Institutes of Health
+ Building 10 Room 1C660
+ Bethesda, MD  20892-1182
+ E-mail: RobertsonS at cc dot nih dot gov
+ Web site: <a rel="nofollow" class="external free" href="http://www.cc.nih.gov/drd/summers.html">http://www.cc.nih.gov/drd/summers.html</a>
+</pre>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="June_2004:_Computer_Vision_Research_Position">June 2004: Computer Vision Research Position</span></h3>
+<pre><b>Computer Vision Research Positions at GE Global Research</b>
+Visualization and Computer Vision Lab
+</pre>
+<p>We are seeking highly qualified candidates to innovate and develop computer vision technology for commercial and government applications. We are particularly interested in recruiting candidates with expertise in one of the following areas:
+</p>
+<ul><li>Machine Learning - applying semantic knowledge to practical vision problems</li>
+<li>Deformable Registration / Deformable Modeling</li>
+<li>Segmentation</li>
+<li>Object Detection and Tracking</li></ul>
+<p>The Visualization &amp; Computer Vision Lab at GE Global Research in Niskayuna, NY conducts basic and applied research in computer vision and closely related areas. With 30 Staff Researchers (most holding a PhD) the lab develops advanced technologies for GE businesses, including GE Security, GE Healthcare, GE Aircraft Engines, GE Power Systems and NBC Universal; Lockheed Martin; and US Government agencies including NIH, DARPA, FBI, AFRL and NIMA. Areas of active research include image segmentation, deformable registration, perceptual organization, texture classification, object detection, event recognition, tracking, camera calibration, optical metrology, video content extraction, change detection, and superresolution.
+</p><p>We are active users and contributors to ITK and VXL; experience with either of these toolkits is desired. Strong C++ skills along with a superior ability to work in a team environment are essential qualities for successful candidates.
+</p><p>Interested? Please contact Jim Miller at `millerjv at research.ge.com`
+</p>
+<pre>Visualization &amp; Computer Vision
+GE Research
+Bldg. KW, Room C218B
+P.O. Box 8, Schenectady NY 12301
+</pre>
+<p><br />
+<br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20220523002330
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.035 seconds
+Real time usage: 0.038 seconds
+Preprocessor visited node count: 130/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.702      1 -total
+100.00%    3.702      1 Template:ITK/Template/Footer
+ 43.62%    1.615      1 Template:ITK/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:647-0!canonical and timestamp 20220523002330 and revision id 58564. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Job_Opportunities&amp;oldid=58564">https://public.kitware.com/Wiki/index.php?title=ITK/Job_Opportunities&amp;oldid=58564</a>"</div></div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Job_Opportunities" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK/Job_Opportunities" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Job_Opportunities">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Job_Opportunities&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Job_Opportunities&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Job_Opportunities" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK/Job_Opportunities" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FJob+Opportunities" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Job_Opportunities" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Job_Opportunities" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Job_Opportunities&amp;oldid=58564" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Job_Opportunities&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 1 December 2015, at 23:00.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.035","walltime":"0.038","ppvisitednodes":{"value":130,"limit":1000000},"postexpandincludesize":{"value":222,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    3.702      1 -total","100.00%    3.702      1 Template:ITK/Template/Footer"," 43.62%    1.615      1 Template:ITK/Template/Categories"]},"cachereport":{"timestamp":"20220523002330","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":79});});</script>
+</body></html>

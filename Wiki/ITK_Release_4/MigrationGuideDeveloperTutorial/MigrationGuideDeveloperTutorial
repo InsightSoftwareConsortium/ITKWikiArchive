@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK Release 4/MigrationGuideDeveloperTutorial - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b5771fed482107de241bf040","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/MigrationGuideDeveloperTutorial","wgTitle":"ITK Release 4/MigrationGuideDeveloperTutorial","wgCurRevisionId":53979,"wgRevisionId":53979,"wgArticleId":8101,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/MigrationGuideDeveloperTutorial","wgRelevantArticleId":8101,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],
+"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_MigrationGuideDeveloperTutorial rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK Release 4/MigrationGuideDeveloperTutorial</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK_Release_4" class="mw-redirect" title="ITK Release 4">ITK Release 4</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#General_Steps"><span class="tocnumber">1</span> <span class="toctext">General Steps</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Quick_Version"><span class="tocnumber">2</span> <span class="toctext">Quick Version</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#1_-_Make_the_change"><span class="tocnumber">2.1</span> <span class="toctext">1 - Make the change</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#2_-_Initialize_XML_file"><span class="tocnumber">2.2</span> <span class="toctext">2 - Initialize XML file</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#3_-_Manually_edit_XML_file"><span class="tocnumber">2.3</span> <span class="toctext">3 - Manually edit XML file</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#4_-_Commit_the_XML_file"><span class="tocnumber">2.4</span> <span class="toctext">4 - Commit the XML file</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#5_-_Push_to_gerrit"><span class="tocnumber">2.5</span> <span class="toctext">5 - Push to gerrit</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Detailed_Version"><span class="tocnumber">3</span> <span class="toctext">Detailed Version</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Step_1_-_Make_the_Change"><span class="tocnumber">3.1</span> <span class="toctext">Step 1 - Make the Change</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Start_a_new_topic_branch_for_the_desired_change"><span class="tocnumber">3.1.1</span> <span class="toctext">Start a new topic branch for the desired change</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Make_the_API_changes_locally"><span class="tocnumber">3.1.2</span> <span class="toctext">Make the API changes locally</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Commit_the_changes"><span class="tocnumber">3.1.3</span> <span class="toctext">Commit the changes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="#Step_2_-_Create_the_XML_Document"><span class="tocnumber">3.2</span> <span class="toctext">Step 2 - Create the XML Document</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Step_3_-_Review_in_Gerrit"><span class="tocnumber">3.3</span> <span class="toctext">Step 3 - Review in Gerrit</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Step_4_-_Finalize_the_Change"><span class="tocnumber">3.4</span> <span class="toctext">Step 4 - Finalize the Change</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Manual_XML_Document_Generation"><span class="tocnumber">4</span> <span class="toctext">Manual XML Document Generation</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Automatic_XML_Document_Generation"><span class="tocnumber">5</span> <span class="toctext">Automatic XML Document Generation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#&lt;Description&gt;"><span class="tocnumber">5.1</span> <span class="toctext">&lt;Description&gt;</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#&lt;SampleCode&gt;"><span class="tocnumber">5.2</span> <span class="toctext">&lt;SampleCode&gt;</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="General_Steps">General Steps</span></h1>
+<p>This tutorial provides a walkthrough of how to document changes made to the API during the ITKv4 development process. The steps of this guide only need to be followed when making an API change. The process consists of creating an XML document in the $ITK_SOURCE_DIR/Migration folder that represents the changes made to the API and including this document in the patch that gets reviewed in Gerrit. Using the automated initialization script, <b>this should take roughly 10-15 minutes</b> for simple changes.
+</p>
+<h1><span class="mw-headline" id="Quick_Version">Quick Version</span></h1>
+<h2><span class="mw-headline" id="1_-_Make_the_change">1 - Make the change</span></h2>
+<pre>(master)$ git checkout -b DescriptiveName
+(DescriptiveName)$ vim Code/Common/itkInterestingFile.h
+(DescriptiveName)$ ...
+(DescriptiveName)$ git commit -a
+</pre>
+<h2><span class="mw-headline" id="2_-_Initialize_XML_file">2 - Initialize XML file</span></h2>
+<pre>(DescriptiveName)$python $ITK_SOURCE/Documentation/Migration/InitializeXMLGuide.py
+Please enter a unique name for the XML document
+&gt;&gt; DescriptiveName.xml
+</pre>
+<h2><span class="mw-headline" id="3_-_Manually_edit_XML_file">3 - Manually edit XML file</span></h2>
+<pre>(DescriptiveName)$ vim Documentation/Migration/DescriptiveName.xml
+</pre>
+<h2><span class="mw-headline" id="4_-_Commit_the_XML_file">4 - Commit the XML file</span></h2>
+<pre>(DescriptiveName)$ git add Documentation/Migration/DescriptiveName.xml
+(DescriptiveName)$ git commit
+</pre>
+<h2><span class="mw-headline" id="5_-_Push_to_gerrit">5 - Push to gerrit</span></h2>
+<pre>(DescriptiveName)$ git gerrit-push
+</pre>
+<h1><span class="mw-headline" id="Detailed_Version">Detailed Version</span></h1>
+<h2><span class="mw-headline" id="Step_1_-_Make_the_Change">Step 1 - Make the Change</span></h2>
+<h4><span class="mw-headline" id="Start_a_new_topic_branch_for_the_desired_change">Start a new topic branch for the desired change</span></h4>
+<pre>$ git checkout master
+(master)$ git pullall
+(master)$ git checkout -b DescriptiveName
+(DescriptiveName)$
+</pre>
+<ul><li>This topic branch should only be used to make the desired API change (it should not combine multiple change topics)</li>
+<li>Give the branch a descriptive name that corresponds to the nature of the API change</li>
+<li>The topic branch name should correspond to the name for the XML document</li></ul>
+<h4><span class="mw-headline" id="Make_the_API_changes_locally">Make the API changes locally</span></h4>
+<pre>(DescriptiveName)$ vim itkInterestingFile.h
+(DescriptiveName *)$
+</pre>
+<h4><span class="mw-headline" id="Commit_the_changes">Commit the changes</span></h4>
+<pre>(DescriptiveName *)$ git add itkInterestingFile.h
+(DescriptiveName +)$ git commit
+... This change takes itkInterestingFile and does such and such to it.  The change was made for the following really really good reason...
+(DescriptiveName)$
+</pre>
+<ul><li>The changes must be committed prior to using the automatic XML initialization tool</li>
+<li>Make sure to use descriptive commit messages for all commits since they will be used by the automatic tool when initializing the XML document</li></ul>
+<h2><span class="mw-headline" id="Step_2_-_Create_the_XML_Document">Step 2 - Create the XML Document</span></h2>
+<ul><li>Follow the steps in either the <a href="#Manual_XML_Document_Generation">Manual Instructions</a> or the <a href="#Automatic_XML_Document_Generation">Automatic Instructions</a> to create an XML document for the API change.</li>
+<li>XML documents from all API changes will live in $ITK_SOURCE_DIR/Documentation/Migration</li>
+<li>Once written, commit the XML document to the local topic branch</li></ul>
+<pre>(DescriptiveName *)$ git add Documentation/Migration/DescriptiveName.xml
+(DescriptiveName +)$ git commit
+... DOC: Migration guide page
+...
+... Documenting such and such API change for the migration guide ...
+(DescriptiveName)$
+</pre>
+<h2><span class="mw-headline" id="Step_3_-_Review_in_Gerrit">Step 3 - Review in Gerrit</span></h2>
+<ul><li>Once the XML document has been committed, push the topic branch to Gerrit for review</li></ul>
+<pre>(DescriptiveName)$ git gerrit-push
+</pre>
+<ul><li>For more details on the pushing a topic to Gerrit, see the <a href="/Wiki/ITK/Gerrit/Primer" title="ITK/Gerrit/Primer">Gerrit Primer</a></li>
+<li>Make any changes desired by the members of the review committee</li></ul>
+<h2><span class="mw-headline" id="Step_4_-_Finalize_the_Change">Step 4 - Finalize the Change</span></h2>
+<ul><li>Once the patch, including the Migration Guide XML document, has been accepted by the reivew committee, the topic is ready to be merged into <i>master</i></li>
+<li>For instructions on merging to <i>master</i>, see the bottom of the <a href="/Wiki/ITK/Gerrit/Primer#Stage_changes_into_the_ITK_official_repository" title="ITK/Gerrit/Primer">Gerrit Primer</a></li></ul>
+<h1><span class="mw-headline" id="Manual_XML_Document_Generation">Manual XML Document Generation</span></h1>
+<ul><li>Create a new file in $ITK_SOURCE/Documentation/Migration/ with a unique name</li>
+<li>The file must follow the format:</li></ul>
+<pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;Change&gt;
+
+  ...
+  ...
+
+&lt;/Change&gt;
+
+</pre>
+<ul><li>The following elements must be defined inside the &lt;Change&gt; element in order for the change to be considered fully documented:
+<ul><li><b>&lt;Title&gt;</b>: English title for migration guide page</li>
+<li><b>&lt;Author&gt;</b>: Your name as the author of the change</li>
+<li><b>&lt;Date&gt;</b>: The date the XML file was made</li>
+<li><b>&lt;Description&gt;</b>: English description of what changes were made along with rational for making them.</li>
+<li><b>&lt;SampleCode&gt;</b>: Code snippet either manually written or automatically harvested from the patch's changes that illustrates how to update the API from the old version to the new version. This element must contain two child elements, <b>&lt;Old&gt;</b> and <b>&lt;New&gt;</b>. As their names suggest, these two elements contain the snippets of old API code and new API code.</li>
+<li><b>&lt;FileList&gt;</b>: A list of all files that were changed in association with the API change. File names should be specified relative to the base source directory for ITK.</li>
+<li><b>&lt;Gerrit-ChangeId&gt;</b>: This element links the API change to the Gerrit entry used to review the change.</li></ul></li></ul>
+<ul><li>Additionally, the following elements <b>should</b> be added whenever possible:
+<ul><li><b>&lt;MigrationFix-Automatic&gt;</b>: A rule for the user migration tool that can automatically fix errors in user code. These fixes will be simple find-and-replace changes, so anything that cannot be replaced throughout the entire project will be a manual fix. This element must contain <b>&lt;Old&gt;</b> and <b>&lt;New&gt;</b> child elements.</li>
+<li><b>&lt;MigrationFix-Manual confidence="high"&gt;</b>: A rule for the user migration tool that can not be automatcally fixed, but can be automatically identified. These rules will cause the user migration tool to flag a section of the code for revision. Most changes will fall in this category. The migration tool will simply search for the enclosed string and report that a problem may exist on the identified line. As such, the tool will most likely report locations that are not, in fact, problematic.
+<ul><li>The <b>confidence</b> attribute is used to indicate the developer's confidence in the warning for this manual fix.</li>
+<li>confidence options are <b>high</b>, <b>medium</b>, and <b>low</b></li></ul></li></ul></li></ul>
+<ul><li>Finally, a <b>&lt;MigrationGuideTag&gt;</b> element can be added to specify keyword tags for the migration page</li></ul>
+<h1><span class="mw-headline" id="Automatic_XML_Document_Generation">Automatic XML Document Generation</span></h1>
+<ul><li>Run the XML initialization script</li></ul>
+<pre>(DescriptiveName)$ python Documentation/Migration/InitializeXMLGuide.py
+Please enter a unique name for the XML document
+&gt;&gt; DescriptiveName.xml
+(DescriptiveName *)$
+</pre>
+<ul><li>This script will parse the git history of the topic branch and create Documentation/Migration/DescriptiveName.xml</li>
+<li>In DescriptiveName.xml, the following elements must be manually edited:</li></ul>
+<h4><span id=".3CDescription.3E"></span><span class="mw-headline" id="&lt;Description&gt;">&lt;Description&gt;</span></h4>
+<ul><li>The initialized field will look like:</li></ul>
+<pre>&lt;Description&gt;
+  ---- 839cfecfe678bb94836d94e85ecad87a82e9406e ----
+  FIX: Fixed the API problem XXX
+  
+  This is a nice full description of what was changed in this
+  commit and why.
+  
+  ---- eba124efeb163af974b9bf3b921b5724b1ece5d6 ----
+  FIX: Started fixing API problem XXX
+  
+  This is also a nice description.
+&lt;/Description&gt;
+</pre>
+<ul><li>The end goal should look something like</li></ul>
+<pre>&lt;Description&gt;
+  This is a nice concise description of what happened over the
+  course of all the commits for this topic. It takes advantage
+  of all the information from the commit messages from the branch.
+&lt;/Description&gt;
+</pre>
+<ul><li>The goal behind populating the &lt;Description&gt; element with information from the commit messages is to ensure that the information from good git commits doesn't need to be duplicated</li>
+<li>Much of the initial body of this element will need to be removed (especially the commit hashes) since this will be what a user sees on the migration page</li></ul>
+<h4><span id=".3CSampleCode.3E"></span><span class="mw-headline" id="&lt;SampleCode&gt;">&lt;SampleCode&gt;</span></h4>
+<ul><li>This element will be populated by all the changes that have been made in files from the Examples and Testing directories</li>
+<li>The initial contents will look like:</li></ul>
+<pre>&lt;SampleCode&gt;
+  &lt;Old&gt;
+  ---- InterestingExampleFile.cxx ----
+  #include "OldName.h"
+
+  ---- InterestingTestingFile.cxx ----
+  filter-&gt;OldMethodName();
+  &lt;/Old&gt;
+  
+  &lt;New&gt;
+  ---- InterestingExampleFile.cxx ----
+  #include "NewName.h"
+
+  ---- InterestingTestingFile.cxx ----
+  filter-&gt;NewMethodName();
+  &lt;/New&gt;
+
+&lt;/SampleCode&gt;
+</pre>
+<ul><li>The final version should look something like</li></ul>
+<pre>&lt;SampleCode&gt;
+  &lt;Old&gt;
+  #include "OldName.h"
+  ...
+  typedef InterestingFilter FilterType;
+  FilterType::Pointer filter = FilterType::New();
+  filter-&gt;OldMethodName();
+  &lt;/Old&gt;
+  
+  &lt;New&gt;
+  #include "NewName.h"
+  ...
+  typedef InterestingFilter FilterType;
+  FilterType::Pointer filter = FilterType::New();
+  filter-&gt;NewMethodName();
+  &lt;/New&gt;
+
+&lt;/SampleCode&gt;
+</pre>
+<ul><li>The initial contents of this file should show examples of how applications (Examples and Tests) must be fixed for the new API change</li>
+<li>The goal of this element is to provide a concise overview of how to make these fixes, so the initial contents must be manually edited into a single example fix</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20220526075630
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.012 seconds
+Real time usage: 0.013 seconds
+Preprocessor visited node count: 136/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 2983/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8101-0!canonical and timestamp 20220526075630 and revision id 53979. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/MigrationGuideDeveloperTutorial&amp;oldid=53979">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/MigrationGuideDeveloperTutorial&amp;oldid=53979</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK_Release_4/MigrationGuideDeveloperTutorial" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_4/MigrationGuideDeveloperTutorial&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK_Release_4/MigrationGuideDeveloperTutorial">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/MigrationGuideDeveloperTutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/MigrationGuideDeveloperTutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK_Release_4/MigrationGuideDeveloperTutorial" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_4/MigrationGuideDeveloperTutorial&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK+Release+4%2FMigrationGuideDeveloperTutorial" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK_Release_4/MigrationGuideDeveloperTutorial" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK_Release_4/MigrationGuideDeveloperTutorial" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/MigrationGuideDeveloperTutorial&amp;oldid=53979" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/MigrationGuideDeveloperTutorial&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 28 August 2013, at 15:38.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.012","walltime":"0.013","ppvisitednodes":{"value":136,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":2983,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220526075630","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":75});});</script>
+</body></html>

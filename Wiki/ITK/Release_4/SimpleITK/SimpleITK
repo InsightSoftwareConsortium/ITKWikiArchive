@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>SimpleITK - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4c7e34e1758ba49896ea9a55","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"SimpleITK","wgTitle":"SimpleITK","wgCurRevisionId":63990,"wgRevisionId":63990,"wgArticleId":5623,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"SimpleITK","wgRelevantArticleId":5623,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK/Release_4/SimpleITK","wgInternalRedirectTargetUrl":
+"/Wiki/SimpleITK"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/SimpleITK"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-SimpleITK rootpage-SimpleITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">SimpleITK</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK/Release_4/SimpleITK&amp;redirect=no" class="mw-redirect" title="ITK/Release 4/SimpleITK">ITK/Release 4/SimpleITK</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><table class="wikitable" style="text-align:center;width: 100%; background-color:#ffff99;" cellpadding="10">
+<tbody><tr>
+<td><b>NOTICE</b>
+</td></tr>
+<tr>
+<td>This page is being migrated to Read The Docs!
+<p>For the up to date version please see <a rel="nofollow" class="external text" href="https://simpleitk.readthedocs.io/en/master/index.html">this page</a>!
+</p>
+</td></tr></tbody></table>
+<div class="center"><div class="floatnone"><a href="/Wiki/File:SimpleITK-SquareTransparentLogo.png" class="image"><img alt="SimpleITK-SquareTransparentLogo.png" src="/Wiki/images/9/95/SimpleITK-SquareTransparentLogo.png" decoding="async" width="300" height="300" /></a></div></div>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#How_to_Cite"><span class="tocnumber">2</span> <span class="toctext">How to Cite</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Getting_Started"><span class="tocnumber">3</span> <span class="toctext">Getting Started</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Download"><span class="tocnumber">3.1</span> <span class="toctext">Download</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Documentation"><span class="tocnumber">4</span> <span class="toctext">Documentation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#API"><span class="tocnumber">4.1</span> <span class="toctext">API</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Short_Examples"><span class="tocnumber">4.2</span> <span class="toctext">Short Examples</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#SimpleITK_Notebooks"><span class="tocnumber">4.3</span> <span class="toctext">SimpleITK Notebooks</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#SimpleITK_Tutorials"><span class="tocnumber">4.4</span> <span class="toctext">SimpleITK Tutorials</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Upcoming"><span class="tocnumber">4.4.1</span> <span class="toctext">Upcoming</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Past"><span class="tocnumber">4.4.2</span> <span class="toctext">Past</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="#Community_Blogs"><span class="tocnumber">4.5</span> <span class="toctext">Community Blogs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Support"><span class="tocnumber">5</span> <span class="toctext">Support</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Issue_Tracking_And_Feature_Requests"><span class="tocnumber">5.1</span> <span class="toctext">Issue Tracking And Feature Requests</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Releases"><span class="tocnumber">5.2</span> <span class="toctext">Releases</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Development"><span class="tocnumber">6</span> <span class="toctext">Development</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#Source_Code_Repository"><span class="tocnumber">6.1</span> <span class="toctext">Source Code Repository</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Design_And_Proposals"><span class="tocnumber">6.2</span> <span class="toctext">Design And Proposals</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Overview">Overview</span></h1>
+<p>Welcome to the National Library of Medicine Insight Segmentation and Registration Toolkit (ITK). <a rel="nofollow" class="external text" href="http://www.itk.org/">ITK</a> is an open-source, cross-platform system that provides developers with an extensive suite of software tools for image analysis. Among them, SimpleITK is a simplified layer built on top of ITK, intended to facilitate its use in rapid prototyping, education, interpreted languages. SimpleITK has the following main characteristics:
+</p>
+<ul><li>C++ library with wrappers for Python, Java, CSharp, R, Tcl and Ruby</li>
+<li>Object-oriented</li>
+<li>Provides a simplified, easy-to-use, procedural interface without templates</li>
+<li>Is distributed under an open source Apache 2.0 License</li>
+<li>Binary distributions for Python, Java and CSharp</li></ul>
+<p>SimpleITK captures many of features available in ITK, and is under ongoing development. Earlier in the development process a set of <a href="/Wiki/SimpleITK/Goals" title="SimpleITK/Goals">Specific Goals</a> were outlined.
+</p>
+<h1><span class="mw-headline" id="How_to_Cite">How to Cite</span></h1>
+<p>If you find SimpleITK useful in your research, please cite the relevant publications: 
+</p>
+<ul><li>Lowekamp BC, Chen DT, Ibáñez L and Blezek D (2013) <a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3874546/pdf/fninf-07-00045.pdf">The Design of SimpleITK</a>. Front. Neuroinform. 7:45. doi: 10.3389/fninf.2013.00045</li></ul>
+<ul><li>Z. Yaniv, B. C. Lowekamp, H. J. Johnson, R. Beare, "SimpleITK Image-Analysis Notebooks: a Collaborative Environment for Education and Reproducible Research", J Digit Imaging., <a rel="nofollow" class="external free" href="https://doi.org/10.1007/s10278-017-0037-8">https://doi.org/10.1007/s10278-017-0037-8</a>, 2017. (you can freely read the manuscript <a rel="nofollow" class="external text" href="http://em.rdcu.be/wf/click?upn=KP7O1RED-2BlD0F9LDqGVeSIWDx8-2B-2B8r81HkSA5fUW53U-3D_kZYp45lAKoeuSXKlMMKnLRu-2FO1jcvtAwo2UFz30PH9bPLAejS1IjjDkfGx8EIWfnvmrgAH2RF3xvrb1fezqultdVNEEAM7Fc2RGY-2BOVhjR-2BAN-2B7Wi6qUoM6BYtn1ZWsTzFdNZQxBXXJ2Nf0BaU5NhQLQVs2hoM2TXsKZ7pnKQXZVJEAOyLbQSvZkJOvdc7Gk36rdNDa3pn5vH17-2FvszYj4mKlZlgROxTE-2Be2yQ-2FOLAYsoDHZNvVuG4vJr4xNpQnmAI16Nz8h3GJi-2F9GKnpBsAg-3D-3D.">here</a>)</li></ul>
+<p><br />
+</p>
+<h1><span class="mw-headline" id="Getting_Started">Getting Started</span></h1>
+<ul><li><a href="/Wiki/SimpleITK/GettingStarted" title="SimpleITK/GettingStarted">Getting Started For Users</a>
+<ul><li><a href="/Wiki/SimpleITK/GettingStarted#Binaries" title="SimpleITK/GettingStarted">downloading the binaries</a></li>
+<li><a href="/Wiki/SimpleITK/GettingStarted#Build_It_Yourself" title="SimpleITK/GettingStarted">build the code yourself</a></li>
+<li><a href="/Wiki/SimpleITK/GettingStarted#Recommended_Software" title="SimpleITK/GettingStarted">additional software</a> which is useful with SimpleITK</li></ul></li>
+<li><a href="/Wiki/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux" title="SimpleITK/GettingStarted/Visual guide to building on Linux">A Visual Guide to Building SimpleITK on Linux</a></li>
+<li><a href="/Wiki/SimpleITK/GettingStarted/A_visual_guide_to_SimpleITK_in_Java" title="SimpleITK/GettingStarted/A visual guide to SimpleITK in Java">A Visual Guide to SimpleITK with Java and Eclipse</a></li>
+<li><a href="/Wiki/SimpleITK/GettingStarted/A_visual_guide_to_SimpleITK_with_CSharp" title="SimpleITK/GettingStarted/A visual guide to SimpleITK with CSharp">A Visual Guide to SimpleITK with CSharp on Microsoft Visual Studio</a></li></ul>
+<h2><span class="mw-headline" id="Download">Download</span></h2>
+<p>SimpleITK currently provides binary distribution for Python, CSharp and Java language bindings. 
+You can download the <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/1.0.0/">1.0.0 release from SourceForge</a>.
+</p>
+<h1><span class="mw-headline" id="Documentation">Documentation</span></h1>
+<ul><li><a href="/Wiki/SimpleITK/FAQ" title="SimpleITK/FAQ">Frequently Asked Questions (FAQ)</a></li></ul>
+<h2><span class="mw-headline" id="API">API</span></h2>
+<ul><li>Nightly generated <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen/html/">Doxygen</a>.</li>
+<li>Release 1.0 <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen100/html/index.html">Doxygen</a>.</li>
+<li>Release 0.10 <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen010/html/index.html">Doxygen</a>.</li>
+<li>Release 0.9 <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen09/html/index.html">Doxygen</a>.</li>
+<li>Release 0.8 <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen08/html/index.html">Doxygen</a>.</li>
+<li>Release 0.7 <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen07/html/index.html">Doxygen</a>.</li>
+<li>Release 0.6.1 <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen06/html/">Doxygen</a>.</li></ul>
+<h2><span class="mw-headline" id="Short_Examples">Short Examples</span></h2>
+<p>Concise <a rel="nofollow" class="external text" href="https://itk.org/SimpleITKDoxygen/html/examples.html">examples</a> illustrating the usage of various SimpleITK features. Examples are written in a variety of languages including Python, R, C++, Java...
+</p>
+<h2><span class="mw-headline" id="SimpleITK_Notebooks">SimpleITK Notebooks</span></h2>
+<p>The SimpleITK Notebooks are examples and tutorials on how to use SimpleITK utilizing Jupyter Notebooks. This approach allows the user to create, edit and re-run scripts and view the results all within a web interface. The authoritative description of what Jupyter Notebooks are can be found on the <a rel="nofollow" class="external text" href="http://jupyter.org/">Jupyter website</a>. While SimpleITK supports a number of programming languages, the majority of notebooks are written in Python and some in R.
+</p><p>The main notebook repository is available on <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/SimpleITK-Notebooks">github</a>.
+</p><p>Additional repositories containing tutorial specific notebooks are listed in the <a rel="nofollow" class="external text" href="http://www.itk.org/Wiki/SimpleITK#SimpleITK_Tutorials">Tutorials section</a> below.
+</p>
+<h2><span class="mw-headline" id="SimpleITK_Tutorials">SimpleITK Tutorials</span></h2>
+<h3><span class="mw-headline" id="Upcoming">Upcoming</span></h3>
+<ul><li>SPIE Medical Imaging 2018, Houston TX, USA: <a rel="nofollow" class="external text" href="https://spie.org/MI/course/simpleitk-jupyter-notebooks-biomedical-image-analysis-in-python">SimpleITK Jupyter Notebooks: Biomedical Image Analysis in Python</a>.</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Past">Past</span></h3>
+<ul><li>The International Symposium on Biomedical Imaging (ISBI) 2016, Prague, Czech republic: <a rel="nofollow" class="external text" href="http://biomedicalimaging.org/2016/?page_id=572">SimpleITK: An Interactive, Python-Based Introduction to SimpleITK with the Insight Segmentation and Registration Toolkit (ITK)</a></li>
+<li>SPIE Medical Imaging 2016, San Diego, USA: ITK in Biomedical Research and Commercial Applications</li></ul>
+<dl><dd>Tutorial material: <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/SimpleITKTutorialSPIE2016">git repository</a> <a rel="nofollow" class="external text" href="https://hdl.handle.net/10380/3542">additional presentations</a> .</dd></dl>
+<ul><li>Medical Image Computing and Computer Assisted Intervention (MICCAI) 2015, Munich, Germany: a Python based tutorial on the use of the <a href="/Wiki/SimpleITK/Tutorials/MICCAI2015" title="SimpleITK/Tutorials/MICCAI2015"> ITKv4 registration framework via SimpleITK</a>.</li></ul>
+<dl><dd>Tutorial material: <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/SimpleITKTutorialMICCAI2015.git">git repository</a>.</dd></dl>
+<ul><li>ImageJ User &amp; Developer Conference 2015, Madison, WI, USA: <a rel="nofollow" class="external text" href="http://imagej.net/Conference_2015_Program#Matt_McCormick_-_SimpleITK">an introductory tutorial</a> in Python.</li></ul>
+<dl><dd>Tutorial material: <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/SimpleITKWorkshopImageJ2015">git repository</a>.</dd></dl>
+<ul><li>Medical Image Computing and Computer Assisted Intervention (MICCAI) 2011, Toronto, Canada: a general <a href="/Wiki/ITK_Release_4/Outreach/Conferences/MICCAI_2011/SimpleITK" class="mw-redirect" title="ITK Release 4/Outreach/Conferences/MICCAI 2011/SimpleITK">tutorial on SimpleITK</a>.</li></ul>
+<dl><dd>Tutorial material: <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK-MICCAI-2011-Tutorial/blob/master/Presentation/SimpleITK-MICCAI-2011.pdf?raw=true">PDF of presentation</a>, <a rel="nofollow" class="external text" href="http://midas.kitware.com/collection/view/175">virtual machine</a>, and <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK-MICCAI-2011-Tutorial">git repository</a>.</dd></dl>
+<h2><span class="mw-headline" id="Community_Blogs">Community Blogs</span></h2>
+<p>These are blog entries written by people who are not necessarily directly involved with SimpleITK. If you want us to link to your SimpleITK blog entry just let us know on the mailing list (community@itk.org). 
+</p>
+<ul><li>General introduction of SimpleITK on the <a rel="nofollow" class="external text" href="http://news.iscas.co/simpleitk-a-simplified-multi-language-interface-to-the-insight-segmentation-and-registration-toolkit/">International Society for Computer Aided Surgery blog</a>, 1 March 2017.</li>
+<li><a rel="nofollow" class="external text" href="http://zarquon42b.github.io/2015/05/22/SimpleITKandR/">SimpleITK and R</a>, 22 May 2015.</li>
+<li><a rel="nofollow" class="external text" href="http://kevin-keraudren.blogspot.com/2014/12/medical-image-analysis-ipython-tutorials.html">Medical Image Analysis Course</a>, 20 December 2014.</li>
+<li><a rel="nofollow" class="external text" href="https://pyscience.wordpress.com/tag/simpleitk">Image Segmentation with Python and SimpleITK</a>, October/November 2014.</li></ul>
+<h1><span class="mw-headline" id="Support">Support</span></h1>
+<p>SimpleITK is supported through the ITK community and the active developers. In addition to the resources listed above in the documentation section, the  <a rel="nofollow" class="external text" href="https://discourse.itk.org">discourse forum</a>  can be used to ask questions and obtain additional help from the ITK community. The legacy <a rel="nofollow" class="external text" href="http://www.itk.org/ITK/help/mailing.html">ITK mailing lists</a> is no longer prefered.
+</p>
+<h2><span class="mw-headline" id="Issue_Tracking_And_Feature_Requests">Issue Tracking And Feature Requests</span></h2>
+<p>We are currently using the <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK/issues">github issue tracker</a>. Before switching to github issue tracking we used an instance of the
+<a rel="nofollow" class="external text" href="https://itk.icts.uiowa.edu/jira/browse/SIMPLEITK">Legacy Jira Issue Tracker </a> hosted by the University of Iowa.
+</p>
+<h2><span class="mw-headline" id="Releases">Releases</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=refs/tags/v1.0.1">v1.0.1</a> <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK/releases/tag/v1.0.1">Release Notes</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=refs/tags/v1.0.0">v1.0.0</a> <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK/releases/tag/v1.0.0">Release Notes</a> <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/1.0.0">Downloads</a> <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen100/html/index.html">Doxygen</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=4a3376df08f27162b4d2a90e4a0452a839ab3124">v0.10.0</a> <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK/releases/tag/v0.10.0">Release Notes</a> <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.10.0">Downloads</a> <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen010/html/index.html">Doxygen</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=ec033f0be4f67b2e21483ed9bc3698f07dba9d06">v0.9.1</a> <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK/releases/tag/v0.9.1">Release Notes</a> <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.9.1">Downloads</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=7f06e9fc7f3cda9c47e8b7d6d37885b1f425ea3b">v0.9.0</a> <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK/releases/tag/v0.9.0">Release Notes</a> <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.9.0">Downloads</a> <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen09/html/index.html">Doxygen</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=d0a90983877b46631e69a398bd8341889912c8c2">v0.8.1</a> <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK/releases/tag/v0.8.1">Release Notes</a>  <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.8.1/">Downloads</a>  <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen08/html/index.html">Doxygen</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=11bff587f8a930bbca02813595aa3d08388af979">v0.8.0</a> <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK/releases/tag/v0.8.0">Release Notes</a>  <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.8.0/">Downloads</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=commit;h=a2b29110771a1eb0b09d18ff8e98a784dc6e6451">v0.7.1</a>  <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK/releases/tag/v0.7.1">Release Notes</a>  <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.7.1/">Downloads</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=6fecf5ae5859295082b9016c97bf4bd68a961a62">v0.7.0</a> <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK/releases/tag/v0.7.0">Release Notes</a>  <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.7.0/">Downloads</a>  <a rel="nofollow" class="external text" href="https://www.itk.org/SimpleITKDoxygen07/html/index.html">Doxygen</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=fc17df598cac97d344c875fed117f03ae7d1aacd">v0.6.1</a>  <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.6.1/">Downloads</a> <a rel="nofollow" class="external text" href="http://www.itk.org/SimpleITKDoxygen06/html/index.html">Doxygen</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=c055ef4e4cd2802c56e169084d9dd1bc655b4e93">v0.6.0</a>  <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.6.0/">Downloads</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=41fbb6d69f88fa1c8ab3b9d710b7ae57bb975721">v0.5.1</a>  <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.5.1/">Downloads</a></li>
+<li><a rel="nofollow" class="external text" href="https://itk.org/gitweb?p=SimpleITK.git;a=tag;h=35ccfd2b99b4b5675d4d0894bb870574396408b6">v0.5.0</a>  <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/0.5.0/">Downloads</a></li></ul>
+<h1><span class="mw-headline" id="Development">Development</span></h1>
+<p>SimpleITK has moved to a <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK">Github</a> based work flow for issues tracking and contribution.
+</p><p><br />
+SimpleITK utilizes an additional "next" branch to merge and test changes before merging into the master branch. This makes our "master" branch more stable and reliable. This follows the CMake development process:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://www.cmake.org/Wiki/CMake/Git/Develop">CMake Development Process </a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Source_Code_Repository">Source Code Repository</span></h2>
+<p>SimpleITK uses git as the revision control system.  The official repository is hosted along side ITK as <a rel="nofollow" class="external free" href="http://itk.org/SimpleITK.git">http://itk.org/SimpleITK.git</a>  <a rel="nofollow" class="external autonumber" href="http://public.kitware.com/gitweb?p=SimpleITK.git">[1]</a>. It is also mirrored on  <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITK">Github </a>.
+</p><p>Development is currently following the branchy workflow with the Kitware stage repository. This workflow is described here:
+</p>
+<ul><li><a rel="nofollow" class="external free" href="http://public.kitware.com/Wiki/Git/Workflow/Stage">http://public.kitware.com/Wiki/Git/Workflow/Stage</a></li>
+<li><a rel="nofollow" class="external free" href="http://public.kitware.com/Wiki/Git/Workflow/Topic">http://public.kitware.com/Wiki/Git/Workflow/Topic</a></li></ul>
+<p>Contributions from github will be pushed to the stage repo and merged into the next branch by a SimpleITK developer.
+</p>
+<h2><span class="mw-headline" id="Design_And_Proposals"><a href="/Wiki/SimpleITK/Design_And_Proposals" title="SimpleITK/Design And Proposals"> Design And Proposals</a></span></h2>
+<!-- 
+NewPP limit report
+Cached time: 20240411055112
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.024 seconds
+Real time usage: 0.026 seconds
+Preprocessor visited node count: 72/1000000
+Post‐expand include size: 288/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.185      1 Template:SimpleITKMigrationHeader
+100.00%    2.185      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:5623-0!canonical and timestamp 20240411055112 and revision id 63990. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=SimpleITK&amp;oldid=63990">https://public.kitware.com/Wiki/index.php?title=SimpleITK&amp;oldid=63990</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/SimpleITK" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:SimpleITK&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/SimpleITK">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/SimpleITK" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:SimpleITK&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=SimpleITK" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/SimpleITK" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/SimpleITK" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK&amp;oldid=63990" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 13 December 2019, at 18:17.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.024","walltime":"0.026","ppvisitednodes":{"value":72,"limit":1000000},"postexpandincludesize":{"value":288,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":4,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    2.185      1 Template:SimpleITKMigrationHeader","100.00%    2.185      1 -total"]},"cachereport":{"timestamp":"20240411055112","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":91});});</script>
+</body>
+</html>

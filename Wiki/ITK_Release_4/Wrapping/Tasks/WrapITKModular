@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4/Wrapping/Tasks/WrapITKModular - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d1604822c3c8b48ef2333e63","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Wrapping/Tasks/WrapITKModular","wgTitle":"ITK/Release 4/Wrapping/Tasks/WrapITKModular","wgCurRevisionId":44323,"wgRevisionId":44323,"wgArticleId":9203,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Wrapping/Tasks/WrapITKModular","wgRelevantArticleId":9203,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4/Wrapping/Tasks/WrapITKModular","wgInternalRedirectTargetUrl":"/Wiki/ITK/Release_4/Wrapping/Tasks/WrapITKModular"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4/Wrapping/Tasks/WrapITKModular"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Wrapping_Tasks_WrapITKModular rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Release 4/Wrapping/Tasks/WrapITKModular</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/Wiki/ITK/Release_4/Wrapping" title="ITK/Release 4/Wrapping">Wrapping</a>&lrm; | <a href="/Wiki/ITK/Release_4/Wrapping/Tasks" title="ITK/Release 4/Wrapping/Tasks">Tasks</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/Wrapping/Tasks/WrapITKModular&amp;redirect=no" class="mw-redirect" title="ITK Release 4/Wrapping/Tasks/WrapITKModular">ITK Release 4/Wrapping/Tasks/WrapITKModular</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><h1><span class="mw-headline" id="Modular_WrapITK">Modular WrapITK</span></h1>
+<h2><span class="mw-headline" id="Mapping_of_files">Mapping of files</span></h2>
+<pre>Base/itkArray.wrap =&gt; ./Modules/Core/Common/include/itkArray.h
+Base/itkArray2D.wrap =&gt; ./Modules/Core/Common/include/itkArray2D.h
+Base/itkBoundingBox.wrap =&gt; ./Modules/Core/Common/include/itkBoundingBox.h
+Base/itkBoxImageFilter.wrap =&gt; ./Modules/Filtering/ImageFilterBase/include/itkBoxImageFilter.h
+Base/ITKCommonBase.wrap =&gt; &lt;No Mapping available&gt;
+Base/itkContinuousIndex.wrap =&gt; ./Modules/Core/Common/include/itkContinuousIndex.h
+Base/itkCovariantVector.wrap =&gt; ./Modules/Core/Common/include/itkCovariantVector.h
+Base/itkDenseFiniteDifferenceImageFilter.wrap =&gt; ./Modules/Core/FiniteDifference/include/itkDenseFiniteDifferenceImageFilter.h
+Base/itkDiffusionTensor3D.wrap =&gt; ./Modules/Core/Common/include/itkDiffusionTensor3D.h
+Base/itkEventObjects.wrap =&gt; &lt;No Mapping available&gt;
+Base/itkFiniteDifferenceFunction.wrap =&gt; ./Modules/Core/FiniteDifference/include/itkFiniteDifferenceFunction.h
+Base/itkFiniteDifferenceImageFilter.wrap =&gt; ./Modules/Core/FiniteDifference/include/itkFiniteDifferenceImageFilter.h
+Base/itkFixedArray.wrap =&gt; ./Modules/Core/Common/include/itkFixedArray.h
+Base/itkFlatStructuringElement.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkFlatStructuringElement.h
+Base/itkFunctionBase.wrap =&gt; ./Modules/Core/Common/include/itkFunctionBase.h
+Base/itkImage.wrap =&gt; ./Modules/Core/Common/include/itkImage.h
+Base/itkImageBoundaryCondition.wrap =&gt; ./Modules/Core/Common/include/itkImageBoundaryCondition.h
+Base/itkImageFunction.wrap =&gt; ./Modules/Core/ImageFunction/include/itkImageFunction.h
+Base/ITKImageRegion.wrap =&gt; ./Modules/Core/Common/include/itkImageRegion.h
+Base/itkImageSource.wrap =&gt; ./Modules/Core/Common/include/itkImageSource.h
+Base/itkImageToImageFilterA.wrap =&gt; &lt;No Mapping available&gt;
+Base/itkImageToImageFilterB.wrap =&gt; &lt;No Mapping available&gt;
+Base/itkImageTransformer.wrap =&gt; ./Modules/Core/Common/include/itkImageTransformer.h
+Base/itkIndex.wrap =&gt; ./Modules/Core/Common/include/itkIndex.h
+Base/itkInPlaceImageFilterA.wrap =&gt; &lt;No Mapping available&gt;
+Base/itkInPlaceImageFilterB.wrap =&gt; &lt;No Mapping available&gt;
+Base/itkInterpolateImageFunction.wrap =&gt; ./Modules/Core/ImageFunction/include/itkInterpolateImageFunction.h
+Base/itkKernelImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkKernelImageFilter.h
+Base/itkLevelSet.wrap =&gt; ./Modules/Filtering/FastMarching/include/itkLevelSet.h
+Base/itkMapContainer.wrap =&gt; ./Modules/Core/Common/include/itkMapContainer.h
+Base/itkMatrix.wrap =&gt; ./Modules/Core/Common/include/itkMatrix.h
+Base/ITKMeshRegion.wrap =&gt; ./Modules/Core/Mesh/include/itkMeshRegion.h
+Base/itkMetaDataObject.wrap =&gt; ./Modules/Core/Common/include/itkMetaDataObject.h
+Base/itkNarrowBand.wrap =&gt; ./Modules/Numerics/NarrowBand/include/itkNarrowBand.h
+Base/itkNeighborhood.wrap =&gt; ./Modules/Core/Common/include/itkNeighborhood.h
+Base/itkNumericTraits.wrap =&gt; ./Modules/Core/Common/include/itkNumericTraits.h
+Base/itkOffset.wrap =&gt; ./Modules/Core/Common/include/itkOffset.h
+Base/itkParametricPath.wrap =&gt; ./Modules/Filtering/Path/include/itkParametricPath.h
+Base/itkPath.wrap =&gt; ./Modules/Filtering/Path/include/itkPath.h
+Base/itkPathSource.wrap =&gt; ./Modules/Filtering/Path/include/itkPathSource.h
+Base/itkPoint.wrap =&gt; ./Modules/Core/Common/include/itkPoint.h
+Base/itkPolyLineParametricPath.wrap =&gt; ./Modules/Filtering/Path/include/itkPolyLineParametricPath.h
+Base/ITKRegion.wrap =&gt; ./Modules/Core/Common/include/itkRegion.h
+Base/ITKRegions.wrap =&gt; &lt;No Mapping available&gt;
+Base/itkRGBAPixel.wrap =&gt; ./Modules/Core/Common/include/itkRGBAPixel.h
+Base/itkRGBPixel.wrap =&gt; ./Modules/Core/Common/include/itkRGBPixel.h
+Base/itkSimpleDataObjectDecorator.wrap =&gt; ./Modules/Core/Common/include/itkSimpleDataObjectDecorator.h
+Base/itkSize.wrap =&gt; ./Modules/Core/Common/include/itkSize.h
+Base/itkSpatialOrientation.wrap =&gt; ./Modules/Core/Common/include/itkSpatialOrientation.h
+Base/itkSymmetricSecondRankTensor.wrap =&gt; ./Modules/Core/Common/include/itkSymmetricSecondRankTensor.h
+Base/itkVariableLengthVector.wrap =&gt; ./Modules/Core/Common/include/itkVariableLengthVector.h
+Base/itkVector.wrap =&gt; ./Modules/Core/Common/include/itkVector.h
+Base/itkVectorContainer.wrap =&gt; ./Modules/Core/Common/include/itkVectorContainer.h
+Base/itkVectorImage.wrap =&gt; ./Modules/Core/Common/include/itkVectorImage.h
+Base/itkVersor.wrap =&gt; ./Modules/Core/Common/include/itkVersor.h
+</pre>
+<pre>BinaryMorphology/itkAggregateLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkAggregateLabelMapFilter.h
+BinaryMorphology/itkAutoCropLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkAutoCropLabelMapFilter.h
+BinaryMorphology/itkBinaryClosingByReconstructionImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryClosingByReconstructionImageFilter.h
+BinaryMorphology/itkBinaryDilateImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkBinaryDilateImageFilter.h
+BinaryMorphology/itkBinaryErodeImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkBinaryErodeImageFilter.h
+BinaryMorphology/itkBinaryFillholeImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryFillholeImageFilter.h
+BinaryMorphology/itkBinaryGrindPeakImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryGrindPeakImageFilter.h
+BinaryMorphology/itkBinaryImageToLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryImageToLabelMapFilter.h
+BinaryMorphology/itkBinaryImageToShapeLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryImageToShapeLabelMapFilter.h
+BinaryMorphology/itkBinaryImageToStatisticsLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryImageToStatisticsLabelMapFilter.h
+BinaryMorphology/itkBinaryOpeningByReconstructionImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryOpeningByReconstructionImageFilter.h
+BinaryMorphology/itkBinaryPruningImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkBinaryPruningImageFilter.h
+BinaryMorphology/itkBinaryReconstructionByDilationImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryReconstructionByDilationImageFilter.h
+BinaryMorphology/itkBinaryReconstructionByErosionImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryReconstructionByErosionImageFilter.h
+BinaryMorphology/itkBinaryShapeKeepNObjectsImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryShapeKeepNObjectsImageFilter.h
+BinaryMorphology/itkBinaryShapeOpeningImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryShapeOpeningImageFilter.h
+BinaryMorphology/itkBinaryStatisticsKeepNObjectsImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryStatisticsKeepNObjectsImageFilter.h
+BinaryMorphology/itkBinaryStatisticsOpeningImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryStatisticsOpeningImageFilter.h
+BinaryMorphology/itkBinaryThinningImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkBinaryThinningImageFilter.h
+BinaryMorphology/itkBinaryThresholdImageFilter.wrap =&gt; ./Modules/Filtering/Thresholding/include/itkBinaryThresholdImageFilter.h
+BinaryMorphology/itkChangeLabelLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkChangeLabelLabelMapFilter.h
+BinaryMorphology/itkChangeRegionLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkChangeRegionLabelMapFilter.h
+BinaryMorphology/itkCropLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkCropLabelMapFilter.h
+BinaryMorphology/itkImageSource.wrap =&gt; ./Modules/Core/Common/include/itkImageSource.h
+BinaryMorphology/itkInPlaceLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkInPlaceLabelMapFilter.h
+BinaryMorphology/itkLabelImageToLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelImageToLabelMapFilter.h
+BinaryMorphology/itkLabelImageToShapeLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelImageToShapeLabelMapFilter.h
+BinaryMorphology/itkLabelImageToStatisticsLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelImageToStatisticsLabelMapFilter.h
+BinaryMorphology/itkLabelMap.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelMap.h
+BinaryMorphology/ITKLabelMapBase.wrap =&gt; &lt;No Mapping available&gt;
+BinaryMorphology/itkLabelMapContourOverlayImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelMapContourOverlayImageFilter.h
+BinaryMorphology/itkLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelMapFilter.h
+BinaryMorphology/itkLabelMapMaskImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelMapMaskImageFilter.h
+BinaryMorphology/itkLabelMapOverlayImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelMapOverlayImageFilter.h
+BinaryMorphology/itkLabelMapToBinaryImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelMapToBinaryImageFilter.h
+BinaryMorphology/itkLabelMapToLabelImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelMapToLabelImageFilter.h
+BinaryMorphology/itkLabelMapToRGBImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelMapToRGBImageFilter.h
+BinaryMorphology/itkLabelObject.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelObject.h
+BinaryMorphology/itkLabelObjectLine.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelObjectLine.h
+BinaryMorphology/itkLabelSelectionLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelSelectionLabelMapFilter.h
+BinaryMorphology/itkLabelShapeKeepNObjectsImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelShapeKeepNObjectsImageFilter.h
+BinaryMorphology/itkLabelShapeOpeningImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelShapeOpeningImageFilter.h
+BinaryMorphology/itkLabelStatisticsKeepNObjectsImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelStatisticsKeepNObjectsImageFilter.h
+BinaryMorphology/itkLabelStatisticsOpeningImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelStatisticsOpeningImageFilter.h
+BinaryMorphology/itkLabelUniqueLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelUniqueLabelMapFilter.h
+BinaryMorphology/itkMergeLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkMergeLabelMapFilter.h
+BinaryMorphology/itkObjectByObjectLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkObjectByObjectLabelMapFilter.h
+BinaryMorphology/itkPadLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkPadLabelMapFilter.h
+BinaryMorphology/itkRegionFromReferenceLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkRegionFromReferenceLabelMapFilter.h
+BinaryMorphology/itkRelabelLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkRelabelLabelMapFilter.h
+BinaryMorphology/itkShapeKeepNObjectsLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkShapeKeepNObjectsLabelMapFilter.h
+BinaryMorphology/itkShapeLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkShapeLabelMapFilter.h
+BinaryMorphology/itkShapeLabelObject.wrap =&gt; ./Modules/Nonunit/Review/include/itkShapeLabelObject.h
+BinaryMorphology/itkShapeOpeningLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkShapeOpeningLabelMapFilter.h
+BinaryMorphology/itkShapePositionLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkShapePositionLabelMapFilter.h
+BinaryMorphology/itkShapeRelabelImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkShapeRelabelImageFilter.h
+BinaryMorphology/itkShapeRelabelLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkShapeRelabelLabelMapFilter.h
+BinaryMorphology/itkShapeUniqueLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkShapeUniqueLabelMapFilter.h
+BinaryMorphology/itkShiftScaleLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkShiftScaleLabelMapFilter.h
+BinaryMorphology/itkStatisticsKeepNObjectsLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkStatisticsKeepNObjectsLabelMapFilter.h
+BinaryMorphology/itkStatisticsLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkStatisticsLabelMapFilter.h
+BinaryMorphology/itkStatisticsLabelObject.wrap =&gt; ./Modules/Nonunit/Review/include/itkStatisticsLabelObject.h
+BinaryMorphology/itkStatisticsOpeningLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkStatisticsOpeningLabelMapFilter.h
+BinaryMorphology/itkStatisticsPositionLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkStatisticsPositionLabelMapFilter.h
+BinaryMorphology/itkStatisticsRelabelImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkStatisticsRelabelImageFilter.h
+BinaryMorphology/itkStatisticsRelabelLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkStatisticsRelabelLabelMapFilter.h
+BinaryMorphology/itkStatisticsUniqueLabelMapFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkStatisticsUniqueLabelMapFilter.h
+</pre>
+<pre>Calculators/itkBSplineDecompositionImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkBSplineDecompositionImageFilter.h
+Calculators/itkLabelGeometryImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelGeometryImageFilter.h
+Calculators/itkLabelStatisticsImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkLabelStatisticsImageFilter.h
+Calculators/itkMaximumImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkMaximumImageFilter.h
+Calculators/itkMinimumImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkMinimumImageFilter.h
+Calculators/itkMinimumMaximumImageCalculator.wrap =&gt; ./Modules/Core/Common/include/itkMinimumMaximumImageCalculator.h
+Calculators/itkMinimumMaximumImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkMinimumMaximumImageFilter.h
+Calculators/itkNoiseImageFilter.wrap =&gt; ./Modules/Filtering/ImageFilterBase/include/itkNoiseImageFilter.h
+Calculators/itkScalarImageToHistogramGenerator.wrap =&gt; ./Modules/Numerics/Statistics/include/itkScalarImageToHistogramGenerator.h
+Calculators/itkStatisticsImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkStatisticsImageFilter.h
+</pre>
+<pre>Compose/itkCheckerBoardImageFilter.wrap =&gt; ./Modules/Filtering/ImageCompare/include/itkCheckerBoardImageFilter.h
+Compose/itkComposeImageFilter.wrap =&gt; ./Modules/Filtering/ImageCompose/include/itkComposeImageFilter.h
+Compose/itkJoinSeriesImageFilter.wrap =&gt; ./Modules/Filtering/ImageCompose/include/itkJoinSeriesImageFilter.h
+Compose/itkPasteImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkPasteImageFilter.h
+Compose/itkRegionOfInterestImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkRegionOfInterestImageFilter.h
+Compose/itkRGBToLuminanceImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkRGBToLuminanceImageFilter.h
+Compose/itkTileImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkTileImageFilter.h
+Compose/itkVectorIndexSelectionCastImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkVectorIndexSelectionCastImageFilter.h
+</pre>
+<pre>DeformableTransforms/itkBSplineDeformableTransform.wrap =&gt; ./Modules/Core/Transform/include/itkBSplineDeformableTransform.h
+DeformableTransforms/itkElasticBodyReciprocalSplineKernelTransform.wrap =&gt; ./Modules/Core/Transform/include/itkElasticBodyReciprocalSplineKernelTransform.h
+DeformableTransforms/itkElasticBodySplineKernelTransform.wrap =&gt; ./Modules/Core/Transform/include/itkElasticBodySplineKernelTransform.h
+DeformableTransforms/itkKernelTransform.wrap =&gt; ./Modules/Core/Transform/include/itkKernelTransform.h
+DeformableTransforms/itkThinPlateR2LogRSplineKernelTransform.wrap =&gt; ./Modules/Core/Transform/include/itkThinPlateR2LogRSplineKernelTransform.h
+DeformableTransforms/itkThinPlateSplineKernelTransform.wrap =&gt; ./Modules/Core/Transform/include/itkThinPlateSplineKernelTransform.h
+DeformableTransforms/itkVolumeSplineKernelTransform.wrap =&gt; ./Modules/Core/Transform/include/itkVolumeSplineKernelTransform.h
+</pre>
+<pre>Denoising/itkAnisotropicDiffusionImageFilter.wrap =&gt; ./Modules/Filtering/AnisotropicSmoothing/include/itkAnisotropicDiffusionImageFilter.h
+Denoising/itkBilateralImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkBilateralImageFilter.h
+Denoising/itkBinaryMedianImageFilter.wrap =&gt; ./Modules/Segmentation/LabelVoting/include/itkBinaryMedianImageFilter.h
+Denoising/itkBinaryMinMaxCurvatureFlowImageFilter.wrap =&gt; ./Modules/Filtering/CurvatureFlow/include/itkBinaryMinMaxCurvatureFlowImageFilter.h
+Denoising/itkCurvatureAnisotropicDiffusionImageFilter.wrap =&gt; ./Modules/Filtering/AnisotropicSmoothing/include/itkCurvatureAnisotropicDiffusionImageFilter.h
+Denoising/itkCurvatureFlowImageFilter.wrap =&gt; ./Modules/Filtering/CurvatureFlow/include/itkCurvatureFlowImageFilter.h
+Denoising/itkGradientAnisotropicDiffusionImageFilter.wrap =&gt; ./Modules/Filtering/AnisotropicSmoothing/include/itkGradientAnisotropicDiffusionImageFilter.h
+Denoising/itkMeanImageFilter.wrap =&gt; ./Modules/Filtering/Smoothing/include/itkMeanImageFilter.h
+Denoising/itkMedianImageFilter.wrap =&gt; ./Modules/Filtering/Smoothing/include/itkMedianImageFilter.h
+Denoising/itkMinMaxCurvatureFlowImageFilter.wrap =&gt; ./Modules/Filtering/CurvatureFlow/include/itkMinMaxCurvatureFlowImageFilter.h
+Denoising/itkVectorCurvatureAnisotropicDiffusionImageFilter.wrap =&gt; ./Modules/Filtering/AnisotropicSmoothing/include/itkVectorCurvatureAnisotropicDiffusionImageFilter.h
+Denoising/itkVectorGradientAnisotropicDiffusionImageFilter.wrap =&gt; ./Modules/Filtering/AnisotropicSmoothing/include/itkVectorGradientAnisotropicDiffusionImageFilter.h
+Denoising/itkVotingBinaryHoleFillingImageFilter.wrap =&gt; ./Modules/Segmentation/LabelVoting/include/itkVotingBinaryHoleFillingImageFilter.h
+Denoising/itkVotingBinaryImageFilter.wrap =&gt; ./Modules/Segmentation/LabelVoting/include/itkVotingBinaryImageFilter.h
+Denoising/itkVotingBinaryIterativeHoleFillingImageFilter.wrap =&gt; ./Modules/Segmentation/LabelVoting/include/itkVotingBinaryIterativeHoleFillingImageFilter.h
+</pre>
+<pre>DistanceMap/itkApproximateSignedDistanceMapImageFilter.wrap =&gt; ./Modules/Filtering/DistanceMap/include/itkApproximateSignedDistanceMapImageFilter.h
+DistanceMap/itkDanielssonDistanceMapImageFilter.wrap =&gt; ./Modules/Filtering/DistanceMap/include/itkDanielssonDistanceMapImageFilter.h
+DistanceMap/itkFastChamferDistanceImageFilter.wrap =&gt; ./Modules/Filtering/DistanceMap/include/itkFastChamferDistanceImageFilter.h
+DistanceMap/itkSignedDanielssonDistanceMapImageFilter.wrap =&gt; ./Modules/Filtering/DistanceMap/include/itkSignedDanielssonDistanceMapImageFilter.h
+DistanceMap/itkSignedMaurerDistanceMapImageFilter.wrap =&gt; ./Modules/Filtering/DistanceMap/include/itkSignedMaurerDistanceMapImageFilter.h
+</pre>
+<pre>EdgesAndContours/itkCannyEdgeDetectionImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkCannyEdgeDetectionImageFilter.h
+EdgesAndContours/itkSimpleContourExtractorImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkSimpleContourExtractorImageFilter.h
+EdgesAndContours/itkSobelEdgeDetectionImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkSobelEdgeDetectionImageFilter.h
+EdgesAndContours/itkZeroCrossingBasedEdgeDetectionImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkZeroCrossingBasedEdgeDetectionImageFilter.h
+EdgesAndContours/itkZeroCrossingImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkZeroCrossingImageFilter.h
+</pre>
+<pre>FFT/itkComplexToImaginaryImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkComplexToImaginaryImageFilter.h
+FFT/itkComplexToModulusImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkComplexToModulusImageFilter.h
+FFT/itkComplexToPhaseImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkComplexToPhaseImageFilter.h
+FFT/itkComplexToRealImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkComplexToRealImageFilter.h
+FFT/itkDirectFourierReconstructionImageToImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkDirectFourierReconstructionImageToImageFilter.h
+FFT/itkFFTComplexConjugateToRealImageFilter.wrap =&gt; ./Modules/Filtering/FFT/include/itkFFTComplexConjugateToRealImageFilter.h
+FFT/itkFFTComplexToComplexImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkFFTComplexToComplexImageFilter.h
+FFT/itkFFTRealToComplexConjugateImageFilter.wrap =&gt; ./Modules/Filtering/FFT/include/itkFFTRealToComplexConjugateImageFilter.h
+FFT/itkMagnitudeAndPhaseToComplexImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkMagnitudeAndPhaseToComplexImageFilter.h
+FFT/itkVnlFFTComplexConjugateToRealImageFilter.wrap =&gt; ./Modules/Filtering/FFT/include/itkVnlFFTComplexConjugateToRealImageFilter.h
+FFT/itkVnlFFTRealToComplexConjugateImageFilter.wrap =&gt; ./Modules/Filtering/FFT/include/itkVnlFFTRealToComplexConjugateImageFilter.h
+FFTW/itkFFTWComplexConjugateToRealImageFilter.wrap =&gt; ./Modules/Filtering/FFT/include/itkFFTWComplexConjugateToRealImageFilter.h
+FFTW/itkFFTWComplexToComplexImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkFFTWComplexToComplexImageFilter.h
+FFTW/itkFFTWGlobalConfiguration.wrap =&gt; ./Modules/Filtering/FFT/include/itkFFTWGlobalConfiguration.h
+FFTW/itkFFTWRealToComplexConjugateImageFilter.wrap =&gt; ./Modules/Filtering/FFT/include/itkFFTWRealToComplexConjugateImageFilter.h
+
+Filtering/itkBinomialBlurImageFilter.wrap =&gt; ./Modules/Filtering/Smoothing/include/itkBinomialBlurImageFilter.h
+Filtering/itkDerivativeImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkDerivativeImageFilter.h
+Filtering/itkDiscreteGaussianDerivativeImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkDiscreteGaussianDerivativeImageFilter.h
+Filtering/itkDiscreteGaussianImageFilter.wrap =&gt; ./Modules/Filtering/Smoothing/include/itkDiscreteGaussianImageFilter.h
+Filtering/itkEdgePotentialImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkEdgePotentialImageFilter.h
+Filtering/itkGradientImageFilter.wrap =&gt; ./Modules/Filtering/ImageGradient/include/itkGradientImageFilter.h
+Filtering/itkGradientMagnitudeImageFilter.wrap =&gt; ./Modules/Filtering/ImageGradient/include/itkGradientMagnitudeImageFilter.h
+Filtering/itkGradientMagnitudeRecursiveGaussianImageFilter.wrap =&gt; ./Modules/Filtering/ImageGradient/include/itkGradientMagnitudeRecursiveGaussianImageFilter.h
+Filtering/itkGradientRecursiveGaussianImageFilter.wrap =&gt; ./Modules/Filtering/ImageGradient/include/itkGradientRecursiveGaussianImageFilter.h
+Filtering/itkGradientVectorFlowImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkGradientVectorFlowImageFilter.h
+Filtering/itkHessian3DToVesselnessMeasureImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkHessian3DToVesselnessMeasureImageFilter.h
+Filtering/itkHessianRecursiveGaussianImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkHessianRecursiveGaussianImageFilter.h
+Filtering/itkHessianToObjectnessMeasureImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkHessianToObjectnessMeasureImageFilter.h
+Filtering/itkLaplacianImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkLaplacianImageFilter.h
+Filtering/itkLaplacianRecursiveGaussianImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkLaplacianRecursiveGaussianImageFilter.h
+Filtering/itkLaplacianSharpeningImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkLaplacianSharpeningImageFilter.h
+Filtering/itkMultiScaleHessianBasedMeasureImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkMultiScaleHessianBasedMeasureImageFilter.h
+Filtering/itkRecursiveGaussianImageFilter.wrap =&gt; ./Modules/Filtering/Smoothing/include/itkRecursiveGaussianImageFilter.h
+Filtering/itkRecursiveSeparableImageFilter.wrap =&gt; ./Modules/Filtering/ImageFilterBase/include/itkRecursiveSeparableImageFilter.h
+Filtering/itkSmoothingRecursiveGaussianImageFilter.wrap =&gt; ./Modules/Filtering/Smoothing/include/itkSmoothingRecursiveGaussianImageFilter.h
+Filtering/itkStochasticFractalDimensionImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkStochasticFractalDimensionImageFilter.h
+Filtering/itkVectorGradientMagnitudeImageFilter.wrap =&gt; ./Modules/Filtering/ImageGradient/include/itkVectorGradientMagnitudeImageFilter.h
+Filtering/itkVectorMagnitudeImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkVectorMagnitudeImageFilter.h
+</pre>
+<pre>IntensityFilters/itkAdaptiveHistogramEqualizationImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkAdaptiveHistogramEqualizationImageFilter.h
+IntensityFilters/itkHistogramMatchingImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkHistogramMatchingImageFilter.h
+IntensityFilters/itkIntensityWindowingImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkIntensityWindowingImageFilter.h
+IntensityFilters/itkInvertIntensityImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkInvertIntensityImageFilter.h
+IntensityFilters/itkMaskImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkMaskImageFilter.h
+IntensityFilters/itkMaskNegatedImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkMaskNegatedImageFilter.h
+IntensityFilters/itkNormalizeImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkNormalizeImageFilter.h
+IntensityFilters/itkRescaleIntensityImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkRescaleIntensityImageFilter.h
+IntensityFilters/itkShiftScaleImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkShiftScaleImageFilter.h
+IntensityFilters/itkSigmoidImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkSigmoidImageFilter.h
+IntensityFilters/itkVectorRescaleIntensityImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkVectorRescaleIntensityImageFilter.h
+Interpolators/itkBSplineInterpolateImageFunction.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkBSplineInterpolateImageFunction.h
+Interpolators/itkBSplineInterpolationWeightFunction.wrap =&gt; ./Modules/Core/Common/include/itkBSplineInterpolationWeightFunction.h
+Interpolators/itkBSplineResampleImageFunction.wrap =&gt; ./Modules/Core/ImageFunction/include/itkBSplineResampleImageFunction.h
+Interpolators/itkLinearInterpolateImageFunction.wrap =&gt; ./Modules/Core/ImageFunction/include/itkLinearInterpolateImageFunction.h
+Interpolators/itkNearestNeighborInterpolateImageFunction.wrap =&gt; ./Modules/Core/ImageFunction/include/itkNearestNeighborInterpolateImageFunction.h
+
+IO/itkArchetypeSeriesFileNames.wrap =&gt; ./Modules/IO/Base/include/itkArchetypeSeriesFileNames.h
+IO/itkGDCMSeriesFileNames.wrap =&gt; ./Modules/IO/GDCM/include/itkGDCMSeriesFileNames.h
+IO/itkImageFileReader.wrap =&gt; ./Modules/IO/Base/include/itkImageFileReader.h
+IO/itkImageFileWriter.wrap =&gt; ./Modules/IO/Base/include/itkImageFileWriter.h
+IO/itkImageIOBase.wrap =&gt; ./Modules/IO/Base/include/itkImageIOBase.h
+IO/itkImageIOFactory.wrap =&gt; ./Modules/IO/Base/include/itkImageIOFactory.h
+IO/itkImageIORegion.wrap =&gt; ./Modules/IO/Base/include/itkImageIORegion.h
+IO/itkImageSeriesReader.wrap =&gt; ./Modules/IO/Base/include/itkImageSeriesReader.h
+IO/ITKIOBase.wrap =&gt; &lt;No Mapping available&gt;
+IO/itkIPLCommonImageIO.wrap =&gt; ./Modules/IO/IPL/include/itkIPLCommonImageIO.h
+IO/itkNumericSeriesFileNames.wrap =&gt; ./Modules/IO/Base/include/itkNumericSeriesFileNames.h
+IO/itkOrientImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkOrientImageFilter.h
+IO/itkRawImageIO.wrap =&gt; ./Modules/IO/RAW/include/itkRawImageIO.h
+IO/itkRegularExpressionSeriesFileNames.wrap =&gt; ./Modules/IO/Base/include/itkRegularExpressionSeriesFileNames.h
+IO/itkStreamingImageIOBase.wrap =&gt; ./Modules/IO/Base/include/itkStreamingImageIOBase.h
+IO/itkTransformFileReader.wrap =&gt; ./Modules/Core/Transform/include/itkTransformFileReader.h
+IO/itkTransformFileWriter.wrap =&gt; ./Modules/Core/Transform/include/itkTransformFileWriter.h
+
+Iterators/itkImageConstIterator.wrap =&gt; ./Modules/Core/Common/include/itkImageConstIterator.h
+Iterators/itkImageConstIteratorWithIndex.wrap =&gt; ./Modules/Core/Common/include/itkImageConstIteratorWithIndex.h
+Iterators/itkImageIterator.wrap =&gt; ./Modules/Core/Common/include/itkImageIterator.h
+Iterators/itkImageIteratorWithIndex.wrap =&gt; ./Modules/Core/Common/include/itkImageIteratorWithIndex.h
+Iterators/itkImageLinearConstIteratorWithIndex.wrap =&gt; ./Modules/Core/Common/include/itkImageLinearConstIteratorWithIndex.h
+Iterators/itkImageLinearIteratorWithIndex.wrap =&gt; ./Modules/Core/Common/include/itkImageLinearIteratorWithIndex.h
+Iterators/itkImageRandomConstIteratorWithIndex.wrap =&gt; ./Modules/Core/Common/include/itkImageRandomConstIteratorWithIndex.h
+Iterators/itkImageRandomIteratorWithIndex.wrap =&gt; ./Modules/Core/Common/include/itkImageRandomIteratorWithIndex.h
+Iterators/itkImageRandomNonRepeatingConstIteratorWithIndex.wrap =&gt; ./Modules/Core/Common/include/itkImageRandomNonRepeatingConstIteratorWithIndex.h
+Iterators/itkImageRandomNonRepeatingIteratorWithIndex.wrap =&gt; ./Modules/Core/Common/include/itkImageRandomNonRepeatingIteratorWithIndex.h
+Iterators/itkImageRegionConstIterator.wrap =&gt; ./Modules/Core/Common/include/itkImageRegionConstIterator.h
+Iterators/itkImageRegionConstIteratorWithIndex.wrap =&gt; ./Modules/Core/Common/include/itkImageRegionConstIteratorWithIndex.h
+Iterators/itkImageRegionIterator.wrap =&gt; ./Modules/Core/Common/include/itkImageRegionIterator.h
+Iterators/itkImageRegionIteratorWithIndex.wrap =&gt; ./Modules/Core/Common/include/itkImageRegionIteratorWithIndex.h
+</pre>
+<pre>LevelSet/itkAnisotropicFourthOrderLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkAnisotropicFourthOrderLevelSetImageFilter.h
+LevelSet/itkAntiAliasBinaryImageFilter.wrap =&gt; ./Modules/Filtering/AntiAlias/include/itkAntiAliasBinaryImageFilter.h
+LevelSet/itkCannySegmentationLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkCannySegmentationLevelSetImageFilter.h
+LevelSet/itkCollidingFrontsImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkCollidingFrontsImageFilter.h
+LevelSet/itkCurvesLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkCurvesLevelSetImageFilter.h
+LevelSet/itkFastMarchingExtensionImageFilter.wrap =&gt; ./Modules/Filtering/FastMarching/include/itkFastMarchingExtensionImageFilter.h
+LevelSet/itkFastMarchingImageFilter.wrap =&gt; ./Modules/Filtering/FastMarching/include/itkFastMarchingImageFilter.h
+LevelSet/itkFastMarchingUpwindGradientImageFilter.wrap =&gt; ./Modules/Filtering/FastMarching/include/itkFastMarchingUpwindGradientImageFilter.h
+LevelSet/itkGeodesicActiveContourLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkGeodesicActiveContourLevelSetImageFilter.h
+LevelSet/itkGeodesicActiveContourShapePriorLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkGeodesicActiveContourShapePriorLevelSetImageFilter.h
+LevelSet/itkIsoContourDistanceImageFilter.wrap =&gt; ./Modules/Filtering/DistanceMap/include/itkIsoContourDistanceImageFilter.h
+LevelSet/itkIsotropicFourthOrderLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkIsotropicFourthOrderLevelSetImageFilter.h
+LevelSet/itkLaplacianSegmentationLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkLaplacianSegmentationLevelSetImageFilter.h
+LevelSet/itkLevelSetFunction.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkLevelSetFunction.h
+LevelSet/itkNarrowBandCurvesLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkNarrowBandCurvesLevelSetImageFilter.h
+LevelSet/itkNarrowBandImageFilterBase.wrap =&gt; ./Modules/Numerics/NarrowBand/include/itkNarrowBandImageFilterBase.h
+LevelSet/itkNarrowBandLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkNarrowBandLevelSetImageFilter.h
+LevelSet/itkNarrowBandThresholdSegmentationLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkNarrowBandThresholdSegmentationLevelSetImageFilter.h
+LevelSet/itkParallelSparseFieldLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkParallelSparseFieldLevelSetImageFilter.h
+LevelSet/itkReinitializeLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkReinitializeLevelSetImageFilter.h
+LevelSet/itkScalarChanAndVeseDenseLevelSetImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkScalarChanAndVeseDenseLevelSetImageFilter.h
+LevelSet/itkScalarChanAndVeseLevelSetFunction.wrap =&gt; ./Modules/Nonunit/Review/include/itkScalarChanAndVeseLevelSetFunction.h
+LevelSet/itkScalarChanAndVeseSparseLevelSetImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkScalarChanAndVeseSparseLevelSetImageFilter.h
+LevelSet/itkSegmentationLevelSetFunction.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkSegmentationLevelSetFunction.h
+LevelSet/itkSegmentationLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkSegmentationLevelSetImageFilter.h
+LevelSet/itkShapeDetectionLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkShapeDetectionLevelSetImageFilter.h
+LevelSet/itkShapePriorSegmentationLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkShapePriorSegmentationLevelSetImageFilter.h
+LevelSet/itkSparseFieldFourthOrderLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkSparseFieldFourthOrderLevelSetImageFilter.h
+LevelSet/itkSparseFieldLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkSparseFieldLevelSetImageFilter.h
+LevelSet/itkSpatialFunction.wrap =&gt; ./Modules/Core/Common/include/itkSpatialFunction.h
+LevelSet/itkThresholdSegmentationLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkThresholdSegmentationLevelSetImageFilter.h
+LevelSet/itkUnsharpMaskLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkUnsharpMaskLevelSetImageFilter.h
+LevelSet/itkVectorThresholdSegmentationLevelSetImageFilter.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkVectorThresholdSegmentationLevelSetImageFilter.h
+
+Mesh/itkBinaryMask3DMeshSource.wrap =&gt; ./Modules/Core/Mesh/include/itkBinaryMask3DMeshSource.h
+Mesh/itkBorderQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkBorderQuadEdgeMeshFilter.h
+Mesh/itkBoundingBox.wrap =&gt; ./Modules/Core/Common/include/itkBoundingBox.h
+Mesh/itkCellInterface.wrap =&gt; ./Modules/Core/Common/include/itkCellInterface.h
+Mesh/itkCleanQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkCleanQuadEdgeMeshFilter.h
+Mesh/itkConformalFlatteningMeshFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkConformalFlatteningMeshFilter.h
+Mesh/itkDefaultDynamicMeshTraits.wrap =&gt; ./Modules/Core/Common/include/itkDefaultDynamicMeshTraits.h
+Mesh/itkDefaultStaticMeshTraits.wrap =&gt; ./Modules/Core/Common/include/itkDefaultStaticMeshTraits.h
+Mesh/itkDelaunayConformingQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkDelaunayConformingQuadEdgeMeshFilter.h
+Mesh/itkDiscreteCurvatureQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkDiscreteCurvatureQuadEdgeMeshFilter.h
+Mesh/itkDiscreteCurvatureTensorQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkDiscreteCurvatureTensorQuadEdgeMeshFilter.h
+Mesh/itkDiscreteGaussianCurvatureQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkDiscreteGaussianCurvatureQuadEdgeMeshFilter.h
+Mesh/itkDiscreteMaximumCurvatureQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkDiscreteMaximumCurvatureQuadEdgeMeshFilter.h
+Mesh/itkDiscreteMeanCurvatureQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkDiscreteMeanCurvatureQuadEdgeMeshFilter.h
+Mesh/itkDiscreteMinimumCurvatureQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkDiscreteMinimumCurvatureQuadEdgeMeshFilter.h
+Mesh/itkDiscretePrincipalCurvaturesQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkDiscretePrincipalCurvaturesQuadEdgeMeshFilter.h
+Mesh/itkGeometricalQuadEdge.wrap =&gt; ./Modules/Core/QuadEdgeMesh/include/itkGeometricalQuadEdge.h
+Mesh/itkImageToMeshFilter.wrap =&gt; ./Modules/Core/Mesh/include/itkImageToMeshFilter.h
+Mesh/itkLineCell.wrap =&gt; ./Modules/Core/Common/include/itkLineCell.h
+Mesh/itkMapContainer.wrap =&gt; ./Modules/Core/Common/include/itkMapContainer.h
+Mesh/itkMatrixCoefficients.wrap =&gt; &lt;No Mapping available&gt;
+Mesh/itkMesh.wrap =&gt; ./Modules/Core/Mesh/include/itkMesh.h
+Mesh/itkMeshSource.wrap =&gt; ./Modules/Core/Mesh/include/itkMeshSource.h
+Mesh/itkMeshToMeshFilter.wrap =&gt; ./Modules/Core/Mesh/include/itkMeshToMeshFilter.h
+Mesh/itkPointSet.wrap =&gt; ./Modules/Core/Common/include/itkPointSet.h
+Mesh/itkQuadEdge.wrap =&gt; ./Modules/Core/QuadEdgeMesh/include/itkQuadEdge.h
+Mesh/itkQuadEdgeCellTraitsInfo.wrap =&gt; ./Modules/Core/QuadEdgeMesh/include/itkQuadEdgeCellTraitsInfo.h
+Mesh/itkQuadEdgeMesh.wrap =&gt; ./Modules/Core/QuadEdgeMesh/include/itkQuadEdgeMesh.h
+Mesh/itkQuadEdgeMeshBase.wrap =&gt; &lt;No Mapping available&gt;
+Mesh/itkQuadEdgeMeshCellTraitsInfo.wrap =&gt; &lt;No Mapping available&gt;
+Mesh/itkQuadEdgeMeshLineCell.wrap =&gt; ./Modules/Core/QuadEdgeMesh/include/itkQuadEdgeMeshLineCell.h
+Mesh/itkQuadEdgeMeshPoint.wrap =&gt; ./Modules/Core/QuadEdgeMesh/include/itkQuadEdgeMeshPoint.h
+Mesh/itkQuadEdgeMeshToQuadEdgeMeshFilter.wrap =&gt; ./Modules/Core/QuadEdgeMesh/include/itkQuadEdgeMeshToQuadEdgeMeshFilter.h
+Mesh/itkQuadEdgeMeshTraits.wrap =&gt; ./Modules/Core/QuadEdgeMesh/include/itkQuadEdgeMeshTraits.h
+Mesh/itkSmoothingQuadEdgeMeshFilter.wrap =&gt; ./Modules/Filtering/QuadEdgeMeshFiltering/include/itkSmoothingQuadEdgeMeshFilter.h
+Mesh/itkTriangleCell.wrap =&gt; ./Modules/Core/Common/include/itkTriangleCell.h
+Mesh/itkTriangleHelper.wrap =&gt; ./Modules/Core/Common/include/itkTriangleHelper.h
+Mesh/itkVertexCell.wrap =&gt; ./Modules/Core/Common/include/itkVertexCell.h
+</pre>
+<pre>Morphology/itkBlackTopHatImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkBlackTopHatImageFilter.h
+Morphology/itkClosingByReconstructionImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkClosingByReconstructionImageFilter.h
+Morphology/itkDilateObjectMorphologyImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkDilateObjectMorphologyImageFilter.h
+Morphology/itkErodeObjectMorphologyImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkErodeObjectMorphologyImageFilter.h
+Morphology/itkGrayscaleConnectedClosingImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleConnectedClosingImageFilter.h
+Morphology/itkGrayscaleConnectedOpeningImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleConnectedOpeningImageFilter.h
+Morphology/itkGrayscaleDilateImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleDilateImageFilter.h
+Morphology/itkGrayscaleErodeImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleErodeImageFilter.h
+Morphology/itkGrayscaleFillholeImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleFillholeImageFilter.h
+Morphology/itkGrayscaleFunctionDilateImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleFunctionDilateImageFilter.h
+Morphology/itkGrayscaleFunctionErodeImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleFunctionErodeImageFilter.h
+Morphology/itkGrayscaleGeodesicDilateImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleGeodesicDilateImageFilter.h
+Morphology/itkGrayscaleGeodesicErodeImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleGeodesicErodeImageFilter.h
+Morphology/itkGrayscaleGrindPeakImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleGrindPeakImageFilter.h
+Morphology/itkGrayscaleMorphologicalClosingImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleMorphologicalClosingImageFilter.h
+Morphology/itkGrayscaleMorphologicalOpeningImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkGrayscaleMorphologicalOpeningImageFilter.h
+Morphology/itkHConcaveImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkHConcaveImageFilter.h
+Morphology/itkHConvexImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkHConvexImageFilter.h
+Morphology/itkHMaximaImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkHMaximaImageFilter.h
+Morphology/itkHMinimaImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkHMinimaImageFilter.h
+Morphology/itkMorphologicalGradientImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkMorphologicalGradientImageFilter.h
+Morphology/itkOpeningByReconstructionImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkOpeningByReconstructionImageFilter.h
+Morphology/itkReconstructionByDilationImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkReconstructionByDilationImageFilter.h
+Morphology/itkReconstructionByErosionImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkReconstructionByErosionImageFilter.h
+Morphology/itkWhiteTopHatImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkWhiteTopHatImageFilter.h
+</pre>
+<pre>Numerics/itkCostFunction.wrap =&gt; ./Modules/Numerics/Optimizers/include/itkCostFunction.h
+Numerics/ITKCostFunctions.wrap =&gt; &lt;No Mapping available&gt;
+Numerics/itkCumulativeGaussianCostFunction.wrap =&gt; ./Modules/Numerics/Optimizers/include/itkCumulativeGaussianCostFunction.h
+Numerics/itkDistanceMetric.wrap =&gt; ./Modules/Numerics/Statistics/include/itkDistanceMetric.h
+Numerics/itkEuclideanDistance.wrap =&gt; &lt;No Mapping available&gt;
+Numerics/itkEuclideanDistanceMetric.wrap =&gt; ./Modules/Numerics/Statistics/include/itkEuclideanDistanceMetric.h
+Numerics/itkGreyLevelCooccurrenceMatrixTextureCoefficientsCalculator.wrap =&gt; &lt;No Mapping available&gt;
+Numerics/itkHistogram.wrap =&gt; ./Modules/Numerics/Statistics/include/itkHistogram.h
+Numerics/itkHistogramToEntropyImageFilter.wrap =&gt; ./Modules/Numerics/Statistics/include/itkHistogramToEntropyImageFilter.h
+Numerics/itkHistogramToIntensityImageFilter.wrap =&gt; ./Modules/Numerics/Statistics/include/itkHistogramToIntensityImageFilter.h
+Numerics/itkHistogramToLogProbabilityImageFilter.wrap =&gt; ./Modules/Numerics/Statistics/include/itkHistogramToLogProbabilityImageFilter.h
+Numerics/itkHistogramToProbabilityImageFilter.wrap =&gt; ./Modules/Numerics/Statistics/include/itkHistogramToProbabilityImageFilter.h
+Numerics/itkHistogramToTextureFeaturesFilter.wrap =&gt; ./Modules/Numerics/Statistics/include/itkHistogramToTextureFeaturesFilter.h
+Numerics/itkImageToHistogramFilter.wrap =&gt; ./Modules/Numerics/Statistics/include/itkImageToHistogramFilter.h
+Numerics/itkKdTree.wrap =&gt; ./Modules/Numerics/Statistics/include/itkKdTree.h
+Numerics/itkListSample.wrap =&gt; ./Modules/Numerics/Statistics/include/itkListSample.h
+Numerics/itkMaskedImageToHistogramFilter.wrap =&gt; ./Modules/Numerics/Statistics/include/itkMaskedImageToHistogramFilter.h
+Numerics/itkMembershipFunctionBase.wrap =&gt; ./Modules/Numerics/Statistics/include/itkMembershipFunctionBase.h
+Numerics/itkMultipleValuedCostFunction.wrap =&gt; ./Modules/Numerics/Optimizers/include/itkMultipleValuedCostFunction.h
+Numerics/itkMultipleValuedVnlCostFunctionAdaptor.wrap =&gt; ./Modules/Numerics/Optimizers/include/itkMultipleValuedVnlCostFunctionAdaptor.h
+Numerics/ITKOptimizers.wrap =&gt; &lt;No Mapping available&gt;
+Numerics/itkRandomVariateGeneratorBase.wrap =&gt; ./Modules/Core/Common/include/itkRandomVariateGeneratorBase.h
+Numerics/itkSample.wrap =&gt; ./Modules/Numerics/Statistics/include/itkSample.h
+Numerics/itkScalarImageToGreyLevelCooccurrenceMatrixGenerator.wrap =&gt; &lt;No Mapping available&gt;
+Numerics/itkScalarImageToTextureFeaturesFilter.wrap =&gt; ./Modules/Numerics/Statistics/include/itkScalarImageToTextureFeaturesFilter.h
+Numerics/itkShapePriorMAPCostFunction.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkShapePriorMAPCostFunction.h
+Numerics/itkShapePriorMAPCostFunctionBase.wrap =&gt; ./Modules/Segmentation/LevelSets/include/itkShapePriorMAPCostFunctionBase.h
+Numerics/itkSingleValuedCostFunction.wrap =&gt; ./Modules/Numerics/Optimizers/include/itkSingleValuedCostFunction.h
+Numerics/itkSingleValuedVnlCostFunctionAdaptor.wrap =&gt; ./Modules/Numerics/Optimizers/include/itkSingleValuedVnlCostFunctionAdaptor.h
+</pre>
+<pre>Patented/itkSimpleFuzzyConnectednessImageFilterBase.wrap =&gt; &lt;No Mapping available&gt;
+Patented/itkSimpleFuzzyConnectednessScalarImageFilter.wrap =&gt; &lt;No Mapping available&gt;
+</pre>
+<pre>PixelMath/itkAbsoluteValueDifferenceImageFilter.wrap =&gt; ./Modules/Filtering/ImageCompare/include/itkAbsoluteValueDifferenceImageFilter.h
+PixelMath/itkAddImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkAddImageFilter.h
+PixelMath/itkAndImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkAndImageFilter.h
+PixelMath/itkAtan2ImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkAtan2ImageFilter.h
+PixelMath/itkBinaryMagnitudeImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkBinaryMagnitudeImageFilter.h
+PixelMath/itkConstrainedValueAdditionImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkConstrainedValueAdditionImageFilter.h
+PixelMath/itkConstrainedValueDifferenceImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkConstrainedValueDifferenceImageFilter.h
+PixelMath/itkDivideImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkDivideImageFilter.h
+PixelMath/itkMultiplyImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkMultiplyImageFilter.h
+PixelMath/itkNaryAddImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkNaryAddImageFilter.h
+PixelMath/itkNaryMaximumImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkNaryMaximumImageFilter.h
+PixelMath/itkOrImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkOrImageFilter.h
+PixelMath/itkSquaredDifferenceImageFilter.wrap =&gt; ./Modules/Filtering/ImageCompare/include/itkSquaredDifferenceImageFilter.h
+PixelMath/itkSubtractImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkSubtractImageFilter.h
+PixelMath/itkTernaryAddImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkTernaryAddImageFilter.h
+PixelMath/itkTernaryMagnitudeImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkTernaryMagnitudeImageFilter.h
+PixelMath/itkTernaryMagnitudeSquaredImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkTernaryMagnitudeSquaredImageFilter.h
+PixelMath/itkWeightedAddImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkWeightedAddImageFilter.h
+PixelMath/itkXorImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkXorImageFilter.h
+
+Registration/itkDeformationFieldJacobianDeterminantFilter.wrap =&gt; ./Modules/Filtering/DeformationField/include/itkDeformationFieldJacobianDeterminantFilter.h
+Registration/itkDemonsRegistrationFilter.wrap =&gt; ./Modules/Registration/PDEDeformable/include/itkDemonsRegistrationFilter.h
+Registration/itkDiffeomorphicDemonsRegistrationFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkDiffeomorphicDemonsRegistrationFilter.h
+Registration/itkDifferenceOfGaussiansGradientImageFilter.wrap =&gt; ./Modules/Filtering/ImageGradient/include/itkDifferenceOfGaussiansGradientImageFilter.h
+Registration/itkDisplacementFieldJacobianDeterminantFilter.wrap =&gt; ./Modules/Filtering/DeformationField/include/itkDisplacementFieldJacobianDeterminantFilter.h
+Registration/itkEigenAnalysis2DImageFilter.wrap =&gt; ./Modules/Numerics/Eigen/include/itkEigenAnalysis2DImageFilter.h
+Registration/itkESMDemonsRegistrationFunction.wrap =&gt; ./Modules/Nonunit/Review/include/itkESMDemonsRegistrationFunction.h
+Registration/itkExponentialDeformationFieldImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkExponentialDeformationFieldImageFilter.h
+Registration/itkFastSymmetricForcesDemonsRegistrationFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkFastSymmetricForcesDemonsRegistrationFilter.h
+Registration/itkGridForwardWarpImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkGridForwardWarpImageFilter.h
+Registration/itkHoughTransform2DCirclesImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkHoughTransform2DCirclesImageFilter.h
+Registration/itkHoughTransform2DLinesImageFilter.wrap =&gt; ./Modules/Filtering/ImageFeature/include/itkHoughTransform2DLinesImageFilter.h
+Registration/itkImageRegistrationMethod.wrap =&gt; ./Modules/Registration/Common/include/itkImageRegistrationMethod.h
+Registration/itkImageToImageMetric.wrap =&gt; ./Modules/Registration/Common/include/itkImageToImageMetric.h
+Registration/itkLevelSetMotionRegistrationFilter.wrap =&gt; ./Modules/Registration/PDEDeformable/include/itkLevelSetMotionRegistrationFilter.h
+Registration/itkMattesMutualInformationImageToImageMetric.wrap =&gt; ./Modules/Registration/Common/include/itkMattesMutualInformationImageToImageMetric.h
+Registration/itkMeanReciprocalSquareDifferenceImageToImageMetric.wrap =&gt; ./Modules/Registration/Common/include/itkMeanReciprocalSquareDifferenceImageToImageMetric.h
+Registration/itkMeanSquaresImageToImageMetric.wrap =&gt; ./Modules/Registration/Common/include/itkMeanSquaresImageToImageMetric.h
+Registration/itkMultiResolutionImageRegistrationMethod.wrap =&gt; ./Modules/Registration/Common/include/itkMultiResolutionImageRegistrationMethod.h
+Registration/itkMutualInformationImageToImageMetric.wrap =&gt; ./Modules/Registration/Common/include/itkMutualInformationImageToImageMetric.h
+Registration/itkNormalizedCorrelationImageToImageMetric.wrap =&gt; ./Modules/Registration/Common/include/itkNormalizedCorrelationImageToImageMetric.h
+Registration/itkPDEDeformableRegistrationFilter.wrap =&gt; ./Modules/Registration/PDEDeformable/include/itkPDEDeformableRegistrationFilter.h
+Registration/itkPDEDeformableRegistrationFunction.wrap =&gt; ./Modules/Registration/Common/include/itkPDEDeformableRegistrationFunction.h
+Registration/itkSymmetricForcesDemonsRegistrationFilter.wrap =&gt; ./Modules/Registration/PDEDeformable/include/itkSymmetricForcesDemonsRegistrationFilter.h
+Registration/itkVectorResampleImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkVectorResampleImageFilter.h
+ 
+Resize/itkAccumulateImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkAccumulateImageFilter.h
+Resize/itkBSplineDownsampleImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkBSplineDownsampleImageFilter.h
+Resize/itkBSplineUpsampleImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkBSplineUpsampleImageFilter.h
+Resize/itkConstantPadImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkConstantPadImageFilter.h
+Resize/itkCropImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkCropImageFilter.h
+Resize/itkExpandImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkExpandImageFilter.h
+Resize/itkExtractImageFilter.wrap =&gt; ./Modules/Core/Common/include/itkExtractImageFilter.h
+Resize/itkMirrorPadImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkMirrorPadImageFilter.h
+Resize/itkMultiResolutionPyramidImageFilter.wrap =&gt; ./Modules/Registration/Common/include/itkMultiResolutionPyramidImageFilter.h
+Resize/itkRecursiveMultiResolutionPyramidImageFilter.wrap =&gt; ./Modules/Registration/Common/include/itkRecursiveMultiResolutionPyramidImageFilter.h
+Resize/itkShrinkImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkShrinkImageFilter.h
+Resize/itkVectorExpandImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkVectorExpandImageFilter.h
+Resize/itkWrapPadImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkWrapPadImageFilter.h
+
+Review/itkAreaClosingImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkAreaClosingImageFilter.h
+Review/itkAreaOpeningImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkAreaOpeningImageFilter.h
+Review/itkBinaryContourImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBinaryContourImageFilter.h
+Review/itkBinaryMorphologicalClosingImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkBinaryMorphologicalClosingImageFilter.h
+Review/itkBinaryMorphologicalOpeningImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkBinaryMorphologicalOpeningImageFilter.h
+Review/itkBinaryProjectionImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkBinaryProjectionImageFilter.h
+Review/itkBinaryThresholdProjectionImageFilter.wrap =&gt; ./Modules/Filtering/Thresholding/include/itkBinaryThresholdProjectionImageFilter.h
+Review/itkBoxMeanImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBoxMeanImageFilter.h
+Review/itkBoxSigmaImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkBoxSigmaImageFilter.h
+Review/itkCompositeTransform.wrap =&gt; ./Modules/Nonunit/Review/include/itkCompositeTransform.h
+Review/itkContourExtractor2DImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkContourExtractor2DImageFilter.h
+Review/itkConvolutionImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkConvolutionImageFilter.h
+Review/itkDeformationFieldTransform.wrap =&gt; ./Modules/Nonunit/Review/include/itkDeformationFieldTransform.h
+Review/itkFastApproximateRankImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkFastApproximateRankImageFilter.h
+Review/itkFFTShiftImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkFFTShiftImageFilter.h
+Review/itkImageToPathFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkImageToPathFilter.h
+Review/itkKappaSigmaThresholdImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkKappaSigmaThresholdImageFilter.h
+Review/itkLabelContourImageFilter.wrap =&gt; ./Modules/Filtering/ImageLabel/include/itkLabelContourImageFilter.h
+Review/itkLabelOverlayImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelOverlayImageFilter.h
+Review/itkLabelToRGBImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkLabelToRGBImageFilter.h
+Review/itkMaskedRankImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkMaskedRankImageFilter.h
+Review/itkMaximumProjectionImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkMaximumProjectionImageFilter.h
+Review/itkMeanProjectionImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkMeanProjectionImageFilter.h
+Review/itkMedianProjectionImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkMedianProjectionImageFilter.h
+Review/itkMinimumProjectionImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkMinimumProjectionImageFilter.h
+Review/itkMorphologicalWatershedFromMarkersImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkMorphologicalWatershedFromMarkersImageFilter.h
+Review/itkMorphologicalWatershedImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkMorphologicalWatershedImageFilter.h
+Review/itkMovingHistogramImageFilterBase.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkMovingHistogramImageFilterBase.h
+Review/itkRankImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkRankImageFilter.h
+Review/itkRegionalMaximaImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkRegionalMaximaImageFilter.h
+Review/itkRegionalMinimaImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkRegionalMinimaImageFilter.h
+Review/itkRobustAutomaticThresholdImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkRobustAutomaticThresholdImageFilter.h
+Review/itkScalarToRGBColormapImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkScalarToRGBColormapImageFilter.h
+Review/itkSliceBySliceImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkSliceBySliceImageFilter.h
+Review/itkStandardDeviationProjectionImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkStandardDeviationProjectionImageFilter.h
+Review/itkSumProjectionImageFilter.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkSumProjectionImageFilter.h
+Review/itkValuedRegionalMaximaImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkValuedRegionalMaximaImageFilter.h
+Review/itkValuedRegionalMinimaImageFilter.wrap =&gt; ./Modules/Nonunit/Review/include/itkValuedRegionalMinimaImageFilter.h
+
+SegmentationAndThreshold/itkBayesianClassifierImageFilter.wrap =&gt; ./Modules/Segmentation/Classifiers/include/itkBayesianClassifierImageFilter.h
+SegmentationAndThreshold/itkBayesianClassifierInitializationImageFilter.wrap =&gt; ./Modules/Segmentation/Classifiers/include/itkBayesianClassifierInitializationImageFilter.h
+SegmentationAndThreshold/itkChangeLabelImageFilter.wrap =&gt; ./Modules/Filtering/ImageLabel/include/itkChangeLabelImageFilter.h
+SegmentationAndThreshold/itkConfidenceConnectedImageFilter.wrap =&gt; ./Modules/Segmentation/RegionGrowing/include/itkConfidenceConnectedImageFilter.h
+SegmentationAndThreshold/itkConnectedComponentImageFilter.wrap =&gt; ./Modules/Segmentation/ConnectedComponents/include/itkConnectedComponentImageFilter.h
+SegmentationAndThreshold/itkConnectedThresholdImageFilter.wrap =&gt; ./Modules/Segmentation/RegionGrowing/include/itkConnectedThresholdImageFilter.h
+SegmentationAndThreshold/itkDoubleThresholdImageFilter.wrap =&gt; ./Modules/Filtering/MathematicalMorphology/include/itkDoubleThresholdImageFilter.h
+SegmentationAndThreshold/itkHardConnectedComponentImageFilter.wrap =&gt; ./Modules/Segmentation/ConnectedComponents/include/itkHardConnectedComponentImageFilter.h
+SegmentationAndThreshold/itkIsolatedConnectedImageFilter.wrap =&gt; ./Modules/Segmentation/RegionGrowing/include/itkIsolatedConnectedImageFilter.h
+SegmentationAndThreshold/itkIsolatedWatershedImageFilter.wrap =&gt; ./Modules/Segmentation/Watersheds/include/itkIsolatedWatershedImageFilter.h
+SegmentationAndThreshold/itkLabelVotingImageFilter.wrap =&gt; ./Modules/Segmentation/LabelVoting/include/itkLabelVotingImageFilter.h
+SegmentationAndThreshold/itkNeighborhoodConnectedImageFilter.wrap =&gt; ./Modules/Segmentation/RegionGrowing/include/itkNeighborhoodConnectedImageFilter.h
+SegmentationAndThreshold/itkOtsuMultipleThresholdsImageFilter.wrap =&gt; ./Modules/Filtering/Thresholding/include/itkOtsuMultipleThresholdsImageFilter.h
+SegmentationAndThreshold/itkOtsuThresholdImageCalculator.wrap =&gt; ./Modules/Filtering/Thresholding/include/itkOtsuThresholdImageCalculator.h
+SegmentationAndThreshold/itkOtsuThresholdImageFilter.wrap =&gt; ./Modules/Filtering/Thresholding/include/itkOtsuThresholdImageFilter.h
+SegmentationAndThreshold/itkRelabelComponentImageFilter.wrap =&gt; ./Modules/Segmentation/ConnectedComponents/include/itkRelabelComponentImageFilter.h
+SegmentationAndThreshold/itkScalarConnectedComponentImageFilter.wrap =&gt; ./Modules/Segmentation/ConnectedComponents/include/itkScalarConnectedComponentImageFilter.h
+SegmentationAndThreshold/itkScalarImageKmeansImageFilter.wrap =&gt; ./Modules/Segmentation/Classifiers/include/itkScalarImageKmeansImageFilter.h
+SegmentationAndThreshold/itkThresholdImageFilter.wrap =&gt; ./Modules/Filtering/Thresholding/include/itkThresholdImageFilter.h
+SegmentationAndThreshold/itkThresholdLabelerImageFilter.wrap =&gt; ./Modules/Filtering/Thresholding/include/itkThresholdLabelerImageFilter.h
+SegmentationAndThreshold/itkThresholdMaximumConnectedComponentsImageFilter.wrap =&gt; ./Modules/Segmentation/ConnectedComponents/include/itkThresholdMaximumConnectedComponentsImageFilter.h
+SegmentationAndThreshold/itkTobogganImageFilter.wrap =&gt; ./Modules/Segmentation/Watersheds/include/itkTobogganImageFilter.h
+SegmentationAndThreshold/itkVectorConfidenceConnectedImageFilter.wrap =&gt; ./Modules/Segmentation/RegionGrowing/include/itkVectorConfidenceConnectedImageFilter.h
+SegmentationAndThreshold/itkVectorConnectedComponentImageFilter.wrap =&gt; ./Modules/Segmentation/ConnectedComponents/include/itkVectorConnectedComponentImageFilter.h
+SegmentationAndThreshold/itkVoronoiSegmentationImageFilter.wrap =&gt; ./Modules/Segmentation/Voronoi/include/itkVoronoiSegmentationImageFilter.h
+SegmentationAndThreshold/itkWatershedImageFilter.wrap =&gt; ./Modules/Segmentation/Watersheds/include/itkWatershedImageFilter.h
+SegmentationValidation/itkContourDirectedMeanDistanceImageFilter.wrap =&gt; ./Modules/Filtering/DistanceMap/include/itkContourDirectedMeanDistanceImageFilter.h
+SegmentationValidation/itkContourMeanDistanceImageFilter.wrap =&gt; ./Modules/Filtering/DistanceMap/include/itkContourMeanDistanceImageFilter.h
+SegmentationValidation/itkDirectedHausdorffDistanceImageFilter.wrap =&gt; ./Modules/Filtering/DistanceMap/include/itkDirectedHausdorffDistanceImageFilter.h
+SegmentationValidation/itkHausdorffDistanceImageFilter.wrap =&gt; ./Modules/Filtering/DistanceMap/include/itkHausdorffDistanceImageFilter.h
+SegmentationValidation/itkSimilarityIndexImageFilter.wrap =&gt; ./Modules/Filtering/ImageCompare/include/itkSimilarityIndexImageFilter.h
+SegmentationValidation/itkSTAPLEImageFilter.wrap =&gt; ./Modules/Filtering/ImageCompare/include/itkSTAPLEImageFilter.h
+</pre>
+<pre>SimpleFilters/itkCastImageFilter.wrap =&gt; ./Modules/Filtering/ImageFilterBase/include/itkCastImageFilter.h
+SimpleFilters/itkChangeInformationImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkChangeInformationImageFilter.h
+SimpleFilters/itkDifferenceImageFilter.wrap =&gt; ./Modules/Core/TestKernel/include/itkDifferenceImageFilter.h
+SimpleFilters/itkFlipImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkFlipImageFilter.h
+SimpleFilters/itkImageDuplicator.wrap =&gt; ./Modules/Core/Common/include/itkImageDuplicator.h
+SimpleFilters/itkImageRegionSplitter.wrap =&gt; ./Modules/Core/Common/include/itkImageRegionSplitter.h
+SimpleFilters/itkImportImageFilter.wrap =&gt; ./Modules/Core/Common/include/itkImportImageFilter.h
+SimpleFilters/itkInterpolateImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkInterpolateImageFilter.h
+SimpleFilters/itkPermuteAxesImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkPermuteAxesImageFilter.h
+SimpleFilters/itkRandomImageSource.wrap =&gt; ./Modules/Core/TestKernel/include/itkRandomImageSource.h
+SimpleFilters/itkResampleImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkResampleImageFilter.h
+SimpleFilters/itkStreamingImageFilter.wrap =&gt; ./Modules/Core/Common/include/itkStreamingImageFilter.h
+SimpleFilters/itkVectorCastImageFilter.wrap =&gt; ./Modules/Filtering/ImageFilterBase/include/itkVectorCastImageFilter.h
+SimpleFilters/itkVTKImageExport.wrap =&gt; ./Modules/Bridge/VTK/include/itkVTKImageExport.h
+SimpleFilters/itkVTKImageImport.wrap =&gt; ./Modules/Bridge/VTK/include/itkVTKImageImport.h
+SimpleFilters/itkWarpImageFilter.wrap =&gt; ./Modules/Filtering/ImageGrid/include/itkWarpImageFilter.h
+</pre>
+<pre>SpatialObject/itkAffineGeometryFrame.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkAffineGeometryFrame.h
+SpatialObject/itkArrowSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkArrowSpatialObject.h
+SpatialObject/itkBlobSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkBlobSpatialObject.h
+SpatialObject/itkBoxSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkBoxSpatialObject.h
+SpatialObject/itkCenteredTransformInitializer.wrap =&gt; ./Modules/Registration/Common/include/itkCenteredTransformInitializer.h
+SpatialObject/itkCenteredVersorTransformInitializer.wrap =&gt; ./Modules/Registration/Common/include/itkCenteredVersorTransformInitializer.h
+SpatialObject/itkContourSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkContourSpatialObject.h
+SpatialObject/itkContourSpatialObjectPoint.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkContourSpatialObjectPoint.h
+SpatialObject/itkDTITubeSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkDTITubeSpatialObject.h
+SpatialObject/itkDTITubeSpatialObjectPoint.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkDTITubeSpatialObjectPoint.h
+SpatialObject/itkEllipseSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkEllipseSpatialObject.h
+SpatialObject/itkGaussianSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkGaussianSpatialObject.h
+SpatialObject/itkGroupSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkGroupSpatialObject.h
+SpatialObject/itkImageMaskSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkImageMaskSpatialObject.h
+SpatialObject/itkImageMomentsCalculator.wrap =&gt; ./Modules/Filtering/ImageStatistics/include/itkImageMomentsCalculator.h
+SpatialObject/itkImageSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkImageSpatialObject.h
+SpatialObject/itkLandmarkSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkLandmarkSpatialObject.h
+SpatialObject/itkLineSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkLineSpatialObject.h
+SpatialObject/itkLineSpatialObjectPoint.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkLineSpatialObjectPoint.h
+SpatialObject/itkPlaneSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkPlaneSpatialObject.h
+SpatialObject/itkPointBasedSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkPointBasedSpatialObject.h
+SpatialObject/itkPolygonGroupSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkPolygonGroupSpatialObject.h
+SpatialObject/itkPolygonSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkPolygonSpatialObject.h
+SpatialObject/itkSceneSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkSceneSpatialObject.h
+SpatialObject/itkSpatialObjectBase.wrap =&gt; &lt;No Mapping available&gt;
+SpatialObject/itkSpatialObjectPoint.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkSpatialObjectPoint.h
+SpatialObject/itkSpatialObjectProperty.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkSpatialObjectProperty.h
+SpatialObject/itkSpatialObjectReader.wrap =&gt; ./Modules/IO/SpatialObjects/include/itkSpatialObjectReader.h
+SpatialObject/itkSpatialObjectToImageFilter.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkSpatialObjectToImageFilter.h
+SpatialObject/itkSpatialObjectWriter.wrap =&gt; ./Modules/IO/SpatialObjects/include/itkSpatialObjectWriter.h
+SpatialObject/itkSurfaceSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkSurfaceSpatialObject.h
+SpatialObject/itkSurfaceSpatialObjectPoint.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkSurfaceSpatialObjectPoint.h
+SpatialObject/itkTubeSpatialObjectPoint.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkTubeSpatialObjectPoint.h
+SpatialObject/itkVesselTubeSpatialObject.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkVesselTubeSpatialObject.h
+SpatialObject/itkVesselTubeSpatialObjectPoint.wrap =&gt; ./Modules/Core/SpatialObjects/include/itkVesselTubeSpatialObjectPoint.h
+
+Transforms/itkAffineTransform.wrap =&gt; ./Modules/Core/Transform/include/itkAffineTransform.h
+Transforms/itkAzimuthElevationToCartesianTransform.wrap =&gt; ./Modules/Core/Transform/include/itkAzimuthElevationToCartesianTransform.h
+Transforms/itkCenteredAffineTransform.wrap =&gt; ./Modules/Core/Transform/include/itkCenteredAffineTransform.h
+Transforms/itkCenteredEuler2DTransform.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/itkCenteredEuler3DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkCenteredEuler3DTransform.h
+Transforms/ITKCenteredEulerTransform.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/itkCenteredRigid2DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkCenteredRigid2DTransform.h
+Transforms/ITKCenteredRigidTransform.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/itkCenteredSimilarity2DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkCenteredSimilarity2DTransform.h
+Transforms/ITKCenteredSimilarityTransforms.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/itkEuler2DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkEuler2DTransform.h
+Transforms/itkEuler3DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkEuler3DTransform.h
+Transforms/ITKEulerTransform.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/itkFixedCenterOfRotationAffineTransform.wrap =&gt; ./Modules/Core/Transform/include/itkFixedCenterOfRotationAffineTransform.h
+Transforms/itkIdentityTransform.wrap =&gt; ./Modules/Core/Transform/include/itkIdentityTransform.h
+Transforms/itkMatrixOffsetTransformBase.wrap =&gt; ./Modules/Core/Transform/include/itkMatrixOffsetTransformBase.h
+Transforms/itkQuaternionRigidTransform.wrap =&gt; ./Modules/Core/Transform/include/itkQuaternionRigidTransform.h
+Transforms/itkRigid2DPerspectiveTransform.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/itkRigid2DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkRigid2DTransform.h
+Transforms/itkRigid3DPerspectiveTransform.wrap =&gt; ./Modules/Core/Transform/include/itkRigid3DPerspectiveTransform.h
+Transforms/itkRigid3DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkRigid3DTransform.h
+Transforms/ITKRigidPerspectiveTransform.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/ITKRigidTransforms.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/itkScalableAffineTransform.wrap =&gt; ./Modules/Core/Transform/include/itkScalableAffineTransform.h
+Transforms/itkScaleLogarithmicTransform.wrap =&gt; ./Modules/Core/Transform/include/itkScaleLogarithmicTransform.h
+Transforms/itkScaleSkewVersor3DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkScaleSkewVersor3DTransform.h
+Transforms/ITKScaleSkewVersorTransforms.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/itkScaleTransform.wrap =&gt; ./Modules/Core/Transform/include/itkScaleTransform.h
+Transforms/itkScaleVersor3DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkScaleVersor3DTransform.h
+Transforms/itkSimilarity2DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkSimilarity2DTransform.h
+Transforms/itkSimilarity3DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkSimilarity3DTransform.h
+Transforms/ITKSimilarityTransforms.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/itkTransform.wrap =&gt; ./Modules/Core/Transform/include/itkTransform.h
+Transforms/itkTranslationTransform.wrap =&gt; ./Modules/Core/Transform/include/itkTranslationTransform.h
+Transforms/ITKVersorRigid3DTransform.wrap =&gt; ./Modules/Core/Transform/include/itkVersorRigid3DTransform.h
+Transforms/ITKVersorRigidTransform.wrap =&gt; &lt;No Mapping available&gt;
+Transforms/itkVersorTransform.wrap =&gt; ./Modules/Core/Transform/include/itkVersorTransform.h
+</pre>
+<pre>UnaryPixelMath/itkAbsImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkAbsImageFilter.h
+UnaryPixelMath/itkAcosImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkAcosImageFilter.h
+UnaryPixelMath/itkAsinImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkAsinImageFilter.h
+UnaryPixelMath/itkAtanImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkAtanImageFilter.h
+UnaryPixelMath/itkBoundedReciprocalImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkBoundedReciprocalImageFilter.h
+UnaryPixelMath/itkCosImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkCosImageFilter.h
+UnaryPixelMath/itkExpImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkExpImageFilter.h
+UnaryPixelMath/itkExpNegativeImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkExpNegativeImageFilter.h
+UnaryPixelMath/itkLog10ImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkLog10ImageFilter.h
+UnaryPixelMath/itkLogImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkLogImageFilter.h
+UnaryPixelMath/itkModulusImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkModulusImageFilter.h
+UnaryPixelMath/itkNotImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkNotImageFilter.h
+UnaryPixelMath/itkSinImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkSinImageFilter.h
+UnaryPixelMath/itkSqrtImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkSqrtImageFilter.h
+UnaryPixelMath/itkSquareImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkSquareImageFilter.h
+UnaryPixelMath/itkTanImageFilter.wrap =&gt; ./Modules/Filtering/ImageIntensity/include/itkTanImageFilter.h
+
+ VXLNumerics/vcl_complex.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/vcl/borland55/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/borland56/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/emulation/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/gcc-295/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/generic/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/iso/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/mwerks/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/sgi/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/stlport/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/sunpro/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/win32-vc60/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/win32-vc70/vcl_complex.h,./Modules/ThirdParty/VNL/src/vxl/vcl/win32-vc8/vcl_complex.h
+</pre>
+<pre>VXLNumerics/vnl_c_vector.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_c_vector.h
+VXLNumerics/vnl_cost_function.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_cost_function.h
+VXLNumerics/vnl_diag_matrix.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_diag_matrix.h
+VXLNumerics/vnl_file_matrix.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_file_matrix.h
+VXLNumerics/vnl_file_vector.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_file_vector.h
+VXLNumerics/vnl_fortran_copy.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_fortran_copy.h
+VXLNumerics/vnl_least_squares_function.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_least_squares_function.h
+VXLNumerics/vnl_matrix.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_matrix.h
+VXLNumerics/vnl_matrix_fixed.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_matrix_fixed.h
+VXLNumerics/vnl_matrix_fixed_ref.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_matrix_fixed_ref.h
+VXLNumerics/vnl_matrix_ref.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_matrix_ref.h
+VXLNumerics/vnl_unary_function.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_unary_function.h
+VXLNumerics/vnl_vector.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_vector.h
+VXLNumerics/vnl_vector_ref.wrap =&gt; ./Modules/ThirdParty/VNL/src/vxl/core/vnl/vnl_vector_ref.h
+</pre>
+<h2><span class="mw-headline" id="Script_used_to_obtain_the_mapping">Script used to obtain the mapping</span></h2>
+<pre>#!/usr/bin/perl 
+require 5.004;
+
+$input = "Ashish_wrapfiles.txt";
+$output = "Ashish_headerfiles.txt";
+$mapping = "Ashish_mapping.txt";
+
+# First, prepare the input INPUT
+open(FILE2, "&gt;$input") || die "Could not open $input\n";
+system("find . -name \*\.wrap -print &gt;&gt; $input")  == 0 || die "system error $?"; 
+close(FILE2);
+
+# Next, process and write it in the output INPUT
+open(INPUT, "$input") || die "Could not open $input\n";
+open (OUTPUT, "&gt;$output") || die "Could not open $output\n";
+
+#$pattern = '^\.\/Wrapping\/WrapITK\/Libraries\/(\w*)\/(\w*)\.wrap';
+$pattern = '^\.\/(((\w*)\/)+)(\w*)\.wrap';
+
+while ($line = &lt;INPUT&gt;) { 
+    chomp($line);
+    if($line=~/$pattern/)  {
+        #(@output) = `find . -iname \'$4.h\' -print`;
+        #$out = pop(@output);
+        $out = `find . -iname \'$4.h\' -print`;
+        #chomp($out);
+        $out =~ s/\n/,/g;
+        $out =~ s/,$//; # get rid of last comma
+        if($out) {
+            print OUTPUT "$out\n";
+
+        } else {
+            print OUTPUT "&lt;No Mapping available&gt;\n";
+        }
+    }
+}
+close(OUTPUT);
+close(INPUT);
+
+# Merge two files line by line
+open (OUTPUT, "$output") || die "Could not open $output\n";
+open (MAPPING, "&gt;$mapping") || die "Could not open $output\n";
+open (INPUT, "$input") || die "Could not open $input\n";
+
+while ($line = &lt;INPUT&gt;) { 
+    $line2 = &lt;OUTPUT&gt;;
+    print MAPPING $line, " =&gt; ", $line2, "\n";
+}
+close(OUTPUT);
+close(INPUT);
+close(MAPPING);
+
+# git move the wrap files to the corresponding folders
+$log = "Ashish_Log.txt";
+open (LOG, "&gt;$log") || die "Could not open $log\n";
+open (OUTPUT, "$output") || die "Could not open $output\n";
+open (INPUT, "$input") || die "Could not open $input\n";
+
+while ($line = &lt;INPUT&gt;) { 
+        $line2 = &lt;OUTPUT&gt;;
+        if($line2 =~ /^\&lt;No Mapping available\&gt;$/) {
+           &#160;; # do nothing
+        }
+        elsif($line2=~ /,/) { # This means multiple mappings availabl; 
+           &#160;; # do nothing
+        }
+        else { # move files
+            chomp($line);
+            $line2 =~ s/\n/,/g;
+            $line2 =~ s/\s/,/g;
+            $line2 =~ s/,$//; # get rid of last comma
+            $line2 =~ s/^\.\///g;
+            @temp = split(/\//, $line2);
+            pop(@temp); pop(@temp);
+            $rootdir = `pwd`;chomp($rootdir);
+            $libdir = "$rootdir/Wrapping/WrapITK/Libraries";
+            $t = $libdir;
+            while($sdir = shift(@temp)) {
+                if (-d "$t/$sdir") {
+                    $t = "$t/$sdir";
+                    next;
+                }
+                else {
+                    #system("mkdir $t/$sdir") ==0 || die "Could not create directory $sdir of $t\n";
+                    print LOG "mkdir $t/$sdir\n";
+                    $t = "$t/$sdir";
+                } 
+            } 
+            #system("cp $line $t/") == 0 || die "Could not copy INPUT:$line to directory:$t\n";
+            print LOG "mv $line $t/\n";
+        } 
+}
+
+close(LOG);
+close(OUTPUT);
+close(INPUT);
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20250110222751
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.011 seconds
+Real time usage: 0.012 seconds
+Preprocessor visited node count: 8/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9203-0!canonical and timestamp 20250110222751 and revision id 44323. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Wrapping/Tasks/WrapITKModular&amp;oldid=44323">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Wrapping/Tasks/WrapITKModular&amp;oldid=44323</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Wrapping/Tasks/WrapITKModular" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Wrapping/Tasks/WrapITKModular&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Wrapping/Tasks/WrapITKModular">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping/Tasks/WrapITKModular&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping/Tasks/WrapITKModular&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Wrapping/Tasks/WrapITKModular" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Wrapping/Tasks/WrapITKModular&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4%2FWrapping%2FTasks%2FWrapITKModular" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4/Wrapping/Tasks/WrapITKModular" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4/Wrapping/Tasks/WrapITKModular" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping/Tasks/WrapITKModular&amp;oldid=44323" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping/Tasks/WrapITKModular&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 9 December 2011, at 16:00.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.011","walltime":"0.012","ppvisitednodes":{"value":8,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20250110222751","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":84});});</script>
+</body>
+</html>

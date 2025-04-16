@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4/DICOM/GDCM Tcon Notes - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"ddd9a92a4a8f591ae9e11aee","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/DICOM/GDCM_Tcon_Notes","wgTitle":"ITK/Release 4/DICOM/GDCM Tcon Notes","wgCurRevisionId":44273,"wgRevisionId":44273,"wgArticleId":9071,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/DICOM/GDCM_Tcon_Notes","wgRelevantArticleId":9071,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],
+"wgRedirectedFrom":"ITK_Release_4/DICOM/GDCM_Tcon_Notes","wgInternalRedirectTargetUrl":"/Wiki/ITK/Release_4/DICOM/GDCM_Tcon_Notes"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4/DICOM/GDCM_Tcon_Notes"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_DICOM_GDCM_Tcon_Notes rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Release 4/DICOM/GDCM Tcon Notes</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/Wiki/ITK/Release_4/DICOM" title="ITK/Release 4/DICOM">DICOM</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/DICOM/GDCM_Tcon_Notes&amp;redirect=no" class="mw-redirect" title="ITK Release 4/DICOM/GDCM Tcon Notes">ITK Release 4/DICOM/GDCM Tcon Notes</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Luis Ibanez, Andrew Wasem and Mark Roden were in attendance of this meeting.
+The meeting was on the current and future progress of GDCM/ITK. 
+</p><p><br />
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Example_of_how_to_run_an_RT-STRUCT_in_VTK"><span class="tocnumber">1</span> <span class="toctext">Example of how to run an RT-STRUCT in VTK</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Streaming_of_DIcom_images_(from_PACS)"><span class="tocnumber">2</span> <span class="toctext">Streaming of DIcom images (from PACS)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Failing_streaming_test"><span class="tocnumber">2.1</span> <span class="toctext">Failing streaming test</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Another_streaming_issue"><span class="tocnumber">2.2</span> <span class="toctext">Another streaming issue</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#StreamImageReader"><span class="tocnumber">2.2.1</span> <span class="toctext">StreamImageReader</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#The_class:_OffsetTable"><span class="tocnumber">2.2.2</span> <span class="toctext">The class: OffsetTable</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#manages_byte_swapping"><span class="tocnumber">2.2.3</span> <span class="toctext">manages byte swapping</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a href="#DICOM_files_withJPEG"><span class="tocnumber">2.3</span> <span class="toctext">DICOM files withJPEG</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#DICOM_Slices"><span class="tocnumber">2.4</span> <span class="toctext">DICOM Slices</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#GDCM_StreamingWriting"><span class="tocnumber">2.5</span> <span class="toctext">GDCM  StreamingWriting</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#StreamReader_in_GDCM"><span class="tocnumber">2.6</span> <span class="toctext">StreamReader in GDCM</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#PACS_-_DICOM_Protocol_-_Networking"><span class="tocnumber">3</span> <span class="toctext">PACS - DICOM Protocol - Networking</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Networking"><span class="tocnumber">3.1</span> <span class="toctext">Networking</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Example_of_how_to_run_an_RT-STRUCT_in_VTK">Example of how to run an RT-STRUCT in VTK</span></h1>
+<ul><li>src/gdcm/Utilities/VTK/Examples/Cxx/GenerateRTSTRUCT.cxx</li>
+<li>src/gdcm/Utilities/VTK/vtkGDCMPolyDataWriter.h</li></ul>
+<pre> void vtkGDCMPolyDataWriter::InitializeRTStructSet(vtkStdString inDirectory,
+                                                vtkStdString inStructLabel,
+                                                vtkStdString inStructName,
+                                                vtkStringArray* inROINames,
+                                                vtkStringArray* inROIAlgorithmName,
+                                                vtkStringArray* inROIType)
+</pre>
+<h1><span id="Streaming_of_DIcom_images_.28from_PACS.29"></span><span class="mw-headline" id="Streaming_of_DIcom_images_(from_PACS)">Streaming of DIcom images (from PACS)</span></h1>
+<h2><span class="mw-headline" id="Failing_streaming_test">Failing streaming test</span></h2>
+<p>is using a malformed DICOM image. must change the input image. replace it with one of the brainsets from the Osirix collection of public data. Cerebrix. (apparently this is failing only in an icc build)
+</p>
+<h2><span class="mw-headline" id="Another_streaming_issue">Another streaming issue</span></h2>
+<h3><span class="mw-headline" id="StreamImageReader">StreamImageReader</span></h3>
+<ul><li>ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat</li></ul>
+<pre> gdcmStreamImageReader.h
+ gdcmStreamImageReader.cxx
+ Limited to uint16:
+ mXMin = mYMin = mZMin = std::numeric_limits&lt;uint16_t&gt;::max();
+ mXMax = mYMax = mZMax = std::numeric_limits&lt;uint16_t&gt;::min();
+</pre>
+<p>then
+</p>
+<pre> uint32_t StreamImageReader::DefineProperBufferLength() const is limited uint32_t, in number of bytes.
+</pre>
+<p>Then read the actual buffer:
+</p>
+<pre>  bool StreamImageReader::Read(void* inReadBuffer, const std::size_t&amp; inBufferLength)
+
+</pre>
+<p>(before we call ReadImageInformation)
+</p>
+<h3><span class="mw-headline" id="The_class:_OffsetTable">The class: OffsetTable</span></h3>
+<ul><li>ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition</li></ul>
+<pre> gdcmBasicOffsetTable.h
+</pre>
+<p>defines sections (regions) of the image that have been compressed.
+The reading code is implemented for RAW files that do not have an offset table.
+This could be used to extend GDCM to not have to read a full plane, 
+but instead read a subregion of that plane, and  therefore be more
+compatible with ITK streaming.
+</p>
+<pre> bool StreamImageReader::ReadImageSubregionJpegLS(char* inReadBuffer, const std::size_t&amp; inBufferLength)
+</pre>
+<p>This function is used (or was intended for...)  to read
+metadata without reading the pixel data yet.
+</p>
+<h3><span class="mw-headline" id="manages_byte_swapping">manages byte swapping</span></h3>
+<pre> bool needbyteswap = (ts == TransferSyntax::ImplicitVRBigEndianPrivateGE);
+</pre>
+<p>line 244:
+</p>
+<pre>  theCodec.Decode(de, inReadBuffer, inBufferLength, mXMin, mXMax, mYMin, mYMax, mZMin, mZMax);
+</pre>
+<p>do the decoding by delegates to the JpegLS library.
+</p>
+<h2><span class="mw-headline" id="DICOM_files_withJPEG">DICOM files withJPEG</span></h2>
+<p>We only have been able to find DICOM files withJPEG,
+that have a single tile.
+</p><p>(it will be nice to get some with multiple tile).
+</p>
+<h2><span class="mw-headline" id="DICOM_Slices">DICOM Slices</span></h2>
+<p>It is also possible to find DICOM Slices that are composed
+of a group of individual JPEG images.  (e.g. like doing tiling
+by hand).
+</p>
+<hr />
+<p><br />
+</p>
+<pre>Tag thePixelDataTag(0x7fe0, 0x0010);//must be LESS than the pixel
+</pre>
+<p>information tag, 0x7fe0,0x0010
+</p><p>This is the location where the pixel data buffer.
+</p><p>but in some cases, some images have more tags after this one,
+and that can confuse the stream reading.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="GDCM_StreamingWriting">GDCM  StreamingWriting</span></h2>
+<p>The GDCM  StreamingWriting is not working at this point.
+</p><p>(something deep inside of gdcm).
+</p><p><br />
+--
+</p><p>gdcmStreamImageWriter.cxx &#160;: 346
+</p><p>bool StreamImageWriter::CanWriteFile() const
+</p>
+<pre>bool hasTag818 = mFile.GetDataSet().FindDataElement(Tag(0x08,0x18));
+if (!hasTag23 &amp;&amp; !hasTag818){
+</pre>
+<p>When writing a DICOM image, the Tag818 must
+be different from the one that it was read from.
+(unless you are an OEM... e.g. the manufacturer
+of a CT scanner.)
+</p><p><br />
+Then, when it gets to
+</p><p>bool StreamImageWriter::WriteImageInformation(){
+</p><p>it fails..
+</p><p>Line 110 describe how to read the tags.
+</p><p>Reading is done in 116.
+</p><p><br />
+The problem relates to the offset table...
+</p><p>and how it addresses space inside of the image.
+</p><p>This is mostly a problem when data is compressed.
+(streaming raw data will be easier, but it is not
+working now either...the output file is not readable.).
+</p><p>(its MD5 sum for the pixel buffer doesn't match after writing...)
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="StreamReader_in_GDCM">StreamReader in GDCM</span></h2>
+<p>The StreamReader in GDCM is intended to be used
+by the ITK streaming reader.
+</p><p>(apparently the StreamReader is not used outside of ITK).
+</p><p>There is a passing test for stream reading.
+</p>
+<h1><span class="mw-headline" id="PACS_-_DICOM_Protocol_-_Networking">PACS - DICOM Protocol - Networking</span></h1>
+<h2><span class="mw-headline" id="Networking">Networking</span></h2>
+<p>ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition/
+</p><p>gdcmCompositeNetworkFunctions.cxx
+</p>
+<pre>static bool CEcho( const char *remote, uint16_t portno, const char
+</pre>
+<ul><li>aetitle = NULL,</li></ul>
+<pre>  const char *call = NULL );
+</pre>
+<p>A server will have "titles" (up to 8).
+</p><p>A title is a "computer name", not an IP address.
+Every title connects to a specific port in the server
+</p><p>CEcho is the basic test function
+</p><p><br />
+</p><p>Then you construct your query:
+</p>
+<pre>/// This function will take a list of strings and tags and fill in a
+</pre>
+<p>query that
+</p>
+<pre>/// can be used for either CFind or CMove (depending on the input boolean
+/// \param inMove).
+/// Note that the caller is responsible for deleting the constructed query.
+/// This function is used to build both a move and a find query
+/// (true for inMove if it's move, false if it's find)
+static BaseRootQuery* ConstructQuery(ERootType inRootType,
+</pre>
+<p>EQueryLevel inQueryLevel,
+</p>
+<pre>  const DataSet&amp; queryds, bool inMove = false );
+</pre>
+<pre>/// \deprecated
+static BaseRootQuery* ConstructQuery(ERootType inRootType,
+</pre>
+<p>EQueryLevel inQueryLevel,
+</p>
+<pre>  const KeyValuePairArrayType&amp; keys, bool inMove = false );
+</pre>
+<p><br />
+(it requires a fully form dataset).
+</p><p><br />
+BaseRootQuery = abstract class
+</p><p>2 types of queries&#160;: find &amp; move
+</p><p>"find" can be using a very generic expression.
+(can have wildcards).
+</p><p>ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition
+</p><p>gdcmFindPatientRootQuery.h
+</p><p><br />
+First figure out what tags are available:
+</p>
+<pre>std::vector&lt;Tag&gt; GetTagListByLevel(const EQueryLevel&amp; inQueryLevel);
+</pre>
+<p><br />
+this ties up to the "image interpretation layer" to the point where
+a juser can get this list of Tags and then select values from them
+to put them in a query and using to get actual data.
+</p><p><br />
+"move" queries are more strict than "find" ones
+(can't have wildcards).
+</p><p>This search will fail if it is not fully specified.
+</p>
+<hr />
+<p>gdcmCompositeNetworkFunctions.cxx
+</p><p>bool CompositeNetworkFunctions::CStore( const char *remote, uint16_t portno,
+</p>
+<pre>const Directory::FilenamesType&amp; filenames,
+const char *aetitle, const char *call)
+</pre>
+<p>267
+</p><p>CStore command will move images to a server.
+</p>
+<hr />
+<p>gdcmServiceClassUser.h
+</p>
+<pre>bool SendMove(const BaseRootQuery* query, const char *outputdir);
+bool SendMove(const BaseRootQuery* query, std::vector&lt;DataSet&gt; &amp;retDatasets);
+</pre>
+<p>allows to put data directly into memory.
+</p><p>(pending a refactoring in which the concept of
+</p>
+<pre>a DICOM file was planned to be abstracted...)
+</pre>
+<hr />
+<p>ITK application, creating an itk::Image using data
+from a remote server.
+</p><p>(list of use cases in another email from Mark...)
+</p><p><br />
+In order to define ITK functionalities, we
+should specify a list of clear use cases....
+</p><p><br />
+(Review emails from DICOM Taskforce February 23-24)
+(post the use cases in a Wiki page).
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20221004095506
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.013 seconds
+Real time usage: 0.014 seconds
+Preprocessor visited node count: 39/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9071-0!canonical and timestamp 20221004095506 and revision id 44273. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/DICOM/GDCM_Tcon_Notes&amp;oldid=44273">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/DICOM/GDCM_Tcon_Notes&amp;oldid=44273</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/DICOM/GDCM_Tcon_Notes" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/DICOM/GDCM_Tcon_Notes&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/DICOM/GDCM_Tcon_Notes">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM/GDCM_Tcon_Notes&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM/GDCM_Tcon_Notes&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/DICOM/GDCM_Tcon_Notes" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/DICOM/GDCM_Tcon_Notes&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4%2FDICOM%2FGDCM+Tcon+Notes" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4/DICOM/GDCM_Tcon_Notes" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4/DICOM/GDCM_Tcon_Notes" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM/GDCM_Tcon_Notes&amp;oldid=44273" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM/GDCM_Tcon_Notes&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 9 December 2011, at 16:00.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.013","walltime":"0.014","ppvisitednodes":{"value":39,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20221004095506","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":72});});</script>
+</body></html>

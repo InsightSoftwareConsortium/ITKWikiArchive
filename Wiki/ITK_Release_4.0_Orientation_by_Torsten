@@ -1,0 +1,268 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" dir="ltr">
+<head>
+<title>ITK Release 4.0 Orientation by Torsten - KitwarePublic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="MediaWiki 1.16.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
+<link title="Creative Commons" type="application/rdf+xml" href="/Wiki/index.php?title=ITK_Release_4.0_Orientation_by_Torsten&amp;action=creativecommons" rel="meta" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="/Wiki/skins/common/shared.css?270" media="screen" />
+<link rel="stylesheet" href="/Wiki/skins/common/commonPrint.css?270" media="print" />
+<link rel="stylesheet" href="/Wiki/skins/monobook/main.css?270" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/Wiki/skins/monobook/IE50Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/Wiki/skins/monobook/IE55Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?270" media="screen" /><![endif]-->
+<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
+<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" media="print" />
+<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
+<link rel="stylesheet" href="/Wiki/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" />
+<script>
+var skin="monobook",
+stylepath="/Wiki/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/Wiki/$1",
+wgScriptPath="/Wiki",
+wgScriptExtension=".php",
+wgScript="/Wiki/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://www.itk.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="ITK_Release_4.0_Orientation_by_Torsten",
+wgTitle="ITK Release 4.0 Orientation by Torsten",
+wgAction="view",
+wgArticleId=3213,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=12819,
+wgVersion="1.16.0",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "KitwarePublic", "5": "KitwarePublic talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "100": "Projects/ParaViewWeb", "101": "Projects/ParaViewWeb Talk", "102": "Projects/VTKWeb", "103": "Projects/VTKWeb Talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "kitwarepublic": 4, "kitwarepublic_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "projects/paraviewweb": 100, "projects/paraviewweb_talk": 101, "projects/vtkweb": 102, "projects/vtkweb_talk": 103, "image": 6, "image_talk": 7},
+wgSiteName="KitwarePublic",
+wgCategories=[],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script><script src="/Wiki/skins/common/wikibits.js?270"></script>
+<script src="/Wiki/skins/common/ajax.js?270"></script>
+<script src="/Wiki/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook&amp;270"></script>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-ITK_Release_4_0_Orientation_by_Torsten skin-monobook">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" >
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading">ITK Release 4.0 Orientation by Torsten</h1>
+	<div id="bodyContent">
+		<h3 id="siteSub">From KitwarePublic</h3>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<pre>
+While I won't claim I fully understand the current status quo in ITK, I
+have a comment regarding Kent's list of options:
+&gt; There's three concepts that collide when it comes to orientation. In order
+&gt; to form a more perfect ITK, need to be considered.
+&gt;
+&gt; 1. Gross anatomical orientation -- you want to compare two volumes, one
+&gt; acquired head first, and another feet first.  This is addressed by
+&gt; * itk::SpatialOrientation (defines all 48 possible orientations)
+&gt; * itk::SpatialOrientationAdapter (converts between spatial oriention codes
+&gt; and direction cosines)
+&gt; * Direction cosines (orientation info recovered from image files is
+&gt; converted and stored therein)
+&gt;
+&gt; 2. Actual orientation ‹ the orientation info recovered can be from oblique
+&gt; scans and it is stored in direction cosines.  This conflicts (somewhat) with
+&gt; concept #1, in that going from the actual orientation to the gross
+&gt; anatomical orientation squares up the direction cosines and loses the
+&gt; rotational information.
+&gt;
+&gt; 3. General spatial transforms, addressed by itk::Transform and it¹s
+&gt; children.  These are what are used by Registration and SpatialObjects to
+&gt; move anatomy or geometry around.
+&gt;
+&gt;
+For what it's worth, I recently had to reconcile options #1 and #2 in my
+own library, and I thought I'd share my experience. To be very clear:
+what I am going to say relates ONLY to my own software, which is
+completely separate from ITK.
+
+Historically, I have been following Option #1 above, then added Option
+#2 for non-human images (bees don't live in RAS etc. space), but
+recently needed to support direction cosines also for human data (from
+DICOM). Obviously, I didn't want to break compatibility with
+registrations computed over the past 10 years, so it was important to
+come up with an implementation that achieves that.
+
+So here's what I did, based on the space abstraction laid out by Gordon
+Kindlman in the Nrrd file format specification.
+
+All images are read living in some physical space. For DICOM, that's
+LPS. For Nrrd, it's what's in the Nrrd &quot;space:&quot; field. For Analyze, it's
+whatever the Analyze orientation field is supposed to mean in my reading
+of the file format documentation.
+
+My software uses RAS coordinates for all images internally.
+Historically, everything was reoriented into RAS, i.e., for (i,j,k)
+pixel index, i after reorientation increases from L to R.
+
+Now -- here's the workflow when I read an image:
+
+1. image data is read as stored in file, and coordinate space is set as
+described above. Direction cosines are taken from input if they exist
+(DICOM, Nrrd), or initialized as identity matrix (Analyze). Basically,
+for the Analyze case, I am faking the anatomical orientation to be
+identical to the space definition.
+
+2. coordinate space is changed to RAS. That does not affect the storage
+order of image pixels, but it changes the direction cosines by
+permutation and negation. As an example, &quot;LPS&quot; to &quot;RAS&quot; means x becomes
+-x, y becomes -y, and z stays z. This also applies to the coordinate
+space origin. Different example: &quot;ARS&quot; to &quot;RAS&quot; means that x and
+y elements are swapped in all direction vectors and also in the space
+origin.
+
+3. determine coarse anatomical orientation of image from direction
+vectors and coordinate space (the latter now RAS). Based on this,
+reorient image so that pixel storage is (i,j,k)&lt;=&gt;(L/R,P/A,I/S).
+Direction cosines and space origin are modified accordingly so that the
+every pixel remains in the same physical position. That means
+permutation of direction vectors, negation of direction vectors plus
+adding offset to space origin that corresponds to opposite end of image
+w.r.t. given index.
+
+After these steps, the image lives in RAS space, is coaresly stored in
+RAS order, but has the same physical space coordinates for each pixel as
+was stored in the original image file, i.e., all physical space
+transformations between two images remain correct (when taking into
+consideration that space axes may have been negated in step 2.
+
+When images are written to a file, the procedure is repeated in reverse
+order. For that, each image object has meta information that stores its
+original coordinate space and storage order, so the original order and
+space can be recovered. The original direction cosines are also
+recovered in the process.
+
+I am not saying this whole, slightly messy, procedure would be a good
+idea for ITK, but it seems to reconcile Options #1 and #2 on Kent's
+list, and it's working for me.
+
+Best,
+ Torsten
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3213-0!1!0!!en!2!edit=0 and timestamp 20100921222509 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.itk.org/Wiki/ITK_Release_4.0_Orientation_by_Torsten">http://www.itk.org/Wiki/ITK_Release_4.0_Orientation_by_Torsten</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+				 <li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK_Release_4.0_Orientation_by_Torsten" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK_Release_4.0_Orientation_by_Torsten&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK_Release_4.0_Orientation_by_Torsten&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/Wiki/index.php?title=ITK_Release_4.0_Orientation_by_Torsten&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="/Wiki/User:204.236.235.245" title="The user page for the IP address you are editing as [.]" accesskey="." class="new">204.236.235.245</a></li>
+				<li id="pt-anontalk"><a href="/Wiki/User_talk:204.236.235.245" title="Discussion about edits from this IP address [n]" accesskey="n" class="new">Talk for this IP address</a></li>
+				<li id="pt-anonlogin"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK_Release_4.0_Orientation_by_Torsten" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/Wiki/images/KitwareWiki.png);" href="/Wiki/Main_Page" title="Visit the main page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="/Wiki/KitwarePublic:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="/Wiki/KitwarePublic:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="/Wiki/Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/Wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" title="Search KitwarePublic" accesskey="f" type="search" name="search" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK_Release_4.0_Orientation_by_Torsten" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK_Release_4.0_Orientation_by_Torsten" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="/Wiki/index.php?title=ITK_Release_4.0_Orientation_by_Torsten&amp;oldid=12819" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-coll-print_export'>
+		<h5>Print/export</h5>
+		<div class='pBody'>
+<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ITK+Release+4.0+Orientation+by+Torsten" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ITK+Release+4.0+Orientation+by+Torsten&amp;oldid=12819&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="coll-download-as-odf"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ITK+Release+4.0+Orientation+by+Torsten&amp;oldid=12819&amp;writer=odf" title="Download a ODT version of this wiki page" rel="nofollow">Download as ODT</a></li><li id="t-print"><a href="/Wiki/index.php?title=ITK_Release_4.0_Orientation_by_Torsten&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/Wiki/skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+	<div id="f-copyrightico"><a href="http://creativecommons.org/licenses/by/2.5/"><img src="http://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" /></a></div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 8 August 2008, at 20:19.</li>
+		<li id="viewcount">This page has been accessed 1,738 times.</li>
+		<li id="copyright">Content is available under <a href="http://creativecommons.org/licenses/by/2.5/" class="external ">Attribution2.5</a>.</li>
+		<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li>
+		<li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.661 secs. --></body></html>

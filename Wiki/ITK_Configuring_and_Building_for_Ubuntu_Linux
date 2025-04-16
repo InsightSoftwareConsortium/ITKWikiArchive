@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK Configuring and Building for Ubuntu Linux - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"e6f535ffb05b785220a1ef25","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK_Configuring_and_Building_for_Ubuntu_Linux","wgTitle":"ITK Configuring and Building for Ubuntu Linux","wgCurRevisionId":60910,"wgRevisionId":60910,"wgArticleId":3777,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Inactive project pages"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Configuring_and_Building_for_Ubuntu_Linux","wgRelevantArticleId":3777,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,
+"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Configuring_and_Building_for_Ubuntu_Linux rootpage-ITK_Configuring_and_Building_for_Ubuntu_Linux skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK Configuring and Building for Ubuntu Linux</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r64789">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><table class="plainlinks metadata ambox ambox-notice" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><a href="/Wiki/WP:HISPAGES" title="WP:HISPAGES"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/30px-Historical.svg.png" decoding="async" width="30" height="38" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/45px-Historical.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/60px-Historical.svg.png 2x" /></a></div></td><td class="mbox-text"><div class="mbox-text-span"><b>This page is currently inactive and is retained for <a href="/Wiki/index.php?title=WP:HISPAGES&amp;action=edit&amp;redlink=1" class="new" title="WP:HISPAGES (page does not exist)">historical</a> reference.</b><br /><span style="font-size: 90%">Either the page is no longer relevant or consensus on its purpose has become unclear. To revive discussion, seek broader input via a forum such as the <a href="http://www.wikipedia.org/wiki/Village_pump_(proposals)" class="extiw" title="wikipedia:Village pump (proposals)">village pump</a>.</span> <span style="font-size: 90%"> </span></div></td></tr></tbody></table>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Building_and_installing_ITK_from_source_code"><span class="tocnumber">2</span> <span class="toctext">Building and installing ITK from source code</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Installing_ITK_from_Ubuntu_packages"><span class="tocnumber">3</span> <span class="toctext">Installing ITK from Ubuntu packages</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Dependencies_and_interesting_libraries_and_programs"><span class="tocnumber">4</span> <span class="toctext">Dependencies and interesting libraries and programs</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#C++_compiler_(dependency)"><span class="tocnumber">4.1</span> <span class="toctext">C++ compiler (dependency)</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#libpng,_libtiff_(dependency)"><span class="tocnumber">4.2</span> <span class="toctext">libpng, libtiff (dependency)</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#uuid_(dependency)"><span class="tocnumber">4.3</span> <span class="toctext">uuid (dependency)</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#TCLAP"><span class="tocnumber">4.4</span> <span class="toctext">TCLAP</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Symmetric_Log-Domain_Diffeomorphic_Demons_Algorithm"><span class="tocnumber">4.5</span> <span class="toctext">Symmetric Log-Domain Diffeomorphic Demons Algorithm</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Create_a_new_subversion_ITK_project"><span class="tocnumber">5</span> <span class="toctext">Create a new subversion ITK project</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Compiling_an_ITK_project_from_the_command_line"><span class="tocnumber">6</span> <span class="toctext">Compiling an ITK project from the command line</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Compiling_an_ITK_project_from_the_Eclipse_open_development_platform"><span class="tocnumber">7</span> <span class="toctext">Compiling an ITK project from the Eclipse open development platform</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Notes"><span class="tocnumber">8</span> <span class="toctext">Notes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Adding_external_code_directories_(not_in_the_include_path)"><span class="tocnumber">8.1</span> <span class="toctext">Adding external code directories (not in the include path)</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Introduction">Introduction</span></h1>
+<p>These notes comprise developing ITK projects in Ubuntu GNU/Linux v9.04 (Jaunty Jackalope), and are linked from <a href="/Wiki/ITK_Configuring_and_Building" class="mw-redirect" title="ITK Configuring and Building">ITK Configuring and Building</a>.
+</p><p>The <a rel="nofollow" class="external text" href="http://www.itk.org">Insight Segmentation and Registration Toolkit (ITK)</a> is "an open-source, cross-platform system that provides developers with an extensive suite of software tools for image analysis".
+</p><p><a rel="nofollow" class="external text" href="http://www.itk.org/ITK/project/about.html">Implementation details</a>: "ITK is implemented in C++. ITK is cross-platform, using the CMake build environment to manage the configuration process. In addition, an automated wrapping process generates interfaces between C++ and interpreted programming languages such as Tcl, Java, and Python (using CableSwig)."
+</p><p><a rel="nofollow" class="external text" href="http://www.itk.org/ITK/project/license.html">Licence</a>: "ITK is copyrighted by the Insight Software Consortium, a non-profit alliance of organizations and individuals interested in supporting ITK. The software is distributed as open source under the OSI-approved BSD  license."
+</p><p>Note that there's a closed source project also called ITK, and in the same field: <a rel="nofollow" class="external text" href="http://www.doc.ic.ac.uk/~dr/software/">Image Registration Toolkit (ITK)</a>. But these notes document the Insight Segmentation and Registration Toolkit, and that's what I'll refer to by ITK unless otherwise specified.
+</p><p>Resources:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/ITK/help/documentation.html">Links to documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/ItkSoftwareGuide.pdf">"The ITK Software Guide. Second Edition. Updated for ITK version 2.4"</a> (over 780 pages PDF)</li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/HTML/MailingLists.htm">ITK Users mailing list</a> (insight-users at itk dot org)</li></ul>
+<h1><span class="mw-headline" id="Building_and_installing_ITK_from_source_code">Building and installing ITK from source code</span></h1>
+<p>My own experience is that sooner or later you will need to upgrade to the latest version of ITK, or make some configuration change, or add "Review" or "Patented" functions, etc. So I'd say that if you are in for any serious usage of ITK, you are better off downloading, compiling and installing the source code. The rest of this section explains how to do this. (If you don't really need to hack into ITK, there are some notes on how to <a href="#Installation_from_Ubuntu_package">install using Ubuntu packages</a> in the next section).
+</p><p>Assuming that you are fine with Released code and don't need the latest CVS version, first download the <a rel="nofollow" class="external text" href="http://www.itk.org/ITK/resources/software.html">ITK source code</a>. As of this writing, the latest version is Release 3.14, so download the tarball <a rel="nofollow" class="external text" href="http://voxel.dl.sourceforge.net/sourceforge/itk/InsightToolkit-3.14.0.tar.gz">InsightToolkit-3.14.0.tar.gz</a>. (If you need the latest CVS version, see the file <tt>GettingStarted.txt</tt> that comes with the Released source code.)
+</p><p>Save the tarball to some directory, e.g. I use <tt>/usr/local/itk</tt>, and untar it
+</p>
+<pre>$ sudo tar xvzf InsightToolkit-3.14.0.tar.gz
+</pre>
+<p>This will create a directory called <tt>/usr/local/itk/InsightToolkit-3.14.0</tt>, and you can delete the tarball
+</p>
+<pre>$ sudo rm -rf InsightToolkit-3.14.0.tar.gz
+</pre>
+<p>Create a binary directory to compile the code, for example
+</p>
+<pre>$ sudo mkdir /usr/local/itk/InsightToolkit-3.14.0/bin
+</pre>
+<p>Change directory to the binary directory, and run the CMake configuration tool
+</p>
+<pre>$ cd /usr/local/itk/InsightToolkit-3.14.0/bin
+$ sudo ccmake -DITK_USE_REVIEW=ON ..
+</pre>
+<p>Initially, you get the CMake interface with an "EMPTY CACHE" message. Press "c" to configure. Configuration may take for a little bit. At the end, the following options are available by default
+</p>
+<pre>BUILD_DOXYGEN                   *OFF
+BUILD_EXAMPLES                  *ON
+BUILD_SHARED_LIBS               *OFF
+BUILD_TESTING                   *ON
+CMAKE_BACKWARDS_COMPATIBILITY   *2.4
+CMAKE_BUILD_TYPE                *
+CMAKE_INSTALL_PREFIX            */usr/local
+ITK_USE_KWSTYLE                 *OFF
+</pre>
+<p>I personally had to build ITK with the following options to make the <a rel="nofollow" class="external text" href="http://www.midasjournal.org/browse/publication/644">Symmetric Log-Domain Diffeomorphic Demons Algorithm</a> work, but you may want to use different options
+</p>
+<pre>BUILD_DOXYGEN                   *OFF
+BUILD_EXAMPLES                  *ON
+BUILD_SHARED_LIBS               *ON
+BUILD_TESTING                   *ON
+CMAKE_BACKWARDS_COMPATIBILITY   *2.4
+CMAKE_BUILD_TYPE                *Release
+CMAKE_INSTALL_PREFIX            */usr/local
+ITK_USE_KWSTYLE                 *OFF
+</pre>
+<p>Note that CMAKE_INSTALL_PREFIX contains the root directory where compiled code and include files will be installed under. With the option selected above, for example, once you install you will get files copied to
+</p>
+<pre>/usr/local/bin
+/usr/local/include/InsightToolkit
+/usr/local/lib/InsightToolkit
+</pre>
+<p>Press "c" to configure. Because of the command line option <tt>-DITK_USE_REVIEW=ON</tt> that we used above to build the "Review" files too, a warning message is displayed
+</p>
+<blockquote>
+<p>Attention: You have chosen to use the files in the Review directory. The Copyright of these files has not been cleared up, and the coding style and API of the classes in the Review directory may change drastically as it get code reviews from the developers. Please set ITK_USE_REVIEW to OFF if you don't want to use these files.
+</p>
+</blockquote>
+<p>Press "e" to exit the help screen, and then "g" to generate the Makefiles. (If the "g" command is not available, you may need to press "c" to configure again). This will also exit CMake if successful. Then, run <tt>make</tt> to compile ITK
+</p>
+<pre>$ sudo make -j4
+</pre>
+<p>The <tt>-j4</tt> option will use parallel compilation if you have more than 1 processor. Compilation will take for a long time, even on a fast desktop (I have 4 processors, 16G of RAM and a 64 bit architecture). Once it finishes successfully you can install the files. Note that with the options above, the files will be installed to the same places where the Ubuntu package would put them.
+</p>
+<pre>$ sudo make install
+</pre>
+<p>The libraries compiled this way are
+</p>
+<pre>$ ls /usr/local/include/InsightToolkit/
+Algorithms  BasicFilters  Common  gdcm  IO  itkConfigure.h  Numerics  Review  SpatialObject  Utilities
+</pre>
+<h1><span class="mw-headline" id="Installing_ITK_from_Ubuntu_packages">Installing ITK from Ubuntu packages</span></h1>
+<p>As mentioned in the previous section, if you are going to develop in ITK, you probably want to <a href="#Building_and_installing_ITK_from_source_code">build and installing ITK from source code</a>. Among other reasons, the Ubuntu packages don't include the "Review" and "Patented" functions. If you however want to go for a simple install using the Ubuntu package system, keep reading.
+</p><p>Ubuntu has the following packages available:
+</p>
+<pre>$ sudo apt-get install cmake insighttoolkit3-examples libfftw3-dev libinsighttoolkit3-dev \
+libinsighttoolkit3.6 python-insighttoolkit3 tcl8.4 tcl8.4-insighttoolkit3 \
+tk8.4
+</pre>
+<p>ITK files are installed in
+</p>
+<pre>$ find /usr/ -iname "*insight*"
+/usr/share/tcltk/tcl8.4/insighttoolkit3
+/usr/share/doc/insighttoolkit3-examples
+/usr/share/doc/libinsighttoolkit3.6
+/usr/share/doc/libinsighttoolkit3.6/InsightLogo.gif
+/usr/share/doc/tcl8.4-insighttoolkit3
+/usr/share/doc/libinsighttoolkit3-dev
+/usr/share/doc/libinsighttoolkit3-dev/InsightDeveloperStart.doc.gz
+/usr/share/doc/libinsighttoolkit3-dev/InsightDeveloperStart.pdf.gz
+/usr/share/doc/python-insighttoolkit3
+/usr/share/python-support/python-insighttoolkit3
+/usr/share/python-support/python-insighttoolkit3/InsightToolkit.py
+/usr/share/man/man3/insighttoolkit.3.gz
+/usr/share/lintian/overrides/libinsighttoolkit3.6
+/usr/share/lintian/overrides/tcl8.4-insighttoolkit3
+/usr/share/lintian/overrides/python-insighttoolkit3
+/usr/include/InsightToolkit
+/usr/lib/python-support/python-insighttoolkit3
+/usr/lib/InsightToolkit
+</pre>
+<p>Probably the most interesting directory for the moment is the directory of the header files
+</p>
+<pre>$ ls /usr/include/InsightToolkit
+Algorithms    Common  IO              Numerics       Utilities
+BasicFilters  gdcm    itkConfigure.h  SpatialObject
+</pre>
+<h1><span class="mw-headline" id="Dependencies_and_interesting_libraries_and_programs">Dependencies and interesting libraries and programs</span></h1>
+<h2><span id="C.2B.2B_compiler_.28dependency.29"></span><span class="mw-headline" id="C++_compiler_(dependency)">C++ compiler (dependency)</span></h2>
+<p>In this section I comment on some libraries and programs that, despite not being automatically installed with the basic ITK toolkit, are very useful.
+</p><p>You also need to have a C++ compiler
+</p>
+<pre>$ sudo apt-get install g++
+</pre>
+<h2><span id="libpng.2C_libtiff_.28dependency.29"></span><span class="mw-headline" id="libpng,_libtiff_(dependency)">libpng, libtiff (dependency)</span></h2>
+<p>I was trying to compile some legacy code from Martin Bishop (i.e running 'make' after creating the Makefile with 'cmake'), and some libraries are required. I don't know whether this is a dependency of ITK in general, or Martin's code only. The libraries can be installed using (note that you need the development packages)
+</p>
+<pre>$ sudo apt-get install libpng12-dev libtiff4-dev
+</pre>
+<h2><span id="uuid_.28dependency.29"></span><span class="mw-headline" id="uuid_(dependency)">uuid (dependency)</span></h2>
+<p>The <a rel="nofollow" class="external text" href="http://e2fsprogs.sourceforge.net/">universally unique id library (UUID)</a> is required for the ITKIO library (i.e. reading from and writing to file). You can install it running
+</p>
+<pre>$ sudo apt-get install uuid-dev
+</pre>
+<p>Without this library, you will get the following error when you try to build your program (in this example, I'm trying to build an ITK project CoronaryVesselsProject from a C++ file CoronaryVessels.cxx)
+</p>
+<pre> /usr/bin/make all 
+ /usr/bin/cmake -H/path/to/project/src -B/path/to/project/bin --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /path/to/project/bin/CMakeFiles /path/to/project/bin/CMakeFiles/progress.make
+/usr/bin/make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/path/to/project/bin'
+/usr/bin/make -f CMakeFiles/CoronaryVessels.dir/build.make CMakeFiles/CoronaryVessels.dir/depend
+make[2]: Entering directory `/path/to/project/bin'
+cd /path/to/project/bin &amp;&amp; /usr/bin/cmake -E cmake_depends "Unix Makefiles" /path/to/project/src /path/to/project/src /path/to/project/bin /path/to/project/bin /path/to/project/bin/CMakeFiles/CoronaryVessels.dir/DependInfo.cmake --color=
+make[2]: *** No rule to make target `/usr/lib/libuuid.so', needed by `CoronaryVessels'. Stop.
+make[2]: Leaving directory `/path/to/project/bin'
+make[1]: *** [CMakeFiles/CoronaryVessels.dir/all] Error 2
+/usr/bin/make -f CMakeFiles/CoronaryVessels.dir/build.make CMakeFiles/CoronaryVessels.dir/build
+make: *** [all] Error 2
+make[2]: Entering directory `/path/to/project/bin'
+make[2]: Leaving directory `/path/to/project/bin'
+make[1]: Leaving directory
+ `/path/to/project/bin'
+</pre>
+<p><b>Update 10 June 2011:</b> Even if uuid-dev is installed, this error can appear. Run the following
+</p>
+<pre>$ grep -r uuid CMakeFiles/*
+
+</pre>
+<p>and search the output for something like
+</p>
+<pre>FiltersToolbox/CMakeFiles/bwregiongrow.dir/build.make:FiltersToolbox/bwregiongrow.mexa64: /usr/lib/libuuid.so
+</pre>
+<p>This means that the build system created by CMake is expecting the library in /usr/lib. But in a 64-bit Ubuntu Natty system, for example, libuuid.so can be found in /usr/lib/x86_64-linux-gnu instead.
+</p><p>A work-around is to create a symbolic link to the library where it is expected to be found
+</p>
+<pre>$ cd /usr/lib
+$ sudo ln -s /usr/lib/x86_64-linux-gnu/libuuid.so
+</pre>
+<h2><span class="mw-headline" id="TCLAP">TCLAP</span></h2>
+<p>The <a rel="nofollow" class="external text" href="http://tclap.sourceforge.net/manual.html#id2801617">Templatized C++ Command Line Parser</a> is a C++ library that makes it easy to parse the command line for your ITK binary. You also get a syntax summary of your program, e.g.
+</p>
+<pre>$ test1 --help
+
+USAGE:
+
+   test1  [-r] -n &lt;string&gt; [--] [-v] [-h]
+
+
+Where:
+
+   -r,  --reverse
+     Print name backwards
+
+   -n &lt;string&gt;  --name &lt;string&gt;
+     (required)  (value required)  Name to print
+
+   --,  --ignore_rest
+     Ignores the rest of the labeled arguments following this flag.
+
+   -v,  --version
+     Displays version information and exits.
+
+   -h,  --help
+     Displays usage information and exits.
+
+
+   Command description message
+</pre>
+<p>You need to install the package libtclap-dev
+</p>
+<pre>$ sudo apt-get install libtclap-dev
+</pre>
+<p>TCLAP is provided as header files, so as long as you make the include path visible to the compiler, you don't need to link to any library (in fact, there's no library to link to). To make the path available, you need to edit your CMakeLists.txt file and add the line
+</p>
+<pre>INCLUDE_DIRECTORIES(/usr/include/tclap)
+</pre>
+<h2><span class="mw-headline" id="Symmetric_Log-Domain_Diffeomorphic_Demons_Algorithm">Symmetric Log-Domain Diffeomorphic Demons Algorithm</span></h2>
+<p>As of this writing, the <a rel="nofollow" class="external text" href="http://www.midasjournal.org/browse/publication/644%7CSymmetric">Log-Domain Diffeomorphic Demons</a> algorithm is the latest registration algorithm proposed by Vercauteren and Dru. It builds on the <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/154">Diffeomorphic Demons</a> algorithm. The proposed code is not included in ITK yet, not even in "Review". It requires ITK version 3.14 or greater.
+</p><p>To build the example code, first download the zip file <tt>SourceCode3_LogDomainDemonsRegistration-0.0.3-Source.zip</tt> from the Insight Journal in <a rel="nofollow" class="external text" href="http://www.midasjournal.org/browse/publication/644">"An ITK Implementation of the Symmetric Log-Domain Diffeomorphic Demons Algorithm"</a>, save locally and unzip
+</p>
+<pre>$ unzip SourceCode3_LogDomainDemonsRegistration-0.0.3-Source.zip
+</pre>
+<p>Change to the unzipped directory. You don't need to create a directory for binaries (the Makefiles will create it for you)
+</p>
+<pre>$ cd LogDomainDemonsRegistration-0.0.3-Source/
+$ ls
+Applications    Code              IJMacros.txt         sd_kwstyle.kws.xml  TestingData
+Documents       README.txt        sd_kwstyle.txt       CMakeLists.txt  
+FindMatlab.cmake  SDCMakeMacros.cmake  Testing
+</pre>
+<p>Build instructions can be found in the file <tt>README.txt</tt>. Basically, you need to configure with CMake. Assuming that you have Matlab (not mandatory) and want to create a project that can be opened from Eclipse (see section <a href="#Compiling_an_ITK_project_from_the_Eclipse_open_development_platform">"Compiling an ITK project from the Eclipse open development platform"</a> for more information), type the following
+</p>
+<pre>$ cmake -DITK_DIR=/usr/local/lib/InsightToolkit -DMATLAB_ROOT=/usr/local/matlab/R2008b \
+-G"Eclipse CDT4 - Unix Makefiles" -DCMAKE_BUILD_TYPE=Release  .
+</pre>
+<p>(You may need to modify the paths above, depending on your system configuration). CMake will produce many warning messages, that we can ignore, for instance
+</p>
+<pre>[...]
+WARNING: ITKCommon_LIBRARY and ITKCommon_LIBRARIES are undefined. Using ITKCommon in linker
+WARNING: ITKCommon_INCLUDE_DIR and ITKCommon_INCLUDE_DIR are undefined. No specific include dir will be used for ITKCommon
+WARNING: ITKIO_LIBRARY and ITKIO_LIBRARIES are undefined. Using ITKIO in linker
+WARNING: ITKIO_INCLUDE_DIR and ITKIO_INCLUDE_DIR are undefined. No specific include dir will be used for ITKIO
+WARNING: ITKStatistics_LIBRARY and ITKStatistics_LIBRARIES are undefined. Using ITKStatistics in linker
+[...]
+</pre>
+<p>Note that this code requires that "Review" has been compiled in ITK, using the option <tt>-DITK_USE_REVIEW=ON</tt> as explained in section <a href="#Building_and_installing_ITK_from_source_code">"Building and installing ITK from source code"</a> above
+</p><p>Then compile the code
+</p>
+<pre>$ make -j4
+[...Output removed...]
+$ ls bin/
+DemonsRegistration  ImageCompare  LogDomainDemonsRegistration
+</pre>
+<h1><span class="mw-headline" id="Create_a_new_subversion_ITK_project">Create a new subversion ITK project</span></h1>
+<p>The HelloWorld files of the example in section "2.1.1. Hello World!" of the ITK guide are in
+</p>
+<pre>$ ls /usr/share/doc/insighttoolkit3-examples/examples/Installation
+CMakeLists.txt  HelloWorld.cxx
+</pre>
+<p>Create the subversion directory structure (trunk is for the development version of the project)
+</p>
+<pre>$ mkdir -p itk-helloworld/trunk/bin
+$ mkdir -p itk-helloworld/trunk/src
+</pre>
+<p>Copy the ITK example files to the source directory
+</p>
+<pre>$ cp /usr/share/doc/insighttoolkit3-examples/examples/Installation/* itk-helloworld/trunk/src
+</pre>
+<p>Edit CMakeLists.txt to add the following line to the top of the file (to remove warning message)
+</p>
+<pre>cmake_minimum_required(VERSION 2.6)
+</pre>
+<p>Create an empty ChangeLog file to keep a log of the project evolution
+</p>
+<pre>$ touch itk-helloworld/trunk/ChangeLog
+</pre>
+<p>Add everything to the subversion repository. This can be done in different ways (see the <a rel="nofollow" class="external text" href="http://svnbook.red-bean.com/">Subversion Book</a> for full documentation on how to use subversion), for example
+</p>
+<pre>$ export SVNREP=<a rel="nofollow" class="external free" href="svn://foo.comlab.ox.ac.uk/johndoe">svn://foo.comlab.ox.ac.uk/johndoe</a>
+$ svn mkdir $SVNREP/itk-helloworld
+
+Committed revision 11093.
+
+$ svn co $SVNREP/itk-helloworld itk-helloworld
+Checked out revision 11093.
+
+$ svn add itk-helloworld/*
+A         itk-helloworld/trunk
+A         itk-helloworld/trunk/bin
+A         itk-helloworld/trunk/ChangeLog
+A         itk-helloworld/trunk/src
+A         itk-helloworld/trunk/src/CMakeLists.txt
+A         itk-helloworld/trunk/src/HelloWorld.cxx
+
+$ svn ci itk-helloworld -m "Create new ITK project"
+Adding         itk-helloworld/trunk
+Adding         itk-helloworld/trunk/ChangeLog
+Adding         itk-helloworld/trunk/bin
+Adding         itk-helloworld/trunk/src
+Adding         itk-helloworld/trunk/src/CMakeLists.txt
+Adding         itk-helloworld/trunk/src/HelloWorld.cxx
+Transmitting file data ...
+Committed revision 11094.
+</pre>
+<h1><span class="mw-headline" id="Compiling_an_ITK_project_from_the_command_line">Compiling an ITK project from the command line</span></h1>
+<p>Change directory to the binary directory
+</p>
+<pre>$ cd itk-helloworld/trunk/bin
+</pre>
+<p>Now start CMake in order to create the Makefile
+</p>
+<pre>$ ccmake ../src
+</pre>
+<p>This will show a console interface with the options
+</p>
+<pre>CMAKE_BUILD_TYPE       Debug
+CMAKE_INSTALL_PREFIX   /usr/local
+ITK_DIR                /usr/lib/InsightToolkit
+</pre>
+<p>Press 'c' to configure, and then 'g' to generate the Makefile. Now you should have
+</p>
+<pre>$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  Makefile
+</pre>
+<p>Now compile the project
+</p>
+<pre>$ make
+/usr/bin/cmake -H/path-to-project/itk-helloworld/trunk/src -B/path-to-project/itk-helloworld/trunk/bin --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /path-to-project/itk-helloworld/trunk/bin/CMakeFiles /path-to-project/itk-helloworld/trunk/bin/CMakeFiles/progress.make
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/path-to-project/itk-helloworld/trunk/bin'
+make -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/depend
+make[2]: Entering directory `/path-to-project/itk-helloworld/trunk/bin'
+cd /path-to-project/itk-helloworld/trunk/bin &amp;&amp; /usr/bin/cmake -E cmake_depends "Unix Makefiles" /path-to-project/itk-helloworld/trunk/src /path-to-project/itk-helloworld/trunk/src /path-to-project/itk-helloworld/trunk/bin /path-to-project/itk-helloworld/trunk/bin /path-to-project/itk-helloworld/trunk/bin/CMakeFiles/HelloWorld.dir/DependInfo.cmake --color=
+Scanning dependencies of target HelloWorld
+make[2]: Leaving directory `/path-to-project/itk-helloworld/trunk/bin'
+make -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
+make[2]: Entering directory `/path-to-project/itk-helloworld/trunk/bin'
+/usr/bin/cmake -E cmake_progress_report /path-to-project/itk-helloworld/trunk/bin/CMakeFiles 1
+[100%] Building CXX object CMakeFiles/HelloWorld.dir/HelloWorld.cxx.o
+/usr/bin/c++    -ftemplate-depth-50 -Wall -g -I/usr/include/InsightToolkit/gdcm/src -I/usr/include/InsightToolkit/gdcm -I/usr/include/InsightToolkit/Utilities/vxl/core -I/usr/include/InsightToolkit/Utilities/vxl/vcl -I/usr/include/InsightToolkit/Utilities/vxl/v3p/netlib -I/usr/include/InsightToolkit/Utilities -I/usr/include/InsightToolkit/Utilities/itkExtHdrs -I/usr/include/InsightToolkit/Utilities/nifti/znzlib -I/usr/include/InsightToolkit/Utilities/nifti/niftilib -I/usr/include/InsightToolkit/Utilities/expat -I/usr/include/InsightToolkit/Utilities/DICOMParser -I/usr/include/InsightToolkit/Utilities/NrrdIO -I/usr/include/InsightToolkit/Utilities/MetaIO -I/usr/include/InsightToolkit/SpatialObject -I/usr/include/InsightToolkit/Numerics/NeuralNetworks -I/usr/include/InsightToolkit/Numerics/Statistics -I/usr/include/InsightToolkit/Numerics/FEM -I/usr/include/InsightToolkit/IO -I/usr/include/InsightToolkit/Numerics -I/usr/include/InsightToolkit/Common -I/usr/include/InsightToolkit/BasicFilters -I/usr/include/InsightToolkit/Algorithms -I/usr/include/InsightToolkit   -o CMakeFiles/HelloWorld.dir/HelloWorld.cxx.o -c /path-to-project/itk-helloworld/trunk/src/HelloWorld.cxx
+Linking CXX executable HelloWorld
+/usr/bin/cmake -E cmake_link_script CMakeFiles/HelloWorld.dir/link.txt --verbose=1
+/usr/bin/c++     -ftemplate-depth-50 -Wall -g    CMakeFiles/HelloWorld.dir/HelloWorld.cxx.o  -o HelloWorld -rdynamic -L/usr/lib/InsightToolkit -lITKCommon -litkvnl_inst -litkvnl_algo -litkvnl -litkv3p_netlib -litkvcl -lm -litksys -lpthread -ldl -lm -Wl,-rpath,/usr/lib/InsightToolkit 
+make[2]: Leaving directory `/path-to-project/itk-helloworld/trunk/bin'
+/usr/bin/cmake -E cmake_progress_report /path-to-project/itk-helloworld/trunk/bin/CMakeFiles  1
+[100%] Built target HelloWorld
+make[1]: Leaving directory `/path-to-project/itk-helloworld/trunk/bin'
+/usr/bin/cmake -E cmake_progress_start /path-to-project/itk-helloworld/trunk/bin/CMakeFiles 0
+</pre>
+<p>Now you should have
+</p>
+<pre>$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  HelloWorld  Makefile
+</pre>
+<p>(note the new binary HelloWorld). Run the binary to check that it works
+</p>
+<pre>$ ./HelloWorld 
+ITK Hello World&#160;!
+</pre>
+<h1><span class="mw-headline" id="Compiling_an_ITK_project_from_the_Eclipse_open_development_platform">Compiling an ITK project from the Eclipse open development platform</span></h1>
+<p>The <a rel="nofollow" class="external text" href="http://www.eclipse.org/org/">Eclipse open development platform</a> and its C/C++ Development Tools can be installed with
+</p>
+<pre>$ sudo apt-get install eclipse eclipse-cdt
+</pre>
+<p>There are different options for those who want to <a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/CMake:Eclipse">use CMake and Eclipse for CMake enabled projects</a>. Here we describe the <a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/Eclipse_CDT4_Generator">Eclipse CDT4 Generator</a> option.
+</p><p>Change to the build directory
+</p>
+<pre>$ cd itk-helloworld/trunk/bin
+</pre>
+<p>Run cmake
+</p>
+<pre>$ cmake -G"Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug ../src
+-- The C compiler identification is GNU
+-- The CXX compiler identification is GNU
+-- Check for working C compiler: /usr/bin/gcc
+-- Check for working C compiler: /usr/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /path-to-project/itk-helloworld/trunk/bin
+</pre>
+<p>You need to edit CMakeLists.txt and make <a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/Eclipse_CDT4_Generator#Using_Eclipse_CDT4_Generator">the project name different from the executable name</a>. For example, edit the file so that it looks like this
+</p>
+<pre>cmake_minimum_required(VERSION 2.6)
+
+# This project is designed to be built outside the Insight source tree.
+PROJECT(HelloWorldProject)
+
+# Find ITK.
+FIND_PACKAGE(ITK REQUIRED)
+IF(ITK_FOUND)
+  INCLUDE(${ITK_USE_FILE})
+ENDIF(ITK_FOUND)
+
+ADD_EXECUTABLE(HelloWorld HelloWorld.cxx )
+
+TARGET_LINK_LIBRARIES(HelloWorld ITKCommon)
+</pre>
+<p>Re-run cmake
+</p>
+<pre>$ cmake -G"Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug ../src
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /path-to-project/itk-helloworld/trunk/bin
+</pre>
+<p>Now the project files have been created as hidden files (.cproject, .project)
+</p>
+<pre>$ ls -a
+.  ..  CMakeCache.txt  CMakeFiles  cmake_install.cmake  .cproject  Makefile  .project  .svn
+</pre>
+<p>Launch the Eclipse GUI, and import the CMake project as described in the <a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/Eclipse_CDT4_Generator">Eclipse CDT4 Generator</a>:
+</p>
+<ol><li>Import project using Menu File-&gt;Import</li>
+<li>Select General-&gt;Existing projects into workspace:</li>
+<li>Browse where your build tree is and select the root build tree directory. Keep "Copy projects into workspace" unchecked.</li>
+<li>You get a fully functional eclipse project</li></ol>
+<p>Now you can 
+</p>
+<ul><li>open the C++ source file HelloWorld.cxx from HelloWorldProject-Debug@bin -&gt; HelloWorldProject -&gt; HelloWorld.cxx</li>
+<li>compile the code with the button "Build all", also as the menu option Project -&gt; Build all, or with the keyboard shortcut CTRL+B</li>
+<li>run the code with Project -&gt; Run (or the corresponding button). This will ask you to create a launch configuration. Select "Name: HelloWorldProject-Debug", "Project: HelloWorldProject-Debug@bin", "C/C++ Application: HelloWorld". Clicking on the button "Run" will show in the terminal the stdout and stderr output</li></ul>
+<pre>ITK Hello World&#160;!
+</pre>
+<h1><span class="mw-headline" id="Notes">Notes</span></h1>
+<h2><span id="Adding_external_code_directories_.28not_in_the_include_path.29"></span><span class="mw-headline" id="Adding_external_code_directories_(not_in_the_include_path)">Adding external code directories (not in the include path)</span></h2>
+<p>If you have some code in a directory that is not in the include path (typically, because it was not created when compiling ITK), you need to edit your <tt>CMakeLists.txt</tt> file and add a line like the following
+</p>
+<pre># The non-standard ITK include file directories.
+INCLUDE_DIRECTORIES(/path/to/external/directory)
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20240604044139
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.077 seconds
+Real time usage: 0.755 seconds
+Preprocessor visited node count: 109/1000000
+Post‐expand include size: 3268/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1648/5000000 bytes
+Lua time usage: 0.020/7 seconds
+Lua virtual size: 5197824/52428800 bytes
+Lua estimated memory usage: 0 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   73.531      1 -total
+100.00%   73.531      1 Template:Historical
+ 95.83%   70.462      1 Template:Mbox
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3777-0!canonical and timestamp 20240604044139 and revision id 60910. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Configuring_and_Building_for_Ubuntu_Linux&amp;oldid=60910">https://public.kitware.com/Wiki/index.php?title=ITK_Configuring_and_Building_for_Ubuntu_Linux&amp;oldid=60910</a>"</div></div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/index.php?title=Category:Inactive_project_pages&amp;action=edit&amp;redlink=1" class="new" title="Category:Inactive project pages (page does not exist)">Inactive project pages</a></li></ul></div></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK_Configuring_and_Building_for_Ubuntu_Linux" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK_Configuring_and_Building_for_Ubuntu_Linux" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK_Configuring_and_Building_for_Ubuntu_Linux">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Configuring_and_Building_for_Ubuntu_Linux&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Configuring_and_Building_for_Ubuntu_Linux&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK_Configuring_and_Building_for_Ubuntu_Linux" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK_Configuring_and_Building_for_Ubuntu_Linux" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK+Configuring+and+Building+for+Ubuntu+Linux" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK_Configuring_and_Building_for_Ubuntu_Linux" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK_Configuring_and_Building_for_Ubuntu_Linux" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Configuring_and_Building_for_Ubuntu_Linux&amp;oldid=60910" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Configuring_and_Building_for_Ubuntu_Linux&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 3 October 2016, at 20:55.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.077","walltime":"0.755","ppvisitednodes":{"value":109,"limit":1000000},"postexpandincludesize":{"value":3268,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1648,"limit":5000000},"timingprofile":["100.00%   73.531      1 -total","100.00%   73.531      1 Template:Historical"," 95.83%   70.462      1 Template:Mbox"]},"scribunto":{"limitreport-timeusage":{"value":"0.020","limit":"7"},"limitreport-virtmemusage":{"value":5197824,"limit":52428800},"limitreport-estmemusage":0},"cachereport":{"timestamp":"20240604044139","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":107});});</script>
+</body>
+</html>

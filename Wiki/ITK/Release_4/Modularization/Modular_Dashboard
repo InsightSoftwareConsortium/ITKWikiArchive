@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4/Modularization/Modular Dashboard - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c55b4b6e057648dab8431c77","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Modularization/Modular_Dashboard","wgTitle":"ITK/Release 4/Modularization/Modular Dashboard","wgCurRevisionId":54072,"wgRevisionId":54072,"wgArticleId":9090,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Modularization/Modular_Dashboard","wgRelevantArticleId":9090,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],
+"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Modularization_Modular_Dashboard rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Release 4/Modularization/Modular Dashboard</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/Wiki/ITK/Release_4/Modularization" title="ITK/Release 4/Modularization">Modularization</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Modular_Dashboard"><span class="tocnumber">1</span> <span class="toctext">Modular Dashboard</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Bugs_?"><span class="tocnumber">1.1</span> <span class="toctext">Bugs&#160;?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Desired_Features"><span class="tocnumber">2</span> <span class="toctext">Desired Features</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Speed"><span class="tocnumber">3</span> <span class="toctext">Speed</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Individual_Observations"><span class="tocnumber">4</span> <span class="toctext">Individual Observations</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#How_We_are_Addressing_These_Concerns"><span class="tocnumber">5</span> <span class="toctext">How We are Addressing These Concerns</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#New_Hardware"><span class="tocnumber">5.1</span> <span class="toctext">New Hardware</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Workarounds"><span class="tocnumber">5.2</span> <span class="toctext">Workarounds</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Step_Back_to_Monolithic_Dashboard"><span class="tocnumber">5.3</span> <span class="toctext">Step Back to Monolithic Dashboard</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Use_Cases"><span class="tocnumber">5.4</span> <span class="toctext">Use Cases</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Case_1"><span class="tocnumber">5.4.1</span> <span class="toctext">Case 1</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Case_2"><span class="tocnumber">5.4.2</span> <span class="toctext">Case 2</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Case_3"><span class="tocnumber">5.4.3</span> <span class="toctext">Case 3</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Case_4"><span class="tocnumber">5.4.4</span> <span class="toctext">Case 4</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Case_5"><span class="tocnumber">5.4.5</span> <span class="toctext">Case 5</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Case_6"><span class="tocnumber">5.4.6</span> <span class="toctext">Case 6</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Modular_Dashboard">Modular Dashboard</span></h1>
+<ul><li>ITK Modular dashboard is no longer in use. Maybe we will use a modular dashboard for remote modules only.</li></ul>
+<p><br />
+</p><p><br />
+The following is the historical discussion:
+</p>
+<h2><span id="Bugs_.3F"></span><span class="mw-headline" id="Bugs_?">Bugs&#160;?</span></h2>
+<ul><li>Dynamic analysis doesn't show up in the summary page of the toolkit.
+<ul><li><a rel="nofollow" class="external free" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;display=project">http://www.cdash.org/CDash/index.php?project=ITKModular&amp;display=project</a></li></ul></li>
+<li>The main dashboard shows 75 errors. Now I realize that this is a machine count. However, to investigate the errors, I click on <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;subproject=ITK-CurvatureFlow">ITK-CurvatureFlow</a>. I see one machine with 156 compile errors.  Now, I go to look at the next module:<a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;subproject=ITK-TestKernel">ITK-TestKernel</a> which shows the same 156 compile errors. IOBase is the same. In fact most (I did not bother visiting every module page) pages report the same errors.</li>
+<li>Navigate from the top level to <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;display=project">here</a>. Although the page looks similar to the old top level page,
+<ul><li>none of the counts are hyper-linked</li>
+<li>there are many '-1's'</li>
+<li>in the Continuous section, some numbers are linked and some are not</li></ul></li>
+<li>Navigation error
+<ul><li>Go <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;subproject=ITK-VNL&amp;date=2011-04-22">here</a>.</li>
+<li>Then go <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/viewBuildError.php?type=1&amp;buildid=1003683">here</a>.</li>
+<li>Clicking on the cdash Back button, ends up <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;date=2011-04-22">here</a> rather than <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;subproject=ITK-VNL&amp;date=2011-04-22">the page we came from</a>.</li></ul></li>
+<li>Missing Back button.
+<ul><li>Starting from the <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;date=">main dashboard</a>.</li>
+<li>Navigate <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;display=project">here</a>.</li>
+<li>There is no Back button. It is easy not to notice this and hit the "Previous" button instead, which goes to the same page, but the <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;date=2011-04-21&amp;display=project">previous day</a>.</li></ul></li></ul>
+<h1><span class="mw-headline" id="Desired_Features">Desired Features</span></h1>
+<ul><li>There is no way to move or hide the Sub Projects section. See this <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;subproject=ITK-IntegratedTest">example</a>.</li>
+<li>The counts on the main dashboard are inconsistent. In the SubProjects
+<ul><li>the Configure numbers refer to machine counts</li>
+<li>the Build numbers refer to machine counts</li>
+<li>the Test numbers refer to number of tests</li></ul></li>
+<li>It would be great if one could select the old format using an alternate http: link or a button on the top page. This would certainly help the transition and also allow developers a choice of presentations.</li></ul>
+<h1><span class="mw-headline" id="Speed">Speed</span></h1>
+<p>Please separate speed and performance issues from actual features.
+</p>
+<ul><li>Kitware is getting a virtual cluster machine to replace the current Dashboard server, so it is anticipated that this hardware replacement will take care of speed and performance issues.</li>
+<li>The performance is much slower than the original dashboard. For example <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;date=">this new page</a> took 47 seconds to load while <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=Insight">this old page</a> took 1.1 seconds. New is about 40 times slower than old. Even with a server upgrade the performance will be slower than the old dashboard.</li></ul>
+<h1><span class="mw-headline" id="Individual_Observations">Individual Observations</span></h1>
+<ul><li>Lorensen: My initial impression of the itk modular dashboard is that is not in a form that is usable for ITK at this time. The navigation is cumbersome and it is difficult to use on a day-to-day basis. I hope we can have more discussion about this.
+<ul><li>Proposal
+<ul><li>Try the new format for two weeks.</li>
+<li>Gather feedback on this page.</li>
+<li>Poll the developers with a go/nogo.</li>
+<li>If go, convert current submissions to the new format.</li>
+<li>If nogo, revert all submissions to the non-modular dashboard and wait for a new cdash release.</li></ul></li></ul></li></ul>
+<ul><li>Luis: Please phrase this into actionable items or actual well-defined desired features, so we can have a productive discussion.</li></ul>
+<ul><li>Brad L: I have concerns about the performance beyond just the machine. As I do not know if there is IO, or CPU issues my observation is rather general. The response is slow and it appears to do a significant amount of work to load a page, even reloading it a moment later. I wonder if there a a better way to do some type of caching to reduce the computation needed.</li></ul>
+<h1><span class="mw-headline" id="How_We_are_Addressing_These_Concerns">How We are Addressing These Concerns</span></h1>
+<h2><span class="mw-headline" id="New_Hardware">New Hardware</span></h2>
+<ul><li>We will be replacing the Dashboard server with new hardware, a virtual cluster, that should be online several weeks from now.</li>
+<li>This new hardware will improve the performance, but, as some of you already pointed out, it may or many not be enough to fully address the responsiveness of the web pages.</li></ul>
+<h2><span class="mw-headline" id="Workarounds">Workarounds</span></h2>
+<ul><li>Follow <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;display=project&amp;collapse=0&amp;filtercount=6&amp;showfilters=1&amp;filtercombine=or&amp;field1=configureerrors/number&amp;compare1=43&amp;value1=0&amp;field2=configurewarnings/number&amp;compare2=43&amp;value2=0&amp;field3=builderrors/number&amp;compare3=43&amp;value3=0&amp;field4=buildwarnings/number&amp;compare4=43&amp;value4=0&amp;field5=testsfailed/number&amp;compare5=43&amp;value5=0&amp;field6=testsnotrun/number&amp;compare6=43&amp;value6=0&amp;collapse=0">this link</a> to view all non-green subproject submissions.</li></ul>
+<h2><span class="mw-headline" id="Step_Back_to_Monolithic_Dashboard">Step Back to Monolithic Dashboard</span></h2>
+<ul><li>For the purpose of maintaining the rhythm of the development team, we suggest to step back to the Monolithic Dashboard, while in parallel we continue working on the Modular dashboard to make it a useful tool for the ITK developers community.</li>
+<li>Essential builds should be reconfigured back to submit to the Monolithic Dashboard. In particular
+<ul><li>Code coverage builds</li>
+<li>Valgrind builds</li>
+<li>Unusual platforms
+<ul><li>MinGW</li>
+<li>SunCC</li></ul></li></ul></li>
+<li>A number of builds should still be submitting to the Modular dashboard, so we have a realistic load to experiment with new organization of the queries and change modifications to CDash. Probably 20 to 30 submissions would be enough for this purpose.</li></ul>
+<h2><span class="mw-headline" id="Use_Cases">Use Cases</span></h2>
+<ul><li>We need to gather use cases of Modular Dashboard usage, in order to ensure that we provide efficient access to them.</li>
+<li>Some examples are provided below.</li>
+<li>Please help us gather more.</li></ul>
+<h3><span class="mw-headline" id="Case_1">Case 1</span></h3>
+<ul><li>What is broken today&#160;?
+<ul><li>This is the common question of a developer who merged some changes yesterday, and quickly want to see if any of them broke anything in the Dashboard</li></ul></li></ul>
+<h3><span class="mw-headline" id="Case_2">Case 2</span></h3>
+<ul><li>What is broken in this platform&#160;?</li></ul>
+<h3><span class="mw-headline" id="Case_3">Case 3</span></h3>
+<ul><li>In what platforms is Test X failing&#160;?</li></ul>
+<h3><span class="mw-headline" id="Case_4">Case 4</span></h3>
+<ul><li>When did Test X start failing&#160;?</li></ul>
+<h3><span class="mw-headline" id="Case_5">Case 5</span></h3>
+<ul><li>What is the code coverage of Module X&#160;?</li></ul>
+<h3><span class="mw-headline" id="Case_6">Case 6</span></h3>
+<ul><li>Are there any valgrind issues today&#160;?</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20220128032225
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.032 seconds
+Real time usage: 0.032 seconds
+Preprocessor visited node count: 47/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9090-0!canonical and timestamp 20220128032225 and revision id 54072. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/Modular_Dashboard&amp;oldid=54072">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/Modular_Dashboard&amp;oldid=54072</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Modularization/Modular_Dashboard" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Modularization/Modular_Dashboard&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Modularization/Modular_Dashboard">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Modularization/Modular_Dashboard&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Modularization/Modular_Dashboard&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Modularization/Modular_Dashboard" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Modularization/Modular_Dashboard&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4%2FModularization%2FModular+Dashboard" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4/Modularization/Modular_Dashboard" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4/Modularization/Modular_Dashboard" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Modularization/Modular_Dashboard&amp;oldid=54072" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Modularization/Modular_Dashboard&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 3 September 2013, at 15:18.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.032","walltime":"0.032","ppvisitednodes":{"value":47,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220128032225","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":323});});</script>
+</body></html>

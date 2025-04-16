@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/New Install Framework - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/New_Install_Framework","wgTitle":"ITK/New Install Framework","wgCurRevisionId":9566,"wgRevisionId":9566,"wgArticleId":2404,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK/New_Install_Framework","wgRelevantArticleId":2404,"wgRequestId":"0066833d7c629f628dc828b6","wgCSPNonce":!1,"wgIsProbablyEditable":!1,
+"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.monobook.mobile"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<!--[if lt IE 9]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/screen-desktop.css?74a6a" media="screen"/><![endif]--><!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE60Fixes.css?1208f" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.34.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://itk.org/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/Wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_New_Install_Framework rootpage-ITK skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">ITK/New Install Framework</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From KitwarePublic</div><div id="contentSub" lang="en" dir="ltr"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div><div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Classification_of_Files"><span class="tocnumber">2</span> <span class="toctext">Classification of Files</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#New_API"><span class="tocnumber">3</span> <span class="toctext">New API</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>CMake 2.4 supports install components. Default component <b>ALL</b> will install all components. After that, each file can be in one component. When specifying components during <b>install</b> procedure, only the files corresponding to the component will be installed. Using this mechanism, packaging user projects that use itk will be simpler. For example, <b>Slicer Runtime</b>, only requires runtime libraries from ITK, while <b>Slicer Development</b> must include all the header files and other support files.
+</p>
+<h2><span class="mw-headline" id="Classification_of_Files">Classification of Files</span></h2>
+<p>Classification refers to the <b>component</b> in which the files are going to be installed.
+</p>
+<table border="1">
+
+<tbody><tr bgcolor="#abcdef">
+<th>Componnet</th>
+<th>Files</th>
+<th>Comment
+</th></tr>
+<tr>
+<td rowspan="7">Development</td>
+<td>*.h, *.txx, *.hxx, (plus kwsys, itksys, gxsys files)</td>
+<td>
+</td></tr>
+<tr>
+<td>*.lib, *.a</td>
+<td>
+</td></tr>
+<tr>
+<td>*.idx, *.mdx, *.swg, CSwing subdirectory</td>
+<td>
+</td></tr>
+<tr>
+<td>vtk*Kit.cmake</td>
+<td>List of classes for external wrapping
+</td></tr>
+<tr>
+<td>ITKConfig.cmake, ITKBuldSettings.cmake, ITKLibraryDepends.cmake, UseITK.cmake</td>
+<td>
+</td></tr>
+<tr>
+<td>CMake subdirectory</td>
+<td>
+</td></tr>
+<tr>
+<td>WrapITK/Configuration</td>
+<td>
+</td></tr>
+<tr>
+<td>Documentation</td>
+<td>Man pages, html pages, *.dic</td>
+<td>
+</td></tr>
+<tr>
+<td rowspan="2">RuntimeLibraries</td>
+<td>*.dll, *.so</td>
+<td>
+</td></tr>
+<tr>
+<td>*.tcl, *.py,</td>
+<td>
+</td></tr>
+<tr>
+<td>RuntimeExecutables</td>
+<td>itkwish</td>
+<td>
+</td></tr>
+<tr>
+<td>Examples</td>
+<td>*.exe</td>
+<td>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="New_API">New API</span></h2>
+<p>Instead of:
+</p>
+<pre>INSTALL_TARGETS(/lib itkCommon) 
+</pre>
+<p>New command should be used:
+</p>
+<pre> INSTALL(TARGETS itkCommon
+   RUNTIME DESTINATION bin COMPONENT Runtime     # .exe, .dll
+   LIBRARY DESTINATION lib COMPONENT Runtime     # .so, mod.dll
+   ARCHIVE DESTINATION lib COMPONENT Development # .a, .lib
+   )
+</pre>
+<p>Instead of:
+</p>
+<pre> INSTALL_FILES(/directory FILES foo1 foo2)
+</pre>
+<p>New command should be used:
+</p>
+<pre> INSTALL(FILES foo1 foo2 DESTINATION directory)
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Notes">Notes</span></h2>
+<ul><li>Each install should correspond to one of these components</li></ul>
+<p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20210508045332
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.015 seconds
+Real time usage: 0.015 seconds
+Preprocessor visited node count: 15/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.942      1 -total
+100.00%    3.942      1 Template:ITK/Template/Footer
+ 37.21%    1.467      1 Template:ITK/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:2404-0!canonical and timestamp 20210508045332 and revision id 9566
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://itk.org/Wiki/index.php?title=ITK/New_Install_Framework&amp;oldid=9566">https://itk.org/Wiki/index.php?title=ITK/New_Install_Framework&amp;oldid=9566</a>"</div>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div><!-- end content --><div class="visualClear"></div></div></div><div class="visualClear"></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/New_Install_Framework" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/New_Install_Framework&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/New_Install_Framework&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="/Wiki/index.php?title=ITK/New_Install_Framework&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label"><h3 id="p-cactions-mobile-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main-mobile" class="selected"><a href="/Wiki/ITK/New_Install_Framework" title="Page">Page</a></li><li id="ca-talk-mobile" class="new"><a href="/Wiki/index.php?title=Talk:ITK/New_Install_Framework&amp;action=edit&amp;redlink=1" rel="discussion" title=" (page does not exist)">Discussion</a></li><li id="ca-more"><a href="#p-cactions">More</a></li><li id="ca-tools"><a href="#p-tb" title="Tools">Tools</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FNew+Install+Framework" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="/Wiki/Main_Page" class="mw-wiki-logo" title="Visit the main page"></a></div><div id="sidebar"><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search KitwarePublic" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>  <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK/New_Install_Framework" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK/New_Install_Framework" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/Wiki/index.php?title=ITK/New_Install_Framework&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/Wiki/index.php?title=ITK/New_Install_Framework&amp;oldid=9566" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/Wiki/index.php?title=ITK/New_Install_Framework&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div></div><a href="#sidebar" title="navigation" class="menu-toggle" id="sidebar-toggle"></a><a href="#p-personal" title="user tools" class="menu-toggle" id="p-personal-toggle"></a><a href="#globalWrapper" title="back to top" class="menu-toggle" id="globalWrapper-toggle"></a></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 12 June 2007, at 10:54.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li><li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li></ul></div></div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.015","walltime":"0.015","ppvisitednodes":{"value":15,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":222,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    3.942      1 -total","100.00%    3.942      1 Template:ITK/Template/Footer"," 37.21%    1.467      1 Template:ITK/Template/Categories"]},"cachereport":{"timestamp":"20210508045332","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":197});});</script></body></html>

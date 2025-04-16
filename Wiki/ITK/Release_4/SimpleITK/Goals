@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>SimpleITK/Goals - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"0f0c5ccdff97ec224f4effd5","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"SimpleITK/Goals","wgTitle":"SimpleITK/Goals","wgCurRevisionId":51437,"wgRevisionId":51437,"wgArticleId":9441,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"SimpleITK/Goals","wgRelevantArticleId":9441,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK/Release_4/SimpleITK/Goals",
+"wgInternalRedirectTargetUrl":"/Wiki/SimpleITK/Goals"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/SimpleITK/Goals"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-SimpleITK_Goals rootpage-SimpleITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>SimpleITK/Goals</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/SimpleITK" title="SimpleITK">SimpleITK</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK/Release_4/SimpleITK/Goals&amp;redirect=no" class="mw-redirect" title="ITK/Release 4/SimpleITK/Goals">ITK/Release 4/SimpleITK/Goals</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Target_Coverage"><span class="tocnumber">1</span> <span class="toctext">Target Coverage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#To_be_Exposed"><span class="tocnumber">1.1</span> <span class="toctext">To be Exposed</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Image_Processing"><span class="tocnumber">1.2</span> <span class="toctext">Image Processing</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Intensity_Filters"><span class="tocnumber">1.2.1</span> <span class="toctext">Intensity Filters</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Morphology"><span class="tocnumber">1.2.2</span> <span class="toctext">Morphology</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Label_Maps"><span class="tocnumber">1.2.3</span> <span class="toctext">Label Maps</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Features"><span class="tocnumber">1.2.4</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Image_Statistics"><span class="tocnumber">1.2.5</span> <span class="toctext">Image Statistics</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Smoothing"><span class="tocnumber">1.2.6</span> <span class="toctext">Smoothing</span></a>
+<ul>
+<li class="toclevel-4 tocsection-10"><a href="#Anisotropic_Smoothing"><span class="tocnumber">1.2.6.1</span> <span class="toctext">Anisotropic Smoothing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-11"><a href="#LabelVoting"><span class="tocnumber">1.2.7</span> <span class="toctext">LabelVoting</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#AntiAlias"><span class="tocnumber">1.2.8</span> <span class="toctext">AntiAlias</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#FFT"><span class="tocnumber">1.2.9</span> <span class="toctext">FFT</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Gradients"><span class="tocnumber">1.2.10</span> <span class="toctext">Gradients</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Convolution"><span class="tocnumber">1.2.11</span> <span class="toctext">Convolution</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Image_Compare"><span class="tocnumber">1.2.12</span> <span class="toctext">Image Compare</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#Image_Compose"><span class="tocnumber">1.2.13</span> <span class="toctext">Image Compose</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Image_Grid"><span class="tocnumber">1.2.14</span> <span class="toctext">Image Grid</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Distance_Maps"><span class="tocnumber">1.2.15</span> <span class="toctext">Distance Maps</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#Bias_Correction"><span class="tocnumber">1.2.16</span> <span class="toctext">Bias Correction</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#Deformation_Fields"><span class="tocnumber">1.2.17</span> <span class="toctext">Deformation Fields</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-22"><a href="#Image_Segmentation"><span class="tocnumber">1.3</span> <span class="toctext">Image Segmentation</span></a>
+<ul>
+<li class="toclevel-3 tocsection-23"><a href="#Level_Sets"><span class="tocnumber">1.3.1</span> <span class="toctext">Level Sets</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#Region_Growing"><span class="tocnumber">1.3.2</span> <span class="toctext">Region Growing</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="#Statistical_Classifiers"><span class="tocnumber">1.3.3</span> <span class="toctext">Statistical Classifiers</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="#KLM_Region_Growing"><span class="tocnumber">1.3.4</span> <span class="toctext">KLM Region Growing</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#MRF_Filters"><span class="tocnumber">1.3.5</span> <span class="toctext">MRF Filters</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="#Voronoi_Filters"><span class="tocnumber">1.3.6</span> <span class="toctext">Voronoi Filters</span></a></li>
+<li class="toclevel-3 tocsection-29"><a href="#Watersheds"><span class="tocnumber">1.3.7</span> <span class="toctext">Watersheds</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-30"><a href="#IO"><span class="tocnumber">1.4</span> <span class="toctext">IO</span></a>
+<ul>
+<li class="toclevel-3 tocsection-31"><a href="#Single_Image_Files"><span class="tocnumber">1.4.1</span> <span class="toctext">Single Image Files</span></a></li>
+<li class="toclevel-3 tocsection-32"><a href="#Series_Image_Readers"><span class="tocnumber">1.4.2</span> <span class="toctext">Series Image Readers</span></a></li>
+<li class="toclevel-3 tocsection-33"><a href="#DICOM"><span class="tocnumber">1.4.3</span> <span class="toctext">DICOM</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-34"><a href="#Image_Registration"><span class="tocnumber">1.5</span> <span class="toctext">Image Registration</span></a>
+<ul>
+<li class="toclevel-3 tocsection-35"><a href="#Building_Blocks"><span class="tocnumber">1.5.1</span> <span class="toctext">Building Blocks</span></a></li>
+<li class="toclevel-3 tocsection-36"><a href="#PrePackaged_Recipes"><span class="tocnumber">1.5.2</span> <span class="toctext">PrePackaged Recipes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-37"><a href="#Bridges"><span class="tocnumber">1.6</span> <span class="toctext">Bridges</span></a>
+<ul>
+<li class="toclevel-3 tocsection-38"><a href="#VTK"><span class="tocnumber">1.6.1</span> <span class="toctext">VTK</span></a></li>
+<li class="toclevel-3 tocsection-39"><a href="#Native_Language_Arrays"><span class="tocnumber">1.6.2</span> <span class="toctext">Native Language Arrays</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-40"><a href="#Not_to_be_Exposed_(by_Design)"><span class="tocnumber">1.7</span> <span class="toctext">Not to be Exposed (by Design)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-41"><a href="#Infrastructure_and_Deployment"><span class="tocnumber">2</span> <span class="toctext">Infrastructure and Deployment</span></a>
+<ul>
+<li class="toclevel-2 tocsection-42"><a href="#Repository"><span class="tocnumber">2.1</span> <span class="toctext">Repository</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="#Gerrit"><span class="tocnumber">2.2</span> <span class="toctext">Gerrit</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="#Dashboard"><span class="tocnumber">2.3</span> <span class="toctext">Dashboard</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="#Home_Page"><span class="tocnumber">2.4</span> <span class="toctext">Home Page</span></a>
+<ul>
+<li class="toclevel-3 tocsection-46"><a href="#Download_Page"><span class="tocnumber">2.4.1</span> <span class="toctext">Download Page</span></a></li>
+<li class="toclevel-3 tocsection-47"><a href="#Doxygen_Page"><span class="tocnumber">2.4.2</span> <span class="toctext">Doxygen Page</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-48"><a href="#Mailing_List"><span class="tocnumber">2.5</span> <span class="toctext">Mailing List</span></a></li>
+<li class="toclevel-2 tocsection-49"><a href="#Forum"><span class="tocnumber">2.6</span> <span class="toctext">Forum</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="#Bug_Tracker_Jira"><span class="tocnumber">2.7</span> <span class="toctext">Bug Tracker Jira</span></a></li>
+<li class="toclevel-2 tocsection-51"><a href="#Wiki"><span class="tocnumber">2.8</span> <span class="toctext">Wiki</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Target_Coverage">Target Coverage</span></h1>
+<h2><span class="mw-headline" id="To_be_Exposed">To be Exposed</span></h2>
+<p>SimpleITK will expose the following ITK functionalities
+</p>
+<h2><span class="mw-headline" id="Image_Processing">Image Processing</span></h2>
+<h3><span class="mw-headline" id="Intensity_Filters">Intensity Filters</span></h3>
+<ul><li>Trigonometric functions</li>
+<li>Binary operators
+<ul><li>Arithmetic</li>
+<li>Boolean</li></ul></li>
+<li>Complex conversions</li>
+<li>Thresholding</li></ul>
+<h3><span class="mw-headline" id="Morphology">Morphology</span></h3>
+<h3><span class="mw-headline" id="Label_Maps">Label Maps</span></h3>
+<ul><li>Label Map Filters (LabelMap Module)</li>
+<li>Label Map Overlays (ImageFusion Module)</li></ul>
+<h3><span class="mw-headline" id="Features">Features</span></h3>
+<h3><span class="mw-headline" id="Image_Statistics">Image Statistics</span></h3>
+<h3><span class="mw-headline" id="Smoothing">Smoothing</span></h3>
+<h4><span class="mw-headline" id="Anisotropic_Smoothing">Anisotropic Smoothing</span></h4>
+<ul><li>Curvature Flow</li>
+<li>Gradient Anisotropic Smoothing</li></ul>
+<h3><span class="mw-headline" id="LabelVoting">LabelVoting</span></h3>
+<ul><li>HoleFilling</li>
+<li>IterativeHoleFilling</li></ul>
+<h3><span class="mw-headline" id="AntiAlias">AntiAlias</span></h3>
+<h3><span class="mw-headline" id="FFT">FFT</span></h3>
+<h3><span class="mw-headline" id="Gradients">Gradients</span></h3>
+<h3><span class="mw-headline" id="Convolution">Convolution</span></h3>
+<h3><span class="mw-headline" id="Image_Compare">Image Compare</span></h3>
+<h3><span class="mw-headline" id="Image_Compose">Image Compose</span></h3>
+<h3><span class="mw-headline" id="Image_Grid">Image Grid</span></h3>
+<ul><li>Resampling</li>
+<li>Flip</li>
+<li>Pad</li></ul>
+<h3><span class="mw-headline" id="Distance_Maps">Distance Maps</span></h3>
+<h3><span class="mw-headline" id="Bias_Correction">Bias Correction</span></h3>
+<h3><span class="mw-headline" id="Deformation_Fields">Deformation Fields</span></h3>
+<ul><li>Only if they work on the itk::VectorImage class</li></ul>
+<h2><span class="mw-headline" id="Image_Segmentation">Image Segmentation</span></h2>
+<h3><span class="mw-headline" id="Level_Sets">Level Sets</span></h3>
+<ul><li>Current Framework</li>
+<li>New Framework</li></ul>
+<h3><span class="mw-headline" id="Region_Growing">Region Growing</span></h3>
+<h3><span class="mw-headline" id="Statistical_Classifiers">Statistical Classifiers</span></h3>
+<ul><li>KMeans</li>
+<li>BayesianClassifiers</li></ul>
+<h3><span class="mw-headline" id="KLM_Region_Growing">KLM Region Growing</span></h3>
+<h3><span class="mw-headline" id="MRF_Filters">MRF Filters</span></h3>
+<h3><span class="mw-headline" id="Voronoi_Filters">Voronoi Filters</span></h3>
+<h3><span class="mw-headline" id="Watersheds">Watersheds</span></h3>
+<ul><li>With Markers</li>
+<li>Traditional</li></ul>
+<h2><span class="mw-headline" id="IO">IO</span></h2>
+<h3><span class="mw-headline" id="Single_Image_Files">Single Image Files</span></h3>
+<h3><span class="mw-headline" id="Series_Image_Readers">Series Image Readers</span></h3>
+<h3><span class="mw-headline" id="DICOM">DICOM</span></h3>
+<h2><span class="mw-headline" id="Image_Registration">Image Registration</span></h2>
+<h3><span class="mw-headline" id="Building_Blocks">Building Blocks</span></h3>
+<ul><li>Optimizers</li>
+<li>Metrics</li>
+<li>Interpolators</li>
+<li>Transforms</li>
+<li>Demons</li></ul>
+<h3><span class="mw-headline" id="PrePackaged_Recipes">PrePackaged Recipes</span></h3>
+<ul><li>Brain CT to CT</li>
+<li>Brain MR to CT</li>
+<li>etc</li></ul>
+<h2><span class="mw-headline" id="Bridges">Bridges</span></h2>
+<h3><span class="mw-headline" id="VTK">VTK</span></h3>
+<h3><span class="mw-headline" id="Native_Language_Arrays">Native Language Arrays</span></h3>
+<ul><li>Python</li>
+<li>Java</li>
+<li>R</li></ul>
+<h2><span id="Not_to_be_Exposed_.28by_Design.29"></span><span class="mw-headline" id="Not_to_be_Exposed_(by_Design)">Not to be Exposed (by Design)</span></h2>
+<ul><li>Mesh</li>
+<li>SpatialObjects</li>
+<li>Numerics</li>
+<li>Statistics</li>
+<li>ImageFunctions</li>
+<li>ImageAdaptors</li>
+<li>Path</li>
+<li>SpatialFunctions</li></ul>
+<h1><span class="mw-headline" id="Infrastructure_and_Deployment">Infrastructure and Deployment</span></h1>
+<h2><span class="mw-headline" id="Repository">Repository</span></h2>
+<ul><li>Git Hosted at Kitware</li>
+<li>Mirrored at Github</li>
+<li>Pending task on setting up hooks and aliases</li></ul>
+<h2><span class="mw-headline" id="Gerrit">Gerrit</span></h2>
+<ul><li>Setup already</li></ul>
+<h2><span class="mw-headline" id="Dashboard">Dashboard</span></h2>
+<ul><li>Currently a group in the ITK one</li>
+<li>Will be moved to its own Dashboard</li></ul>
+<h2><span class="mw-headline" id="Home_Page">Home Page</span></h2>
+<ul><li>Subdomain:
+<ul><li>simple.itk.org</li></ul></li></ul>
+<h3><span class="mw-headline" id="Download_Page">Download Page</span></h3>
+<ul><li>Binary builds
+<ul><li>Python</li>
+<li>Java</li>
+<li>C#</li></ul></li></ul>
+<h3><span class="mw-headline" id="Doxygen_Page">Doxygen Page</span></h3>
+<ul><li>Setup web page.</li>
+<li>Setup cronjob and Nightly build.</li></ul>
+<h2><span class="mw-headline" id="Mailing_List">Mailing List</span></h2>
+<ul><li>Transition Plan
+<ul><li>Reuse ITK users and developers list</li>
+<li>As a convention we put "SimpleITK:" in the subject</li></ul></li></ul>
+<h2><span class="mw-headline" id="Forum">Forum</span></h2>
+<ul><li>Check with ParaView users on UserVoice.</li>
+<li>Explore Forum options.
+<ul><li><a rel="nofollow" class="external free" href="http://thread.gmane.org/gmane.comp.lib.itk.user/35103/focus=57625">http://thread.gmane.org/gmane.comp.lib.itk.user/35103/focus=57625</a></li></ul></li>
+<li>Setup an ITK forum
+<ul><li>Where SimpleITK is a topic</li></ul></li>
+<li>Look at StackOverflow</li>
+<li>Look at thread about Forums in the ITK users list
+<ul><li>Create a Wiki page to capture features.</li></ul></li>
+<li>Pick one by end of August.</li></ul>
+<h2><span class="mw-headline" id="Bug_Tracker_Jira">Bug Tracker Jira</span></h2>
+<ul><li>Joint with ITK Jira installation but as a separate project</li></ul>
+<h2><span class="mw-headline" id="Wiki">Wiki</span></h2>
+<ul><li>Joint with ITK</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20230204190742
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.020 seconds
+Real time usage: 0.021 seconds
+Preprocessor visited node count: 152/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9441-0!canonical and timestamp 20230204190742 and revision id 51437. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=SimpleITK/Goals&amp;oldid=51437">https://public.kitware.com/Wiki/index.php?title=SimpleITK/Goals&amp;oldid=51437</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/SimpleITK/Goals" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:SimpleITK/Goals&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/SimpleITK/Goals">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK/Goals&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK/Goals&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/SimpleITK/Goals" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:SimpleITK/Goals&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=SimpleITK%2FGoals" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/SimpleITK/Goals" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/SimpleITK/Goals" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK/Goals&amp;oldid=51437" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK/Goals&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 13 February 2013, at 17:51.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.020","walltime":"0.021","ppvisitednodes":{"value":152,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20230204190742","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":85});});</script>
+</body></html>

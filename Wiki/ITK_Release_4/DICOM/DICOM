@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4/DICOM - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"ce062c93511e0a206c3950b0","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/DICOM","wgTitle":"ITK/Release 4/DICOM","wgCurRevisionId":44269,"wgRevisionId":44269,"wgArticleId":6653,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/DICOM","wgRelevantArticleId":6653,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4/DICOM",
+"wgInternalRedirectTargetUrl":"/Wiki/ITK/Release_4/DICOM"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4/DICOM"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_DICOM rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Release 4/DICOM</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/DICOM&amp;redirect=no" class="mw-redirect" title="ITK Release 4/DICOM">ITK Release 4/DICOM</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p><b>Improving DICOM Support</b>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Goals"><span class="tocnumber">1</span> <span class="toctext">Goals</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Improve_the_support_for_DICOM_in_ITK"><span class="tocnumber">1.1</span> <span class="toctext">Improve the support for DICOM in ITK</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Other_requests_from_the_ITK_community"><span class="tocnumber">1.2</span> <span class="toctext">Other requests from the ITK community</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Development_process"><span class="tocnumber">2</span> <span class="toctext">Development process</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Discussions_and_Brainstorming"><span class="tocnumber">3</span> <span class="toctext">Discussions and Brainstorming</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Discussions_about_PACS_Support"><span class="tocnumber">3.1</span> <span class="toctext">Discussions about PACS Support</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Discussion_about_Streaming"><span class="tocnumber">3.2</span> <span class="toctext">Discussion about Streaming</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Discussion_about_RT-Struct"><span class="tocnumber">3.3</span> <span class="toctext">Discussion about RT-Struct</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Roadmap"><span class="tocnumber">4</span> <span class="toctext">Roadmap</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#TCons"><span class="tocnumber">5</span> <span class="toctext">TCons</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Meeting"><span class="tocnumber">6</span> <span class="toctext">Meeting</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Goals">Goals</span></h1>
+<h2><span class="mw-headline" id="Improve_the_support_for_DICOM_in_ITK">Improve the support for DICOM in ITK</span></h2>
+<ol><li>DICOM communication layer (a.k.a. PACS support, DICOM Protocol)</li>
+<li>Streaming of DICOM Objects</li>
+<li>Read and write RTStruct</li>
+<li>Type checking</li>
+<li>Minimum DICOM skeleton generation</li></ol>
+<h2><span class="mw-headline" id="Other_requests_from_the_ITK_community">Other requests from the ITK community</span></h2>
+<ul><li>handling of higher order manifold as described in DICOM standard</li>
+<li>handling of DICOMDIR format disk archives (navneeth)
+<ul><li>Unlike a standard dicom series (located in a single directory) the DICOMDIR format spreads files across directories</li>
+<li>A reader that reads the DICOMDIR file and parses appropriate files &amp; directories is desirable</li></ul></li></ul>
+<h1><span class="mw-headline" id="Development_process">Development process</span></h1>
+<p>The idea is to simplify the maintenance in the future:
+</p>
+<ul><li>update included version of gdcm</li>
+<li>synchronise included version and gdcm proper</li>
+<li>send the patches upstream</li></ul>
+<p>To do this, we forked a version of gdcm in github to use for integration and maintenance in iTK v4 (<a rel="nofollow" class="external free" href="https://github.com/ComplexSystemsModeling/GDCM">https://github.com/ComplexSystemsModeling/GDCM</a>).
+This fork will get all the modifications and patches from ITK, and will let us easily send them upstream.
+Builds for ITK using this fork and the original gdcm (<a rel="nofollow" class="external free" href="https://github.com/malaterre/GDCM">https://github.com/malaterre/GDCM</a>) have been set up. Eventually there will be three kinds of itk/gdcm builds on the dashboard:
+</p>
+<ul><li>ITK with included gdcm</li>
+<li>ITK with SYSTEM_GDCM using our fork</li>
+<li>ITK with SYSTEM_GDCM using gdcm proper</li></ul>
+<p>Modifications should go to our fork of gdcm first, so we expect the ITK with GDCM FORK to be the greenest. Then, we should transfer those to ITK, and eventually upstream.
+</p><p>dev process:
+</p>
+<ul><li>modify code (this can be either in ITK or in GDCM FORK, depending on the modification)</li>
+<li>(re) install GDCM FORK on the system (as ITK does not work with a build tree of gdcm)</li>
+<li>check ITK with GDCM FORK (local-experimental-nightly)</li>
+<li>push to itk-gerrit</li>
+<li>check ITK proper builds</li>
+<li>gerrit merge</li></ul>
+<p>That means, developers need to maintain both a SYSTEM GDCM FORK build and an ITK build locally.
+</p>
+<h1><span class="mw-headline" id="Discussions_and_Brainstorming">Discussions and Brainstorming</span></h1>
+<h2><span class="mw-headline" id="Discussions_about_PACS_Support">Discussions about PACS Support</span></h2>
+<ul><li><a href="/Wiki/ITKv4_DICOM_Communications_Discussion" title="ITKv4 DICOM Communications Discussion"> Initial discussions about PACS Support</a></li></ul>
+<h2><span class="mw-headline" id="Discussion_about_Streaming">Discussion about Streaming</span></h2>
+<ul><li>Original GDCM Milestone <a rel="nofollow" class="external text" href="https://sourceforge.net/apps/trac/gdcm/milestone/%5BMM-09%5D%20%E2%80%93%20Streaming">here</a></li>
+<li>Overview (should be made JIRA tickets. Some of them are done already, to check)
+<ul><li>Create a gdcm.StreamImageReader</li>
+<li>Add support for extent to ImageCodec hierarchy</li>
+<li>Make JPEG2000Codec Streamable</li>
+<li>Make JPEGCodec Streamable</li>
+<li>Make RAWCodec Streamable</li>
+<li>Make RLECodec Streamable</li>
+<li>Make JPEGLSCodec Streamable</li>
+<li>Update CharLS for streaming capability</li>
+<li>Add support for BasicOffsetTable</li></ul></li></ul>
+<ul><li>Malaterre: to the best of my knownledge they can be executed in this order. The goal being to import subportion of large file in ITK. For this one'll need to implement a new gdcm.ImageReader (I called it gdcm.StreamImageReader), I have explained the implementation details of this class in bug #53.</li>
+<li>Once this class is done, you will start by making the RAW codec 'streamable'. It should only read a subportion of a RAW (uncompressed) DICOM file, then you'll move on to more complex one (JPEG, J2K, RLE and JPEG-LS).</li></ul>
+<h2><span class="mw-headline" id="Discussion_about_RT-Struct">Discussion about RT-Struct</span></h2>
+<ul><li>there is an existing implementation in vtk. Reading should be easier than writing, the later requiring some DICOM knowledge.
+<ul><li>vtkGDCMPolyDataReader <a rel="nofollow" class="external text" href="http://gdcm.sourceforge.net/html/classvtkGDCMPolyDataReader.html">here</a>
+<ul><li>The actual function needed is <a rel="nofollow" class="external text" href="https://sourceforge.net/apps/trac/gdcm/browser/trunk/Utilities/VTK/vtkGDCMPolyDataReader.cxx#L229">here</a> int vtkGDCMPolyDataReader::RequestData_RTStructureSetStorage(gdcm::Reader const &amp;reader, vtkInformationVector *outputVector)</li></ul></li>
+<li>vtkGDCMPolyDataWriter <a rel="nofollow" class="external text" href="http://gdcm.sourceforge.net/html/classvtkGDCMPolyDataWriter.html">here</a></li>
+<li>vtkRTStructSetProperties <a rel="nofollow" class="external text" href="http://gdcm.sourceforge.net/html/classvtkRTStructSetProperties.html">here</a></li>
+<li>Examples/Cxx/GenerateRTSTRUCT</li></ul></li>
+<li>there is IJ papers to read and write RTSTRUCT
+<ul><li><a rel="nofollow" class="external text" href="http://hdl.handle.net/1926/1521">write</a></li>
+<li><a rel="nofollow" class="external text" href="http://hdl.handle.net/10380/3132">read</a></li></ul></li></ul>
+<ul><li>Some leftover GDCM milestone <a rel="nofollow" class="external text" href="http://sourceforge.net/apps/trac/gdcm/query?group=status&amp;milestone=%5BMM-12%5D+-+RT+support">here</a></li></ul>
+<h1><span class="mw-headline" id="Roadmap">Roadmap</span></h1>
+<ul><li><a href="/Wiki/DICOM_Roadmap_Dec2011" title="DICOM Roadmap Dec2011"> September 1, 2011 to December 31, 2011</a></li></ul>
+<h1><span class="mw-headline" id="TCons">TCons</span></h1>
+<ul><li><a href="/Wiki/ITK_Release_4/DICOM/Tcon_2011_08_25" class="mw-redirect" title="ITK Release 4/DICOM/Tcon 2011 08 25">TCon 2011/August/25</a>, <a href="/Wiki/index.php?title=ITK_Release_4/DICOM/Minutes_2011_08_25&amp;action=edit&amp;redlink=1" class="new" title="ITK Release 4/DICOM/Minutes 2011 08 25 (page does not exist)"> Minutes 2011_08_25</a>
+<ul><li>See complimentary set of meeting notes <a rel="nofollow" class="external text" href="http://wiki.na-mic.org/Wiki/index.php/Events:2011-08-24-DICOM-ITK-Discussion#DICOM.2FWrapping_in_ITKv4">HERE</a>.</li></ul></li>
+<li><a href="/Wiki/ITK_Release_4/DICOM/Tcon_2011_06_09" class="mw-redirect" title="ITK Release 4/DICOM/Tcon 2011 06 09">TCon 2011/June/09</a>, <a href="/Wiki/index.php?title=ITK_Release_4/DICOM/Minutes_2011_06_09&amp;action=edit&amp;redlink=1" class="new" title="ITK Release 4/DICOM/Minutes 2011 06 09 (page does not exist)"> Minutes 2011_06_09</a></li>
+<li><a href="/Wiki/ITK_Release_4/DICOM/Tcon_2011_05_20" class="mw-redirect" title="ITK Release 4/DICOM/Tcon 2011 05 20">TCon 2011/May/20</a>, <a href="/Wiki/ITK_Release_4/DICOM/Minutes_2011_05_20" class="mw-redirect" title="ITK Release 4/DICOM/Minutes 2011 05 20"> Minutes 2011_05_20</a></li>
+<li><a href="/Wiki/ITK_Release_4/DICOM/Tcon_2011_05_13" class="mw-redirect" title="ITK Release 4/DICOM/Tcon 2011 05 13">TCon 2011/May/13</a>, <a href="/Wiki/index.php?title=ITK_Release_4/DICOM/Minutes_2011_05_13&amp;action=edit&amp;redlink=1" class="new" title="ITK Release 4/DICOM/Minutes 2011 05 13 (page does not exist)"> Minutes 2011_05_13</a></li>
+<li><a href="/Wiki/ITK_Release_4/DICOM/Tcon_2011_04_22" class="mw-redirect" title="ITK Release 4/DICOM/Tcon 2011 04 22">TCon 2011/April/22</a>, NoMinutes</li>
+<li><a href="/Wiki/ITK_Release_4/DICOM/Tcon_2011_04_15" class="mw-redirect" title="ITK Release 4/DICOM/Tcon 2011 04 15">TCon 2011/April/15</a>, <a href="/Wiki/ITK_Release_4/DICOM/Minutes_2011_04_15" class="mw-redirect" title="ITK Release 4/DICOM/Minutes 2011 04 15"> Minutes 2011_04_15</a></li>
+<li><a href="/Wiki/ITK_Release_4/DICOM/Tcon_2010_10_11" class="mw-redirect" title="ITK Release 4/DICOM/Tcon 2010 10 11">TCon 2010/10/11</a>, <a href="/Wiki/ITK_Release_4/DICOM/Minutes_2010_10_11" class="mw-redirect" title="ITK Release 4/DICOM/Minutes 2010 10 11"> Minutes 2010_10_11</a></li></ul>
+<h1><span class="mw-headline" id="Meeting">Meeting</span></h1>
+<ul><li><a href="/Wiki/ITK_Release_4/DICOM/Meeting_IOWA_2010" class="mw-redirect" title="ITK Release 4/DICOM/Meeting IOWA 2010">Meeting Iowa</a></li></ul>
+<ul><li><a href="/Wiki/ITK_Release_4/DICOM/GDCM_Tcon_Notes" class="mw-redirect" title="ITK Release 4/DICOM/GDCM Tcon Notes">Meeting GDCM Tcon</a></li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20231114133221
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.009 seconds
+Real time usage: 0.009 seconds
+Preprocessor visited node count: 48/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:6653-0!canonical and timestamp 20231114133221 and revision id 44269. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/DICOM&amp;oldid=44269">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/DICOM&amp;oldid=44269</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/DICOM" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/DICOM&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/DICOM">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/DICOM" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/DICOM&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4%2FDICOM" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4/DICOM" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4/DICOM" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM&amp;oldid=44269" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 9 December 2011, at 16:00.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.009","walltime":"0.009","ppvisitednodes":{"value":48,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20231114133221","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":91});});</script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="ITK/InsightClopedia,ITK/InsightClopedia/DOs and DONTs,ITK/InsightClopedia/MeanShiftClustering,ITK/InsightClopedia/Meshes,ITK/InsightClopedia/Registration,ITK/InsightClopedia/Watershed-based Segmentation Filters,ITK/InsightClopedia/kMeansClustering,ITK/InsightClopedia/Image Smoothing Filters,ITK/InsightClopedia/Mathematical Morphology,ITK/InsightClopedia/Level Sets,ITK/InsightClopedia/Region Growing Segmentation Filters" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
+		<link title="Creative Commons" type="application/rdf+xml" href="/Wiki/index.php?title=ITK/InsightClopedia&amp;action=creativecommons" rel="meta" />
+		<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
+		<link rel="alternate" type="application/rss+xml" title="KitwarePublic RSS Feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom Feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>ITK/InsightClopedia - KitwarePublic</title>
+		<link rel="stylesheet" href="/Wiki/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/Wiki/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/Wiki/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/Wiki/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/Wiki/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/Wiki/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/Wiki/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/Wiki/skins";
+		var wgArticlePath = "/Wiki/$1";
+		var wgScriptPath = "/Wiki";
+		var wgScript = "/Wiki/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.itk.org";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "ITK/InsightClopedia";
+		var wgTitle = "ITK/InsightClopedia";
+		var wgAction = "view";
+		var wgArticleId = "4958";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 21181;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/Wiki/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/Wiki/skins/common/ajax.js?207"></script>
+		<script type="text/javascript" src="/Wiki/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-ITK_InsightClopedia skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">ITK/InsightClopedia</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From KitwarePublic</h3>
+			<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>Welcome to the <b>InsightClopedia</b>.
+</p><p>This is a community-maintained resource that describes components of the Insight Toolkit and their use.
+</p><p>A classification of filters can be found in the Doxygen documentation's page <a href="http://www.itk.org/Doxygen310/html/modules.html" class="external text" title="http://www.itk.org/Doxygen310/html/modules.html" rel="nofollow">ITK Modules</a>.
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Image_Processing"><span class="tocnumber">1</span> <span class="toctext">Image Processing</span></a></li>
+<li class="toclevel-1"><a href="#Image_Segmentation"><span class="tocnumber">2</span> <span class="toctext">Image Segmentation</span></a></li>
+<li class="toclevel-1"><a href="#Image_Registration"><span class="tocnumber">3</span> <span class="toctext">Image Registration</span></a></li>
+<li class="toclevel-1"><a href="#Meshes"><span class="tocnumber">4</span> <span class="toctext">Meshes</span></a></li>
+<li class="toclevel-1"><a href="#Reading_and_Writing"><span class="tocnumber">5</span> <span class="toctext">Reading and Writing</span></a></li>
+<li class="toclevel-1"><a href="#Wrapping_and_Other_Languages"><span class="tocnumber">6</span> <span class="toctext">Wrapping and Other Languages</span></a></li>
+<li class="toclevel-1"><a href="#DO.27s_and_DON.27Ts_of_ITK"><span class="tocnumber">7</span> <span class="toctext">DO's and DON'Ts of ITK</span></a></li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Image_Processing" id="Image_Processing"></a><h1> <span class="mw-headline"> Image Processing </span></h1>
+<ul><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/Image_Smoothing_Filters&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/Image Smoothing Filters (page does not exist)"> Image Smoothing Filters</a>
+</li><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/Mathematical_Morphology&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/Mathematical Morphology (page does not exist)"> Mathematical Morphology</a>
+</li></ul>
+<a name="Image_Segmentation" id="Image_Segmentation"></a><h1> <span class="mw-headline"> Image Segmentation </span></h1>
+<ul><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/Level_Sets&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/Level Sets (page does not exist)"> Level Sets</a>
+</li><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/Region_Growing_Segmentation_Filters&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/Region Growing Segmentation Filters (page does not exist)"> Region Growing Segmentation Filters</a>
+</li><li> Intensity-Based Image Segmentation Filters
+<ul><li> <a href="/Wiki/ITK/InsightClopedia/Watershed-based_Segmentation_Filters" title="ITK/InsightClopedia/Watershed-based Segmentation Filters"> Watershed-based Segmentation Filters</a>
+</li></ul>
+</li><li> <a href="/Wiki/ITK/InsightClopedia/MeanShiftClustering" title="ITK/InsightClopedia/MeanShiftClustering">Mean shift clustering</a>
+</li><li> <a href="/Wiki/ITK/InsightClopedia/kMeansClustering" title="ITK/InsightClopedia/kMeansClustering">k-Means clustering</a>
+</li></ul>
+<a name="Image_Registration" id="Image_Registration"></a><h1> <span class="mw-headline"> Image Registration </span></h1>
+<ul><li> <a href="/Wiki/ITK/InsightClopedia/Registration" title="ITK/InsightClopedia/Registration"> Registration </a>
+</li></ul>
+<a name="Meshes" id="Meshes"></a><h1> <span class="mw-headline"> Meshes </span></h1>
+<ul><li> <a href="/Wiki/ITK/InsightClopedia/Meshes" title="ITK/InsightClopedia/Meshes">Meshes</a>
+</li></ul>
+<a name="Reading_and_Writing" id="Reading_and_Writing"></a><h1> <span class="mw-headline"> Reading and Writing </span></h1>
+<ul><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/DICOM&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/DICOM (page does not exist)">DICOM</a>
+</li><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/File_Formats&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/File Formats (page does not exist)">File Formats</a>
+</li></ul>
+<a name="Wrapping_and_Other_Languages" id="Wrapping_and_Other_Languages"></a><h1> <span class="mw-headline"> Wrapping and Other Languages </span></h1>
+<ul><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/Wrapping&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/Wrapping (page does not exist)">Wrapping</a>
+</li></ul>
+<a name="DO.27s_and_DON.27Ts_of_ITK" id="DO.27s_and_DON.27Ts_of_ITK"></a><h1> <span class="mw-headline"> DO's and DON'Ts of ITK </span></h1>
+<ul><li> <a href="/Wiki/ITK/InsightClopedia/DOs_and_DONTs" title="ITK/InsightClopedia/DOs and DONTs">DOs_and_DONTs</a>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 8/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:4958-0!1!0!!en!2!edit=0 and timestamp 20100821183914 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.itk.org/Wiki/ITK/InsightClopedia">http://www.itk.org/Wiki/ITK/InsightClopedia</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/InsightClopedia" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/InsightClopedia&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/InsightClopedia&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/Wiki/index.php?title=ITK/InsightClopedia&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK/InsightClopedia" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/Wiki/images/KitwareWiki.png);" href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="/Wiki/Main_Page">Main Page</a></li>
+				<li id="n-portal"><a href="/Wiki/KitwarePublic:Community_Portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="/Wiki/KitwarePublic:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="/Wiki/Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/Wiki/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search KitwarePublic [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK/InsightClopedia" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK/InsightClopedia" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="/Wiki/index.php?title=ITK/InsightClopedia&amp;oldid=21181" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-coll-print_export'>
+		<h5>Print/export</h5>
+		<div class='pBody'>
+<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ITK%2FInsightClopedia" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ITK%2FInsightClopedia&amp;oldid=21181&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="coll-download-as-odf"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ITK%2FInsightClopedia&amp;oldid=21181&amp;writer=odf" title="Download a ODT version of this wiki page" rel="nofollow">Download as ODT</a></li><li id="t-print"><a href="/Wiki/index.php?title=ITK/InsightClopedia&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/Wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://creativecommons.org/licenses/by/2.5/"><img src="http://creativecommons.org/images/public/somerights20.png" alt='Attribution2.5' /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 17 March 2010, at 23:48.</li>
+					<li id="viewcount">This page has been accessed 449 times.</li>
+					<li id="copyright">Content is available under <a href="http://creativecommons.org/licenses/by/2.5/" class="external " title="http://creativecommons.org/licenses/by/2.5/">Attribution2.5</a>.</li>
+					<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li>
+					<li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 1.123 secs. --></body></html>

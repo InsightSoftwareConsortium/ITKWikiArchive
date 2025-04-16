@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="KEYWORDS" content="ITK Release 1.10" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+    <title>ITK Release 1.10 - KitwarePublic</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/Wiki/stylesheets/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/Wiki/stylesheets/commonPrint.css"/>
+    <!--[if IE]><style type="text/css" media="all">@import "/Wiki/stylesheets/monobook/IEFixes.css";</style>
+    <script type="text/javascript" src="/Wiki/stylesheets/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    <script src="/Wiki?title=-&amp;action=raw&amp;gen=js" type="text/javascript"></script>
+    <script type="text/javascript" src="/Wiki/stylesheets/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/ @import "/Wiki?title=-&action=raw&gen=css";
+ /*]]>*/</style>
+    
+  </head>
+  <body class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  <h1 class="firstHeading">ITK Release 1.10</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">From KitwarePublic</h3>
+	    <div id="contentSub"></div>
+	    
+	    
+	    
+	    <!-- start content -->
+	    <table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Table of contents</b> <script type="text/javascript">showTocToggle("show","hide")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#Introducing_GDCM_as_DICOM_reader.2Fwriter">1 Introducing GDCM as DICOM reader/writer</a><br /></div>
+<div class="tocline"><a href="#New_itkVesselTubeSpatialObject_with_metaIO_file_format_to_support_vessel_representation">2 New itkVesselTubeSpatialObject with metaIO file format to support vessel representation</a><br /></div>
+<div class="tocline"><a href="#New_itkDTITubeSpatialObject_with_metaIO_file_format_to_support_DTI_tracts_representation_and_reading.2Fwriting_of_DTI_data">3 New itkDTITubeSpatialObject with metaIO file format to support DTI tracts representation and reading/writing of DTI data</a><br /></div>
+<div class="tocline"><a href="#New_Classes">4 New Classes</a><br /></div>
+<div class="tocline"><a href="#New_Examples">5 New Examples</a><br /></div>
+<div class="tocline"><a href="#New_Tests">6 New Tests</a><br /></div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/Wiki?title=ITK_Release_1.10&amp;action=edit&amp;section=1" title ="ITK Release 1.10">edit</a>]</div><a name="Introducing_GDCM_as_DICOM_reader.2Fwriter"></a><h1> Introducing GDCM as DICOM reader/writer </h1>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/Wiki?title=ITK_Release_1.10&amp;action=edit&amp;section=2" title ="ITK Release 1.10">edit</a>]</div><a name="New_itkVesselTubeSpatialObject_with_metaIO_file_format_to_support_vessel_representation"></a><h1> New itkVesselTubeSpatialObject with metaIO file format to support vessel representation </h1>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/Wiki?title=ITK_Release_1.10&amp;action=edit&amp;section=3" title ="ITK Release 1.10">edit</a>]</div><a name="New_itkDTITubeSpatialObject_with_metaIO_file_format_to_support_DTI_tracts_representation_and_reading.2Fwriting_of_DTI_data"></a><h1> New itkDTITubeSpatialObject with metaIO file format to support DTI tracts representation and reading/writing of DTI data </h1>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/Wiki?title=ITK_Release_1.10&amp;action=edit&amp;section=4" title ="ITK Release 1.10">edit</a>]</div><a name="New_Classes"></a><h1> New Classes </h1>
+<p>Algorithms/itkBinaryPruningImageFilter
+</p><p>Algorithms/itkBinaryThinningImageFilter
+</p><p>Algorithms/itkBioCell
+</p><p>Algorithms/itkBioCellularAggregate
+</p><p>Algorithms/itkBioGenome
+</p><p>Algorithms/itkEuclideanDistancePointMetric
+</p><p>Algorithms/itkKappaStatisticImageToImageMetric
+</p><p>Algorithms/itkOtsuThresholdImageFilter
+</p><p>Algorithms/itkScalarImageKmeansImageFilter
+</p><p>Algorithms/itkSimplexMeshVolumeCalculator
+</p><p>BasicFilters/itkAbsoluteValueDifferenceImageFilter
+</p><p>BasicFilters/itkComplexToImaginaryImageFilter
+</p><p>BasicFilters/itkComplexToRealImageFilter
+</p><p>BasicFilters/itkGrayscaleMorphologicalClosingImageFilter
+</p><p>BasicFilters/itkGrayscaleMorphologicalOpeningImageFilter
+</p><p>BasicFilters/itkMaskNegatedImageFilter
+</p><p>BasicFilters/itkSimpleContourExtractorImageFilter
+</p><p>BasicFilters/itkVotingBinaryHoleFillingImageFilter
+</p><p>BasicFilters/itkVotingBinaryImageFilter
+</p><p>BasicFilters/itkVotingBinaryIterativeHoleFillingImageFilter
+</p><p>BasicFilters/itkWarpMeshFilter
+</p><p>Common/itkChildTreeIterator
+</p><p>Common/itkComplexToImaginaryImageAdaptor
+</p><p>Common/itkComplexToRealImageAdaptor
+</p><p>Common/itkInOrderTreeIterator
+</p><p>Common/itkLeafTreeIterator
+</p><p>Common/itkLevelOrderTreeIterator
+</p><p>Common/itkPhasedArray3DSpecialCoordinatesImage
+</p><p>Common/itkPostOrderTreeIterator
+</p><p>Common/itkPreOrderTreeIterator
+</p><p>Common/itkRootTreeIterator
+</p><p>Common/itkSimpleFilterWatcher
+</p><p>Common/itkSpecialCoordinatesImage
+</p><p>Common/itkTreeChangeEvent
+</p><p>Common/itkTreeContainer
+</p><p>Common/itkTreeContainerBase
+</p><p>Common/itkTreeIteratorBase
+</p><p>Common/itkTreeIteratorClone
+</p><p>Common/itkTreeNode
+</p><p>Common/itkVectorNearestNeighborInterpolateImageFunction
+</p><p><br />
+IO/itkArchetypeSeriesFileNames
+</p><p>IO/itkNrrdImageIO
+</p><p><br />
+Patented/itkActiveShapeModelCalculator
+</p><p>Patented/itkActiveShapeModelGradientSearchMethod
+</p><p>Patented/itkSimpleFuzzyConnectednessImageFilterBase
+</p><p>Patented/itkSimpleFuzzyConnectednessRGBImageFilter
+</p><p>Patented/itkSimpleFuzzyConnectednessScalarImageFilter
+</p><p>Patented/itkVectorFuzzyConnectednessImageFilter
+</p><p><br />
+SpatialObject/itkAffineGeometryFrame
+</p><p>SpatialObject/itkArrowSpatialObject
+</p><p>SpatialObject/itkDTITubeSpatialObject
+</p><p>SpatialObject/itkDTITubeSpatialObjectPoint
+</p><p>SpatialObject/itkMetaArrowConverter
+</p><p>SpatialObject/itkMetaDTITubeConverter
+</p><p>SpatialObject/itkMetaVesselTubeConverter
+</p><p>SpatialObject/itkSpatialObjectTreeContainer
+</p><p>SpatialObject/itkSpatialObjectTreeNode
+</p><p>SpatialObject/itkVesselTubeSpatialObject
+</p><p>SpatialObject/itkVesselTubeSpatialObjectPoint
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/Wiki?title=ITK_Release_1.10&amp;action=edit&amp;section=5" title ="ITK Release 1.10">edit</a>]</div><a name="New_Examples"></a><h1> New Examples </h1>
+<p>DataRepresentation/Image/ImageExamples
+</p><p>DataRepresentation/Mesh/MeshExamples
+</p><p>Filtering/AntiAliasBinaryImageFilter
+</p><p>Filtering/BinaryMedianImageFilter
+</p><p>Filtering/FFTImageFilter
+</p><p>Filtering/LaplacianImageFilter.py
+</p><p>Filtering/MorphologicalImageEnhancement
+</p><p>Filtering/OtsuThresholdImageFilter
+</p><p>Filtering/ResampleImageFilter7
+</p><p>Filtering/ResampleImageFilter8
+</p><p>Filtering/ResampleImageFilter9
+</p><p>Filtering/VotingBinaryHoleFillingImageFilter
+</p><p>Filtering/VotingBinaryIterativeHoleFillingImageFilter
+</p><p>IO/DicomImageReadChangeHeaderWrite
+</p><p>IO/DicomImageReadPrintTags
+</p><p>IO/DicomImageReadWrite
+</p><p>IO/DicomSeriesReadImageWrite2
+</p><p>IO/DicomSeriesReadPrintTags
+</p><p>IO/DicomSeriesReadSeriesWrite
+</p><p>IO/DicomSliceRead.java
+</p><p>IO/DicomSliceRead.py
+</p><p>IO/DicomSliceRead.tcl
+</p><p>Patented/FuzzyConnectednessImageFilter
+</p><p>Patented/HybridSegmentationFuzzyVoronoi
+</p><p>Patented/IterativeClosestPoint1
+</p><p>Patented/IterativeClosestPoint2
+</p><p>Patented/IterativeClosestPoint3
+</p><p>Registration/DeformableRegistration6
+</p><p>Registration/DeformableRegistration7
+</p><p>Registration/DeformableRegistration8
+</p><p>Registration/ImageRegistration14
+</p><p>Segmentation/CellularSegmentation1
+</p><p>Segmentation/CurvesLevelSetImageFilter
+</p><p>Segmentation/RelabelComponentImageFilter
+</p><p>Segmentation/VoronoiSegmentation.java
+</p><p>Segmentation/VoronoiSegmentation.py
+</p><p>Segmentation/VoronoiSegmentation.tcl
+</p><p>Segmentation/WatershedSegmentation1.java
+</p><p>Segmentation/WatershedSegmentation1.tcl
+</p><p>Statistics/ImageEntropy1
+</p><p>Statistics/ImageHistogram4
+</p><p>Statistics/ImageMutualInformation1
+</p><p>Statistics/ScalarImageKmeansClassifier
+</p><p>Statistics/ScalarImageKmeansModelEstimator
+</p><p>Statistics/ScalarImageMarkovRandomField1
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/Wiki?title=ITK_Release_1.10&amp;action=edit&amp;section=6" title ="ITK Release 1.10">edit</a>]</div><a name="New_Tests"></a><h1> New Tests </h1>
+<p>Algorithms/itkAlgorithmsPrintTest4
+</p><p>Algorithms/itkAlgorithmsPrintTests
+</p><p>Algorithms/itkAlgorithmsTests3
+</p><p>Algorithms/itkBioCellTest
+</p><p>Algorithms/itkBioCellularAggregateTest
+</p><p>Algorithms/itkBioGenomeTest
+</p><p>Algorithms/itkFilterWatcher
+</p><p>Algorithms/itkKappaStatisticImageToImageMetricTest
+</p><p>Algorithms/itkMatchCardinalityImageToImageMetricTest
+</p><p>Algorithms/itkOtsuThresholdImageFilterTest
+</p><p>Algorithms/itkRayCastInterpolateImageFunctionTest
+</p><p>Algorithms/itkScalarImageKmeansImageFilterTest
+</p><p>Algorithms/itkSimplexMeshVolumeCalculatorTest
+</p><p>BasicFilters/itkAbsoluteValueDifferenceImageFilterTest
+</p><p>BasicFilters/itkComplexToImaginaryFilterAndAdaptorTest
+</p><p>BasicFilters/itkComplexToRealFilterAndAdaptorTest
+</p><p>BasicFilters/itkGrayscaleMorphologicalClosingImageFilterTest
+</p><p>BasicFilters/itkGrayscaleMorphologicalOpeningImageFilterTest
+</p><p>BasicFilters/itkMaskNegatedImageFilterTest
+</p><p>BasicFilters/itkResamplePhasedArray3DSpecialCoordinatesImageTest
+</p><p>BasicFilters/itkVotingBinaryHoleFillingImageFilterTest
+</p><p>BasicFilters/itkVotingBinaryImageFilterTest
+</p><p>BasicFilters/itkVotingBinaryIterativeHoleFillingImageFilterTest
+</p><p>BasicFilters/itkWarpMeshFilterTest
+</p><p>Common/itkCenteredEuler3DTransformTest
+</p><p>Common/itkDirectoryTest
+</p><p>Common/itkImageTest
+</p><p>Common/itkPhasedArray3DSpecialCoordinatesImageTest
+</p><p>Common/itkSizeTest
+</p><p>Common/itkTreeContainerTest
+</p><p>Common/itkTreeContainerTest2
+</p><p><br />
+IO/itkArchetypeSeriesFileNamesTest
+</p><p>IO/itkImageFileWriterTest
+</p><p>IO/itkNrrdImageIOTest
+</p><p>IO/itkNrrdImageIOTest
+</p><p>Patented/itkActiveShapeModelCalculatorTest
+</p><p>Patented/itkPatentedHeaderTest
+</p><p>Patented/itkPatentedPrintTest
+</p><p>Patented/itkPatentedTests
+</p><p>Patented/itkSimpleFuzzyConnectednessScalarImageFilterTest
+</p><p>Patented/itkVectorFuzzyConnectednessImageFilterTest
+</p><p>SpatialObject/itkAffineGeometryFrameTest
+</p><p>SpatialObject/itkArrowSpatialObjectTest
+</p><p>SpatialObject/itkSpatialObjectTreeContainerTest
+</p>
+	    
+	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK_Release_1.10">Article</a></li><li id="ca-talk" class="new"><a href="/Wiki?title=Talk:ITK_Release_1.10&amp;action=edit">Discussion</a></li><li id="ca-edit" class=""><a href="/Wiki?title=ITK_Release_1.10&amp;action=edit">Edit</a></li><li id="ca-history"><a href="/Wiki?title=ITK_Release_1.10&amp;action=history">History</a></li>
+	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Personal tools</h5>
+	  <div class="pBody">
+	    <ul>
+	      <li id="pt-login"><a href="/Wiki?title=Special:Userlogin&amp;returnto=ITK_Release_1.10">Log in</a></li>
+	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a title="Main Page" style="background-image: url(/Wiki/images/wiki.gif);" href="/Wiki/Main_Page"></a>
+	</div>
+	<div class="portlet" id="p-nav">
+	  <h5>Navigation</h5>
+	  <div class="pBody">
+	    <ul>
+	      <li id="n-mainpage"><a href="/Wiki/Main_Page">Main Page</a>
+                <ul>
+                  <li><a href="http://www.cmake.org/Wiki/CMake">CMake</a></li>
+                  <li><a href="http://www.itk.org/Wiki/ITK">ITK</a></li>
+                  <li><a href="http://www.vtk.org/Wiki/VTK">VTK</a></li>
+                </ul>
+                <br/>
+                </li>
+	      <li id="n-mainpage"><a href="http://public.kitware.com">External Links</a>
+                <ul>
+                  <li><a href="http://www.cmake.org">CMake Home</a></li>
+                  <li><a href="http://www.itk.org">ITK Home</a></li>
+                  <li><a href="http://www.vtk.org">VTK Home</a></li>
+                  <li><a href="http://public.kitware.com/Bug">Bug Tracker</a></li>
+                  <li><a href="http://public.kitware.com/dashboard.php">Dashboard</a></li>
+                  <li><a href="http://public.kitware.com/download.php">Downloads</a></li>
+                </ul>
+                <br/>
+                </li>
+	      <!-- <li id="n-portal" tal:condition="nav_urls/portal/href"><a href="/Wiki/KitwarePublic:Community_Portal"
+		i18n:translate="string:portal">Community Portal</a></li>
+	      <li id="n-currentevents" tal:condition="nav_urls/currentevents/href"><a href="/Wiki/Current_events"
+		i18n:translate="string:currentevents">Current Events</a></li>
+              -->
+	      <li id="n-recentchanges"><a href="/Wiki/Special:Recentchanges">Recent changes</a></li>
+	      <li id="n-randompage"><a href="/Wiki/Special:Randompage">Random page</a></li>
+              <!--
+	      <li id="n-help"><a href="/Wiki/Help:Contents"
+		i18n:translate="string:help">Help</a></li>
+	      <li id="n-sitesupport" tal:condition="nav_urls/sitesupport/href"><a href=""
+		i18n:translate="string:sitesupport">Donations</a></li>
+              -->
+	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5>Search</h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/Wiki/Special:Search" id="searchform">
+	      <input accesskey="f" id="searchInput" name="search" type="text" />
+	      <input value="Go" type="submit" name="go" class="searchButton" />&nbsp;<input value="Search" type="submit" name="fulltext" class="searchButton" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Toolbox</h5>
+	  <div class="pBody">
+	    <ul>
+	      <li id="t-whatlinkshere"><a href="/Wiki?title=Special:Whatlinkshere&amp;target=ITK_Release_1.10">What links here</a></li>
+	      <li id="t-recentchangeslinked"><a href="/Wiki?title=Special:Recentchangeslinked&amp;target=ITK_Release_1.10">Related changes</a></li>
+	      
+	      
+	      
+	      
+	      <li id="t-specialpages"><a href="/Wiki/Special:Specialpages">Special pages</a></li>
+	    </ul>
+	  </div>
+	</div>
+	
+      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+	<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/Wiki/stylesheets/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>
+	
+	<ul id="f-list">
+	  <li id="f-lastmod"> This page was last modified 18:35, 10 Jan 2005.</li>
+	  <li id="f-viewcount">This page has been accessed 137 times.</li>
+	  
+	  
+	  <li id="f-about"><a href="/Wiki/KitwarePublic:About" title ="KitwarePublic:About">About KitwarePublic</a></li>
+	  <li id="f-disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title ="KitwarePublic:General disclaimer">Disclaimers</a></li>
+	</ul>
+      </div>
+    </div>
+    <!-- Served by public in 0.39 secs. -->
+  </body>
+</html>

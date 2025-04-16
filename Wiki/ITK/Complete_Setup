@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Complete Setup - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"e129fb4b76d76b919374a490","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Complete_Setup","wgTitle":"ITK/Complete Setup","wgCurRevisionId":45621,"wgRevisionId":45621,"wgArticleId":1668,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CompleteSetup"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Complete_Setup","wgRelevantArticleId":1668,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":
+"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.7"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Complete_Setup rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Complete Setup</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>This page will describe setting up the Kitware tools on an Ubuntu (or any Debian, really) workstation.  I assume that you have a basic install of Debian/Ubuntu.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Preparing_your_system"><span class="tocnumber">1</span> <span class="toctext">Preparing your system</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Getting_the_sources"><span class="tocnumber">2</span> <span class="toctext">Getting the sources</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#ITK"><span class="tocnumber">2.1</span> <span class="toctext">ITK</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#VTK"><span class="tocnumber">2.2</span> <span class="toctext">VTK</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#KWWidgets"><span class="tocnumber">2.3</span> <span class="toctext">KWWidgets</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Compiling_the_sources"><span class="tocnumber">3</span> <span class="toctext">Compiling the sources</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#ITK_2"><span class="tocnumber">3.1</span> <span class="toctext">ITK</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#VTK_2"><span class="tocnumber">3.2</span> <span class="toctext">VTK</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#InsightApplications"><span class="tocnumber">3.3</span> <span class="toctext">InsightApplications</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#KWWidgets_2"><span class="tocnumber">3.4</span> <span class="toctext">KWWidgets</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Running_the_Examples"><span class="tocnumber">4</span> <span class="toctext">Running the Examples</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Writing_a_Simple_Program_(ITK)"><span class="tocnumber">5</span> <span class="toctext">Writing a Simple Program (ITK)</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Writing_a_Simple_Program_(ITK+FLTK)"><span class="tocnumber">6</span> <span class="toctext">Writing a Simple Program (ITK+FLTK)</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Writing_a_Simple_Program_(VTK)"><span class="tocnumber">7</span> <span class="toctext">Writing a Simple Program (VTK)</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Writing_a_Simple_Program_(ITK+VTK)"><span class="tocnumber">8</span> <span class="toctext">Writing a Simple Program (ITK+VTK)</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Writing_a_Simple_Program_(ITK+VTK+KWWidgets)"><span class="tocnumber">9</span> <span class="toctext">Writing a Simple Program (ITK+VTK+KWWidgets)</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Preparing_your_system">Preparing your system</span></h2>
+<p>For ITK, install the following packages:
+</p>
+<ul><li>gcc</li>
+<li>g++</li>
+<li>make</li>
+<li>cmake</li>
+<li>cvs</li>
+<li>libc6-dev</li></ul>
+<p>For VTK, install the following packages:
+</p>
+<ul><li>tcl8.4-dev</li>
+<li>tk8.4-dev</li>
+<li>libgl1-mesa-dev</li></ul>
+<p>For FLTK, install the following packages:
+</p>
+<ul><li>libfltk1.1-dev</li>
+<li>libglu1-mesa-dev</li>
+<li>fluid</li></ul>
+<p>For QT, install the following packages:
+</p>
+<ul><li>qt3-apps-dev</li>
+<li>qt3-dev-tools</li>
+<li>libqt3-i18n</li></ul>
+<h2><span class="mw-headline" id="Getting_the_sources">Getting the sources</span></h2>
+<p>Do this in your home directory.  It will take a long time, depending on your connection speed.
+</p>
+<h3><span class="mw-headline" id="ITK">ITK</span></h3>
+<pre> cvs -d :pserver:anonymous@www.itk.org:/cvsroot/Insight login
+</pre>
+<p>password: insight
+</p>
+<pre> cvs -d :pserver:anonymous@www.itk.org:/cvsroot/Insight co Insight
+</pre>
+<p>You can also get the Insight documentation (optional):
+</p>
+<pre> cvs -d :pserver:anonymous@www.itk.org:/cvsroot/Insight co InsightDocuments
+</pre>
+<p>A variety of Insight demo applications are available in the InsightApplications module (optional):
+</p>
+<pre> cvs -d :pserver:anonymous@www.itk.org:/cvsroot/Insight co InsightApplications 
+</pre>
+<h3><span class="mw-headline" id="VTK">VTK</span></h3>
+<pre> cvs -d :pserver:anonymous@public.kitware.com:/cvsroot/VTK login
+</pre>
+<p>password: vtk
+</p>
+<pre> cvs -d :pserver:anonymous@public.kitware.com:/cvsroot/VTK checkout VTK
+</pre>
+<p>For testing purposes you might wish to checkout the CVS VTKData (optional):
+</p>
+<pre> cvs -d :pserver:anonymous@public.kitware.com:/cvsroot/VTKData login
+</pre>
+<p>password: vtk
+</p>
+<pre> cvs -d :pserver:anonymous@public.kitware.com:/cvsroot/VTKData checkout VTKData
+</pre>
+<h3><span class="mw-headline" id="KWWidgets">KWWidgets</span></h3>
+<pre> cvs -d :pserver:anoncvs@www.kwwidgets.org:/cvsroot/KWWidgets login
+</pre>
+<p>password: &lt;just hit return&gt;
+</p>
+<pre> cvs -d :pserver:anoncvs@www.kwwidgets.org:/cvsroot/KWWidgets co KWWidgets
+</pre>
+<p>Asssuming you did all this in your home directory, you have the directories Insight, InsightDocuments, InsightApplications, VTK, VTKData, KWWidgets
+</p>
+<h2><span class="mw-headline" id="Compiling_the_sources">Compiling the sources</span></h2>
+<h3><span class="mw-headline" id="ITK_2">ITK</span></h3>
+<p>As in the ITK Software Guide:
+</p>
+<pre> mkdir $HOME/Insight-bin
+ cd $HOME/Insight-bin
+ ccmake ../Insight
+</pre>
+<p>Hit c to configure, then g if everything went well.  Then type
+</p>
+<pre> make
+</pre>
+<p>This will take a while, depending on the speed of your machine.  It took about ~4hrs on a P4-2.8GHz with 2GB RAM. If you want to speed up the compilation, you can set the variables BUILD_TESTING and BUILD_EXAMPLES to OFF.
+</p>
+<h3><span class="mw-headline" id="VTK_2">VTK</span></h3>
+<pre> cd $HOME/VTK
+ ccmake .
+</pre>
+<p>Hit c to configure, then g if everything went well.  You will probably have to hit c a number of times, setting variables in between.  I set BUILD_EXAMPLES and VTK_WRAP_TCL to ON.  When I tried to compile InsightApplications later, it required VTK built with VTK_USE_HYBRID, so set that too.
+</p>
+<h3><span class="mw-headline" id="InsightApplications">InsightApplications</span></h3>
+<pre> mkdir $HOME/IA-bin
+ cd $HOME/IA-bin
+ ccmake ../InsightApplications
+</pre>
+<p>Hit c to configure, then g if everything went well.  I set ITK_DIR to $HOME/Insight-bin, VTK_DIR to $HOME/VTK and USE_FLTK to ON
+</p>
+<h3><span class="mw-headline" id="KWWidgets_2">KWWidgets</span></h3>
+<pre> cd $HOME/KWWidgets
+ ccmake .
+</pre>
+<p>Hit c to configure, then g if everything went well.
+</p><p>KWWidgets won't build if the VTK installation it uses doesn't have certain flags set. You need
+</p>
+<pre> VTK_WRAP_TCL=ON
+ VTK_USE_TK=ON
+</pre>
+<h2><span class="mw-headline" id="Running_the_Examples">Running the Examples</span></h2>
+<pre> $HOME/Insight-bin/bin
+</pre>
+<p>will have all of the examples in the ITK Software Guide.  They are standalone executables.
+</p>
+<pre> $HOME/KWWidgets/bin 
+</pre>
+<p>will have all the examples from KWWidgets.  They are standalone executables. KWWidgetsSetupPaths.sh is a useful script that you should run before trying to run any tcl or python code that uses KWWidgets.
+</p>
+<pre> $HOME/VTK/bin
+</pre>
+<p>will also have a bunch of executable files.  An important one is $HOME/VTK/bin/vtk, use that one to run any examples written in tcl:
+</p>
+<pre> $HOME/VTK/bin/vtk $HOME/VTK/Examples/ImageProcessing/Tcl/Contours2D.tcl
+</pre>
+<h2><span id="Writing_a_Simple_Program_.28ITK.29"></span><span class="mw-headline" id="Writing_a_Simple_Program_(ITK)">Writing a Simple Program (ITK)</span></h2>
+<p>Read the ITK Software Guide.  Start with the Hello World example there.  All of the code in the ITK Software Guide is in the Examples subdirectory of the InsightToolkit.  Most simple command-line programs can be made by slightly modifying one of the examples from the ITK Software Guide.  For example, I modified the Examples/Filtering/SubsampleVolume.cxx file to use the WindowedSincInterpolateImageFunction with the Welch window.
+</p><p><a href="/Wiki/SubsampleVolume-alex.cxx" title="SubsampleVolume-alex.cxx">SubsampleVolume-alex.cxx</a>
+<a href="/Wiki/SubsampleVolume-alex.cxx_CMakeLists.txt" title="SubsampleVolume-alex.cxx CMakeLists.txt">SubsampleVolume-alex.cxx CMakeLists.txt</a>
+</p>
+<h2><span id="Writing_a_Simple_Program_.28ITK.2BFLTK.29"></span><span class="mw-headline" id="Writing_a_Simple_Program_(ITK+FLTK)">Writing a Simple Program (ITK+FLTK)</span></h2>
+<p>Take a look at some InsightApplications.  Many of them have FLTK-based GUIs.  You will need to use the fluid application in order to design the GUI.
+</p><p>I was able to modify an application in place, and recompile InsightApplications to see the results.  It is not clear to me how to do an out-of-tree build that uses both FLTK and ITK.  It'd be nice to link here to a sample CMakeLists.txt file that does this.
+</p>
+<h2><span id="Writing_a_Simple_Program_.28VTK.29"></span><span class="mw-headline" id="Writing_a_Simple_Program_(VTK)">Writing a Simple Program (VTK)</span></h2>
+<p>Read the Examples subdirectory of the VTK distribution.  Start with VTK/Examples/Tutorial/README.txt
+</p>
+<h2><span id="Writing_a_Simple_Program_.28ITK.2BVTK.29"></span><span class="mw-headline" id="Writing_a_Simple_Program_(ITK+VTK)">Writing a Simple Program (ITK+VTK)</span></h2>
+<p><a rel="nofollow" class="external free" href="http://www.na-mic.org/Wiki/images/e/ed/Insight-VTK.ppt">http://www.na-mic.org/Wiki/images/e/ed/Insight-VTK.ppt</a>
+<a rel="nofollow" class="external free" href="http://www.itk.org/Wiki/Itk_FAQ#How_to_combine_ITK_and_VTK_in_my_application">http://www.itk.org/Wiki/Itk_FAQ#How_to_combine_ITK_and_VTK_in_my_application</a>
+</p><p>See also InsightApplications/Auxiliary/vtk/
+</p><p>Here's a simple program I wrote which reads in a 3D Image via ITK and uses the itkImageToVTKImageFilter to convert it to a vtkVolume and display it.
+</p><p><a href="/Wiki/Test.cxx" title="Test.cxx">test.cxx</a> <a href="/Wiki/Test.cxx_CMakeLists.txt" title="Test.cxx CMakeLists.txt">test.cxx_CMakeLists.txt</a>
+</p><p>The programs above use the itkImageToVTKImageFilter to convert an itk::Image to a vtkImage.  There's also a itkMeshTovtkPolyData class (type that into Google).
+</p>
+<h2><span id="Writing_a_Simple_Program_.28ITK.2BVTK.2BKWWidgets.29"></span><span class="mw-headline" id="Writing_a_Simple_Program_(ITK+VTK+KWWidgets)">Writing a Simple Program (ITK+VTK+KWWidgets)</span></h2>
+<p>I extended the above ITK+VTK example by creating a vtkKWApplication with a vtkKWRenderWidget and assigning my renderer to it.  I also added a widget which allows you to modify the opacity in real-time (vtkKWPiecewiseFunctionEditor).
+</p><p><a href="/Wiki/KWHelloWorldExample-alex.cxx" title="KWHelloWorldExample-alex.cxx">KWHelloWorldExample-alex.cxx</a> <a href="/Wiki/KWHelloWorldExample-alex.cxx_CMakeLists.txt" title="KWHelloWorldExample-alex.cxx CMakeLists.txt">KWHelloWorldExample-alex.cxx_CMakeLists.txt</a>
+</p><p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>Complete Setup: &#91;<a href="/Wiki/index.php?title=CompleteSetup&amp;action=edit&amp;redlink=1" class="new" title="CompleteSetup (page does not exist)">Welcome</a> | <a href="/Wiki/index.php?title=Category:CompleteSetup&amp;action=edit&amp;redlink=1" class="new" title="Category:CompleteSetup (page does not exist)">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20250330153405
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.011 seconds
+Real time usage: 0.012 seconds
+Preprocessor visited node count: 56/1000000
+Post‐expand include size: 273/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.423      1 -total
+100.00%    3.423      1 Template:CompleteSetup/Template/Footer
+ 44.49%    1.523      1 Template:CompleteSetup/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:1668-0!canonical and timestamp 20250330153405 and revision id 45621. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Complete_Setup&amp;oldid=45621">https://public.kitware.com/Wiki/index.php?title=ITK/Complete_Setup&amp;oldid=45621</a>"</div></div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/index.php?title=Category:CompleteSetup&amp;action=edit&amp;redlink=1" class="new" title="Category:CompleteSetup (page does not exist)">CompleteSetup</a></li></ul></div></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Complete_Setup" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK/Complete_Setup" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Complete_Setup">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Complete_Setup&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Complete_Setup&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Complete_Setup" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK/Complete_Setup" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FComplete+Setup" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Complete_Setup" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Complete_Setup" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Complete_Setup&amp;oldid=45621" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Complete_Setup&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 10 February 2012, at 20:06.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.011","walltime":"0.012","ppvisitednodes":{"value":56,"limit":1000000},"postexpandincludesize":{"value":273,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    3.423      1 -total","100.00%    3.423      1 Template:CompleteSetup/Template/Footer"," 44.49%    1.523      1 Template:CompleteSetup/Template/Categories"]},"cachereport":{"timestamp":"20250330153405","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":88});});</script>
+</body>
+</html>

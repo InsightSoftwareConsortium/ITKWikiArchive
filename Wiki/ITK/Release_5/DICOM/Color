@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 5/DICOM/Color - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"fd2d991383f3b423345c32e7","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_5/DICOM/Color","wgTitle":"ITK/Release 5/DICOM/Color","wgCurRevisionId":63976,"wgRevisionId":63976,"wgArticleId":14491,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_5/DICOM/Color","wgRelevantArticleId":14491,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready",
+"user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_5_DICOM_Color rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Release 5/DICOM/Color</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_5" title="ITK/Release 5">Release 5</a>&lrm; | <a href="/Wiki/ITK/Release_5/DICOM" title="ITK/Release 5/DICOM">DICOM</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Multiple_Components_in_DICOM"><span class="tocnumber">1</span> <span class="toctext">Multiple Components in DICOM</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#ITK_5.0"><span class="tocnumber">1.1</span> <span class="toctext">ITK 5.0</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Issue"><span class="tocnumber">1.2</span> <span class="toctext">Issue</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Notation"><span class="tocnumber">1.3</span> <span class="toctext">Notation</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#ITK_5.x"><span class="tocnumber">1.4</span> <span class="toctext">ITK 5.x</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Discussion"><span class="tocnumber">1.5</span> <span class="toctext">Discussion</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Data"><span class="tocnumber">1.6</span> <span class="toctext">Data</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#References"><span class="tocnumber">1.7</span> <span class="toctext">References</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Multiple_Components_in_DICOM">Multiple Components in DICOM</span></h1>
+<h2><span class="mw-headline" id="ITK_5.0">ITK 5.0</span></h2>
+<p>DICOM standard allow storing of image with more than one components. As of today, only 1 or 3 components are considered valid DICOM SOP Class instances (for all IODs).
+</p><p>By design the itk::GDCMImageIO was designed and implemented so that an input YBR_FULL image would be loaded as such (no implicit conversion to RGB was done). The main reason for that is that ITK is a processing toolkit, so quantitative analysis is supposed to be done on the best possible pixel representation. Since conversion from integer YBR_FULL to integer RGB colorspace is a lossy operation (truncation in floating point representation), the conversion has never been implemented.
+</p><p>As side note MONOCHROME1 color space is not converted to MONOCHROME2 (itk::GDCMImageIO / ITK 5.0)
+</p><p>ITK currently does not have any standard way of noting the color space of an Image. Originally, there was a direct mapping between the `ImageIOBase::PixelType` and the intended pixel type used for the template parameter in the `Image` class. Modern usage of ITK frequently uses the generalized `VectorImage` to hold multi-component images so there may even be less knowledge of the content in the Image buffer. Additionally, we need to consider the default behavior of `ConverPixeltBuffer` (<a rel="nofollow" class="external free" href="https://itk.org/Doxygen/html/classitk_1_1ConvertPixelBuffer.html">https://itk.org/Doxygen/html/classitk_1_1ConvertPixelBuffer.html</a>), which may be applied when an image is loaded by the `ImageFileReader`. For example if the ImageIO loads a 3 component pixel buffer and the ImageFileReader is templated over a scalar image default a RGB to Gray scale  conversion occurs based on the CIE luminance for the 3-components.
+</p>
+<h2><span class="mw-headline" id="Issue">Issue</span></h2>
+<p>This behavior was considered ok, as long as the image was not directly loaded in viz application such as Slicer, where unexpectedly the image would appears with a weird color scheme. (original bug report from Mihail Isakov)
+</p><p>BCL: After hearing the descriptions of the issue, I considered loading YBR directly as a bug because GDCMImageIO was reporting the pixel type as `IOPixelType::RGB` and the buffer was  in YBR color space. If the image is loaded in YBR color space is should have a different `IOPixelType` may be `VECTOR` or `FIXEDARRAY` for lack of a more descriptive `IOPixelType`.
+</p>
+<h2><span class="mw-headline" id="Notation">Notation</span></h2>
+<ol><li>JPEG refers to the subset of ITU-T T.81, ISO/IEC IS 10918-1 (lossy 8bits)</li>
+<li>JPEG 2000 refers to ITU-T T.800, ISO/IEC IS 15444-1</li></ol>
+<h2><span class="mw-headline" id="ITK_5.x">ITK 5.x</span></h2>
+<p>The behavior for YBR_FULL vs RGB color model has been discussed and it seems consensus would be to convert to RGB always. Since DICOM, JPEG and TIFF can be somewhat relates for this matter, we should strive to keep the behavior consistent.
+</p><p>Current behavior of ITK 5.0:
+</p>
+<table border="1" style="text-align:center">
+
+<tbody><tr bgcolor="#abcdef">
+<th>Photometric Interpretation</th>
+<th>JPEG</th>
+<th>TIFF</th>
+<th>GDCM</th>
+<th>DCMTK
+</th></tr>
+<tr>
+<th>MONOCHROME1</th>
+<th style="background:silver">X</th>
+<th style="background:orange">MONOCHROME2 (aka min-is-black)</th>
+<th style="background:lime">MONOCHROME1</th>
+<th style="background:lime">?MONOCHROME1?
+</th></tr>
+<tr>
+<th>MONOCHROME2</th>
+<th style="background:lime">MONOCHROME2</th>
+<th style="background:lime">MONOCHROME2 (aka min-is-black)</th>
+<th style="background:lime">MONOCHROME2</th>
+<th style="background:lime">MONOCHROME2
+</th></tr>
+<tr>
+<th>PALETTE COLOR</th>
+<th style="background:silver">X</th>
+<th style="background:orange">RGB (??)</th>
+<th style="background:orange">Converted to RGB</th>
+<th style="background:orange">?Converted to RGB? (need to check compressed LUT)
+</th></tr>
+<tr>
+<th>RGB</th>
+<th style="background:orange">RGB</th>
+<th>RGB</th>
+<th>RGB</th>
+<th>?RGB?
+</th></tr>
+<tr style="background:silver">
+<th>HSV</th>
+<th></th>
+<th></th>
+<th></th>
+<th>
+</th></tr>
+<tr style="background:silver">
+<th>ARGB</th>
+<th></th>
+<th></th>
+<th></th>
+<th>
+</th></tr>
+<tr style="background:silver">
+<th>CMYK</th>
+<th></th>
+<th></th>
+<th></th>
+<th>
+</th></tr>
+<tr>
+<th>YBR_FULL</th>
+<th style="background:silver">ITU 81 enforce sub-sampling</th>
+<th>??</th>
+<th>YBR_FULL</th>
+<th>??
+</th></tr>
+<tr>
+<th>YBR_FULL_422</th>
+<th style="background:orange">RGB</th>
+<th style="background:orange">RGB</th>
+<th>YBR_FULL</th>
+<th>??Maybe RGB?
+</th></tr>
+<tr style="background:silver">
+<th>YBR_PARTIAL_422</th>
+<th></th>
+<th></th>
+<th></th>
+<th>
+</th></tr>
+<tr style="background:silver">
+<th>YBR_PARTIAL_420</th>
+<th></th>
+<th></th>
+<th></th>
+<th>
+</th></tr>
+<tr>
+<th>YBR_ICT</th>
+<th style="background:silver">ITU 81 does not support this colorspace</th>
+<th>??</th>
+<th style="background:orange">RGB</th>
+<th style="background:red">no J2K plugin
+</th></tr>
+<tr>
+<th>YBR_RCT</th>
+<th style="background:silver">ITU 81 does not support this colorspace</th>
+<th>??</th>
+<th>RGB</th>
+<th style="background:red">no J2K plugin
+</th></tr>
+</tbody></table>
+<p><br />
+Desired behavior of ITK 5.0:
+</p>
+<table border="1" style="text-align:center">
+
+<tbody><tr bgcolor="#abcdef">
+<th>Photometric Interpretation</th>
+<th>JPEG</th>
+<th>TIFF</th>
+<th>GDCM</th>
+<th>DCMTK
+</th></tr>
+<tr>
+<th>MONOCHROME1</th>
+<th style="background:silver">X</th>
+<th style="background:orange">MONOCHROME2  (aka min-is-black)</th>
+<th style="background:orange">MONOCHROME2</th>
+<th style="background:orange">MONOCHROME2
+</th></tr>
+<tr>
+<th>MONOCHROME2</th>
+<th style="background:lime">MONOCHROME2</th>
+<th style="background:lime">MONOCHROME2  (aka min-is-black)</th>
+<th style="background:lime">MONOCHROME2</th>
+<th style="background:lime">MONOCHROME2
+</th></tr>
+<tr>
+<th>PALETTE COLOR</th>
+<th style="background:silver">X</th>
+<th style="background:orange">RGB</th>
+<th style="background:orange">Converted to RGB</th>
+<th style="background:orange">RGB
+</th></tr>
+<tr>
+<th>RGB</th>
+<th style="background:orange">RGB</th>
+<th>RGB</th>
+<th>RGB</th>
+<th>?RGB?
+</th></tr>
+<tr style="background:silver">
+<th>HSV</th>
+<th></th>
+<th></th>
+<th></th>
+<th>
+</th></tr>
+<tr style="background:silver">
+<th>ARGB</th>
+<th></th>
+<th></th>
+<th></th>
+<th>
+</th></tr>
+<tr style="background:silver">
+<th>CMYK</th>
+<th></th>
+<th></th>
+<th></th>
+<th>
+</th></tr>
+<tr>
+<th>YBR_FULL</th>
+<th style="background:silver">ITU 81 enforce sub-sampling</th>
+<th>??</th>
+<th style="background:orange">RGB</th>
+<th style="background:orange">RGB
+</th></tr>
+<tr>
+<th>YBR_FULL_422</th>
+<th style="background:orange">RGB</th>
+<th style="background:orange">RGB</th>
+<th style="background:orange">RGB</th>
+<th style="background:orange">RGB
+</th></tr>
+<tr style="background:silver">
+<th>YBR_PARTIAL_422</th>
+<th></th>
+<th></th>
+<th></th>
+<th>
+</th></tr>
+<tr style="background:silver">
+<th>YBR_PARTIAL_420</th>
+<th></th>
+<th></th>
+<th></th>
+<th>
+</th></tr>
+<tr>
+<th>YBR_ICT</th>
+<th></th>
+<th></th>
+<th style="background:orange">RGB</th>
+<th style="background:red">no J2K plugin
+</th></tr>
+<tr>
+<th>YBR_RCT</th>
+<th></th>
+<th></th>
+<th>RGB</th>
+<th style="background:red">no J2K plugin
+</th></tr>
+</tbody></table>
+<p>When a Photometric Interpretation is specified in red, it means this is not supposed to happen (does not make any sense).
+When a Photometric Interpretation is specified in silver background, it means the Photometric Interpretation is retired.
+</p>
+<h2><span class="mw-headline" id="Discussion">Discussion</span></h2>
+<p>Participants:
+</p>
+<ol><li>Mathieu Malaterre</li>
+<li>Mihail Isakov</li>
+<li>Bradley Lowekamp</li></ol>
+<p>For visualization people it is important that:
+</p>
+<ol><li>MONOCHROME1 (min-is-white) is converted to MONOCHROME2 (min-is-black)</li>
+<li>YBR_FULL / YBR_FULL_422 are converted to RGB</li></ol>
+<p>The requirements for quantitative analysis may be different, please list reqs here:
+</p>
+<ol><li>? Extract Luminance out of YBR&#160;?</li>
+<li>? Need MONOCHROME1 native support, because &lt;fill reason&#160;??&gt;</li>
+<li>? Is there a need to manipulated native palette data&#160;? I doubt so
+<ol><li>BL: The `ExpandRGBPalette` attribute was just added to `ImageIOBase`. TIFFImageIO support this option.  For feature consistency it would be nice for GDCMImageIO to support this feature. <a rel="nofollow" class="external free" href="https://itk.org/Doxygen/html/classitk_1_1ImageIOBase.html#a04804c60d755ae102e104261536a0f46">https://itk.org/Doxygen/html/classitk_1_1ImageIOBase.html#a04804c60d755ae102e104261536a0f46</a> <a rel="nofollow" class="external free" href="https://github.com/InsightSoftwareConsortium/ITK/pull/1219/files">https://github.com/InsightSoftwareConsortium/ITK/pull/1219/files</a></li></ol></li></ol>
+<p>For ITK consistency it is important that the `ImageIOBase::PixelType` is set correctly so that users of the `ITK::ImageIOBase` API know generally what the image buffer is and how to load and use the image. We likely should improve the documentation in the ImageIOBase class about the expectations for how these are used. Here is a list of type pertinent to this discussion:
+</p>
+<ol><li>RGB
+<ol><li>BL: should only be used for general RGB buffers. This is not very descriptive of the color space sRGB, AdobeRGB, Linear RGB etc., but using this as a type for general "color" buffers should be avoided IMHO.</li></ol></li>
+<li>SCALAR
+<ol><li>BL: Images of unapplied palettes, when ExpandRGBPalette is false, are currently labeled as scalars</li></ol></li>
+<li>VECTOR
+<ol><li>BL: Currently this is frequently used for displacement fields.</li></ol></li>
+<li>FIXEDARRAY
+<ol><li>BL: Not regularly used to my knowledge, and may be the most generic multi-component `PixelType`, so this may be the base label to used for YBR, CMYK etc.</li></ol></li></ol>
+<h2><span class="mw-headline" id="Data">Data</span></h2>
+<ol><li>JPEG 8 bits mono2</li>
+<li>JPEG 8 bits YBR_422</li>
+<li>JPEG 8 bits RGB</li>
+<li>TIFF mono1 min-is-white</li>
+<li>TIFF mono2 min-is-black</li>
+<li>TIFF YBR_422</li>
+<li>TIFF RGB</li>
+<li>DICOM mono1 min-is-white</li>
+<li>DICOM mono2 min-is-black</li>
+<li>DICOM YBR</li>
+<li><a rel="nofollow" class="external text" href="https://sourceforge.net/p/gdcm/gdcmdata/ci/master/tree/US-YBR_FULL_422-EVRLE.dcm%7C">DICOM YBR_422</a></li>
+<li><a rel="nofollow" class="external text" href="https://sourceforge.net/p/gdcm/gdcmdata/ci/master/tree/US-GE-4AICL142.dcm%7C">DICOM JPEG/YBR_422</a></li>
+<li>DICOM RGB</li>
+<li>DICOM YBR_RCT</li>
+<li>DICOM YBR_ICT</li></ol>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ul><li><a rel="nofollow" class="external free" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.3.html#sect_C.7.6.3.1.2">http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.3.html#sect_C.7.6.3.1.2</a></li>
+<li><a rel="nofollow" class="external free" href="http://gdcm.sourceforge.net/wiki/index.php/Color_Space_Transformations">http://gdcm.sourceforge.net/wiki/index.php/Color_Space_Transformations</a></li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20230922023932
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.012 seconds
+Real time usage: 0.013 seconds
+Preprocessor visited node count: 23/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:14491-0!canonical and timestamp 20230922023932 and revision id 63976. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_5/DICOM/Color&amp;oldid=63976">https://public.kitware.com/Wiki/index.php?title=ITK/Release_5/DICOM/Color&amp;oldid=63976</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_5/DICOM/Color" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_5/DICOM/Color&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_5/DICOM/Color">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_5/DICOM/Color&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_5/DICOM/Color&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_5/DICOM/Color" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_5/DICOM/Color&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+5%2FDICOM%2FColor" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_5/DICOM/Color" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_5/DICOM/Color" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_5/DICOM/Color&amp;oldid=63976" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_5/DICOM/Color&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 11 October 2019, at 14:37.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.012","walltime":"0.013","ppvisitednodes":{"value":23,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20230922023932","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":109});});</script>
+</body>
+</html>

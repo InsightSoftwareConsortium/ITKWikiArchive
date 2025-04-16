@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Backward Compatibility Open Discussion - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"872f221f6d3c1a046aff0b89","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Backward_Compatibility_Open_Discussion","wgTitle":"ITK/Backward Compatibility Open Discussion","wgCurRevisionId":45775,"wgRevisionId":45775,"wgArticleId":3134,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Backward_Compatibility_Open_Discussion","wgRelevantArticleId":3134,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],
+"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Backward_Compatibility_Open_Discussion rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Backward Compatibility Open Discussion</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>The topic of backward compatibility has generated animated discussions among users and developers.
+</p><p>We gather here multiple points of view from some of the influential users and developers.
+</p><p>The content of this page is not intended to be conclusive on any of the proposed topics. It simple intends to gather elements of discussion that will serve as food-for-thought.
+</p><p>Main Discussion Topics
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Suggested_Discussion_Topics"><span class="tocnumber">1</span> <span class="toctext">Suggested Discussion Topics</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Position_Statement_1_(Bill_Lorensen)"><span class="tocnumber">2</span> <span class="toctext">Position Statement 1 (Bill Lorensen)</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Position_Statement_2_(Steve_Pieper)"><span class="tocnumber">3</span> <span class="toctext">Position Statement 2 (Steve Pieper)</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Position_Statement_3_(Stephen_Aylward)"><span class="tocnumber">4</span> <span class="toctext">Position Statement 3 (Stephen Aylward)</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Position_Statement_4_(Simon_Warfield)"><span class="tocnumber">5</span> <span class="toctext">Position Statement 4 (Simon Warfield)</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Position_Statement_5_(Ross_Whitaker)"><span class="tocnumber">6</span> <span class="toctext">Position Statement 5 (Ross Whitaker)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#A_Call_For_Moderation"><span class="tocnumber">6.1</span> <span class="toctext">A Call For Moderation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Background_Links"><span class="tocnumber">7</span> <span class="toctext">Background Links</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Suggested_Discussion_Topics">Suggested Discussion Topics</span></h1>
+<ol><li>Deprecation of classes / method. When to deprecate, and how to deprecate.</li>
+<li>Drawing the line where fixing a bug will result in backward compatibility breaks.</li>
+<li>Cathedral/Bazar: How much burden to put on new contributions to the toolkit.
+<ol><li>Is the Insight Journal + Code Review directory a process that is too burdensome.</li></ol></li>
+<li>When can we require additional effort from users to update their code for using new versions of ITK&#160;?
+<ol><li>Never</li>
+<li>Once a year</li>
+<li>Once every five years</li></ol></li>
+<li>How far back in time should we maintain backward compatibility (relates to the previous topic)
+<ol><li>Today's version should be compatible with ITK version from N years ago
+<ol><li>1 year&#160;?</li>
+<li>2 years&#160;?</li>
+<li>5 years&#160;?</li></ol></li></ol></li></ol>
+<h1><span id="Position_Statement_1_.28Bill_Lorensen.29"></span><span class="mw-headline" id="Position_Statement_1_(Bill_Lorensen)">Position Statement 1 (Bill Lorensen)</span></h1>
+<p>These comments address source code backward compatibility.
+</p><p>One of the major criticisms of open-source software is that new revisions are not compatible with old revisions. Breaking compatibility impedes the acceptance and utility of open-source software. On the other hand, strict backward compatibility polices can impede innovation in software. The tension between these two viewpoints is not easily
+resolved.
+</p><p>As projects mature and the customer base grows, backward compatibility becomes more important. Commercial hardware and software products call this customer base, the installed base. Commercial products usually have a known customer base consisting of those who have purchased or licensed the software. Also, commercial systems seldom expose internal API's. Open source projects rarely know the identities of their customers. And, since the source is open, customers have access to all public and protected classes, methods and data in the code. For open source software, it is almost impossible to determine how the customer base is using the software.
+</p><p><i>When a project hits a certain point in its life cycle, the unpleasant issue of backward compatibility begins to rear its ugly head. All of a sudden the changes introduced in a new release of the software have a dark side to them; they hold hidden possibilities that will break something one of your users depends on. This is true in both open and closed source projects, but in the open source world it seems that the community has spent less time worrying about it than in the closed source world.</i> From “Preserving Backward Compatibility, <a rel="nofollow" class="external free" href="http://www.onlamp.com/lpt/a/5626">http://www.onlamp.com/lpt/a/5626</a>, Garrett Rooney.
+</p><p><i>The Dark Side of Extreme Programming: The nightly test/build was so effective in empowering programmers to make changes, that API changes occurred too frequently without the necessary buy-in from the user community.</i> From “Insight Insight”, <a rel="nofollow" class="external free" href="http://www.itk.org/CourseWare/Training/InsideInsight.pdf">http://www.itk.org/CourseWare/Training/InsideInsight.pdf</a>, Bill Lorensen
+</p><p>Some argue that open source software should be used at your own risk. But even using open source software requires an investment in time, energy and funds. Also the reputation of the development community is at risk.
+</p><p><i>...consider your user base. If you have only a dozen highly technical users, jumping through hoops to maintain backward compatibility may be more trouble than it's worth. On the other hand, if you have hundreds or thousands of nontechnical users who cannot deal with manual upgrade steps, you need to spend a lot of time worrying about those kinds of issues. Otherwise, the first time you break compatibility you'll easily burn through all the goodwill you built up with your users by providing them with a useful program. It's remarkable how easily people forget the good things from a program as soon as they encounter the first real problem.</i> From “Preserving Backward Compatibility,
+<a rel="nofollow" class="external free" href="http://www.onlamp.com/lpt/a/5626">http://www.onlamp.com/lpt/a/5626</a>, Garrett Rooney.
+</p><p>These investments are made by customers that include developers, users and sponsors.
+</p><p>During the early years of ITK development, API changes were required as we refined the system architecture and refactored code contributed by the distributed, ITK development team. Now, ITK is over eight years old. The ITK developers have the responsibility to ITK's customers to ensure that released software conforms to software guidelines, respects intellectual property, compiles and runs on supported platforms. We now have a procedure for adding new classes to ITK, <a rel="nofollow" class="external free" href="http://www.itk.org/Wiki/ITK_Procedure_for_Contributing_New_Classes_and_Algorithms">http://www.itk.org/Wiki/ITK_Procedure_for_Contributing_New_Classes_and_Algorithms</a>.
+</p><p>It must always be difficult to change an existing API. Every change, no matter how small, should be questioned. The burden for change is on the ITK developers. The primary goal is to minimize API changes, but when necessary, those changes should never cause user code to fail to compile. Compilation errors cannot report to a user how to correct the code in error. Documentation in user mailing lists or online forums like wiki's are not acceptable as the only venues for reporting how to achieve backward compatibility.
+</p>
+<h1><span id="Position_Statement_2_.28Steve_Pieper.29"></span><span class="mw-headline" id="Position_Statement_2_(Steve_Pieper)">Position Statement 2 (Steve Pieper)</span></h1>
+<p>This is primarily a policy discussion, and so the central issue is how to effectively communicate with users of the toolkit about what they get when they use a particular piece of code.  The general policies could be summarized as:
+</p>
+<ul><li>Different things should have different names.</li></ul>
+<ul><li>Similar things should have similar names.</li></ul>
+<ul><li>If two things have the same name, you can assume they will behave the same.</li></ul>
+<p>A way to interpret this is that if you come up with non-backwards compatible version of an algorithm, you should give it a new class name, like MyFilter2, rather than relying on the toolkit version number to indicate that it is different.  Deprecation warnings at compile time can inform the developer that MyFilter is out of date.  Dropping support for deprecated classes should happen when the toolkit itself gets a new name (like ITK4 instead of ITK3).  Developers can choose when to migrate to a new class and/or a new version of the toolkit.
+</p><p>We should keep in mind that it is basically impossible to be absolutely backwards compatible.  Even adding a new class or method could lead to a compile error if it conflicts with a name the user selected, so we are always talking about degrees backwards compatibility which again emphasizes the importance of setting a policy that allows change and effectively communicates when these changes take place.
+</p><p>Another issue to consider is the possibly ill-fated attempts to provide backwards compatible classes or methods that are actually implemented via new mechanisms that behave in subtle and potentially error prone ways.  The following two examples from slicer's use of VTK illustrate two cases of incomplete compatibility:
+</p><p>1) when VTK moved from 5.0 to 5.2, a number of classes were extended to use the new hash-based information key/value system.  While the same API was retained, this new implementation had a byproduct that a call to the method vtkDataArray::GetRange() was no longer thread safe, and could no longer be called from within the ThreadedExecute method.
+</p><p>2) when VTK moved from 4.x to 5.0, classes that had previously derived from vtkImageToImageFilter were changed to derive from vtkImageAlgorithm.  vtkImageToImageFilter was left as a backwards compatibility class users could still subclass from.  However, for code which relied on manipulating filters at the superclass level the vtk filters could no longer be accessed because they no longer subclass from vtkImageToImageFilter.  
+</p><p>Certainly there are/were pretty easy solutions to the two examples above, but they show how difficult it can be to cover all the cases.  Sometimes different really is different and users of the toolkit need to adapt when they upgrade to a new version.
+</p><p>That said, in addition to formulating naming conventions that explicitly indicate changed behavior, I would also propose that the community develop something that might be called 'testing contracts' between toolkits and their users.  That is, toolkit users should be able to submit code that makes use of the toolkit in explicitly the way they depend on it behaving.  These tests would be independent of the users own evolving code, so that anytime the tests fail it would be know to come from changes in the toolkit.  A cross-platform build farm that continually rebuilt these 'testing contracts' would be a great service to the community.
+</p>
+<h1><span id="Position_Statement_3_.28Stephen_Aylward.29"></span><span class="mw-headline" id="Position_Statement_3_(Stephen_Aylward)">Position Statement 3 (Stephen Aylward)</span></h1>
+<p>Backward compatibility is paramount in a toolkit, particularly one that is used by researchers.  Being used by researchers means that the toolkit is being used by people who are accustom to creating on their own and who are not patient with outside impediments to their work.   If a toolkit continually requires them to re-develop/re-test code that had previously worked, the toolkit will become viewed as an impediment to their work.   The researcher will rightly place a high cost on the time spent re-developing, re-testing and the perceived risk that their research is subject to the whim of others.   Eventually, that cost will outweigh the benefits, and the user-pool will dwindle.
+</p><p>Backward compatibility applies to the API and the operation of a toolkit.  One person's bug is another person's feature.   An incorrectly spelled function name is not a bug once that function has been called by a user.   Subsequently changing the function's name to the correct spelling does create a bug in the user's code.   The same bug/feature dichotomy exists when the API of a set of functions is perceived to be inconsistent.  The same bug/feature dichotomy may even exist when a function has side-effects that are perceived as unwanted or even when a function has outputs that are perceived as incorrect. The guiding philosophy should be: <em> Once a function is released and it performs a particular operation, even if the operation it performs is not what was originally intended, its operation cannot be considered a bug.   If you want to perform a different operation, you should create a new function, and perhaps begin to deprecate the other function. </em>   As it is a general philosophy, there will be times when it does not apply, however, in a strict environment, the sole exception may be when the function name or the function's design specification unambiguously defines the intended operation and yet the function does not provide that operation.
+</p><p>Current developers and users must work to promote the next generation of developers and users.   Telling a user that they should not upgrade is an expression of the judgment that the future benefit of the toolkit does not justify the cost of the upgrade.  It is saying to the developers that their continued efforts are not likely to be useful to the user.   It is saying to the user that they are not welcome as active members in the community.   Freezing a toolkit at a particular version is a legitimate project management decision for a user.  It should, however, not be the mantra of the toolkit's developers.
+</p><p>Admittedly, radical changes are occasionally needed in a toolkit to keep it current.  When making those changes, it is important to apply an otherwise contrary adage: "if you are going to break a standard, then you should REALLY break the standard."  That is, the changes to the toolkit should be planned and drastic.   Planned means that the changes (1) should be announced and discussed well in-advance of their release; (2) should be well supported, with clear transition paths and documentation; and (3) should be driven by the needs of the community.  Drastic means that the changes should be extensive.  If the changes being introduced have a subtle appearance then it is likely that they could instead be done in a backward compatible way or as an extension to the existing framework.  Breaking backward compatibility should only be allowed if the collective voice of the user community calls for a change that necessitates the complete overhaul of a framework or function to support the trends in research, hardware, or compilers.
+</p><p>Balancing the above issues is best handled by a systematic process for adopting new features, testing backward compatibility, and implementing alternative frameworks.  The Insight Toolkit has a well established method for adopting new features, the Insight Journal.  The Insight Journal has evolved to be and continues to improve as an effective method for receiving and reviewing candidate methods for inclusion in the Insight Toolkit. Testing backward compatibility is enabled by CTest and coverage counts, but disciplined application of those technologies is and will probably always be a challenge.  An established mechanism for implementing, reviewing, and releasing alternative frameworks does not currently exist.   
+</p><p>Establishing a mechanism (policy and software) for implementing, reviewing, and releasing alternative frameworks is critical to the continued success of the Insight Toolkit.  If such a mechanism could be provided, then daily backward compatibility challenges would have a controlled outlet.
+</p>
+<h1><span id="Position_Statement_4_.28Simon_Warfield.29"></span><span class="mw-headline" id="Position_Statement_4_(Simon_Warfield)">Position Statement 4 (Simon Warfield)</span></h1>
+<p>Backward compatibility in the Insight Toolkit is an important issue that must balance the needs of the Insight community for stability, for innovation and for clarity. 
+</p><p>In a dynamic open source software environment such as the Insight Toolkit, the source code is an active code base in which the existing code base is being applied to solve image analysis problems. The group of active developers is also dynamic, with new developers joining the community, making use of the code base, and sometimes adding to the code base, and some developers moving away from active utilization of the code base. 
+</p><p>When developers in the community find an algorithm they want to use is not implemented in the Insight Toolkit, they can download the source code and create an implementation of that algorithm.  New concepts can be added to the toolkit by extending the existing classes or by adding new classes. Testing and evaluation of new implementations can be achieved at the time of implementation and into the future by creating regression tests which are automatically executed, and which verify the operation of the code is as the developer first expected.  Developers may choose to contribute code back to the Toolkit.  
+</p><p>Code that is present in the Toolkit, and that which is contributed back to the Toolkit creates both an opportunity for and an obligation incumbent upon, the entire Insight community: the opportunity to utilize the new code, and also the burden of ensuring correct operation of the code within the framework of the Toolkit.
+</p><p>Backward compatibility of the evolving Toolkit becomes an issue when additions, modifications or bug fixes create changes in the code which alter the operation of existing code.  Purely new additions which simply extend the toolkit rarely create backward compatibility clashes with existing code, but must be considered in light of the obligation to maintain the operation of new code into the future.  
+</p><p>The decision of if, when and how to preserve or achieve backward compatibility largely rests in the understanding of the obligation of the developer community to itself, to preserve the operation and application programmer interface of the toolkit.
+</p><p>The nature of the obligation that the developer community creates and assumes upon itself should be clear and carefully documented, so that new users coming to the community are readily aware of the procedures and policy of the community. This discussion can help to set the expectations and understanding of the developer community.
+</p><p>The consequences of different choices of the obligation of backward compatibility, and the perceived importance of these consequences should dictate the nature of the obligation the developer community takes on.
+</p><p>One of the key reasons for the success of open source software has been the credo of `release early, release often'. 
+With this approach, the early deployment of software before it is fully tested and validated, has been found to enable the rapid development of useful and important software.  As a side effect of this development, "given enough eyeballs, all bugs are shallow", as the shared expertise and interest of the community enables the rapid discovery and correction of bugs in the code. A consequence of this approach is that software is deployed to the community as it is developed rather than after it is developed.  The value of this to the user community is in the rapid response this enables to design and implementation issues, where the dynamic environment of the software bazaar enables those most directly impacted by a change to sort out and resolve the issue, rather than waiting for an answer to be delivered from those in the software `cathedral' 
+[[ <a rel="nofollow" class="external free" href="http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/">http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/</a> ]]. 
+</p><p>In a young code base undergoing rapid expansion, code can be implemented and regression tested faster than the community can fully appreciate the consequences of the impact of parts of the code base on other parts, and before the interface the code presents can be judged. When this occurs, the interface to functionality erected by a particular implementation, needs to be considered on its merits, just as the implementation of a solid API would be, and not regarded as a sacrosanct interface - being first doesn't mean being best, and shouldn't mean immortality.  A regression test will ensure that the implementation achieves what the developer wanted, but doesn't ensure that what the developer wanted was what the community comes to understand is the best strategy to preserve under the obligation of backward compatibility.  Indeed, it may be valuable to trial several different  interfaces to particular functionality before it becomes clear what will be easiest to use, and what will have the greatest clarity to the largest number of developers.
+</p><p>Backward compatibility enables users of the toolkit to utilize the code base now and into the future with the expectation that software written using the Toolkit will continue to work in the same way in the future.  The user community also understands that the code has been released early and often, and can be expected to evolve.  At certain milestone occasions, a version of the code is tagged and declared to be a special release - these special releases represent particular stable snapshots of the code base, which have accumulated new functionality, improvements in documentation and efficiency and bug fixes, of such significance that a new version number is provided and the code understood to be especially well suited for wide spread adoption and utilization.
+</p><p>Old versions of the code are not removed and continue to function identically to how they always have, as they are not changed.
+New versions of the code are modified, with a view to providing the developer community an improved code set.
+</p><p>In general, maintaining compatibility with previously released versions is desirable, because it allows code that utilizes prior releases to adopt new releases easily, with no burden on the developer community, while providing the benefits of new or improved functionality included in the new release. However, an excessive insistence on backward compatibility can hamper innovations, prevent bugs from being fixed, and destroy the aesthetic pleasure of a well-designed application programmer interface. It can fail to provide to the developer community a clear indication of how functionality in the toolkit is intended to be used, by encouraging the development of similar but incompatible implementations of similar functionality.
+</p><p>In particular, when a bug is discovered, a decision to maintain and preserve code that functions incorrectly for the sake of backward compatibility is wrong. Bugs should be fixed, and in cases where external code depends on wrong results from a function to operate correctly, those in the community who chose to adopt new versions or new releases of the code base, will need to be update their code when new code to establish correct operation is implemented. Consider a developer, user or sponsor who has an application that utilizes the Insight Toolkit, but which is impacted by a bug fix. They will have a choice to continue to use the version of the Toolkit that works well for them, or to invest in making changes in order to adopt a new version. They may choose to correct the code that incorrectly depended on wrong results from code in the Toolkit.
+</p><p>A wrong approach would be to decide to impose the burden of maintaining two sets of code, one that works incorrectly and one that works correctly. This distributes the cost of understanding, maintaining, testing and evaluating bad code and good code to the entire developer community, both at the time the decision is made and into the future while ever the bad code is preserved. When new developers come to the code base, they will need to decipher and understand the wrong code and the new code, choose which to use, and the burden of identifying the desirable code to use is a significant one. It can only be offset by a significant investment by the current community in documenting and explaining the bad code and advising all new users to avoid it.  
+In deciding to commit to the support and maintenance of wrong code, the burden on inactive or older users who have decided not to actively support or maintain their own code is reduced, but at the cost of increasing the burden on all future users and developers and the existing active community.
+</p><p>Similarly, code that implements a poor API or which has made wrong design choices, needs to be carefully and thoughtfully eliminated as the toolkit matures, rather than having that code add to the cost and investment that the user community makes in maintaining the toolkit.  A simple mechanism to do this is to ensure a level of backwards compatibility will be maintained for particular versions or for a particular time frame, to provide warning of obsolescence through a mechanism of deprecation, and then to remove poor design decisions and wrong APIs at major version upgrades.  This provides a balance in effort and cost to the established community, to the currently active developers, and to the future developers of the toolkit.
+</p><p>This work is licensed under a <a rel="nofollow" class="external autonumber" href="http://creativecommons.org/licenses/by-sa/3.0/">[1]</a> Creative Commons Attribution-Share Alike 3.0 Unported License.
+</p>
+<h1><span id="Position_Statement_5_.28Ross_Whitaker.29"></span><span class="mw-headline" id="Position_Statement_5_(Ross_Whitaker)">Position Statement 5 (Ross Whitaker)</span></h1>
+<h2><span class="mw-headline" id="A_Call_For_Moderation">A Call For Moderation</span></h2>
+<p>In this case of backward compatibility we should exercise moderation, and avoid the extremes.  The extremes are either a) we change what we need to, when we need to and the users beware and b) that we must support, indefinitely every feature that has ever been introduced into the API. 
+</p><p>The right solution is somewhere in between, and the proper choice depends on the use of the toolkit, the number of users, the types of users, they way they use the product, and the mechanisms by which the product is supported and maintained.
+</p><p>The argument to support legacy interfaces and functionality is clear.  If we want serious users, who build big systems or products, we need to offer a degree of stability.  Failing to be backward compatible is a serious concern, and once people have invested time and money and been burned by a changing toolkit that fails to support their legacy code, we loose an important base of costumers, supporters, and developers.
+</p><p>So why not a policy of full backward compatibility that continues indefinitely?
+</p><p>Supporting every feature indefinitely in every API is neither practical nor desirable.  A community supported, cutting edge toolkit such as ITK must evolve.  Furthermore, size matters.  If a toolkit is too big or too confusing to understand it is not useful.  A toolkit such as ITK must be organized in such a way that it is comprehensible to people in a reasonable amount of time.  All of this is undermined by a huge set of redundant interfaces or functionalities that are to support the legacy of code. Futhermore, legacy code must be maintained, and we have limited resources. 
+</p><p>The middle ground is achieved by careful, thoughtful, well-implemented changes to the API combined with tools and procedures for helping users with legacy code manage this process.  How can we be careful?   Changes to the API that are not backward compatible must be proposed and reviewed by *diverse groups* who have a vested interest, not by single individuals who may not understand all the issues.  I.e. changes must be taken seriously, well-justified, and vetted.  Second, we need to allow these changes to proceed slowly with proper warnings to users during compile time.  Thirdly, we need to provide users who don't want to modify their legacy code a way out, for instance, building against old versions.  They might not have access to bug fixes and new functionality, but expecting full compatibility *and* progress is not realistic.  A lesson in software engineering and development is that if you want access to improving functionality you must be willing to invest.  Finally, we need to inform users of our policy and what they can expect in terms of compatibility if they decide to use our tools.  
+</p><p>If we decide on full backward compatibility, it seems to me that we decide that the interface is either stagnant or constantly growing.  In either case we reduce the lifetime of the active code (the active lifetime, the legacy uses could continue indefinitely).  Developers and users who want real change will have to start with a clean slate (this is currently under discussion among some developers in the ITK community).  Futhermore, full backward compatibility should not be expected of users.  It is not such a worthwhile goal.  Users of the API will change their code to account for new hardware, operating systems, drivers, and compilers.  Their is no reason to expect to compile the same unmodified, applications against ITK over a space of more than a couple of years.     
+</p><p>One the other hand, if we are too cavalier with changes and compatibility, we will injure the serious users and limit the usefulness of the toolkit.  A few developers should not be able to change an API on which depend important applications that they have never even seen.  Their must be some oversight, vetting, and control, that includes the interested parties---i.e. users.  We need to strike a balance.
+</p>
+<h1><span class="mw-headline" id="Background_Links">Background Links</span></h1>
+<ul><li><a rel="nofollow" class="external free" href="http://www.joelonsoftware.com/items/2008/03/17.html">http://www.joelonsoftware.com/items/2008/03/17.html</a></li>
+<li><a rel="nofollow" class="external free" href="http://buytaert.net/backward-compatibility">http://buytaert.net/backward-compatibility</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html#catbmain">http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html#catbmain</a></li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20220817232126
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.010 seconds
+Real time usage: 0.010 seconds
+Preprocessor visited node count: 25/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3134-0!canonical and timestamp 20220817232126 and revision id 45775. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Backward_Compatibility_Open_Discussion&amp;oldid=45775">https://public.kitware.com/Wiki/index.php?title=ITK/Backward_Compatibility_Open_Discussion&amp;oldid=45775</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Backward_Compatibility_Open_Discussion" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Backward_Compatibility_Open_Discussion&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Backward_Compatibility_Open_Discussion">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Backward_Compatibility_Open_Discussion&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Backward_Compatibility_Open_Discussion&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Backward_Compatibility_Open_Discussion" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Backward_Compatibility_Open_Discussion&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FBackward+Compatibility+Open+Discussion" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Backward_Compatibility_Open_Discussion" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Backward_Compatibility_Open_Discussion" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Backward_Compatibility_Open_Discussion&amp;oldid=45775" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Backward_Compatibility_Open_Discussion&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 11 February 2012, at 01:26.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.010","walltime":"0.010","ppvisitednodes":{"value":25,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220817232126","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":90});});</script>
+</body></html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>SimpleITK/FAQ - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"SimpleITK/FAQ","wgTitle":"SimpleITK/FAQ","wgCurRevisionId":61871,"wgRevisionId":61871,"wgArticleId":9475,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SimpleITK/FAQ","wgRelevantArticleId":9475,"wgRequestId":"c40b21716dbf79ea3e98d2cd","wgCSPNonce":!1,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgRedirectedFrom":"ITK/Release_4/SimpleITK/FAQ","wgInternalRedirectTargetUrl":"/Wiki/SimpleITK/FAQ"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.monobook.mobile"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<!--[if lt IE 9]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/screen-desktop.css?74a6a" media="screen"/><![endif]--><!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE60Fixes.css?1208f" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.34.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://itk.org/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://itk.org/Wiki/SimpleITK/FAQ"/>
+<!--[if lt IE 9]><script src="/Wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-SimpleITK_FAQ rootpage-SimpleITK skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">SimpleITK/FAQ</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From KitwarePublic</div><div id="contentSub" lang="en" dir="ltr"><span class="subpages">&lt; <a href="/Wiki/SimpleITK" title="SimpleITK">SimpleITK</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK/Release_4/SimpleITK/FAQ&amp;redirect=no" class="mw-redirect" title="ITK/Release 4/SimpleITK/FAQ">ITK/Release 4/SimpleITK/FAQ</a>)</span></div><div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="wikitable" style="text-align:center;width: 100%; background-color:#ffff99;" cellpadding="10">
+<tbody><tr>
+<td><b>NOTICE</b>
+</td></tr>
+<tr>
+<td>This page is being migrated to Read The Docs!
+<p>For the up to date version please see <a rel="nofollow" class="external text" href="https://simpleitk.readthedocs.io/en/master/Documentation/docs/source/faq.html">this page</a>!
+</p>
+</td></tr></tbody></table>
+<div class="center"><div class="floatnone"><a href="/Wiki/File:Simpleitk_logo.png" class="image"><img alt="Simpleitk logo.png" src="/Wiki/images/c/c5/Simpleitk_logo.png" decoding="async" width="200" height="53" /></a></div></div>
+<p>This page hosts frequently asked questions about SimpleITK, and their answers.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Installation"><span class="tocnumber">1</span> <span class="toctext">Installation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Why_do_I_get_an_error_about_a_missing_Dynamic_Library_when_running_SimpleITK_with_Python_on_windows.3F"><span class="tocnumber">1.1</span> <span class="toctext">Why do I get an error about a missing Dynamic Library when running SimpleITK with Python on windows?</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#I_am_using_the_binary_distribution_of_SimpleITK_for_Anaconda.2C_why_do_I_get_an_error_about_libpng.3F"><span class="tocnumber">1.2</span> <span class="toctext">I am using the binary distribution of SimpleITK for Anaconda, why do I get an error about libpng?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#How_to_Use"><span class="tocnumber">2</span> <span class="toctext">How to Use</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#What_filters_are_currently_available_in_SimpleITK.3F"><span class="tocnumber">2.1</span> <span class="toctext">What filters are currently available in SimpleITK?</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#What_image_file_formats_can_SimpleITK_read.3F"><span class="tocnumber">2.2</span> <span class="toctext">What image file formats can SimpleITK read?</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#How_do_I_read_a_RAW_image_into_SimpleITK.3F"><span class="tocnumber">2.3</span> <span class="toctext">How do I read a RAW image into SimpleITK?</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Can_I_use_another_image_file_viewer_beside_ImageJ.3F"><span class="tocnumber">2.4</span> <span class="toctext">Can I use another image file viewer beside ImageJ?</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#How_can_I_use_3D_Slicer_to_view_my_images.3F"><span class="tocnumber">2.5</span> <span class="toctext">How can I use 3D Slicer to view my images?</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#How_can_I_use_a_newer_Java_with_ImageJ_on_Mac_OS_X.3F"><span class="tocnumber">2.6</span> <span class="toctext">How can I use a newer Java with ImageJ on Mac OS X?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Wrapping"><span class="tocnumber">3</span> <span class="toctext">Wrapping</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Python"><span class="tocnumber">3.1</span> <span class="toctext">Python</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Tcl"><span class="tocnumber">3.2</span> <span class="toctext">Tcl</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Java"><span class="tocnumber">3.3</span> <span class="toctext">Java</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#C.23"><span class="tocnumber">3.4</span> <span class="toctext">C#</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#R"><span class="tocnumber">3.5</span> <span class="toctext">R</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Compilation"><span class="tocnumber">4</span> <span class="toctext">Compilation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#Is_my_compiler_supported.3F"><span class="tocnumber">4.1</span> <span class="toctext">Is my compiler supported?</span></a>
+<ul>
+<li class="toclevel-3 tocsection-19"><a href="#Committed_to_Support"><span class="tocnumber">4.1.1</span> <span class="toctext">Committed to Support</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#Noted_Problems"><span class="tocnumber">4.1.2</span> <span class="toctext">Noted Problems</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-21"><a href="#Why_am_I_getting_a_compilation_error_on_OSX_Mavericks.3F"><span class="tocnumber">4.2</span> <span class="toctext">Why am I getting a compilation error on OSX Mavericks?</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Why_does_the_Superbuild_fail_compiling_PCRE_on_Mac_OS_X.3F"><span class="tocnumber">4.3</span> <span class="toctext">Why does the Superbuild fail compiling PCRE on Mac OS X?</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Do_I_need_to_download_an_option_package_for_TR1_support.3F"><span class="tocnumber">4.4</span> <span class="toctext">Do I need to download an option package for TR1 support?</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Do_I_need_to_download_an_optional_package_for_C99.3F"><span class="tocnumber">4.5</span> <span class="toctext">Do I need to download an optional package for C99?</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#How_do_I_build_with_Visual_Studio_2008.3F"><span class="tocnumber">4.6</span> <span class="toctext">How do I build with Visual Studio 2008?</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#What_Configurations_on_Windows_are_Supported_For_Building.3F"><span class="tocnumber">4.7</span> <span class="toctext">What Configurations on Windows are Supported For Building?</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Why_are_all_of_the_configurations_not_supported_on_Windows.3F"><span class="tocnumber">4.8</span> <span class="toctext">Why are all of the configurations not supported on Windows?</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Where_is_the_Test_Data.3F"><span class="tocnumber">4.9</span> <span class="toctext">Where is the Test Data?</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Why_is_CMake_unable_to_download_ExternalData.3F"><span class="tocnumber">4.10</span> <span class="toctext">Why is CMake unable to download ExternalData?</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Installation">Installation</span></h1>
+<h2><span id="Why_do_I_get_an_error_about_a_missing_Dynamic_Library_when_running_SimpleITK_with_Python_on_windows?"></span><span class="mw-headline" id="Why_do_I_get_an_error_about_a_missing_Dynamic_Library_when_running_SimpleITK_with_Python_on_windows.3F">Why do I get an error about a missing Dynamic Library when running SimpleITK with Python on windows?</span></h2>
+<p>This error has been resolved with SimpleITK version 0.5.1 and should no longer occur. Upgrading to the latest SimpleITK is encouraged.
+</p><p>This error occurs after you have downloaded the Windows SimpleITK binaries when you are running python and try to import SimpleITK. There is an error about a missing DLL on Windows when you don't have Visual Studio 10 and no other application has installed certain libraries before. You will need to download the Visual Studio 10 redistribution libraries. The libraries are available for download <a rel="nofollow" class="external text" href="http://www.microsoft.com/download/en/details.aspx?id=5555">here</a>.
+</p>
+<h2><span id="I_am_using_the_binary_distribution_of_SimpleITK_for_Anaconda,_why_do_I_get_an_error_about_libpng?"></span><span class="mw-headline" id="I_am_using_the_binary_distribution_of_SimpleITK_for_Anaconda.2C_why_do_I_get_an_error_about_libpng.3F">I am using the binary distribution of SimpleITK for Anaconda, why do I get an error about libpng?</span></h2>
+<pre> ImportError: dlopen(./_SimpleITK.so, 2): Library not loaded: @rpath/libpng15.15.dylib
+   Referenced from: .../lib/python2.7/site-packages/SimpleITK/_SimpleITK.so
+   Reason: image not found
+</pre>
+<p>This can be resolved by installing the version of libpng that SimpleITK 0.9 was built against:
+</p>
+<pre>  conda create -n sitkpy anaconda libpng=1.5
+  <u>unix/mac</u>: source activate sitkpy <br />  <u>win</u>: activate sitkpy 
+  conda install -c https://conda.binstar.org/simpleitk/channel/main SimpleITK
+  conda install libpng=1.5 
+</pre>
+<p>This set of commands:
+</p>
+<ul><li>creates the virtual environment with our choice of libpng version, all other anaconda packages will be compatible with this version.</li>
+<li>activate the virtual environment.</li>
+<li>installs SimpleITK into the virtual environment (unfortunately this will automatically upgrade you to libpng 1.6).</li>
+<li>downgrades to libpng 1.5 so that library versions are compatible.</li></ul>
+<p>We are currently investigating why the anaconda build system is not expressing version dependency for shared libraries. We how this will not be an issue with the next binary package.
+</p>
+<h1><span class="mw-headline" id="How_to_Use">How to Use</span></h1>
+<h2><span id="What_filters_are_currently_available_in_SimpleITK?"></span><span class="mw-headline" id="What_filters_are_currently_available_in_SimpleITK.3F">What filters are currently available in SimpleITK?</span></h2>
+<p>As of March 2014 we have approximately <b>260 ITK image filters</b> wrapped for SimpleITK. The <a rel="nofollow" class="external text" href="http://www.itk.org/SimpleITKDoxygen/html/Filter_Coverage.html"><b>filter coverage table</b></a> shows the current set of ITK filters in SimpleITK. Additionally the <a rel="nofollow" class="external text" href="http://www.itk.org/SimpleITKDoxygen/html/classes.html">Doxygen</a> can be looked at to determine if a filter is available.
+</p>
+<h2><span id="What_image_file_formats_can_SimpleITK_read?"></span><span class="mw-headline" id="What_image_file_formats_can_SimpleITK_read.3F">What image file formats can SimpleITK read?</span></h2>
+<h2><span id="How_do_I_read_a_RAW_image_into_SimpleITK?"></span><span class="mw-headline" id="How_do_I_read_a_RAW_image_into_SimpleITK.3F">How do I read a RAW image into SimpleITK?</span></h2>
+<p>In general raw image files are missing information. They do not contain the nessesary header information to describe the basic size and type for the data, so this format is intrinsically deficient. The <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1RawImageIO.html">RawImageIO</a> class is not available in SimpleITK so there is no direct way to programmatically hard code this header information. The suggested way is to create a Meta image header file (*.mhd) which references the raw data file and describes the size and type of the data. The documentation on how to write a Meta image header can be found <a rel="nofollow" class="external text" href="http://www.itk.org/Wiki/MetaIO/Documentation#Reading_a_Brick-of-Bytes_.28an_N-Dimensional_volume_in_a_single_file.29">here</a>.
+</p><p>The following is a sample Meta image header file, perhaps of name sample.mhd:
+</p>
+<pre>ObjectType = Image
+NDims = 3
+DimSize = 256 256 64
+ElementType = MET_USHORT
+ElementDataFile = image.raw	(this tag must be last in a MetaImageHeader)
+</pre>
+<h2><span id="Can_I_use_another_image_file_viewer_beside_ImageJ?"></span><span class="mw-headline" id="Can_I_use_another_image_file_viewer_beside_ImageJ.3F">Can I use another image file viewer beside ImageJ?</span></h2>
+<p>By default when the <a rel="nofollow" class="external text" href="http://www.itk.org/SimpleITKDoxygen/html/namespaceitk_1_1simple.html#a7bacfc4685cff93e46d7401865f9579e">Show function</a> is called, SimpleITK writes out a temporary image in Nifti format then launches <a rel="nofollow" class="external text" href="http://rsbweb.nih.gov/ij/index.html">ImageJ</a>.  The user can override the file format of the temporary file and/or the application used to handle that file.
+</p><p>The temporary file format can be specified via the <b>SITK_SHOW_EXTENSION</b> environment variable.  For example, if the user wanted to export a PNG file, on Linux it might look like this:
+</p>
+<pre>SITK_SHOW_EXTENSION=".png"
+export SITK_SHOW_EXTENSION
+</pre>
+<p>Use of an extension unsupported by ITK results in an error message.  For the supported image formats, here is the <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/group__IOFilters.html">ITK Image IO Filters</a>.
+</p><p>The default display application for all image types is ImageJ.  To override ImageJ with some other application, use the <b>SITK_SHOW_COMMAND</b> environment variable.  For instance, on Unix systems, using GNOME's image viewer eog would be:
+</p>
+<pre>SITK_SHOW_EXTENSION=".png"
+export SITK_SHOW_EXTENSION
+SITK_SHOW_COMMAND="eog"
+export SITK_SHOW_COMMAND
+</pre>
+<p>To override the default display applications for only color or 3d images, there are the <b>SITK_SHOW_COLOR_COMMAND</b> and <b>SITK_SHOW_3D_COMMAND</b> environment variables.
+</p><p>More details on the Show function, including use of the "%a" and "%f" tokens, is at the <a rel="nofollow" class="external text" href="http://www.itk.org/SimpleITKDoxygen/html/namespaceitk_1_1simple.html#a7bacfc4685cff93e46d7401865f9579e">Show function Doxygen page</a>.
+</p>
+<h2><span id="How_can_I_use_3D_Slicer_to_view_my_images?"></span><span class="mw-headline" id="How_can_I_use_3D_Slicer_to_view_my_images.3F">How can I use 3D Slicer to view my images?</span></h2>
+<p><a rel="nofollow" class="external text" href="http://slicer.org">3D Slicer</a> is a very powerful and popular application for visualization and medical image computing.  The SITK_SHOW_COMMAND environment variable may be used to display images in Slicer instead of SimpleITK's default viewer, ImageJ.  The following are examples of what settings for SITK_SHOW_COMMAND might look like for Mac OS X, Linux and Windows to use Slicer.
+</p><p><br />
+Mac OS X
+</p>
+<pre>export SITK_SHOW_COMMAND=/Applications/Slicer.app/Contents/MacOS/Slicer
+</pre>
+<p>Linux
+</p>
+<pre>export SITK_SHOW_COMMAND=Slicer
+</pre>
+<p>Windows
+</p>
+<pre>set SITK_SHOW_COMMAND=:"c:\Program Files\Slicer 4.2.2-1\Slicer"
+</pre>
+<p>The value of SITK_SHOW_COMMAND should be modified to point to wherever Slicer is installed.  If you only want to use Slicer for volumetric 3D images, use the SITK_SHOW_3D_COMMAND environment variable instead of SITK_SHOW_COMMAND.
+</p>
+<h2><span id="How_can_I_use_a_newer_Java_with_ImageJ_on_Mac_OS_X?"></span><span class="mw-headline" id="How_can_I_use_a_newer_Java_with_ImageJ_on_Mac_OS_X.3F">How can I use a newer Java with ImageJ on Mac OS X?</span></h2>
+<p>By default on Mac OS X, the ImageJ application expects Java 6, which is old and unsupported.  The latest supported version of Java (currently version 8u25) can be downloaded from <a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Oracle's Java Development kit page</a>.  The following bash commands will set up the SITK_SHOW_COMMAND and SITK_SHOW_COLOR_COMMAND to invoke ImageJ's jar file using the Java compiler.
+</p>
+<pre>ij="/Applications/ImageJ/"
+ijcmd="java -Dplugins.dir=$ij/plugins -jar $ij/ImageJ.app/Contents/Resources/Java/ij.jar"
+
+export SITK_SHOW_COMMAND="$ijcmd -eval 'open( \"%f\" );'"
+export SITK_SHOW_COLOR_COMMAND="$ijcmd -eval 'open( \"%f\" ); run(\"Make Composite\", \"display=Composite\");'"
+</pre>
+<p>The first lines set a variable pointing to the standard location for the ImageJ directory.  If ImageJ is installed somewhere else, the line should be modified.  The second line provides the command to launch ImageJ using the Java compiler.  It includes flags that point to ImageJ's plugiin directory and ImageJ's ij.jar file.
+</p><p>The SITK_SHOW_COMMAND tells SimpleITK.Show() to launch Java with ij.jar and then execute the open macro with an image file.  The SITK_SHOW_COLOR_COMMAND does these same things and then executes the ImageJ "Make Composite" command to treat a multichannel image as a composite color image.
+</p>
+<h1><span class="mw-headline" id="Wrapping">Wrapping</span></h1>
+<h2><span class="mw-headline" id="Python">Python</span></h2>
+<h2><span class="mw-headline" id="Tcl">Tcl</span></h2>
+<h2><span class="mw-headline" id="Java">Java</span></h2>
+<h2><span id="C#"></span><span class="mw-headline" id="C.23">C#</span></h2>
+<h2><span class="mw-headline" id="R">R</span></h2>
+<h1><span class="mw-headline" id="Compilation">Compilation</span></h1>
+<h2><span id="Is_my_compiler_supported?"></span><span class="mw-headline" id="Is_my_compiler_supported.3F">Is my compiler supported?</span></h2>
+<p>SimpleITK uses advanced C++ meta-programming to instantiate ITK's Images and Filters. Addtionally, we use some headers which are included in the C99 and C++ TR1 extension. Therefore SimpleITK places additional requirements on the compiler beyond what is required for ITK. In principle we require C++x03 with C99's "stdint.h" and TR1's "functional". If your compiler has those features it is likely able to be supported.
+</p><p>The additional requirement for a supported compiler is that it is on the nightly dashboard. With this regard, the list of supported compilers is on the SimpleITK <a rel="nofollow" class="external text" href="http://open.cdash.org/index.php?project=SimpleITK">SimpleITK dashboard</a>.  We welcome user contributions to the nightly dashboard to expand the list of supported compilers.
+</p>
+<h3><span class="mw-headline" id="Committed_to_Support">Committed to Support</span></h3>
+<ul><li>GCC 4.2-4.7</li>
+<li>Visual Studio 2008  with Service Pack 1 (VS9)</li>
+<li>Visual Studio 2012 (VS10) ( including Express )</li>
+<li>Visual Studio 2012 (VS11)</li></ul>
+<h3><span class="mw-headline" id="Noted_Problems">Noted Problems</span></h3>
+<ul><li>Compiling on a MS Windows 32-bit OS with static libraries is not supported due to lack of memory.</li>
+<li>With SimpleITK release 0.4.0, Visual Studio 2008 was not compiling. This problem has since been remedied in the development branch on April 18th, 2012.</li>
+<li>With SimpleITK release 0.7.0, Visual Studio 2008 is not able to compile all wrapped languages at the same time, it's recommenced to choose one at a time.</li></ul>
+<h2><span id="Why_am_I_getting_a_compilation_error_on_OSX_Mavericks?"></span><span class="mw-headline" id="Why_am_I_getting_a_compilation_error_on_OSX_Mavericks.3F">Why am I getting a compilation error on OSX Mavericks?</span></h2>
+<p>With SimpleITK &lt;=0.7 the following error occurred during compilation on Apple OSX 10.9 Mavericks with <b>clang 5.0</b>:
+</p>
+<pre> <b>SimpleITK/Code/Common/include/sitkMemberFunctionFactoryBase.h:106:16:  <span style="color:red">error</span>: no member named 'tr1' in namespace 'std'</b>
+ typedef std::tr1::function&lt; MemberFunctionResultType ( ) &gt; FunctionObjectType;
+         ~~~~~^
+</pre>
+<p>With Xcode 5.0, Apple's distributed version of clang (5.0) changed which implementation of the C++ Standard Library it uses by default.  Previous versions of clang (4.2 and earlier) used  <a rel="nofollow" class="external text" href="http://gcc.gnu.org/libstdc++/">GNU's libstdc++</a> , while clang 5.0 now uses <a rel="nofollow" class="external text" href="http://libcxx.llvm.org">LLVM's libc++</a>.  SimpleITK 0.7 and earlier require certain features from <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/C%2B%2B_Technical_Report_1">C++ tr1</a> which are not implemented in LLVM's libc++ but are available in GNU's libstdc++.
+</p><p>To build SimpleITK &lt;=0.7 with clang 5.0, you can configure the compiler to use GNU's stdlibc++. This change must be done at the initial configuration:
+</p>
+<pre>cmake "-DCMAKE_CXX_FLAGS:STRING=-stdlib=libstdc++" ../SimpleITK/SuperBuild
+</pre>
+<p>NOTE: If you already have a build directory which has been partially configured the contents must be deleted. The above line needs to be done for an initial configuration in an empty build directory.
+NOTE: This work around does not work when with the CMake "Xcode" generator. It is recommended to just use the default "Unix Makefiles" generator, to build SimpleITK, and get using SimpleITK, not building it.
+</p><p>The following is a <b>compatibility table for clang 5.0</b>. It shows that the default of libc++ does not work with SimpleITK, while the other options do. The choice of which standard library to use and which C++ language standard to use are independent.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Clang 5.0 compatibility
+</th>
+<th>-stdlib=libc++
+</th>
+<th>-stdlib=libstdc++
+</th></tr>
+<tr>
+<th>(c++03)
+</th>
+<td style="background:red">FAIL
+</td>
+<td style="background:green">OK
+</td></tr>
+<tr>
+<th>-std=c++11
+</th>
+<td style="background:LightGreen">OK (&gt;=0.8)
+</td>
+<td style="background:green">OK
+</td></tr></tbody></table>
+<p>For SimpleITK &gt;=0.8, support for the tr1 features migrated to C++11 has been improved with better feature detection, and the necessary flags are now automatically added. LLVM's libc++ will now work if compiling with the C++11 standard by adding the flag "-std=c++11" in the initial configuration.
+</p><p>To further complicate dependencies and interactions, some downloadable languages such as Java, or R, may be compiled against GNU's libstdc++. This may cause a conflict in the types used in the interface resulting in compilation errors while wrapping the language.
+</p>
+<h2><span id="Why_does_the_Superbuild_fail_compiling_PCRE_on_Mac_OS_X?"></span><span class="mw-headline" id="Why_does_the_Superbuild_fail_compiling_PCRE_on_Mac_OS_X.3F">Why does the Superbuild fail compiling PCRE on Mac OS X?</span></h2>
+<p>If the Xcode command line tools are not properly set up on OS X, PCRE could fail to build in the Superbuild process with messages such as:
+</p>
+<pre>checking whether we are cross compiling... configure: error: in `/your/build/path/SimpleITK/PCRE-prefix/src/PCRE-build': 
+configure: error: cannot run C compiled programs.
+If you meant to cross compile, use `--host'.
+See `config.log' for more details
+[10/13] Performing build step for 'PCRE'
+</pre>
+<p>To install the command line developer tools enter the following:
+<b>xcode-select --install</b>
+</p><p>To reset the default command line tools path:
+<b>xcode-select --reset</b>
+</p>
+<h2><span id="Do_I_need_to_download_an_option_package_for_TR1_support?"></span><span class="mw-headline" id="Do_I_need_to_download_an_option_package_for_TR1_support.3F">Do I need to download an option package for TR1 support?</span></h2>
+<p>Visual Studio 2008 requires an additional download for TR1 support. This support is best provided with the Service Pack 1. There is a separate TR1 feature pack which can be downloaded, but it is no longer recommended since Service Pack 1 includes TR1 and numerous bug and performance improvements.
+</p>
+<h2><span id="Do_I_need_to_download_an_optional_package_for_C99?"></span><span class="mw-headline" id="Do_I_need_to_download_an_optional_package_for_C99.3F">Do I need to download an optional package for C99?</span></h2>
+<p>SimpleITK will proved a "stdint.h" header if missing on the system.
+</p>
+<h2><span id="How_do_I_build_with_Visual_Studio_2008?"></span><span class="mw-headline" id="How_do_I_build_with_Visual_Studio_2008.3F">How do I build with Visual Studio 2008?</span></h2>
+<p>Visual Studio 2008 is the oldest supported Microsoft development environment that SimpleITK supports. To build SimpleITK, certain features of C++TR1 are required. These features are best provided by the <a rel="nofollow" class="external text" href="http://www.microsoft.com/download/en/details.aspx?id=23691">"Microsoft Visual Studio 2008 Service Pack 1"</a> (or try this link <a rel="nofollow" class="external autonumber" href="http://www.microsoft.com/en-us/download/confirmation.aspx?id=10986">[1]</a>).  Alternatively just the <a rel="nofollow" class="external text" href="http://www.microsoft.com/downloads/en/details.aspx?FamilyId=D466226B-8DAB-445F-A7B4-448B326C48E7&amp;displaylang=en">Visual C++ 2008 Feature Pack Release</a> can be installed. Please note that all our dashboard machines now use SP1.
+</p><p><br />
+Older versions of SimpleITK (&lt;0.7.0) requires a also required a separately downloaded stdint.h for this compiler. This is not automatically provided if needed. If it's still needed the file can be downloaded <a rel="nofollow" class="external text" href="http://msinttypes.googlecode.com/svn/trunk/stdint.h">here</a>. For 64-bit Microsoft Windows it should be dragged with the GUI into the appropriate include path for the architecture.
+</p>
+<h2><span id="What_Configurations_on_Windows_are_Supported_For_Building?"></span><span class="mw-headline" id="What_Configurations_on_Windows_are_Supported_For_Building.3F">What Configurations on Windows are Supported For Building?</span></h2>
+<p>There are quite a large number of configuration options available for the Windows platform. The following table is a guide line of what is regularly tested and confirmed to work or fail.
+</p><p><br />
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>
+</th>
+<th>Architecture
+</th>
+<th>Library Type
+</th>
+<th colspan="2">Visual Studio 2008  SP1  (VS9 )
+</th>
+<th colspan="2">Visual Studio 2010 ( VS10 )
+</th>
+<th colspan="2">Visual Studio 2012 ( VS11 )
+</th>
+<th colspan="2">Visual Studio 2013 ( VS13 )
+</th></tr>
+<tr>
+<th>
+</th>
+<th>
+</th>
+<th>
+</th>
+<th>Release
+</th>
+<th>Debug
+</th>
+<th>Release
+</th>
+<th>Debug
+</th>
+<th>Release
+</th>
+<th>Debug
+</th>
+<th>Release
+</th>
+<th>Debug
+</th></tr>
+<tr>
+<th rowspan="2" style="background:Orange">32-bit Window OS
+</th>
+<th rowspan="2" style="background:Orange">Only Intel 32-bit
+</th>
+<th style="background:Orange">Static
+</th>
+<td style="background:red">FAIL
+</td>
+<td style="background:red">FAIL
+</td>
+<td style="background:red">FAIL
+</td>
+<td style="background:red">FAIL
+</td>
+<td style="background:Orange">
+</td>
+<td style="background:Orange">
+</td>
+<td style="background:Orange">
+</td>
+<td style="background:Orange">
+</td></tr>
+<tr>
+<th style="background:Orange">Shared
+</th>
+<td style="background:red">FAIL
+</td>
+<td style="background:red">FAIL
+</td>
+<td style="background:green">Nightly
+</td>
+<td style="background:green">Nightly
+</td>
+<td style="background:Orange">
+</td>
+<td style="background:Orange">
+</td>
+<td style="background:Orange">
+</td>
+<td style="background:Orange">
+</td></tr>
+<tr>
+<th rowspan="4">64-bit Window OS
+</th>
+<th rowspan="2">Intel 32-bit
+</th>
+<th>Static
+</th>
+<td style="background:green">Nightly
+</td>
+<td style="background:Orange">
+</td>
+<td style="background:green">Nightly
+</td>
+<td style="background:Orange">
+</td>
+<td style="background:green">Nightly
+</td>
+<td style="background:Orange">
+</td>
+<td style="background:green">Nightly
+</td>
+<td style="background:Orange">
+</td></tr>
+<tr>
+<th>Shared
+</th>
+<td style="background:LightGreen">
+</td>
+<td style="background:LightGreen">
+</td>
+<td style="background:LightGreen">
+</td>
+<td style="background:LightGreen">
+</td>
+<td style="background:LightGreen">
+</td>
+<td style="background:LightGreen">
+</td>
+<td style="background:LightGreen">
+</td>
+<td style="background:LightGreen">
+</td></tr>
+<tr>
+<th rowspan="2">Intel 64-bit
+</th>
+<th>Static
+</th>
+<td style="background:green">Nightly
+</td>
+<td style="background:LightGreen">
+</td>
+<td style="background:green">Nightly
+</td>
+<td style="background:green">Nightly
+</td>
+<td style="background:LightGreen">
+</td>
+<td>
+</td>
+<td style="background:LightGreen">
+</td>
+<td>
+</td></tr>
+<tr>
+<th>Shared
+</th>
+<td style="background:LightGreen">
+</td>
+<td style="background:LightGreen">
+</td>
+<td style="background:LightGreen">
+</td>
+<td style="background:LightGreen">
+</td>
+<td style="background:green">Nightly
+</td>
+<td>
+</td>
+<td style="background:green">Nightly
+</td>
+<td>
+</td></tr></tbody></table>
+<table class="wikitable">
+<tbody><tr>
+<td>
+</td>
+<th>Legend
+</th></tr>
+<tr>
+<td style="background:Green">Nightly
+</td>
+<td>This combination of options is nightly tested, and known to work.
+</td></tr>
+<tr>
+<td style="background:LightGreen">
+</td>
+<td>This combinations has been manually tested, and is expected to work.
+</td></tr>
+<tr>
+<td>
+</td>
+<td>It is not known if this combinations of options will work.
+</td></tr>
+<tr>
+<td style="background:Orange">
+</td>
+<td>This combination likely has problems, and is not recommended.
+</td></tr>
+<tr>
+<td style="background:Red">FAIL
+</td>
+<td>These options are known not to work.
+</td></tr></tbody></table>
+<p>This table has been updated for the release branch, master, as of  February 15th 2013.
+</p>
+<h2><span id="Why_are_all_of_the_configurations_not_supported_on_Windows?"></span><span class="mw-headline" id="Why_are_all_of_the_configurations_not_supported_on_Windows.3F">Why are all of the configurations not supported on Windows?</span></h2>
+<p>One of the following errors frequently occur when the set of configuration options fail:
+</p>
+<pre>LINK&#160;: fatal error LNK1102: out of memory
+</pre>
+<pre>LINK&#160;: fatal error LNK1248: image size (80000010) exceeds maximum allowable size (80000000)
+</pre>
+<p><br />
+These errors occur because of limitations in the compiler's linker or the operating system. For 64-bit  architectures the linker is still only 32-bits on some Visual Studios.  In certain configurations the linker can run out of memory.  Also the Windows operating systems have a hard limit of 2GB for the size of libraries. For Debug mode configurations this limit can be encounted.
+</p><p>In general building in Debug mode should not be necessary, unless you are trying to debug SimpleITK or ITK. This configuration produces libraries that are very large because the compiler must maintain symbols for all instantiated ITK classes and member functions for each template parameters that a class is instantiating.
+</p><p><br />
+</p>
+<h2><span id="Where_is_the_Test_Data?"></span><span class="mw-headline" id="Where_is_the_Test_Data.3F">Where is the Test Data?</span></h2>
+<p>The testing data is not stored in the SimpleITK repository or as part of the source code. It is mirrored on several data repositories on the web.
+</p><p>If you have obtained the source code from the git repository, it should be downloaded as part of the build process via the CMake ExternalData module.
+</p><p>If you have downloaded a tar-ball of the source code there should be an accompanying "SimpleITKData" tar-ball available, which contains the external data. It should populate the .ExternalData subdirectory of the SimpleITK source code directory when extracted.
+</p>
+<h2><span id="Why_is_CMake_unable_to_download_ExternalData?"></span><span class="mw-headline" id="Why_is_CMake_unable_to_download_ExternalData.3F">Why is CMake unable to download ExternalData?</span></h2>
+<p>When compiling SimpleITK you may get and error like the following:
+</p>
+<pre>Object MD5=2e115fe26e435e33b0d5c022e4490567 not found at:
+ <a rel="nofollow" class="external free" href="https://placid.nlm.nih.gov/api/rest?method=midas.bitstream.download&amp;checksum=2e115fe26e435e33b0d5c022e4490567&amp;algorithm=MD5">https://placid.nlm.nih.gov/api/rest?method=midas.bitstream.download&amp;checksum=2e115fe26e435e33b0d5c022e4490567&amp;algorithm=MD5</a> ("Unsupported protocol")
+ <a rel="nofollow" class="external free" href="https://simpleitk.github.io/SimpleITKExternalData/MD5/2e115fe26e435e33b0d5c022e4490567">https://simpleitk.github.io/SimpleITKExternalData/MD5/2e115fe26e435e33b0d5c022e4490567</a> ("Unsupported protocol") 
+ <a rel="nofollow" class="external free" href="https://midas3.kitware.com/midas/api/rest?method=midas.bitstream.download&amp;checksum=2e115fe26e435e33b0d5c022e4490567&amp;algorithm=MD5">https://midas3.kitware.com/midas/api/rest?method=midas.bitstream.download&amp;checksum=2e115fe26e435e33b0d5c022e4490567&amp;algorithm=MD5</a> ("Unsupported protocol")
+ <a rel="nofollow" class="external free" href="https://insightsoftwareconsortium.github.io/ITKTestingData/MD5/2e115fe26e435e33b0d5c022e4490567">https://insightsoftwareconsortium.github.io/ITKTestingData/MD5/2e115fe26e435e33b0d5c022e4490567</a> ("Unsupported protocol")
+ <a rel="nofollow" class="external free" href="https://itk.org/files/ExternalData/MD5/2e115fe26e435e33b0d5c022e4490567">https://itk.org/files/ExternalData/MD5/2e115fe26e435e33b0d5c022e4490567</a> ("Unsupported protocol")
+</pre>
+<p>This indicates that CMake was not compiles with SSL support. The "Unsupported protocol" message indicate that CMake can not communicate via "https".
+</p><p>The solution is to use a compiled version of CMake which supports SSL. If you compile CMake yourself, simply reconfigure CMake with the "CMAKE_USE_OPENSSL option enabled.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20211025055732
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.062 seconds
+Real time usage: 0.095 seconds
+Preprocessor visited node count: 107/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 336/2097152 bytes
+Template argument size: 6/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 54/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.669      1 Template:SimpleITKMigrationHeader
+100.00%    1.669      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9475-0!canonical and timestamp 20211025055732 and revision id 61871
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://itk.org/Wiki/index.php?title=SimpleITK/FAQ&amp;oldid=61871">https://itk.org/Wiki/index.php?title=SimpleITK/FAQ&amp;oldid=61871</a>"</div>
+<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div><!-- end content --><div class="visualClear"></div></div></div><div class="visualClear"></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="/Wiki/SimpleITK/FAQ" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:SimpleITK/FAQ&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="/Wiki/index.php?title=SimpleITK/FAQ&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="/Wiki/index.php?title=SimpleITK/FAQ&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label"><h3 id="p-cactions-mobile-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main-mobile" class="selected"><a href="/Wiki/SimpleITK/FAQ" title="Page">Page</a></li><li id="ca-talk-mobile" class="new"><a href="/Wiki/index.php?title=Talk:SimpleITK/FAQ&amp;action=edit&amp;redlink=1" rel="discussion" title=" (page does not exist)">Discussion</a></li><li id="ca-more"><a href="#p-cactions">More</a></li><li id="ca-tools"><a href="#p-tb" title="Tools">Tools</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=SimpleITK%2FFAQ" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="/Wiki/Main_Page" class="mw-wiki-logo" title="Visit the main page"></a></div><div id="sidebar"><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search KitwarePublic" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>  <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/SimpleITK/FAQ" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/SimpleITK/FAQ" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/Wiki/index.php?title=SimpleITK/FAQ&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/Wiki/index.php?title=SimpleITK/FAQ&amp;oldid=61871" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/Wiki/index.php?title=SimpleITK/FAQ&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div></div><a href="#sidebar" title="navigation" class="menu-toggle" id="sidebar-toggle"></a><a href="#p-personal" title="user tools" class="menu-toggle" id="p-personal-toggle"></a><a href="#globalWrapper" title="back to top" class="menu-toggle" id="globalWrapper-toggle"></a></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 15 June 2017, at 12:57.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li><li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li></ul></div></div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.062","walltime":"0.095","ppvisitednodes":{"value":107,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":336,"limit":2097152},"templateargumentsize":{"value":6,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":54,"limit":5000000},"timingprofile":["100.00%    1.669      1 Template:SimpleITKMigrationHeader","100.00%    1.669      1 -total"]},"cachereport":{"timestamp":"20211025055732","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":239});});</script></body></html>

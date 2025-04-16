@@ -1,0 +1,3977 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK Release 3.6 Changed From Previous - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4929c90bb6b9063fbf8883b4","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_3.6_Changed_From_Previous","wgTitle":"ITK Release 3.6 Changed From Previous","wgCurRevisionId":11987,"wgRevisionId":11987,"wgArticleId":3092,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_3.6_Changed_From_Previous","wgRelevantArticleId":3092,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};
+RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_3_6_Changed_From_Previous rootpage-ITK_Release_3_6_Changed_From_Previous skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK Release 3.6 Changed From Previous</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>This release covers the period September 23, 2007 through April 13, 2008
+</p>
+<h2><span class="mw-headline" id="Changes_in_this_Release">Changes in this Release</span></h2>
+<pre>
+
+CMakeLists.txt
+    ENH: Updating ITK minor version number to "6" in preparation to the release of ITK 3.6.
+    ENH: Deal with policy framework in CMake from Brad.
+    ENH: updated baseline images to account for correct sparse field level set surface interpolation. Added ITK_USE_DEPRECATED_LEVELSET_INTERPOLATION CMake compile-time flag to switch back to old interpolation, for backward compatibility
+
+    ENH: all CMakeOutput.log and CMakeError.log files now are created in ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}.
+    COMP: Some temporary cxx flag checks to see how different compilers handle invalid flags.
+    BUG: 6267 conditionalised compiler flags to support gcc 4.2 on Mac OS X
+    ENH: Provides support for libXML2.  If itk_use_libxml2 is enabled, itklibxml2 is downloaded and installed.
+    ENH: Enabling the correct use of the OrientedImage orientation by default.
+    ENH: add rough CPack configuration, and fix some subprojects to enable CPack support for ITK
+    COMP: Enabling ITK_LEGACY_SILENT to ON by default.
+    ENH: Moving minor version number to 5, to iniciate next development cycle.
+
+CTestConfig.cmake
+    BUG: Try to fix trigger site.
+    ENH: Adding this file to enable new-style ctest scripts.
+
+Copyright.txt
+    ENH: Changing the license to the OSI-approved BSD license.
+
+GettingStarted.txt
+
+ITKConfig.cmake.in
+    ENH: Exposes the use of libxml2
+    ENH: revert previous patch, and resurect ITK_SOURCE_DIR
+
+itkConfigure.h.in
+    STYLE: This file was missing the copyright notice header.
+    ENH: updated baseline images to account for correct sparse field level set surface interpolation. Added ITK_USE_DEPRECATED_LEVELSET_INTERPOLATION CMake compile-time flag to switch back to old interpolation, for backward compatibility
+
+itkGenerateITKConfig.cmake
+
+itkIncludeDirectories.cmake
+    ENH: Exposes the use of libxml2
+
+CMake/CTestCustom.ctest.in
+    ENH: Increase limit on number of warnings.
+    COMP: trying to suppress warnings on Mac.
+
+CMake/CheckBigBitfield.cmake
+    ENH: all CMakeOutput.log and CMakeError.log files now are created in ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}.
+
+CMake/CheckCPPDirective.cmake
+    ENH: all CMakeOutput.log and CMakeError.log files now are created in ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}.
+
+CMake/InsightValgrind.supp
+    COMP: trying to suppress a bogus leak in libdl
+    COMP: suppress some dl conditionals.
+
+CMake/RemoveTemporaryFiles.cmake.in
+    ENH: A cmake script to remove temporary files from the build tree.
+
+CMake/TestNO_ICC_IDYNAMIC_NEEDED.cmake
+    ENH: all CMakeOutput.log and CMakeError.log files now are created in ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}.
+
+CMake/TestQnanhibit.cmake
+    ENH: all CMakeOutput.log and CMakeError.log files now are created in ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}.
+
+CMake/itkCheckCXXAcceptsFlags.cmake
+    COMP: Remove file checking logic. It was not portable across cmake2.4 patches.
+    ENH: continuing to refine this macro. It will execute if the macro has changed since the last time CMakeOutput.log was changed.
+
+CMake/itkSampleBuildTest.cmake.in
+    ENH: More options from the cache.
+    ENH: A sample ctest script for dashboard submissions.
+
+CMake/itkTestObjCxxCompiler.mm
+    BUG: Remove (intentional) compilation errors that were commited to CVS by mistake.
+
+Code/Algorithms/itkAutomaticTopologyMeshSource
+    BUG: Hashing of points should be limited to the coordinate part of the point.
+
+Code/Algorithms/itkBalloonForceFilter
+
+Code/Algorithms/itkBayesianClassifierImageFilter
+
+Code/Algorithms/itkBinaryMask3DMeshSource
+
+Code/Algorithms/itkBinaryThinningImageFilter
+
+Code/Algorithms/itkBinaryThinningImageFilter
+
+Code/Algorithms/itkBioCellularAggregate
+
+Code/Algorithms/itkCannySegmentationLevelSetImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/Algorithms/itkConnectedRegionsMeshFilter
+    BUG: Missing function implementation and REALLY bad style - only fixed some of style
+
+Code/Algorithms/itkConnectedRegionsMeshFilter
+
+Code/Algorithms/itkCurvatureFlowFunction
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Algorithms/itkCurvatureFlowFunction
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Algorithms/itkCurvesLevelSetImageFilter
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Algorithms/itkCurvesLevelSetImageFilter
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Algorithms/itkDeformableMesh3DFilter
+
+Code/Algorithms/itkDeformableSimplexMesh3DGradientConstraintForceFilter
+
+Code/Algorithms/itkFEMRegistrationFilter
+
+Code/Algorithms/itkFastMarchingImageFilter
+
+Code/Algorithms/itkFastMarchingImageFilter
+
+Code/Algorithms/itkHistogramImageToImageMetr
+
+Code/Algorithms/itkImageMomentsCalculator
+
+Code/Algorithms/itkImageMomentsCalculator
+
+Code/Algorithms/itkImagePCAShapeModelEstimator
+
+Code/Algorithms/itkImageRegistrationMethod
+    STYLE: Adding more documentation to the StartOptimization() method.
+
+Code/Algorithms/itkImageRegistrationMethod
+    BUG: The metric needs the number of threads prior to the call to it's Initialize() method.
+
+Code/Algorithms/itkImageToImageMetric
+
+Code/Algorithms/itkImageToImageMetr
+
+Code/Algorithms/itkIsoContourDistanceImageFilter
+
+Code/Algorithms/itkIsoContourDistanceImageFilter
+    COMP: warning unused parameter.
+
+Code/Algorithms/itkKLMRegionGrowImageFilter
+
+Code/Algorithms/itkKappaStatisticImageToImageMetric
+
+Code/Algorithms/itkKappaStatisticImageToImageMetr
+
+Code/Algorithms/itkLaplacianSegmentationLevelSetImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/Algorithms/itkLevelSetNeighborhoodExtractor
+
+Code/Algorithms/itkMRFImageFilter
+
+Code/Algorithms/itkMRIBiasFieldCorrectionFilter
+
+Code/Algorithms/itkMatchCardinalityImageToImageMetric
+
+Code/Algorithms/itkMatchCardinalityImageToImageMetr
+
+Code/Algorithms/itkMattesMutualInformationImageToImageMetric
+
+Code/Algorithms/itkMattesMutualInformationImageToImageMetr
+    BUG: UseCachingOfBSplineWeights was uninitialized. Detected by valgrind.
+    BUG: undefined variable sampleOK if transform is not a bspline. Detected by valgrind.
+    COMP: wrong declaration of precomputedWeight variable.
+    COMP: Borland warning.
+
+Code/Algorithms/itkMeanReciprocalSquareDifferenceImageToImageMetric
+
+Code/Algorithms/itkMeanReciprocalSquareDifferenceImageToImageMetr
+
+Code/Algorithms/itkMeanReciprocalSquareDifferencePointSetToImageMetric
+
+Code/Algorithms/itkMeanReciprocalSquareDifferencePointSetToImageMetr
+
+Code/Algorithms/itkMeanSquareRegistrationFunction
+
+Code/Algorithms/itkMeanSquareRegistrationFunction
+
+Code/Algorithms/itkMeanSquaresImageToImageMetric
+
+Code/Algorithms/itkMeanSquaresImageToImageMetr
+    BUG: redundant type.
+
+Code/Algorithms/itkMeanSquaresPointSetToImageMetric
+
+Code/Algorithms/itkMeanSquaresPointSetToImageMetr
+
+Code/Algorithms/itkMultiResolutionImageRegistrationMethod
+
+Code/Algorithms/itkMultiResolutionImageRegistrationMethod
+    COMP: shadowed type warning.
+
+Code/Algorithms/itkMultiResolutionPyramidImageFilter
+
+Code/Algorithms/itkMutualInformationImageToImageMetric
+
+Code/Algorithms/itkMutualInformationImageToImageMetr
+
+Code/Algorithms/itkNormalizedCorrelationImageToImageMetric
+
+Code/Algorithms/itkNormalizedCorrelationImageToImageMetr
+
+Code/Algorithms/itkNormalizedCorrelationPointSetToImageMetric
+
+Code/Algorithms/itkNormalizedCorrelationPointSetToImageMetr
+
+Code/Algorithms/itkRGBGibbsPriorFilter
+
+Code/Algorithms/itkRegularSphereMeshSource
+    BUG: nested for loop variable.
+
+Code/Algorithms/itkSegmentationLevelSetImageFilter
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Algorithms/itkShapePriorSegmentationLevelSetFunction
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Algorithms/itkSphereMeshSource
+
+Code/Algorithms/itkStructHashFunction
+
+Code/Algorithms/itkVoronoiDiagram2DGenerator
+    COMP: warning about possibly uninitialized variables.
+
+Code/Algorithms/itkVoronoiSegmentationImageFilterBase
+
+Code/Algorithms/itkWatershedSegmenter
+
+Code/BasicFilters/itkAbsImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkAbsoluteValueDifferenceImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkAccumulateImageFilter
+    STYLE: some more minor doc. Clearly mark filters that are not multithread (booh), and those that are (hooray)
+
+Code/BasicFilters/itkAcosImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkAdaptiveHistogramEqualizationImageFilter
+
+Code/BasicFilters/itkAddImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkAndImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkAnisotropicDiffusionFunction
+
+Code/BasicFilters/itkAsinImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkAtan2ImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkAtanImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkBSplineDecompositionImageFilter
+    BUG: Use of itk:: in itk namespace is an error
+
+Code/BasicFilters/itkBSplineInterpolateImageFunction
+    BUG: Use of itk:: in itk namespace is an error
+
+Code/BasicFilters/itkBSplineInterpolateImageFunction
+    ENH: Missing to add new member variable m_UseImageDirection in PrintSelf() method.
+
+Code/BasicFilters/itkBSplineResampleImageFunction
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkBinaryDilateImageFilter
+    COMP: warnings about shadowed variables.
+
+Code/BasicFilters/itkBinaryErodeImageFilter
+    COMP: warnings about shadowed variables.
+
+Code/BasicFilters/itkBinaryMagnitudeImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkBinaryProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/BasicFilters/itkBinaryThresholdProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/BasicFilters/itkBinomialBlurImageFilter
+
+Code/BasicFilters/itkBoundedReciprocalImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkCannyEdgeDetectionImageFilter
+
+Code/BasicFilters/itkChangeInformationImageFilter
+    BUG: Was not computing center of oriented images properly. Now uses TransformContinuousIndexToPhysicalPoint to compute center.
+
+Code/BasicFilters/itkChangeLabelImageFilter
+
+Code/BasicFilters/itkChangeLabelImageFilter
+
+Code/BasicFilters/itkComplexToImaginaryImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkComplexToModulusImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkComplexToPhaseImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkComplexToRealImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkCompose2DCovariantVectorImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkCompose2DVectorImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkCompose3DCovariantVectorImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkCompose3DVectorImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkComposeRGBImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkConfidenceConnectedImageFilter
+
+Code/BasicFilters/itkConnectedComponentImageFilter
+    STYLE: some more minor doc. Clearly mark filters that are not multithread (booh), and those that are (hooray)
+
+Code/BasicFilters/itkConstrainedValueAdditionImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkConstrainedValueDifferenceImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkContourDirectedMeanDistanceImageFilter
+
+Code/BasicFilters/itkContourMeanDistanceImageFilter
+
+Code/BasicFilters/itkCosImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkCurvatureNDAnisotropicDiffusionFunction
+    STYLE: BUG#5333 correct citation
+
+Code/BasicFilters/itkDanielssonDistanceMapImageFilter
+    BUG: 2924. Filter crashes with images with size=1 on on dimension, Changes offsets to 0, if for dimensions &lt;= 1. Also additional check for dimension = 1 in main loop.
+
+Code/BasicFilters/itkDirectedHausdorffDistanceImageFilter
+
+Code/BasicFilters/itkDivideImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkDoubleThresholdImageFilter
+
+Code/BasicFilters/itkEdgePotentialImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkEigenAnalysis2DImageFilter
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/BasicFilters/itkEigenAnalysis2DImageFilter
+
+Code/BasicFilters/itkErodeObjectMorphologyImageFilter
+    STYLE: Extended API to be consistent with BinaryErodeImageFilter
+
+Code/BasicFilters/itkExpImageFilter
+    COMP: Turn optimizations back to default.
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkExpNegativeImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkExpandImageFilter
+
+Code/BasicFilters/itkFlipImageFilter
+    COMP: Removed warnings for unused variables.
+
+Code/BasicFilters/itkGetAverageSliceImageFilter
+    STYLE: add ref to filter
+
+Code/BasicFilters/itkGradientImageFilter
+
+Code/BasicFilters/itkGradientImageFilter
+
+Code/BasicFilters/itkGradientImageToBloxBoundaryPointImageFilter
+
+Code/BasicFilters/itkGradientMagnitudeRecursiveGaussianImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkGradientNDAnisotropicDiffusionFunction
+
+Code/BasicFilters/itkGradientNDAnisotropicDiffusionFunction
+
+Code/BasicFilters/itkGradientRecursiveGaussianImageFilter
+    COMP: warnings and style.
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkGradientRecursiveGaussianImageFilter
+
+    ENH: Missing to add new member variable m_UseImageDirection in PrintSelf() method.
+
+Code/BasicFilters/itkGradientToMagnitudeImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkGrayscaleConnectedClosingImageFilter
+
+Code/BasicFilters/itkGrayscaleConnectedOpeningImageFilter
+
+Code/BasicFilters/itkGrayscaleFillholeImageFilter
+
+Code/BasicFilters/itkGrayscaleGrindPeakImageFilter
+
+Code/BasicFilters/itkHConcaveImageFilter
+
+Code/BasicFilters/itkHConvexImageFilter
+
+Code/BasicFilters/itkHMaximaImageFilter
+
+Code/BasicFilters/itkHMinimaImageFilter
+
+Code/BasicFilters/itkHausdorffDistanceImageFilter
+
+Code/BasicFilters/itkHessian3DToVesselnessMeasureImageFilter
+    STYLE: Fix doxygen typesetting.
+
+Code/BasicFilters/itkHessian3DToVesselnessMeasureImageFilter
+
+Code/BasicFilters/itkHessianRecursiveGaussianImageFilter
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/BasicFilters/itkHessianRecursiveGaussianImageFilter
+
+Code/BasicFilters/itkIntensityWindowingImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkInverseDeformationFieldImageFilter
+
+Code/BasicFilters/itkInvertIntensityImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkJoinSeriesImageFilter
+
+Code/BasicFilters/itkLabelStatisticsImageFilter
+
+Code/BasicFilters/itkLaplacianRecursiveGaussianImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkLevelSetFunctionWithRefitTerm
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/BasicFilters/itkLevelSetFunctionWithRefitTerm
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/BasicFilters/itkLog10ImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkLogImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkMaskImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkMaskNegatedImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkMatrixIndexSelectionImageFilter
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/BasicFilters/itkMaximumImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkMaximumProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/BasicFilters/itkMeanProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/BasicFilters/itkMedianProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/BasicFilters/itkMinimumImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkMinimumProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/BasicFilters/itkModulusImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkMultiplyImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkNarrowBandImageFilterBase
+
+Code/BasicFilters/itkNaryAddImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkNaryMaximumImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkNeighborhoodConnectedImageFilter
+    STYLE: some more minor doc. Clearly mark filters that are not multithread (booh), and those that are (hooray)
+
+Code/BasicFilters/itkNormalVectorDiffusionFunction
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/BasicFilters/itkNormalVectorDiffusionFunction
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/BasicFilters/itkNotImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkOrImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkOrientImageFilter
+
+Code/BasicFilters/itkParallelSparseFieldLevelSetImageFilter
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/BasicFilters/itkParallelSparseFieldLevelSetImageFilter
+    BUG: fixed a bug in recent anisotropic level sets code that caused tests to fail even when the level set fudge factor was preserved. Now all discrepancies are caused by the fudge factor, which will be removed soon.
+
+Code/BasicFilters/itkPermuteAxesImageFilter
+
+Code/BasicFilters/itkPolylineMask2DImageFilter
+
+Code/BasicFilters/itkPolylineMask2DImageFilter
+
+Code/BasicFilters/itkPolylineMaskImageFilter
+
+Code/BasicFilters/itkProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/BasicFilters/itkProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/BasicFilters/itkRGBToLuminanceImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkRandomImageSource
+    STYLE: various style issues.
+
+Code/BasicFilters/itkRandomImageSource
+    BUG: [6216] Changed random generator seed from unsigned long to unsigned int.
+
+Code/BasicFilters/itkReconstructionByDilationImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkReconstructionByErosionImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkReconstructionImageFilter
+    COMP: warnings about shadowed variables.
+
+Code/BasicFilters/itkRelabelComponentImageFilter
+    STYLE: some more minor doc. Clearly mark filters that are not multithread (booh), and those that are (hooray)
+
+Code/BasicFilters/itkResampleImageFilter
+    STYLE: Line length
+
+Code/BasicFilters/itkResampleImageFilter
+    BUG: Explicit use of itk:: in itk namespace implies existence of the itk::itk:: namespace
+
+Code/BasicFilters/itkRescaleIntensityImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkScalarAnisotropicDiffusionFunction
+
+Code/BasicFilters/itkSignedMaurerDistanceMapImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkSignedMaurerDistanceMapImageFilter
+
+Code/BasicFilters/itkSimilarityIndexImageFilter
+
+Code/BasicFilters/itkSinImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkSmoothingRecursiveGaussianImageFilter
+    BUG: rutime information support was not there
+
+Code/BasicFilters/itkSmoothingRecursiveGaussianImageFilter
+    BUG: output regions are not updated correctly when the input region is modified bitween 2 updates
+
+Code/BasicFilters/itkSobelEdgeDetectionImageFilter
+
+Code/BasicFilters/itkSobelEdgeDetectionImageFilter
+
+Code/BasicFilters/itkSparseFieldFourthOrderLevelSetImageFilter
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/BasicFilters/itkSparseFieldFourthOrderLevelSetImageFilter
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/BasicFilters/itkSparseFieldLevelSetImageFilter
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/BasicFilters/itkSparseFieldLevelSetImageFilter
+    ENH: updated baseline images to account for correct sparse field level set surface interpolation. Added ITK_USE_DEPRECATED_LEVELSET_INTERPOLATION CMake compile-time flag to switch back to old interpolation, for backward compatibility
+    BUG: Temporarily reintroducing fudge factor to investigate dashboard tests failing
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/BasicFilters/itkSpatialObjectToImageFilter
+    BUG: Now respects an oriented image's Directions - also fixed style
+
+Code/BasicFilters/itkSpatialObjectToImageFilter
+    BUG: Now respects an oriented image's Directions - also fixed style
+
+Code/BasicFilters/itkSpatialObjectToImageStatisticsCalculator
+
+Code/BasicFilters/itkSpatialObjectToPointSetFilter
+    COMP: Borland warning.
+
+Code/BasicFilters/itkSqrtImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkSquareImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkSquaredDifferenceImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkStandardDeviationProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/BasicFilters/itkSubtractImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkSumProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/BasicFilters/itkSymmetricEigenAnalysisImageFilter
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/BasicFilters/itkTanImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkTensorFractionalAnisotropyImageFilter
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/BasicFilters/itkTensorRelativeAnisotropyImageFilter
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/BasicFilters/itkTernaryAddImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkTernaryMagnitudeImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkTernaryMagnitudeSquaredImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkThresholdImageFilter
+    STYLE: some more minor doc. Clearly mark filters that are not multithread (booh), and those that are (hooray)
+
+Code/BasicFilters/itkThresholdImageFilter
+
+Code/BasicFilters/itkTileImageFilter
+
+Code/BasicFilters/itkTriangleMeshToBinaryImageFilter
+    COMP: warnings and style.
+
+Code/BasicFilters/itkTriangleMeshToBinaryImageFilter
+
+    COMP: warnings and style.
+
+Code/BasicFilters/itkTriangleMeshToSimplexMeshFilter
+    COMP: warnings and style.
+
+Code/BasicFilters/itkTriangleMeshToSimplexMeshFilter
+    COMP: warnings and style.
+
+Code/BasicFilters/itkTwoOutputExampleImageFilter
+
+Code/BasicFilters/itkVTKImageExport
+    ENH: Do not seg fault when input is missing
+
+Code/BasicFilters/itkVTKImageExportBase
+    ENH: Do not seg fault when input is missing
+
+Code/BasicFilters/itkVTKImageImport
+    ENH: was missing signed char
+
+Code/BasicFilters/itkVectorCastImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkVectorConfidenceConnectedImageFilter
+
+Code/BasicFilters/itkVectorExpandImageFilter
+
+Code/BasicFilters/itkVectorIndexSelectionCastImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkVectorRescaleIntensityImageFilter
+
+Code/BasicFilters/itkVectorRescaleIntensityImageFilter
+
+Code/BasicFilters/itkVotingBinaryHoleFillingImageFilter
+    COMP: Fixed warning on type mismatch in an assignment statement
+
+Code/BasicFilters/itkWeightedAddImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/BasicFilters/itkXorImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/Common/CMakeLists.txt
+    COMP:add malloc library for IRIX platforms
+    COMP: removed empty C++ files from library.
+    COMP: Link a shared library with a static library on 64 bit.
+
+Code/Common/itkAddImageAdaptor
+
+Code/Common/itkAnnulusOperator
+    COMP: warnings about shadowed variables and types.
+
+Code/Common/itkAnnulusOperator
+    COMP: warnings about shadowed variables and types.
+
+Code/Common/itkBSplineDeformableTransform
+    BUG: Now correctly handles directions
+
+Code/Common/itkBSplineDeformableTransform
+    BUG: in&#160;::SetParameters not all parameters were being passed.
+    BUG: Now correctly handles directions
+    BUG: 6123. Internal parameters vector is null at construction, causing a crash when GetParameters() is called. Set internal parameters to point to an existing internal parameters buffer at construction time. Added an exception if the parameters vector is null when GetParameters() is called.
+
+Code/Common/itkBSplineInterpolationWeightFunction
+
+Code/Common/itkBoundingBox
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/Common/itkCenteredAffineTransform
+insight-users/2007-December/024516.html
+
+Code/Common/itkCentralDifferenceImageFunction
+
+Code/Common/itkCentralDifferenceImageFunction
+
+Code/Common/itkChainCodePath
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkChainCodePath2D
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkChildTreeIterator
+    BUG: improper specification of Self.
+
+Code/Common/itkConceptChecking
+
+Code/Common/itkDataObject
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkDataObject
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkDefaultDynamicMeshTraits
+    BUG: Hashing of points should be limited to the coordinate part of the point.
+
+Code/Common/itkDefaultStaticMeshTraits
+    BUG: Hashing of points should be limited to the coordinate part of the point.
+
+Code/Common/itkDerivativeOperator
+
+Code/Common/itkDerivativeOperator
+
+Code/Common/itkElasticBodyReciprocalSplineKernelTransform
+    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+
+Code/Common/itkElasticBodyReciprocalSplineKernelTransform
+    BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
+
+Code/Common/itkElasticBodySplineKernelTransform
+    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+
+Code/Common/itkElasticBodySplineKernelTransform
+    BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
+
+Code/Common/itkEquivalencyTable
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkEquivalencyTable
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkEuler3DTransform
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkFiniteDifferenceFunction
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+    COMP: better definition of PixelRealType
+
+Code/Common/itkFiniteDifferenceFunction
+    BUG: fixed a bug in recent anisotropic level sets code that caused tests to fail even when the level set fudge factor was preserved. Now all discrepancies are caused by the fudge factor, which will be removed soon.
+
+Code/Common/itkFiniteDifferenceImageFilter
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Common/itkFiniteDifferenceImageFilter
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Common/itkFiniteDifferenceSparseImageFilter
+    COMP: warnings about shadowed variables and types.
+
+Code/Common/itkFiniteDifferenceSparseImageFilter
+    COMP: warnings about shadowed variables and types.
+
+Code/Common/itkGaussianBlurImageFunction
+    COMP: warnings about shadowed variables and types.
+
+Code/Common/itkImage
+    BUG: Now image adaptor's support directions
+    STYLE: Fixing coding style violations indicated by KWStyle.
+
+Code/Common/itkImage
+    STYLE: Fixing coding style violations indicated by KWStyle.
+
+Code/Common/itkImageAdaptor
+    BUG: Now image adaptor's support directions
+
+Code/Common/itkImageAdaptor
+
+Code/Common/itkImageBase
+
+Code/Common/itkImageFunction
+    BUG: #6219. Misspelled method name.
+
+Code/Common/itkImageRegionIterator
+    ENH: Removing unnecessary include of ImageRegionIteratorWithIndex.h.
+
+Code/Common/itkImageToImageFilter
+
+Code/Common/itkImageTransformHelper
+    BUG: 5637. ImageTransformHelper computations wrong for 1D.
+
+Code/Common/itkImportImageContainer
+    BUG:&#160;::Reserve was not adjusting size properly if the newly resuted size was less than the capacity. ENH: Added&#160;::Capacity() to return capacity.
+
+Code/Common/itkImportImageContainer
+    COMP: cast ImportPointer to void * for printing.
+
+Code/Common/itkInOrderTreeIterator
+    COMP: operator= is no longer virtual. virtual operator= requires special processing by subclasses. In these classes, it was not needed. This should also resolve warnings about overriding virtual methods in a derived class. As an aside, there were no other virtual operator= methods in itk other than these.
+
+Code/Common/itkIndex
+    COMP: Some version of Visual Studio do not properly round. This fix replaces assembler language with C++ code for the rounding.
+
+Code/Common/itkKLMSegmentationBorder
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkKLMSegmentationRegion
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkKLMSegmentationRegion
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkKernelTransform
+    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+
+Code/Common/itkKernelTransform
+    BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
+
+Code/Common/itkLandmarkBasedTransformInitializer
+
+Code/Common/itkLeafTreeIterator
+    COMP: operator= is no longer virtual. virtual operator= requires special processing by subclasses. In these classes, it was not needed. This should also resolve warnings about overriding virtual methods in a derived class. As an aside, there were no other virtual operator= methods in itk other than these.
+
+Code/Common/itkLevelOrderTreeIterator
+    COMP: operator= is no longer virtual. virtual operator= requires special processing by subclasses. In these classes, it was not needed. This should also resolve warnings about overriding virtual methods in a derived class. As an aside, there were no other virtual operator= methods in itk other than these.
+
+Code/Common/itkLevelSetFunction
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Common/itkLevelSetFunction
+    BUG: fixed a bug in recent anisotropic level sets code that caused tests to fail even when the level set fudge factor was preserved. Now all discrepancies are caused by the fudge factor, which will be removed soon.
+
+Code/Common/itkLightObject
+    BUG: Fix a possible race condition in SetReferenceCount(). Pointed by Julia Smith on user mailing list.
+
+Code/Common/itkLinearInterpolateImageFunction
+
+Code/Common/itkLinearInterpolateImageFunction
+
+Code/Common/itkMacro
+    ENH: Added check of ITK_LEGACY_TEST definition to silence deprecation warnings in tests.  Also corrected ITK_LEGACY_REMOVE implementation to not produce a stray semicolon.
+    BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
+
+Code/Common/itkMapContainer
+    COMP: Warning about shadowed variables.
+
+Code/Common/itkMatrix
+    BUG: 6309. Inverse transform does not catch singular matrices. Added check for 0 determinant. Thorws exception if 0. This is caught by the transforms which return false for a singular matrix.
+
+Code/Common/itkMatrixOffsetTransformBase
+    BUG: docs mention column-major order but describe row-major.  Matrices are really row-major.
+
+Code/Common/itkMaximumRatioDecisionRule
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkMaximumRatioDecisionRule
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkMersenneTwisterRandomVariateGenerator
+    COMP: suppress VS6 warning regarding unary minus and unsigned.
+
+Code/Common/itkMesh
+    BUG: Hashing of points should be limited to the coordinate part of the point.
+
+Code/Common/itkMetaDataObject
+    COMP:  Remove compiler warning about missing return value for non void function.
+
+Code/Common/itkMetaDataObjectBase
+
+Code/Common/itkNthElementImageAdaptor
+    BUG: Now image adaptor's support directions
+
+Code/Common/itkNumericTraits
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkNumericTraits
+
+Code/Common/itkNumericTraitsVariableLengthVectorPixel
+
+Code/Common/itkNumericTraitsVariableLengthVectorPixel
+
+Code/Common/itkObjectFactoryBase
+    COMP: remove DynamicLoader::CloseLibrary(lib) for case when a lib is found, but does not have the symbol itkLoad. Not portable acorss all platforms.
+    COMP: use dylib extension for dynamic libs on MAC.
+    COMP: casting issues on windows.
+    COMP: still issues with GCC and maybe other platforms.
+    BUG: backout last changes.
+    BUG: Trying to debug ObjectFactory. There seems to be a problem with UnRegisterAllFactories().
+    BUG: 0005880. substr arguments were incorrect. The second argument is the count of the substring, not the position of the end of the string.
+
+Code/Common/itkObjectFactoryBase
+    BUG: The ability to override classes with factories was not working. The main problem was the lack of a -&gt;Register on created objects. Also, the search for overriding classes was limited to the first class in a factory. STYLE: various style issues in the itkObjectFactoryBase code. ENH: A new test to exercise the ObjectFactory code.
+
+Code/Common/itkOffset
+
+Code/Common/itkOneWayEquivalencyTable
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkOneWayEquivalencyTable
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkOrientedImage
+    BUG: Now image adaptor's support directions
+
+Code/Common/itkOrthogonallyCorrected2DParametricPa
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkOrthogonallyCorrected2DParametricPath
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkPhasedArray3DSpecialCoordinatesImage
+
+    BUG: temporarily added a dummy RotateArrayByDirectionCosines method.
+
+Code/Common/itkPixelTraits
+    ENH: This file expects Macros to be defined but it was not including itkMacro.h.
+
+Code/Common/itkPolygonCell
+    COMP: style.
+
+Code/Common/itkPostOrderTreeIterator
+    COMP: operator= is no longer virtual. virtual operator= requires special processing by subclasses. In these classes, it was not needed. This should also resolve warnings about overriding virtual methods in a derived class. As an aside, there were no other virtual operator= methods in itk other than these.
+
+Code/Common/itkProcessObject
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkProgressAccumulator
+    BUG:  last checkin was incomplete.
+
+Code/Common/itkProgressAccumulator
+    COMP: warnings about local vars hiding other vars.
+
+Code/Common/itkRGBPixel
+    ENH: Added == and &lt; operators so that RGBPixel can be used in a std::map
+
+Code/Common/itkRGBPixel
+    ENH: Added == and &lt; operators so that RGBPixel can be used in a std::map
+
+Code/Common/itkRigid3DPerspectiveTransform
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkScaleTransform
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkSegmentationLevelSetFunction
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Common/itkSegmentationLevelSetFunction
+    BUG: bug fix 6156. Support for isotropic and anisotropic image spacings has been added to all level sets functions and filters, including serial and parallel sparse field level sets and CurvatureFlowFunction. The new functionality can be activated with UseImageSpacingOn. A fudge factor used for surface interpolation in SparseFieldLevelSetImageFilter has been removed.
+
+Code/Common/itkSimilarity2DTransform
+    BUG: 6076. Setting angle from a matrix faulty. If angle was negative, the ComputeMatrixParameters incorrectly set the VarAngle to the wrong sign.
+
+Code/Common/itkSimilarity3DTransform
+    BUG: In SetMatrix, check for zero determinant before computing cube root.
+
+Code/Common/itkSize
+
+Code/Common/itkSpatialOrientationAdapter
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkSpatialOrientationAdapter
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkSymmetricSecondRankTensor
+
+Code/Common/itkSymmetricSecondRankTensor
+
+Code/Common/itkTestMain
+    BUG: flawed logic for NumberOfPixelsTolerance.
+
+Code/Common/itkTetrahedronCell
+    COMP: warnings about shadowed variables and types.
+
+Code/Common/itkTextOutput
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/Common/itkThinPlateR2LogRSplineKernelTransform
+    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+
+Code/Common/itkThinPlateR2LogRSplineKernelTransform
+    BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
+
+Code/Common/itkThinPlateSplineKernelTransform
+    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+
+Code/Common/itkThinPlateSplineKernelTransform
+    BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
+
+Code/Common/itkTimeProbe
+
+Code/Common/itkTimeProbesCollectorBase
+
+Code/Common/itkTimeStamp
+    COMP: fixed problems with itkTimeStamp and pre-10.5 Mac systems
+    BUG: 6008 performance optimisation of itkTimeStamp for Windows and Mac OS, synced with vtkTimeStamp
+
+Code/Common/itkTimeStamp
+    BUG: 6008 performance optimisation of itkTimeStamp for Windows and Mac OS, synced with vtkTimeStamp
+
+Code/Common/itkTransform
+    BUG: 5291. Fixing documentation of GetInverse();.
+
+Code/Common/itkTransform
+    ENH: Backing out the thread saefe transform class because we now replicate transforms per thread. As a result, the additional API in the thread safe transform is no longer necessary.
+
+Code/Common/itkTranslationTransform
+
+Code/Common/itkTreeIteratorBase
+    COMP: operator= is no longer virtual. virtual operator= requires special processing by subclasses. In these classes, it was not needed. This should also resolve warnings about overriding virtual methods in a derived class. As an aside, there were no other virtual operator= methods in itk other than these.
+
+Code/Common/itkTriangleCell
+    COMP: warnings about shadowed variables and types.
+
+Code/Common/itkVariableLengthVector
+private/insight-developers/2008-January/009920.html
+
+Code/Common/itkVariableLengthVector
+private/insight-developers/2008-January/009920.html
+
+Code/Common/itkVariableSizeMatrix
+    BUG: 0005761. Replaced itkExceptionMacro with itkGenericExceptionMacro. Also added test to cover most of the code. Fixed some compile errors in untested code.
+
+Code/Common/itkVariableSizeMatrix
+    ENH: better coverage. Removed commented out code.
+    BUG: 0005761. Replaced itkExceptionMacro with itkGenericExceptionMacro. Also added test to cover most of the code. Fixed some compile errors in untested code.
+
+Code/Common/itkVectorContainer
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/Common/itkVectorContainer
+    COMP: warnings about shadowed variables and types.
+
+Code/Common/itkVersor
+
+Code/Common/itkVersor
+    BUG: 6069. Versor was imncompatible with float type. In GetAngle, the two args to atan2 were of a different type. Added a cast to RealType for second argument.
+
+Code/Common/itkVolumeSplineKernelTransform
+    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+
+Code/Common/itkVolumeSplineKernelTransform
+    BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
+
+Code/Common/itkWindows
+    BUG: 0005403. #undef WIN32_LEAN_AND_MEAN if it is already defined befroe #define.
+
+Code/Common/itk_hash_map
+    COMP: Added missing forward declarations needed for friend declaration.
+
+Code/Common/itk_hashtable
+    COMP: Added missing this-&gt; for dependent-name member access.
+
+Code/IO/CMakeLists.txt
+    BUG: 6196. Enable generation of warnings related to 64bits to 32bits truncations.
+    ENH: why is (the fairly large) itkTestDriver needed if BUILD_TESTING is off?
+
+Code/IO/itkAnalyzeImageIO
+    ENH:  Implemented changes discussed on 20080222 teleconference to make the .hdr and .img file format reading and writing more consistent.  The nifti versions of .img and .hdr images are not written by default, but will be read properly.  Requesting a write of .img or .hdr will result in using the Mayo-clinic compliant version of an Analyze7.5 file format.
+    COMP: fixed some 64 to 32 bit conversion warnings, for bug 6196
+    COMP: close opened files if there is a failure.
+
+Code/IO/itkAnalyzeImageIO
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkAnalyzeImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkAnalyzeImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkArchetypeSeriesFileNames
+    COMP: Fixing warning: implicit conversion shortens 64-bit value into a 32-bit value.
+
+Code/IO/itkBMPImageIO
+    STYLE: various style issues.
+
+    BUG: 0006196. ITK has many 64 to 32 bit truncations.
+
+Code/IO/itkBMPImageIO
+
+Code/IO/itkBioRadImageIO
+    COMP: Fixing warning: implicit conversion shortens 64-bit value into a 32-bit value.
+
+Code/IO/itkBrains2HeaderBase
+    COMP: Fixing warning: implicit conversion shortens 64-bit value into a 32-bit value.
+
+Code/IO/itkBrains2HeaderFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkBrains2HeaderFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkBrains2MaskImageIO
+    COMP: fixed some 64 to 32 bit conversion warnings, for bug 6196
+
+Code/IO/itkConvertPixelBuffer
+
+Code/IO/itkConvertPixelBuffer
+    STYLE: various style issues identified by KWStyle.
+
+Code/IO/itkDICOMImageIO2
+    COMP: Fixing warning: implicit conversion shortens 64-bit value into a 32-bit value on MacOS.
+
+Code/IO/itkDefaultConvertPixelTraits
+
+Code/IO/itkGDCMImageIO
+    COMP: Fixing warning: implicit conversion shortens 64-bit value into a 32-bit value on MacOS.
+    BUG: When using the default SeriesWriter, the user did not explicitely set the 3rd coordinate position, there is no way to know where the image is in 3D. By default set it in the place Z=0. This fix the segfault on some win32 compiler
+    COMP: Why is my gcc not reporting this as an error...
+    ENH: Fix feature request: 0006138: Finding proper pixel type for DICOM is cumbersome
+    STYLE: fix typo
+
+Code/IO/itkGDCMImageIO
+    STYLE: update doc
+
+Code/IO/itkGE4ImageIO
+    COMP: close opened files if there is a failure.
+
+Code/IO/itkGE4ImageIO
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkGE4ImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkGE4ImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkGE5ImageIO
+    COMP: fixed some 64 to 32 bit conversion warnings, for bug 6196
+    STYLE: Turn C style coding into C++ style
+    BUG: 0005951. Directions and origin were being computed incorrectly from the header information.
+    BUG: GE5 volumes reading in Anterior-to-Posterior swapped
+
+Code/IO/itkGE5ImageIO
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkGE5ImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkGE5ImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkGEAdwImageIO
+    COMP: fixed some 64 to 32 bit conversion warnings, for bug 6196
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkGEAdwImageIO
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkGEAdwImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkGEAdwImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkGiplImageIO
+    COMP: Fixing warning: implicit conversion shortens 64-bit value into a 32-bit value on MacOS.
+
+Code/IO/itkIOCommon
+    ENH: Removing code that has been commented out since April 2003.
+
+Code/IO/itkIOCommon
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkIPLCommonImageIO
+    COMP: some systems have problems copying the itkExceptionObject. catch should use a ref to ExceptionObject.
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkIPLCommonImageIO
+    STYLE: various style issues identified by KWStyle.
+
+Code/IO/itkImageFileReader
+    BUG: #6046. ImageFilereader leaks in case of exceptions. Fixed by replacing heap allocation using new with std::vector&lt;char&gt;.
+
+Code/IO/itkImageFileWriter
+    ENH: Enabling streaming IO
+
+Code/IO/itkImageIOBase
+    ENH: Adding support for FixedArray&lt;T,3&gt; and FixedArray&lt;T,4&gt; PixelTypes.
+    BUG: Removing annoying debugging message.
+    BUG: Set methods were doing invalid pointer writes. Tests for upper bounds were incorrect.
+
+Code/IO/itkImageIOBase
+    ENH: Adding support for writing matrices of 2x2, 3x3 and 4x4.
+
+Code/IO/itkImageIOFactory
+    ENH:  Implemented changes discussed on 20080222 teleconference to make the .hdr and .img file format reading and writing more consistent.  The nifti versions of .img and .hdr images are not written by default, but will be read properly.  Requesting a write of .img or .hdr will result in using the Mayo-clinic compliant version of an Analyze7.5 file format.
+
+Code/IO/itkImageSeriesWriter
+
+Code/IO/itkMetaImageIO
+    COMP: warning grafitti.
+    COMP: warnings about variable shadowing.
+    ENH: Remove debugging messages used to check the Direction cosines.
+
+Code/IO/itkMvtSunf
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkNiftiImageIO
+    STYLE: various style issues.
+    ENH:  Finished implementing modificaitons discussed on 20080222 teleconference to make the .hdr and .img file format reading and writing more consistent.
+    ENH:  Implemented changes discussed on 20080222 teleconference to make the .hdr and .img file format reading and writing more consistent.  The nifti versions of .img and .hdr images are not written by default, but will be read properly.  Requesting a write of .img or .hdr will result in using the Mayo-clinic compliant version of an Analyze7.5 file format.
+    COMP: Fixing other implicit integer conversions.
+    STYLE: Added doc to CanReadFile.
+    COMP: warnings about variable shadowing.
+
+Code/IO/itkNiftiImageIO
+    ENH:  Finished implementing modificaitons discussed on 20080222 teleconference to make the .hdr and .img file format reading and writing more consistent.
+    ENH:  Improved documentation. COMP: Removed unused (left over from a copy and paste) enumerations.
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkNiftiImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkNiftiImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkSiemensVisionImageIO
+    COMP: fixed some 64 to 32 bit conversion warnings, for bug 6196
+
+Code/IO/itkSiemensVisionImageIO
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkSiemensVisionImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkSiemensVisionImageIOFactory
+    STYLE: Turn C style coding into C++ style
+
+Code/IO/itkTIFFImageIO
+    STYLE: Fixing missing word on message of an itkExceptionMacro.
+    BUG: inappropriate use of long and unsigned long. On 64 bit systems, these may be 8 bytes long. The tif library does not read 8 byte fields. It defines uint32 and int32 to be int's on 64 bit systems.
+    BUG: 0006159. itkTIFFImageIO does not close opened file. Also, when the writer fails to write, it does so silently. Added m_InternalImage-&gt;Clean() calls after reading. Now throws an exception if the write cannot open the file.
+
+Code/IO/itkVTKImageIO
+    BUG: 0006161. Precision of spacing and origin while reading an image. The spacing and origin were declared internally as float rather than double.
+
+Code/Numerics/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Code/Numerics/itkCumulativeGaussianCostFunction
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/Numerics/itkFRPROptimizer
+    ENH: Provides a regular step gradient option to match that of other gradient optimizer
+
+Code/Numerics/itkFRPROptimizer
+    ENH: Provides a regular step gradient option to match that of other gradient optimizer
+
+Code/Numerics/itkLBFGSBOptimizer
+    ENH: Adding the vnl failure code value to the list of elements to print in PrintSelf().
+
+Code/Numerics/itkLBFGSBOptimizer
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Code/Numerics/itkPowellOptimizer
+    COMP: Fix missing include when using the ITK_MANUAL_INSTANTIATION flag
+
+Code/Numerics/itkSingleValuedVnlCostFunctionAdaptor
+    COMP: warnings about variable shadowing.
+
+Code/Numerics/Attic/lbfgsb
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Code/Numerics/FEM/CMakeLists.txt
+
+Code/Numerics/FEM/dsrc2c
+    COMP: the symbol timer_ was already defined in netlib. Made a unique symbol.
+
+Code/Numerics/FEM/itkFEMElementBase
+    COMP: warnings about variable shadowing.
+
+Code/Numerics/FEM/itkFEMImageMetricLoad
+    COMP: warnings about shadowed variables.
+
+Code/Numerics/FEM/itkFEMLightObject
+    ENH: Added more information to input error messages.
+    COMP: added more descriptive failure messages. Also, some style fixes.
+
+Code/Numerics/FEM/itkFEMLoadElementBase
+    COMP: warnings about variable shadowing.
+
+Code/Numerics/FEM/itkFEMSolver
+    COMP: warnings about variable shadowing.
+
+Code/Numerics/Statistics/d1ma
+
+Code/Numerics/Statistics/itkDistanceToCentroidMembershipFunction
+    STYLE: Line lengths
+
+Code/Numerics/Statistics/itkHistogram
+    COMP: warnings about shadowed variables.
+
+Code/Numerics/Statistics/itkHistogramToEntropyImageFilter
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/Numerics/Statistics/itkHistogramToIntensityImageFilter
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/Numerics/Statistics/itkHistogramToLogProbabilityImageFilter
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/Numerics/Statistics/itkHistogramToProbabilityImageFilter
+    BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
+
+Code/Numerics/Statistics/itkImageToCooccurrenceListAdaptor
+    COMP: warnings.
+
+Code/Numerics/Statistics/itkImageToCooccurrenceListAdaptor
+    COMP: warnings.
+
+Code/Numerics/Statistics/itkImageToListGenerator
+    BUG: input and mask iterators must use the same region to produce valid result, but can have different buffered region. Using the buffered region of the mask image to initialize the mask iterator can lead to an invalid result.
+
+Code/Numerics/Statistics/itkListSampleToHistogramFilter
+    STYLE: line length
+
+Code/Numerics/Statistics/itkMahalanobisDistanceMembershipFunction
+    ENH: removing old vxl notation for dot product.
+
+Code/Numerics/Statistics/itkVariableDimensionHistogram
+    COMP: Warning about shadowed variables.
+
+Code/Patented/itkActiveShapeModelCalculator
+
+Code/Review/itkBinaryMorphologicalClosingImageFilter
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/Attic/itkBinaryProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+    ENH: preparing for transition to BasicFilters. ENH: Better exception handling. STYLE: changed old document handle.
+
+Code/Review/Attic/itkBinaryThresholdProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/Review/itkConformalFlatteningMeshFilter
+    COMP: Borland warnings.
+
+Code/Review/itkContourExtractor2DImageFilter
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkContourExtractor2DImageFilter
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/itkGeometricalQuadEdge
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkGeometricalQuadEdge
+    BUG: failed to include its own header file.
+
+Code/Review/itkLabelOverlayFunctor
+    ENH: Move OverlayFunctor in its own header so it can be used much easily in another class
+
+Code/Review/itkLabelOverlayImageFilter
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkLabelOverlayImageFilter
+
+Code/Review/itkLabelToRGBFunctor
+    COMP: VS6 has strange restrictions on use of typename.
+
+Code/Review/itkLabelToRGBImageFilter
+    COMP: VS6 has strange restrictions on use of typename.
+
+Code/Review/itkLabelToRGBImageFilter
+    COMP: VS6 has strange restrictions on use of typename.
+
+Code/Review/itkMINC2ImageIO
+    COMP: Addressing warnings about conversions between signed and unsigned.
+    COMP: Fixing mismatch between signed and unsigned ints used to represent dimensions.
+    COMP: Fixing warning about unused Strides function argument.
+
+Code/Review/itkMINC2ImageIO
+    COMP: Fixing API use of "int" and "unsigned ints".
+
+Code/Review/itkMatlabTransformIO
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/Attic/itkMaximumProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/Review/Attic/itkMeanProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/Review/Attic/itkMedianProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/Review/itkMemoryProbe
+
+Code/Review/itkMemoryProbe
+
+Code/Review/itkMemoryProbesCollectorBase
+    COMP: implement virtual destructors to remove compilation warning.
+
+Code/Review/itkMemoryUsageObserver
+    COMP: forgot to set the new size of the array
+    ENH: Implementation of a memory usage observer for windows (with Windows Native API) and sun solaris
+    COMP: implement virtual destructors to remove compilation warning.
+
+Code/Review/itkMemoryUsageObserver
+    ENH: Implementation of a memory usage observer for Mac OS X ( version &gt;10.2 ) using the vmmap command
+    ENH: Implementation of a memory usage observer for windows (with Windows Native API) and sun solaris
+    COMP: disable mallinfo for sun platforms
+    COMP: implement virtual destructors to remove compilation warning.
+
+Code/Review/Attic/itkMinimumProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/Review/itkMorphologicalWatershedFromMarkersImageFilter
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/itkNeuralNetworkFileReader
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkNeuralNetworkFileWriter
+    COMP: changed insight journal handle to new location.
+
+Code/Review/Attic/itkOptBSplineDeformableTransform
+    ENH: Backing out the optimized b-spline deformable transform class because we now replicate transforms per thread. As a result, the additional API in the opt class is no longer necessary.
+
+Code/Review/Attic/itkOptBSplineDeformableTransform
+    ENH: Backing out the optimized b-spline deformable transform class because we now replicate transforms per thread. As a result, the additional API in the opt class is no longer necessary.
+
+Code/Review/itkOptBSplineInterpolateImageFunction
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+    STYLE: Fixing coding style violations.
+
+Code/Review/itkOptBSplineInterpolateImageFunction
+    STYLE: Wrong indentation
+    STYLE: Fixing several style violations.
+    ENH: Fixing PrintSelf() errors. Missing to print some ivars.
+
+Code/Review/itkOptImageToImageMetric
+    BUG: Turn off UseAllPixels when the number of samples is set.
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+    STYLE: Fixing coding style violations.
+    BUG: Make sure m_ThreaderChunkSize is updated when m_NumberOfFixedImageSamples changes.
+    ENH: Changing from include of OptBSplineDeformableTransform to BSplineDeformableTransform
+
+Code/Review/itkOptImageToImageMetr
+    BUG: Need to turn off the use of all pixels if the sample pixel indices are specified.
+    COMP: PrintType needed to properly print pixel type ivars.
+    ENH: Starting to add conditionals blocks for caching the weights of BSpline transforms.
+    ENH: Allows the user to limit metric samples to high-intensity pixels in the fixed image
+    BUG: Fix call to BSplineDeformableTransform with parameters on the stack. ENH: Remove some debug code.
+    STYLE: Fixing coding style violations.
+    ENH: Remove unneeded printout.
+    BUG: Make sure m_ThreaderChunkSize is updated when m_NumberOfFixedImageSamples changes.
+    ENH: Fixing PrintSelf() errors. Missing to print some ivars.
+    ENH: Removing deprecated call to SetNumberOfThreads() in the Transform.
+
+Code/Review/itkOptLinearInterpolateImageFunction
+    STYLE: Fixing indentation of typedefs.
+    STYLE: Fixing coding style violations.
+
+Code/Review/itkOptLinearInterpolateImageFunction
+
+Code/Review/itkOptMatchCardinalityImageToImageMetric
+    STYLE: Fixing coding style violations.
+    ENH: Removing m_NumberOfThreads ivar that was commented out.
+
+Code/Review/itkOptMatchCardinalityImageToImageMetr
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+handle/1926/566 The parent class now has threading information, so MatchCardinalityImageToImageMetric needed to be updated to use the inherited m_NumberOfThreads.
+
+Code/Review/itkOptMattesMutualInformationImageToImageMetric
+    COMP: shadowed type warning.
+    STYLE: Fixing coding style violations.
+
+Code/Review/itkOptMattesMutualInformationImageToImageMetr
+    COMP: warnings about uninitialized variable.
+    STYLE: Fixing style problem with indentations of a long block of comments.
+    BUG: added new private var to PrintSelf. Should address a warning in the PrintSelf-Review Test.
+    BUG: Initialization of m_UseExplicitPDFDerivatives missing from the constructor.
+
+    STYLE: Fixing coding style violations.
+    BUG: Remove the use of some smart pointers internally to avoid calls to mutex locks. ENH: Avoid setting local transform pointer twice when threadID &gt; 0
+    COMP: Added typenames to fix compile errrors.
+    BUG: Replace GetJacobian( pt, threadId) with GetJacobian( pt )
+handle/1926/566
+
+Code/Review/itkOptMeanSquaresImageToImageMetric
+    ENH: Removing unncessary include for itkOptBSplineInterpolateImageFunction.h.
+    BUG: Evaluate Jacobian at fixed image point (i.e. untransformed point).
+
+Code/Review/itkOptMeanSquaresImageToImageMetr
+
+    STYLE: Fixing coding style violations.
+    BUG: Evaluate Jacobian at fixed image point (i.e. untransformed point).
+    COMP: Fix constness.
+    BUG: We can't use m_Transform if we aren't in threadID 0.
+handle/1926/566
+
+Code/Review/Attic/itkOptMutualInformationImageToImageMetric
+handle/1926/566
+
+Code/Review/Attic/itkOptMutualInformationImageToImageMetr
+handle/1926/566
+
+Code/Review/itkOptResampleImageFilter
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+    BUG: OptResampleImageFilter should include OptResampleImageFilter.txx
+
+Code/Review/itkOptResampleImageFilter
+
+    STYLE: Fixing coding style violations.
+    ENH: Removing calls to threaded transform API.
+
+Code/Review/itkProbe
+
+Code/Review/itkProbe
+
+Code/Review/itkProbesCollectorBase
+    COMP: implement virtual destructors to remove compilation warning.
+
+Code/Review/itkProbesCollectorBase
+    BUG: Syntax error - need class declaration with destructor
+    COMP: add typename for iterator types
+
+Code/Review/Attic/itkProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/Review/Attic/itkProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/Review/itkQuadEdge
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkQuadEdgeCellTraitsInfo
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkQuadEdgeMesh
+    COMP: changed insight journal handle to new location.
+    ENH: separate nn secure and secure interface for adding face and edge to have a faster copy mechanism.
+
+Code/Review/itkQuadEdgeMe
+    BUG: failed to include its own header file.
+    STYLE: missing {. ENH: faster FindEdgeCell.
+    BUG: needed better checking for cells that were empty or non-existant.
+    ENH: separate nn secure and secure interface for adding face and edge to have a faster copy mechanism.
+    ENH: remove a bad const that was forcing users to const_cast all over.
+
+Code/Review/itkQuadEdgeMeshBaseIterator
+    COMP: warning about implicit const casting.
+
+Code/Review/itkQuadEdgeMeshBoundaryEdgesMeshFunction
+    BUG: failed to include its own header file.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorCreateCenterVertexFunction
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorCreateCenterVertexFunction
+    BUG: failed to include its own header file.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorDeleteCenterVertexFunction
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorDeleteCenterVertexFunction
+    BUG: failed to include its own header file.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorFlipEdgeFunction
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorFlipEdgeFunction
+    COMP: missing include files.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorJoinFacetFunction
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorJoinFacetFunction
+    BUG: failed to include its own header file.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorJoinVertexFunction
+    ENH: JoinVertex now handle the degenerated cases where the modification would lead to topological Modifications. In that case, the modification is not done. I might want to add a flag that let the user know why the modification has not been done. In case of topological change, the user could then choose to switch to another EulerOp which would allow it.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorJoinVertexFunction
+    STYLE: indent.
+    BUG: failed to include its own header file.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorSplitEdgeFunction
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorSplitFacetFunction
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+    COMP: warnings about shadowed variables.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorSplitFacetFunction
+    BUG: failed to include its own header file.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorSplitVertexFunction
+    BUG: failed to include its own header file.
+
+Code/Review/itkQuadEdgeMeshFunctionBase
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/itkQuadEdgeMeshLineCell
+    COMP: Only mutable member variables can be modified in a const method.
+
+Code/Review/itkQuadEdgeMeshLineCell
+    ENH: Better implementation of the cell API.
+
+Code/Review/itkQuadEdgeMeshMacro
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkQuadEdgeMeshPoint
+    ENH: remove a bad const that was forcing users to const_cast all over.
+
+Code/Review/itkQuadEdgeMeshPoint
+    ENH: remove a bad const that was forcing users to const_cast all over.
+
+Code/Review/itkQuadEdgeMeshPolygonCell
+    COMP: changed insight journal handle to new location.
+    BUG: remove the makeIds() call in some method to avoid legacy-window-compiler-that-we-might-not-want-to-support-forever to complain. Still slow, still to be optimized. For backward compatibility of the SetCell() method. Use AddFace() directly instead if you use a QEMesh.
+    STYLE: wrong ident.
+    ENH: the makePointIds() which is here only for backward compatibility, is now on demand. It will be called only is the user tries to call the old cell interface.
+
+Code/Review/itkQuadEdgeMeshPolygonCell
+    ENH: the makePointIds() which is here only for backward compatibility, is now on demand. It will be called only is the user tries to call the old cell interface.
+
+Code/Review/itkQuadEdgeMeshToQuadEdgeMeshFilter
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkQuadEdgeMeshToQuadEdgeMeshFilter
+    BUG: failed to include its own header file.
+
+Code/Review/itkQuadEdgeMeshTopologyChecker
+    COMP: changed insight journal handle to new location.
+    BUG: memory leaks because QuadEdgeTopologyChecker was created with new rather than New(). Moved constructor and destructor into protected section. Changed test to use&#160;::New() rather than new.
+
+Code/Review/itkQuadEdgeMeshTopologyChecker
+    BUG: memory leaks because QuadEdgeTopologyChecker was created with new rather than New(). Moved constructor and destructor into protected section. Changed test to use&#160;::New() rather than new.
+
+Code/Review/itkQuadEdgeMeshTraits
+    COMP: changed insight journal handle to new location.
+    COMP: warnings.
+
+Code/Review/itkQuadEdgeMeshZipMeshFunction
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/itkQuadEdgeMeshZipMeshFunction
+    BUG: should use LWDeleteEdge.
+
+Code/Review/itkRegionalMaximaImageFilter
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkRegionalMinimaImageFilter
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkSmapsFileParser
+    ENH: Implementation of a memory usage observer for Mac OS X ( version &gt;10.2 ) using the vmmap command
+    COMP: operator&gt;&gt; should have been defined as a friend function, not as a method. correct other small bugs
+
+Code/Review/itkSmapsFileParser
+    STYLE: Bad location of { in EXPORT lines caused PrintSelfCheck to fail.
+    ENH: Implementation of a memory usage observer for Mac OS X ( version &gt;10.2 ) using the vmmap command
+    COMP: operator&gt;&gt; should have been defined as a friend function, not as a method. correct other small bugs
+
+Code/Review/itkSmapsFileParser
+    COMP: don't throw exceptions for unsupported linux kernels
+    ENH: Implementation of a memory usage observer for Mac OS X ( version &gt;10.2 ) using the vmmap command
+    COMP: non-portable use of process.h
+    COMP: operator&gt;&gt; should have been defined as a friend function, not as a method. correct other small bugs
+
+Code/Review/Attic/itkStandardDeviationProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+    COMP: changed insight journal handle to new location.
+
+Code/Review/Attic/itkSumProjectionImageFilter
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Code/Review/Attic/itkThreadSafeTransform
+    ENH: Backing out the thread saefe transform class because we now replicate transforms per thread. As a result, the additional API in the thread safe transform is no longer necessary.
+
+Code/Review/Attic/itkThreadSafeTransform
+    ENH: Backing out the thread saefe transform class because we now replicate transforms per thread. As a result, the additional API in the thread safe transform is no longer necessary.
+
+Code/Review/itkTimeProbe
+
+Code/Review/itkTimeProbe
+
+Code/Review/itkTimeProbesCollectorBase
+    COMP: implement virtual destructors to remove compilation warning.
+
+Code/Review/itkTransformFileReaderWithFactory
+
+Code/Review/itkTransformFileWriterWithFactory
+
+Code/Review/itkTransformIOFactory
+    COMP: No need for itk:: modifier when inside itk nameespace. COMP: unnecessary typenames.
+
+Code/Review/itkTxtTransformIO
+
+Code/Review/itkVTKPolyDataReader
+    STYLE: unaligned typedefs.
+    COMP: warnings.
+
+Code/Review/itkVTKPolyDataWriter
+    ENH: Improved version of writer to remove linecells when present. A better version could be written that actually write the line cell first and write the other cells after.
+
+Code/Review/itkValuedRegionalExtremaImageFilter
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkValuedRegionalMaximaImageFilter
+    COMP: changed insight journal handle to new location.
+
+Code/Review/itkValuedRegionalMinimaImageFilter
+    BUG: Fix some classes with a broken GetNameOfClass() method. Only the classes wrapped in WrapITK are tested, so some classes may still have a broken GetNameOfClass() method.
+
+Code/SpatialObject/itkDTITubeSpatialObjectPoint
+    ENH: Added SetTensorMatrix() [submitted by Casey Goodlett]
+
+Code/SpatialObject/itkDTITubeSpatialObjectPoint
+    BUG: Adding radius in the copy method. (reported by Casey Goodlet)
+
+Code/SpatialObject/itkLineSpatialObject
+    COMP: shadowed variable warnings.
+
+Code/SpatialObject/itkMetaBlobConverter
+    COMP: shadowed variable warnings.
+
+Code/SpatialObject/itkMetaDTITubeConverter
+    COMP: warning about possibly uninitialized variables.
+
+Code/SpatialObject/itkMetaLandmarkConverter
+    COMP: shadowed variable warnings.
+
+Code/SpatialObject/itkMetaLineConverter
+    COMP: shadowed variable warnings.
+
+Code/SpatialObject/itkMetaSurfaceConverter
+    COMP: shadowed variable warnings.
+
+Code/SpatialObject/itkMetaTubeConverter
+    BUG: Invalid iterator.
+    COMP: shadowed variable warnings.
+
+Code/SpatialObject/itkMetaVesselTubeConverter
+    COMP: shadowed variable warnings.
+
+Code/SpatialObject/itkPolygonSpatialObject
+    COMP: shadowed variable warnings.
+
+Copyright/ITKCopyright.txt
+    ENH: Changing the license to the OSI-approved BSD license.
+
+Examples/Data/BSplineDisplacements2.txt
+
+Examples/Data/BSplineDisplacements3.txt
+
+Examples/Data/BSplineDisplacements4.txt
+
+Examples/Data/BrainProtonDensitySliceBorder20.zraw
+    ENH: Adding baseline images with direction cosines different from identity.
+
+Examples/Data/BrainProtonDensitySliceBorder20DirectionMinus30.mhd
+
+Examples/Data/BrainProtonDensitySliceBorder20DirectionPlus30.mhd
+    ENH: Adding baseline images with direction cosines different from identity.
+
+Examples/Data/BrainProtonDensitySliceShifted13x17yDirectionMinus30.mhd
+
+Examples/Data/BrainProtonDensitySliceShifted13x17yDirectionPlus30.mhd
+    ENH: Adding baseline images with direction cosines different from identity.
+
+Examples/Data/BrainProtonDensitySliceShifted13x17yDirectionPlus30.zraw
+    ENH: Adding baseline images with direction cosines different from identity.
+
+Examples/Data/BrainT1SliceBorder20DirectionMinus30.mhd
+
+Examples/Data/BrainT1SliceBorder20DirectionPlus30.mhd
+    ENH: Adding baseline images with direction cosines different from identity.
+
+Examples/Data/BrainT1SliceBorder20DirectionPlus30.zraw
+    ENH: Adding baseline images with direction cosines different from identity.
+
+Examples/Data/DiagonalLines.png
+    ENH: Baseline image for testing BSpline deformable transforms.
+
+Examples/Data/IdentityTransform.tfm
+    ENH: IdentityTransform to be used for initializing registration methods.
+
+Examples/Data/LandmarkWarping3Landmarks1.txt
+
+Examples/DataRepresentation/Mesh/PointSetWithCovariantVectors
+
+Examples/DataRepresentation/Mesh/RGBPointSet
+
+Examples/Filtering/CMakeLists.txt
+    BUG: 6135. example was incorrectly computing the number of gradient images. ENH: removed redundant code from test.
+    COMP: Avoid Borland LME1518 linker errors.
+
+Examples/Filtering/DiffusionTensor3DReconstructionImageFilter
+    BUG: 6135. example was incorrectly computing the number of gradient images. ENH: removed redundant code from test.
+
+Examples/Filtering/FilteringExamples5
+    BUG: 6135. example was incorrectly computing the number of gradient images. ENH: removed redundant code from test.
+
+Examples/IO/DicomImageReadPrintTags
+    ENH: Adding a piece of code to dump the correct pixel type to instanciate the itk::ImageFileReader
+
+Examples/Iterators/ImageLinearIteratorWithIndex
+    BUG: crasinh on 64 bit vista system. Try rearranging output iterator --.
+
+Examples/Registration/BSplineWarping1
+
+Examples/Registration/BSplineWarping2
+
+Examples/Registration/CMakeLists.txt
+    ENH: Adding a comparison tolerance of 100 to the MultResolution registration tests.
+    BUG: The test name of DeformableRegistration15 was missing the "Test" suffix.
+    BUG: Removing old moving image that was left inserted by mistake.
+    BUG: Fixing parameters for the large memory cases of DeformableRegistration8Test.
+    COMP: rearrange examples in test drivers to avoid Borland compiler overflow. BUG: some tests required an input file that was generated by another example.
+    ENH: Fixing baseline image and ADD_TEST command for DeformableRegistration12Test.
+    ENH: Adding the ThinPlateSplineWarp example to the list of executables to build.
+    COMP: rearrange tests to avoid VS7 heap overflow.
+
+Examples/Registration/ChangeInformationImageFilter
+    COMP: Fixing warning of repeated "orientation" variable shadowing a previous declaration.
+
+Examples/Registration/DeformableRegistration12
+    BUG: missed std::cout as argument of the itkProbesReport() macro.
+    BUG: The CostFunctionConvergenceFactor for the optimizer is not an epsilon, but rather a factor that is multipled times the machine precision. The small value, 1.e-35 was causing division by zero in the optimizer code. this was only detected on the Borland builds. The factor was increased to a value recommended for moderate precision.
+
+Examples/Registration/DeformableRegistration13
+    BUG: missed std::cout as argument of the itkProbesReport() macro.
+
+Examples/Registration/DeformableRegistration14
+    ENH: Adding memory probes if the REVIEW directory is enabled. Done via macros.
+
+Examples/Registration/DeformableRegistration15
+    COMP: Fixing warning about conversion from double to unsigned int.
+    ENH: Adding memory probes if the REVIEW directory is enabled. Done via macros.
+    ENH: Adding Affine registration phase.
+
+Examples/Registration/DeformableRegistration4
+    BUG: missed std::cout as argument of the itkProbesReport() macro.
+
+Examples/Registration/DeformableRegistration6
+
+Examples/Registration/DeformableRegistration7
+    ENH: Adding memory probes if the REVIEW directory is enabled. Done via macros.
+
+Examples/Registration/DeformableRegistration8
+    ENH: Adding memory probes if the REVIEW directory is enabled. Done via macros.
+    ENH: Add the option of reading the Bulk transform (Affine) from a file.
+
+Examples/Registration/ImageRegistration1
+
+Examples/Registration/ImageRegistration10
+
+Examples/Registration/ImageRegistration11
+
+Examples/Registration/ImageRegistration12
+
+Examples/Registration/ImageRegistration13
+
+Examples/Registration/ImageRegistration14
+
+Examples/Registration/ImageRegistration15
+
+Examples/Registration/ImageRegistration16
+
+Examples/Registration/ImageRegistration17
+
+Examples/Registration/ImageRegistration1o
+
+Examples/Registration/ImageRegistration2
+
+Examples/Registration/ImageRegistration2o
+
+Examples/Registration/ImageRegistration3
+
+Examples/Registration/ImageRegistration3.py
+
+Examples/Registration/ImageRegistration3.tcl
+
+Examples/Registration/ImageRegistration3o
+
+Examples/Registration/ImageRegistration4
+
+Examples/Registration/ImageRegistration4.py
+
+Examples/Registration/ImageRegistration4.tcl
+
+Examples/Registration/ImageRegistration4o
+
+Examples/Registration/ImageRegistration5
+
+Examples/Registration/ImageRegistration5.py
+
+Examples/Registration/ImageRegistration5.tcl
+
+Examples/Registration/ImageRegistration5o
+
+Examples/Registration/ImageRegistration6
+
+Examples/Registration/ImageRegistration6o
+
+Examples/Registration/ImageRegistration7
+
+Examples/Registration/ImageRegistration7o
+
+Examples/Registration/ImageRegistration8
+
+Examples/Registration/ImageRegistration9
+
+Examples/Registration/ImageRegistrationHistogramPlotter
+
+Examples/Registration/ModelToImageRegistration2
+    ENH: Using vcl_sqrt() instead of the plain sqrt() call.
+
+Examples/Registration/MultiResImageRegistration1
+
+Examples/Registration/MultiResImageRegistration2
+
+Examples/Registration/RegistrationExamples10
+    COMP: rearrange examples in test drivers to avoid Borland compiler overflow.
+    COMP: rearrange tests to avoid VS7 heap overflow.
+
+Examples/Registration/RegistrationExamples11
+    COMP: Split up tests to avoid compiler overflow on VS7.
+
+Examples/Registration/RegistrationExamples12
+    COMP: rearrange examples in test drivers to avoid Borland compiler overflow. BUG: some tests required an input file that was generated by another example.
+
+Examples/Registration/RegistrationExamples13
+    COMP: rearrange examples in test drivers to avoid Borland compiler overflow. BUG: some tests required an input file that was generated by another example.
+
+Examples/Registration/RegistrationExamples14
+
+Examples/Registration/RegistrationExamples3
+    COMP: Split up tests to avoid compiler overflow on VS7.
+
+Examples/Registration/RegistrationExamples6
+
+Examples/Registration/RegistrationExamples9
+    COMP: rearrange tests to avoid VS7 heap overflow.
+
+Examples/Registration/ThinPlateSplineWarp
+
+    COMP: Fixing warning for unused variable.
+
+Examples/Segmentation/HoughTransform2DCirclesImageFilter
+
+Examples/Segmentation/HoughTransform2DLinesImageFilter
+
+Examples/Statistics/ImageEntropy1
+
+Testing/CMakeLists.txt
+
+Testing/Code/Algorithms/CMakeLists.txt
+    BUG: SET_SOURCE_PROPERTIES should be SET_SOURCE_FILES_PROPERTIES
+
+Testing/Code/Algorithms/itkBinaryMinMaxCurvatureFlowImageFilterTest
+
+Testing/Code/Algorithms/itkCurvesLevelSetImageFilterTest
+
+Testing/Code/Algorithms/itkFFTTest
+    BUG: poor choice of random number seed caused poor random number sequences on some platforms.
+
+Testing/Code/Algorithms/itkFastMarchingExtensionImageFilterTest
+
+Testing/Code/Algorithms/itkFastMarchingTest
+
+Testing/Code/Algorithms/itkGibbsTest
+
+Testing/Code/Algorithms/itkHistogramImageToImageMetricTest
+
+Testing/Code/Algorithms/itkImagePCAShapeModelEstimatorTest
+
+Testing/Code/Algorithms/itkImageRegistrationMethodTest_15
+
+Testing/Code/Algorithms/itkMRFImageFilterTest
+
+Testing/Code/Algorithms/itkMRIBiasFieldCorrectionFilterTest
+    BUG: when exiting for error, there was no description of the reason for the failure. STYLE: various.
+
+Testing/Code/Algorithms/itkMattesMutualInformationImageToImageMetricTest
+
+Testing/Code/Algorithms/itkMeanSquaresHistogramImageToImageMetricTest
+
+Testing/Code/Algorithms/itkMinMaxCurvatureFlowImageFilterTest
+
+Testing/Code/Algorithms/itkMultiResolutionImageRegistrationMethodTest_1
+
+Testing/Code/Algorithms/itkMultiResolutionPyramidImageFilterTest
+
+Testing/Code/Algorithms/itkNarrowBandCurvesLevelSetImageFilterTest
+    ENH: itkNarrowBandCurvesLevelSetImageFilterTest1 is now a regression test.
+
+Testing/Code/Algorithms/itkRecursiveMultiResolutionPyramidImageFilterTest
+
+Testing/Code/Algorithms/itkSphereMeshSourceTest
+
+Testing/Code/BasicFilters/CMakeLists.txt
+    ENH: Moving Projection filters from Review to BasicFilters.
+    COMP: Disable regression testing for itkNarrowBandImageFilterBaseTest on 64-bit systems. The itkRandomImageSource does not produce deterministic results on 64-bit systems.
+    ENH: itkApproximateSignedDistanceMapImageFilterTest is now a regression test.
+
+Testing/Code/BasicFilters/itkApproximateSignedDistanceMapImageFilterTest
+    ENH: itkApproximateSignedDistanceMapImageFilterTest is now a regression test.
+
+Testing/Code/BasicFilters/itkBasicFiltersHeaderTest
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkBasicFiltersTests4
+
+Testing/Code/BasicFilters/itkBasicFiltersTests5
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkBinaryProjectionImageFilterTest
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkBinaryThresholdProjectionImageFilterTest
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkChangeInformationImageFilterTest
+    ENH: minor tweak to test.
+
+Testing/Code/BasicFilters/itkChangeLabelImageFilterTest
+    BUG: Direction was set to a singular matrix.
+
+Testing/Code/BasicFilters/itkDivideImageFilterTest
+
+Testing/Code/BasicFilters/itkDivideImageFilterTest2
+
+Testing/Code/BasicFilters/itkHoughTransform2DCirclesImageTest
+
+Testing/Code/BasicFilters/itkLaplacianImageFilterTest
+    COMP: Fixing warning about unused variable (exception in a catch block).
+
+Testing/Code/BasicFilters/itkMaximumProjectionImageFilterTest
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkMaximumProjectionImageFilterTest2
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkMaximumProjectionImageFilterTest3
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkMeanProjectionImageFilterTest
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkMedianProjectionImageFilterTest
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkMinimumMaximumImageFilterTest
+
+Testing/Code/BasicFilters/itkMinimumProjectionImageFilterTest
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkNarrowBandImageFilterBaseTest
+    ENH: itkNarrowBandImageFilterBaseTest is now a regression test.
+
+Testing/Code/BasicFilters/itkProjectionImageFilterTest
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkStandardDeviationProjectionImageFilterTest
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/BasicFilters/itkStatisticsImageFilterTest
+    ENH: Test the Mersenne Twister GetNormalVariate() method. As reported in bug 6442, it was not generating a correct normal variate if the variance was not 1.0. New code tests for this defect.
+
+Testing/Code/BasicFilters/itkSumProjectionImageFilterTest
+    ENH: Moving Projection filters from Review to BasicFilters.
+
+Testing/Code/Common/CMakeLists.txt
+    BUG: Wrong number of baseline image for one of the BSplineDeformableTransform tests.
+    COMP: removed itkMemoryLeakTest.
+    COMP: MinGW has problems with threads.
+    ENH: New unit test for ImportImageContainer.
+    ENH: Test loading of object factories from a library.
+    BUG: The ability to override classes with factories was not working. The main problem was the lack of a -&gt;Register on created objects. Also, the search for overriding classes was limited to the first class in a factory. STYLE: various style issues in the itkObjectFactoryBase code. ENH: A new test to exercise the ObjectFactory code.
+    BUG: 0005761. Replaced itkExceptionMacro with itkGenericExceptionMacro. Also added test to cover most of the code. Fixed some compile errors in untested code.
+    ENH: Adding test for the itkMultiThreader class.
+
+Testing/Code/Common/itkAffineTransformTest
+
+Testing/Code/Common/itkBSplineDeformableTransformTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkBSplineDeformableTransformTest2
+
+Testing/Code/Common/itkBSplineInterpolationWeightFunctionTest
+    ENH: Adding test for verifying symmetry of BSpline weights in SplineOrders 2 and 3 in 1D.
+
+Testing/Code/Common/itkBSplineKernelFunctionTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkBoundingBoxTest
+    COMP: warnings about shadowed variables and types.
+
+Testing/Code/Common/itkCenteredEuler3DTransformTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkCenteredRigid2DTransformTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkCommonTests
+
+Testing/Code/Common/itkCommonTests2
+    ENH: New test for ImageTransformHelper. Exercises methjods for 1,2,3, and 8D.
+    ENH: New unit test for ImportImageContainer.
+    BUG: The ability to override classes with factories was not working. The main problem was the lack of a -&gt;Register on created objects. Also, the search for overriding classes was limited to the first class in a factory. STYLE: various style issues in the itkObjectFactoryBase code. ENH: A new test to exercise the ObjectFactory code.
+    ENH: Adding test for the itkMultiThreader class.
+
+Testing/Code/Common/itkCovariantVectorGeometryTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkDiffusionTensor3DTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkEuler2DTransformTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkEuler3DTransformTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkFactoryTestLib
+    COMP: typename issues.
+
+Testing/Code/Common/itkFactoryTestLib
+
+Testing/Code/Common/itkImageAdaptorTest
+
+Testing/Code/Common/itkImageLinearIteratorTest
+    BUG: crashing on 64 bit vista system. Operator++ does not do bounds checking.
+    COMP: Added some more debug output to track down Vista issue.
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkImageRandomIteratorTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkImageRandomIteratorTest2
+    ENH: Add option for computing differences with another image.
+
+Testing/Code/Common/itkImageRandomNonRepeatingIteratorWithIndexTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkImageTransformTest
+    ENH: New test for ImageTransformHelper. Exercises methjods for 1,2,3, and 8D.
+
+Testing/Code/Common/itkImportContainerTest
+    COMP: some 64 systems do not fail on large memory allocations.
+    COMP: SGIs always say they can get the memory you ask for. The expected exception will not be thrown. The oversized memory request is skipped for SGIs.
+    COMP: SGIs always say they can get the memory you ask for. The expected exception will not be thrown. The oversized memory request is kipped for SGIs.
+    ENH: New unit test for ImportImageContainer.
+
+Testing/Code/Common/itkLinearInterpolateImageFunctionTest
+
+Testing/Code/Common/itkMatrixTest
+
+Testing/Code/Common/itkMeshTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkMultiThreaderTest
+    ENH: Adding default return value of EXIT_SUCCESS.
+
+Testing/Code/Common/itkObjectFactoryTest
+    COMP: no need for classname on constructor.
+
+Testing/Code/Common/itkObjectFactoryTest2
+    COMP: const_cast required.
+    COMP: more portable MakeImage.
+    ENH: Test loading of object factories from a library.
+
+Testing/Code/Common/itkOrientedImage2DTest
+
+Testing/Code/Common/itkOrientedImage3DTest
+
+Testing/Code/Common/itkOrientedImageAdaptorTest
+    BUG: image directions cannot be singular.
+
+Testing/Code/Common/itkPointGeometryTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkRGBPixelTest
+    BUG: Fixed order in less-than test
+
+Testing/Code/Common/itkRigid2DTransformTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkRigid3DTransformTest
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkSTLContainerAdaptorTest
+
+Testing/Code/Common/itkSimilarity2DTransformTest
+    COMP: bad test for precision of difference.
+    COMP: shadowed variable warnings.
+
+Testing/Code/Common/itkSimilarity3DTransformTest
+    COMP: warnings about shadowed variables and types.
+
+Testing/Code/Common/itkSymmetricSecondRankTensorTest
+
+Testing/Code/Common/itkSystemInformationTest
+CMakeFiles/CMakeError.log.
+
+Testing/Code/Common/itkVariableSizeMatrixTest
+    BUG: bad matrix size.
+    BUG: bad vector size.
+    ENH: New test.
+
+Testing/Code/Common/itkVectorGeometryTest
+
+Testing/Code/Common/itkVectorInterpolateImageFunctionTest
+    COMP: warnings about shadowed variables and types.
+
+Testing/Code/Common/itkVersorTest
+
+Testing/Code/IO/CMakeLists.txt
+    ENH: Add now a test that verifies the writing of BMP at 32 bits per pixel.
+    ENH: changed input file for itkBMPImageIOTest2 and improved the coding style.
+    ENH: Added MetaImageStreamingWriterIOTest
+
+    ENH: Adding tests for reading and writing 2D Directions in MetaImage and Nifti files.
+    ENH: Adding more test for Image Direction reading.
+
+Testing/Code/IO/itkAnalyzeImageIOTest
+    COMP: Fixing warnings related to unused variable in function argument. Now using itkNotUsed() macro.
+    ENH:  Implemented changes discussed on 20080222 teleconference to make the .hdr and .img file format reading and writing more consistent.  The nifti versions of .img and .hdr images are not written by default, but will be read properly.  Requesting a write of .img or .hdr will result in using the Mayo-clinic compliant version of an Analyze7.5 file format.
+    COMP: wanring, unused variable.
+    BUG: Tests were reported passing grades even if they failed internally.
+
+Testing/Code/IO/itkBMPImageIOTest
+    BUG: 0005965. Image information was wrong for BMP images.
+
+Testing/Code/IO/itkBMPImageIOTest2
+    ENH: changed input file for itkBMPImageIOTest2 and improved the coding style.
+
+Testing/Code/IO/itkGDCMSeriesReadImageWrite
+
+Testing/Code/IO/itkGEImageIOTest
+    COMP: trying to track down ICC 9.0 64 bit issue.
+    BUG: On ICC 64 bit systems, the catch exception was requesting a copy of the exception rather than a reference to the exception. This appears to cause a segfault.
+
+Testing/Code/IO/itkIOTests
+    ENH: Adding a test for reading RBGA pixels.
+    ENH: Adding tests for reading direction cosines from 2D and 3D MetaImages.
+
+Testing/Code/IO/itkImageFileWriterTest
+    COMP: trying to track down VS 7.1 problem.
+
+Testing/Code/IO/itkImageIODirection2DTest
+    ENH: Adding tests for reading direction cosines from 2D and 3D MetaImages.
+
+Testing/Code/IO/itkImageIODirection3DTest
+    ENH: Adding tests for reading direction cosines from 2D and 3D MetaImages.
+
+Testing/Code/IO/itkImageReadDICOMSeriesWriteTest
+
+Testing/Code/IO/itkLargeImageWriteReadTest
+    COMP: Fixing warning of conversion from double to unsigned long.
+    BUG: Adding return FAILURE when exceptions are produced.
+
+Testing/Code/IO/itkMatrixImageWriteReadTest
+
+Testing/Code/IO/itkMeshSpatialObjectIOTest
+
+Testing/Code/IO/itkMetaImageIOTest
+    COMP: trying to track down segfault on 64 bit icc.
+
+Testing/Code/IO/itkMetaImageStreamingWriterIOTest
+    BUG: Pixel type is unsigned char
+    BUG: Wrong index
+
+Testing/Code/IO/itkNiftiImageIOTest
+    ENH: Updated test suite for Nifti and Analyze images to get better coverage, and to force errors from either filter.
+
+    COMP: relax error criterion for direction differences.
+    BUG: uninitialized image buffer causing UMR in purify.
+
+Testing/Code/IO/itkPolygonGroupSpatialObjectXMLFileTest
+
+Testing/Code/IO/itkReadWriteSpatialObjectTest
+
+Testing/Code/IO/itkSymmetricSecondRankTensorImageReadTest
+
+Testing/Code/IO/itkTIFFImageIOTest
+
+Testing/Code/IO/itkTransformIOTest
+
+Testing/Code/Numerics/itkAmoebaOptimizerTest
+    COMP: warnings.
+
+Testing/Code/Numerics/itkLevenbergMarquardtOptimizerTest
+    COMP: warnings.
+
+Testing/Code/Numerics/FEM/itkFEMElementTest
+    BUG: FEM files must be open in binary mode. On cygwin and mingw, seekg(streampos) does not work properly in text mode.
+
+Testing/Code/Numerics/NeuralNetworks/CMakeLists.txt
+
+Testing/Code/Numerics/Statistics/itkStatisticsAlgorithmTest
+    COMP: warning about shadowed variable.
+
+Testing/Code/Patented/itkVectorFuzzyConnectednessImageFilterTest
+
+Testing/Code/Review/CMakeLists.txt
+    ENH: There were not test for the Transform Factories.
+    ENH: Moving Projection filters to BasicFilters.
+    STYLE: Formatting ADD_TEST().
+    ENH: Need input arguments for OptImageToImageMetricsTest
+    ENH: Add OptImageToImageMetricsTest
+    ENH: test if the reader-writer combination is invariant.(hint: QE enforces K-complex and thus add cells).
+
+Testing/Code/Review/Attic/OptImageToImageMetricsTest
+    COMP: warnings about unused parameters.
+    ENH: Make this test fail so that we can gather information from the platforms running the Opt code.
+
+Testing/Code/Review/Attic/OptImageToImageMetricsTest
+    COMP: warnings about unused parameters.
+
+    ENH: Tests some combinations of transforms, interpolators, and metrics by walking through a small part of the parameter space. Particularly useful for comparing two builds with different settings for ITK_USE_OPTIMIZED_REGISTRATION_METHODS
+
+Testing/Code/Review/itkAutomaticTopologyQuadEdgeMeshSourceTest
+
+Testing/Code/Review/Attic/itkBinaryProjectionImageFilterTest
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/Attic/itkBinaryThresholdProjectionImageFilterTest
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/itkLabelOverlayImageFilterTest
+
+Testing/Code/Review/itkLabelToRGBImageFilterTest
+
+Testing/Code/Review/Attic/itkMaximumProjectionImageFilterTest
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/Attic/itkMaximumProjectionImageFilterTest2
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/Attic/itkMaximumProjectionImageFilterTest3
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/Attic/itkMeanProjectionImageFilterTest
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/Attic/itkMedianProjectionImageFilterTest
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/Attic/itkMinimumProjectionImageFilterTest
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/itkOptImageToImageMetricsTest
+    BUG: missing itk:: namespace qualifiers.
+
+Testing/Code/Review/itkOptImageToImageMetricsTest
+
+    STYLE: Fixing several coding style violations.
+
+Testing/Code/Review/Attic/itkProjectionImageFilterTest
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/itkQuadEdgeMeshBasicLayerTest
+
+Testing/Code/Review/itkQuadEdgeMeshCellInterfaceTest
+    COMP: warning fixed for darwin-g++.
+
+Testing/Code/Review/itkQuadEdgeMeshDeleteEdgeTest
+    STYLE: indentation.
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorsTest
+    ENH: JoinVertex now handle the degenerated cases where the modification would lead to topological Modifications. In that case, the modification is not done. I might want to add a flag that let the user know why the modification has not been done. In case of topological change, the user could then choose to switch to another EulerOp which would allow it.
+    BUG: memory leaks because QuadEdgeTopologyChecker was created with new rather than New(). Moved constructor and destructor into protected section. Changed test to use&#160;::New() rather than new.
+
+Testing/Code/Review/itkQuadEdgeMeshIteratorTest
+    COMP: warning about unused variable.
+
+Testing/Code/Review/itkQuadEdgeMeshPolygonCellTest
+
+Testing/Code/Review/itkQuadEdgeMeshTest1
+    BUG: memory leak. BUG: reorder delete edge in test.
+
+Testing/Code/Review/itkReviewHeaderTest
+    STYLE: bad copyright.
+    ENH: Move OverlayFunctor in its own header so it can be used much easily in another class
+
+Testing/Code/Review/itkReviewPrintTest
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/itkReviewTests
+    ENH: There were not test for the Transform Factories.
+    ENH: Moving Projection filters to BasicFilters.
+    ENH: test if the reader-writer combination is invariant.(hint: QE enforces K-complex and thus add cells).
+
+Testing/Code/Review/Attic/itkStandardDeviationProjectionImageFilterTest
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/Attic/itkSumProjectionImageFilterTest
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Code/Review/itkTimeAndMemoryProbeTest
+    COMP: use function parameters to avoid compilation warnings
+
+Testing/Code/Review/itkTransformFileReaderWriterTest
+    ENH: There were not test for the Transform Factories.
+
+Testing/Code/Review/itkVTKPolyDataIOQuadEdgeMeshTest
+    ENH: test if the reader-writer combination is invariant.(hint: QE enforces K-complex and thus add cells).
+
+Testing/Code/Review/itkVTKPolyDataWriterTest
+    ENH: test that include lines and traingle cells.
+
+Testing/Code/SpatialObject/itkImageMaskSpatialObjectTest
+
+Testing/Code/SpatialObject/itkPolygonGroupSpatialObjectTest
+
+Testing/Data/Baseline/Algorithms/VectorThresholdSegmentationLevelSetImageFilterTest.1.png
+    ENH: New baseline .1 images for Windows machines
+
+Testing/Data/Baseline/Algorithms/VectorThresholdSegmentationLevelSetImageFilterTest.png
+    ENH: updated baseline images to account for correct sparse field level set surface interpolation. Added ITK_USE_DEPRECATED_LEVELSET_INTERPOLATION CMake compile-time flag to switch back to old interpolation, for backward compatibility
+
+Testing/Data/Baseline/Algorithms/itkNarrowBandCurvesLevelSetImageFilterTest.png
+    ENH: itkNarrowBandCurvesLevelSetImageFilterTest1 is now a regression test.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeBinaryProjection100.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeBinaryProjection200.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeBinaryThresholdProjection.png
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeMaximumProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeMaximumProjection0.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeMaximumProjection1.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeMaximumProjection2D0.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeMaximumProjection2D1.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeMeanProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeMedianProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeMinimumProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeStandardDeviationProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/HeadMRVolumeSumProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/BasicFilters/itkApproximateSignedDistanceMapImageFilterTest.png
+    ENH: itkApproximateSignedDistanceMapImageFilterTest is now a regression test.
+
+Testing/Data/Baseline/BasicFilters/itkNarrowBandImageFilterBaseTest.png
+    ENH: itkNarrowBandImageFilterBaseTest is now a regression test.
+
+Testing/Data/Baseline/Common/itkBSplineDeformableTransformTest2.png
+
+Testing/Data/Baseline/Common/itkBSplineDeformableTransformTest3.png
+
+Testing/Data/Baseline/Common/itkBSplineDeformableTransformTest4.png
+
+Testing/Data/Baseline/IO/113766.003.001.mha
+    BUG: 0005951. Directions and origin were being computed incorrectly from the header information.
+
+Testing/Data/Baseline/IO/48BitTestImage.tif
+
+Testing/Data/Baseline/IO/ShortTestImage.tiff
+
+Testing/Data/Baseline/IO/image_color.bmp
+    BUG: 0005965. Image information was wrong for BMP images.
+
+Testing/Data/Baseline/IO/image_grayscale.bmp
+    BUG: 0005965. Image information was wrong for BMP images.
+
+Testing/Data/Baseline/IO/smallRGBA.mha
+
+Testing/Data/Baseline/Registration/DeformableRegistration12Test.png
+    ENH: Fixing baseline image and ADD_TEST command for DeformableRegistration12Test.
+
+Testing/Data/Baseline/Registration/DeformableRegistration13Test.png
+
+Testing/Data/Baseline/Registration/DeformableRegistration6Test.png
+
+Testing/Data/Baseline/Registration/ImageRegistration1Test.1.png
+    COMP: Platform specific regression image for some linux systems.
+
+Testing/Data/Baseline/Registration/ImageRegistration2Test.png
+
+Testing/Data/Baseline/Registration/ImageRegistration8RegisteredSlice.png
+
+Testing/Data/Baseline/Registration/MultiResImageRegistration1Test.png
+
+Testing/Data/Baseline/Registration/MultiResImageRegistration2Test.1.png
+    COMP: new baseline for Borland.
+
+Testing/Data/Baseline/Registration/MultiResImageRegistration2Test.png
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeBinaryProjection100.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeBinaryProjection200.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeBinaryThresholdProjection.png
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeMaximumProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeMaximumProjection0.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeMaximumProjection1.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeMaximumProjection2D0.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeMaximumProjection2D1.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeMeanProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeMedianProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeMinimumProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeStandardDeviationProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/Attic/HeadMRVolumeSumProjection.tif
+    ENH: Moving Projection filters to BasicFilters.
+
+Testing/Data/Baseline/Review/cthead1Label-color.png
+
+Testing/Data/Baseline/Segmentation/CannySegmentationLevelSetImageFilterTest.png
+    ENH: updated baseline images to account for correct sparse field level set surface interpolation. Added ITK_USE_DEPRECATED_LEVELSET_INTERPOLATION CMake compile-time flag to switch back to old interpolation, for backward compatibility
+
+Testing/Data/Baseline/Segmentation/LaplacianSegmentationLevelSetImageFilter.png
+    ENH: updated baseline images to account for correct sparse field level set surface interpolation. Added ITK_USE_DEPRECATED_LEVELSET_INTERPOLATION CMake compile-time flag to switch back to old interpolation, for backward compatibility
+
+Testing/Data/Baseline/Segmentation/ThresholdSegmentationLevelSetGrayMatterTest.1.png
+    ENH: New baseline .1 images for Windows machines
+
+Testing/Data/Baseline/Segmentation/ThresholdSegmentationLevelSetGrayMatterTest.png
+    ENH: updated baseline images to account for correct sparse field level set surface interpolation. Added ITK_USE_DEPRECATED_LEVELSET_INTERPOLATION CMake compile-time flag to switch back to old interpolation, for backward compatibility
+
+Testing/Data/Baseline/Segmentation/ThresholdSegmentationLevelSetVentricleTest.png
+    ENH: updated baseline images to account for correct sparse field level set surface interpolation. Added ITK_USE_DEPRECATED_LEVELSET_INTERPOLATION CMake compile-time flag to switch back to old interpolation, for backward compatibility
+
+Testing/Data/Baseline/Segmentation/ThresholdSegmentationLevelSetWhiteMatterTest.1.png
+    ENH: New baseline .1 images for Windows machines
+
+Testing/Data/Baseline/Segmentation/ThresholdSegmentationLevelSetWhiteMatterTest.png
+    ENH: updated baseline images to account for correct sparse field level set surface interpolation. Added ITK_USE_DEPRECATED_LEVELSET_INTERPOLATION CMake compile-time flag to switch back to old interpolation, for backward compatibility
+
+Testing/Data/Input/48BitTestImage.tif
+
+Testing/Data/Input/HeadMRVolumeWithDirection.mhd
+    ENH: Adding tests for reading direction cosines from 2D and 3D MetaImages.
+
+Testing/Data/Input/HeadMRVolumeWithDirectionIdentity.mhd
+    ENH: Adding tests for reading direction cosines from 2D and 3D MetaImages.
+
+Testing/Data/Input/image_color.bmp
+    BUG: 0005965. Image information was wrong for BMP images.
+
+Testing/Data/Input/image_grayscale.bmp
+    BUG: 0005965. Image information was wrong for BMP images.
+
+Testing/Data/Input/smallRGBA.bmp
+    ENH: Fixing the file size.
+
+Utilities/CMakeLists.txt
+    ENH: Tracks version of libxml2
+    ENH: Hides output from svn command
+    COMP:  builds agains installed versions of ITK require that metaIOConfig.h are installed.
+
+Utilities/README.itklibxml2
+    ENH: Describes process behind libxml2 inclusion
+
+Utilities/README.vxl
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/itkThirdParty.h.in
+    ENH: Provides support for libXML2.  If itk_use_libxml2 is enabled, itklibxml2 is downloaded and installed.
+
+Utilities/metaIOConfig
+
+Utilities/MetaIO/.svnrev
+    ENH: subversion revision 194 commited to CVS
+    ENH: subversion revision 192 commited to CVS
+    ENH: subversion revision 190 commited to CVS
+    ENH: subversion revision 186 commited to CVS
+    ENH: subversion revision 184 commited to CVS
+    ENH: subversion revision 182 commited to CVS
+    ENH: subversion revision 180 commited to CVS
+    ENH: subversion revision 178 commited to CVS
+    ENH: subversion revision 176 commited to CVS
+    ENH: subversion revision 170 commited to CVS
+    ENH: subversion revision 85 commited to CVS
+
+Utilities/MetaIO/CMakeLists.txt
+
+Utilities/MetaIO/localMetaConfiguration
+
+Utilities/MetaIO/metaArray
+
+Utilities/MetaIO/metaArray
+
+Utilities/MetaIO/metaArrow
+
+Utilities/MetaIO/metaArrow
+
+Utilities/MetaIO/metaBlob
+
+Utilities/MetaIO/metaBlob
+
+Utilities/MetaIO/metaCommand
+    STYLE: The Date and Revision keywords do not actually need to be replaced in the comments for ExtractDateFromCVS and ExtractVersionFromCVS.
+
+    ENH: Added support for integer for Slicer
+    ENH: Added SetOptionLabel an new tags IMAGE and FILE
+
+Utilities/MetaIO/metaCommand
+    ENH: Updated tests
+    ENH: Syncing with version in VTK (does not allow use of std::)
+
+Utilities/MetaIO/metaContour
+
+Utilities/MetaIO/metaContour
+
+Utilities/MetaIO/metaDTITube
+
+Utilities/MetaIO/metaDTITube
+
+Utilities/MetaIO/metaEllipse
+
+Utilities/MetaIO/metaEllipse
+
+Utilities/MetaIO/metaEvent
+
+Utilities/MetaIO/metaForm
+
+Utilities/MetaIO/metaForm
+
+Utilities/MetaIO/metaGaussian
+
+Utilities/MetaIO/metaGaussian
+
+Utilities/MetaIO/metaGroup
+
+Utilities/MetaIO/metaGroup
+
+Utilities/MetaIO/metaITKUtils
+
+Utilities/MetaIO/metaImage
+    COMP: Added missing include of stdlib.h needed for atoi.
+    ENH: Updated tests
+    ENH: Syncing with version in VTK (does not allow use of std::)
+
+Utilities/MetaIO/metaImage
+    ENH: Updated tests
+    ENH: Syncing with version in VTK (does not allow use of std::)
+
+Utilities/MetaIO/metaImageTypes
+    ENH: Updated tests
+    ENH: Syncing with version in VTK (does not allow use of std::)
+
+Utilities/MetaIO/metaImageUtils
+    ENH: Updated tests
+    ENH: Syncing with version in VTK (does not allow use of std::)
+
+Utilities/MetaIO/metaImageUtils
+    ENH: Updated tests
+    ENH: Syncing with version in VTK (does not allow use of std::)
+
+Utilities/MetaIO/metaLandmark
+
+Utilities/MetaIO/metaLandmark
+
+Utilities/MetaIO/metaLine
+
+Utilities/MetaIO/metaLine
+
+Utilities/MetaIO/metaMe
+
+Utilities/MetaIO/metaMesh
+
+Utilities/MetaIO/metaObject
+
+Utilities/MetaIO/metaObject
+
+Utilities/MetaIO/metaOutput
+    ENH: Added support for list
+
+Utilities/MetaIO/metaOutput
+    ENH: Added support for list
+
+Utilities/MetaIO/metaScene
+    ENH: Updated tests
+    ENH: Syncing with modifications made in VTK
+
+Utilities/MetaIO/metaScene
+    ENH: Updated tests
+
+Utilities/MetaIO/metaSurface
+
+Utilities/MetaIO/metaSurface
+
+Utilities/MetaIO/metaTransform
+
+Utilities/MetaIO/metaTransform
+
+Utilities/MetaIO/metaTube
+
+Utilities/MetaIO/metaTube
+
+Utilities/MetaIO/metaTubeGra
+
+Utilities/MetaIO/metaTubeGraph
+
+Utilities/MetaIO/metaUtils
+    ENH: Updated tests
+    ENH: Syncing with version in VTK (does not allow use of std::)
+
+Utilities/MetaIO/metaUtils
+    ENH: Updated tests
+    ENH: Syncing with version in VTK (does not allow use of std::)
+
+Utilities/MetaIO/metaVesselTube
+
+Utilities/MetaIO/metaVesselTube
+
+Utilities/MetaIO/doc/Attic/MetaIO-Introduction.d
+
+Utilities/MetaIO/doc/Attic/MetaIO-Introduction.pdf
+
+Utilities/MetaIO/doc/Attic/MetaIO-MetaCommand.d
+
+Utilities/MetaIO/doc/README.txt
+    STYLE: Fixed newlines for consistency with SVN upstream.
+
+Utilities/MetaIO/tests/testMeta10Contour
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta11Form
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta12Array
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta1Utils
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta2Object
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta3Image
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta4Tube
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta5Blob
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta6Surface
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta7Line
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta8Scene
+    ENH: Updated tests
+
+Utilities/MetaIO/tests/testMeta9Landmark
+    ENH: Updated tests
+
+Utilities/NrrdIO/CMakeLists.txt
+
+Utilities/NrrdIO/NrrdConfigure.h.in
+
+Utilities/NrrdIO/NrrdIO
+
+Utilities/expat/CMakeLists.txt
+Utilities/expat as expected by itkIncludeDirectories.cmake (and the natural organization of the source tree). You guys need an installation dashboard&#160;:) Was caught on KWWidgets dashmacmini1 dashboard.
+
+Utilities/expat/expatConfig.h.in
+    BUG: [6100] Change big endian constant to use defined one on Apple, to avoid using the TRY_RUN value on universal builds.
+
+Utilities/gdcm/CMakeLists.txt
+    ENH: Deal with policy framework in CMake from Brad.
+
+Utilities/gdcm/gdcmConfigure.h.in
+    STYLE: fixed two incorrect comments
+
+Utilities/gdcm/src/gdcmDocument
+    BUG: GDCM would fail to read a valid Implicit Dataset when the SQ would be declared as undefined length on 64bits machine (with long=8bytes)
+
+Utilities/gdcm/src/gdcmFile
+
+Utilities/gdcm/src/gdcmFileHelper
+    ENH: add API to compute expected size
+
+Utilities/gdcm/src/gdcmFileHelper
+    ENH: add API to compute expected size
+
+Utilities/itkjpeg/jconfig.h.in
+    BUG: JPEG tests failed on the cygwin dashboard after the last commit which eliminated build errors on some cygwin installs. This commit fixes the failing JPEG tests. Apparently _WIN32 is not consistently defined for all compilation units under cygwin, but __CYGWIN__ is.
+
+Utilities/itkpng/CMakeLists.txt
+    COMP: removed empty c files from library.
+
+Utilities/itktiff/CMakeLists.txt
+    ENH: give targets unique names to fix problems when both ITK and VTK are embedded into a single larger project (as revealed by CMake 2.5)
+
+Utilities/itktiff/tif_config.h.in
+    BUG: [6214] Size of int and long should be architecture dependant for universal builds on Apple
+
+Utilities/kwsys/CMakeLists.txt
+    ENH: Set CMake Policy CMP0003 to NEW behavior to build without warnings with the upcoming CMake 2.6 release.
+    BUG: Need to install cstddef header.
+    ENH: turn off for now
+    ENH: add missing file
+    ENH: Added C String utilities to KWSys.  Implemented strcasecmp and strncasecmp.
+    ENH: Adding DateStamp feature to KWSys.  This provides a header file giving preprocessor access to a dated version.  The 'datestamp' will be updated automatically every day by a script.
+
+Utilities/kwsys/CPU.h.in
+
+Utilities/kwsys/DateStamp.h.in
+    ENH: Created better names and a more convenient set of version date stamp macros.
+
+Utilities/kwsys/IOStream
+    COMP: Avoid warning in kwsys IOStream.cxx when the helper functions are not needed.  Define one public symbol to avoid complaints from archivers about empty object files.
+
+Utilities/kwsys/Process.h.in
+    STYLE: minor comments
+
+Utilities/kwsys/ProcessUNIX
+    STYLE: minor comments
+
+Utilities/kwsys/String
+    ENH: Added C String utilities to KWSys.  Implemented strcasecmp and strncasecmp.
+
+Utilities/kwsys/String.h.in
+    ENH: Added C String utilities to KWSys.  Implemented strcasecmp and strncasecmp.
+
+Utilities/kwsys/String.hxx.in
+    STYLE: Remove references to std:: inside KWSys, even in comments.  This will allow a commit check to be added.
+
+Utilities/kwsys/System
+
+Utilities/kwsys/System.h.in
+
+Utilities/kwsys/SystemInformation
+    COMP: Fix warning in SystemInformation.cxx about possibly incorrect assignment in if condition.
+    ENH: fix infinite loop from size_t change
+    ENH: fix more warnings
+    ENH: fix more warnings
+    ENH: fix some warnings and 64 bit build windows
+    ENH: try to fix hp and vs 6, again...
+    ENH: fix for qnx, I hope, and fix indent stuff
+    ENH: fix build for mingw
+    COMP: Replace kwsys_stl:: with kwsys_ios:: for streams access.
+    ENH: figure out long long value
+    ENH: fix leaks and turn on by default
+
+Utilities/kwsys/SystemInformation.hxx.in
+    COMP: Fix shared lib build on windows for KWSys's SystemInformation by adding export macro.
+    COMP: use kwsys_stl and not std::
+    ENH: enhancements for cdash, include system information and better time entries
+    ENH: fix leaks and turn on by default
+
+Utilities/kwsys/SystemTools
+    BUG: fix install problem on make and allow symlinks to cmake bin directory
+    BUG: Fix previous commit to not access empty strings out of bounds.
+    COMP: Fix build on borland.
+    BUG: fix for bug 6136 make sure includes are not directories
+    COMP: Remove reference to vtksys.  The unmangled kwsys name should be used in this source.
+    ENH: remove warning
+    ENH: Add ability to call Visual Studio macros from CMake. Add a CMake Visual Studio macro to reload a solution file automatically if CMake makes changes to .sln files or .vcproj files. Add code to call the macro automatically for any running Visual Studio instances with the .sln file open at the end of the Visual Studio Generate call. Only call the macro if some .sln or .vcproj file changed during Generate. Also, add handling for REG_EXPAND_SZ type to SystemTools::ReadRegistryValue - returned string has environment variable references expanded.
+    COMP: Fix warnings on 64-bit Mac OS X build.  Patch from issue #3697.
+bar path and just return the full path to the destination.
+    ENH: bad bug bad
+
+Utilities/kwsys/SystemTools.hxx.in
+    BUG: fix install problem on make and allow symlinks to cmake bin directory
+    ENH: Add SystemTools::SplitPathRootComponent and re-implement SplitPath to use it.  Add better treatment of user home directory paths.
+    ENH: add a touch -E command to cmake
+
+Utilities/kwsys/hash_map.hxx.in
+    COMP: Fix warnings on VS9.
+
+Utilities/kwsys/hash_set.hxx.in
+    COMP: Remove inline keyword from forward declaration for VS9.
+
+Utilities/kwsys/kwsysDateStamp.cmake
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    daily version number
+    ENH: Adding DateStamp feature to KWSys.  This provides a header file giving preprocessor access to a dated version.  The 'datestamp' will be updated automatically every day by a script.
+
+Utilities/kwsys/kwsysDateStamp.py
+    ENH: Created better names and a more convenient set of version date stamp macros.
+
+Utilities/kwsys/kwsysPlatformTestsCXX
+    STYLE: Work-around std:: check since this is a platform test.
+
+Utilities/kwsys/kwsys_ios_iostream.h.in
+    COMP: Add streamsize and streamoff to kwsys_ios namespace for ancient streams.
+
+Utilities/kwsys/kwsys_ios_sstream.h.in
+    STYLE: Remove references to std:: inside KWSys, even in comments.  This will allow a commit check to be added.
+
+Utilities/kwsys/testDynamicLoader
+
+Utilities/kwsys/testSystemInformation
+    ENH: Missing copyright header.
+
+Utilities/nifti/CMakeLists.txt
+    ENH:  Updated to syncronize with the nifti source code repository.
+    ENH: add rough CPack configuration, and fix some subprojects to enable CPack support for ITK
+
+Utilities/nifti/LICENSE
+    ENH:  Syncronized with nifti release on sourceforge.  Nothing substantial, just formatting and version numbering.
+
+Utilities/nifti/Makefile
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/README
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/Updates.txt
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/Testing/CMakeLists.txt
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/Testing/Makefile
+    ENH:  Syncronized with nifti release on sourceforge.  Nothing substantial, just formatting and version numbering.
+
+Utilities/nifti/Testing/README_regress
+    ENH:  Syncronized with nifti release on sourceforge.  Nothing substantial, just formatting and version numbering.
+
+Utilities/nifti/Testing/nifti_regress_test/@show.diffs
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/@test
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/CMakeLists.txt
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/cmake_testscripts/bricks_test.
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/cmake_testscripts/comment_test.
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/cmake_testscripts/dci_test.
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/cmake_testscripts/dsets_test.
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/cmake_testscripts/dts_test.
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/cmake_testscripts/fetch_data_test.
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/cmake_testscripts/mod_header_test.
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/cmake_testscripts/newfiles_test.
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c01.versions
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c02.nt.help
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c03.hist
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c04.disp.anat0.info
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c05.mod.hdr
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c06.add.ext
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c07.cbl.4bricks
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c08.dts.19.36.11
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c09.dts4.compare
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c10.dci.ts4
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c10a.dci.run.210
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c11.add.comment
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c12.check.comments
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c13.check.hdrs
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c14.make.dsets
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c15.new.files
+    COMP:  Include the cmake-ified testing suite for nifti.
+
+Utilities/nifti/Testing/niftilib/CMakeLists.txt
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/fsliolib/CMakeLists.txt
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/fsliolib/fslio
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/nifticdf/CMakeLists.txt
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/niftilib/CMakeLists.txt
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/niftilib/nifti1
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/niftilib/nifti1_io
+    ENH:  Syncronized with nifti release on sourceforge.  Nothing substantial, just formatting and version numbering.
+    ENH:  Updated to syncronize with the nifti source code repository.
+    BUG: Was not handling .gz image files properly.
+
+Utilities/nifti/niftilib/nifti1_io
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/utils/nifti1_test
+    BUG:  Fixed a few bugs relating to compressed nifti files being read correctly.
+
+Utilities/nifti/utils/nifti_tool
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/utils/nifti_tool
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/znzlib/CMakeLists.txt
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/nifti/znzlib/znzlib
+    ENH:  Updated to syncronize with the nifti source code repository.
+
+Utilities/vxl/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/CheckPrototypeExistsCXX.cmake
+    ENH: all CMakeOutput.log and CMakeError.log files now are created in ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}.
+
+Utilities/vxl/config/cmake/Modules/FindGEOTIFF.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/FindJPEG.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/FindMPEG2.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/FindNetlib.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/FindPNG.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/FindQv.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/FindTIFF.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/FindZLIB.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/UseVXL.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/VXLConfig.cmake.in
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/VXLConfig_export.cmake.in
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/NewCMake/Attic/CMakeConfigurableFile.in
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/NewCMake/FindDC1394.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/NewCMake/FindDirectShow.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/NewCMake/FindFFMPEG.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/NewCMake/FindGEOTIFF.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/Modules/NewCMake/FindwxWidgets.cmake
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/config/CMakeLists.txt
+    ENH: Deal with policy framework in CMake from Brad.
+
+Utilities/vxl/config/cmake/config/vxl_config_macros.cmake
+    ENH: all CMakeOutput.log and CMakeError.log files now are created in ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}.
+
+Utilities/vxl/config/cmake/config/vxl_platform_tests
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/config/cmake/config/vxl_utils.cmake
+    ENH: Deal with policy framework in CMake from Brad.
+
+Utilities/vxl/config/cmake/export/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vxl_config.h.in
+    BUG: [6100] Change big endian constant to use defined one on Apple, to avoid using the TRY_RUN value on universal builds.
+
+Utilities/vxl/core/vxl_version
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/CMakeLists.txt
+    ENH: Marking VNL_CONFIG_ENABLE_SSE2 as Advanced.
+
+Utilities/vxl/core/vnl/introduction_doxy.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_all
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_c_vector
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_complex_ops
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_config.h.in
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_cost_function
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_det
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_double_2
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_double_3
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_error
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_fastops
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_fastops
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_float_2
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_float_3
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_least_squares_function
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_ma
+    STYLE: remove trailing whitespace
+
+Utilities/vxl/core/vnl/vnl_matlab_filewrite
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_matlab_header
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_matlab_print_format
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_matlab_read
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_matrix
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_matrix_exp
+    COMP: fix VC6 compiler issues.
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_matrix_exp
+    COMP: fix VC6 compiler issues.
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_matrix_fixed
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_matrix_fixed
+    COMP: Do not use outer_product VS6 workaround when parsing with gccxml.
+
+Utilities/vxl/core/vnl/vnl_matrix_fixed_ref
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_nonlinear_minimizer
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_nonlinear_minimizer
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_numeric_traits
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_quaternion
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_quaternion
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_real_npolynomial
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_real_npolynomial
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_rotation_matrix
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_rotation_matrix
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_sample
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_sse
+    COMP: It looks like forced inlining doesn't work with gcc 3.x
+
+Utilities/vxl/core/vnl/vnl_trace
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_vector
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_vector_fixed
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/vnl_vector_fixed_ref
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/Templates/vnl_matrix_fixed+double.2.11-
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/Templates/vnl_matrix_fixed+double.2.8-
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/Templates/vnl_matrix_fixed+double.4.20-
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/Templates/vnl_matrix_fixed+float.2.4-
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/Templates/vnl_vector_fixed+double.20-
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/Templates/vnl_vector_fixed+double.9-
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_bracket_minimum
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_bracket_minimum
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_brent
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_brent
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_brent_minimizer
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_brent_minimizer
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_chi_squared
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_conjugate_gradient
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_determinant
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_fit_parabola
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_generalized_schur
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_lbfgs
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_lbfgsb
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_lbfgsb
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_levenberg_marquardt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_lsqr
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_lsqr
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_sparse_lu
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_sparse_lu
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_svd
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/vnl_symmetric_eigensystem
+    STYLE: removing trailing whitespace
+
+Utilities/vxl/core/vnl/algo/tests/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_algo
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_bracket_minimum
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_brent_minimizer
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_determinant
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_driver
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_fft2d
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_include
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_integral
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_matrix_update
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_powell
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_qsvd
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/algo/tests/test_sparse_lu
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/examples/vnl_lsqr_test
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/examples/vnl_rosenbrock
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/examples/vnl_svd
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/io/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/io/Templates/vnl_io_vector_fixed+double.4-
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/test_bessel
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/test_driver
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/test_finite
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/test_hungarian_algorithm
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/test_integrant
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/test_matrix_exp
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/test_quaternion
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/test_real_npolynomial
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/test_real_polynomial
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/tests/test_rotation_matrix
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/core/vnl/xio/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/v3p_netlib_mangle
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/v3p_netlib_prototypes
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/v3p_netlib_unmangle
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/blas/dlam
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/blas/dtrmv
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/blas/dtrmv.f
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/blas/slam
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/complex16/zlarfx
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dhgeqz
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dhgeqz.f
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dlacon
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dlacon.f
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dlaev2.P
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dlaev2
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dlaev2.f
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dlaev2
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dspr.P
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dspr
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dspr.f
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dspr
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dsptrf.P
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dsptrf
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dsptrf.f
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dsptrf
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dsptrs.P
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dsptrs
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dsptrs.f
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/lapack/double/dsptrs
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/napack/cg
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/napack/cg
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/opt/lbfgsb.P
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/opt/lbfgsb
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/opt/lbfgsb.f
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/opt/lbfgsb
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/documentation.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/readme.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/spAllocate
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/spBuild
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/spConfig
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/spDefs
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/spFactor
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/spMatrix
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/spOutput
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/spSolve
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/sparse/spUtils
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/tests/CMakeLists.txt
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/tests/lbfgsb-example1
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/v3p/netlib/tests/lbfgsb-example1.f
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/vcl/vcl_compiler
+    COMP: Define _CRT_SECURE_NO_DEPRECATE only if it hasnt already been defined.
+
+Utilities/vxl/vcl/vcl_cstdlib
+    COMP: avoid ranlib: file: 'foo.o' has no symbols warnings by introducing a dummy proc. Some loaders issue these warnings when building static libs
+
+Utilities/vxl/vcl/vcl_locale
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/vcl/emulation/vcl_alloc
+    COMP: avoid ranlib: file: 'foo.o' has no symbols warnings by introducing a dummy proc. Some loaders issue these warnings when building static libs
+
+Utilities/vxl/vcl/emulation/vcl_hashtable
+    COMP: avoid ranlib: file: 'foo.o' has no symbols warnings by introducing a dummy proc. Some loaders issue these warnings when building static libs
+
+Utilities/vxl/vcl/emulation/vcl_limits
+    COMP: avoid ranlib: file: 'foo.o' has no symbols warnings by introducing a dummy proc. Some loaders issue these warnings when building static libs
+
+Utilities/vxl/vcl/emulation/vcl_rbtree_instances
+    COMP: avoid ranlib: file: 'foo.o' has no symbols warnings by introducing a dummy proc. Some loaders issue these warnings when building static libs
+
+Utilities/vxl/vcl/emulation/vcl_string_instances
+    COMP: avoid ranlib: file: 'foo.o' has no symbols warnings by introducing a dummy proc. Some loaders issue these warnings when building static libs
+
+Utilities/vxl/vcl/generic/vcl_ios
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/vcl/generic/vcl_ios.h
+    ENH: Merging changes from vxl-upstream-2006-07-20 to vxl-upstream-2007-11-09
+
+Utilities/vxl/vcl/win32-vc60/vcl_complex
+    COMP: Implement vcl_tanh and vcl_tan for vcl_complex&lt;T&gt; directly.  VS6 does not actually provide tanh or tan for std::complex&lt;&gt;.
+
+Wrapping/CSwig/CMakeLists.txt
+    BUG: Python 2.5 requires .pyd suffixes on modules.  Older versions support the suffix too.
+
+Wrapping/CSwig/pythonfiles_install.cmake.in
+    BUG: Fix #2910 - use correct path to python files in build tree for install rules. (They end up in a config specific subdirectory when built with Visual Studio.)
+
+Wrapping/CSwig/CommonB/wrap_ITKRigidTransforms
+    COMP: Moved VersorRigid3DTransform from wrap_ITKRigidTransforms.cxx to wrap_itkVersorTransform.cxx to avoid circular dependency in python wrappers.
+
+Wrapping/CSwig/CommonB/wrap_itkVersorTransform
+    COMP: Moved VersorRigid3DTransform from wrap_ITKRigidTransforms.cxx to wrap_itkVersorTransform.cxx to avoid circular dependency in python wrappers.
+
+Wrapping/WrapITK/CMakeLists.txt
+    ENH: add rough CPack configuration, and fix some subprojects to enable CPack support for ITK
+
+Wrapping/WrapITK/CreateWrapperLibrary.cmake
+ports.html#SECTION0001510000000000000000
+
+Wrapping/WrapITK/Modules/BaseSpatialObject/wrap_itkCenteredTransformInitializer.cmake
+
+Wrapping/WrapITK/Modules/BaseSpatialObject/wrap_itkCenteredVersorTransformInitializer.cmake
+
+Wrapping/WrapITK/Modules/BaseTransforms/Attic/wrap_itkCenteredTransformInitializer.cmake
+    ENH: Add more types to work with other transforms (thanks to Michael Bell)
+
+Wrapping/WrapITK/Modules/BaseTransforms/Attic/wrap_itkCenteredVersorTransformInitializer.cmake
+
+Wrapping/WrapITK/Modules/Calculators/CMakeLists.txt
+    COMP: fix warning about wrap gap
+
+Wrapping/WrapITK/Python/CreateLanguageSupport.cmake
+    COMP: fix typo in the last patch
+
+Wrapping/WrapITK/Python/itktesting.py
+    STYLE: unify
+
+Wrapping/WrapITK/Python/Tests/CMakeLists.txt
+    ENH: Check the names return by GetNameOfClass() in a python test
+
+Wrapping/WrapITK/Python/Tests/getNameOfClass.py
+    ENH: exclude the FFT filters from the test
+
+Wrapping/WrapITK/Python/itkExtras/__init__.py
+    BUG: itk.physical_point_to_index() was returning a ContinuousIndex object instead of an Index one
+
+Wrapping/WrapITK/images/ThresholdSegmentationLevelSetGrayMatterTest.png
+    ENH: New baseline images for WrapITK tests
+
+Wrapping/WrapITK/images/ThresholdSegmentationLevelSetVentricleTest.png
+    ENH: New baseline images for WrapITK tests
+
+Wrapping/WrapITK/images/ThresholdSegmentationLevelSetWhiteMatterTest.png
+    ENH: New baseline images for WrapITK tests
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20220807103307
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.010 seconds
+Real time usage: 0.011 seconds
+Preprocessor visited node count: 6/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 165137/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3092-0!canonical and timestamp 20220807103307 and revision id 11987. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_3.6_Changed_From_Previous&amp;oldid=11987">https://public.kitware.com/Wiki/index.php?title=ITK_Release_3.6_Changed_From_Previous&amp;oldid=11987</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK_Release_3.6_Changed_From_Previous" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_3.6_Changed_From_Previous&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK_Release_3.6_Changed_From_Previous">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.6_Changed_From_Previous&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.6_Changed_From_Previous&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK_Release_3.6_Changed_From_Previous" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_3.6_Changed_From_Previous&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK+Release+3.6+Changed+From+Previous" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK_Release_3.6_Changed_From_Previous" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK_Release_3.6_Changed_From_Previous" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.6_Changed_From_Previous&amp;oldid=11987" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.6_Changed_From_Previous&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 14 April 2008, at 18:27.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.010","walltime":"0.011","ppvisitednodes":{"value":6,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":165137,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220807103307","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":89});});</script>
+</body></html>

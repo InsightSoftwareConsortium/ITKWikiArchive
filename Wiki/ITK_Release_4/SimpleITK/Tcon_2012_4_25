@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK Release 4/SimpleITK/Tcon 2012 4 25 - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/SimpleITK/Tcon_2012_4_25","wgTitle":"ITK Release 4/SimpleITK/Tcon 2012 4 25","wgCurRevisionId":46699,"wgRevisionId":46699,"wgArticleId":10397,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK_Release_4/SimpleITK/Tcon_2012_4_25","wgRelevantArticleId":10397,"wgRequestId":"15a18a65c3644152f99c27c3","wgCSPNonce":!1,
+"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.monobook.mobile"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<!--[if lt IE 9]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/screen-desktop.css?74a6a" media="screen"/><![endif]--><!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE60Fixes.css?1208f" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.34.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://itk.org/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/Wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_SimpleITK_Tcon_2012_4_25 rootpage-ITK_Release_4 skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">ITK Release 4/SimpleITK/Tcon 2012 4 25</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From KitwarePublic</div><div id="contentSub" lang="en" dir="ltr"><span class="subpages">&lt; <a href="/Wiki/ITK_Release_4" class="mw-redirect" title="ITK Release 4">ITK Release 4</a>&lrm; | <a href="/Wiki/ITK_Release_4/SimpleITK" class="mw-redirect" title="ITK Release 4/SimpleITK">SimpleITK</a></span></div><div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Tcon_Information"><span class="tocnumber">1</span> <span class="toctext">Tcon Information</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Attendees"><span class="tocnumber">2</span> <span class="toctext">Attendees</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Links"><span class="tocnumber">3</span> <span class="toctext">Links</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Daily_Details"><span class="tocnumber">4</span> <span class="toctext">Daily Details</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#New_Issues"><span class="tocnumber">5</span> <span class="toctext">New Issues</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Update_On_Transformations_for_Registration"><span class="tocnumber">5.1</span> <span class="toctext">Update On Transformations for Registration</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#PyBuffer_Issues"><span class="tocnumber">5.2</span> <span class="toctext">PyBuffer Issues</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Dashboard"><span class="tocnumber">5.3</span> <span class="toctext">Dashboard</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Valgrind_failures"><span class="tocnumber">5.3.1</span> <span class="toctext">Valgrind failures</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Shared_libraries_on_Windows"><span class="tocnumber">5.3.2</span> <span class="toctext">Shared libraries on Windows</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#User_Requested_Features"><span class="tocnumber">5.4</span> <span class="toctext">User Requested Features</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Priorities_for_next_release"><span class="tocnumber">6</span> <span class="toctext">Priorities for next release</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Schedule"><span class="tocnumber">7</span> <span class="toctext">Schedule</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Tcon_Information">Tcon Information</span></h1>
+<pre>  Please join the following teleconference line:
+      Toll-Free #:      1-888-677-0429
+      Participant Code: 96280
+</pre>
+<pre>  Wednesday, April 25th, 9:30am Eastern Time
+</pre>
+<h1><span class="mw-headline" id="Attendees">Attendees</span></h1>
+<ul><li>Bradley Lowekamp</li>
+<li>Dan Blezek</li></ul>
+<h1><span class="mw-headline" id="Links">Links</span></h1>
+<ul><li>HOME PAGE: <a rel="nofollow" class="external free" href="http://simpleitk.org">http://simpleitk.org</a></li>
+<li>CDASH: <a rel="nofollow" class="external free" href="http://www.cdash.org/CDash/index.php?project=simpleITK">http://www.cdash.org/CDash/index.php?project=simpleITK</a></li>
+<li>COVERAGE: <a rel="nofollow" class="external free" href="http://open.cdash.org/viewCoverage.php?buildid=2110137">http://open.cdash.org/viewCoverage.php?buildid=2110137</a></li>
+<li>VALGRIND: <a rel="nofollow" class="external free" href="http://open.cdash.org/viewDynamicAnalysis.php?buildid=2220411">http://open.cdash.org/viewDynamicAnalysis.php?buildid=2220411</a></li>
+<li>GIT: <a rel="nofollow" class="external free" href="http://itk.org/gitweb?p=SimpleITK.git;a=log">http://itk.org/gitweb?p=SimpleITK.git;a=log</a></li>
+<li>GITHUB-MIRROR:<a rel="nofollow" class="external free" href="https://github.com/SimpleITK/SimpleITK/network">https://github.com/SimpleITK/SimpleITK/network</a></li>
+<li>DOXYGEN: <a rel="nofollow" class="external free" href="http://www.itk.org/SimpleITKDoxygen/html/">http://www.itk.org/SimpleITKDoxygen/html/</a></li>
+<li>JIRA: <a rel="nofollow" class="external free" href="https://itk.icts.uiowa.edu/jira/browse/SIMPLEITK">https://itk.icts.uiowa.edu/jira/browse/SIMPLEITK</a></li></ul>
+<h1><span class="mw-headline" id="Daily_Details">Daily Details</span></h1>
+<ul><li>The Stage Repository</li></ul>
+<pre>            SIMPLEITK-149_ReviewLevelsets | master=0 next=1
+  SIMPLEITK-224_AddVectorSupportGetBuffer | master=0 next=0
+          FixGenerateDocumentationSheBang | master=0 next=1
+   SIMPLEITK-278_Escape_dollar_sign_for_R | master=0 next=1
+         SIMPLEITK-1_AddImageRegistration | master=0 next=0
+  SIMPELITK-260_OnlyRequirefPICWhenNeeded | master=0 next=1
+             SIMPLEITK-277_UpdateExamples | master=0 next=1
+                          AddScalarKmeans | master=0 next=1
+AddBoundaryConditionsToConvolutionFilters | master=0 next=1
+         SIMPLEITK-264_AddTransformations | master=0 next=0
+     SIMPLEITK-211_AddingWatershedFilters | master=0 next=0
+                      UpdateDataSubmodule | master=0 next=1
+              SIMPLEITK-269_RegionGrowing | master=0 next=1
+</pre>
+<h1><span class="mw-headline" id="New_Issues">New Issues</span></h1>
+<h2><span class="mw-headline" id="Update_On_Transformations_for_Registration">Update On Transformations for Registration</span></h2>
+<ul><li>Dan?</li></ul>
+<h2><span class="mw-headline" id="PyBuffer_Issues">PyBuffer Issues</span></h2>
+<ul><li>Support for old python buffer interface?
+<ul><li>With numpy 1.5 it appears that we are unable to get a PEP 3118 Buffer interface</li></ul></li></ul>
+<h2><span class="mw-headline" id="Dashboard">Dashboard</span></h2>
+<h3><span class="mw-headline" id="Valgrind_failures">Valgrind failures</span></h3>
+<ul><li>Both Valgrind and VS10 debug are reporting failures on the same test.</li>
+<li>Real bug here must be addressed.</li></ul>
+<h3><span class="mw-headline" id="Shared_libraries_on_Windows">Shared libraries on Windows</span></h3>
+<ul><li>Need to add the ITK library directory to the PATH environmental variable to correctly load dlls.</li></ul>
+<h2><span class="mw-headline" id="User_Requested_Features">User Requested Features</span></h2>
+<ul><li>A couple of post on the users list related to better support for VectorImages or 4D images. Reading, accessing buffer and pixel and converting to numpy.</li></ul>
+<ul><li>A users wanting to use the edge potential image filter, there is not way to create gradient image. Nor compose scalar images into a vector image.</li></ul>
+<h1><span class="mw-headline" id="Priorities_for_next_release">Priorities for next release</span></h1>
+<ul><li>Registration</li>
+<li>C++ installation</li>
+<li>Splitting Wrapping directory into languages</li>
+<li>Splitting BasicFilters Library</li>
+<li>improved vector image support</li></ul>
+<h1><span class="mw-headline" id="Schedule">Schedule</span></h1>
+<ul><li>Discuss long term goals and milestones.</li>
+<li>Documentations</li>
+<li>Registration is very important</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20211205230149
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.023 seconds
+Real time usage: 0.023 seconds
+Preprocessor visited node count: 38/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:10397-0!canonical and timestamp 20211205230149 and revision id 46699
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://itk.org/Wiki/index.php?title=ITK_Release_4/SimpleITK/Tcon_2012_4_25&amp;oldid=46699">https://itk.org/Wiki/index.php?title=ITK_Release_4/SimpleITK/Tcon_2012_4_25&amp;oldid=46699</a>"</div>
+<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div><!-- end content --><div class="visualClear"></div></div></div><div class="visualClear"></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK_Release_4/SimpleITK/Tcon_2012_4_25" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK_Release_4/SimpleITK/Tcon_2012_4_25&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK_Release_4/SimpleITK/Tcon_2012_4_25&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="/Wiki/index.php?title=ITK_Release_4/SimpleITK/Tcon_2012_4_25&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label"><h3 id="p-cactions-mobile-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main-mobile" class="selected"><a href="/Wiki/ITK_Release_4/SimpleITK/Tcon_2012_4_25" title="Page">Page</a></li><li id="ca-talk-mobile" class="new"><a href="/Wiki/index.php?title=Talk:ITK_Release_4/SimpleITK/Tcon_2012_4_25&amp;action=edit&amp;redlink=1" rel="discussion" title=" (page does not exist)">Discussion</a></li><li id="ca-more"><a href="#p-cactions">More</a></li><li id="ca-tools"><a href="#p-tb" title="Tools">Tools</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK+Release+4%2FSimpleITK%2FTcon+2012+4+25" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="/Wiki/Main_Page" class="mw-wiki-logo" title="Visit the main page"></a></div><div id="sidebar"><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search KitwarePublic" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>  <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK_Release_4/SimpleITK/Tcon_2012_4_25" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK_Release_4/SimpleITK/Tcon_2012_4_25" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/Wiki/index.php?title=ITK_Release_4/SimpleITK/Tcon_2012_4_25&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/Wiki/index.php?title=ITK_Release_4/SimpleITK/Tcon_2012_4_25&amp;oldid=46699" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/Wiki/index.php?title=ITK_Release_4/SimpleITK/Tcon_2012_4_25&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div></div><a href="#sidebar" title="navigation" class="menu-toggle" id="sidebar-toggle"></a><a href="#p-personal" title="user tools" class="menu-toggle" id="p-personal-toggle"></a><a href="#globalWrapper" title="back to top" class="menu-toggle" id="globalWrapper-toggle"></a></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 25 April 2012, at 08:28.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li><li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li></ul></div></div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.023","walltime":"0.023","ppvisitednodes":{"value":38,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20211205230149","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":543});});</script></body></html>

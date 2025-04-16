@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Documentation - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"cff74ba123dc66c0715a2def","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Documentation","wgTitle":"ITK/Documentation","wgCurRevisionId":61722,"wgRevisionId":61722,"wgArticleId":630,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Documentation","wgRelevantArticleId":630,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":
+"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Documentation rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Documentation</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>The following documentation is available for ITK:
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Doxygen"><span class="tocnumber">1</span> <span class="toctext">Doxygen</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Examples"><span class="tocnumber">2</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Webinars"><span class="tocnumber">3</span> <span class="toctext">Webinars</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Courses"><span class="tocnumber">4</span> <span class="toctext">Courses</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Conference_Workshops"><span class="tocnumber">5</span> <span class="toctext">Conference Workshops</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Tutorials"><span class="tocnumber">6</span> <span class="toctext">Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Books"><span class="tocnumber">7</span> <span class="toctext">Books</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Doxygen">Doxygen</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/index.html">Nightly documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://public.kitware.com/pub/itk/NightlyDoxygen/">Raw documentation files</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen46/html/index.html">Most recent release documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/ITK/help/legacy_documentation.html">Legacy releases documentation</a></li></ul>
+<h2><span class="mw-headline" id="Examples">Examples</span></h2>
+<ul><li><a href="/Wiki/ITK/Examples" title="ITK/Examples">Examples Wiki: A community-maintained collection of examples of ITK classes and their uses.</a></li></ul>
+<ul><li><a rel="nofollow" class="external text" href="http://itk.org/ITKExamples">ITKExamples: Another community-maintained collection of examples of ITK classes and their uses documented with Sphinx.</a></li></ul>
+<ul><li><a rel="nofollow" class="external text" href="http://itk.org/gitweb?p=ITK.git;a=tree;f=Examples;hb=HEAD">Examples in the Git Repository</a></li></ul>
+<h2><span class="mw-headline" id="Webinars">Webinars</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://itk.org/ITK/resources/webinars.html"><b>Kitware Webinars</b>: Didactic material and overviews of new releases.</a></li>
+<li><a rel="nofollow" class="external text" href="http://insightsoftwareconsortium.github.com/ITKBarCamp-doc/index.html"><b>ITK BarCamp</b>: Training Grounds for the Next Generation of ITK Community Members</a></li></ul>
+<h2><span class="mw-headline" id="Courses">Courses</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://www.cs.ucf.edu/~bagci/teaching/mic17.html"><b>Medical Image Computing</b>. Instructed by Ulas Bagci. University of Central Florida. Slides available.</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/ozan-oktay/Medical-Image-Analysis-IPython-Tutorials"><b>Medical Image Analysis</b> course at Imperial College London.</a> <a rel="nofollow" class="external text" href="http://nbviewer.ipython.org/github/ozan-oktay/Medical-Image-Analysis-IPython-Tutorials/tree/master/">Can be browsed on the web.</a> <a rel="nofollow" class="external text" href="http://kevin-keraudren.blogspot.co.uk/2014/12/medical-image-analysis-ipython-tutorials.html">A brief presentation of the GitHub repository.</a></li>
+<li><a rel="nofollow" class="external text" href="http://midas3.kitware.com/midas/folder/11847"><b>Methods in Medical Image Analysis</b>. Instruction by Hans Johnson.  University of Iowa.  Slides available.</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.kitware.com/products/protraining.php"><b>Kitware Courses</b>: Multi-day workshops describing basic concepts and practices with interactive exercises and questioning.  Available at Kitware or on site.</a>  Some example material found in the recorded webinars.</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.cmu.edu/~galeotti/methods_course/"><b>Methods in Medical Image Analysis.</b> Carnegie Melon University.  Instruction by John Galeotti.  Slides available.  Video in the process of becoming available.</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dirkpadfield.com/BiologicalImageAnalysis/"><b>Biological Image Analysis.</b> Rensselaer Polytechnic Institute (RPI).  Instruction by Dirk Padfield.  Slides and ipython notebooks available.</a></li>
+<li><a href="/Wiki/ITK/Course_Ware" title="ITK/Course Ware"> Older courses </a></li></ul>
+<h2><span class="mw-headline" id="Conference_Workshops">Conference Workshops</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://midas3.kitware.com/midas/folder/9390">ITK-SimpleITK workshop held at the University of Wisconsin-Madison, January 2013</a></li>
+<li><a href="/Wiki/ITK/Release_4/Outreach/Conferences/MICCAI_2011/ITKv4" title="ITK/Release 4/Outreach/Conferences/MICCAI 2011/ITKv4">MICCAI 2011 ITK</a></li>
+<li><a href="/Wiki/ITK/Release_4/Outreach/Conferences/MICCAI_2011/SimpleITK" title="ITK/Release 4/Outreach/Conferences/MICCAI 2011/SimpleITK">MICCAI 2011 SimpleITK</a></li></ul>
+<h2><span class="mw-headline" id="Tutorials">Tutorials</span></h2>
+<ul><li><a href="/Wiki/ITK/Tutorials" title="ITK/Tutorials">Tutorials</a></li></ul>
+<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/HTML/Tutorials.htm"><b>Insight Toolkit Tutorials</b>: Presentations used for ITK Tutorials presented in conferences</a> See also the <a rel="nofollow" class="external text" href="http://insight-journal.org/browse/publication/70"><b>ITK Tutorial Presentation Slides</b></a>.</li></ul>
+<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/CourseWare/Training/GettingStartedI-WebPage/img0.html"><b>Getting Started Tutorial</b>: The tutorial that will save you time before you install and build ITK.</a></li></ul>
+<h2><span class="mw-headline" id="Books">Books</span></h2>
+<ul><li><b>Insight Toolkit Software Guide</b>: A comprehensive 550-page guide to ITK, covering image processing, filters, pipelines, segmentation, and registration.  Essential.
+<ul><li>Download <a rel="nofollow" class="external text" href="http://www.itk.org/ItkSoftwareGuide.pdf">PDF</a> (5.2Mb)</li>
+<li><a rel="nofollow" class="external text" href="http://www.kitware.com/products/itkguide.html">Purchase hard copy</a></li>
+<li><a rel="nofollow" class="external text" href="http://itk.org/ITKSoftwareGuide.git">Sources</a></li></ul></li></ul>
+<ul><li><b>Insight into Images</b>, Terry S. Yoo, editor, AK Peters, 2004, ISBN: 1-56881-217-5. The theory underlying the methods in ITK. As such, it serves as an extended reference for the Toolkit.
+<ul><li><a rel="nofollow" class="external text" href="http://www.akpeters.com/book.asp?bID=206">Hard copy ordering</a></li></ul></li></ul>
+<p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20230608050217
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.011 seconds
+Real time usage: 0.012 seconds
+Preprocessor visited node count: 30/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.823      1 -total
+100.00%    3.823      1 Template:ITK/Template/Footer
+ 44.12%    1.687      1 Template:ITK/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:630-0!canonical and timestamp 20230608050217 and revision id 61722. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Documentation&amp;oldid=61722">https://public.kitware.com/Wiki/index.php?title=ITK/Documentation&amp;oldid=61722</a>"</div></div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Documentation" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Documentation&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Documentation">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Documentation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Documentation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Documentation" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Documentation&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FDocumentation" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Documentation" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Documentation" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Documentation&amp;oldid=61722" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Documentation&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 22 April 2017, at 07:22.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.011","walltime":"0.012","ppvisitednodes":{"value":30,"limit":1000000},"postexpandincludesize":{"value":222,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    3.823      1 -total","100.00%    3.823      1 Template:ITK/Template/Footer"," 44.12%    1.687      1 Template:ITK/Template/Categories"]},"cachereport":{"timestamp":"20230608050217","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":96});});</script>
+</body>
+</html>

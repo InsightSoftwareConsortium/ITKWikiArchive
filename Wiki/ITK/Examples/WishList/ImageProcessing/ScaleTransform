@@ -1,0 +1,381 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" dir="ltr">
+<head>
+<title>ITK/Examples/ImageProcessing/ScaleTransform - KitwarePublic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="MediaWiki 1.16.1" />
+<link rel="canonical" href="/Wiki/ITK/Examples/ImageProcessing/ScaleTransform" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
+<link title="Creative Commons" type="application/rdf+xml" href="/Wiki/index.php?title=ITK/Examples/ImageProcessing/ScaleTransform&amp;action=creativecommons" rel="meta" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="/Wiki/skins/common/shared.css?270" media="screen" />
+<link rel="stylesheet" href="/Wiki/skins/common/commonPrint.css?270" media="print" />
+<link rel="stylesheet" href="/Wiki/skins/monobook/main.css?270" media="screen" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/Wiki/skins/monobook/IE50Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/Wiki/skins/monobook/IE55Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?270" media="screen" /><![endif]-->
+<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
+<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" media="print" />
+<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
+<link rel="stylesheet" href="/Wiki/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" />
+<script>
+var skin="monobook",
+stylepath="/Wiki/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/Wiki/$1",
+wgScriptPath="/Wiki",
+wgScriptExtension=".php",
+wgScript="/Wiki/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://www.itk.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="ITK/Examples/ImageProcessing/ScaleTransform",
+wgTitle="ITK/Examples/ImageProcessing/ScaleTransform",
+wgAction="view",
+wgArticleId=8951,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=43902,
+wgVersion="1.16.1",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "KitwarePublic", "5": "KitwarePublic talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "kitwarepublic": 4, "kitwarepublic_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "image": 6, "image_talk": 7},
+wgSiteName="KitwarePublic",
+wgCategories=[],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script><script src="/Wiki/skins/common/wikibits.js?270"></script>
+<script src="/Wiki/skins/common/ajax.js?270"></script>
+<script src="/Wiki/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook&amp;270"></script>
+
+<style type="text/css">/*<![CDATA[*/
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000ff;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #666666;}
+.cpp.source-cpp .co2 {color: #339900;}
+.cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.cpp.source-cpp .es0 {color: #000099; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #000099; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #660099; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #660099; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #660099; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #006699; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #FF0000;}
+.cpp.source-cpp .nu0 {color: #0000dd;}
+.cpp.source-cpp .nu6 {color: #208080;}
+.cpp.source-cpp .nu8 {color: #208080;}
+.cpp.source-cpp .nu12 {color: #208080;}
+.cpp.source-cpp .nu16 {color:#800080;}
+.cpp.source-cpp .nu17 {color:#800080;}
+.cpp.source-cpp .nu18 {color:#800080;}
+.cpp.source-cpp .nu19 {color:#800080;}
+.cpp.source-cpp .me1 {color: #007788;}
+.cpp.source-cpp .me2 {color: #007788;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/Wiki/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-cmake {line-height: normal;}
+.source-cmake li, .source-cmake pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cmake
+ * CSS class: source-cmake, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cmake.source-cmake .de1, .cmake.source-cmake .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cmake.source-cmake  {font-family:monospace;}
+.cmake.source-cmake .imp {font-weight: bold; color: red;}
+.cmake.source-cmake li, .cmake.source-cmake .li1 {font-weight: normal; vertical-align:top;}
+.cmake.source-cmake .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cmake.source-cmake .li2 {font-weight: bold; vertical-align:top;}
+.cmake.source-cmake .kw1 {color: #1f3f81; font-style: bold;}
+.cmake.source-cmake .kw2 {color: #1f3f81;}
+.cmake.source-cmake .kw3 {color: #077807; font-sytle: italic;}
+.cmake.source-cmake .co1 {color: #666666; font-style: italic;}
+.cmake.source-cmake .es0 {color: #000099; font-weight: bold;}
+.cmake.source-cmake .es1 {color: #b08000;}
+.cmake.source-cmake .es2 {color: #0000cd;}
+.cmake.source-cmake .sy0 {color: #197d8b;}
+.cmake.source-cmake .st0 {color: #912f11;}
+.cmake.source-cmake .re0 {color: #b08000;}
+.cmake.source-cmake .re1 {color: #0000cd;}
+.cmake.source-cmake .ln-xtra, .cmake.source-cmake li.ln-xtra, .cmake.source-cmake div.ln-xtra {background-color: #ffc;}
+.cmake.source-cmake span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/Wiki/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style></head>
+<body class="mediawiki ltr ns-0 ns-subject page-ITK_Examples_ImageProcessing_ScaleTransform skin-monobook">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" >
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading">ITK/Examples/ImageProcessing/ScaleTransform</h1>
+	<div id="bodyContent">
+		<h3 id="siteSub">From KitwarePublic</h3>
+		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a> | <a href="/Wiki/ITK/Examples" title="ITK/Examples">Examples</a></span>(Redirected from <a href="/Wiki/index.php?title=ITK/Examples/WishList/ImageProcessing/ScaleTransform&amp;redirect=no" title="ITK/Examples/WishList/ImageProcessing/ScaleTransform">ITK/Examples/WishList/ImageProcessing/ScaleTransform</a>)</div>
+		<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<p>In this example, we demonstrate the itkScaleTransform. By specifying the scale as 1.5, what we are actually doing is making the new image bigger than the old image in the physical space. When the image is resampled, the outer regions of the image are not overlapping the old image. Therefore, the resulting image appears to have shrunk, even though the scale factor was &gt; 1.
+</p>
+<h2> <span class="mw-headline" id="ScaleTransform.cxx">ScaleTransform.cxx</span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &quot;itkImage.h&quot;</span>
+<span class="co2">#include &quot;itkScaleTransform.h&quot;</span>
+<span class="co2">#include &quot;itkImageFileReader.h&quot;</span>
+<span class="co2">#include &quot;itkImageFileWriter.h&quot;</span>
+<span class="co2">#include &quot;itkResampleImageFilter.h&quot;</span>
+&nbsp;
+<span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">char</span>, <span class="nu0">2</span><span class="sy1">&gt;</span>  ImageType<span class="sy4">;</span>
+&nbsp;
+<span class="kw4">static</span> <span class="kw4">void</span> CreateImage<span class="br0">&#40;</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+  ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image <span class="sy1">=</span> ImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  CreateImage<span class="br0">&#40;</span>image<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw4">typedef</span>  itk<span class="sy4">::</span><span class="me2">ImageFileWriter</span><span class="sy1">&lt;</span>ImageType<span class="sy1">&gt;</span> WriterType<span class="sy4">;</span>
+  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> inputWriter <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  inputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span><span class="st0">&quot;input.png&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  inputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>image<span class="br0">&#41;</span><span class="sy4">;</span>
+  inputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="co1">// typedef itk::ScaleTransform&lt;float, 2&gt; TransformType; // If you want to use float here, you must use:</span>
+  <span class="co1">// typedef itk::ResampleImageFilter&lt;ImageType, ImageType, float&gt; ResampleImageFilterType; later.</span>
+  <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ScaleTransform</span><span class="sy1">&lt;</span><span class="kw4">double</span>, <span class="nu0">2</span><span class="sy1">&gt;</span> TransformType<span class="sy4">;</span>
+  TransformType<span class="sy4">::</span><span class="me2">Pointer</span> scaleTransform <span class="sy1">=</span> TransformType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  itk<span class="sy4">::</span><span class="me2">FixedArray</span><span class="sy1">&lt;</span><span class="kw4">float</span>, <span class="nu0">2</span><span class="sy1">&gt;</span> scale<span class="sy4">;</span>
+  scale<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu16">1.5</span><span class="sy4">;</span> <span class="co1">// newWidth/oldWidth</span>
+  scale<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu16">1.5</span><span class="sy4">;</span>
+  scaleTransform<span class="sy2">-</span><span class="sy1">&gt;</span>SetScale<span class="br0">&#40;</span>scale<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  itk<span class="sy4">::</span><span class="me2">Point</span><span class="sy1">&lt;</span><span class="kw4">float</span>,<span class="nu0">2</span><span class="sy1">&gt;</span> center<span class="sy4">;</span>
+  center<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">GetSize</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy2">/</span><span class="nu0">2</span><span class="sy4">;</span>
+  center<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">GetSize</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span><span class="sy2">/</span><span class="nu0">2</span><span class="sy4">;</span>
+&nbsp;
+  scaleTransform<span class="sy2">-</span><span class="sy1">&gt;</span>SetCenter<span class="br0">&#40;</span>center<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ResampleImageFilter</span><span class="sy1">&lt;</span>ImageType, ImageType<span class="sy1">&gt;</span> ResampleImageFilterType<span class="sy4">;</span>
+  ResampleImageFilterType<span class="sy4">::</span><span class="me2">Pointer</span> resampleFilter <span class="sy1">=</span> ResampleImageFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  resampleFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetTransform<span class="br0">&#40;</span>scaleTransform<span class="br0">&#41;</span><span class="sy4">;</span>
+  resampleFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>image<span class="br0">&#41;</span><span class="sy4">;</span>
+  resampleFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSize<span class="br0">&#40;</span>image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">GetSize</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  resampleFilter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> outputWriter <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  outputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span><span class="st0">&quot;output.png&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  outputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>resampleFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  outputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw1">return</span> <span class="kw2">EXIT_SUCCESS</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">void</span> CreateImage<span class="br0">&#40;</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+  itk<span class="sy4">::</span><span class="me2">Index</span><span class="sy1">&lt;</span><span class="nu0">2</span><span class="sy1">&gt;</span> start<span class="sy4">;</span>
+  start.<span class="me1">Fill</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  itk<span class="sy4">::</span><span class="me2">Size</span><span class="sy1">&lt;</span><span class="nu0">2</span><span class="sy1">&gt;</span> size<span class="sy4">;</span>
+  size.<span class="me1">Fill</span><span class="br0">&#40;</span><span class="nu0">101</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  ImageType<span class="sy4">::</span><span class="me2">RegionType</span> region<span class="br0">&#40;</span>start, size<span class="br0">&#41;</span><span class="sy4">;</span>
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>SetRegions<span class="br0">&#40;</span>region<span class="br0">&#41;</span><span class="sy4">;</span>
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>Allocate<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>FillBuffer<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="co1">// Make a white square</span>
+  <span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">unsigned</span> <span class="kw4">int</span> r <span class="sy1">=</span> <span class="nu0">40</span><span class="sy4">;</span> r <span class="sy1">&lt;</span> <span class="nu0">60</span><span class="sy4">;</span> r<span class="sy2">++</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">unsigned</span> <span class="kw4">int</span> c <span class="sy1">=</span> <span class="nu0">40</span><span class="sy4">;</span> c <span class="sy1">&lt;</span> <span class="nu0">60</span><span class="sy4">;</span> c<span class="sy2">++</span><span class="br0">&#41;</span>
+      <span class="br0">&#123;</span>
+      ImageType<span class="sy4">::</span><span class="me2">IndexType</span> pixelIndex<span class="sy4">;</span>
+      pixelIndex<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> r<span class="sy4">;</span>
+      pixelIndex<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> c<span class="sy4">;</span>
+&nbsp;
+      image<span class="sy2">-</span><span class="sy1">&gt;</span>SetPixel<span class="br0">&#40;</span>pixelIndex, <span class="nu0">255</span><span class="br0">&#41;</span><span class="sy4">;</span>
+      <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+  itk<span class="sy4">::</span><span class="me2">ImageRegionIterator</span><span class="sy1">&lt;</span>ImageType<span class="sy1">&gt;</span> imageIterator<span class="br0">&#40;</span>image, image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="co1">// Draw a white border</span>
+  <span class="kw1">while</span><span class="br0">&#40;</span><span class="sy3">!</span>imageIterator.<span class="me1">IsAtEnd</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+    <span class="kw1">if</span><span class="br0">&#40;</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">==</span> <span class="nu0">0</span> <span class="sy3">||</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">==</span> <span class="kw2">static_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span>image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">GetSize</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy2">-</span> <span class="nu0">1</span> <span class="sy3">||</span>
+       imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">==</span> <span class="nu0">0</span> <span class="sy3">||</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">==</span> <span class="kw2">static_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span>image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">GetSize</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">&#41;</span>
+      <span class="br0">&#123;</span>
+      imageIterator.<span class="me1">Set</span><span class="br0">&#40;</span><span class="nu0">255</span><span class="br0">&#41;</span><span class="sy4">;</span>
+      <span class="br0">&#125;</span>
+    <span class="sy2">++</span>imageIterator<span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<h2> <span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.6<span class="sy0">)</span>
+&nbsp;
+<span class="kw1">project</span><span class="sy0">(</span>ScaleTransform<span class="sy0">)</span>
+&nbsp;
+<span class="kw1">find_package</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
+<span class="kw1">include</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
+&nbsp;
+<span class="kw1">add_executable</span><span class="sy0">(</span>ScaleTransform ScaleTransform.cxx<span class="sy0">)</span>
+&nbsp;
+<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+  <span class="kw1">target_link_libraries</span><span class="sy0">(</span>ScaleTransform ITKReview <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
+<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+  <span class="kw1">target_link_libraries</span><span class="sy0">(</span>ScaleTransform <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
+<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 19/1000000
+Post-expand include size: 155/2097152 bytes
+Template argument size: 70/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8951-0!1!0!!en!2!edit=0 and timestamp 20111117054806 -->
+<div class="printfooter">
+Retrieved from "<a href="http://www.itk.org/Wiki/ITK/Examples/ImageProcessing/ScaleTransform">http://www.itk.org/Wiki/ITK/Examples/ImageProcessing/ScaleTransform</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+				 <li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Examples/ImageProcessing/ScaleTransform" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Examples/ImageProcessing/ScaleTransform&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Examples/ImageProcessing/ScaleTransform&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/Wiki/index.php?title=ITK/Examples/ImageProcessing/ScaleTransform&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="/Wiki/User:207.241.237.235" title="The user page for the IP address you are editing as [.]" accesskey="." class="new">207.241.237.235</a></li>
+				<li id="pt-anontalk"><a href="/Wiki/User_talk:207.241.237.235" title="Discussion about edits from this IP address [n]" accesskey="n" class="new">Talk for this IP address</a></li>
+				<li id="pt-anonlogin"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK/Examples/ImageProcessing/ScaleTransform" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/Wiki/skins/common/images/KWLogo.png);" href="/Wiki/Main_Page" title="Visit the main page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-portal"><a href="/Wiki/KitwarePublic:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="/Wiki/KitwarePublic:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="/Wiki/Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/Wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" title="Search KitwarePublic" accesskey="f" type="search" name="search" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK/Examples/ImageProcessing/ScaleTransform" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK/Examples/ImageProcessing/ScaleTransform" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="/Wiki/index.php?title=ITK/Examples/ImageProcessing/ScaleTransform&amp;oldid=43902" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-coll-print_export'>
+		<h5>Print/export</h5>
+		<div class='pBody'>
+<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ITK%2FExamples%2FImageProcessing%2FScaleTransform" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ITK%2FExamples%2FImageProcessing%2FScaleTransform&amp;oldid=43902&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="coll-download-as-odf"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ITK%2FExamples%2FImageProcessing%2FScaleTransform&amp;oldid=43902&amp;writer=odf" title="Download a ODT version of this wiki page" rel="nofollow">Download as ODT</a></li><li id="t-print"><a href="/Wiki/index.php?title=ITK/Examples/ImageProcessing/ScaleTransform&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/Wiki/skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></div>
+	<div id="f-copyrightico"><a href="http://creativecommons.org/licenses/by/2.5/"><img src="http://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" /></a></div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 11 November 2011, at 15:04.</li>
+		<li id="viewcount">This page has been accessed 346 times.</li>
+		<li id="copyright">Content is available under <a href="http://creativecommons.org/licenses/by/2.5/" class="external ">Attribution2.5</a>.</li>
+		<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li>
+		<li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.493 secs. --></body></html>

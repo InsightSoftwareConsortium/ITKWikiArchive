@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Testing - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Testing","wgTitle":"ITK/Testing","wgCurRevisionId":61518,"wgRevisionId":61518,"wgArticleId":697,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK/Testing","wgRelevantArticleId":697,"wgRequestId":"fe654ab4df2ef253e0c1c828","wgCSPNonce":!1,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Testing","wgInternalRedirectTargetUrl":"/Wiki/ITK/Testing"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.monobook.mobile"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<!--[if lt IE 9]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/screen-desktop.css?74a6a" media="screen"/><![endif]--><!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE60Fixes.css?1208f" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.34.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://itk.org/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://itk.org/Wiki/ITK/Testing"/>
+<!--[if lt IE 9]><script src="/Wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Testing rootpage-ITK skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">ITK/Testing</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From KitwarePublic</div><div id="contentSub" lang="en" dir="ltr"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Testing&amp;redirect=no" class="mw-redirect" title="ITK Testing">ITK Testing</a>)</span></div><div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>Testing plays a vital role in the ITK development process. We use the open source, web-based CDash Dashboard Server to display test results.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Is_ITK_tested_regularly.3F"><span class="tocnumber">1</span> <span class="toctext">Is ITK tested regularly?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#What_is_the_testing_schedule.3F"><span class="tocnumber">2</span> <span class="toctext">What is the testing schedule?</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#What_kind_of_testing_is_performed.3F"><span class="tocnumber">3</span> <span class="toctext">What kind of testing is performed?</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#How_Do_I_Add_a_Test.3F"><span class="tocnumber">4</span> <span class="toctext">How Do I Add a Test?</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#What_is_a_continuous_build_and_how_can_I_contribute_one.3F"><span class="tocnumber">5</span> <span class="toctext">What is a continuous build and how can I contribute one?</span></a></li>
+</ul>
+</div>
+
+<h3><span id="Is_ITK_tested_regularly?"></span><span class="mw-headline" id="Is_ITK_tested_regularly.3F">Is ITK tested regularly?</span></h3>
+<p>ITK is tested throughout the day on machines distributed around the world. You can view the results at:
+</p><p><a rel="nofollow" class="external free" href="http://open.cdash.org/index.php?project=Insight">http://open.cdash.org/index.php?project=Insight</a>
+</p><p>ITK is tested on a variety of platforms and configurations. Nightlies and gerrit submissions are ensured to be tested on Windows, OS X and Linux OS. A wide range of compiler versions are tested. Despite intensive testing, note that <b>not all possible compilers and configurations (i.e. external modules, third party-dependent modules, other CMake flags, etc.)</b> are tested.
+</p><p>The ITK components that get tested on a regular basis include:
+</p>
+<ul><li>The <b>ITK code</b>.</li>
+<li>The <b>Python wrap</b>.</li>
+<li>The <b>Software Guide</b>.</li>
+<li>The <b>Examples</b>.</li>
+<li>The <b>Remote</b> modules (non-exhaustive).</li></ul>
+<p>ITK uses CDash to perform builds, run tests and generate dashboards. You can find more information about CDash at <a rel="nofollow" class="external free" href="http://www.cdash.org">http://www.cdash.org</a>.
+</p>
+<h3><span id="What_is_the_testing_schedule?"></span><span class="mw-headline" id="What_is_the_testing_schedule.3F">What is the testing schedule?</span></h3>
+<p>CDash opens a daily dashboard at 9:00PM Eastern Daylight Time (EDT) and keeps that dashbooard open for 24 hours. Build/Test results submitted as "nightlies" (<b>Expected Nightly</b>) will appear on the currently opened dashboard. Each test site can select a convenient time to run tests.
+</p><p>Fresh dashboards are generated every hour, on the hour.
+</p><p>In addition to nightly testing, several sites run <b>Continuous</b> build/tests. These sites monitor git repository activity and begin a build/test sequence if there are updates to the repository. If a compile error is detected, the Dashboard server sends an email to the "offending" party (author).
+</p><p>For patches submitted for review to gerrit, the Kitware Build Robot gerrit user automatically builds and tests every patch set on Windows, OS X and Linux OS platforms. These are listed under the <b>Gerrit</b> section.
+</p><p><a rel="nofollow" class="external text" href="http://valgrind.org/">Valgrind</a> is used to identify dynamic analysis defects (e.g. uninitialized variables, memory leaks, etc.) and is run nightly. Its results are displayed under the <b>Dynamic Analysis</b> section. If a defect is found, the Dashboard server sends an email to the "offending" party (author).
+</p><p>Finally, <b>Experimental</b> builds can also be submitted any time by developers around the world.
+</p>
+<h3><span id="What_kind_of_testing_is_performed?"></span><span class="mw-headline" id="What_kind_of_testing_is_performed.3F">What kind of testing is performed?</span></h3>
+<p>ITK has three types of tests:
+</p>
+<ol><li>Unit Tests. Also called white box tests. These tests reside inside each module's <i>test</i> directory. There are meant to exercise a class's methods and verify that the code compiles, links and produces expected results. These tests do not need to produce results that are useful to a user. If a test returns a 0 status, it passes. A test fails if it returns a non-zero status.</li>
+<li>Blackbox Tests. These tests are automatically (or semi-automatically) generated. For example, each Code directory has a test called itkXXXHeaderTest. This test is automatically created and has a "#include" for each file in the directory.</li>
+<li>Regression Tests. These tests generate results and compare them with a known result. The purpose of regression testing is to detect changes in the output of the system.</li></ol>
+<h3><span id="How_Do_I_Add_a_Test?"></span><span class="mw-headline" id="How_Do_I_Add_a_Test.3F">How Do I Add a Test?</span></h3>
+<p>The <a rel="nofollow" class="external text" href="https://itk.org/ItkSoftwareGuide.pdf">ITK Software Guide</a> Section 9.4 provides detailed explanations on how to create a test.
+</p>
+<h3><span id="What_is_a_continuous_build_and_how_can_I_contribute_one?"></span><span class="mw-headline" id="What_is_a_continuous_build_and_how_can_I_contribute_one.3F">What is a continuous build and how can I contribute one?</span></h3>
+<p>Continuous builds run throughout the day and report their output in the Continuous Builds portion of the dashboard. The most recent build is at the top of the list. The builds run periodically and check the status of the repository. If a file is added or changed since the last build, the working repository of the continuous build is updated, the code compiled and tests executed. Optional e-mail notifications can be sent if there are errors, warnings or test failures.
+</p><p>You can set up a continuous build. This entails writing some small shell scripts and setting up a scheduler (Scheduler for Windows, cron for Linux/Unix). You will also need to install tcl, checkout Dart and configure your build for testing.
+</p><p>For Windows 2000, here are three batch files that can be modified for your own environment.
+</p>
+<pre>AllowInsightContinuous.bat
+BuildInsightContinuous.bat
+PreventInsightContinuous.bat
+</pre>
+<p>The batch files use a lock to prevent/allow the continuous
+</p>
+<pre>rem ************* AllowInsightContinuous.bat
+rem Allow the Continuous to run
+rem
+c:
+cd c:\lorensen\InsightContinuous\Insight-VC6
+if EXIST continuous.lock (
+  del continuous.lock
+)
+cd ..
+rem ************* BuildInsightContinuous.bat
+rem DO a C++ Build Continuously
+rem
+c:
+rem Setup proxy it behind a firewall
+set HTTP_PROXY=webcache
+set HTTP_PROXY_PORT=8080
+rem
+rem Setup the path
+rem
+set PATH=c:/lorensen/InsightContinuous/Insight-VC6/bin/Release;%PATH%
+rem
+rem Tell cvs where .cvspass resides
+set HOME=c:/lorensen
+cd c:\lorensen\InsightContinuous\Insight-VC6
+if EXIST continuous.lock (
+  exit /B
+) else (
+  date /T &gt; continuous.lock
+  time /T &gt;&gt; continuous.lock
+  cd c:\lorensen\InsightContinuous\Insight-VC6
+ tclsh83 c:/lorensen/Dart/Source/Client/DashboardManager.tcl DartConfiguration.tcl Continuous Start Update Configure Build Test Submit
+ cd c:\lorensen\InsightContinuous\Insight-VC6
+ del continuous.lock
+ cd ..
+)
+rem ***************** PreventInsightContinuous.bat
+rem Prevent the Continuous
+rem
+c:
+cd c:\lorensen\InsightContinuous\Insight-VC6
+if EXIST continuous.lock (
+  exit /B
+) else (
+  echo "Prevent continuous for nightly" &gt; continuous.lock
+)
+cd ..
+</pre>
+<p>Now you need to establish a schedule for the three batch jobs. Use the "Scheduled Tasks" on the "Control Panel" to access the Schedule Task Wizard. The following schedule runs the continuous every 10 minutes from 6:05AM until 12:00AM. The Allow and Prevent scripts turn the build ON/OFF at the appropriate time. Schedule each batch file as follows:
+</p>
+<pre>AllowInsightContinuous.bat - Daily, Start 6:00AM
+BuildInsightContinuous.bat - Daily, Start 6:05AM, Advanced: Repeat Task every 10 minutes, duration 17 hours and 55 minutes
+PreventContinuous.bat - Daily, Start 12:00AM
+</pre>
+<p>Supporting ITK development process can be as easy as contributing testing results from your platform.
+</p>
+<ul><li>Submit testing results using <a href="/Wiki/CMake_Testing_With_CTest" class="mw-redirect" title="CMake Testing With CTest">CTest</a></li></ul>
+<p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20201202093632
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.012 seconds
+Real time usage: 0.026 seconds
+Preprocessor visited node count: 19/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   16.223      1 -total
+100.00%   16.223      1 Template:ITK/Template/Footer
+ 10.94%    1.774      1 Template:ITK/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:697-0!canonical and timestamp 20201202093632 and revision id 61518
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://itk.org/Wiki/index.php?title=ITK/Testing&amp;oldid=61518">https://itk.org/Wiki/index.php?title=ITK/Testing&amp;oldid=61518</a>"</div>
+<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div><!-- end content --><div class="visualClear"></div></div></div><div class="visualClear"></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Testing" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Testing&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Testing&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="/Wiki/index.php?title=ITK/Testing&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label"><h3 id="p-cactions-mobile-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main-mobile" class="selected"><a href="/Wiki/ITK/Testing" title="Page">Page</a></li><li id="ca-talk-mobile" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Testing&amp;action=edit&amp;redlink=1" rel="discussion" title=" (page does not exist)">Discussion</a></li><li id="ca-more"><a href="#p-cactions">More</a></li><li id="ca-tools"><a href="#p-tb" title="Tools">Tools</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FTesting" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="/Wiki/Main_Page" class="mw-wiki-logo" title="Visit the main page"></a></div><div id="sidebar"><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search KitwarePublic" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>  <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK/Testing" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK/Testing" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/Wiki/index.php?title=ITK/Testing&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/Wiki/index.php?title=ITK/Testing&amp;oldid=61518" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/Wiki/index.php?title=ITK/Testing&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div></div><a href="#sidebar" title="navigation" class="menu-toggle" id="sidebar-toggle"></a><a href="#p-personal" title="user tools" class="menu-toggle" id="p-personal-toggle"></a><a href="#globalWrapper" title="back to top" class="menu-toggle" id="globalWrapper-toggle"></a></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 5 March 2017, at 06:07.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li><li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li></ul></div></div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.012","walltime":"0.026","ppvisitednodes":{"value":19,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":222,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%   16.223      1 -total","100.00%   16.223      1 Template:ITK/Template/Footer"," 10.94%    1.774      1 Template:ITK/Template/Categories"]},"cachereport":{"timestamp":"20201202093632","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":331});});</script></body></html>

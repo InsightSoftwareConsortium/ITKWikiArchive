@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Proposals:Concept Checking - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"1dae34495c8566069c958276","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Proposals:Concept_Checking","wgTitle":"ITK/Proposals:Concept Checking","wgCurRevisionId":44742,"wgRevisionId":44742,"wgArticleId":1655,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Proposals:Concept_Checking","wgRelevantArticleId":1655,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles"
+:"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Proposals_Concept_Checking rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Proposals:Concept Checking</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Programming_Level"><span class="tocnumber">1.1</span> <span class="toctext">Programming Level</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Mathematical_Level"><span class="tocnumber">1.2</span> <span class="toctext">Mathematical Level</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Semantic_Level"><span class="tocnumber">1.3</span> <span class="toctext">Semantic Level</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#The_Programming_Level_&amp;_C++_Templates"><span class="tocnumber">1.4</span> <span class="toctext">The Programming Level &amp; C++ Templates</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Macro_Implementation"><span class="tocnumber">2</span> <span class="toctext">Macro Implementation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Implementation_Mechanism"><span class="tocnumber">2.1</span> <span class="toctext">Implementation Mechanism</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Constraints"><span class="tocnumber">2.1.1</span> <span class="toctext">Constraints</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Instantiators"><span class="tocnumber">2.1.2</span> <span class="toctext">Instantiators</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Macro_Invocations"><span class="tocnumber">2.1.3</span> <span class="toctext">Macro Invocations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#Example"><span class="tocnumber">2.2</span> <span class="toctext">Example</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#The_Constraint"><span class="tocnumber">2.2.1</span> <span class="toctext">The Constraint</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#The_Instantiator"><span class="tocnumber">2.2.2</span> <span class="toctext">The Instantiator</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#The_Macro_in_the_Filter"><span class="tocnumber">2.2.3</span> <span class="toctext">The Macro in the Filter</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Usage"><span class="tocnumber">2.2.4</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#The_Compiler_Error_Message"><span class="tocnumber">2.2.5</span> <span class="toctext">The Compiler Error Message</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#List_of_Concepts"><span class="tocnumber">3</span> <span class="toctext">List of Concepts</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#Current_Concepts"><span class="tocnumber">3.1</span> <span class="toctext">Current Concepts</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Proposed_concept_additions"><span class="tocnumber">3.2</span> <span class="toctext">Proposed concept additions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#Integration_into_Filters"><span class="tocnumber">4</span> <span class="toctext">Integration into Filters</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#Enabling_Concept_Checking"><span class="tocnumber">5</span> <span class="toctext">Enabling Concept Checking</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#Limitations"><span class="tocnumber">6</span> <span class="toctext">Limitations</span></a></li>
+</ul>
+</div>
+
+<p><br />
+</p>
+<h1><span class="mw-headline" id="Introduction">Introduction</span></h1>
+<p>The generic nature of ITK has the positive effect of facilitating code reuse by allowing algorithms to be instantiated over different types of images. Even images that ITK developers may have never tried before. One of the drawbacks of such generality is that users may attempt to use filters on image types for which they are not suitable. These attempts may result in one of the following unpleasant experiences:
+</p>
+<ol><li>The code will not compile and will produce error messages with more than ten lines of references to templated code</li>
+<li>The code may compile but the program may crash at run time.</li>
+<li>The code may run but the output may not be correct.</li></ol>
+<p>These types of failures are directly associated to three different levels of conceptual requirements in the algorithm that the user is attempting to use. We refer to these levels as
+</p>
+<ol><li>Programming level</li>
+<li>Mathematical level</li>
+<li>Semantic level</li></ol>
+<h2><span class="mw-headline" id="Programming_Level">Programming Level</span></h2>
+<p>The programming level refers to the API functionalities that a pixel type or an image type must provide in order to match the expectations of a filter or algorithm. In practical terms it comes down to the functions and operations that the filter invokes on the image type and or the pixel type. For example, if the filter perfoms additions between pixel values, then this requires the pixel type to provide an addition operator. These requirements can be tested at compile time, and are the object of the Concept Checking implementation described in this page.
+</p>
+<h2><span class="mw-headline" id="Mathematical_Level">Mathematical Level</span></h2>
+<p>The mathematical level is more abstract than the programming level and refers to the consitency of operations performed over types. For example, the fact that pixel types can be sorted by using a "&lt;" operator, require at the programming level that the pixel type provides an "operator&lt;()" method. However, at the mathematical level it also requires that a number of logical consistency rules are satisfied, such as:
+</p>
+<ol><li>if ( a &gt; b ) is true, then ( b &gt; a ) is false</li>
+<li>if ( a &gt; b ) and ( b &gt; c ) then ( a &gt; c )</li></ol>
+<p>The programming level cannot verify the validity of the conditions above without incurring in a very expensive effort. It is not reasonable to subject users to the price of that effort when they are instantiating filters over commonly used image types. This type of conditions can simply be documented in the filter by placing statements such as 
+</p>
+<pre>        The pixel type should be "Sortable".
+</pre>
+<p>Users would have to use their knowledge of the pixel type that they are using in order to "manually" confirm that the pixel type fits the requirements of the filter.
+</p><p>When the user provides a type that satisfies the programming level but fails the mathematical level, the code will compile, but will fail at run time, maybe by producing segmentation faults, memory overrides, infinite loops or triggering exceptions.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Semantic_Level">Semantic Level</span></h2>
+<p>The semantic level is more abstract than the mathematical level, and refers to the interpretation or the meaning of the types in the context of an application. This level cannot be verified at the programming level, and cannot be documented because it pertains to the almost infinite combinations of possible uses of an image type, which of course, cannot be anticipated by developers.
+</p><p>The semantic level will refer to matters such as using a Vector type for representing a sampling of the spectrum of a microscopy image. Even though at first sight, a Vector may seem to be the appropriate mathematical type for representing this concept, a more detailed analysis will reveal that the spectrum of absorption of light must not have any negative numbers, and that therefore the operations of additions and subtraction have to be defined in a way different from the standard mathematical conception of Vector addition and subtraction.
+</p><p>When users take classes that have a valid mathematical foundation that is appropriate for a specific algorithm, but use them for a semantic interpretation that is not appropriate, then the results produced by the filter or algorithm will be mathematically valid, but their interpretation in the semantical context will be erroneous.  
+</p><p>For example, if we take a microscope and using pass-band optical filters we acquire color images in 10 different color bands, then group those individual images n the form of an image of Vectors where every pixel is a vector of 10 components; we can claim that performing operations such as mean and variance are valid in the semantical context of spectral images, but we should not take this vector image and use it as a deformation field in a WarpImageFilter because despite the fact that the Vector pixel type is appropriate for that mathematical operation, the content of the image is not representing the concept of a deformation field.
+</p><p>The semantic level is certainly the most challenging of the three levels of conceptual checking, and it should probably be managed by discussions in the community forums such as the Insight Journal and the ITK users and developers mailing lists.
+</p>
+<h2><span id="The_Programming_Level_.26_C.2B.2B_Templates"></span><span class="mw-headline" id="The_Programming_Level_&amp;_C++_Templates">The Programming Level &amp; C++ Templates</span></h2>
+<p>One of the characteristics of Generic Programming is that classes and methods can be instantiated over any type. This freedom however, is still restricted by a number of characteristics that those types must satisfy in order to work properly with the classes that they are instantiating.
+</p><p>For example, a templated class has template parameter T and internally perform addition operations on that type, will require T to have an operator+() defined, or to be a basic type such as int, float or char, for which such operator is already defined in the language.
+</p><p>When a templated class is instantiated over a type that do no satisfy the requirement, most compilers will generate error messages that are difficult to interpret. It is then desirable to have a mechanism for making those messages simpler or at least easier to understand for the users of the software.
+</p><p>Concept checking is an approach by which language structures are introduced in templated classes in order to test early for the expected characteristics of a template parameter. When a user instantiate this templated class over a type that does not satisfy the concept, then the compiler will generate an error message that is easier to interpret, and that will convey to the user the message that the type is not an appropriate template argument for this class.
+</p>
+<h1><span class="mw-headline" id="Macro_Implementation">Macro Implementation</span></h1>
+<h2><span class="mw-headline" id="Implementation_Mechanism">Implementation Mechanism</span></h2>
+<p>The implementation mechanism of concept checking in ITK is inspired on the method used by the BOOST library
+</p><p><a rel="nofollow" class="external free" href="http://www.boost.org/libs/concept_check/concept_check.htm">http://www.boost.org/libs/concept_check/concept_check.htm</a>
+</p><p>This is based in a three stages process
+</p>
+<ol><li>Auxiliary classes that exercise a concept. ("Constraints")</li>
+<li>Auxiliary classes that instantiate the Checkers. ("Instantiators")</li>
+<li>Macros that name the concept and insert the Instantiators.</li></ol>
+<h3><span class="mw-headline" id="Constraints">Constraints</span></h3>
+<p>A set of Constraints is defined for capturing the common requirements of pixel types and value types. Such constraints include features like, having an assignment operator, being castable to double, having addition operators, having multiplication operators and so on.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Instantiators">Instantiators</span></h3>
+<p>The Instantiators provide a specific naming for the concept being checked and for triggering the evaluation of the concept at compiling time.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Macro_Invocations">Macro Invocations</span></h3>
+<p>The Macros are the final element that is inserted on every specific ITK class in order to indicate the concepts that must be checked in its template arguments. It is common for an ITK class to have multiple concepts in its header.
+</p>
+<h2><span class="mw-headline" id="Example">Example</span></h2>
+<p>In order to illustrate this mechanism, a simple concept checking sequence is presented here, for the case of 
+multiplication. This is a case in which a templated class of type
+</p>
+<pre>  template &lt;typename T&gt;
+  class ImageFilter&lt; T &gt;
+</pre>
+<p>internally performs multiplication operations with variables of type "T".
+</p>
+<h3><span class="mw-headline" id="The_Constraint">The Constraint</span></h3>
+<p>The Constraint class that checks for this multiplication concept is the following
+</p>
+<pre> struct Constraints
+ {
+   void constraints()
+     {
+     a = static_cast&lt;T3&gt;(b * c);
+     const_constraints(b, c);
+     }
+   void const_constraints(const T1&amp; d, const T2&amp; e)
+     {
+     a = static_cast&lt;T3&gt;(d * e);
+     }
+   T3 a;  
+   T1 b;
+   T2 c;
+  };
+</pre>
+<p>This class checks that a variable of type T1 can be multiplied by a variable of type T2 and the result be assigned to a variable of Type T3.
+</p>
+<h3><span class="mw-headline" id="The_Instantiator">The Instantiator</span></h3>
+<p>This constraint is then embeded into a structure whose name clearly and distinctively identifies the concept. In the case of multiplication this structure is named: "MultiplyOperator", and its code looks like:
+</p>
+<pre>  /** Concept requiring T to have operator * in the form T1 op T2 = T3. */
+  template &lt;typename T1, typename T2=T1, typename T3=T1&gt;
+  struct MultiplyOperator
+  {
+    struct Constraints
+    {
+     ...
+    };
+
+    itkConceptConstraintsMacro();
+  };
+</pre>
+<p><br />
+Naming of this class is critical in the working of Concept Checking because that name is the first word that will appear in the compiler error message if a user instantiate the ITK filter with a type that does not satisfy the requirement of having a multiplication operator.
+</p>
+<h3><span class="mw-headline" id="The_Macro_in_the_Filter">The Macro in the Filter</span></h3>
+<p>In order to specify that a particular templated class in ITK requires the multiplicative operator to be available for the pixel type, the followin code is inserted in the header of that ITK templated class:
+</p><p><br />
+</p>
+<pre> itkConceptMacro(Input1Input2OutputMultiplyOperatorCheck,
+   (Concept::MultiplyOperator&lt;typename TInputImage1::PixelType,
+                              typename TInputImage2::PixelType,
+                              typename TOutputImage::PixelType&gt;));
+</pre>
+<p><br />
+This macro will be expanded by the C preprocessor into a group of lines of code that declare the Instantiator and therefore forces the compiler to evaluate the concept in question.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<p>The following code attempts to use a Multiplication filter with an image whose pixel type doesn't have a product operator defined. This attempt will result in a compiler error that will inform the user about the requirements imposed on the pixel type by this particular ITK filter
+</p><p><br />
+</p>
+<pre>  #include "itkImage.h"
+  #include "itkMultiplyImageFilter.h"
+  class K
+  {
+  };
+  int main()
+  {
+  typedef itk::Image&lt; K, 2 &gt; ImageType;
+  typedef itk::MultiplyImageFilter&lt;
+                             ImageType,
+                             ImageType,
+                             ImageType &gt; FilterType;
+  FilterType::Pointer filter = FilterType::New();
+  return 0;
+  }
+</pre>
+<h3><span class="mw-headline" id="The_Compiler_Error_Message">The Compiler Error Message</span></h3>
+<p>The error message produced by the code above, in GCC 3.4 is the following:
+</p><p><br />
+</p>
+<pre> /home/ibanez/src/Insight/Code/Common/itkConceptChecking.h: In member function 
+   `void itk::Concept::MultiplyOperator&lt;T1, T2, T3&gt;::Constraints::constraints()[with T1 = K, T2 = K, T3 = K]':
+ /home/ibanez/src/Insight/Code/Common/itkConceptChecking.h:339:   
+  instantiated from `itk::Concept::MultiplyOperator&lt;K, K, K&gt;'
+ /home/ibanez/src/Insight/Code/BasicFilters/itkMultiplyImageFilter.h:81:   
+  instantiated from `itk::MultiplyImageFilter&lt;main()::ImageType, main()::ImageType, main()::ImageType&gt;'
+ /home/ibanez/src/UsersITK/LuisIbanez/ConceptChecker.cxx:19:   
+  instantiated from here
+ /home/ibanez/src/Insight/Code/Common/itkConceptChecking.h:327: 
+  error: no match for 'operator*' in '
+  ((itk::Concept::MultiplyOperator&lt;K, K, K&gt;::Constraints*)this)-&gt;
+  itk::Concept::MultiplyOperator&lt;K, K, K&gt;::Constraints::b * 
+((itk::Concept::MultiplyOperator&lt;K, K, K&gt;::Constraints*)this)-&gt;
+  itk::Concept::MultiplyOperator&lt;K, K, K&gt;::Constraints::c'
+</pre>
+<p><br />
+The first line of the message refers to the "ConceptChecking" file, and list the concept that is being violated, in this case "Concept::MultiplyOperator&lt;T1, T2, T3&gt;"
+</p>
+<h1><span class="mw-headline" id="List_of_Concepts">List of Concepts</span></h1>
+<p>The following table list all the concepts for which ITK is checking in its filters.
+</p><p>For full implementation detail please see the file
+</p>
+<pre>      Insight/Code/Common/itkConceptChecking.h.
+</pre>
+<h2><span class="mw-headline" id="Current_Concepts">Current Concepts</span></h2>
+<table border="1">
+
+<tbody><tr bgcolor="#abcdef">
+<th>Index</th>
+<th>Concept</th>
+<th>Description
+</th></tr>
+<tr>
+<td>1</td>
+<td>DefaultConstructible</td>
+<td>Concept requiring T to have a default constructor.
+</td></tr>
+<tr>
+<td>2</td>
+<td>CopyConstructible</td>
+<td>Concept requiring T to have a copy constructor.
+</td></tr>
+<tr>
+<td>3</td>
+<td>Convertible</td>
+<td>Concept requiring T1 to be convertible to T2.
+</td></tr>
+<tr>
+<td>4</td>
+<td>Assignable</td>
+<td>Concept requiring T to have operator =.
+</td></tr>
+<tr>
+<td>5</td>
+<td>LessThanComparable</td>
+<td>Concept requiring T1 to have operators &lt; and &lt;= with a right-hand operator of type T2.
+</td></tr>
+<tr>
+<td>6</td>
+<td>EqualityComparable</td>
+<td>Concept requiring T1 to have operators == and&#160;!= with a right-hand operator of type T2.
+</td></tr>
+<tr>
+<td>7</td>
+<td>Comparable</td>
+<td>Concept requiring T1 to have operators &lt;, &gt;, &lt;=, &gt;=, ==,&#160;!= with a right-hand operator of type T2.
+</td></tr>
+<tr>
+<td>8</td>
+<td>AdditiveOperators</td>
+<td>Concept requiring T1 to have operators +, -, +=, -= in the form T3 = T1 op T2.
+</td></tr>
+<tr>
+<td>9</td>
+<td>MultiplyOperator</td>
+<td>Concept requiring T1 to have operator * in the form T3 = T1 op T2.
+</td></tr>
+<tr>
+<td>10</td>
+<td>Signed</td>
+<td>Concept requiring T to be signed.
+</td></tr>
+<tr>
+<td>11</td>
+<td>SameType</td>
+<td>Concept requiring T1 and T2 to be the same type.
+</td></tr>
+<tr>
+<td>12</td>
+<td>SameDimension</td>
+<td>Concept requiring D1 and D2 to be the same dimension.
+</td></tr>
+<tr>
+<td>13</td>
+<td>GreaterThanComparable</td>
+<td>Concept requiring T1 to have operators &gt; and &gt;= with a right-hand operator of type T2.
+</td></tr>
+<tr>
+<td>14</td>
+<td>LogicalOperators</td>
+<td>Concept requiring T1 to have operators &amp;, I, ^, &amp;=, I=, ^= in the form T3 = T1 op T2.
+</td></tr>
+<tr>
+<td>15</td>
+<td>NotOperator</td>
+<td>Concept requiring T to have operator&#160;!.
+</td></tr>
+<tr>
+<td>16</td>
+<td>IncrementDecrementOperators</td>
+<td>Concept requiring T to have operators ++ and --.
+</td></tr>
+<tr>
+<td>17</td>
+<td>OStreamWritable</td>
+<td>Concept requiring T to be writable to an ostream.
+</td></tr>
+<tr>
+<td>18</td>
+<td>HasNumericTraits</td>
+<td>Concept requiring T to have NumericTraits.
+</td></tr>
+<tr>
+<td>19</td>
+<td>HasPixelTraits</td>
+<td>Concept requiring T to have PixelTraits.
+</td></tr>
+<tr>
+<td>20</td>
+<td>HasJoinTraits</td>
+<td>Concept requiring T to have JoinTraits.
+</td></tr>
+<tr>
+<td>21</td>
+<td>SameDimensionOrMinusOne</td>
+<td>Concept requiring D1 and D2 to be the same dimension or D2-1 = D2.
+</td></tr>
+<tr>
+<td>22</td>
+<td>MultiplyAndAssignOperator</td>
+<td>Concept requiring T1 to have operator *= in the form T2 op= T1.
+</td></tr>
+<tr>
+<td>23</td>
+<td>DivisionOperators</td>
+<td>Concept requiring T1 to have operators / and /= in the form T3 = T1 op T2.
+</td></tr>
+<tr>
+<td>24</td>
+<td>IsInteger</td>
+<td>Concept requiring T to be inteter.
+</td></tr>
+<tr>
+<td>25</td>
+<td>IsNonInteger</td>
+<td>Concept requiring T to be non-inteter.
+</td></tr>
+<tr>
+<td>26</td>
+<td>IsFloatingPoint</td>
+<td>Concept requiring T to be floating point.
+</td></tr>
+<tr>
+<td>27</td>
+<td>IsFixedPoint</td>
+<td>Concept requiring T to be fixed point.
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Proposed_concept_additions">Proposed concept additions</span></h2>
+<p>Additional concepts for requiring integer or noninteger datatypes should be added to the toolkit.  NumericTraits defines static boolean constants
+</p>
+<ul><li>is_bounded</li>
+<li>is_exact</li>
+<li>is_iec559 (???)</li>
+<li>is_integer</li>
+<li>is_modulo</li>
+<li>is_signed</li>
+<li>is_specialized</li>
+<li>tinyness_before</li></ul>
+<p>These traits can be used to define concepts in a manner similar to the Signed concept.  We should consider separating the concepts of <i>integer</i>, <i>non-integer</i>, <i>floating point</i> so that we can expand our native datatypes to include a fixed point representation.
+</p><p>The concepts below are poorly named.  We should not have a concept called <i>Integer</i> since a user could confuse the name of the concept with a datatype.  Unfortunately, none of the current concepts have the word concept in their name.  We could follow NumericTraits, and make the new concepts called <i>IsInteger</i>.
+</p>
+<table border="1">
+
+<tbody><tr bgcolor="#abcdef">
+<th>Index</th>
+<th>Concept</th>
+<th>Description
+</th></tr>
+<tr>
+<td>13</td>
+<td>Integer</td>
+<td>Concept requiring T to be an integer.
+</td></tr>
+<tr>
+<td>14</td>
+<td>Noninteger</td>
+<td>Concept requiring T to be noninteger (floating point or fixed point).
+</td></tr>
+<tr>
+<td>15</td>
+<td>FloatingPoint</td>
+<td>Concept requiring T to be floating point (not integer and not fixed point)
+</td></tr>
+<tr>
+<td>16</td>
+<td>FixedPoint</td>
+<td>Concept requiring T to be an ITK fixed point representation (not integer and not floating point)
+</td></tr></tbody></table>
+<h1><span class="mw-headline" id="Integration_into_Filters">Integration into Filters</span></h1>
+<p>The concepts listed in the table above were introduced in ITK filters.
+</p><p>Please follow the link below for a detailed list of filters and their associated concepts.
+</p><p><a href="/Wiki/ConceptChecking:List_of_Filters" title="ConceptChecking:List of Filters">List of Filters</a>
+</p><p><br />
+</p>
+<h1><span class="mw-headline" id="Enabling_Concept_Checking">Enabling Concept Checking</span></h1>
+<p>During the experimental phase of implementing concept checking, the code was conditionally compiled under control of the CMake configuration. This prevented to break builds of many users during the early stages of the concept checking implementation.
+</p><p>In order to enable concept checking, the ITK user must do the following:
+</p>
+<ul><li>Rerun CMake in its ITK configuration</li>
+<li>Go to the Advanced options</li>
+<li>Select ITK_USE_CONCEPT_CHECKING</li></ul>
+<p>This settings will be captured by the user projects that use ITK, and will be actively checking for the concepts every time that the user recompiles her/his project.
+</p>
+<h1><span class="mw-headline" id="Limitations">Limitations</span></h1>
+<p>The Concept Checking was not supported by the Borland compiler.
+This option is therefore disabled in this specific compiler.
+</p><p><br />
+</p><p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20230201110351
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.025 seconds
+Real time usage: 0.027 seconds
+Preprocessor visited node count: 71/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.696      1 -total
+100.00%    3.696      1 Template:ITK/Template/Footer
+ 44.50%    1.645      1 Template:ITK/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:1655-0!canonical and timestamp 20230201110351 and revision id 44742. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Proposals:Concept_Checking&amp;oldid=44742">https://public.kitware.com/Wiki/index.php?title=ITK/Proposals:Concept_Checking&amp;oldid=44742</a>"</div></div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Proposals:Concept_Checking" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Proposals:Concept_Checking&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Proposals:Concept_Checking">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Proposals:Concept_Checking&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Proposals:Concept_Checking&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Proposals:Concept_Checking" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Proposals:Concept_Checking&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FProposals%3AConcept+Checking" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Proposals:Concept_Checking" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Proposals:Concept_Checking" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Proposals:Concept_Checking&amp;oldid=44742" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Proposals:Concept_Checking&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 4 January 2012, at 19:55.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.025","walltime":"0.027","ppvisitednodes":{"value":71,"limit":1000000},"postexpandincludesize":{"value":222,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    3.696      1 -total","100.00%    3.696      1 Template:ITK/Template/Footer"," 44.50%    1.645      1 Template:ITK/Template/Categories"]},"cachereport":{"timestamp":"20230201110351","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":72});});</script>
+</body></html>

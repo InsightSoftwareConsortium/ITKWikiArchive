@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>SimpleITK/GettingStarted - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"2d00c902bbcee9ec97cf1b45","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"SimpleITK/GettingStarted","wgTitle":"SimpleITK/GettingStarted","wgCurRevisionId":61874,"wgRevisionId":61874,"wgArticleId":9623,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"SimpleITK/GettingStarted","wgRelevantArticleId":9623,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":
+"ITK/Release_4/SimpleITK/GettingStarted","wgInternalRedirectTargetUrl":"/Wiki/SimpleITK/GettingStarted"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/SimpleITK/GettingStarted"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-SimpleITK_GettingStarted rootpage-SimpleITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>SimpleITK/GettingStarted</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/SimpleITK" title="SimpleITK">SimpleITK</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK/Release_4/SimpleITK/GettingStarted&amp;redirect=no" class="mw-redirect" title="ITK/Release 4/SimpleITK/GettingStarted">ITK/Release 4/SimpleITK/GettingStarted</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><table class="wikitable" style="text-align:center;width: 100%; background-color:#ffff99;" cellpadding="10">
+<tbody><tr>
+<td><b>NOTICE</b>
+</td></tr>
+<tr>
+<td>This page is being migrated to Read The Docs!
+<p>For the up to date version please see <a rel="nofollow" class="external text" href="https://simpleitk.readthedocs.io/en/master/{{#if:%7CDocumentation/docs/source/.html%7Cindex.html}}">this page</a>!
+</p>
+</td></tr></tbody></table>
+<div class="center"><div class="floatnone"><a href="/Wiki/File:SimpleITK-SquareTransparentLogo.png" class="image"><img alt="SimpleITK-SquareTransparentLogo.png" src="/Wiki/images/9/95/SimpleITK-SquareTransparentLogo.png" decoding="async" width="300" height="300" /></a></div></div>
+<p>SimpleITK provides a simplified interface to ITK in a variety of languages.  You can either download binaries, if they are available for your platform and prefered language, or you can build SimpleITK yourself.
+</p><p>Additionally, there are several recommended third-party software packages.
+</p><p>After you have installed SimpleITK, please look to the <a href="/Wiki/ITK_Release_4/Outreach/Conferences/MICCAI_2011/SimpleITK" class="mw-redirect" title="ITK Release 4/Outreach/Conferences/MICCAI 2011/SimpleITK">Tutorial</a>  or the <a rel="nofollow" class="external text" href="http://www.itk.org/SimpleITKDoxygen/html/">Doxygen</a> pages for more information.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Downloading_the_binaries"><span class="tocnumber">1</span> <span class="toctext">Downloading the binaries</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Python_binary_files"><span class="tocnumber">1.1</span> <span class="toctext">Python binary files</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Use_a_Virtual_Environment"><span class="tocnumber">1.1.1</span> <span class="toctext">Use a Virtual Environment</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Wheels_for_Generic_Python_Distribution"><span class="tocnumber">1.1.2</span> <span class="toctext">Wheels for Generic Python Distribution</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Anaconda_Distribution"><span class="tocnumber">1.1.3</span> <span class="toctext">Anaconda Distribution</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Enthought_Canopy_Distribution"><span class="tocnumber">1.1.4</span> <span class="toctext">Enthought Canopy Distribution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a href="#C#_binary_files"><span class="tocnumber">1.2</span> <span class="toctext">C# binary files</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Java_binary_files"><span class="tocnumber">1.3</span> <span class="toctext">Java binary files</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Nightly_binaries"><span class="tocnumber">1.4</span> <span class="toctext">Nightly binaries</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Build_It_Yourself"><span class="tocnumber">2</span> <span class="toctext">Build It Yourself</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Prerequisites"><span class="tocnumber">2.1</span> <span class="toctext">Prerequisites</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Recipes_/_Formulas_/_Short_Cuts"><span class="tocnumber">2.2</span> <span class="toctext">Recipes / Formulas / Short Cuts</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Source_code"><span class="tocnumber">2.3</span> <span class="toctext">Source code</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Building_using_SuperBuild"><span class="tocnumber">2.4</span> <span class="toctext">Building using SuperBuild</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Building_Manually"><span class="tocnumber">2.5</span> <span class="toctext">Building Manually</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Advanced_Build_Options"><span class="tocnumber">2.6</span> <span class="toctext">Advanced Build Options</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#A_visual_guide_to_building_SimpleITK_on_Linux"><span class="tocnumber">2.7</span> <span class="toctext">A visual guide to building SimpleITK on Linux</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Testing"><span class="tocnumber">2.8</span> <span class="toctext">Testing</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Python_installation"><span class="tocnumber">2.9</span> <span class="toctext">Python installation</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#R_installation"><span class="tocnumber">2.10</span> <span class="toctext">R installation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="#Recommended_Software"><span class="tocnumber">3</span> <span class="toctext">Recommended Software</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="#Fiji_(Fiji_is_Just_ImageJ)"><span class="tocnumber">3.1</span> <span class="toctext">Fiji (Fiji is Just ImageJ)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-23"><a href="#ImageJ"><span class="tocnumber">3.1.1</span> <span class="toctext">ImageJ</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-24"><a href="#iPython_and_Jupyter"><span class="tocnumber">3.2</span> <span class="toctext">iPython and Jupyter</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Downloading_the_binaries">Downloading the binaries</span></h1>
+<p>One of the great advantages of SimpleITK is that (typically) you do not have to build it — you can simply download the binaries and get started right away!
+</p><p>Currently, <b>Python</b> binaries are available on Microsoft Windows, GNU Linux and Apple OS X. <b>C# and Java</b> binaries are available for Windows. We are also working towards supporting <b>R</b> packaging.
+</p>
+<h2><span class="mw-headline" id="Python_binary_files">Python binary files</span></h2>
+<p>There are currently two Python binary package choices: Python Wheels,  and Anaconda packages for the Anaconda Python distribution.
+</p>
+<h4><span class="mw-headline" id="Use_a_Virtual_Environment">Use a Virtual Environment</span></h4>
+<p>Before you install SimpleITK we <b>highly recommend</b> that you create a virtual environment into which you install the package. Note that different Python versions and distributions have different programs for creating and managing virtual environments. 
+</p><p>The use of a virtual environment allows you to elegantly deal with package compatability issues, to quote <a rel="nofollow" class="external text" href="http://docs.python-guide.org/en/latest/">The Hitchhiker’s Guide to Python!</a>:
+</p>
+<blockquote><p>A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them. It solves the “Project X depends on version 1.x but, Project Y needs 4.x” dilemma, and keeps your global site-packages directory clean and manageable.</p></blockquote>
+<p>Programs for creating virtual environments include <a rel="nofollow" class="external text" href="https://packaging.python.org/en/latest/installing/#creating-virtual-environments">virtualenv and pyvenv</a> for generic Python distributions, <a rel="nofollow" class="external text" href="http://conda.pydata.org/docs/using/envs.html">conda</a> for the anaconda distribution, and <a rel="nofollow" class="external text" href="http://docs.enthought.com/canopy/configure/canopy-cli.html">canopy_cli</a> for the canopy distribution.
+</p>
+<h3><span class="mw-headline" id="Wheels_for_Generic_Python_Distribution">Wheels for Generic Python Distribution</span></h3>
+<p>If you are working with the <a rel="nofollow" class="external text" href="https://www.python.org/">generic Python distribution</a> you can install a Wheel with the lasted version of pip (&gt;=9.0).
+</p><p>First thing you should do is create a virtual environment (virtualenv or pyvenv tools) and activate it.
+</p><p><u>Note</u>: you can always manually download the wheels for your operating system and Python version directly from <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/simpleitk/files/SimpleITK/">sourceforge</a>.
+</p><p><br />
+From the command line use the <a rel="nofollow" class="external text" href="https://pip.pypa.io/en/latest/index.html">pip program</a> to install:
+</p>
+<pre>$ pip install SimpleITK
+</pre>
+<p>The pip package manager should automatically find the correct package for Microsoft Windows, Apple OS X and GNU Linux if your version and architecture are supported. If no binary package is found, then a source distribution will be downloaded and attempted to be compiled and you should look into <a href="#Build_It_Yourself">#Build_It_Yourself</a>.
+</p>
+<dl><dd><dl><dd>If your pip version in the virtual environment is stale (&lt;9.0) you need to update it (pip install -U pip).</dd></dl></dd></dl>
+<h3><span class="mw-headline" id="Anaconda_Distribution">Anaconda Distribution</span></h3>
+<p>First thing you should do is create a virtual environment (<a rel="nofollow" class="external text" href="https://conda.pydata.org/docs/using/envs.html">conda</a> tool) and activate it.
+</p><p>Currently there are compiled binaries on <a rel="nofollow" class="external text" href="https://conda.anaconda.org/simpleitk">Anaconda Cloud</a>, easily installed with:
+</p>
+<pre>$ conda install -c https://conda.anaconda.org/simpleitk SimpleITK
+</pre>
+<p>Beta and release candidate packages are also available on Anaconda cloud under the dev label:
+</p>
+<pre>$conda install -c https://conda.anaconda.org/simpleitk/label/dev SimpleITK
+</pre>
+<h3><span class="mw-headline" id="Enthought_Canopy_Distribution">Enthought Canopy Distribution</span></h3>
+<p>First thing you should do is create a virtual environment (canopy_cli tool) and activate it.
+</p><p>Currently there are no binaries supported with this distribution. You will need to compile SimpleITK yourself. (Using pip installation may work.)
+</p>
+<h2><span id="C.23_binary_files"></span><span class="mw-headline" id="C#_binary_files">C# binary files</span></h2>
+<p><b>Binaries for select C# platform</b> can be found on <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/1.0.0/CSharp/">SimpleITK's SourceForge page</a>. Installing the library should only involve importing the unzipped files into you C# environment. The files have the following naming convention:
+</p>
+<pre>SimpleITK-version-CSharp-buildplatform-targetplatform.zip
+</pre>
+<p>eg.
+</p>
+<pre>SimpleITK-1.0.0-CSharp-win32-x86.zip
+SimpleITK-1.0.0-CSharp-win64-x64.zip
+</pre>
+<p>Details about how to set up a C# Visual Studio project with SimpleITK can be found in the <a href="/Wiki/SimpleITK/GettingStarted/A_visual_guide_to_SimpleITK_with_CSharp" title="SimpleITK/GettingStarted/A visual guide to SimpleITK with CSharp">Visual Guide to SimpleITK with CSharp</a>.
+</p><p>More information about getting started with a sample C# program can be found in <a href="/Wiki/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux#A_simple_C.23_program" title="SimpleITK/GettingStarted/Visual guide to building on Linux"> A visual guide to building SimpleITK on Linux</a>
+</p>
+<h2><span class="mw-headline" id="Java_binary_files">Java binary files</span></h2>
+<p><b>Binaries for select Java platforms</b> can be found on <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/1.0.0/Java/">SimpleITK's SourceForge page</a>. Installation instructions are available at <a href="/Wiki/SimpleITK/GettingStarted/A_visual_guide_to_SimpleITK_in_Java" title="SimpleITK/GettingStarted/A visual guide to SimpleITK in Java">a visual guide to SimpleITK in Java</a>.
+</p>
+<h2><span class="mw-headline" id="Nightly_binaries">Nightly binaries</span></h2>
+<p>The <b>latest binaries</b> for the current development version of SimpleITK are also generally available. Binary packages are built as part of the nightly regression testing system. The download links are available from the <a rel="nofollow" class="external text" href="https://open.cdash.org/index.php?project=SimpleITK"><b>CDash</b></a> <b>dashboard</b> in the "Nightly Packages" section. 
+</p><p>Each row on the dashboard is a SimpleITK build on a particular system, and if the build was successful there will be a <b>package icon</b>: <img src="https://open.cdash.org/img/package.png" alt="package.png" /> which links to the packages build by the system. A user may directly download the built package from such a link.
+</p>
+<h1><span class="mw-headline" id="Build_It_Yourself">Build It Yourself</span></h1>
+<p>In many cases a user does not need to build SimpleITK because of the pre-built binaries available (see <a href="/Wiki/SimpleITK/GettingStarted#Binaries" title="SimpleITK/GettingStarted">above</a>). However there are several reasons a user might prefer to <b>build SimpleITK from source</b>:
+</p>
+<ul><li>The binary files for your programming language of choice are not (yet) distributed</li>
+<li>You want the live on the bleeding edge by using the latest-and-greatest version of SimpleITK</li>
+<li>You want to wrap your own filters using the SimpleITK infrastructure</li>
+<li>You want to contribute to the development of SimpleITK</li>
+<li>To use the SimpleITK's C++ interface and/or use ITK directly</li></ul>
+<h3><span class="mw-headline" id="Prerequisites">Prerequisites</span></h3>
+<p>To build SimpleITK you need:
+</p>
+<ul><li>A recent version of <a rel="nofollow" class="external text" href="http://www.cmake.org/">CMake</a> &gt;= 3.3 with SSL support for https.</li>
+<li>A supported <a href="/Wiki/SimpleITK/FAQ#Is_my_compiler_supported.3F" title="SimpleITK/FAQ">compiler</a></li>
+<li>To use the latest developmental version, source code can be downloaded with <a rel="nofollow" class="external text" href="http://git-scm.com/">git</a> &gt;= 1.65
+<ul><li>Git is required if building SimpleITK using "SuperBuild" (see below) to automatically download the matching version of ITK, SWIG, etc...</li>
+<li>Windows users may prefer <a rel="nofollow" class="external text" href="http://msysgit.github.com/">msysGit</a></li></ul></li>
+<li>It is recommended to have numpy installed when testing Python bindings</li></ul>
+<h3><span id="Recipes_.2F_Formulas_.2F_Short_Cuts"></span><span class="mw-headline" id="Recipes_/_Formulas_/_Short_Cuts">Recipes / Formulas / Short Cuts</span></h3>
+<p>For some environments we have short cuts, scripts, for automated building of SimpleITK (see their repository for more details):
+</p>
+<ul><li>For <b>Python</b>: The <a rel="nofollow" class="external text" href="https://github.com/scikit-build/scikit-build">scikit-build</a> based distutils based <a rel="nofollow" class="external text" href="https://github.com/scikit-build/scikit-build">setup.py frontend</a> can be used to build, install, and package SimpleITK for Python.</li></ul>
+<ul><li>For the <b>Anaconda Python</b> distribution: The recipe and instructions for the SimpleITK build are in <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITKCondaRecipe">this GitHub repository</a>.</li></ul>
+<ul><li>For the <b>R language</b>: A devtools installer and instructions are available from <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITKRInstaller">this GitHub repository</a>.</li></ul>
+<ul><li><b>On the Mac</b>, with the <a rel="nofollow" class="external text" href="http://brew.sh/">Homebrew package manager</a>, a SimpleITK formula is available: <a rel="nofollow" class="external free" href="https://github.com/Homebrew/homebrew-science/blob/master/simpleitk.rb">https://github.com/Homebrew/homebrew-science/blob/master/simpleitk.rb</a> for multiple language wrappings.</li></ul>
+<ul><li>For the <b>Lua language</b> with the Luarocks module deployment system, a SimpleITK rockspec is available form <a rel="nofollow" class="external text" href="https://github.com/SimpleITK/SimpleITKLuaRock">this GitHub repository</a>.</li></ul>
+<h3><span class="mw-headline" id="Source_code">Source code</span></h3>
+<p>If one of the above language specific front-ends are not used then SimpleITK must be build directly.
+</p><p>There are two options to obtain the SimpleITK source code:
+</p>
+<ol><li>Download a released version from the SimpleITK <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/">SourceForge</a> page</li>
+<li>Download the latest development version using git</li></ol>
+<pre>git clone <a rel="nofollow" class="external free" href="http://itk.org/SimpleITK.git">http://itk.org/SimpleITK.git</a>
+</pre>
+<h3><span class="mw-headline" id="Building_using_SuperBuild">Building using SuperBuild</span></h3>
+<p>After downloading SimpleITK's source code we <b>STRONGLY</b> recommend to run cmake on the SuperBuild subdirectory of SimpleITK.  Execute the following commands in the parent of the SimpleITK source directory to configure the SuperBuild:
+</p>
+<pre>mkdir SimpleITK-build
+cd SimpleITK-build
+cmake ../SimpleITK/SuperBuild
+</pre>
+<p>The SuperBuild will automatically download and build the matching version of ITK and SWIG needed to compile SimpleITK. Additionally, it will set recommended compilation flags to minimize the size of the library and enable support for large libraries. This is the recommended way to build SimpleITK and is easiest.
+</p><p>If you get an error message saying that ITK_DIR is not set then, you did not correctly point cmake to the SuperBuild sub-directory. Please erase your binary directory, and point cmake to the SimpleITK/SuperBuild sub-directory.
+</p><p>The cmake configuration process should automatically find supported languages and enable SimpleITK wrapping for them. To manually enable a language toggle the appropriate WRAP_LANGUAGE cmake variable to ON.  Verify and/or correct the advanced cmake variables to the language specific executable, libraries and include directories. For example if you have multiple Python installations ensure that all related Python variable refer to the same versions.
+</p><p>Then use your make utility or your cmake chosen build utility to build SimpleITK.
+</p><p>SimpleITK takes a while to build. Some tips and tricks to speed up development time are listed <a rel="nofollow" class="external text" href="http://www.itk.org/SimpleITKDoxygen/html/Developer.html#TandT">here</a>.
+</p>
+<h3><span class="mw-headline" id="Building_Manually">Building Manually</span></h3>
+<p>This is <b>not</b> the recommended way of building SimpleITK, but it can be useful if you want to use a system version of ITK, etc. , or if you do not want to (or can not) use git.
+</p>
+<ol><li>Setup the prerequisites as described above (i.e. CMake and supported compiler)</li>
+<li>Install the matching version of <a rel="nofollow" class="external text" href="http://www.swig.org/">SWIG</a> &gt;= 3.0.11
+<ul><li>e.g. Windows users may install <a rel="nofollow" class="external text" href="http://prdownloads.sourceforge.net/swig/swigwin-3.0.11.zip">swigwin-3.0.11</a></li></ul></li>
+<li>Download the SimpleITK source code from the <a rel="nofollow" class="external text" href="https://sourceforge.net/projects/simpleitk/files/SimpleITK/">SourceForge</a> page</li>
+<li>Download the matching version of ITK, found by examining the `SuperBuild/External_ITK.cmake` file.</li>
+<li>Configure ITK using CMake
+<ul><li>e.g. BUILD_EXAMPLES=OFF, BUILD_TESTING=OFF, BUILD_SHARED_LIBS=OFF, <b>ITK_USE_REVIEW=ON</b></li></ul></li>
+<li>Build ITK
+<ul><li>Be sure to note the build settings e.g. Release x64</li></ul></li>
+<li>Configure SimpleITK using CMake
+<ul><li>Set ITK_DIR to the location of the ITK build location from the previous steps</li></ul></li>
+<li>Build SimpleITK
+<ul><li>Be sure to configure the build settings exactly the same as ITK e.g. Release x64 and CXX_FLAGS</li></ul></li></ol>
+<h3><span class="mw-headline" id="Advanced_Build_Options">Advanced Build Options</span></h3>
+<p>SimpleITK is aware of the enabled and disabled ITK Modules. It is possible to customize SimpleITK by disabling unneeded ITK modules or to extend SimpleITK by writing custom json file dependent an ITK Remote Modules being enabled.
+</p><p>Additionally, each of the Examples directory, and each of the Wrapping subdirectories can be configured as independent CMake project dependent on an installed SimpleITK.
+</p>
+<h3><span class="mw-headline" id="A_visual_guide_to_building_SimpleITK_on_Linux"><a href="/Wiki/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux" title="SimpleITK/GettingStarted/Visual guide to building on Linux">A visual guide to building SimpleITK on Linux</a></span></h3>
+<h2><span class="mw-headline" id="Testing">Testing</span></h2>
+<p>After compilation the prudent thing to due is to test SimpleITK to ensure your build is stable and suitable for installation and use. The following commands execute the SimpleITK tests.
+</p>
+<pre>cd SimpleITK-build/SimpleITK-build
+ctest
+</pre>
+<p>On Windows you will need to specify configuration.  Typically that would be the Release configuration, as such:
+</p>
+<pre>cd SimpleITK-build/SimpleITK-build
+ctest -C Release
+</pre>
+<h2><span class="mw-headline" id="Python_installation">Python installation</span></h2>
+<p>To install a built python package into the system Python, as root run:
+</p>
+<pre> cd SimpleITK-build/Wrapping/Python
+ python Packaging/setup.py install
+</pre>
+<p>Alternatively, a Python virtual environment can be created and the distribution installed there.
+</p><p>A Python Wheel file (.whl)  can be created in the "Wrapping/Python/dist" directory, by building the "dist" target. If you have used the Superbuild with the "make" generator then issue the following command:
+</p>
+<pre> make -C SimpleITK-build dist
+</pre>
+<h2><span class="mw-headline" id="R_installation">R installation</span></h2>
+<p>To install a built R package:
+</p>
+<pre> cd SimpleITK-build/Wrapping/R/Packaging
+ R CMD INSTALL SimpleITK
+</pre>
+<p>This will install the R package "SimpleITK" in /usr/local as root or your local R installation directory.
+</p><p><br />
+If you are working in a multi-user environment, and are considerate of your fellow users you can install the package in a local directory:
+</p>
+<ol> <li> Create a local directory where you will install your R packages</li></ol>
+<pre> mkdir my_R_libs
+</pre>
+<ol start="2"> <li> Add an environment variable to your .bashrc</li></ol> 
+<pre> export R_LIBS="/path_to/my_R_libs"
+</pre>
+<ol start="3"> <li> source your .bashrc and check the R library path, in an R shell &gt;.libPaths()</li></ol>
+<ol start="4"> <li>install </li></ol>
+<pre> cd SimpleITK-build/Wrapping/R/Packaging
+ R CMD INSTALL -l /path_to/my_R_libs  SimpleITK
+</pre>
+<h1><span class="mw-headline" id="Recommended_Software">Recommended Software</span></h1>
+<h2><span id="Fiji_.28Fiji_is_Just_ImageJ.29"></span><span class="mw-headline" id="Fiji_(Fiji_is_Just_ImageJ)">Fiji (Fiji is Just ImageJ)</span></h2>
+<p>SimpleITK has a built in function, <a rel="nofollow" class="external text" href="https://itk.org/SimpleITKDoxygen/html/namespaceitk_1_1simple.html#ac8416e6e7f02dedfe8373b83dbea411d"><b>"itk::simple::Show()"</b></a>, which can be used for viewing images in an interactive session. Currently, this function by default Show invokes <a rel="nofollow" class="external text" href="https://fiji.sc"><b>Fiji</b></a> then <a rel="nofollow" class="external text" href="http://rsbweb.nih.gov/ij/"><b>ImageJ</b></a> to display images.  ImageJ was chosen because it can handle all the image types that SimpleITK supports, even 3D vector images with n components. 
+</p><p>The Show function first searches the "PATH" environment variable, then additional standard locations are examined, if problems are encountered the correct path can be added to this environment variable and the <b>"debugOn</b>" option to  <b>"Show</b>" flag set.
+</p>
+<h4><span class="mw-headline" id="ImageJ">ImageJ</span></h4>
+<p>If ImageJ is used then we recommend downloading a recent version of <a rel="nofollow" class="external text" href="http://rsbweb.nih.gov/ij/download.html">ImageJ</a> from the official home page. Recent versions come with support for the <a rel="nofollow" class="external text" href="http://nifti.nimh.nih.gov/nifti-1/">Nifti</a> ( *.nii ) file format, which SimpleITK uses to export to ImageJ. 
+</p><p><b>Note:</b> <b>Linux installation</b> requires an additional step. The <b>"Show</b>" function searches for an executable named ImageJ or imagej, however the default tarball does not come with this file. Instead it comes with a file names <a rel="nofollow" class="external text" href="http://imagej.nih.gov/ij/download/linux/unix-script.txt">script</a>. This file contains the installation instructions. In short the file should be renamed to "imagej" and the site specific variables for the installation location, and java must be set. Also consider the "newwindow" variable... Do you really want a new instance of ImageJ launched each time you use Show? Lastly, as the installation instructions indicate, the imagej wrapper should be in your path.
+</p>
+<h2><span class="mw-headline" id="iPython_and_Jupyter">iPython and Jupyter</span></h2>
+<p>If you are using python, <a rel="nofollow" class="external text" href="http://ipython.org/"><b>ipython</b></a> with <a rel="nofollow" class="external text" href="http://jupyter.org">Jupyter</a> is terrific environment to perform interactive computing for image processing. With the addition of numpy and scipy, you'll have a powerful interactive environment.
+</p><p>We have instructional <a rel="nofollow" class="external text" href="http://insightsoftwareconsortium.github.io/SimpleITK-Notebooks/">SimpleITK Jupyter Notebooks</a> which can help you get started.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20220810072306
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.025 seconds
+Real time usage: 0.027 seconds
+Preprocessor visited node count: 99/1000000
+Post‐expand include size: 319/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 82/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.639      1 Template:SimpleITKMigrationHeader
+100.00%    2.639      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9623-0!canonical and timestamp 20220810072306 and revision id 61874. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=SimpleITK/GettingStarted&amp;oldid=61874">https://public.kitware.com/Wiki/index.php?title=SimpleITK/GettingStarted&amp;oldid=61874</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/SimpleITK/GettingStarted" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:SimpleITK/GettingStarted&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/SimpleITK/GettingStarted">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK/GettingStarted&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK/GettingStarted&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/SimpleITK/GettingStarted" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:SimpleITK/GettingStarted&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=SimpleITK%2FGettingStarted" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/SimpleITK/GettingStarted" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/SimpleITK/GettingStarted" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK/GettingStarted&amp;oldid=61874" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=SimpleITK/GettingStarted&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 19 June 2017, at 18:57.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.025","walltime":"0.027","ppvisitednodes":{"value":99,"limit":1000000},"postexpandincludesize":{"value":319,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":82,"limit":5000000},"timingprofile":["100.00%    2.639      1 Template:SimpleITKMigrationHeader","100.00%    2.639      1 -total"]},"cachereport":{"timestamp":"20220810072306","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":70});});</script>
+</body></html>

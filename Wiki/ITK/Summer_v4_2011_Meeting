@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Summer v4 2011 Meeting - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"1c6d7af724b9bfafd16a4084","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Summer_v4_2011_Meeting","wgTitle":"ITK/Summer v4 2011 Meeting","wgCurRevisionId":45687,"wgRevisionId":45687,"wgArticleId":8753,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Summer_v4_2011_Meeting","wgRelevantArticleId":8753,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready",
+"noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Summer_v4_2011_Meeting rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Summer v4 2011 Meeting</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>ITKv4 Summer Meeting
+</p>
+<ul><li><b>Dates: June 27-29, 2011</b></li>
+<li><b>City: Chapel Hill, NC</b></li>
+<li><b>Location: Franklin Hotel</b></li></ul>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Travel_/_Hotel_Information"><span class="tocnumber">1</span> <span class="toctext">Travel / Hotel Information</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Registration_Information"><span class="tocnumber">2</span> <span class="toctext">Registration Information</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Meeting_Room"><span class="tocnumber">3</span> <span class="toctext">Meeting Room</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Meeting_Agenda"><span class="tocnumber">4</span> <span class="toctext">Meeting Agenda</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Must_See_Topics"><span class="tocnumber">4.1</span> <span class="toctext">Must See Topics</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Monday_June_27th_-_A2D2_Summit"><span class="tocnumber">4.2</span> <span class="toctext">Monday June 27th - A2D2 Summit</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Monday_Morning"><span class="tocnumber">4.2.1</span> <span class="toctext">Monday Morning</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Monday_Afternoon"><span class="tocnumber">4.2.2</span> <span class="toctext">Monday Afternoon</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Group_Details"><span class="tocnumber">4.2.3</span> <span class="toctext">Group Details</span></a>
+<ul>
+<li class="toclevel-4 tocsection-10"><a href="#Group_1:_Microscopy_and_Histology"><span class="tocnumber">4.2.3.1</span> <span class="toctext">Group 1: Microscopy and Histology</span></a></li>
+<li class="toclevel-4 tocsection-11"><a href="#Group_2:_Clinical_Applications_and_CADs"><span class="tocnumber">4.2.3.2</span> <span class="toctext">Group 2: Clinical Applications and CADs</span></a></li>
+<li class="toclevel-4 tocsection-12"><a href="#Group_3:_Video"><span class="tocnumber">4.2.3.3</span> <span class="toctext">Group 3: Video</span></a></li>
+<li class="toclevel-4 tocsection-13"><a href="#Group_4:_Data_and_Web-based_Applications"><span class="tocnumber">4.2.3.4</span> <span class="toctext">Group 4: Data and Web-based Applications</span></a></li>
+<li class="toclevel-4 tocsection-14"><a href="#Working_Groups_Tasks"><span class="tocnumber">4.2.3.5</span> <span class="toctext">Working Groups Tasks</span></a></li>
+<li class="toclevel-4 tocsection-15"><a href="#Plenary_Sessions"><span class="tocnumber">4.2.3.6</span> <span class="toctext">Plenary Sessions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-16"><a href="#Dinner"><span class="tocnumber">4.2.4</span> <span class="toctext">Dinner</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#Arrival_Group_Dinner"><span class="tocnumber">4.2.5</span> <span class="toctext">Arrival Group Dinner</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-18"><a href="#Tuesday_June_28th"><span class="tocnumber">4.3</span> <span class="toctext">Tuesday June 28th</span></a>
+<ul>
+<li class="toclevel-3 tocsection-19"><a href="#Tuesday_Morning"><span class="tocnumber">4.3.1</span> <span class="toctext">Tuesday Morning</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#Tuesday_Afternoon"><span class="tocnumber">4.3.2</span> <span class="toctext">Tuesday Afternoon</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#Dinner_2"><span class="tocnumber">4.3.3</span> <span class="toctext">Dinner</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-22"><a href="#Wednesday_June_29th"><span class="tocnumber">4.4</span> <span class="toctext">Wednesday June 29th</span></a>
+<ul>
+<li class="toclevel-3 tocsection-23"><a href="#Wednesday_Morning"><span class="tocnumber">4.4.1</span> <span class="toctext">Wednesday Morning</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#Wednesday_Afternoon"><span class="tocnumber">4.4.2</span> <span class="toctext">Wednesday Afternoon</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="#Dinner_3"><span class="tocnumber">4.4.3</span> <span class="toctext">Dinner</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="#Attendees"><span class="tocnumber">5</span> <span class="toctext">Attendees</span></a>
+<ul>
+<li class="toclevel-2 tocsection-27"><a href="#Kitware"><span class="tocnumber">5.1</span> <span class="toctext">Kitware</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#University_of_Iowa"><span class="tocnumber">5.2</span> <span class="toctext">University of Iowa</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#University_of_Pennsylvania"><span class="tocnumber">5.3</span> <span class="toctext">University of Pennsylvania</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Harvard_University"><span class="tocnumber">5.4</span> <span class="toctext">Harvard University</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#The_Ohio_State_University"><span class="tocnumber">5.5</span> <span class="toctext">The Ohio State University</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#College_of_William_and_Mary"><span class="tocnumber">5.6</span> <span class="toctext">College of William and Mary</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#University_of_Utah"><span class="tocnumber">5.7</span> <span class="toctext">University of Utah</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#Cosmo_Software"><span class="tocnumber">5.8</span> <span class="toctext">Cosmo Software</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#GE"><span class="tocnumber">5.9</span> <span class="toctext">GE</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="#Mayo_Clinic"><span class="tocnumber">5.10</span> <span class="toctext">Mayo Clinic</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#University_of_North_Carolina"><span class="tocnumber">5.11</span> <span class="toctext">University of North Carolina</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#National_Library_of_Medicine"><span class="tocnumber">5.12</span> <span class="toctext">National Library of Medicine</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#Georgetown_University_/_CNMC"><span class="tocnumber">5.13</span> <span class="toctext">Georgetown University / CNMC</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#Noware"><span class="tocnumber">5.14</span> <span class="toctext">Noware</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="#Bioscan"><span class="tocnumber">5.15</span> <span class="toctext">Bioscan</span></a></li>
+<li class="toclevel-2 tocsection-42"><a href="#Attendance_Matrix"><span class="tocnumber">5.16</span> <span class="toctext">Attendance Matrix</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span id="Travel_.2F_Hotel_Information"></span><span class="mw-headline" id="Travel_/_Hotel_Information">Travel / Hotel Information</span></h2>
+<p>The Meeting will take place at the Franklin Hotel.
+</p>
+<ul><li><a rel="nofollow" class="external free" href="http://franklinhotelnc-px.trvlclick.com/index.html">http://franklinhotelnc-px.trvlclick.com/index.html</a></li></ul>
+<p>Since the meeting starts at
+</p>
+<ul><li>8 am on June 27th,</li></ul>
+<p>we recommend people to arrange their hotel accommodation for the previous night!
+</p>
+<ul><li>Use the room group 'ITKV4'
+<ul><li>Reservation line: 866.831.5999</li>
+<li>Ask for the "room block" reserved under 'ITKV4'</li></ul></li>
+<li>The rate is $129 / Night</li></ul>
+<h2><span class="mw-headline" id="Registration_Information">Registration Information</span></h2>
+<ul><li>Download <a href="/Wiki/images/7/72/ITKv4_Summer2011Meeting_Registration.pdf" class="internal" title="ITKv4 Summer2011Meeting Registration.pdf">Registration Form</a></li>
+<li>It is a fillable PDF form</li>
+<li>Fill it up please.
+<ul><li>Indicate the number of days that you are attending.</li>
+<li>Registration fee = ( NumberOfDays * $65 );</li>
+<li>Print it as a PDF file
+<ul><li>since otherwise the form is still modifiable</li></ul></li></ul></li>
+<li>Send the processed form back to Kitware
+<ul><li>email it at: admin at kitware dot com</li></ul></li></ul>
+<h2><span class="mw-headline" id="Meeting_Room">Meeting Room</span></h2>
+<h2><span class="mw-headline" id="Meeting_Agenda">Meeting Agenda</span></h2>
+<ul><li><b>WARNING&#160;: THE AGENDA WAS REORGANIZED ON MAY 27th&#160;: PLEASE REVIEW</b></li></ul>
+<h3><span class="mw-headline" id="Must_See_Topics">Must See Topics</span></h3>
+<ul><li>BETA Release</li>
+<li>GPU</li>
+<li>Modularization</li>
+<li>SimpleITK</li>
+<li>DICOM</li>
+<li>Registration Refactoring</li>
+<li>LevelSet Refactoring</li></ul>
+<h3><span class="mw-headline" id="Monday_June_27th_-_A2D2_Summit">Monday June 27th - A2D2 Summit</span></h3>
+<ul><li><a href="/Wiki/ITK_Release_4/The_Team/A2D2_Development_Team" title="ITK Release 4/The Team/A2D2 Development Team">A2D2 Development Team</a></li>
+<li><a href="/Wiki/ITK_Release_4/The_Team/ITKv4_Development_Team" title="ITK Release 4/The Team/ITKv4 Development Team">ITKv4 Development Team</a></li></ul>
+<h4><span class="mw-headline" id="Monday_Morning">Monday Morning</span></h4>
+<ul><li>8:30 am Welcome: Terry Yoo</li>
+<li>8:50 am State of the Toolkit: Hans Johnson [<a rel="nofollow" class="external autonumber" href="http://www.vtk.org/Wiki/File:20110627ITKToolKitStatus.pdf#filelinks">[1]</a>] [<a rel="nofollow" class="external autonumber" href="http://www.vtk.org/Wiki/File:20110627ITKToolKitStatus.pptx#filelinks">[2]</a>]</li>
+<li>9:10 am <a href="/Wiki/ITK_Release_4/New_Code_Contribution_Process" class="mw-redirect" title="ITK Release 4/New Code Contribution Process">Procedures for integrating A2D2 contributions</a> (Bill/Luis)</li>
+<li>9:30 am Split in to Focus Groups
+<ul><li><b>Group1</b>&#160;: Microscopy</li>
+<li><b>Group2</b>&#160;: Clinical Applications</li>
+<li><b>Group3</b>&#160;: Video</li>
+<li><b>Group4</b>&#160;: Data and Web-based Applications</li></ul></li>
+<li>10:00 Break</li>
+<li>10:30 am Working Groups (continuation)
+<ul><li><b>Group1</b>&#160;: Microscopy</li>
+<li><b>Group2</b>&#160;: Clinical Applications</li>
+<li><b>Group3</b>&#160;: Video</li>
+<li><b>Group4</b>&#160;: Data and Web-based Applications</li></ul></li>
+<li>12:00 pm Lunch</li></ul>
+<h4><span class="mw-headline" id="Monday_Afternoon">Monday Afternoon</span></h4>
+<ul><li>1:00 pm  Plenary: <b>Group 1</b>&#160;: 20min presentation + discussion</li>
+<li>2:00 pm  Plenary: <b>Group 2</b>&#160;: 20min presentation + discussion <a href="/Wiki/Summer_ITKv4_ClinicalGroupMeetingNotes" title="Summer ITKv4 ClinicalGroupMeetingNotes"> Group 2 notes</a></li>
+<li>2:45 pm  Break</li>
+<li>3:15 pm  Plenary: <b>Group 3</b>&#160;: 20min presentation + discussion</li>
+<li>4:00 pm  Plenary: <b>Group 4</b>&#160;: 20min presentation + discussion</li>
+<li>4:45 pm  Adjourn</li></ul>
+<h4><span class="mw-headline" id="Group_Details">Group Details</span></h4>
+<h5><span class="mw-headline" id="Group_1:_Microscopy_and_Histology">Group 1: Microscopy and Histology</span></h5>
+<ol><li><b>Ross Whitaker</b> (designated speaker), <b>Kris Zygmunt</b> <i>Fast Nonlocal Algorithms for Denoising Microscopy, MRI, and Ultrasound Images Using Nonparametric Neighborhood Statistics.</i> <a href="/Wiki/Summer_ITKv4_2011_Meeting/A2D2/Denoising" class="mw-redirect" title="Summer ITKv4 2011 Meeting/A2D2/Denoising"> Pre-Meeting Document</a></li>
+<li><b>Marc Niethammer</b> <i>Adding Deconvolution Algorithms to ITK</i> <a href="/Wiki/Summer_ITKv4_2011_Meeting/A2D2/Deconvolution" class="mw-redirect" title="Summer ITKv4 2011 Meeting/A2D2/Deconvolution"> Pre-Meeting Document</a></li>
+<li><b>Raghu Machiraju</b> <i>A Comprehensive Workflow for Robust Characterization of Microstructure for Cancer Studies</i></li>
+<li><b>Raghu Machiraju</b> <i>A Comprehensive Workflow for Large Histology Segmentation and Visualization</i></li></ol>
+<h5><span class="mw-headline" id="Group_2:_Clinical_Applications_and_CADs">Group 2: Clinical Applications and CADs</span></h5>
+<ol><li><b>Thomas Fletcher</b> (designated speaker) <i>ITK Algorithms for Analyzing Time-Varying Shape with Application to Longitudinal Heart Modeling</i></li>
+<li><b>Ricardo Avila</b> <i>Fostering Open Science for Lung Cancer Lesion Sizing</i></li>
+<li><b>Nikos Chrisochoides</b> <i>3D Real-Time Physics-Based Non-Rigid Registration for Image Guided Neurosurgery</i></li></ol>
+<h5><span class="mw-headline" id="Group_3:_Video">Group 3: Video</span></h5>
+<ol><li><b>Amitha Perera</b> and <b>Patrick Reynolds</b> (designated speakers) <i>ITKExtensions for Video Processing</i> <a href="/Wiki/Summer_ITKv4_2011_Meeting/A2D2/VideoExtensions" class="mw-redirect" title="Summer ITKv4 2011 Meeting/A2D2/VideoExtensions"> Pre-Meeting Document</a></li>
+<li><b>Kevin Cleary</b> <i>Real-Time Image Capture for ITK through a Video Grabber</i></li>
+<li><b>John Galeotti</b> <i>Methods in Medical Image Analysis: An ITK-Based Course with Deliverable Algorithms that extends and evaluates ITK while broadening its developer base</i></li></ol>
+<h5><span class="mw-headline" id="Group_4:_Data_and_Web-based_Applications">Group 4: Data and Web-based Applications</span></h5>
+<ol><li><b>Sean Megason</b> (designated speaker) <i>SCORE++: Crowd source data, automatic segmentation and ground truth for ITK4</i></li>
+<li><b>Marcel Prastawa</b> <i>SCORE: Systematic Comparison through Objective Rating and Evaluation</i></li>
+<li><b>Ziv Yaniv</b> <i>Framework for automated parameter tuning of ITK registration pipelines</i></li></ol>
+<p><a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/images/a/ae/ITK4-Group4.pptx">Presentation</a>
+</p>
+<h5><span class="mw-headline" id="Working_Groups_Tasks">Working Groups Tasks</span></h5>
+<ul><li>Each PI or representative will share a brief summary (max 5min) of their proposal with the other members of the group.</li>
+<li>Things to Discuss:
+<ol><li>How the A2D2s will advance the subject under consideration.</li>
+<li>Find possible overlaps and similarities between the A2D2s - solve them.</li>
+<li>Decide how the software will be distributed. (e.g. ITK module, ITK classes, independent software, IJ, etc...)</li>
+<li>List all the new classes/modules that will be contributed to ITK</li>
+<li>Discuss the design, architecture, and dependencies</li>
+<li>List ITKv4 features that you might need to use (e.g. GPU? Multi-thread? Streaming?)</li>
+<li>Discuss how each member of the group can help/assist each other</li>
+<li>Come-up with a plan of action and <b>time-line</b></li>
+<li>Combine slides into a single presentation showing all the points that were discussed</li></ol></li></ul>
+<h5><span class="mw-headline" id="Plenary_Sessions">Plenary Sessions</span></h5>
+<ul><li>Designated speaker will present</li>
+<li>Each of the other members should be available to anser questions and/or provide additional explanation</li>
+<li>Discuss possible problems and challenges</li></ul>
+<h4><span class="mw-headline" id="Dinner">Dinner</span></h4>
+<h4><span class="mw-headline" id="Arrival_Group_Dinner">Arrival Group Dinner</span></h4>
+<ul><li>Hackfest at Kitware NC Office (KRS)</li></ul>
+<ul><li>Location:</li></ul>
+<pre>  Suite G-4
+  101 East Weaver St
+  Carrboro, North Carolina
+  27510  USA
+  518-371-3971 (voice/fax)
+</pre>
+<pre>  <a rel="nofollow" class="external free" href="http://www.kitware.com/company/NC_mapsdirections.html">http://www.kitware.com/company/NC_mapsdirections.html</a>
+</pre>
+<p>This is at walking distance from the Franklin Hotel.
+</p>
+<ul><li>Date:  Monday June 27th</li>
+<li>Time: 6pm-10pm</li></ul>
+<ul><li>Hands Raised so Far:</li></ul>
+<p>Terry, Bill, Stephen, Luis, Nick, Hans, Bill(ret), Arnaud, Cory
+</p>
+<h3><span class="mw-headline" id="Tuesday_June_28th">Tuesday June 28th</span></h3>
+<h4><span class="mw-headline" id="Tuesday_Morning">Tuesday Morning</span></h4>
+<ul><li>8:30 am Welcome, Questions, Concerns</li>
+<li>9:00 am Working Groups
+<ul><li><b>Group 1</b> ITK Revise / Refactor</li>
+<li><b>Group 3</b> GPU and Multithreading</li></ul></li>
+<li>10:30 am Break</li>
+<li>11:00 am Working Groups
+<ul><li><b>Group 2</b> DICOM</li>
+<li><b>Group 4</b> Simplify</li></ul></li>
+<li>12:30 pm Lunch</li></ul>
+<h4><span class="mw-headline" id="Tuesday_Afternoon">Tuesday Afternoon</span></h4>
+<ul><li>1:30 pm Plenary Session: <b>Revise</b>
+<ul><li>20min presentations and the discussion about Registration, FEM, LevelSets.</li>
+<li><a href="/Wiki/File:ITKv4%E2%80%93Refactoring-June-2011.odp" title="File:ITKv4–Refactoring-June-2011.odp">File:ITKv4–Refactoring-June-2011.odp</a></li>
+<li><a href="/Wiki/File:ITKv4%E2%80%93Refactoring-June-2011.pptx" title="File:ITKv4–Refactoring-June-2011.pptx">File:ITKv4–Refactoring-June-2011.pptx</a></li></ul></li>
+<li>2:30 pm Plenary Session: <b>Simplify</b>
+<ul><li>20min presentations and the discussion about SimpleITK, WrapITK, Doxygen for SimpleITK</li>
+<li>WrapITK <a href="/Wiki/File:WrapITK.pptx" title="File:WrapITK.pptx">File:WrapITK.pptx</a></li>
+<li>SimpleITK <a href="/Wiki/images/1/13/SimpleITK_Status.pptx" class="internal" title="SimpleITK Status.pptx">SimpleITK Status Presentation(pptx)</a></li></ul></li>
+<li>3:00 pm Break</li>
+<li>3:30 pm Plenary Session: <b>GPU &amp; Multithreading</b>
+<ul><li>20min presentations and discussion</li>
+<li><a href="/Wiki/File:GPU-ITKv4-Summer-2011-final.pptx" title="File:GPU-ITKv4-Summer-2011-final.pptx">File:GPU-ITKv4-Summer-2011-final.pptx</a></li></ul></li>
+<li>4:30 pm DICOM
+<ul><li>20min presentation and discussion</li>
+<li><a href="/Wiki/File:ITKv4_DICOM-GDCM_Summer_Presentation.pptx" title="File:ITKv4 DICOM-GDCM Summer Presentation.pptx">File:ITKv4 DICOM-GDCM Summer Presentation.pptx</a></li></ul></li>
+<li>5:30 pm Adjourn</li></ul>
+<h4><span class="mw-headline" id="Dinner_2">Dinner</span></h4>
+<ul><li>GROUP DINNER
+<ul><li>Mama Dip's
+<ul><li><a rel="nofollow" class="external free" href="http://www.mamadips.com/">http://www.mamadips.com/</a></li></ul></li></ul></li></ul>
+<h3><span class="mw-headline" id="Wednesday_June_29th">Wednesday June 29th</span></h3>
+<h4><span class="mw-headline" id="Wednesday_Morning">Wednesday Morning</span></h4>
+<ul><li>8:30 am Welcome, Questions, Concerns</li>
+<li>8:35 am Integration (Slicer/Wiki Examples/OTB/ImageJ/ICY/OME/V3D) (Bill Lorensen / Luis Ibanez)
+<ul><li><a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=Slicer4">Slicer4 Dashboard</a></li>
+<li><a rel="nofollow" class="external text" href="http://slicer-devel.65872.n3.nabble.com/ITK-Modular-Slicer4-updates-td2776514.html">Slicer4 Modular ITKv4 updates</a>
+<ul><li><a rel="nofollow" class="external text" href="http://www.na-mic.org/Wiki/index.php/2011_Winter_Project_Week:_Slicer4-ITK4_Continuous_Integration">Slicer4/ITKv4 Continuous Integration</a></li></ul></li>
+<li><a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=Insight&amp;filtercount=1&amp;showfilters=1&amp;field1=site/string&amp;compare1=63&amp;value1=BillsBasement">ITKApps</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=ITKWikiExamples">ITK Wiki Examples</a></li>
+<li>Integration Efforts
+<ul><li><a href="/Wiki/File:ITK_Developers_Meeting_June_2011_IntegrationWithApplications.odp" title="File:ITK Developers Meeting June 2011 IntegrationWithApplications.odp">File:ITK Developers Meeting June 2011 IntegrationWithApplications.odp</a></li>
+<li><a href="/Wiki/File:ITK_Developers_Meeting_June_2011_IntegrationWithApplications.pdf" title="File:ITK Developers Meeting June 2011 IntegrationWithApplications.pdf">File:ITK Developers Meeting June 2011 IntegrationWithApplications.pdf</a></li></ul></li></ul></li>
+<li>9:00 am Who is doing What&#160;? - Action Items (Hans Johnson)
+<ul><li><a rel="nofollow" class="external free" href="https://itk.icts.uiowa.edu/jira/secure/Dashboard.jspa">https://itk.icts.uiowa.edu/jira/secure/Dashboard.jspa</a></li></ul></li>
+<li>9:30 am <a href="/Wiki/images/6/64/Code_Reviews_2011-06-29.ppt" class="internal" title="Code Reviews 2011-06-29.ppt">Code Revisions (Jim Miller)</a></li>
+<li>10:00 am Break</li>
+<li>10:30 am Migration Guide (Gabe Hart / Dave Cole)</li>
+<li>11:00 am Road Ahead (What's Next&#160;?) (Terry Yoo)</li></ul>
+<ul><li>12:00 pm Lunch</li></ul>
+<h4><span class="mw-headline" id="Wednesday_Afternoon">Wednesday Afternoon</span></h4>
+<ul><li>1:00 pm Testing Data (Patric Reynolds / Bill Hoffman)</li>
+<li>1:30 pm Modularization (Bill Hoffman)</li>
+<li>2:00 pm Doxygen Documentation (Arnaud Gelas) <a href="/Wiki/File:ITKv4-Doxygen.ppt" title="File:ITKv4-Doxygen.ppt">File:ITKv4-Doxygen.ppt</a></li>
+<li>2:30 pm Break</li>
+<li>3:00 pm Hack / Work / Hack More</li>
+<li>5:00 pm Adjourn</li></ul>
+<h4><span class="mw-headline" id="Dinner_3">Dinner</span></h4>
+<ul><li>GROUP DINNER for Survivors
+<ul><li>Carolina Brewery.</li>
+<li>Register in the haptic pad with mechanical stylus</li></ul></li></ul>
+<h2><span class="mw-headline" id="Attendees">Attendees</span></h2>
+<p>Please add your name to the list below if you are planning to attend.
+</p>
+<h3><span class="mw-headline" id="Kitware">Kitware</span></h3>
+<ul><li>Luis Ibanez</li>
+<li>Bill Hoffman</li>
+<li>Stephen Aylward</li>
+<li>David Cole</li>
+<li>Marcus Hanwell</li>
+<li>Xiaoxiao Liu (Lesion Sizing Toolkit)</li>
+<li>Andinet Enquobahrie (A2D2 Registration)</li>
+<li>Michel Audette (A2D2 Meshes)</li>
+<li>Amitha Perera (A2D2 Video)</li>
+<li>Gabe Hart (A2D2 Video / Simple ITK)</li>
+<li>Patrick Reynolds (A2D2 Video/SCORE/SCORE++)</li>
+<li>Brad Davis</li>
+<li>Mike Grauer (SCORE/SCORE++/A2D2 Registration)</li>
+<li>Jean-Christophe Fillion-Robin</li></ul>
+<h3><span class="mw-headline" id="University_of_Iowa">University of Iowa</span></h3>
+<ul><li>Vincent Magnotta</li>
+<li>Hans Johnson</li></ul>
+<h3><span class="mw-headline" id="University_of_Pennsylvania">University of Pennsylvania</span></h3>
+<ul><li>Brian Avants</li>
+<li>James C. Gee</li>
+<li>Nick Tustison</li></ul>
+<h3><span class="mw-headline" id="Harvard_University">Harvard University</span></h3>
+<ul><li>Sean Megason</li>
+<li>Arnaud Gelas</li>
+<li>Won-Ki Jeong (SEAS)</li></ul>
+<h3><span class="mw-headline" id="The_Ohio_State_University">The Ohio State University</span></h3>
+<ul><li>Raghu Machiraju</li>
+<li>Kun Huang</li>
+<li>Zhi Han</li></ul>
+<h3><span class="mw-headline" id="College_of_William_and_Mary">College of William and Mary</span></h3>
+<ul><li>Nikos Chrisochoides</li>
+<li>Dr. Kot</li>
+<li>Dr. Liu</li></ul>
+<h3><span class="mw-headline" id="University_of_Utah">University of Utah</span></h3>
+<ul><li>Ross Whitaker</li>
+<li>Marcel Prastawa</li>
+<li>Josh Cates</li>
+<li>Kris Zygmunt</li></ul>
+<h3><span class="mw-headline" id="Cosmo_Software">Cosmo Software</span></h3>
+<ul><li>Drew Wasem</li>
+<li>Ashish Sharma</li>
+<li>Alex Gouaillard [A*STAR] (over the phone / internet)</li></ul>
+<h3><span class="mw-headline" id="GE">GE</span></h3>
+<ul><li>Jim Miller</li>
+<li>Dirk Padfield</li></ul>
+<h3><span class="mw-headline" id="Mayo_Clinic">Mayo Clinic</span></h3>
+<ul><li>Dan Blezek</li></ul>
+<h3><span class="mw-headline" id="University_of_North_Carolina">University of North Carolina</span></h3>
+<ul><li>Cory Quammen</li>
+<li>Marc Niethammer</li></ul>
+<h3><span class="mw-headline" id="National_Library_of_Medicine">National Library of Medicine</span></h3>
+<ul><li>Terry Yoo</li>
+<li>Bradley Lowekamp</li>
+<li>Jesus Caban</li></ul>
+<h3><span id="Georgetown_University_.2F_CNMC"></span><span class="mw-headline" id="Georgetown_University_/_CNMC">Georgetown University / CNMC</span></h3>
+<ul><li>Ziv Yaniv</li></ul>
+<h3><span class="mw-headline" id="Noware">Noware</span></h3>
+<ul><li>Bill Lorensen</li></ul>
+<h3><span class="mw-headline" id="Bioscan">Bioscan</span></h3>
+<ul><li>John McInerney</li></ul>
+<h3><span class="mw-headline" id="Attendance_Matrix">Attendance Matrix</span></h3>
+<table border="1">
+
+<tbody><tr bgcolor="#abcdef">
+<th>Name</th>
+<th>Monday June 27</th>
+<th>Tuesday June 28</th>
+<th>Wednesday June 29
+</th></tr>
+<tr>
+<td>Luis Ibanez</td>
+<td>X</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Bill Hoffman</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Stephen Aylward</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>David Cole</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Marcus Hanwell</td>
+<td>X</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Xiaoxiao Liu</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Andinet Enquobahrie</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Michel Audette</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Amitha Perera</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Gabe Hart</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Patrick Reynolds</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Brad Davis</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Vincent Magnotta</td>
+<td></td>
+<td>x</td>
+<td>X
+</td></tr>
+<tr>
+<td>Hans Johnson</td>
+<td>x</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Brian Avants</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>James C. Gee</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Nick Tustison</td>
+<td>x</td>
+<td>x</td>
+<td>x
+</td></tr>
+<tr>
+<td>Sean Megason</td>
+<td>x</td>
+<td>x</td>
+<td>x
+</td></tr>
+<tr>
+<td>Arnaud Gelas</td>
+<td>x</td>
+<td>x</td>
+<td>x
+</td></tr>
+<tr>
+<td>Won-Ki Jeong</td>
+<td>X</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Raghu Machiraju</td>
+<td>x</td>
+<td>x</td>
+<td>x
+</td></tr>
+<tr>
+<td>Kun Huang</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Zhi Han</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Nikos Chrisochoides</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Dr. Kot</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Dr. Liu</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Ross Whitaker</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Drew Wasem</td>
+<td>X</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Ashish sharma</td>
+<td>X</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Alex Gouaillard (remote)</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Jim Miller</td>
+<td>X</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Dirk Padfield</td>
+<td>X</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Dan Blezek</td>
+<td>X</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Cory Quammen</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Marc Niethammer</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Terry Yoo</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Bradley Lowekamp</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Jesus Caban</td>
+<td></td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Ziv Yaniv</td>
+<td>X</td>
+<td>X</td>
+<td>
+</td></tr>
+<tr>
+<td>Bill Lorensen</td>
+<td>X</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Marcel Prastawa</td>
+<td>X</td>
+<td></td>
+<td>
+</td></tr>
+<tr>
+<td>Josh Cates</td>
+<td>X</td>
+<td>X</td>
+<td>
+</td></tr>
+<tr>
+<td>Kris Zygmunt</td>
+<td>X</td>
+<td>X</td>
+<td>X
+</td></tr>
+<tr>
+<td>Jean-Christophe Fillion-Robin</td>
+<td>X</td>
+<td></td>
+<td>
+</td></tr>
+
+</tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20220522224337
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.039 seconds
+Real time usage: 0.043 seconds
+Preprocessor visited node count: 146/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8753-0!canonical and timestamp 20220522224337 and revision id 45687. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Summer_v4_2011_Meeting&amp;oldid=45687">https://public.kitware.com/Wiki/index.php?title=ITK/Summer_v4_2011_Meeting&amp;oldid=45687</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Summer_v4_2011_Meeting" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Summer_v4_2011_Meeting&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Summer_v4_2011_Meeting">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Summer_v4_2011_Meeting&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Summer_v4_2011_Meeting&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Summer_v4_2011_Meeting" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Summer_v4_2011_Meeting&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FSummer+v4+2011+Meeting" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Summer_v4_2011_Meeting" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Summer_v4_2011_Meeting" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Summer_v4_2011_Meeting&amp;oldid=45687" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Summer_v4_2011_Meeting&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 11 February 2012, at 01:18.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.039","walltime":"0.043","ppvisitednodes":{"value":146,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220522224337","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":80});});</script>
+</body></html>

@@ -1,0 +1,3898 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK Release 3.10 Changed From Previous - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"209deccb936e6625313077ce","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_3.10_Changed_From_Previous","wgTitle":"ITK Release 3.10 Changed From Previous","wgCurRevisionId":14009,"wgRevisionId":14009,"wgArticleId":3399,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_3.10_Changed_From_Previous","wgRelevantArticleId":3399,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};
+RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.7"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_3_10_Changed_From_Previous rootpage-ITK_Release_3_10_Changed_From_Previous skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK Release 3.10 Changed From Previous</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>This release covers the period July 30, 2008 through November 4, 2008
+</p>
+<h2><span class="mw-headline" id="Changes_in_this_Release">Changes in this Release</span></h2>
+<pre>
+
+CMakeLists.txt
+    ENH: Updating minor version number to "10", in preparation for the release of ITK 3.10.
+    ENH: Preparing for ITK 3.10. Starting to fix the bug with image orientation.
+
+    BUG: ITK_USE_CONSOLIDATED_MORPHOLOGY flag was not marked as Advanced.
+    ENH:  As discussed on the weekly TCON Friday August 29th, there is a need to find places in ITK where itk::Image is forced to be instantiated.  This small patch is a temporary solution for forcing errors in places where an itk::OrientedImage will not perform as expected.  Once version 4.0 of ITK is released with the functionally that is currently in itk::OrientedImage promoted to the itk::Image class, then there will no longer be a need for this code or the CMAKE option.
+    ENH: Openning the development cycle. Updating version number to ITK 3.9.
+
+itkConfigure.h.in
+    ENH: Add an option to turn on the consolidated morphology.
+
+CMake/itkSampleBuildTest.cmake.in
+    ENH: Added tclsh.
+    ENH: Added additional cmake vars.
+
+Code/Algorithms/itkAntiAliasBinaryImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBalloonForceFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBinaryMinMaxCurvatureFlowFunction
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBinaryMinMaxCurvatureFlowFunction
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBinaryMinMaxCurvatureFlowImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBinaryMinMaxCurvatureFlowImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBinaryPruningImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBinaryPruningImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBinaryThinningImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBinaryThinningImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioCell
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioCell
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioCellBase
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioCellBase
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioCellularAggregate
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioCellularAggregateBase
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioCellularAggregateBase
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioGene
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioGene
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioGeneNetwork
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioGeneNetwork
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioGenome
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkBioGenome
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCannySegmentationLevelSetFunction
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCannySegmentationLevelSetFunction
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCannySegmentationLevelSetImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCannySegmentationLevelSetImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkClassifierBase
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkClassifierBase
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCollidingFrontsImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCollidingFrontsImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCompareHistogramImageToImageMetric
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkConnectedRegionsMeshFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkConnectedRegionsMeshFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCoreAtomImageToUnaryCorrespondenceMatrixProcess
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCoreAtomImageToUnaryCorrespondenceMatrixProcess
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCorrelationCoefficientHistogramImageToImageMetric
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCorrelationCoefficientHistogramImageToImageMetr
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCurvatureFlowFunction
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCurvatureFlowFunction
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCurvatureFlowImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCurvatureFlowImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCurvatureRegistrationFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCurvatureRegistrationFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCurvesLevelSetFunction
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCurvesLevelSetFunction
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCurvesLevelSetImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkCurvesLevelSetImageFilter
+    STYLE: according to kwstyle.
+
+Code/Algorithms/itkGeodesicActiveContourLevelSetFunction
+insight-users/2008-October/027665.html
+
+Code/Algorithms/itkGeodesicActiveContourShapePriorLevelSetFunction
+insight-users/2008-October/027665.html
+
+Code/Algorithms/itkImageMomentsCalculator
+    ENH: Reverting changes to use an ROI
+    ENH: Added the ability to specify a physical region of interest to limit the volume used in computations
+
+Code/Algorithms/itkImageMomentsCalculator
+    ENH: Reverting changes to use an ROI
+    ENH: Added the ability to specify a physical region of interest to limit the volume used in computations
+
+Code/Algorithms/itkMRIBiasFieldCorrectionFilter
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Algorithms/itkMultiResolutionPDEDeformableRegistration
+    ENH: Initial deformation fields can now automatically be smoothed and resampled to match the coarsest multiresolution pyramid level.
+
+Code/Algorithms/itkMultiResolutionPDEDeformableRegistration
+    ENH: Initial deformation fields can now automatically be smoothed and resampled to match the coarsest multiresolution pyramid level.
+
+Code/Algorithms/itkWatershedBoundary
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Algorithms/itkWatershedBoundaryResolver
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Algorithms/itkWatershedEquivalenceRelabeler
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Algorithms/itkWatershedRelabeler
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Algorithms/itkWatershedSegmentTable
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Algorithms/itkWatershedSegmentTree
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Algorithms/itkWatershedSegmentTreeGenerator
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Algorithms/itkWatershedSegmenter
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Algorithms/itkWatershedSegmenter
+    COMP: warning if NDEBUG not defined.
+
+Code/BasicFilters/itkAbsImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAbsoluteValueDifferenceImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAccumulateImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAccumulateImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAcosImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAdaptImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAdaptiveHistogramEqualizationImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAdaptiveHistogramEqualizationImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAddImageFilter
+    STYLE: Added documentation.
+
+Code/BasicFilters/itkAndImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAnisotropicDiffusionFunction
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAnisotropicDiffusionImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAnisotropicDiffusionImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkApproximateSignedDistanceMapImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkApproximateSignedDistanceMapImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAsinImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAtan2ImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkAtanImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkBSplineCenteredL2ResampleImageFilterBase
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineCenteredL2ResampleImageFilterBase
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineCenteredResampleImageFilterBase
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineCenteredResampleImageFilterBase
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineDecompositionImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineDecompositionImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineDownsampleImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineInterpolateImageFunction
+    ENH: GetSplineOrder() should be const\nENH: GetDefaultPixelValue() should be const
+
+Code/BasicFilters/itkBSplineInterpolateImageFunction
+    STYLE: more kwstyle conformance.
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineL2ResampleImageFilterBase
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineL2ResampleImageFilterBase
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineResampleImageFilterBase
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineResampleImageFilterBase
+    STYLE: style according to KWStyle.
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineResampleImageFunction
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBSplineUpsampleImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBilateralImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkBilateralImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkBinaryDilateImageFilter
+    ENH: Implement BinaryMorphologyImageFilter as a subclass of KernelImageFilter.
+
+Code/BasicFilters/itkBinaryErodeImageFilter
+    ENH: Implement BinaryMorphologyImageFilter as a subclass of KernelImageFilter.
+
+Code/BasicFilters/itkBinaryFunctorImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkBinaryFunctorImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkBinaryMagnitudeImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkBinaryMaskToNarrowBandPointSetFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkBinaryMaskToNarrowBandPointSetFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkBinaryMedianImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBinaryMedianImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBinaryMorphologyImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBinaryMorphologyImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBinaryProjectionImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBinaryThresholdImageFilter
+insight-users/2008-October/027665.html
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBinaryThresholdImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBinaryThresholdProjectionImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBinomialBlurImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBinomialBlurImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBlackTopHatImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBlackTopHatImageFilter
+    ENH: Use consolidated morphology in gradient, tophats, opening and closing filters.
+
+Code/BasicFilters/itkBloxBoundaryPointImageToBloxBoundaryProfileImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBloxBoundaryPointImageToBloxBoundaryProfileImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBloxBoundaryPointToCoreAtomImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBloxBoundaryProfileImageToBloxCoreAtomImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkBoundedReciprocalImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkCannyEdgeDetectionImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCannyEdgeDetectionImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCastImageFilter
+    BUG: Outputs were not allocated when cast filter was run in place.
+
+Code/BasicFilters/itkChainCodeToFourierSeriesPathFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkChainCodeToFourierSeriesPathFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkChangeInformationImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkChangeInformationImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCheckerBoardImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCheckerBoardImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkClosingByReconstructionImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkComplexToImaginaryImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkComplexToModulusImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkComplexToPhaseImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkComplexToRealImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCompose2DCovariantVectorImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCompose2DVectorImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCompose3DCovariantVectorImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCompose3DVectorImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkComposeRGBImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkConfidenceConnectedImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkConfidenceConnectedImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkConnectedComponentAlgorithm
+    STYLE: style baby style.
+
+Code/BasicFilters/itkConnectedComponentFunctorImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkConnectedComponentFunctorImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkConnectedComponentImageFilter
+    COMP: Use the real number of threads, and fix build with vs6.
+    STYLE: Various style fixes.
+
+Code/BasicFilters/itkConnectedComponentImageFilter
+    COMP: Shadowed variable wanrings.
+    BUG: Fix the detection of the number of threads really used.
+    STYLE: Various style fixes.
+
+Code/BasicFilters/itkConnectedThresholdImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkConnectedThresholdImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkConstantPadImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkConstantPadImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkContourDirectedMeanDistanceImageFilter
+insight-users/2008-October/027665.html
+
+Code/BasicFilters/itkContourDirectedMeanDistanceImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkContourMeanDistanceImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkContourMeanDistanceImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCosImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCropImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCropImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCurvatureAnisotropicDiffusionImageFilter
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCurvatureNDAnisotropicDiffusionFunction
+    STYLE: style baby style.
+
+Code/BasicFilters/itkCurvatureNDAnisotropicDiffusionFunction
+    STYLE: style baby style.
+
+Code/BasicFilters/itkDanielssonDistanceMapImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDanielssonDistanceMapImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDeformationFieldJacobianDeterminantFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDeformationFieldJacobianDeterminantFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDeformationFieldSource
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDeformationFieldSource
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDerivativeImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDerivativeImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDifferenceOfGaussiansGradientImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDifferenceOfGaussiansGradientImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDiffusionTensor3DReconstructionImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDilateObjectMorphologyImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDirectedHausdorffDistanceImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDirectedHausdorffDistanceImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDiscreteGaussianImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDiscreteGaussianImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDisplacementFieldJacobianDeterminantFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDisplacementFieldJacobianDeterminantFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDivideImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkDoubleThresholdImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkEdgePotentialImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkEigenAnalysis2DImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkEigenAnalysis2DImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkErodeObjectMorphologyImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkExpImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkExpNegativeImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkExpandImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkExpandImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkExtractImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkExtractImageFilter
+    STYLE: style according to KWStyle.
+    BUG: directions were not initialized.
+
+Code/BasicFilters/itkExtractImageFilterRegionCopier
+    STYLE: more kwstyle conformance.
+
+Code/BasicFilters/itkExtractOrthogonalSwath2DImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkExtractOrthogonalSwath2DImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkFastIncrementalBinaryDilateImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkFlipImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkFlipImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkGaussianImageSource
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGaussianImageSource
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGetAverageSliceImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGetAverageSliceImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGradientAnisotropicDiffusionImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGradientImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGradientImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGradientMagnitudeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGradientMagnitudeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGradientMagnitudeRecursiveGaussianImageFilter
+    STYLE: Various style fixes.
+
+Code/BasicFilters/itkGradientMagnitudeRecursiveGaussianImageFilter
+    STYLE: Various style fixes.
+
+Code/BasicFilters/itkGradientNDAnisotropicDiffusionFunction
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGradientNDAnisotropicDiffusionFunction
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGradientToMagnitudeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleConnectedClosingImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleConnectedOpeningImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleDilateImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleDilateImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleErodeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleErodeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleFillholeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleFunctionDilateImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleFunctionDilateImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleFunctionErodeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleFunctionErodeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleGeodesicDilateImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleGeodesicDilateImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleGeodesicErodeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleGeodesicErodeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleGrindPeakImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleMorphologicalClosingImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleMorphologicalClosingImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleMorphologicalOpeningImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkGrayscaleMorphologicalOpeningImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHConcaveImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHConvexImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHMaximaImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHMaximaImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHMinimaImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHMinimaImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHardConnectedComponentImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHardConnectedComponentImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHausdorffDistanceImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHausdorffDistanceImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHessian3DToVesselnessMeasureImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHessian3DToVesselnessMeasureImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHessianRecursiveGaussianImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHessianRecursiveGaussianImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHoughTransform2DCirclesImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHoughTransform2DCirclesImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHoughTransform2DLinesImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkHoughTransform2DLinesImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkImageToMeshFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkImageToMeshFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkImageToParametricSpaceFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkImageToParametricSpaceFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkImageToVectorImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkImplicitManifoldNormalVectorFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkImplicitManifoldNormalVectorFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkImportImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkImportImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkIntensityWindowingImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkIntensityWindowingImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkInteriorExteriorMeshFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkInteriorExteriorMeshFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkInterpolateImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkInterpolateImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkInterpolateImagePointsFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkInterpolateImagePointsFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkInverseDeformationFieldImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkInverseDeformationFieldImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkInvertIntensityImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkInvertIntensityImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkIsolatedConnectedImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkIsolatedConnectedImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkIterativeInverseDeformationFieldImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkIterativeInverseDeformationFieldImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkJoinImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkJoinSeriesImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkJoinSeriesImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkLabelStatisticsImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLabelStatisticsImageFilter
+    COMP: removing improper const.
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLaplacianImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLaplacianImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLaplacianRecursiveGaussianImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLaplacianRecursiveGaussianImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLaplacianSharpeningImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLaplacianSharpeningImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLevelSetFunctionWithRefitTerm
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLevelSetFunctionWithRefitTerm
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLog10ImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkLogImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMaskImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMaskNegatedImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMaskNeighborhoodOperatorImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMaskNeighborhoodOperatorImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMatrixIndexSelectionImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMaximumImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMeanImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMeanImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMedianImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMedianImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMinimumImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMinimumMaximumImageCalculator
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMinimumMaximumImageCalculator
+    STYLE: Fixing coding style violations.
+
+Code/BasicFilters/itkMinimumMaximumImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMinimumMaximumImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMirrorPadImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMirrorPadImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkModulusImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkModulusImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMorphologicalGradientImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMorphologicalGradientImageFilter
+    ENH: Use consolidated morphology in gradient, tophats, opening and closing filters.
+
+Code/BasicFilters/itkMorphologyImageFilter
+    STYLE: Fixing coding style violations.
+    ENH: Implement MorphologyImageFilter as a subclass of KernelImageFilter
+
+Code/BasicFilters/itkMorphologyImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkMultiplyImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNarrowBand
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNarrowBand
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNarrowBandImageFilterBase
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNarrowBandImageFilterBase
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNaryAddImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNaryFunctorImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNaryFunctorImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNaryMaximumImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNeighborhoodConnectedImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNeighborhoodConnectedImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNeighborhoodOperatorImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNeighborhoodOperatorImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNoiseImageFilter
+    STYLE: according to kwstyle.
+    ENH: Implement NoiseImageFilter as a subclass of BoxImageFilter
+
+Code/BasicFilters/itkNoiseImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNonThreadedShrinkImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNonThreadedShrinkImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNormalVectorDiffusionFunction
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNormalVectorDiffusionFunction
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNormalVectorFunctionBase
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNormalVectorFunctionBase
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNormalizeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNormalizeImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNormalizedCorrelationImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNormalizedCorrelationImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkNotImageFilter
+    STYLE: according to kwstyle.
+
+Code/BasicFilters/itkObjectMorphologyImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkObjectMorphologyImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkOpeningByReconstructionImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkOrImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkOrientImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkOrientImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkPadImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPadImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkParallelSparseFieldLevelSetImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkParallelSparseFieldLevelSetImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkParametricSpaceToImageSpaceMeshFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkParametricSpaceToImageSpaceMeshFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPasteImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPasteImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPathToChainCodePathFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPathToChainCodePathFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPathToImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPathToImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPermuteAxesImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPermuteAxesImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPointSetToImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPointSetToImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPolylineMaskImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkPolylineMaskImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkRGBToLuminanceImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkReconstructionByDilationImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkReconstructionByErosionImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkReconstructionImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkReconstructionImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkRecursiveGaussianImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkRecursiveGaussianImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkRecursiveSeparableImageFilter
+    STYLE: Various style fixes.
+
+Code/BasicFilters/itkRecursiveSeparableImageFilter
+    STYLE: Various style fixes.
+
+Code/BasicFilters/itkReflectImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkReflectImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkReflectiveImageRegionConstIterator
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkReflectiveImageRegionConstIterator
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkReflectiveImageRegionIterator
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkReflectiveImageRegionIterator
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkRegionOfInterestImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkRegionOfInterestImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkRelabelComponentImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkRelabelComponentImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkResampleImageFilter
+    ENH: GetSplineOrder() should be const\nENH: GetDefaultPixelValue() should be const
+
+Code/BasicFilters/itkResampleImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkRescaleIntensityImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkRescaleIntensityImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkScalarAnisotropicDiffusionFunction
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkScalarAnisotropicDiffusionFunction
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkScalarConnectedComponentImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkScalarToArrayCastImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkScalarToArrayCastImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkShiftScaleImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkShiftScaleImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkShiftScaleInPlaceImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkShiftScaleInPlaceImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkShrinkImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkShrinkImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSigmoidImageFilter
+insight-users/2008-October/027665.html
+
+Code/BasicFilters/itkSignedDanielssonDistanceMapImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSignedDanielssonDistanceMapImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSignedMaurerDistanceMapImageFilter
+
+Code/BasicFilters/itkSignedMaurerDistanceMapImageFilter
+    COMP: Fix comparison of unsigned expression &lt; 0 is always false.
+    COMP: Fix warning about conflicting declaration of i.
+    STYLE: Fix style problems introduced by the threading support.
+
+Code/BasicFilters/itkSimilarityIndexImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSimilarityIndexImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSimpleContourExtractorImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSimpleContourExtractorImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSimplexMeshAdaptTopologyFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSimplexMeshAdaptTopologyFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSimplexMeshToTriangleMeshFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSimplexMeshToTriangleMeshFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSinImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSmoothingRecursiveGaussianImageFilter
+    STYLE: Various style fixes.
+
+Code/BasicFilters/itkSmoothingRecursiveGaussianImageFilter
+    STYLE: Various style fixes.
+
+Code/BasicFilters/itkSobelEdgeDetectionImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSobelEdgeDetectionImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSparseFieldFourthOrderLevelSetImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSparseFieldFourthOrderLevelSetImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSparseFieldLayer
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSparseFieldLayer
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSparseFieldLevelSetImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSparseFieldLevelSetImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSpatialFunctionImageEvaluatorFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSpatialFunctionImageEvaluatorFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSpatialObjectToImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSpatialObjectToImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSpatialObjectToImageStatisticsCalculator
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSpatialObjectToImageStatisticsCalculator
+    STYLE: Fixing comments alignment.
+
+Code/BasicFilters/itkSpatialObjectToPointSetFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSpatialObjectToPointSetFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSqrtImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSquareImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSquaredDifferenceImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkStatisticsImageFilter
+    COMP: trying to track down VS6 problem with wrapped filter.
+
+Code/BasicFilters/itkStreamingImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkStreamingImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSubtractImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkSymmetricEigenAnalysisImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTanImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTensorFractionalAnisotropyImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTensorRelativeAnisotropyImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTernaryAddImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTernaryFunctorImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTernaryFunctorImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTernaryMagnitudeImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTernaryMagnitudeSquaredImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkThresholdImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkThresholdImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkThresholdLabelerImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkThresholdLabelerImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTileImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTileImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTobogganImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTobogganImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTransformMeshFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTransformMeshFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTriangleMeshToBinaryImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTriangleMeshToBinaryImageFilter
+    ENH: added method to read image information from image
+
+Code/BasicFilters/itkTwoOutputExampleImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkTwoOutputExampleImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkUnaryFunctorImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkUnaryFunctorImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkVTKImageExport
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkVTKImageExportBase
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkVTKImageExportBase
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkVTKImageImport
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkVTKImageImport
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkVectorAnisotropicDiffusionFunction
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorAnisotropicDiffusionFunction
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorCastImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorConfidenceConnectedImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorConfidenceConnectedImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorConnectedComponentImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorCurvatureAnisotropicDiffusionImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorCurvatureNDAnisotropicDiffusionFunction
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorCurvatureNDAnisotropicDiffusionFunction
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorExpandImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorExpandImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorGradientAnisotropicDiffusionImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorGradientMagnitudeImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorGradientMagnitudeImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorGradientNDAnisotropicDiffusionFunction
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorGradientNDAnisotropicDiffusionFunction
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorIndexSelectionCastImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorNeighborhoodOperatorImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorNeighborhoodOperatorImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorResampleImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorResampleImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorRescaleIntensityImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVectorRescaleIntensityImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVotingBinaryHoleFillingImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVotingBinaryHoleFillingImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVotingBinaryImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVotingBinaryImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVotingBinaryIterativeHoleFillingImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkVotingBinaryIterativeHoleFillingImageFilter
+    STYLE: kwstyle conformance.
+
+Code/BasicFilters/itkWarpImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkWarpImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkWarpMeshFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkWarpMeshFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkWarpVectorImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkWarpVectorImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkWeightedAddImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkWhiteTopHatImageFilter
+    STYLE: style according to KWStyle.
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkWhiteTopHatImageFilter
+    ENH: Use consolidated morphology in gradient, tophats, opening and closing filters.
+
+Code/BasicFilters/itkWrapPadImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkWrapPadImageFilter
+    STYLE: style according to KWStyle.
+
+Code/BasicFilters/itkXorImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkZeroCrossingBasedEdgeDetectionImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkZeroCrossingBasedEdgeDetectionImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkZeroCrossingImageFilter
+    STYLE: fixing coding style.
+
+Code/BasicFilters/itkZeroCrossingImageFilter
+    STYLE: fixing coding style.
+
+Code/Common/CMakeLists.txt
+
+Code/Common/itkAffineTransform
+    STYLE: Fixing non-conformant terminations of Doxygen comments.
+
+Code/Common/itkBSplineDeformableTransform
+    STYLE: fixing coding style.
+
+Code/Common/itkBSplineInterpolationWeightFunction
+    STYLE: fixing coding style.
+
+Code/Common/itkBinaryThresholdSpatialFunction
+    STYLE: fixing coding style.
+
+Code/Common/itkBloxBoundaryProfileItem
+    STYLE: fixing coding style.
+
+Code/Common/itkByteSwapper
+
+Code/Common/itkByteSwapper
+
+Code/Common/itkCenteredAffineTransform
+    STYLE: fixing coding style.
+
+Code/Common/itkCenteredEuler3DTransform
+    STYLE: fixing coding style.
+
+Code/Common/itkCenteredRigid2DTransform
+    STYLE: fixing coding style.
+
+Code/Common/itkCenteredSimilarity2DTransform
+    STYLE: fixing coding style.
+
+Code/Common/itkChainCodePath2D
+    STYLE: fixing coding style.
+
+Code/Common/itkConceptChecking
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkConstNeighborhoodIterator
+    STYLE: fixing coding style.
+
+Code/Common/itkConstShapedNeighborhoodIterator
+    STYLE: fixing coding style.
+
+Code/Common/itkCoreAtomImageToDistanceMatrixProcess
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Common/itkCoreAtomImageToDistanceMatrixProcess
+    STYLE: fixing coding style.
+
+Code/Common/itkCovarianceImageFunction
+    STYLE: fixing coding style.
+
+Code/Common/itkCovariantVector
+    STYLE: fixing coding style.
+
+Code/Common/itkCovariantVector
+    STYLE: fixing coding style.
+
+Code/Common/itkDataObject
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDataObjectDecorator
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDataObjectDecorator
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDecisionRuleBase
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDecisionRuleBase
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDefaultDynamicMeshTraits
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDefaultImageTraits
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDefaultPixelAccessor
+    STYLE: fixing coding style.
+
+Code/Common/itkDefaultPixelAccessorFunctor
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDefaultStaticMeshTraits
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDefaultVectorPixelAccessor
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDefaultVectorPixelAccessorFunctor
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDenseFiniteDifferenceImageFilter
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDenseFiniteDifferenceImageFilter
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDerivativeOperator
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDerivativeOperator
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDifferenceImageFilter
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDifferenceImageFilter
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDiffusionTensor3D
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDiffusionTensor3D
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDirectory
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDirectory
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDynamicLoader
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkDynamicLoader
+    STYLE: Fixing coding style according to KWStyle test report.
+
+Code/Common/itkElasticBodyReciprocalSplineKernelTransform
+    STYLE: fixing coding style.
+
+Code/Common/itkElasticBodyReciprocalSplineKernelTransform
+    STYLE: fixing coding style.
+
+Code/Common/itkElasticBodySplineKernelTransform
+    STYLE: fixing coding style.
+
+Code/Common/itkElasticBodySplineKernelTransform
+    STYLE: fixing coding style.
+
+Code/Common/itkEllipsoidInteriorExteriorSpatialFunction
+    STYLE: fixing coding style.
+
+Code/Common/itkEllipsoidInteriorExteriorSpatialFunction
+    STYLE: fixing coding style.
+
+Code/Common/itkEuler2DTransform
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkEuler2DTransform
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkEuler3DTransform
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkEuler3DTransform
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkEventObject
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkExceptionObject
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkExceptionObject
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkExpImageAdaptor
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkExpNegativeImageAdaptor
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkExtrapolateImageFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkFastMutexLock
+
+Code/Common/itkFileOutputWindow
+
+Code/Common/itkFiniteCylinderSpatialFunction
+
+Code/Common/itkFiniteCylinderSpatialFunction
+
+Code/Common/itkFiniteDifferenceFunction
+
+Code/Common/itkFiniteDifferenceFunction
+
+Code/Common/itkFiniteDifferenceImageFilter
+    ENH: make the elapsed iterations and the initialization ivar protected, so that they can be accessed from subclasses that override the GenerateData method.
+
+Code/Common/itkFiniteDifferenceImageFilter
+
+Code/Common/itkFiniteDifferenceSparseImageFilter
+
+Code/Common/itkFiniteDifferenceSparseImageFilter
+
+Code/Common/itkFiniteDifferenceSparseImageFunction
+
+Code/Common/itkFiniteDifferenceSparseImageFunction
+
+Code/Common/itkFixedArray
+
+Code/Common/itkFixedArray
+
+Code/Common/itkFixedCenterOfRotationAffineTransform
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkFixedCenterOfRotationAffineTransform
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkFloodFilledFunctionConditionalConstIterator
+
+Code/Common/itkFloodFilledFunctionConditionalConstIterator
+
+Code/Common/itkFloodFilledSpatialFunctionConditionalConstIterator
+
+Code/Common/itkFloodFilledSpatialFunctionConditionalConstIterator
+
+Code/Common/itkForwardDifferenceOperator
+
+Code/Common/itkForwardDifferenceOperator
+
+Code/Common/itkFourierSeriesPath
+
+Code/Common/itkFourierSeriesPa
+
+Code/Common/itkFrustumSpatialFunction
+
+Code/Common/itkFrustumSpatialFunction
+
+Code/Common/itkFunctionBase
+
+Code/Common/itkGaussianBlurImageFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkGaussianBlurImageFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkGaussianDerivativeImageFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkGaussianDerivativeImageFunction
+    STYLE: comment delimeter incorrect.
+
+Code/Common/itkGaussianDerivativeSpatialFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkGaussianKernelFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkGaussianKernelFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkGaussianOperator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkGaussianOperator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkGaussianSpatialFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkGaussianSpatialFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkGreenPixelAccessor
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkHexahedronCell
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkHexahedronCellTopology
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkHexahedronCellTopology
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkIdentityTransform
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImage
+
+    ENH:  As discussed on the weekly TCON Friday August 29th, there is a need to find places in ITK where itk::Image is forced to be instantiated.  This small patch is a temporary solution for forcing errors in places where an itk::OrientedImage will not perform as expected.  Once version 4.0 of ITK is released with the functionally that is currently in itk::OrientedImage promoted to the itk::Image class, then there will no longer be a need for this code or the CMAKE option.
+
+Code/Common/itkImage
+    BUG: need to initialize internal matrices if ITK_IMAGE_BEHAVES_AS_ORIENTED_IMAGE is ON.
+
+Code/Common/itkImageAdaptor
+    COMP: The signature of SetSpacing in the base class changed, so the signature must also change in the derived subclasses.
+
+Code/Common/itkImageAdaptor
+    COMP: The signature of SetSpacing in the base class changed, so the signature must also change in the derived subclasses.
+
+Code/Common/itkImageAndPathToImageFilter
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageBase
+    COMP: shadowed typedef, IndexValueType.
+    COMP: Fixing warning about converting double to int.
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageBase
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageBoundaryCondition
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageConstIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageConstIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageContainerInterface
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageDuplicator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageDuplicator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageFunction
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageHelper
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageLinearConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageLinearConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageLinearIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageLinearIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRandomConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRandomConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRandomIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRandomIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRandomNonRepeatingConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRandomNonRepeatingConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRandomNonRepeatingIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRandomNonRepeatingIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegion
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegion
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionConstIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionConstIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionExclusionConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionExclusionConstIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionExclusionIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionExclusionIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionIteratorWithIndex
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionMultidimensionalSplitter
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionMultidimensionalSplitter
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionReverseConstIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionReverseConstIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionReverseIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionReverseIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionSplitter
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageRegionSplitter
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageReverseConstIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageReverseConstIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageReverseIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageReverseIterator
+    STYLE: Fixing coding style violations.
+
+Code/Common/itkImageSource
+    COMP: replace itkExceptionMacro with expanded code to avoid gcc bugus warning about  a noretun function doing a return.
+
+Code/Common/itkImageTransformHelper
+
+Code/Common/itkKLMSegmentationRegion
+insight-users/2008-October/027665.html
+
+Code/Common/itkMacro
+    ENH: If NDEBUG is defined, then make itkDebugMacro an emty macro. This reduces disk size of programs up to 20%.
+
+Code/Common/itkMemoryProbe
+
+Code/Common/itkMemoryProbe
+
+Code/Common/itkMemoryProbesCollectorBase
+    ENH: Renaming the class ProbesCollectorBase as ResourceProbesCollectorBase.
+
+Code/Common/itkMemoryUsageObserver
+
+Code/Common/itkMemoryUsageObserver
+
+Code/Common/itkNumericTraitsCovariantVectorPixel
+
+Code/Common/itkNumericTraitsTensorPixel
+
+Code/Common/itkOctree
+    BUG: itkTypeMacro had wrong class name.
+
+Code/Common/itkOffset
+
+Code/Common/itkOrientedImage
+    ENH:  As discussed on the weekly TCON Friday August 29th, there is a need to find places in ITK where itk::Image is forced to be instantiated.  This small patch is a temporary solution for forcing errors in places where an itk::OrientedImage will not perform as expected.  Once version 4.0 of ITK is released with the functionally that is currently in itk::OrientedImage promoted to the itk::Image class, then there will no longer be a need for this code or the CMAKE option.
+
+Code/Common/itkOrientedImage
+
+Code/Common/Attic/itkProbe
+
+Code/Common/Attic/itkProbe
+
+Code/Common/Attic/itkProbesCollectorBase
+    ENH: Renaming the class ProbesCollectorBase as ResourceProbesCollectorBase.
+
+Code/Common/Attic/itkProbesCollectorBase
+    ENH: Renaming the class ProbesCollectorBase as ResourceProbesCollectorBase.
+
+Code/Common/itkResourceProbe
+
+Code/Common/itkResourceProbe
+
+Code/Common/itkResourceProbesCollectorBase
+    ENH: Renaming the class ProbesCollectorBase as ResourceProbesCollectorBase.
+
+Code/Common/itkResourceProbesCollectorBase
+    ENH: Renaming the class ProbesCollectorBase as ResourceProbesCollectorBase.
+
+Code/Common/itkSmapsFileParser
+
+Code/Common/itkSmapsFileParser
+
+Code/Common/itkSmapsFileParser
+
+Code/Common/itkSpecialCoordinatesImage
+    COMP: The signature of SetSpacing in the base class changed, so the signature must also change in the derived subclasses.
+
+Code/Common/itkTestMain
+    ENH: More informative exception output.
+    ENH: let the tests compare several pairs of images.
+
+Code/Common/itkTimeProbe
+
+Code/Common/itkTimeProbe
+
+Code/Common/itkTimeProbesCollectorBase
+
+Code/Common/itkTimeProbesCollectorBase
+    ENH: Renaming the class ProbesCollectorBase as ResourceProbesCollectorBase.
+
+Code/Common/itkVectorImage
+    COMP: IndexValueType was shadowing superclass's type.
+
+Code/Common/itkVectorImageToImageAdaptor
+    BUG: itkTypeMacro had wrong class name.
+
+Code/IO/itkAnalyzeImageIO
+    STYLE: indentation.
+
+Code/IO/itkBMPImageIO
+    BUG: 7773. Incorrect behaviour when number of colors was not zero and the bit depth was 8.
+
+Code/IO/itkBMPImageIO
+    BUG: 7773. Incorrect behaviour when number of colors was not zero and the bit depth was 8.
+
+Code/IO/itkBioRadImageIO
+    ENH: Adding list of supported extensions for reading and writing.
+
+Code/IO/itkGDCMImageIO
+    STYLE: indentation.
+    STYLE: minor cleanup
+
+Code/IO/itkGDCMImageIO
+    ENH: Adding hook so that if installed GDCM is a GDCM 2.x version, then properly use new API.
+
+Code/IO/itkGDCMSeriesFileNames
+    ENH: Adding hook so that if installed GDCM is a GDCM 2.x version, then properly use new API.
+
+Code/IO/itkGEAdwImageIO
+    STYLE: comment format.
+
+Code/IO/itkImageFileReader
+    BUG: Keep 2D direction cosines from being degenerate
+
+Code/IO/itkImageFileWriter
+    STYLE: indentation.
+
+Code/IO/itkImageIOBase
+    BUG: After vector.resize() in  SetNumberOfDimensions, origin should be set to 0 and spacing to 1, the defaults.
+
+Code/IO/itkJPEGImageIO
+    ENH: More informative exception output.
+
+Code/IO/itkLSMImageIO
+    ENH: Adding list of supported extensions for reading and writing.
+
+Code/IO/itkPNGImageIO
+    STYLE: indentation.
+
+Code/IO/itkTIFFImageIO
+    BUG: wrong extensions for reading and writing.
+    ENH: Adding list of supported extensions for reading and writing.
+
+Code/IO/itkVTKImageIO
+
+Code/IO/itkXMLFile
+    STYLE: indentation.
+
+Code/Numerics/itkOnePlusOneEvolutionaryOptimizer
+    BUG: Missing mvars in print-self
+
+Code/Numerics/itkOnePlusOneEvolutionaryOptimizer
+    ENH: Optionally continues optimization even if metric throws an exception
+
+Code/Numerics/Statistics/itkImageToListAdaptor
+    STYLE: removing spaces before semicolons.
+
+Code/Numerics/Statistics/itkImageToListAdaptor
+    STYLE: removing spaces before semicolons.
+
+Code/Numerics/Statistics/itkKdTreeGenerator
+
+Code/Numerics/Statistics/itkLogLikelihoodGoodnessOfFitFunction
+insight-users/2008-October/027665.html
+
+Code/Numerics/Statistics/itkScalarImageToListAdaptor
+    STYLE: removing spaces before semicolons.
+
+Code/Numerics/Statistics/itkScalarImageToListAdaptor
+    STYLE: removing spaces before semicolons.
+
+Code/Numerics/Statistics/itkWeightedCentroidKdTreeGenerator
+
+Code/Review/CMakeLists.txt
+    ENH: Change message prefix from Warning: to Attention:.
+
+Code/Review/VNLIterativeSparseSolverTraits
+    STYLE: Fixing indentations and adding copyright header.
+
+Code/Review/VNLSparseLUSolverTraits
+    STYLE: fixing #ifdef guards.
+    STYLE: Added copyright.
+
+Code/Review/itkAddConstantToImageFilter
+    COMP: various style issues.
+
+Code/Review/itkAnchorCloseImageFilter
+    COMP: Several VS6 issues including excessive typenames, duplicate definition of function templates. std::max not available, used vnl_math_max instead.
+
+Code/Review/itkAnchorDilateImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+555
+
+Code/Review/itkAnchorErodeDilateImageFilter
+    COMP: Need to use itkGetStaticConstMacro for Borland compiler.
+
+Code/Review/itkAnchorErodeDilateImageFilter
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+    COMP: Replacing image smart pointers with image raw pointers in API of helper templated methods.
+    BUG: Fix ivar defects in PrintSelf methods.
+
+Code/Review/itkAnchorErodeDilateLine
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+555
+
+Code/Review/itkAnchorErodeDilateLine
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+555
+
+Code/Review/itkAnchorErodeImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+555
+
+Code/Review/itkAnchorHistogram
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+
+Code/Review/itkAnchorOpenCloseImageFilter
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+    COMP: Need to use itkGetStaticConstMacro for Borland compiler.
+
+Code/Review/itkAnchorOpenCloseImageFilter
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+    COMP: const was missing from LineOffsets parameter. Some compilers were unable to resolve method definition in .txx from declaration in .h which indeed had the const.
+555
+
+Code/Review/itkAnchorOpenCloseLine
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+
+Code/Review/itkAnchorOpenCloseLine
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+
+Code/Review/itkAnchorOpenImageFilter
+    COMP: Several VS6 issues including excessive typenames, duplicate definition of function templates. std::max not available, used vnl_math_max instead.
+
+Code/Review/itkAnchorUtilities
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+    COMP: Replacing image smart pointers with image raw pointers in API of helper templated methods.
+555
+
+Code/Review/itkAnchorUtilities
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+555
+
+Code/Review/itkBSplineScatteredDataPointSetToImageFilter
+    STYLE: Fixing typos in the documentation.
+    BUG: added an epsilon variable that is calculated at run time to prevent seg faults for large number of spans.
+
+Code/Review/itkBSplineScatteredDataPointSetToImageFilter
+    BUG: further tweaking of the epsilon parameter to ensure that round-off error is taken into account.  Throws an expception for large number of spans.
+    BUG: additional tweak on the epsilon value so that it is at least as large as it was with the previous version.
+    BUG: increased the delta subtracted from potential evaluation at the parametric upper bound to 10*epsilon.  (missed two lines in the last commit)
+    BUG: Changed from NumericTraits&lt;RealType&gt;::min() to vcl_numeric_limits&lt;RealType&gt;::epsilon() to prevent evaluation on the open end of the parametric domain which causes seg fault on some machines.
+
+Code/Review/itkBasicDilateImageFilter
+
+Code/Review/itkBasicDilateImageFilter
+    COMP: &gt; 0 test for a lbool is dangerous.
+
+Code/Review/itkBasicErodeImageFilter
+    COMP: various style issues.
+
+Code/Review/itkBasicErodeImageFilter
+    COMP: Several VS6 issues including excessive typenames, duplicate definition of function templates. std::max not available, used vnl_math_max instead.
+
+Code/Review/itkBoxImageFilter
+555
+
+Code/Review/itkBoxImageFilter
+555
+
+Code/Review/itkBoxMeanImageFilter
+555
+
+Code/Review/itkBoxMeanImageFilter
+    STYLE: Fixing alignment of declarations.
+    COMP: Fix error about invalid cast on SunOS.
+555
+
+Code/Review/itkBoxSigmaImageFilter
+555
+
+Code/Review/itkBoxSigmaImageFilter
+    COMP: Fix error about invalid cast on SunOS.
+555
+
+Code/Review/itkBoxUtilities
+    COMP: various style issues.
+    COMP: Fix error about invalid cast on SunOS.
+555
+
+Code/Review/itkBresenhamLine
+555
+
+Code/Review/itkBresenhamLine
+555
+
+Code/Review/itkComposeRGBAImageFilter
+    BUG: Missing runtime type information.
+
+Code/Review/itkConformalFlatteningMeshFilter
+    COMP: various style issues.
+
+Code/Review/itkCoxDeBoorBSplineKernelFunction
+    ENH: defined GetShapeFunctions() and added EvaluateNthDerivative() function
+
+Code/Review/itkCoxDeBoorBSplineKernelFunction
+    COMP: various style issues.
+
+Code/Review/itkCrossHelper
+    STYLE: Fixing Style Issues.
+    ENH: moving in IJ paper number 202. Parameterization framework for 2-manifold meshes.
+
+Code/Review/itkDiffeomorphicDemonsRegistrationFilter
+    ENH: Removed workaround for bug 0003972 which has been fixed
+
+Code/Review/itkDiscreteGaussianDerivativeImageFilter
+    STYLE: fixing coding style violation.
+
+Code/Review/itkDiscreteGaussianDerivativeImageFilter
+    STYLE: fixing coding style violation.
+
+Code/Review/itkDiscreteGaussianDerivativeImageFunction
+    COMP: shadowed variable warnings. Cast from int to double warnings.
+    PERF: Add Initialize() to discrete Gaussian image functions to avoid initializing multiple times.
+    STYLE: fixing coding style violation.
+
+Code/Review/itkDiscreteGaussianDerivativeImageFunction
+    PERF: Add Initialize() to discrete Gaussian image functions to avoid initializing multiple times.
+
+Code/Review/itkDiscreteGradientMagnitudeGaussianImageFunction
+    STYLE: Fixing coding style violations.
+    STYLE: fixing coding style violation.
+
+Code/Review/itkDiscreteGradientMagnitudeGaussianImageFunction
+    COMP: shadowed variable warnings. Cast from int to double warnings.
+    STYLE: according to kwstyle.
+
+Code/Review/itkDiscreteHessianGaussianImageFunction
+    STYLE: Fixing coding style violations.
+    STYLE: fixing coding style violation.
+
+Code/Review/itkDiscreteHessianGaussianImageFunction
+    PERF: Add Initialize() to discrete Gaussian image functions to avoid initializing multiple times.
+    COMP: redeclaration of idx hides orginal.
+    STYLE: fixing coding style violation.
+
+Code/Review/itkDivideByConstantImageFilter
+    ENH: Don't call Modified() if the constant is not modified in SetConstant(), let the user get the constant, and print the constant in the PrintSelf method.
+
+Code/Review/itkFFTComplexToComplexImageFilter
+    STYLE: Fixing regular expression pattern for template parameter.
+
+Code/Review/itkFastApproximateRankImageFilter
+    BUG: Fix valgrind's warning: Conditional jump or move depends on uninitialised value.
+    COMP: Provide explicit template type to try to fix the invalid template parameter error with borland compiler.
+555
+
+Code/Review/itkFlatStructuringElement
+    COMP: Borland needed a little more help with struct FacetType.
+
+Code/Review/itkFlatStructuringElement
+    COMP: no need for itk:: when inside itk namespace.
+    COMP: Borland needed a little more help with struct FacetType.
+    COMP: Try to fix not found vector::vector(unsigned int) error with borland compiler.
+1926/555
+
+Code/Review/itkGaussianDerivativeOperator
+    STYLE: fixing coding style violation.
+
+Code/Review/itkGaussianDerivativeOperator
+    STYLE: fixing coding style violation.
+
+Code/Review/itkKappaSigmaThresholdImageCalculator
+    COMP: various style issues.
+
+Code/Review/itkKernelImageFilter
+    COMP: ImageDimension was being used before it was defined.
+555
+
+Code/Review/itkKernelImageFilter
+    BUG: SetKernel() can be reimplemented in a subclass, so it must be called when modifying the kernel.
+555
+
+Code/Review/itkMINC2ImageIO
+    COMP: Add parentheses around &amp;&amp; within || to placate GCC.
+
+Code/Review/itkMINC2ImageIO
+
+Code/Review/itkMagnitudeAndPhaseToComplexImageFilter
+    BUG: Missing runtime type information.
+
+Code/Review/itkMaskedMovingHistogramImageFilter
+    COMP: Must use itkGetStaticConstMacro to access a static const with Borland compiler.
+
+Code/Review/itkMaskedMovingHistogramImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+    COMP: Fix warning: declaration of 'currentIdx' shadows a previous local.
+555
+
+Code/Review/itkMaskedRankHistogram
+    COMP: various style issues.
+    COMP: Fix warning: Parameter 'p' is never used.
+
+Code/Review/itkMaskedRankImageFilter
+    COMP: Returned default for TKernel. Borland compiler could not handle TInputImage::ImageDimension. New code uses &#160;::itk::GetImageDimension&lt;TInputImage&gt;::ImageDimension.
+555
+
+Code/Review/itkMaskedRankImageFilter
+555
+
+Code/Review/Attic/itkMemoryProbe
+
+Code/Review/Attic/itkMemoryProbe
+
+Code/Review/Attic/itkMemoryProbesCollectorBase
+
+Code/Review/Attic/itkMemoryUsageObserver
+    COMP: various style issues.
+
+Code/Review/Attic/itkMemoryUsageObserver
+    COMP: various style issues.
+
+Code/Review/itkMiniPipelineSeparableImageFilter
+555
+
+Code/Review/itkMiniPipelineSeparableImageFilter
+    BUG: Outputs were not allocated when cast filter was run in place.
+
+Code/Review/itkMovingHistogramDilateImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+
+Code/Review/itkMovingHistogramErodeImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+555
+
+Code/Review/itkMovingHistogramImageFilter
+    COMP: Use LexicographicCompare type provided by Offset to try to fix the error about ImageDimension with Borland compiler
+
+Code/Review/itkMovingHistogramImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+    COMP: Fix warning: declaration of 'currentIdx' shadows a previous local.
+    COMP: Fix declaration of 'ImageDimension' shadows a member of 'this' warning.
+
+Code/Review/itkMovingHistogramImageFilterBase
+    BUG: Fix ivar defects in PrintSelf methods.
+    COMP: Must use itkGetStaticConstMacro to access a static const with Borland compiler.
+555
+
+Code/Review/itkMovingHistogramImageFilterBase
+    COMP: no need for itk:: when inside itk namespace.
+    COMP: Fix warning C4288: nonstandard extension used&#160;: 'i'&#160;: loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+    BUG: Fix ivar defects in PrintSelf methods.
+    COMP: Fix declaration of 'ImageDimension' shadows a member of 'this' warning.
+
+Code/Review/itkMovingHistogramMorphologicalGradientImageFilter
+    COMP: MS VS6 typename issues.
+555
+
+Code/Review/itkMovingHistogramMorphologyImageFilter
+    COMP: Use LexicographicCompare type provided by Offset to try to fix the error about ImageDimension with Borland compiler
+
+Code/Review/itkMovingHistogramMorphologyImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+
+Code/Review/itkMultiplyByConstantImageFilter
+    ENH: Don't call Modified() if the constant is not modified in SetConstant(), let the user get the constant, and print the constant in the PrintSelf method.
+
+Code/Review/itkOptAdaptiveHistogramEqualizationImageFilter
+    COMP: various style issues.
+
+Code/Review/itkOptAdaptiveHistogramEqualizationImageFilter
+    STYLE: Fixing #ifdef guards.  Removing extra spaces at end of lines.
+
+Code/Review/itkOptBinaryMorphologyImageFilter
+    ENH: Implement BinaryMorphologyImageFilter as a subclass of KernelImageFilter.
+
+Code/Review/itkOptBinaryMorphologyImageFilter
+    BUG: calling SetKernel() in the base class constructor doesn't call SetKernel() of the subclasses. This leads to an unusable default kernel.
+
+Code/Review/itkOptBlackTopHatImageFilter
+    COMP: various style issues.
+    ENH: Use consolidated morphology in gradient, tophats, opening and closing filters.
+
+Code/Review/itkOptBlackTopHatImageFilter
+    BUG: SafeBorder shouldn't be use by default, for full backward compatibility.
+
+Code/Review/itkOptGrayscaleDilateImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+    COMP: Need to use itkGetStaticConstMacro for Borland compiler.
+
+Code/Review/itkOptGrayscaleDilateImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+
+Code/Review/itkOptGrayscaleErodeImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+    COMP: Need to use itkGetStaticConstMacro for Borland compiler.
+
+Code/Review/itkOptGrayscaleErodeImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+
+Code/Review/itkOptGrayscaleMorphologicalClosingImageFilter
+    COMP: various style issues.
+    COMP: Must use itkGetStaticConstMacro to access a static const with Borland compiler.
+
+Code/Review/itkOptGrayscaleMorphologicalClosingImageFilter
+    COMP: Several VS6 issues including excessive typenames, duplicate definition of function templates. std::max not available, used vnl_math_max instead.
+    ENH: Use consolidated morphology in gradient, tophats, opening and closing filters.
+
+Code/Review/itkOptGrayscaleMorphologicalOpeningImageFilter
+    COMP: various style issues.
+    COMP: Must use itkGetStaticConstMacro to access a static const with Borland compiler.
+
+Code/Review/itkOptGrayscaleMorphologicalOpeningImageFilter
+    COMP: extraneous typenames.
+    BUG: SafeBorder shouldn't be use by default, for full backward compatibility.
+
+Code/Review/itkOptImageToImageMetric
+    BUG: Flaw in logic when picking random samples from the fixed image
+
+Code/Review/itkOptImageToImageMetr
+    COMP: no need for itk:: when inside itk namespace.
+
+Code/Review/itkOptMeanImageFilter
+    ENH: Implement MeanImageFilter as a subclass of BoxImageFilter
+
+Code/Review/itkOptMeanImageFilter
+    ENH: Implement MeanImageFilter as a subclass of BoxImageFilter
+
+Code/Review/itkOptMedianImageFilter
+    ENH: Implement MedianImageFilter as a subclass of BoxImageFilter
+
+Code/Review/itkOptMedianImageFilter
+    ENH: Implement MedianImageFilter as a subclass of BoxImageFilter
+
+Code/Review/itkOptMorphologicalGradientImageFilter
+    COMP: various style issues.
+    COMP: Must use itkGetStaticConstMacro to access a static const with Borland compiler.
+
+Code/Review/itkOptMorphologicalGradientImageFilter
+    ENH: Use consolidated morphology in gradient, tophats, opening and closing filters.
+
+Code/Review/itkOptMorphologyImageFilter
+    ENH: Implement MorphologyImageFilter as a subclass of KernelImageFilter
+
+Code/Review/itkOptMorphologyImageFilter
+    ENH: Implement MorphologyImageFilter as a subclass of KernelImageFilter
+
+Code/Review/itkOptNoiseImageFilter
+    ENH: Implement NoiseImageFilter as a subclass of BoxImageFilter
+
+Code/Review/itkOptNoiseImageFilter
+    ENH: Implement NoiseImageFilter as a subclass of BoxImageFilter
+
+Code/Review/itkOptSimpleContourExtractorImageFilter
+    COMP: various style issues.
+
+Code/Review/itkOptSimpleContourExtractorImageFilter
+    COMP: various style issues.
+
+Code/Review/itkOptWhiteTopHatImageFilter
+    COMP: various style issues.
+    BUG: Kernel was printed twice.
+
+Code/Review/itkOptWhiteTopHatImageFilter
+    BUG: Kernel was printed twice.
+    BUG: SafeBorder shouldn't be use by default, for full backward compatibility.
+
+Code/Review/itkPhilipsPAR
+    BUG: Discovered problem with reading diffusion gradient direction values and diffusions B-values in version 4.7 PAR files.  This fix solves the problem.
+
+Code/Review/itkPriorityQueueContainer
+    BUG: location to be used by GetElementAtLocation must be positive
+    BUG: Fix bug in PriorityQueueContainer and change resize( this-&gt;Size() - 1 ) by pop_back. ENH: Modify the test to  be sure min and max priority queue are tested and well sorted
+    STYLE: Added copyright.
+    COMP: Change the name of Delete method in PriorityQueueContainer to DeleteElement as suggested by Bill
+
+Code/Review/Attic/itkProbe
+    COMP: various style issues.
+
+Code/Review/Attic/itkProbe
+
+Code/Review/Attic/itkProbesCollectorBase
+
+Code/Review/Attic/itkProbesCollectorBase
+
+Code/Review/itkQuadEdge
+    STYLE: Removing redundant semicolons, fixing indentations.
+
+Code/Review/itkQuadEdgeMesh
+    STYLE: Removing unnecessary semicolons placed at the end of "}" in some methods.
+
+Code/Review/itkQuadEdgeMeshBorderTransform
+    COMP: by accident removed semicolon at the end of the enum declaration.
+    ENH: moving in IJ paper number 202. Parameterization framework for 2-manifold meshes.
+
+Code/Review/itkQuadEdgeMeshBorderTransform
+    COMP: TransformType was not initialized in constructor.
+    COMP: non-portable transcendental and trig functions. Use vcl_ functions for portability.
+    ENH: moving in IJ paper number 202. Parameterization framework for 2-manifold meshes.
+
+Code/Review/itkQuadEdgeMeshCleanFilter
+    STYLE: Fixing indentations, and replacing for loops of iterators with while loops.
+    COMP: static const must use itkStaticConstMacro. COMP: VS6 quirk regarding typename. Use ITK_TYPENAME instead. COMP: VS6 quirk, pointer initialization to zero must use PtrType *ptr = 0 rather than PtrType *ptr(0).
+
+Code/Review/itkQuadEdgeMeshDecimationCriteria
+    STYLE: Fixing many indentations, copyright header and constructor style.
+    COMP: static const must use itkStaticConstMacro. COMP: VS6 quirk regarding typename. Use ITK_TYPENAME instead. COMP: VS6 quirk, pointer initialization to zero must use PtrType *ptr = 0 rather than PtrType *ptr(0).
+    ENH: add Decimation framework; BUG: handle unused input paraqmeter nicely.
+
+Code/Review/itkQuadEdgeMeshDecimationFilter
+    STYLE: Fixing many indentation issues.
+
+Code/Review/itkQuadEdgeMeshDecimationQuadricElementHelper
+    STYLE: Fixing many indentations.
+    COMP: fix typedef error
+    ENH: add Decimation framework; BUG: handle unused input paraqmeter nicely.
+
+Code/Review/itkQuadEdgeMeshDelaunayConformingFilter
+    BUG: delete remaining elements in destructor
+    COMP: VS6 issues. Cannot use FooPtr *ptr(0). Nust use FooPtr *ptr = 0. std::sqrt and std::acos not available. Must use vcl_sqrt and vcl_acos.
+
+Code/Review/itkQuadEdgeMeshDelaunayConformingFilter
+    STYLE: KWStyle compliant
+    BUG: Was using the wrong container for edge cells
+    STYLE: Fixing many many indentations.
+    COMP: VS6 issues. Cannot use FooPtr *ptr(0). Nust use FooPtr *ptr = 0. std::sqrt and std::acos not available. Must use vcl_sqrt and vcl_acos.
+
+Code/Review/itkQuadEdgeMeshDiscreteCurvatureEstimator
+    STYLE: Fixing many indentations.
+
+Code/Review/itkQuadEdgeMeshDiscreteCurvatureTensorEstimator
+    STYLE: Fixing many indentations.
+
+Code/Review/itkQuadEdgeMeshDiscreteGaussianCurvatureEstimator
+    STYLE: Fixing indentations. Removing call to Superclass in constructor.
+    ENH: transfered surface mesh discrete curvature estimators to Review. IJ paper #302.
+
+Code/Review/itkQuadEdgeMeshDiscreteMaxCurvatureEstimator
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshDiscreteMeanCurvatureEstimator
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshDiscreteMinCurvatureEstimator
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshDiscretePrincipalCurvaturesEstimator
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshEdgeMergeDecimationFilter
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshEdgeMergeDecimationFilter
+    BUG: memory leak... memory deallocated in the destructor
+    STYLE: Fixing indentations, and fixing "if"s with single line, missing curly brackets.
+    BUG: unused assigned value, according to bcc.
+    ENH: add Decimation framework; BUG: handle unused input paraqmeter nicely.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorFlipEdgeFunction
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorJoinVertexFunction
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorJoinVertexFunction
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorSplitVertexFunction
+    COMP: no need for itk:: when inside itk namespace.
+
+Code/Review/itkQuadEdgeMeshExtendedTraits
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshLineCell
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshMacro
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshNormalFilter
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshNormalFilter
+    STYLE: Fixing indentations.
+    BUG: Fix normal computation in the case of mesh with boundaries
+
+Code/Review/itkQuadEdgeMeshParam
+    STYLE: many many style fixes.
+    COMP: no need for itk:: when inside itk namespace.
+
+Code/Review/itkQuadEdgeMeshParam
+    STYLE: many many style fixes.
+    ENH: moving in IJ paper number 202. Parameterization framework for 2-manifold meshes.
+
+Code/Review/itkQuadEdgeMeshParamMatrixCoefficients
+    ENH: add Decimation framework; BUG: handle unused input paraqmeter nicely.
+
+Code/Review/itkQuadEdgeMeshPolygonCell
+    STYLE: Fixing comment terminator.
+
+Code/Review/itkQuadEdgeMeshQuadricDecimation
+    STYLE: Fixing indentations.
+    COMP: static const must use itkStaticConstMacro. COMP: VS6 quirk regarding typename. Use ITK_TYPENAME instead. COMP: VS6 quirk, pointer initialization to zero must use PtrType *ptr = 0 rather than PtrType *ptr(0).
+
+Code/Review/itkQuadEdgeMeshScalarDataVTKPolyDataWriter
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshSquaredEdgeLengthDecimation
+    STYLE: Fixing indentations.
+
+Code/Review/itkQuadEdgeMeshSquaredEdgeLengthDecimation
+    STYLE: Fixing copyright header
+
+Code/Review/itkQuadEdgeMeshToQuadEdgeMeshFilter
+    COMP: Fix warning with variables which were assigned to a value but was never used
+
+Code/Review/itkRankHistogram
+    STYLE: Fixing indentations.
+    COMP: unused parameter warnings.
+
+Code/Review/itkRankImageFilter
+    COMP: Try to fix the invalid template parameter with borland compiler.
+555
+
+Code/Review/itkRankImageFilter
+555
+
+Code/Review/itkRealAndImaginaryToComplexImageFilter
+    BUG: Missing runtime type information.
+
+Code/Review/itkSharedMorphologyUtilities
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+    COMP: Replacing image smart pointers with image raw pointers in API of helper templated methods.
+
+Code/Review/itkSharedMorphologyUtilities
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+    COMP: no need for itk:: when inside itk namespace.
+1926/555
+
+Code/Review/itkSliceBySliceImageFilter
+darcsweb.cgi?r=sliceBySlice;a=filediff;h=20071001164038-2fc9d-b62c4036e5532588194f3ac7b93d2bf59144e123.gz;f=itkSliceBySliceImageFilter.txx , but hasn't been submited to insight journal.
+
+Code/Review/Attic/itkSmapsFileParser
+    STYLE: Fixing Style Issues.
+
+Code/Review/Attic/itkSmapsFileParser
+    STYLE: Fixing documentation comments.
+
+Code/Review/Attic/itkSmapsFileParser
+    STYLE: Fixing formatting of comments.
+
+Code/Review/itkSubtractConstantFromImageFilter
+    COMP: various style issues.
+
+Code/Review/Attic/itkTimeProbe
+    STYLE: Fixing formatting.
+
+Code/Review/Attic/itkTimeProbe
+    STYLE: Fixing Style Issues.
+
+Code/Review/Attic/itkTimeProbesCollectorBase
+    STYLE: Fixing Style Issues.
+
+Code/Review/itkTransformToDeformationFieldSource
+    ENH: Ease the specification of the output information
+
+Code/Review/itkTransformToDeformationFieldSource
+    ENH: Ease the specification of the output information
+
+Code/Review/itkTriangleHelper
+    STYLE: Fixing Style Issues.
+    BUG: change acos to vcl_acos and ensure that the arguments is in [-1,1]
+    BUG: normalize method of one vector does not check if the norm is null or not.
+
+Code/Review/itkVTKPolyDataWriter
+
+Code/Review/itkVTKPolyDataWriter
+    ENH: Removing unnecessary lines that were changing the state of the input mesh.
+    COMP: removed std::cout's.
+
+Code/Review/itkVanHerkGilWermanDilateImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+1926/555
+
+Code/Review/itkVanHerkGilWermanErodeDilateImageFilter
+    COMP: Need to use itkGetStaticConstMacro for Borland compiler.
+
+Code/Review/itkVanHerkGilWermanErodeDilateImageFilter
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+    COMP: Adding preemptive typedef to help Visual Studio 6.0 manage a templated function.
+1926/555
+
+Code/Review/itkVanHerkGilWermanErodeImageFilter
+    COMP: no need for itk:: when inside itk namespace.
+1926/555
+
+Code/Review/itkVanHerkGilWermanUtilities
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+1926/555
+
+Code/Review/itkVanHerkGilWermanUtilities
+    STYLE: changed method names to start with upper case. COMP: addessed Borland warnings about asserts.
+1926/555
+
+Code/Review/itkVectorLinearInterpolateNearestNeighborExtrapolateImageFunction
+    COMP: various style issues.
+
+Code/Review/itkVectorLinearInterpolateNearestNeighborExtrapolateImageFunction
+    COMP: various style issues.
+
+Code/Review/itkVoxBoCUBImageIO
+    STYLE: Fixing alignment of comments.
+
+Code/Review/itkWarpHarmonicEnergyCalculator
+    COMP: no need for itk:: when inside itk namespace.
+
+Code/Review/Attic/itkWarpJacobianDeterminantFilter
+    ENH: remove unused class (duplicate of DisplacementFieldJacobianDeterminantFilter)
+
+Code/Review/Attic/itkWarpJacobianDeterminantFilter
+    ENH: remove unused class (duplicate of DisplacementFieldJacobianDeterminantFilter)
+
+Code/SpatialObject/itkImageMaskSpatialObject
+
+Code/SpatialObject/itkImageSpatialObject
+    ENH: support for ITK_IMAGE_BEHAVES_AS_ORIENTED_IMAGE.
+
+Examples/Data/KmeansTest_T1KmeansPrelimSegmentation.nii.gz
+    BUG:  Created a test that highlights a new bug introduced on 20080427 in itkStatisticsAlgorithm class.  More information can be found in bug id 0007481
+
+Examples/Data/KmeansTest_T1RawSkullStrip.nii.gz
+    BUG:  Created a test that highlights a new bug introduced on 20080427 in itkStatisticsAlgorithm class.  More information can be found in bug id 0007481
+
+Examples/Data/KmeansTest_T1UCharRaw.nii.gz
+    BUG:  Created a test that highlights a new bug introduced on 20080427 in itkStatisticsAlgorithm class.  More information can be found in bug id 0007481
+
+Examples/IO/DicomImageReadPrintTags
+    ENH: Adding hook so that if installed GDCM is a GDCM 2.x version, then properly use new API.
+
+Examples/IO/DicomImageReadWrite
+    ENH: Adding hook so that if installed GDCM is a GDCM 2.x version, then properly use new API.
+
+Examples/Registration/ImageRegistration12
+    STYLE: various.
+
+Examples/Registration/ImageRegistrationHistogramPlotter
+    BUG: Not checking for the full number of required parameters.
+
+Examples/Segmentation/CMakeLists.txt
+
+Examples/Segmentation/ConfidenceConnected3D
+
+Examples/Segmentation/WatershedSegmentation2
+
+Testing/Code/Algorithms/CMakeLists.txt
+    COMP: Since the test itkScalarImageKmeansImageFilter3DTest is timing out on all platforms, just report it on one machine.
+    BUG:  Created a test that highlights a new bug introduced on 20080427 in itkStatisticsAlgorithm class.  More information can be found in bug id 0007481
+
+Testing/Code/Algorithms/itkAlgorithmsTests4
+    BUG:  Created a test that highlights a new bug introduced on 20080427 in itkStatisticsAlgorithm class.  More information can be found in bug id 0007481
+
+Testing/Code/Algorithms/itkGeodesicActiveContourLevelSetImageFilterTest
+
+Testing/Code/Algorithms/itkGeodesicActiveContourShapePriorLevelSetImageFilterTest_2
+    COMP: full test caused Borland compiler crash. Removed similarity test on Borland platform.
+
+Testing/Code/Algorithms/itkImageMomentsTest
+    COMP: Removing the test of the removed feature: SetRegionOfInterest().
+    BUG: Fixing the lack of testing for new feature added to the ImageMomentsCalculator.
+
+Testing/Code/Algorithms/itkScalarImageKmeansImageFilter3DTest
+    COMP: warnings and indentation.
+    BUG:  Created a test that highlights a new bug introduced on 20080427 in itkStatisticsAlgorithm class.  More information can be found in bug id 0007481
+
+Testing/Code/BasicFilters/CMakeLists.txt
+    ENH:  New test for ImageToVectorImageFilter.
+
+Testing/Code/BasicFilters/itkBasicFiltersTests5
+    ENH:  New test for ImageToVectorImageFilter.
+
+Testing/Code/BasicFilters/itkConstantPadImageTest
+
+Testing/Code/BasicFilters/itkCropImageFilterTest
+
+Testing/Code/BasicFilters/itkImageToVectorImageFilterTest
+    ENH:  New test for ImageToVectorImageFilter.
+
+Testing/Code/BasicFilters/itkSignedMaurerDistanceMapImageFilterTest
+
+Testing/Code/Common/CMakeLists.txt
+
+Testing/Code/Common/itkCommonTests2
+
+Testing/Code/Common/itkImageAdaptorTest
+    BUG: directions were not initialized.
+
+Testing/Code/Common/itkImageRegionTest
+    ENH: Expanded test to include&#160;::Slice(dim) and its exception.
+
+Testing/Code/Common/itkOrientedImageProfileTest1
+    COMP: unused variable warning.
+
+Testing/Code/Common/itkOrientedImageProfileTest2
+    COMP: unused variable warning.
+
+Testing/Code/Common/itkOrientedImageProfileTest3
+    COMP: unused variable warning.
+
+Testing/Code/Common/itkVectorImageTest
+    BUG: Wrong commit when generalizing the VectorImageTest from 3D images to ND images. Fix that.
+
+Testing/Code/IO/BigEndian_hdr
+    STYLE: Fixing style errors posted by KWStyle.
+
+Testing/Code/IO/BigEndian_img
+    STYLE: Fixing style errors posted by KWStyle.
+
+Testing/Code/IO/ImageCompare
+    STYLE: Fixing style errors posted by KWStyle.
+
+Testing/Code/IO/ImageCompareCommand
+    STYLE: Fixing style errors posted by KWStyle.
+
+Testing/Code/IO/ImageCopy
+    STYLE: Fixing style errors posted by KWStyle.
+
+Testing/Code/IO/LittleEndian_hdr
+    STYLE: Fixing style errors posted by KWStyle.
+
+Testing/Code/IO/LittleEndian_img
+    STYLE: Fixing style errors posted by KWStyle.
+
+Testing/Code/IO/itkAnalyzeImageIOTest
+    STYLE: Fixing style errors posted by KWStyle.
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkBioRadImageIOTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkDICOMImageIO2Test
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkDicomImageIOTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkGDCMImageIOTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkGDCMImageIOTest2
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkGDCMSeriesReadImageWrite
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkGiplImageIOTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkJPEGImageIOTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkLSMImageIOTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNiftiImageIOTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdComplexImageReadTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdComplexImageReadWriteTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdCovariantVectorImageReadTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdCovariantVectorImageReadWriteTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdDiffusionTensor3DImageReadTensorDoubleWriteTensorDoubleTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdDiffusionTensor3DImageReadTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdDiffusionTensor3DImageReadWriteTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdImageReadWriteTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdRGBAImageReadWriteTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdRGBImageReadWriteTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdVectorImageReadTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkNrrdVectorImageReadWriteTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkReadWriteSpatialObjectTest
+    BUG: spacing[0] = 0.0.
+
+Testing/Code/IO/itkStimulateImageIOTest2
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/IO/itkTIFFImageIOTest
+    ENH: Changed to preferred method for print exceptions.
+
+Testing/Code/Review/CMakeLists.txt
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+    ENH: moved in surface normal computation filter from IJ submission #303.
+    ENH: transfered surface mesh discrete curvature estimators to Review. IJ paper #302.
+    BUG: fix unused variables argc and argv
+    ENH: add Decimation framework; BUG: handle unused input paraqmeter nicely.
+    ENH: Tests using map algorithms.
+    ENH: Add a test for the four algorithms of grayscale dilate and erode filters.
+    COMP: Breakup tests into two programs to avoid Borland linker problems. Moved QuadEdge mesh tests into a second test driver.
+    COMP: Use itkOptGrayscaleMorphologicalClosingImageFilterTest only when consolidated morphology is ON.
+555
+    ENH: Also test the map algorithm in the rank filter.
+555
+555
+
+Testing/Code/Review/itkAddConstantToImageFilterTest
+    COMP: various style issues.
+
+Testing/Code/Review/itkBSplineScatteredDataPointSetToImageFilterTest
+    STYLE: Fixing formatting.
+
+Testing/Code/Review/itkBSplineScatteredDataPointSetToImageFilterTest2
+    BUG: Fixed size value which was rounding incorrectly on some platforms causing exceptions to be thrown.  STYLE: Corrected some kwstyle violations.
+
+Testing/Code/Review/itkBSplineScatteredDataPointSetToImageFilterTest3
+    STYLE: removing unnecessary semicolon and extra spaces.
+
+Testing/Code/Review/itkBinaryMask3DQuadEdgeMeshSourceTest
+    STYLE: various style issues.
+
+Testing/Code/Review/itkBoxMeanImageFilterTest
+555
+
+Testing/Code/Review/itkBoxSigmaImageFilterTest
+555
+
+Testing/Code/Review/itkComposeRGBAImageFilterTest
+    STYLE: various style issues.
+
+Testing/Code/Review/itkConformalFlatteningMeshFilterTest
+    STYLE: various style issues.
+
+Testing/Code/Review/itkConformalFlatteningQuadEdgeMeshFilterTest
+    STYLE: various style issues.
+
+Testing/Code/Review/itkCoxDeBoorBSplineKernelFunctionTest
+    STYLE: various style issues.
+    ENH: adding two tests for the itkCoxDeBoorBSplineKernelFunction
+
+Testing/Code/Review/itkCoxDeBoorBSplineKernelFunctionTest2
+    STYLE: unnecessary semicolon.
+    ENH: adding two tests for the itkCoxDeBoorBSplineKernelFunction
+
+Testing/Code/Review/itkDiffeomorphicDemonsRegistrationFilterTest
+    STYLE: due to definition of a class, it expects an itk namespace... something to fix in KWStyle.
+
+Testing/Code/Review/itkDiffeomorphicDemonsRegistrationFilterTest2
+    COMP: various style issues.
+
+Testing/Code/Review/itkDiscreteGaussianDerivativeImageFunctionTest
+    STYLE: Fixing coding style violations.
+    BUG: Fix failing tests for discrete Gaussian image functions.
+
+Testing/Code/Review/itkDiscreteGradientMagnitudeGaussianImageFunctionTest
+    STYLE: Fixing coding style violations.
+    BUG: Fix failing tests for discrete Gaussian image functions.
+
+Testing/Code/Review/itkDiscreteHessianGaussianImageFunctionTest
+    STYLE: Fixing coding style violations.
+    BUG: Fix failing tests for discrete Gaussian image functions.
+    COMP: #include stdio.h required on Borland to find sprintf.
+
+Testing/Code/Review/itkDivideByConstantImageFilterTest
+    COMP: various style issues.
+
+Testing/Code/Review/itkExponentialDeformationFieldImageFilterTest
+    COMP: various style issues.
+
+Testing/Code/Review/itkFFTComplexToComplexImageFilterTest01
+    STYLE: Unpaired double quote inside a comment was confusion KWStyle.
+
+Testing/Code/Review/itkFFTComplexToComplexImageFilterTest02
+    STYLE: Unpaired double quote inside a comment was confusion KWStyle.
+
+Testing/Code/Review/itkFastApproximateRankImageFilterTest
+    COMP: Fix missing test file.
+
+Testing/Code/Review/itkFastSymmetricForcesDemonsRegistrationFilterTest
+    COMP: various style issues.
+
+Testing/Code/Review/itkGridForwardWarpImageFilterTest
+    COMP: various style issues.
+
+Testing/Code/Review/itkImageReadComplexWriteMagnitudeAndPhaseTest
+    STYLE: Fixing copyright header. Fixing indentations.
+
+Testing/Code/Review/itkImageReadMagnitudeAndPhaseWriteComplexTest
+    STYLE: Fixing typedefs alignment.
+
+Testing/Code/Review/itkImageReadRealAndImaginaryWriteComplexTest
+    STYLE: Fixing indentations.
+
+Testing/Code/Review/itkMapMaskedRankImageFilterTest
+    ENH: Also test the map algorithm in the masked rank filter - and tests are failing&#160;:-(.
+
+Testing/Code/Review/itkMapOptGrayscaleDilateImageFilterTest
+    ENH: Tests using map algorithms.
+
+Testing/Code/Review/itkMapOptGrayscaleErodeImageFilterTest
+    STYLE: various style issues.
+
+Testing/Code/Review/itkMapOptGrayscaleMorphologicalClosingImageFilterTest
+    ENH: Tests using map algorithms.
+
+Testing/Code/Review/itkMapOptGrayscaleMorphologicalOpeningImageFilterTest
+    ENH: Tests using map algorithms.
+
+Testing/Code/Review/itkMapRankImageFilterTest
+    STYLE: Fixing typedefs alignments.
+
+Testing/Code/Review/itkMaskedRankImageFilterTest
+    COMP: Returned default for TKernel. Borland compiler could not handle TInputImage::ImageDimension. New code uses &#160;::itk::GetImageDimension&lt;TInputImage&gt;::ImageDimension.
+    COMP: Added additional template parameter because the default for the kernel was removed due to Borland compiler issues.
+
+Testing/Code/Review/itkMultiplyByConstantImageFilterTest
+    COMP: various style issues.
+
+Testing/Code/Review/itkOptGrayscaleDilateImageFilterTest
+    ENH: Add a test for the four algorithms of grayscale dilate and erode filters.
+
+Testing/Code/Review/itkOptGrayscaleErodeImageFilterTest
+    STYLE: various style issues.
+
+Testing/Code/Review/itkOptGrayscaleMorphologicalClosingImageFilterTest
+    ENH: Test the SafeBorder option.
+
+Testing/Code/Review/itkOptGrayscaleMorphologicalOpeningImageFilterTest
+    ENH: Test the SafeBorder option.
+
+Testing/Code/Review/itkPriorityQueueTest
+    BUG: do not decrement iterator
+    BUG: Does not use reverse iterator anymore...
+    BUG: Fix bug in PriorityQueueContainer and change resize( this-&gt;Size() - 1 ) by pop_back. ENH: Modify the test to  be sure min and max priority queue are tested and well sorted
+    STYLE: Added copyright.
+    COMP: Bad signature for main.
+
+Testing/Code/Review/itkQuadEdgeMeshCleanFilterTest
+    BUG: wrong signature for main program.
+
+Testing/Code/Review/itkQuadEdgeMeshCountingCellsTest
+    STYLE: removing blank line at end of file.
+
+Testing/Code/Review/itkQuadEdgeMeshDelaunayConformingFilterTest
+    STYLE: Fixing formatting.
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorCreateCenterVertexTest
+    STYLE: Fixing copyright header and removing unused variables argv,argc.
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorDeleteCenterVertexTest
+    STYLE: various style issues.
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorFlipTest
+    STYLE: Fixing copyright header and removing unused variables argc,argv.
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorJoinFacetTest
+    STYLE: Added copyright.
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorJoinVertexTest
+    STYLE: Fixing copyright headers and removing unused variables argc,argv.
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorSplitEdgeTest
+    STYLE: Fixing copyright header. Removing unused variables argc,argv.
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorSplitFaceTest
+    STYLE: Fixing copyright header and removing unused variables argc,argv
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorSplitVertexTest
+    STYLE: Fixing copyright header and removing unused variables argc,argv
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorsTestHelper
+    STYLE: Added copyright.
+
+Testing/Code/Review/itkQuadEdgeMeshGaussianCurvatureTest
+    STYLE: Fixing copyright notice and formatting.
+
+Testing/Code/Review/itkQuadEdgeMeshLinearParameterizationTest
+    STYLE: fixing many indentations.
+    ENH: add Decimation framework; BUG: handle unused input paraqmeter nicely.
+    COMP: comment out clock
+
+Testing/Code/Review/itkQuadEdgeMeshMaxCurvatureTest
+    STYLE: Added copyright.
+
+Testing/Code/Review/itkQuadEdgeMeshMeanCurvatureTest
+    STYLE: Added copyright.
+
+Testing/Code/Review/itkQuadEdgeMeshMinCurvatureTest
+    STYLE: Added copyright.
+
+Testing/Code/Review/itkQuadEdgeMeshNormalFilterTest
+    COMP: fix warning with variables and assigned values that are never used
+    ENH: moved in surface normal computation filter from IJ submission #303.
+
+Testing/Code/Review/itkQuadEdgeMeshQuadricDecimationTest
+    STYLE: Fixing many indentations.
+    BUG: wrong signature for main program.
+
+Testing/Code/Review/itkQuadEdgeMeshSquaredEdgeLengthDecimationTest
+    STYLE: Fixing many indentations.
+    BUG: wrong signature for main program.
+
+Testing/Code/Review/itkRankImageFilterTest
+    COMP: Returned default for TKernel. Borland compiler could not handle TInputImage::ImageDimension. New code uses &#160;::itk::GetImageDimension&lt;TInputImage&gt;::ImageDimension.
+    COMP: Fix test build by committing forgotten changes in CMakeLists.txt.
+
+Testing/Code/Review/itkReviewHeaderTest
+555
+555
+555
+    ENH: add new files in header tests.
+555
+555
+
+Testing/Code/Review/itkReviewTests
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+    ENH: Tests using map algorithms.
+    ENH: Add a test for the four algorithms of GrayscaleMorphologicalOpeningImageFilter.
+    COMP: Use itkOptGrayscaleMorphologicalClosingImageFilterTest only when consolidated morphology is ON.
+555
+    ENH: Also test the map algorithm in the rank filter.
+555
+    ENH: added two tests for the itkCoxDeBoorBSplineKernelFunction
+
+Testing/Code/Review/itkReviewTests2
+    ENH: moved in surface normal computation filter from IJ submission #303.
+    ENH: transfered surface mesh discrete curvature estimators to Review. IJ paper #302.
+    ENH: moving in IJ paper number 202. Parameterization framework for 2-manifold meshes.
+
+Testing/Code/Review/itkSliceBySliceImageFilterTest
+    STYLE: Fixing typedef alignments.
+
+Testing/Code/Review/itkSubtractConstantFromImageFilterTest
+    COMP: various style issues.
+
+Testing/Code/Review/itkTransformToDeformationFieldSourceTest
+    COMP: various style issues.
+
+Testing/Code/Review/itkVectorLinearInterpolateNearestNeighborExtrapolateImageFunctionTest
+    COMP: various style issues.
+
+Testing/Code/Review/itkWarpHarmonicEnergyCalculatorTest
+    COMP: various style issues.
+
+Testing/Code/SpatialObject/CMakeLists.txt
+    COMP:  itkImageMaskSpatialObjectTest2 was not actually being run due to incorrect CMakeLists.txt
+    COMP: backout test until it compiles.
+
+Testing/Code/SpatialObject/itkImageMaskSpatialObjectTest2
+    ENH: When IsInside() method fails, also print out the mapped point.
+
+Testing/Code/SpatialObject/itkSpatialObjectTests4
+    COMP: backout test until it compiles.
+
+Testing/Data/Baseline/BasicFilters/ImageToVectorImageFilterTest.png
+    ENH:  test for new test ImageToVectorImageFilterTest.
+
+Testing/Data/Baseline/Review/itkBoxMeanImageFilter10.png
+555
+
+Testing/Data/Baseline/Review/itkBoxMeanImageFilter3.png
+555
+
+Testing/Data/Baseline/Review/itkBoxSigmaImageFilter10.png
+555
+
+Testing/Data/Baseline/Review/itkBoxSigmaImageFilter3.png
+555
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteGaussianDerivativeImageFunctionTest01.mhd
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/itkDiscreteGaussianDerivativeImageFunctionTest01.png
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteGaussianDerivativeImageFunctionTest01.raw
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteGaussianDerivativeImageFunctionTest02.mhd
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteGaussianDerivativeImageFunctionTest02.raw
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteGradientMagnitudeGaussianImageFunctionTest01.mhd
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/itkDiscreteGradientMagnitudeGaussianImageFunctionTest01.png
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteGradientMagnitudeGaussianImageFunctionTest01.raw
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteGradientMagnitudeGaussianImageFunctionTest02.mhd
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteGradientMagnitudeGaussianImageFunctionTest02.raw
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/itkDiscreteHessianGaussianImageFunctionTest01_0.mha
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteHessianGaussianImageFunctionTest01_0.mhd
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteHessianGaussianImageFunctionTest01_0.raw
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/itkDiscreteHessianGaussianImageFunctionTest01_1.mha
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteHessianGaussianImageFunctionTest01_1.mhd
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteHessianGaussianImageFunctionTest01_1.raw
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/itkDiscreteHessianGaussianImageFunctionTest01_2.mha
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteHessianGaussianImageFunctionTest02_0.mhd
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteHessianGaussianImageFunctionTest02_0.raw
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteHessianGaussianImageFunctionTest02_1.mhd
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteHessianGaussianImageFunctionTest02_1.raw
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteHessianGaussianImageFunctionTest02_2.mhd
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/Attic/itkDiscreteHessianGaussianImageFunctionTest02_2.raw
+    PERF: Replaced baseline images for discrete Gaussian image function tests with smaller ones.
+
+Testing/Data/Baseline/Review/itkFastApproximateRankImageFilter10.png
+555
+
+Testing/Data/Baseline/Review/itkFastApproximateRankImageFilter3.png
+555
+
+Testing/Data/Baseline/Review/itkMaskedRankImageFilter10.png
+    ENH: Add test for masked rank filter.
+
+Testing/Data/Baseline/Review/itkMaskedRankImageFilter3.png
+    ENH: Add test for masked rank filter.
+
+Testing/Data/Baseline/Review/itkRankImageFilter10.png
+555
+
+Testing/Data/Baseline/Review/itkRankImageFilter3.png
+555
+
+Testing/Data/Input/cthead1-mask.png
+    ENH: Add test for masked rank filter.
+
+Testing/Data/Input/mushroom.vtk
+    ENH: moving in IJ paper number 202. Parameterization framework for 2-manifold meshes.
+
+Utilities/CMakeLists.txt
+
+Utilities/FindLIBXML2.cmake
+
+Utilities/KWStyle/Attic/ITKFiles.txt
+    ENH: Splitting the StyleCheck into two tests:  StyleCheckCode and StyleCheckReview.
+
+Utilities/KWStyle/ITKFiles.txt.in
+    STYLE: some of Algorithms.
+
+    ENH: Adding a special subgroup for itkImage* classes, because there are so many.
+    STYLE: more of BasicFilters.
+    STYLE: more of BasicFilters.
+
+itkA*.
+
+    BUG: Replacing .h* with .h to avoid the Vim swap files to be included in style checks.
+
+Utilities/KWStyle/ITKOverwrite.txt
+    STYLE: BinaryImageThresholdFilter has indent problems inside comments. These comments have doxygen formatting codes.
+    STYLE: Algorithms
+    STYLE: disable typedef check for itkFixedArray.
+    STYLE: more BasicFilters.
+    ENH: Added BilateralImageFilter override for anonymous namespace.
+    ENH: Adding exclusion of namespace check for VNL-like file.
+
+Utilities/KWStyle/Attic/ITKReviewFiles.txt
+    ENH: Splitting the StyleCheck into two tests:  StyleCheckCode and StyleCheckReview.
+
+Utilities/KWStyle/ITKReviewFiles.txt.in
+    STYLE: restrict to itk classes.
+
+Utilities/KWStyle/KWStyle.cmake
+    BUG: The KWStyle for Code was using the file for Review.
+    BUG: clear FORMAT if none is specified.
+    BUG: KWStyle should be off by default.
+
+Utilities/MetaIO/.svnrev
+    ENH: subversion revision 540 commited to CVS
+
+Utilities/MetaIO/metaImage
+
+Utilities/itkpng/CMakeLists.txt
+    COMP: suppress cast-qual warning for GNU cc.
+
+Utilities/itkpng/pngwutil
+    COMP: warnings.
+
+Utilities/kwsys/CMakeLists.txt
+
+Utilities/kwsys/DynamicLoader
+    ENH: add initial support for HAIKU OS from bug# 7425
+
+Utilities/kwsys/DynamicLoader.hxx.in
+    ENH: a few more haiku fixes, stop the debugger from coming up for tests
+
+Utilities/kwsys/Glob
+    ENH: Improve FILE GLOB_RECURSE handling of symlinks with a new CMake policy. CMP0009 establishes NEW default behavior of not recursing through symlinks. OLD default behavior or explicit FOLLOW_SYMLINKS argument to FILE GLOB_RECURSE will still recurse through symlinks.
+
+Utilities/kwsys/Glob.hxx.in
+    ENH: Improve FILE GLOB_RECURSE handling of symlinks with a new CMake policy. CMP0009 establishes NEW default behavior of not recursing through symlinks. OLD default behavior or explicit FOLLOW_SYMLINKS argument to FILE GLOB_RECURSE will still recurse through symlinks.
+
+Utilities/kwsys/ProcessUNIX
+    ENH: a few more haiku fixes, stop the debugger from coming up for tests
+
+Utilities/kwsys/SharedForward.h.in
+
+Utilities/kwsys/SystemInformation
+    ENH: fix for VS6 and Cygwin
+
+Utilities/kwsys/SystemTools
+    ENH: fix for Vista
+    ENH: fix for Windows Vista
+    ENH: add initial support for HAIKU OS from bug# 7425
+
+Utilities/kwsys/kwsysDateStamp.cmake
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+
+Utilities/kwsys/testDynamicLoader
+    ENH: one more fix for HAIKU
+
+Utilities/kwsys/testProcess
+    ENH: a few more haiku fixes, stop the debugger from coming up for tests
+
+Utilities/kwsys/testSharedForward.c.in
+
+Utilities/nifti/CMakeLists.txt
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/Makefile
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/README
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/Updates.txt
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/Testing/nifti_regress_test/@test
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c01.versions
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c04.disp.anat0.info
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/Testing/nifti_regress_test/commands/c06.add.ext
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/fsliolib/CMakeLists.txt
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/nifticdf/CMakeLists.txt
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/niftilib/CMakeLists.txt
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/niftilib/nifti1_io
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/niftilib/nifti1_io
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/utils/nifti_tool
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/utils/nifti_tool
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/nifti/znzlib/CMakeLists.txt
+    ENH: Syncronized with main NIFTI tree.
+
+Utilities/vxl/core/vnl/algo/vnl_powell
+
+Wrapping/CSwig/VXLNumerics/wrap_vnl_matrix_fixed
+    COMP: Adding vnl_vector_fixed include to make possible building against latest release of VXL.
+
+Wrapping/WrapITK/CMakeLists.txt
+    ENH: Import RGBA stuff from ManagedITK.
+
+Wrapping/WrapITK/CreateCableSwigInputs.cmake
+    ENH: Import RGBA stuff from ManagedITK.
+
+Wrapping/WrapITK/CreateWrapperLibrary.cmake
+    ENH: Adding policy for CMake 2.6
+
+Wrapping/WrapITK/WrapBasicTypes.cmake
+    ENH: Import RGBA stuff from ManagedITK.
+
+Wrapping/WrapITK/WrapITKTypes.cmake
+    BUG: ManagedITK and WrapITK don't use the same var names - it breaks RGBAPixel wrapping
+    ENH: Import RGBA stuff from ManagedITK.
+
+Wrapping/WrapITK/Modules/Base/CMakeLists.txt
+    ENH: App itk::RGBAPixel in WrapITK.
+
+Wrapping/WrapITK/Modules/Base/wrap_itkBoxImageFilter.cmake
+
+Wrapping/WrapITK/Modules/Base/wrap_itkDenseFiniteDifferenceImageFilter.cmake
+    COMP: Drop some types to make wrapitk build with ITK_USE_STRICT_CONCEPT_CHECKING
+
+Wrapping/WrapITK/Modules/Base/wrap_itkFiniteDifferenceImageFilter.cmake
+    COMP: Drop some types to make wrapitk build with ITK_USE_STRICT_CONCEPT_CHECKING
+
+Wrapping/WrapITK/Modules/Base/wrap_itkImageSource.cmake
+    BUG: Missing base classes for filters using RGBAPixel
+
+Wrapping/WrapITK/Modules/Base/wrap_itkImageToImageFilterA.cmake
+    BUG: Missing base classes for filters using RGBAPixel
+
+Wrapping/WrapITK/Modules/Base/wrap_itkImageToImageFilterB.cmake
+    BUG: Missing base classes for filters using RGBAPixel
+
+Wrapping/WrapITK/Modules/Base/wrap_itkInPlaceImageFilterA.cmake
+    BUG: Missing InPlace filters for RGBAPixels
+
+Wrapping/WrapITK/Modules/Base/wrap_itkKernelImageFilter.cmake
+
+Wrapping/WrapITK/Modules/Base/wrap_itkRGBAPixel.cmake
+    ENH: App itk::RGBAPixel in WrapITK.
+
+Wrapping/WrapITK/Modules/Compose/wrap_itkComposeRGBAImageFilter.cmake
+    ENH: Import RGBA stuff from ManagedITK.
+
+Wrapping/WrapITK/Modules/Compose/wrap_itkRGBToLuminanceImageFilter.cmake
+    ENH: Import RGBA stuff from ManagedITK.
+
+Wrapping/WrapITK/Modules/Compose/wrap_itkVectorIndexSelectionCastImageFilter.cmake
+    ENH: Import RGBA stuff from ManagedITK.
+
+Wrapping/WrapITK/Modules/Denoising/wrap_itkAnisotropicDiffusionImageFilter.cmake
+    COMP: Drop some types to make wrapitk build with ITK_USE_STRICT_CONCEPT_CHECKING
+
+Wrapping/WrapITK/Modules/Denoising/wrap_itkCurvatureAnisotropicDiffusionImageFilter.cmake
+    COMP: Drop some types to make wrapitk build with ITK_USE_STRICT_CONCEPT_CHECKING
+
+Wrapping/WrapITK/Modules/EdgesAndContours/wrap_itkZeroCrossingBasedEdgeDetectionImageFilter.cmake
+    ENH: Wrap ZeroCrossingBasedEdgeDetectionImageFilter - it has been turned off a long time ago because of a bug which seem to have disapear now. The current code is based on Dan's Mueller code, probably from ManagedITK.
+
+Wrapping/WrapITK/Modules/FFT/wrap_itkFFTComplexToComplexImageFilter.cmake
+    ENH: Add FFTComplexToComplexImageFilter and FFTWComplexToComplexImageFilter to wrapitk.
+
+Wrapping/WrapITK/Modules/FFT/wrap_itkMagnitudeAndPhaseToComplexImageFilter.cmake
+    COMP: Fix unclosed IF statement.
+
+Wrapping/WrapITK/Modules/FFT/wrap_itkRealAndImaginaryToComplexImageFilter.cmake
+    COMP: Fix unclosed IF statement.
+
+Wrapping/WrapITK/Modules/FFTW/wrap_itkFFTWComplexToComplexImageFilter.cmake
+    ENH: Add FFTComplexToComplexImageFilter and FFTWComplexToComplexImageFilter to wrapitk.
+
+Wrapping/WrapITK/Modules/Filtering/CMakeLists.txt
+    ENH: Add HessianRecursiveGaussianImageFilter and Hessian3DToVesselnessMeasureImageFilter to WrapITK
+
+Wrapping/WrapITK/Modules/Filtering/wrap_itkHessian3DToVesselnessMeasureImageFilter.cmake
+    ENH: Add HessianRecursiveGaussianImageFilter and Hessian3DToVesselnessMeasureImageFilter to WrapITK
+
+Wrapping/WrapITK/Modules/Filtering/wrap_itkHessianRecursiveGaussianImageFilter.cmake
+    ENH: Add HessianRecursiveGaussianImageFilter and Hessian3DToVesselnessMeasureImageFilter to WrapITK
+
+Wrapping/WrapITK/Modules/LevelSet/wrap_itkFastMarchingUpwindGradientImageFilter.cmake
+    ENH: Add the FastMarchingUpwindGradientImageFilter class to WrapITK.
+
+Wrapping/WrapITK/Modules/Morphology/Attic/wrap_itkBoxImageFilter.cmake
+    ENH: add BoxImageFilter wrapper.
+
+Wrapping/WrapITK/Modules/Morphology/wrap_itkGrayscaleDilateImageFilter.cmake
+    COMP: Fix many warnings caused by the different class hierarchy with or without consolidated morphology.
+
+Wrapping/WrapITK/Modules/Morphology/wrap_itkGrayscaleFunctionErodeImageFilter.cmake
+    COMP: Fix many warnings caused by the different class hierarchy with or without consolidated morphology.
+
+Wrapping/WrapITK/Modules/Registration/wrap_itkDiffeomorphicDemonsRegistrationFilter.cmake
+    ENH: Add new filters based on type information given by Tom Vercauteren.
+
+Wrapping/WrapITK/Modules/Registration/wrap_itkDisplacementFieldJacobianDeterminantFilter.cmake
+    ENH: Add new filters based on type information given by Tom Vercauteren.
+
+Wrapping/WrapITK/Modules/Registration/wrap_itkExponentialDeformationFieldImageFilter.cmake
+    ENH: Add new filters based on type information given by Tom Vercauteren.
+
+Wrapping/WrapITK/Modules/Registration/wrap_itkFastSymmetricForcesDemonsRegistrationFilter.cmake
+    ENH: Add new filters based on type information given by Tom Vercauteren.
+
+Wrapping/WrapITK/Modules/Registration/wrap_itkGridForwardWarpImageFilter.cmake
+    ENH: Add new filters based on type information given by Tom Vercauteren.
+
+Wrapping/WrapITK/Modules/Registration/wrap_itkVectorResampleImageFilter.cmake
+    ENH: Add new filters based on type information given by Tom Vercauteren.
+
+Wrapping/WrapITK/Modules/Review/CMakeLists.txt
+    ENH: Add wrappers for some of the new filters in the Review directory.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkAddConstantToImageFilter.cmake
+    ENH: Wrappers for some new classes in the Review directory.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkBoxMeanImageFilter.cmake
+    ENH: Add wrappers for some of the new filters in the Review directory.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkBoxSigmaImageFilter.cmake
+    ENH: Add wrappers for some of the new filters in the Review directory.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkDivideByConstantImageFilter.cmake
+    ENH: Wrappers for some new classes in the Review directory.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkFastApproximateRankImageFilter.cmake
+    ENH: Wrappers for some new classes in the Review directory.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkMaskedRankImageFilter.cmake
+    ENH: Add wrappers for some of the new filters in the Review directory.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkMovingHistogramImageFilterBase.cmake
+    ENH: Add wrappers for some of the new filters in the Review directory.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkMultiplyByConstantImageFilter.cmake
+    ENH: Wrappers for some new classes in the Review directory.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkRankImageFilter.cmake
+    ENH: Add wrappers for some of the new filters in the Review directory.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkSubtractConstantFromImageFilter.cmake
+    ENH: Wrappers for some new classes in the Review directory.
+
+Wrapping/WrapITK/Python/Tests/filterCoverage.py
+    ENH: Exclude MatrixIndexSelectionImageFilter from the filter coverage test - the image test it requires is not available in WrapITK.
+    ENH: Exclude more filters from the coverage test
+
+Wrapping/WrapITK/Python/Tests/getNameOfClass.py
+    BUG: Fix getNameOfClass test.
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20250209004733
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.008 seconds
+Real time usage: 0.009 seconds
+Preprocessor visited node count: 6/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 125622/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3399-0!canonical and timestamp 20250209004733 and revision id 14009. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_3.10_Changed_From_Previous&amp;oldid=14009">https://public.kitware.com/Wiki/index.php?title=ITK_Release_3.10_Changed_From_Previous&amp;oldid=14009</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK_Release_3.10_Changed_From_Previous" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_3.10_Changed_From_Previous&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK_Release_3.10_Changed_From_Previous">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.10_Changed_From_Previous&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.10_Changed_From_Previous&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK_Release_3.10_Changed_From_Previous" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_3.10_Changed_From_Previous&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK+Release+3.10+Changed+From+Previous" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK_Release_3.10_Changed_From_Previous" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK_Release_3.10_Changed_From_Previous" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.10_Changed_From_Previous&amp;oldid=14009" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.10_Changed_From_Previous&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 7 November 2008, at 01:46.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.008","walltime":"0.009","ppvisitednodes":{"value":6,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":125622,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20250209004733","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":87});});</script>
+</body>
+</html>

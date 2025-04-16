@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 2.0 - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4c00884b52b41f8737871f23","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_2.0","wgTitle":"ITK/Release 2.0","wgCurRevisionId":45927,"wgRevisionId":45927,"wgArticleId":745,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_2.0","wgRelevantArticleId":745,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":
+"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_2_0 rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Release 2.0</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introducing_GDCM_as_DICOM_reader/writer"><span class="tocnumber">1</span> <span class="toctext">Introducing GDCM as DICOM reader/writer</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#New_itkVesselTubeSpatialObject_with_metaIO_file_format_to_support_vessel_representation"><span class="tocnumber">2</span> <span class="toctext">New itkVesselTubeSpatialObject with metaIO file format to support vessel representation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#New_itkDTITubeSpatialObject_with_metaIO_file_format_to_support_DTI_tracts_representation_and_reading/writing_of_DTI_data"><span class="tocnumber">3</span> <span class="toctext">New itkDTITubeSpatialObject with metaIO file format to support DTI tracts representation and reading/writing of DTI data</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#New_Classes_in_this_Release"><span class="tocnumber">3.1</span> <span class="toctext">New Classes in this Release</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#New_Tests_in_this_Release"><span class="tocnumber">3.2</span> <span class="toctext">New Tests in this Release</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#New_Examples_in_this_Release"><span class="tocnumber">3.3</span> <span class="toctext">New Examples in this Release</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#New_Utilities_in_this_Release"><span class="tocnumber">3.4</span> <span class="toctext">New Utilities in this Release</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span id="Introducing_GDCM_as_DICOM_reader.2Fwriter"></span><span class="mw-headline" id="Introducing_GDCM_as_DICOM_reader/writer">Introducing GDCM as DICOM reader/writer</span></h1>
+<p>Until version 2.0, ITK only natively supported reading DICOM image files.  New in v2.0 is GDCM, short for "Grass roots DICOM", a library dedicated library for reading, parsing <b>and writing</b> DICOM image data.  <a rel="nofollow" class="external text" href="http://www.creatis.insa-lyon.fr/Public/Gdcm/Main.html">GDCM</a> is developed by the <a rel="nofollow" class="external text" href="http://www.creatis.insa-lyon.fr/">Creatis group</a> at INSA Lyon, France.
+</p><p>GDCM supports Part 5 of the DICOM standard, relating to image files (and not the rest of the DICOM spec, such as networking, etc).  The supported formats are:
+</p>
+<ul><li>ACR-NEMA version 1 and 2</li>
+<li>Dicom version 3.0 (including various encodings of jpeg, RLE)</li></ul>
+<dl><dt>Class Reference</dt>
+<dd><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1GDCMImageIO.html">GDCMImageIO</a>, <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1GDCMSeriesFileNames.html">GDCMSeriesFileNames</a></dd>
+<dt>Examples</dt>
+<dd>(None)</dd></dl>
+<h1><span class="mw-headline" id="New_itkVesselTubeSpatialObject_with_metaIO_file_format_to_support_vessel_representation">New itkVesselTubeSpatialObject with metaIO file format to support vessel representation</span></h1>
+<h1><span id="New_itkDTITubeSpatialObject_with_metaIO_file_format_to_support_DTI_tracts_representation_and_reading.2Fwriting_of_DTI_data"></span><span class="mw-headline" id="New_itkDTITubeSpatialObject_with_metaIO_file_format_to_support_DTI_tracts_representation_and_reading/writing_of_DTI_data">New itkDTITubeSpatialObject with metaIO file format to support DTI tracts representation and reading/writing of DTI data</span></h1>
+<p>This release covers the period August 10, 2004 through February 4, 2005
+</p>
+<h2><span class="mw-headline" id="New_Classes_in_this_Release">New Classes in this Release</span></h2>
+<pre>Code/Algorithms/itkBinaryPruningImageFilter
+Code/Algorithms/itkBinaryThinningImageFilter
+Code/Algorithms/itkBioCell
+Code/Algorithms/itkBioCellBase
+Code/Algorithms/itkBioCellularAggregate
+Code/Algorithms/itkBioCellularAggregateBase
+Code/Algorithms/itkBioGenome
+Code/Algorithms/itkEuclideanDistancePointMetr
+Code/Algorithms/itkEuclideanDistancePointMetric
+Code/Algorithms/itkKappaStatisticImageToImageMetr
+Code/Algorithms/itkKappaStatisticImageToImageMetric
+Code/Algorithms/itkOtsuMultipleThresholdsImageFilter
+Code/Algorithms/itkScalarImageKmeansImageFilter
+Code/Algorithms/itkSimplexMeshVolumeCalculator
+
+Code/BasicFilters/itkComplexToImaginaryImageFilter
+Code/BasicFilters/itkComplexToRealImageFilter
+Code/BasicFilters/itkConstrainedValueAdditionImageFilter
+Code/BasicFilters/itkConstrainedValueDifferenceImageFilter
+Code/BasicFilters/itkContourDirectedMeanDistanceImageFilter
+Code/BasicFilters/itkContourMeanDistanceImageFilter
+Code/BasicFilters/itkDeformationFieldJacobianDeterminantFilter
+Code/BasicFilters/itkGrayscaleMorphologicalClosingImageFilter
+Code/BasicFilters/itkGrayscaleMorphologicalOpeningImageFilter
+Code/BasicFilters/itkJoinSeriesImageFilter
+Code/BasicFilters/itkMaskNegatedImageFilter
+Code/BasicFilters/itkSignedDanielssonDistanceMapImageFilter
+Code/BasicFilters/itkSimpleContourExtractorImageFilter
+Code/BasicFilters/itkVotingBinaryHoleFillingImageFilter
+Code/BasicFilters/itkVotingBinaryImageFilter
+Code/BasicFilters/itkVotingBinaryIterativeHoleFillingImageFilter
+Code/BasicFilters/itkWarpMeshFilter
+
+Code/Common/itkComplexToImaginaryImageAdaptor
+Code/Common/itkComplexToRealImageAdaptor
+Code/Common/itkPhasedArray3DSpecialCoordinatesImage
+Code/Common/itkSimpleFilterWatcher
+Code/Common/itkSpecialCoordinatesImage
+Code/Common/itkVectorNearestNeighborInterpolateImageFunction
+
+Code/IO/itkArchetypeSeriesFileNames
+
+Code/Numerics/itkPowellOptimizer
+
+Code/SpatialObject/itkArrowSpatialObject
+Code/SpatialObject/itkCylinderSpatialObject
+Code/SpatialObject/itkDTITubeSpatialObject
+Code/SpatialObject/itkDTITubeSpatialObjectPoint
+Code/SpatialObject/itkMetaArrowConverter
+Code/SpatialObject/itkMetaDTITubeConverter
+Code/SpatialObject/itkMetaVesselTubeConverter
+Code/SpatialObject/itkVesselTubeSpatialObject
+Code/SpatialObject/itkVesselTubeSpatialObjectPoint
+
+Code/Patented/CMakeLists.txt
+Code/Patented/itkActiveShapeModelCalculator
+Code/Patented/itkActiveShapeModelGradientSearchMethod
+Code/Patented/itkSimpleFuzzyConnectednessImageFilterBase
+Code/Patented/itkSimpleFuzzyConnectednessRGBImageFilter
+Code/Patented/itkSimpleFuzzyConnectednessScalarImageFilter
+Code/Patented/itkVectorFuzzyConnectednessImageFilter
+</pre>
+<h2><span class="mw-headline" id="New_Tests_in_this_Release">New Tests in this Release</span></h2>
+<pre>Testing/Code/Common/itkCenteredEuler3DTransformTest
+Testing/Code/Common/itkPhasedArray3DSpecialCoordinatesImageTest
+Testing/Code/Common/itkSizeTest
+
+Testing/Code/BasicFilters/itkComplexToImaginaryFilterAndAdaptorTest
+Testing/Code/BasicFilters/itkComplexToRealFilterAndAdaptorTest
+Testing/Code/BasicFilters/itkConstrainedValueAdditionImageFilterTest
+Testing/Code/BasicFilters/itkConstrainedValueDifferenceImageFilterTest
+Testing/Code/BasicFilters/itkContourDirectedMeanDistanceImageFilterTest
+Testing/Code/BasicFilters/itkContourMeanDistanceImageFilterTest
+Testing/Code/BasicFilters/itkDeformationFieldJacobianDeterminantFilterTest
+Testing/Code/BasicFilters/itkGrayscaleMorphologicalClosingImageFilterTest
+Testing/Code/BasicFilters/itkGrayscaleMorphologicalOpeningImageFilterTest
+Testing/Code/BasicFilters/itkJoinSeriesImageFilterTest
+Testing/Code/BasicFilters/itkMaskNegatedImageFilterTest
+Testing/Code/BasicFilters/itkResamplePhasedArray3DSpecialCoordinatesImageTest
+Testing/Code/BasicFilters/itkSignedDanielssonDistanceMapImageFilterTest
+Testing/Code/BasicFilters/itkSimpleContourExtractorImageFilterTest
+Testing/Code/BasicFilters/itkVotingBinaryHoleFillingImageFilterTest
+Testing/Code/BasicFilters/itkVotingBinaryImageFilterTest
+Testing/Code/BasicFilters/itkVotingBinaryIterativeHoleFillingImageFilterTest
+Testing/Code/BasicFilters/itkWarpMeshFilterTest
+
+Testing/Code/IO/itkArchetypeSeriesFileNamesTest
+Testing/Code/IO/itkImageFileWriterTest
+
+Testing/Code/Algorithms/itkAlgorithmsPrintTest4
+Testing/Code/Algorithms/itkAlgorithmsPrintTests
+Testing/Code/Algorithms/itkAlgorithmsTests3
+Testing/Code/Algorithms/itkBinaryThinningImageFilterTest
+Testing/Code/Algorithms/itkBioCellTest
+Testing/Code/Algorithms/itkBioCellularAggregateTest
+Testing/Code/Algorithms/itkBioGenomeTest
+Testing/Code/Algorithms/itkKappaStatisticImageToImageMetricTest
+Testing/Code/Algorithms/itkMatchCardinalityImageToImageMetricTest
+Testing/Code/Algorithms/itkOtsuMultipleThresholdsImageFilterTest
+Testing/Code/Algorithms/itkScalarImageKmeansImageFilterTest
+Testing/Code/Algorithms/itkSimplexMeshVolumeCalculatorTest
+
+Testing/Code/Numerics/itkPowellOptimizerTest
+
+Testing/Code/SpatialObject/itkArrowSpatialObjectTest
+Testing/Code/SpatialObject/itkCylinderSpatialObjectTest
+Testing/Code/SpatialObject/itkSpatialObjectTests2
+
+Testing/Code/Patented/CMakeLists.txt
+Testing/Code/Patented/itkActiveShapeModelCalculatorTest
+Testing/Code/Patented/itkPatentedHeaderTest
+Testing/Code/Patented/itkPatentedPrintTest
+Testing/Code/Patented/itkPatentedTests
+Testing/Code/Patented/itkSimpleFuzzyConnectednessScalarImageFilterTest
+Testing/Code/Patented/itkVectorFuzzyConnectednessImageFilterTest
+</pre>
+<h2><span class="mw-headline" id="New_Examples_in_this_Release">New Examples in this Release</span></h2>
+<pre>Examples/DataRepresentation/Image/ImageExamples
+Examples/DataRepresentation/Mesh/MeshExamples
+
+Examples/Filtering/AntiAliasBinaryImageFilter
+Examples/Filtering/BinaryMedianImageFilter
+Examples/Filtering/FFTImageFilter
+Examples/Filtering/FilteringExamples3
+Examples/Filtering/FilteringExamples4
+Examples/Filtering/MorphologicalImageEnhancement
+Examples/Filtering/OtsuMultipleThresholdImageFilter
+Examples/Filtering/OtsuThresholdImageFilter
+Examples/Filtering/ResampleImageFilter7
+Examples/Filtering/ResampleImageFilter8
+Examples/Filtering/ResampleImageFilter9
+Examples/Filtering/VotingBinaryHoleFillingImageFilter
+Examples/Filtering/VotingBinaryIterativeHoleFillingImageFilter
+
+Examples/IO/DicomImageReadChangeHeaderWrite
+Examples/IO/DicomImageReadPrintTags
+Examples/IO/DicomImageReadWrite
+Examples/IO/DicomSeriesReadPrintTags
+Examples/IO/DicomSeriesReadSeriesWrite
+Examples/IO/DicomSliceRead.java
+Examples/IO/DicomSliceRead.py
+Examples/IO/DicomSliceRead.tcl
+
+Examples/Patented/CMakeLists.txt
+Examples/Patented/FuzzyConnectednessImageFilter
+Examples/Patented/HybridSegmentationFuzzyVoronoi
+Examples/Patented/IterativeClosestPoint1
+Examples/Patented/IterativeClosestPoint2
+Examples/Patented/IterativeClosestPoint3
+Examples/Patented/PatentedExamples
+
+Examples/Registration/DeformableRegistration7
+Examples/Registration/DeformableRegistration8
+Examples/Registration/DeformationFieldJacobian
+Examples/Registration/RegistrationExamples8
+
+Examples/Statistics/ImageHistogram4
+Examples/Statistics/ScalarImageKmeansClassifier
+Examples/Statistics/ScalarImageKmeansModelEstimator
+Examples/Statistics/ScalarImageMarkovRandomField1
+
+</pre>
+<h2><span class="mw-headline" id="New_Utilities_in_this_Release">New Utilities in this Release</span></h2>
+<pre>Utilities/gdcm/AUTHORS
+Utilities/gdcm/ChangeLog
+Utilities/gdcm/CMakeLists.txt
+Utilities/gdcm/DEVELOPPER
+Utilities/gdcm/Dicts/CMakeLists.txt
+Utilities/gdcm/Dicts/DicomDir.d
+Utilities/gdcm/Dicts/dicomTS.d
+Utilities/gdcm/Dicts/dicomV3.d
+Utilities/gdcm/Dicts/dicomVR.d
+Utilities/gdcm/Dicts/README
+Utilities/gdcm/gdcmConfigure.h.in
+Utilities/gdcm/gdcm.spec.in
+Utilities/gdcm/INSTALL
+Utilities/gdcm/PACKAGER
+Utilities/gdcm/README
+Utilities/gdcm/README.ITK.txt
+Utilities/gdcm/src/CMakeLists.txt
+Utilities/gdcm/src/gdcm
+Utilities/gdcm/src/gdcmBinEntry
+Utilities/gdcm/src/gdcmCommon
+Utilities/gdcm/src/gdcmDebug
+Utilities/gdcm/src/gdcmDefaultDicts.cxx.in
+Utilities/gdcm/src/gdcmDicomDir
+Utilities/gdcm/src/gdcmDicomDirElement
+Utilities/gdcm/src/gdcmDicomDirImage
+Utilities/gdcm/src/gdcmDicomDirMeta
+Utilities/gdcm/src/gdcmDicomDirObject
+Utilities/gdcm/src/gdcmDicomDirPatient
+Utilities/gdcm/src/gdcmDicomDirSerie
+Utilities/gdcm/src/gdcmDicomDirStudy
+Utilities/gdcm/src/gdcmDict
+Utilities/gdcm/src/gdcmDictEntry
+Utilities/gdcm/src/gdcmDictSet
+Utilities/gdcm/src/gdcmDirList
+Utilities/gdcm/src/gdcmDocEntry
+Utilities/gdcm/src/gdcmDocEntrySet
+Utilities/gdcm/src/gdcmDocument
+Utilities/gdcm/src/gdcmElementSet
+Utilities/gdcm/src/gdcmException
+Utilities/gdcm/src/gdcmFile
+Utilities/gdcm/src/gdcmGlobal
+Utilities/gdcm/src/gdcmJpeg
+Utilities/gdcm/src/gdcmJpeg12
+Utilities/gdcm/src/gdcmJpeg16
+Utilities/gdcm/src/gdcmJpeg2000
+Utilities/gdcm/src/gdcmJpeg8
+Utilities/gdcm/src/gdcmJPEGFragment
+Utilities/gdcm/src/gdcmJPEGFragmentsInfo
+Utilities/gdcm/src/gdcmRLEFrame
+Utilities/gdcm/src/gdcmRLEFramesInfo
+Utilities/gdcm/src/gdcmSeqEntry
+Utilities/gdcm/src/gdcmSQItem
+Utilities/gdcm/src/gdcmTS
+Utilities/gdcm/src/gdcmUtil
+Utilities/gdcm/src/gdcmValEntry
+Utilities/gdcm/src/gdcmVR
+Utilities/gdcm/src/jdatadst
+Utilities/gdcm/src/jdatas
+Utilities/itkjpeg/12/CMakeLists.txt
+Utilities/itkjpeg/16/CMakeLists.txt
+Utilities/itkjpeg/8/CMakeLists.txt
+Utilities/itkjpeg/change.log
+Utilities/itkjpeg/CMakeLists.txt
+Utilities/itkjpeg/COPYRIGHT.dcmtk
+Utilities/itkjpeg/filelist.d
+Utilities/itkjpeg/install.d
+Utilities/itkjpeg/jaricom
+Utilities/itkjpeg/jcapimin
+Utilities/itkjpeg/jcapistd
+Utilities/itkjpeg/jcari
+Utilities/itkjpeg/jccoefct
+Utilities/itkjpeg/jccolor
+Utilities/itkjpeg/jcdctmgr
+Utilities/itkjpeg/jcdiffct
+Utilities/itkjpeg/jchuff
+Utilities/itkjpeg/jcinit
+Utilities/itkjpeg/jclhuff
+Utilities/itkjpeg/jclossls
+Utilities/itkjpeg/jclossy
+Utilities/itkjpeg/jcmainct
+Utilities/itkjpeg/jcmarker
+Utilities/itkjpeg/jcmaster
+Utilities/itkjpeg/jcodec
+Utilities/itkjpeg/jcomapi
+Utilities/itkjpeg/jconfig.d
+Utilities/itkjpeg/jconfig.h.in
+Utilities/itkjpeg/jcparam
+Utilities/itkjpeg/jcphuff
+Utilities/itkjpeg/jcpred
+Utilities/itkjpeg/jcprepct
+Utilities/itkjpeg/jcsample
+Utilities/itkjpeg/jcscale
+Utilities/itkjpeg/jcshuff
+Utilities/itkjpeg/jctrans
+Utilities/itkjpeg/jdapimin
+Utilities/itkjpeg/jdapistd
+Utilities/itkjpeg/jdari
+Utilities/itkjpeg/jdatadst
+Utilities/itkjpeg/jdatasrc
+Utilities/itkjpeg/jdcoefct
+Utilities/itkjpeg/jdcolor
+Utilities/itkjpeg/jdct
+Utilities/itkjpeg/jddctmgr
+Utilities/itkjpeg/jddiffct
+Utilities/itkjpeg/jdhuff
+Utilities/itkjpeg/jdinput
+Utilities/itkjpeg/jdlhuff
+Utilities/itkjpeg/jdlossls
+Utilities/itkjpeg/jdlossy
+Utilities/itkjpeg/jdmainct
+Utilities/itkjpeg/jdmarker
+Utilities/itkjpeg/jdmaster
+Utilities/itkjpeg/jdmerge
+Utilities/itkjpeg/jdphuff
+Utilities/itkjpeg/jdpostct
+Utilities/itkjpeg/jdpred
+Utilities/itkjpeg/jdsample
+Utilities/itkjpeg/jdscale
+Utilities/itkjpeg/jdshuff
+Utilities/itkjpeg/jdtrans
+Utilities/itkjpeg/jerror
+Utilities/itkjpeg/jfdctflt
+Utilities/itkjpeg/jfdctfst
+Utilities/itkjpeg/jfdctint
+Utilities/itkjpeg/jidctflt
+Utilities/itkjpeg/jidctfst
+Utilities/itkjpeg/jidctint
+Utilities/itkjpeg/jidctred
+Utilities/itkjpeg/jinclude
+Utilities/itkjpeg/jlossls
+Utilities/itkjpeg/jlossy
+Utilities/itkjpeg/jmemmgr
+Utilities/itkjpeg/jmemnobs
+Utilities/itkjpeg/jmemsys
+Utilities/itkjpeg/jmorecfg.h.in
+Utilities/itkjpeg/jpegDllConfig.h.in
+Utilities/itkjpeg/jpegint
+Utilities/itkjpeg/jpeglib
+Utilities/itkjpeg/jquant1
+Utilities/itkjpeg/jquant2
+Utilities/itkjpeg/jutils
+Utilities/itkjpeg/jversion
+Utilities/itkjpeg/libjpeg.d
+Utilities/itkjpeg/mangle_jpeg12bits
+Utilities/itkjpeg/mangle_jpeg16bits
+Utilities/itkjpeg/mangle_jpeg8bits
+Utilities/itkjpeg/.NoDartCoverage
+Utilities/itkjpeg/README
+Utilities/itkjpeg/README.GDCM.txt
+Utilities/itkjpeg/README.ITK.txt
+Utilities/itkjpeg/structure.d
+Utilities/kwsys/CommandLineArguments
+Utilities/kwsys/CommandLineArguments.hxx.in
+Utilities/kwsys/testCommandLineArguments
+Utilities/MetaIO/metaArrow
+Utilities/MetaIO/metaDTITube
+Utilities/MetaIO/metaVesselTube
+Utilities/NrrdIO/itk_NrrdIO_mangle
+Utilities/NrrdIO/.NoDartCoverage
+</pre>
+<p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20221004085828
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.011 seconds
+Real time usage: 0.013 seconds
+Preprocessor visited node count: 42/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 11600/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.665      1 -total
+100.00%    3.665      1 Template:ITK/Template/Footer
+ 44.42%    1.628      1 Template:ITK/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:745-0!canonical and timestamp 20221004085828 and revision id 45927. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_2.0&amp;oldid=45927">https://public.kitware.com/Wiki/index.php?title=ITK/Release_2.0&amp;oldid=45927</a>"</div></div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_2.0" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_2.0&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_2.0">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_2.0&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_2.0&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_2.0" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_2.0&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+2.0" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_2.0" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_2.0" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_2.0&amp;oldid=45927" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_2.0&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 11 February 2012, at 21:13.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.011","walltime":"0.013","ppvisitednodes":{"value":42,"limit":1000000},"postexpandincludesize":{"value":222,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":11600,"limit":5000000},"timingprofile":["100.00%    3.665      1 -total","100.00%    3.665      1 Template:ITK/Template/Footer"," 44.42%    1.628      1 Template:ITK/Template/Categories"]},"cachereport":{"timestamp":"20221004085828","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":103});});</script>
+</body></html>

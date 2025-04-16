@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4.5 Changed From Previous - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"047fc96ceaec9137a874d593","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4.5_Changed_From_Previous","wgTitle":"ITK/Release 4.5 Changed From Previous","wgCurRevisionId":54956,"wgRevisionId":54956,"wgArticleId":11932,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4.5_Changed_From_Previous","wgRelevantArticleId":11932,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};
+RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_5_Changed_From_Previous rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Release 4.5 Changed From Previous</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>List of changes since v4.5rc03
+</p>
+<hr />
+<p>Bradley Lowekamp (4):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Fix rounding issue with HistogramPlotter test
+&#160;&#160;&#160;&#160;&#160;COMP: Remove unused method to manage warning
+&#160;&#160;&#160;&#160;&#160;COMP: Prevent compile-time numeric warnings in Float Exception test
+&#160;&#160;&#160;&#160;&#160;BUG: Add new baseline and relax tolerance for histogram plotter
+</pre>
+<p>Brian Helba (2):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Put ImageIOBase helper function in anonymous namespace
+&#160;&#160;&#160;&#160;&#160;BUG: Remove an invalid test case that will always fail
+</pre>
+<p>Constantine Zakkaroff (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;DOC: ITK Software Guide Reference Label Fix
+</pre>
+<p>Kent Williams (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Remove outdated conditionals/pragmas
+</pre>
+<p>Matthew McCormick (9):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Fix BSplineDeformableTransformTest for GCC4.8.2.
+&#160;&#160;&#160;&#160;&#160;COMP: Disable -Warray-bounds for GCC 4.7, 4.8.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix HDF5 add_custom_command TARGET does not exist warnings.
+&#160;&#160;&#160;&#160;&#160;COMP: ImageRegistrationHistogramPlotter HistogramWriter visibility.
+&#160;&#160;&#160;&#160;&#160;BUG: Do not clobber Git origin pushurl.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix signed/unsigned comparison in itkBinShrinkImageFilterTest1.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix BinShrinkImageFilter 32-bit failures with rounding.
+&#160;&#160;&#160;&#160;&#160;BUG: Make RealTimeClock on Windows report consistent time.
+&#160;&#160;&#160;&#160;&#160;ENH: Mark ImageRegistrationHistogramPlotterTest as RUNS_LONG.
+</pre>
+<p>Paolo Zaffino (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: wrap CenteredTransformInitializer 2D images
+</pre>
+<p>Xiaoxiao Liu (2):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: itkVTKTetrahedraMeshReader fails on a win64 build.
+&#160;&#160;&#160;&#160;&#160;BUG: SCIFIO auto image factory registration.
+</pre>
+<p>List of changes since v4.5rc02
+</p>
+<hr />
+<p>Bill Lorensen (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Restore/convert/repair ImageRegistrationHistogramPlotter
+</pre>
+<p>Bradley Lowekamp (5):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;DOC: Fixing BinShrink image caption
+&#160;&#160;&#160;&#160;&#160;BUG: Fix up-casting causing inf loop
+&#160;&#160;&#160;&#160;&#160;BUG: remove HDF5 configuration option propagated to the top
+&#160;&#160;&#160;&#160;&#160;BUG: initialize member variables in LabelVoting filter
+&#160;&#160;&#160;&#160;&#160;BUG: Add missing cmake file for MRCIO and wrapITK
+</pre>
+<p>Jean-Christophe Fillion-Robin (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Ensure FindDCMTK.cmake provided by ITK is used (build tree case)
+</pre>
+<p>Matthew McCormick (2):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Wrap additional dimensions for TileImageFilter.
+&#160;&#160;&#160;&#160;&#160;BUG: LeafTreeIterator does not produce correct output.
+</pre>
+<p>Xiaoxiao Liu (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Fix remote image IO module registration.
+</pre>
+<p>List of changes since v4.5rc01
+</p>
+<hr />
+<p>Bill Lorensen (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Dead code
+</pre>
+<p>Bradley Lowekamp (6):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Fix C++11 conversion warning.
+&#160;&#160;&#160;&#160;&#160;STYLE: Use double type in array initializer list for spacing
+&#160;&#160;&#160;&#160;&#160;COMP: No Vector pixel type for BinShrink
+&#160;&#160;&#160;&#160;&#160;BUG: Use standard baseline and compare for validation
+&#160;&#160;&#160;&#160;&#160;BUG: Remove initially available ITK_WRAP_JAVA cmake option
+&#160;&#160;&#160;&#160;&#160;COMP: Use SimpleNew macro to avoid Clone method
+</pre>
+<p>Brian Helba (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;DOC: Clarified NormalizedCorrelationImageToImageMetric value
+</pre>
+<p>Hans Johnson (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: SpacePrecision typedef's incorrect.
+</pre>
+<p>Julien Michel (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Using static const variable causes ld error when using dynamic libraries
+</pre>
+<p>KWSys Robot (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;KWSys 2013-11-21 (1010d0e3)
+</pre>
+<p>Matt Leotta (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Fix improper included header in vcl_memory_tr1.h
+</pre>
+<p>Matthew McCormick (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Update VXL update README location.
+</pre>
+<p>List of changes since v4.4.0
+</p>
+<hr />
+<p>Ali Ghayoor (5):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: transform reader/writer filters are templated on output precision type
+&#160;&#160;&#160;&#160;&#160;BUG: Fix memory leak error in itkHDF5TransformIO
+&#160;&#160;&#160;&#160;&#160;DOC: Migration guide is updated for multi precision of ITK
+&#160;&#160;&#160;&#160;&#160;BUG: TvirtualImage mismatch in registrationV4 and metric object
+&#160;&#160;&#160;&#160;&#160;STYLE: check dynamic cast validation in ITKv4 Registration
+</pre>
+<p>Andinet Enquobahrie (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: UseSeriesDetails variable not correctly set
+</pre>
+<p>Arnaud Gelas (24):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Converting itk::Point, Size, Index, Vector, Matrix to corresponding OpenCV data structure
+&#160;&#160;&#160;&#160;&#160;BUG: Check that region for thread is not empty
+&#160;&#160;&#160;&#160;&#160;COMP: use concept checking instead of runtime checking
+&#160;&#160;&#160;&#160;&#160;BUG: Fix failure in InteractivePause test
+&#160;&#160;&#160;&#160;&#160;ENH: updating level sets sparse layer visualization
+&#160;&#160;&#160;&#160;&#160;ENH: Upgrade doxygen config file
+&#160;&#160;&#160;&#160;&#160;BUG: fix KWStyle errors in itkVTKVisualize* files
+&#160;&#160;&#160;&#160;&#160;BUG: Fix visualization of 3D level-sets
+&#160;&#160;&#160;&#160;&#160;ENH: Add Concept checking for 2D Visualization
+&#160;&#160;&#160;&#160;&#160;ENH: Use partial template specialization for iso value vis
+&#160;&#160;&#160;&#160;&#160;BUG: Check that region for thread is not empty
+&#160;&#160;&#160;&#160;&#160;BUG: Fix failure in InteractivePause test
+&#160;&#160;&#160;&#160;&#160;BUG: fix include to the corresponding hxx
+&#160;&#160;&#160;&#160;&#160;COMP: fix compilation error with Set/Get LevelSetDataPointerVector
+&#160;&#160;&#160;&#160;&#160;ENH: Rename LevelSetDataPointerVector -&gt; LevelSetDomainRegionVector
+&#160;&#160;&#160;&#160;&#160;PERF: fix cppcheck issues in itk::ImageRegion
+&#160;&#160;&#160;&#160;&#160;STYLE: fix cppcheck style warning
+&#160;&#160;&#160;&#160;&#160;STYLE: fix cppcheck errors
+&#160;&#160;&#160;&#160;&#160;PERF: fix cppcheck perf warning
+&#160;&#160;&#160;&#160;&#160;PERF: cppcheck copy constructor
+&#160;&#160;&#160;&#160;&#160;PERF: fix cppcheck issues in itk::ImageRegion
+&#160;&#160;&#160;&#160;&#160;PERF: cppcheck performance issue
+&#160;&#160;&#160;&#160;&#160;COMP: fix cppcheck errors member not initialized in constructor
+&#160;&#160;&#160;&#160;&#160;STYLE: fix cppcheck style warning
+</pre>
+<p>Bill Lorensen (27):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Reduce test times for Debug builds
+&#160;&#160;&#160;&#160;&#160;COMP: Bad CMake warning
+&#160;&#160;&#160;&#160;&#160;COMP: Resource leaks
+&#160;&#160;&#160;&#160;&#160;COMP: Resource leaks
+&#160;&#160;&#160;&#160;&#160;COMP: Uninitialized scalar variable
+&#160;&#160;&#160;&#160;&#160;COMP: Unbounded source buffer
+&#160;&#160;&#160;&#160;&#160;COMP: Destination buffer too small
+&#160;&#160;&#160;&#160;&#160;COMP: Destination buffer too small
+&#160;&#160;&#160;&#160;&#160;COMP: Resource leak
+&#160;&#160;&#160;&#160;&#160;COMP: Resource leak
+&#160;&#160;&#160;&#160;&#160;COMP: Big parameter passed by value
+&#160;&#160;&#160;&#160;&#160;COMP: Big parameter passed by value
+&#160;&#160;&#160;&#160;&#160;COMP: Copy-paste error
+&#160;&#160;&#160;&#160;&#160;COMP: Copy-paste error
+&#160;&#160;&#160;&#160;&#160;COMP: Copy-paste error
+&#160;&#160;&#160;&#160;&#160;COMP: Copy-paste error
+&#160;&#160;&#160;&#160;&#160;COMP: Copy-paste error
+&#160;&#160;&#160;&#160;&#160;COMP: Structurally dead code and resource leaks
+&#160;&#160;&#160;&#160;&#160;COMP: Big parameter passed by value
+&#160;&#160;&#160;&#160;&#160;COMP: Explicit null dereferenced
+&#160;&#160;&#160;&#160;&#160;COMP: Logically dead code
+&#160;&#160;&#160;&#160;&#160;COMP: Logically dead code
+&#160;&#160;&#160;&#160;&#160;COMP: Logically dead code
+&#160;&#160;&#160;&#160;&#160;COMP: Logically dead code
+&#160;&#160;&#160;&#160;&#160;COMP: Format string vulnerability
+&#160;&#160;&#160;&#160;&#160;COMP: Copy-paste error
+&#160;&#160;&#160;&#160;&#160;COMP: Dead code
+</pre>
+<p>Brad King (5):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: ExternalData: Do not re-stage staged object files
+&#160;&#160;&#160;&#160;&#160;MetaIO: Removed the deprecated _CM24 CMake variables
+&#160;&#160;&#160;&#160;&#160;COMP: Cleanup CMP0022 warnings in GDCM module
+&#160;&#160;&#160;&#160;&#160;COMP: Cleanup CMP0022 warnings in GDCM module static build
+&#160;&#160;&#160;&#160;&#160;BUG: Do not convert to make-escaped path for internal APIs
+</pre>
+<p>Bradley Lowekamp (55):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Fix ambiguous specialization of GDCM Element
+&#160;&#160;&#160;&#160;&#160;ENH: Use Tiff version dependent field type enable LSM
+&#160;&#160;&#160;&#160;&#160;BUG: disable aligned attribute for GCC 4.1
+&#160;&#160;&#160;&#160;&#160;BUG: Prevent signed integer overflow in vnl urand_
+&#160;&#160;&#160;&#160;&#160;BUG: enable return value optimzation for VS debug mode
+&#160;&#160;&#160;&#160;&#160;BUG: increase the image tolerance for deformable test 5
+&#160;&#160;&#160;&#160;&#160;BUG: fix gradient recusive gaussian in VS debug
+&#160;&#160;&#160;&#160;&#160;BUG: in NthElementAdaptor pass by reference to modify argument
+&#160;&#160;&#160;&#160;&#160;BUG: disable aligned attribute for GCC 4.1
+&#160;&#160;&#160;&#160;&#160;BUG: Prevent signed integer overflow in vnl urand_
+&#160;&#160;&#160;&#160;&#160;BUG: enable return value optimzation for VS debug mode
+&#160;&#160;&#160;&#160;&#160;BUG: fix gradient recusive gaussian in VS debug
+&#160;&#160;&#160;&#160;&#160;BUG: in NthElementAdaptor pass by reference to modify argument
+&#160;&#160;&#160;&#160;&#160;ENH: Add option ENABLED_SHARED to itk_module for shared libraries
+&#160;&#160;&#160;&#160;&#160;ENH: Enabling shared IO modules on windows
+&#160;&#160;&#160;&#160;&#160;DOC: adding Examples directory to ITK Doxygen
+&#160;&#160;&#160;&#160;&#160;DOC: remove explicit doxygen example commands now automatically added
+&#160;&#160;&#160;&#160;&#160;BUG: add installation of Export headers
+&#160;&#160;&#160;&#160;&#160;BUG: Remove ENABLED_SHARED option for IOSpatialObjects module
+&#160;&#160;&#160;&#160;&#160;BUG: Fix linking of factory register method on static windows
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix some style errors reported in continuous test
+&#160;&#160;&#160;&#160;&#160;BUG: Remove Spurious testing file
+&#160;&#160;&#160;&#160;&#160;COMP: Use relative path for generate output header parameter
+&#160;&#160;&#160;&#160;&#160;BUG: Enable slice-by-slice streaming for ShrinkImageFilter
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix ShrinkImageStreamingTest style
+&#160;&#160;&#160;&#160;&#160;PERF: Flip filter use increment in scanline direction
+&#160;&#160;&#160;&#160;&#160;PERF: Additional FlipImageFilter performance by using input iterator
+&#160;&#160;&#160;&#160;&#160;PERF: Move test to IntegratedTest directory
+&#160;&#160;&#160;&#160;&#160;STYLE: fix typedef alignment
+&#160;&#160;&#160;&#160;&#160;ENH: Move validation to VerifyInputInformation
+&#160;&#160;&#160;&#160;&#160;ENH: Improve internal streaming for SliceBySliceImageFilter
+&#160;&#160;&#160;&#160;&#160;ENH: Enable a VectorImage to be used as displacement field
+&#160;&#160;&#160;&#160;&#160;BUG: Don't print null bias field
+&#160;&#160;&#160;&#160;&#160;ENH: Define print of null smart pointers
+&#160;&#160;&#160;&#160;&#160;BUG: Fix uninitialized m_Spacing in SignedMaurerDistance
+&#160;&#160;&#160;&#160;&#160;BUG: Fix uninitialized m_Spacing in SignedMaurerDistance
+&#160;&#160;&#160;&#160;&#160;BUG: Don't print null bias field
+&#160;&#160;&#160;&#160;&#160;BUG: Verify ConfidenceConnected Seeds
+&#160;&#160;&#160;&#160;&#160;BUG: Verify seeds in VectorConfidenceConnected
+&#160;&#160;&#160;&#160;&#160;ENH: Check and use C++11 typetraits first
+&#160;&#160;&#160;&#160;&#160;COMP: Use memcpy for raw memory copy
+&#160;&#160;&#160;&#160;&#160;BUG: Use string constructor which calculates str length
+&#160;&#160;&#160;&#160;&#160;BUG: fix out of bounds access of array
+&#160;&#160;&#160;&#160;&#160;ENH: Move private constant and method to private header
+&#160;&#160;&#160;&#160;&#160;ENH: Adding BinShrinkImageFilter.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix warnings and missing include
+&#160;&#160;&#160;&#160;&#160;BUG: Fix Valrgrind detected delete mismatch
+&#160;&#160;&#160;&#160;&#160;ENH: improve coverage for SetShrinkFactor methods
+&#160;&#160;&#160;&#160;&#160;STYLE: running uncrustify and manual fixups
+&#160;&#160;&#160;&#160;&#160;ENH: Moving MRCImageIO out of review
+&#160;&#160;&#160;&#160;&#160;COMP: Fix gcc_xml segfault due to structure alignment
+&#160;&#160;&#160;&#160;&#160;ENH: adding wrapping support for BinShrink
+&#160;&#160;&#160;&#160;&#160;BUG: Add missing export specifiers for MRC module
+&#160;&#160;&#160;&#160;&#160;ENH: Move MRC wrapping out of review
+&#160;&#160;&#160;&#160;&#160;COMP: VS12 missing header in review
+</pre>
+<p>Brian Helba (45):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;DOC: Fix instances of class documentation outside itk namespace
+&#160;&#160;&#160;&#160;&#160;PERF: Discourage DomainThreader from spawning superfluous threads
+&#160;&#160;&#160;&#160;&#160;DOC: Cleanup docs for ThreadedDomainPartitioner and subclasses
+&#160;&#160;&#160;&#160;&#160;ENH: Implement ThreadedImageRegionPartitioner using ImageRegionSplitter
+&#160;&#160;&#160;&#160;&#160;STYLE: Unify style of "operator delete[]"
+&#160;&#160;&#160;&#160;&#160;STYLE: Remove superfluous return statements at the end of void functions
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix miscellaneous KWStyle errors
+&#160;&#160;&#160;&#160;&#160;ENH: Remove superfluous IMMEDIATE option from CMake CONFIGURE_FILE
+&#160;&#160;&#160;&#160;&#160;STYLE: Replace Unicode in ITK source with ASCII homoglyphs
+&#160;&#160;&#160;&#160;&#160;ENH: Use MINC API to free memory allocated by MINC
+&#160;&#160;&#160;&#160;&#160;PERF: Allow delete of NULL pointers
+&#160;&#160;&#160;&#160;&#160;PERF: Refactor some deletion code
+&#160;&#160;&#160;&#160;&#160;ENH: Refactor KWStyle testing
+&#160;&#160;&#160;&#160;&#160;COMP: Make find_package usage compatible with &lt; CMake-2.8.8
+&#160;&#160;&#160;&#160;&#160;BUG: Prevent CMake cache variable from endlessly accumulating values
+&#160;&#160;&#160;&#160;&#160;ENH: Rename Utilities/KWStyle/ITK.kws.xml.in to ITK.kws.xml
+&#160;&#160;&#160;&#160;&#160;DOC: Update Migration guide schema URL
+&#160;&#160;&#160;&#160;&#160;ENH: Rename ALL_MODULES to DEFAULT_MODULES
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix class indentation
+&#160;&#160;&#160;&#160;&#160;BUG: Make KWStyleTest output in a uniform and concise format
+&#160;&#160;&#160;&#160;&#160;BUG: Update SmoothingRecursiveYvvGaussianFilter to fix CMake warning
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix some indents in FixedArray::ReverseIterator declaration
+&#160;&#160;&#160;&#160;&#160;DOC: Fix issues in Transform and TransformBaseTemplate
+&#160;&#160;&#160;&#160;&#160;BUG: Make ImageIOBase::SetDirection accept const reference parameter
+&#160;&#160;&#160;&#160;&#160;BUG: Fix uninitialized variables in itkOpenCVBasicTypeBridgeTest
+&#160;&#160;&#160;&#160;&#160;DOC: Prevent concept checking comments from being parsed by Doxygen
+&#160;&#160;&#160;&#160;&#160;BUG: Prevent DCMTK from trying to build unnecessary components
+&#160;&#160;&#160;&#160;&#160;DOC: Update documentation graph font to avoid warnings
+&#160;&#160;&#160;&#160;&#160;DOC: Move an included STL file out of the itk namespace
+&#160;&#160;&#160;&#160;&#160;COMP: Fix warning C4789 from VisualStudio 11
+&#160;&#160;&#160;&#160;&#160;ENH: Add explicit KWStyle testing for Examples directory
+&#160;&#160;&#160;&#160;&#160;STYLE: Replace indentation tabs with spaces
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix KWStyle issues in Examples: whitespace
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix KWStyle issues in Examples: typedef alignment
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix KWStyle issues in Examples: manual fixes
+&#160;&#160;&#160;&#160;&#160;BUG: Use KWStyle's GCC-style output for pre-commit style check
+&#160;&#160;&#160;&#160;&#160;STYLE: Remove trailing whitespace
+&#160;&#160;&#160;&#160;&#160;BUG: Make SCIFIO module non-default
+&#160;&#160;&#160;&#160;&#160;BUG: Fix memory leaks in MINCImageIO
+&#160;&#160;&#160;&#160;&#160;BUG: Fix ostream format modification warnings
+&#160;&#160;&#160;&#160;&#160;BUG: Fix uninitialized members of MINCImageIO
+&#160;&#160;&#160;&#160;&#160;DOC: Move Vector documentation from definition to declaration
+&#160;&#160;&#160;&#160;&#160;BUG: Resource leak
+&#160;&#160;&#160;&#160;&#160;ENH: Update CMake deprecated commands with new equivalents
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix initialization list in BSplineBaseTransform constructor
+</pre>
+<p>C Cagatay Bilgin (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;DOC: Modify ShapeLabelObject comments.
+</pre>
+<p>Christina Rossmanith (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: enable itkLabelGeometryImageFilter to be used in loops
+</pre>
+<p>Constantine Zakkaroff (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;DOC: Correct DICOM Tag List Formatting
+</pre>
+<p>Cory Quammen (2):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Enabled negative background values
+&#160;&#160;&#160;&#160;&#160;BUG: Fixed memory overusage in LandweberDeconvolutionImageFilter
+</pre>
+<p>Csaba Pinter (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: GDCM pixel spacing of ultrasound images.
+</pre>
+<p>Cyrille Faucheux (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Fix support for RLE-compressed &amp; upper-left BMP.
+</pre>
+<p>Daniel Maleike (3):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Assert unchanged pixels only for non-PALETTE_COLOR images
+&#160;&#160;&#160;&#160;&#160;BUG: Add test case for GDCMImageIO
+&#160;&#160;&#160;&#160;&#160;BUG: Assert unchanged pixels only for non-PALETTE_COLOR images
+</pre>
+<p>Dirk Padfield (17):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: LabelGeometry cropped images with non-unit spacing incorrectly
+&#160;&#160;&#160;&#160;&#160;BUG: ProgressAccumulator reports incorrectly for streamed filters
+&#160;&#160;&#160;&#160;&#160;BUG: LabelGeometry matrix difference tolerance
+&#160;&#160;&#160;&#160;&#160;ENH: Added progress reporting to Masked FFT NCC
+&#160;&#160;&#160;&#160;&#160;BUG: LabelGeometry improvements
+&#160;&#160;&#160;&#160;&#160;BUG: Corrected the MaskedFFTNCC origin
+&#160;&#160;&#160;&#160;&#160;BUG: Resolved Otsu/OtsuMultiple Discrepancy
+&#160;&#160;&#160;&#160;&#160;ENH: Deprecated SetProgress and removed Modified call
+&#160;&#160;&#160;&#160;&#160;ENH: Deprecated SetProgress and removed Modified call
+&#160;&#160;&#160;&#160;&#160;BUG: ConstPointer assigned to non-const raw pointer
+&#160;&#160;&#160;&#160;&#160;ENH: Otsu code replaced with OtsuMultiple call
+&#160;&#160;&#160;&#160;&#160;BUG: ConstPointer assigned to non-const raw pointer
+&#160;&#160;&#160;&#160;&#160;ENH: Added valley emphasis algorithm to OtsuMultipleThresholds
+&#160;&#160;&#160;&#160;&#160;BUG: ReachedTargetPoints not set for OneTarget
+&#160;&#160;&#160;&#160;&#160;ENH: Remove duplicate code in BinaryBall and BinaryCross
+&#160;&#160;&#160;&#160;&#160;ENH: Added radiusIsParametric &#160;mode to FlatStructuringElement
+&#160;&#160;&#160;&#160;&#160;ENH: Improved writing speed for TIFF images
+</pre>
+<p>Ethan Brodsky (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: fixedOrigin corrected in DeformableRegistration examples (ITK-3218)
+</pre>
+<p>Gordon Kindlmann (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: airOneLinify() infinite loop, synch w/ Teem for its 1.11.1 release
+</pre>
+<p>Hans Johnson (36):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Add Remote Module for r/w of MGH files
+&#160;&#160;&#160;&#160;&#160;ENH: Provide instructions for linking to issues
+&#160;&#160;&#160;&#160;&#160;ENH: Feature to allow human readable object names
+&#160;&#160;&#160;&#160;&#160;BUG: Preserve backwards compatibility with types
+&#160;&#160;&#160;&#160;&#160;PERF: Optimizer scale caching and avoid copy
+&#160;&#160;&#160;&#160;&#160;ENH: Support single precision registration
+&#160;&#160;&#160;&#160;&#160;STYLE: Avoid polluting the ITK namespace
+&#160;&#160;&#160;&#160;&#160;STYLE: Simplify H5::Exception handeling
+&#160;&#160;&#160;&#160;&#160;STYLE: Replace expected exceptions with macro
+&#160;&#160;&#160;&#160;&#160;BUG: ImageSeriesWriter + GDCMImageIO loses info
+&#160;&#160;&#160;&#160;&#160;BUG: ImageSeriesWriter + GDCMImageIO loses info
+&#160;&#160;&#160;&#160;&#160;STYLE: ITK_EXPORT had no use
+&#160;&#160;&#160;&#160;&#160;BUG: Missing ',' in array of strings
+&#160;&#160;&#160;&#160;&#160;BUG: 'temp' used in exception message after delete
+&#160;&#160;&#160;&#160;&#160;BUG: Code after exceptions is unreachable
+&#160;&#160;&#160;&#160;&#160;BUG: Printing size of deleted variable
+&#160;&#160;&#160;&#160;&#160;BUG: Function should have const signature
+&#160;&#160;&#160;&#160;&#160;COMP: Remove unused variable
+&#160;&#160;&#160;&#160;&#160;COMP: Simplify code, and remove compiler warning
+&#160;&#160;&#160;&#160;&#160;STYLE: Use "typename" for template parameters
+&#160;&#160;&#160;&#160;&#160;COMP: Unused Clone and CreateAnother warnings
+&#160;&#160;&#160;&#160;&#160;STYLE: Prefer initialization to assignement.
+&#160;&#160;&#160;&#160;&#160;COMP: Const char * ternary operators
+&#160;&#160;&#160;&#160;&#160;BUG: Derived test class missing required logic
+&#160;&#160;&#160;&#160;&#160;PERF: Remove false sharing across threads
+&#160;&#160;&#160;&#160;&#160;PERF: Avoid smart pointer registration penalty
+&#160;&#160;&#160;&#160;&#160;PERF: Avoid vector copy, and prefer multiplication
+&#160;&#160;&#160;&#160;&#160;PERF: Reviewing code for facilitating compiler optimizations
+&#160;&#160;&#160;&#160;&#160;PERF: Avoid upcasting from float to double
+&#160;&#160;&#160;&#160;&#160;BUG: Match Convergence Window Precision
+&#160;&#160;&#160;&#160;&#160;COMP: Remove undefined complex types
+&#160;&#160;&#160;&#160;&#160;COMP: Remove undefined complex types
+&#160;&#160;&#160;&#160;&#160;COMP: Invalid conversion detected by clang c++11
+&#160;&#160;&#160;&#160;&#160;COMP: Non standard conversion for -std=c++11
+&#160;&#160;&#160;&#160;&#160;COMP: Allow single precision space definition
+&#160;&#160;&#160;&#160;&#160;COMP: Namespace change for SpacePrecisionType
+</pre>
+<p>Ho Cheung (6):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: VS11 Debug mode assertions fixes
+&#160;&#160;&#160;&#160;&#160;BUG: VS10/11 debug assertions for null pointer for std::copy
+&#160;&#160;&#160;&#160;&#160;BUG: VS11 Debug mode assertions fixes
+&#160;&#160;&#160;&#160;&#160;BUG: VS10/11 debug assertions for null pointer for std::copy
+&#160;&#160;&#160;&#160;&#160;ENH: Improve mangling of itktiff library.
+&#160;&#160;&#160;&#160;&#160;ENH: Improve mangling of itktiff library.
+</pre>
+<p>Irina Vidal-Migallon (3):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Remote module: GPU and CPU Smoothing recursive YVV Gaussian Filter
+&#160;&#160;&#160;&#160;&#160;ENH: Remote module: GPU and CPU Smoothing recursive YVV Gaussian Filter
+&#160;&#160;&#160;&#160;&#160;ENH: YVV remote module - Add EXCLUDE_FROM_ALL option to itk_module.
+</pre>
+<p>Jean-Christophe Fillion-Robin (10):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Disable aligned attribute to fix Apple GCC 4.2.1 seg fault
+&#160;&#160;&#160;&#160;&#160;COMP: Ensure FindDCMTK module works with and without DCMTKConfig.cmake file
+&#160;&#160;&#160;&#160;&#160;COMP: Make FindDCMTK more verbose
+&#160;&#160;&#160;&#160;&#160;DOC: Improve FindDCMTK.cmake documentation
+&#160;&#160;&#160;&#160;&#160;COMP: Ensure DCMTK libraries can be found on system without setting DCMTK_DIR
+&#160;&#160;&#160;&#160;&#160;COMP: FindDCMTK - Workaround bug in packaging of DCMTK 3.6.0 on Debian.
+&#160;&#160;&#160;&#160;&#160;COMP: Update ITKDCMTK_EXPORT_CODE_(BUILD|INSTALL) to support system DCMTK
+&#160;&#160;&#160;&#160;&#160;COMP: FindDCMTK - Exclude -D from DCMTK_DEFINITIONS for easier re-use
+&#160;&#160;&#160;&#160;&#160;COMP: FindDCMTK - Do not explicitly set DCMTK_DEFINITIONS
+&#160;&#160;&#160;&#160;&#160;COMP: Associate ITKIODCMTK with DCMTK_DEFINITIONS
+</pre>
+<p>Jim Miller (5):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: GDCMImageIO ignore image orienations from MetaDataDictionary
+&#160;&#160;&#160;&#160;&#160;BUG: Two tests were writing to same filename.
+&#160;&#160;&#160;&#160;&#160;BUG: GDCMImageIO ignore image orienations from MetaDataDictionary
+&#160;&#160;&#160;&#160;&#160;BUG: Two tests were writing to same filename.
+&#160;&#160;&#160;&#160;&#160;ENH: ResampleImageFilter ReferenceImage only needs to match dimension
+</pre>
+<p>Jonathan Guinet (2):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: {Opening,Closing}ByReconstructionImageFilter information propagation
+&#160;&#160;&#160;&#160;&#160;BUG: {Opening,Closing}ByReconstructionImageFilter information propagation
+</pre>
+<p>Julien Michel (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Adding a separate template parameter to handle transform precision
+</pre>
+<p>KWSys Robot (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;KWSys 2013-07-10 (beef6819)
+</pre>
+<p>Kent Williams (22):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: fix std::string usage
+&#160;&#160;&#160;&#160;&#160;DOC: Rename DCMTKException DCMTKExceptionOrErrorReturn
+&#160;&#160;&#160;&#160;&#160;ENH: fix std::string usage
+&#160;&#160;&#160;&#160;&#160;BUG: Need to set 3rd dir cosine for DICOM images
+&#160;&#160;&#160;&#160;&#160;ENH: Accomodate Philips 4D Multiframe DICOM files
+&#160;&#160;&#160;&#160;&#160;BUG: Guard against Divide by Zero
+&#160;&#160;&#160;&#160;&#160;BUG: Row/Column assignment into ImageDimensions was wrong
+&#160;&#160;&#160;&#160;&#160;BUG: Guard against Divide by Zero
+&#160;&#160;&#160;&#160;&#160;BUG: Row/Column assignment into ImageDimensions was wrong
+&#160;&#160;&#160;&#160;&#160;ENH: Accomodate Philips 4D Multiframe DICOM files
+&#160;&#160;&#160;&#160;&#160;DOC: Rename DCMTKException DCMTKExceptionOrErrorReturn
+&#160;&#160;&#160;&#160;&#160;BUG: Need to set 3rd dir cosine for DICOM images
+&#160;&#160;&#160;&#160;&#160;COMP: Update git tag to incorporate MGHIO origin fix
+&#160;&#160;&#160;&#160;&#160;COMP: Move TransformFileWriter Specializations to CXX file.
+&#160;&#160;&#160;&#160;&#160;BUG: Bug fixed in remote MGHImageIO repo, update git tag
+&#160;&#160;&#160;&#160;&#160;BUG: argument check in LBFGSB too restrictive
+&#160;&#160;&#160;&#160;&#160;COMP: extend test for HistogramMatchingImageFilter to more pixel types
+&#160;&#160;&#160;&#160;&#160;COMP: HistogramMatchingFilterTest problem with ITKV3_COMPATIBILITY
+&#160;&#160;&#160;&#160;&#160;COMP: Make sscanf format &amp; variable match types
+&#160;&#160;&#160;&#160;&#160;BUG: Fix tests that fail with Intel ICPC compiler on Linux
+&#160;&#160;&#160;&#160;&#160;ENH: Avoid use of cast in ImageToImageMetricV4
+&#160;&#160;&#160;&#160;&#160;BUG: DCMTKFileReader erroneously propogating exceptions
+</pre>
+<p>Kishore Mosaliganti (8):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Allow visualization of initial level-set
+&#160;&#160;&#160;&#160;&#160;ENH: Add Set/GetNumberOfThreads for evolution
+&#160;&#160;&#160;&#160;&#160;ENH: New binary mask term with test
+&#160;&#160;&#160;&#160;&#160;ENH: Set/Get number of threads for Whitaker evolution class
+&#160;&#160;&#160;&#160;&#160;BUG: Non-square images mesh not specified correctly
+&#160;&#160;&#160;&#160;&#160;ENH: Set the scaling factor of the level-set function
+&#160;&#160;&#160;&#160;&#160;ENH: Added new overlap penalty term and test
+&#160;&#160;&#160;&#160;&#160;ENH: Level-set domains different from image domain
+</pre>
+<p>Luis Ibanez (7):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;STYLE: Fixed miscelaneous style errors.
+&#160;&#160;&#160;&#160;&#160;DOC: Removed Doxygen \example tags for Tests.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix warnings in matrix division by scalar.
+&#160;&#160;&#160;&#160;&#160;COMP: Attempt to fix warning about \param.
+&#160;&#160;&#160;&#160;&#160;BUG: Fixed while loop condition.
+&#160;&#160;&#160;&#160;&#160;DOC: Better description of what the code is doing.
+&#160;&#160;&#160;&#160;&#160;BUG: Memory leak. Reported by Coverity.
+</pre>
+<p>Mark Hiner (5):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Wrong classpath separator on Windows
+&#160;&#160;&#160;&#160;&#160;BUG: Wrong classpath separator on Windows
+&#160;&#160;&#160;&#160;&#160;ENH: Updated SCIFIO remote reference
+&#160;&#160;&#160;&#160;&#160;STYLE: update SCIFIO module name
+&#160;&#160;&#160;&#160;&#160;BUG: Update loci_tools to 4.4.9
+</pre>
+<p>Mark Palmeri (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;STYLE: correct syntax in Usage line
+</pre>
+<p>Martin Müllenhaupt (2):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: host platform source dir check
+&#160;&#160;&#160;&#160;&#160;COMP: host platform source dir check
+</pre>
+<p>Matt Clarkson (4):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Test upper and lower bound of histogram.
+&#160;&#160;&#160;&#160;&#160;BUG: Include upper bound in last histogram bin.
+&#160;&#160;&#160;&#160;&#160;BUG: Updated mean and standard deviation test values.
+&#160;&#160;&#160;&#160;&#160;BUG: Update test data due to changes in itkHistogram.hxx
+</pre>
+<p>Matthew McCormick (107):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Bump CMakeLists.txt version to 4.5.0.
+&#160;&#160;&#160;&#160;&#160;BUG: Remove non-existant GeSignaHDx data references.
+&#160;&#160;&#160;&#160;&#160;ENH: Add server URL to ArchiveTestingData script.
+&#160;&#160;&#160;&#160;&#160;ENH: Add slicer.kitware.com to the list of ExternalData resources.
+&#160;&#160;&#160;&#160;&#160;COMP: OpenJPEG #ifdef WIN32 not reliable ITK-3101.
+&#160;&#160;&#160;&#160;&#160;DOC: Improve grammar in transform float type migration guide.
+&#160;&#160;&#160;&#160;&#160;STYLE: Style fixes for MINCTransformIO.
+&#160;&#160;&#160;&#160;&#160;BUG: Remove non-existant GeSignaHDx data references.
+&#160;&#160;&#160;&#160;&#160;BUG: Regenerate HeaderTests' after .hxx files are removed.
+&#160;&#160;&#160;&#160;&#160;COMP: Update MINCTransformIO for templated transforms.
+&#160;&#160;&#160;&#160;&#160;COMP: Do not warn about unused typedefs.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix argument 'buffer' might be clobbered on GCC 4.8.
+&#160;&#160;&#160;&#160;&#160;COMP: Wrap TransformBaseTemplate, Transform, and TransformFile{Reader,Writer}.
+&#160;&#160;&#160;&#160;&#160;DOC: SingelThreaded -&gt; SingleThreaded in Doxygen Group.
+&#160;&#160;&#160;&#160;&#160;ENH: Change PATCH version for v4.4.1 release.
+&#160;&#160;&#160;&#160;&#160;BUG: Add missing ITKOpenJPEG dependency for ITKReview Module.
+&#160;&#160;&#160;&#160;&#160;COMP: ITKOpenJPEG EXCLUDE_FROM_ALL.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix invalid Doxygen LaTeX formula.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix Module_Review enable with a single configure.
+&#160;&#160;&#160;&#160;&#160;COMP: Wrap cost functions for templated precision.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix Module_Review enable with a single configure.
+&#160;&#160;&#160;&#160;&#160;DOC: Fix GradientDescentOptimizer doc grammar.
+&#160;&#160;&#160;&#160;&#160;BUG: Using consistent naming for Transform template name change.
+&#160;&#160;&#160;&#160;&#160;BUG: Remove unused QUASI_NEWTON_STEP_ERROR.
+&#160;&#160;&#160;&#160;&#160;COMP: Do not try to include float.h for MinGW.
+&#160;&#160;&#160;&#160;&#160;STYLE: TScalarType -&gt; TScalar
+&#160;&#160;&#160;&#160;&#160;COMP: Fix NIFTI CMake variable separation warning.
+&#160;&#160;&#160;&#160;&#160;ENH: Use Transform::Clone() in ImageToImageMetric.
+&#160;&#160;&#160;&#160;&#160;COMP: Remove redundant Typename structs. #3195.
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix include guard in level set visualization.
+&#160;&#160;&#160;&#160;&#160;ENH: Use file(COPY .. instead of exec_process.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix transform wrapping errors with ITK_WRAP_double OFF.
+&#160;&#160;&#160;&#160;&#160;DOC: Fix spelling errors in FourierDescriptors1.cxx.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix ITK_USE_REVIEW compatibility set syntax.
+&#160;&#160;&#160;&#160;&#160;COMP: Avoid MetaIO config conflict with USE_SYSTEM_GDCM.
+&#160;&#160;&#160;&#160;&#160;BUG: itkSingleLevelSetsv4WhitakerImage2DTest output clobber.
+&#160;&#160;&#160;&#160;&#160;ENH: Test conversion writing float transform with templateless writer.
+&#160;&#160;&#160;&#160;&#160;BUG: BMPImageIO buffer size computation.
+&#160;&#160;&#160;&#160;&#160;COMP: Bump GCCXML version.
+&#160;&#160;&#160;&#160;&#160;Revert "BUG: Exclude ITKReview when ITK_USE_REVIEW if off."
+&#160;&#160;&#160;&#160;&#160;Revert "BUG: Exclude ITKReview when ITK_USE_REVIEW if off."
+&#160;&#160;&#160;&#160;&#160;COMP: Do not try to include float.h for MinGW.
+&#160;&#160;&#160;&#160;&#160;BUG: itkSingleLevelSetsv4WhitakerImage2DTest output clobber.
+&#160;&#160;&#160;&#160;&#160;COMP: Avoid MetaIO config conflict with USE_SYSTEM_GDCM.
+&#160;&#160;&#160;&#160;&#160;COMP: Bump GCCXML version.
+&#160;&#160;&#160;&#160;&#160;ENH: Bump version to 4.4.2.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix LevelSetsv4Visualization against VTK5.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix LevelSetsv4Visualization Doxygen group.
+&#160;&#160;&#160;&#160;&#160;BUG: Add QuickViewTest baseline for dash5ubuntu.
+&#160;&#160;&#160;&#160;&#160;BUG: Exclude all VTK headers from the header test.
+&#160;&#160;&#160;&#160;&#160;ENH: Improve ImageRegionReverseConstIterator doc.
+&#160;&#160;&#160;&#160;&#160;COMP: Add missing wrapping for ImageSourceCommon.
+&#160;&#160;&#160;&#160;&#160;COMP: Add missing VectorContainer instantiations for PointSet.
+&#160;&#160;&#160;&#160;&#160;STYLE: Use prefix increment in WeightedCovarianceSampleFilter.
+&#160;&#160;&#160;&#160;&#160;STYLE: LabelMap related style fixes.
+&#160;&#160;&#160;&#160;&#160;BUG: LabelMapToLabelImageFilter wrong superclass in itkTypeMacro.
+&#160;&#160;&#160;&#160;&#160;BUG: MeasurementVectorSizeType in PointSetToListSampleAdaptor.
+&#160;&#160;&#160;&#160;&#160;BUG: Re-use Superclass typedef's in LabelMapToLabelImageFilter.
+&#160;&#160;&#160;&#160;&#160;COMP: TranformIOBase unused GetTypeNameString function.
+&#160;&#160;&#160;&#160;&#160;COMP: TransformFileWriter unused AddToTransformList.
+&#160;&#160;&#160;&#160;&#160;STYLE: Fix KWStyleCodeTest - unnecessary semi-colons.
+&#160;&#160;&#160;&#160;&#160;COMP: Update MINCTransformIO for GetTypeNameString method.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix uninitialized variables in N4BiasFieldCorrectionImageFilter.
+&#160;&#160;&#160;&#160;&#160;ENH: Remove unused scripts in Utilities/Dart.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix uninitialized variables in N4BiasFieldCorrectionImageFilter.
+&#160;&#160;&#160;&#160;&#160;ENH: Add maintenance script to visualize test times.
+&#160;&#160;&#160;&#160;&#160;ENH: Add a RUNS_LONG label to long running tests.
+&#160;&#160;&#160;&#160;&#160;BUG: Enable MRC IO in UseITK whenever the ITKReview module is enabled.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix Wrapping link to VtkGlue with VTK 6.
+&#160;&#160;&#160;&#160;&#160;COMP: Remove multiple definition of PushBackTransformList.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix NIFTI CMake variable separation warning.
+&#160;&#160;&#160;&#160;&#160;BUG: ImageToImageFilter different Input2 pixel type does not stream. #3214
+&#160;&#160;&#160;&#160;&#160;COMP: Clean up use of Dimensions in MetaImageIO.
+&#160;&#160;&#160;&#160;&#160;COMP: Conditionalize insane "#define inline" in libtiff
+&#160;&#160;&#160;&#160;&#160;COMP: QuadrilateralCell Out-of-bounds-write.
+&#160;&#160;&#160;&#160;&#160;COMP: Out-of-bounds access GaussianDerivativeImageFunction.
+&#160;&#160;&#160;&#160;&#160;ENH: Use CompensatedSummation in GaussianDerivativeImageFunction.
+&#160;&#160;&#160;&#160;&#160;ENH: Improve const correctness of QuadrilateralCell.
+&#160;&#160;&#160;&#160;&#160;BUG: Add double-conversion license.
+&#160;&#160;&#160;&#160;&#160;ENH: Add check for LICENSE change on double-conversion update.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix removal of temporary double-conversion repository.
+&#160;&#160;&#160;&#160;&#160;COMP: Catch TestDriver ExceptionObject.
+&#160;&#160;&#160;&#160;&#160;BUG: Add missing OpenJPEG LICENSE file.
+&#160;&#160;&#160;&#160;&#160;BUG: Add missing PNG license.
+&#160;&#160;&#160;&#160;&#160;BUG: AntiAliasBinaryImageFilter needs SetUseImageSpacing(false).
+&#160;&#160;&#160;&#160;&#160;DOC: Flat refers to binary in FlatStructuringElement.
+&#160;&#160;&#160;&#160;&#160;BUG: Examples should not have namespace KWStyle check.
+&#160;&#160;&#160;&#160;&#160;DOC: Recommend newer BSplineTransform over BSplineDeformableTransform.
+&#160;&#160;&#160;&#160;&#160;COMP: Do not warn about unused typedefs.
+&#160;&#160;&#160;&#160;&#160;BUG: 14th Ann Incorrect enum declaration.
+&#160;&#160;&#160;&#160;&#160;COMP: 14th Ann uninitialized scalar field.
+&#160;&#160;&#160;&#160;&#160;STYLE: Empty lines exceed 3.
+&#160;&#160;&#160;&#160;&#160;COMP: 14th Ann operator= should return TreeIteratorBase &amp;
+&#160;&#160;&#160;&#160;&#160;BUG: Incorrect CDash URL in CTestConfig.cmake.
+&#160;&#160;&#160;&#160;&#160;DOC: Remove reference to missing AddFileNames method.
+&#160;&#160;&#160;&#160;&#160;COMP: TIFFImageIO: use types defined in itkIntTypes.h.
+&#160;&#160;&#160;&#160;&#160;COMP: 14th Ann Uninitialized pointer field.
+&#160;&#160;&#160;&#160;&#160;COMP: 14th Ann m_ChangePosition not initialized in constructor.
+&#160;&#160;&#160;&#160;&#160;PERF: 14th Ann TreeNode: prefer prefix ++/--
+&#160;&#160;&#160;&#160;&#160;COMP: 14th Ann *Command m_This not initialized.
+&#160;&#160;&#160;&#160;&#160;STYLE: 14th Ann Reduce variable scope.
+&#160;&#160;&#160;&#160;&#160;STYLE: 14th Ann reduce scope of variables.
+&#160;&#160;&#160;&#160;&#160;STYLE: 14th Ann operator= return Self &amp;.
+&#160;&#160;&#160;&#160;&#160;PERF: 14th Ann prefix ++ operator on non-primative types.
+&#160;&#160;&#160;&#160;&#160;STYLE: 14th Ann reduce variable scope.
+&#160;&#160;&#160;&#160;&#160;ENH: Bump GCCXML to latest version.
+&#160;&#160;&#160;&#160;&#160;ENH: Update doxygen.config for 1.8.5.
+</pre>
+<p>Mickael Savinaud (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: fix compiler error from visual studio 2013
+</pre>
+<p>Nick Tustison (2):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: &#160;Added B-spline registration test.
+&#160;&#160;&#160;&#160;&#160;ENH: &#160;Accessing optimizer weights from the methods.
+</pre>
+<p>Olivier Commowick (4):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Add cmake tr1 namespace check for macos clang
+&#160;&#160;&#160;&#160;&#160;COMP: Use ZeroValue instead of Zero for clang macos 10.9 compilation
+&#160;&#160;&#160;&#160;&#160;COMP: Use ZeroValue instead of Zero for clang macos 10.9 compilation
+&#160;&#160;&#160;&#160;&#160;COMP: Add cmake tr1 namespace check for macos clang
+</pre>
+<p>Pew-Thian Yap (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Defined equality and inequality operators.
+</pre>
+<p>Sean McBride (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Fixed compiler error in C++11
+</pre>
+<p>Simon Alexander (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: compilation failures encountered with Visual Studio 2013
+</pre>
+<p>Stephen Aylward (7):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Fixed bugs in Form and hidden virtual funcs in Image
+&#160;&#160;&#160;&#160;&#160;COMP: Fixed unused variable warnings in tests
+&#160;&#160;&#160;&#160;&#160;COMP: Disable tests since paths are set wrong in VTK
+&#160;&#160;&#160;&#160;&#160;BUG: Fixed bugs in Form and hidden virtual funcs in Image
+&#160;&#160;&#160;&#160;&#160;COMP: Fixed unused variable warnings in tests
+&#160;&#160;&#160;&#160;&#160;COMP: Disable tests since paths are set wrong in VTK
+&#160;&#160;&#160;&#160;&#160;COMP: Fix warnings from VTK dashboard, contributed by Sean McBride
+</pre>
+<p>Sureerat Reaungamornrat (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Make SetFixedImageRegion a virtual function
+</pre>
+<p>Taylor Braun-Jones (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Remove unused TransformFileWriter::m_Precision ivar
+</pre>
+<p>Tobias Maier (2):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: VTKImageIO did not respect endianness for streamed writing/reading
+&#160;&#160;&#160;&#160;&#160;BUG: Uninitialized value in VTKImageIOStreamTest
+</pre>
+<p>Vladimir S. FONOV (6):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;BUG: Fixing small bugs in MINC IO Module
+&#160;&#160;&#160;&#160;&#160;COMP: Fixed building review statistics with gcc 4.7.
+&#160;&#160;&#160;&#160;&#160;BUG: Fixed bugs in Modules/IO/MINC and Modules/ThirdParty/MINC
+&#160;&#160;&#160;&#160;&#160;ENH: Added adapter class to use general_transform API from MINC
+&#160;&#160;&#160;&#160;&#160;ENH: Added adapter class to use general_transform API from MINC
+&#160;&#160;&#160;&#160;&#160;BUG: Fixed error handling in MINC IO
+</pre>
+<p>Xiaoxiao Liu (30):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;DOC: Add a comment for "ITK_Common_EXPORTS"
+&#160;&#160;&#160;&#160;&#160;ENH: Add a unit test for VectorImageToImageAdaptor.
+&#160;&#160;&#160;&#160;&#160;COMP: Relax tolerance for a regression test.
+&#160;&#160;&#160;&#160;&#160;ENH: Exclude ITKGDCM module when system GDCM is ON.
+&#160;&#160;&#160;&#160;&#160;BUG: Exclude ITKReview when ITK_USE_REVIEW if off.
+&#160;&#160;&#160;&#160;&#160;BUG: A fix for using sys installed GDCM.
+&#160;&#160;&#160;&#160;&#160;BUG: ITK_USE_Review did not turn Review module ON.
+&#160;&#160;&#160;&#160;&#160;ENH: Simplify the steps to build remote modules.
+&#160;&#160;&#160;&#160;&#160;ENH: Turn remote module LSTK off by default.
+&#160;&#160;&#160;&#160;&#160;ENH: Deprecate ITK_USE_REVIEW.
+&#160;&#160;&#160;&#160;&#160;DOC: Migration guide for ITK_USE_REVIEW deprecation.
+&#160;&#160;&#160;&#160;&#160;ENH: Remote module names need to be consistent.
+&#160;&#160;&#160;&#160;&#160;COMP: New baseline image for MultiResImageRegistrationTest.
+&#160;&#160;&#160;&#160;&#160;PERF: Remove redundant CMake variables.
+&#160;&#160;&#160;&#160;&#160;DOC: Sort the module enabling messages by names.
+&#160;&#160;&#160;&#160;&#160;ENH: Exclude ITKGDCM module when system GDCM is ON.
+&#160;&#160;&#160;&#160;&#160;BUG: A fix for using sys installed GDCM.
+&#160;&#160;&#160;&#160;&#160;COMP: New baseline image for MultiResImageRegistrationTest.
+&#160;&#160;&#160;&#160;&#160;ENH: Remove "ITK" prefix from remote modules.
+&#160;&#160;&#160;&#160;&#160;BUG: Update LSTK module tag.
+&#160;&#160;&#160;&#160;&#160;STYLE: Extract module dependency code to a separate file.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix LSTK warning.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix cmake warnings on EXCLUDE_FROM_ALL.
+&#160;&#160;&#160;&#160;&#160;DOC: Better warning message for ITK_BUILD_ALL_MODULES.
+&#160;&#160;&#160;&#160;&#160;BUG: Coverity resrouce leak in itkQuadEdgeTest1.
+&#160;&#160;&#160;&#160;&#160;COMP: Fix coverity bug in itkQuadEdgeTest.
+&#160;&#160;&#160;&#160;&#160;BUG: Resource leak in testMetaObject.cxx.
+&#160;&#160;&#160;&#160;&#160;COMP: Coverity scan resource leak in itkQuadEdgeTest.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix typos in globalIndexNames.
+&#160;&#160;&#160;&#160;&#160;BUG: Fix typos in globalIndexNames.
+</pre>
+<p>List of changes in ITKApps since v4.4.0-apps
+</p>
+<hr />
+<p>Bill Lorensen (1):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;ENH: Bump ITK version to 4.5.0
+</pre>
+<p>Matt McCormick (4):
+</p>
+<pre>&#160;&#160;&#160;&#160;&#160;COMP: Add missing header to MIMApplicationBase.txx.
+&#160;&#160;&#160;&#160;&#160;COMP: Add missing this-&gt; to derived method calls.
+&#160;&#160;&#160;&#160;&#160;STYLE: LandmarkRegistrator: whitespace towards ITK Style.
+&#160;&#160;&#160;&#160;&#160;COMP: Better use of typedefs in LandmarkRegistrator.
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20220630010135
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.010 seconds
+Real time usage: 0.010 seconds
+Preprocessor visited node count: 1/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 1/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:11932-0!canonical and timestamp 20220630010135 and revision id 54956. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4.5_Changed_From_Previous&amp;oldid=54956">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4.5_Changed_From_Previous&amp;oldid=54956</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4.5_Changed_From_Previous" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4.5_Changed_From_Previous&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4.5_Changed_From_Previous">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4.5_Changed_From_Previous&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4.5_Changed_From_Previous&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4.5_Changed_From_Previous" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4.5_Changed_From_Previous&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4.5+Changed+From+Previous" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4.5_Changed_From_Previous" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4.5_Changed_From_Previous" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4.5_Changed_From_Previous&amp;oldid=54956" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4.5_Changed_From_Previous&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 18 December 2013, at 07:00.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.010","walltime":"0.010","ppvisitednodes":{"value":1,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220630010135","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":100});});</script>
+</body></html>

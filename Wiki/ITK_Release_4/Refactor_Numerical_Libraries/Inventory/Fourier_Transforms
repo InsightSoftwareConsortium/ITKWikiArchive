@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4/Refactor Numerical Libraries/Inventory/Fourier Transforms - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"15208e14e5595a87d746df98","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms","wgTitle":"ITK/Release 4/Refactor Numerical Libraries/Inventory/Fourier Transforms","wgCurRevisionId":44457,"wgRevisionId":44457,"wgArticleId":9500,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms","wgRelevantArticleId":9500,
+"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms","wgInternalRedirectTargetUrl":"/Wiki/ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Refactor_Numerical_Libraries_Inventory_Fourier_Transforms rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Release 4/Refactor Numerical Libraries/Inventory/Fourier Transforms</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/Wiki/ITK/Release_4/Refactor_Numerical_Libraries" title="ITK/Release 4/Refactor Numerical Libraries">Refactor Numerical Libraries</a>&lrm; | <a href="/Wiki/ITK/Release_4/Refactor_Numerical_Libraries/Inventory" title="ITK/Release 4/Refactor Numerical Libraries/Inventory">Inventory</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms&amp;redirect=no" class="mw-redirect" title="ITK Release 4/Refactor Numerical Libraries/Inventory/Fourier Transforms">ITK Release 4/Refactor Numerical Libraries/Inventory/Fourier Transforms</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_Problem"><span class="tocnumber">1</span> <span class="toctext">The Problem</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Functionalities"><span class="tocnumber">1.1</span> <span class="toctext">Functionalities</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Architecture"><span class="tocnumber">1.2</span> <span class="toctext">Architecture</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Where_is_the_Code"><span class="tocnumber">2</span> <span class="toctext">Where is the Code</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#VXL"><span class="tocnumber">2.1</span> <span class="toctext">VXL</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Code"><span class="tocnumber">2.1.1</span> <span class="toctext">Code</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Conditions"><span class="tocnumber">2.1.2</span> <span class="toctext">Conditions</span></a>
+<ul>
+<li class="toclevel-4 tocsection-8"><a href="#Image_Size"><span class="tocnumber">2.1.2.1</span> <span class="toctext">Image Size</span></a></li>
+<li class="toclevel-4 tocsection-9"><a href="#Image_Dimensions"><span class="tocnumber">2.1.2.2</span> <span class="toctext">Image Dimensions</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Benchmark_Test"><span class="tocnumber">3</span> <span class="toctext">Benchmark Test</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Quick_Tests"><span class="tocnumber">3.1</span> <span class="toctext">Quick Tests</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Longer_Tests"><span class="tocnumber">3.2</span> <span class="toctext">Longer Tests</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Best_Tests"><span class="tocnumber">3.3</span> <span class="toctext">Best Tests</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Large_Images"><span class="tocnumber">3.4</span> <span class="toctext">Large Images</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="#Moderate"><span class="tocnumber">3.4.1</span> <span class="toctext">Moderate</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Very_Large"><span class="tocnumber">3.4.2</span> <span class="toctext">Very Large</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Options"><span class="tocnumber">4</span> <span class="toctext">Options</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#MKL"><span class="tocnumber">4.1</span> <span class="toctext">MKL</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#ACML"><span class="tocnumber">4.2</span> <span class="toctext">ACML</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="The_Problem">The Problem</span></h1>
+<h2><span class="mw-headline" id="Functionalities">Functionalities</span></h2>
+<p>ITK obtains Fast Fourier Transform (FFT) functionalities from
+</p>
+<ul><li>VXL - as software included as third party library</li>
+<li>FFTW - as a configuration time option</li></ul>
+<p>When using the VXL code that is shipped with ITK, the FFT operations are <b>very slow</b>. In addition, the VXL FFT produces the full complex output image when operating on a real image instead of producing only the non-redundant half of the image as FFTW does. The ITK filter providing access to VXL's forward FFT can crop the output image to produce output consistent with FFTW, but this is computationally wasteful.
+</p><p>FFTW is a lot faster, but it is licensed under GPL and can not be included as part of the ITK distribution.
+</p><p>To choose between these two options you use, at CMake configuration time, the following variables
+</p>
+<ul><li>USE_FFTWF  to use the float version of FFTW</li>
+<li>USE_FFTWD  to use the double version of FFTW</li>
+<li>USE_SYSTEM_FFTW  to use an FFTW library installed in your system</li></ul>
+<h2><span class="mw-headline" id="Architecture">Architecture</span></h2>
+<ul><li>The current code is *NOT* multi-threaded...</li></ul>
+<h1><span class="mw-headline" id="Where_is_the_Code">Where is the Code</span></h1>
+<p>ITK classes that provide FFT filters can be found in the Module:
+</p>
+<pre>   ITK/Modules/Filtering/FFT
+</pre>
+<p>They include
+</p>
+<ul><li>itkFFTShiftImageFilter.h</li>
+<li>itkFFTWForwardFFTImageFilter.h</li>
+<li>itkFFTWInverseFFTImageFilter.h</li>
+<li>itkForwardFFTImageFilter.h</li>
+<li>itkInverseFFTImageFilter.h</li>
+<li>itkVnlForwardFFTImageFilter.h</li>
+<li>itkVnlInverseFFTImageFilter.h</li>
+<li>vnl_fft_3d.h</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="VXL">VXL</span></h2>
+<h3><span class="mw-headline" id="Code">Code</span></h3>
+<p>The FFT code in VXL is in the directory
+</p>
+<pre> ITK/Modules/ThirdParty/VNL/src/vxl/core/vnl/algo
+</pre>
+<p>and include the following files
+</p>
+<ul><li>vnl_fft_1d.h</li>
+<li>vnl_fft_1d.txx</li>
+<li>vnl_fft_2d.h</li>
+<li>vnl_fft_2d.txx</li>
+<li>vnl_fft_base.h</li>
+<li>vnl_fft_base.txx</li>
+<li>vnl_fft.cxx</li>
+<li>vnl_fft.h</li>
+<li>vnl_fft_prime_factors.h</li>
+<li>vnl_fft_prime_factors.txx</li></ul>
+<p><br />
+It seems that VXL ultimately calls FFT functions from FORTRAN
+</p>
+<pre>  CALL GPFA(A,B,TRIGS,INC,JUMP,N,LOT,ISIGN,NIPQ,INFO)
+</pre>
+<p>in the file 
+</p>
+<pre>  vnl_fft.h
+</pre>
+<h3><span class="mw-headline" id="Conditions">Conditions</span></h3>
+<h4><span class="mw-headline" id="Image_Size">Image Size</span></h4>
+<p>The code accepts images whose number of pixels along every dimension is a multiple of powers of the following prime numbers:
+</p>
+<ul><li>2</li>
+<li>3</li>
+<li>5</li></ul>
+<p>That is, it should be an expression such as
+</p>
+<pre>   2^P * 3^Q * 5^R
+</pre>
+<h4><span class="mw-headline" id="Image_Dimensions">Image Dimensions</span></h4>
+<ul><li>Implementations are available for 1D and 2D in VXL.</li>
+<li>ITK added a 3D instantiation outside of VXL</li></ul>
+<h1><span class="mw-headline" id="Benchmark_Test">Benchmark Test</span></h1>
+<h2><span class="mw-headline" id="Quick_Tests">Quick Tests</span></h2>
+<p>Quick Test that verify correctness are available here:
+</p>
+<pre>  ITK/Release/Modules/Filtering/FFT/test
+</pre>
+<p>They can run the following
+</p>
+<pre> Test #1: itkVnlFFTTest
+ Test #2: itkFFTShiftImageFilterTestOdd0
+ Test #3: itkFFTShiftImageFilterTestOdd1
+ Test #4: itkFFTShiftImageFilterTestEven0
+ Test #5: itkFFTShiftImageFilterTestEven1
+</pre>
+<h2><span class="mw-headline" id="Longer_Tests">Longer Tests</span></h2>
+<p>More demanding tests are available here
+</p>
+<pre>  ITK/Release/Examples/Filtering/test
+</pre>
+<p>and can be run with 
+</p>
+<pre>  ctest  -R FFT   -VV
+</pre>
+<p>they are
+</p>
+<pre> Test #67: FFTImageFilterTest
+ Test #68: FFTDirectInverseTest
+ Test #69: FFTImageFilterTest2
+ Test #70: FFTImageFilterTest3
+</pre>
+<h2><span class="mw-headline" id="Best_Tests">Best Tests</span></h2>
+<p>The most convenient code for benchmarking is in 
+</p>
+<pre> ITK/Examples/Filtering/
+</pre>
+<p>They are
+</p>
+<ul><li>FFTDirectInverse2.cxx&#160;: This one uses FFTW</li>
+<li>FFTDirectInverse.cxx &#160;: This one uses VXL</li></ul>
+<p>Notice that you still have to change the CMake variables at configuration time to switch from one to the other.
+</p><p>The executables of these tests end up in the binary directory:
+</p>
+<pre>  ITK/bin
+</pre>
+<p>with the executable name
+</p>
+<pre>  FFTDirectInverse
+</pre>
+<p>You can run it as
+</p>
+<pre> FFTDirectInverse   inputImage  outputImage
+</pre>
+<p>For example
+</p>
+<pre> FFTDirectInverse   mosaic_im100010_05.png    FFT_mosaic_im100010_05.png
+</pre>
+<p>The output image is the result of doing Forward Fourier Transform followed by an Inverse Fourier Transform, so in principle it the output image should look just like the input image.
+</p>
+<h2><span class="mw-headline" id="Large_Images">Large Images</span></h2>
+<h3><span class="mw-headline" id="Moderate">Moderate</span></h3>
+<ul><li><a rel="nofollow" class="external free" href="http://midas.kitware.com/item/view/431">http://midas.kitware.com/item/view/431</a></li></ul>
+<h3><span class="mw-headline" id="Very_Large">Very Large</span></h3>
+<p>Large images for testing can be found here:
+</p>
+<ul><li><a rel="nofollow" class="external free" href="http://midas.kitware.com/item/view/437">http://midas.kitware.com/item/view/437</a></li></ul>
+<p>In particular:
+</p>
+<ul><li>mosaic_im100010_05.png</li></ul>
+<p>This is an image of size
+</p>
+<pre>  8768 x 8640
+</pre>
+<p>That FFT expand to 
+</p>
+<pre> 16384 x 16384
+</pre>
+<p>Doing Direct + Inverst FFT in this image takes
+</p>
+<pre> 262.38s user 4.14s system 102% cpu 4:20.20 total
+</pre>
+<p>in a computer with a processor:
+</p>
+<pre>Intel(R) Xeon(R) CPU E5520  @ 2.27GHz
+</pre>
+<p>This machine is a quad-core, but... the code is using only one core.
+This particular machine also has 24 GB of RAM
+</p>
+<h1><span class="mw-headline" id="Options">Options</span></h1>
+<p>Options that have been considered:
+</p>
+<ul><li>INTEL MKL Library</li>
+<li>AMD Core Math Library (ACML)</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="MKL">MKL</span></h2>
+<p>Requires commercial license for distribution
+</p>
+<h2><span class="mw-headline" id="ACML">ACML</span></h2>
+<p>Does not require commercial license for distribution
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20220525181821
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.012 seconds
+Real time usage: 0.013 seconds
+Preprocessor visited node count: 56/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9500-0!canonical and timestamp 20220525181821 and revision id 44457. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms&amp;oldid=44457">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms&amp;oldid=44457</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4%2FRefactor+Numerical+Libraries%2FInventory%2FFourier+Transforms" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms&amp;oldid=44457" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Refactor_Numerical_Libraries/Inventory/Fourier_Transforms&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 9 December 2011, at 16:01.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.012","walltime":"0.013","ppvisitednodes":{"value":56,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220525181821","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":355});});</script>
+</body></html>

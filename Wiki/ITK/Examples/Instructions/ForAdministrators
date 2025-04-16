@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>ITK/Examples/Instructions/ForAdministrators - KitwarePublic</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="generator" content="MediaWiki 1.23.8" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
+<script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Examples/Instructions/ForAdministrators","wgTitle":"ITK/Examples/Instructions/ForAdministrators","wgCurRevisionId":53484,"wgRevisionId":53484,"wgArticleId":8919,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK/Examples/Instructions/ForAdministrators","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-js:7:6fb34dd1cd86154205b858dd017713f7 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-cmake {line-height: normal;}
+.source-cmake li, .source-cmake pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cmake
+ * CSS class: source-cmake, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cmake.source-cmake .de1, .cmake.source-cmake .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;font-family: monospace, monospace;}
+.cmake.source-cmake  {font-family:monospace;}
+.cmake.source-cmake .imp {font-weight: bold; color: red;}
+.cmake.source-cmake li, .cmake.source-cmake .li1 {font-weight: normal; vertical-align:top;}
+.cmake.source-cmake .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cmake.source-cmake .li2 {font-weight: bold; vertical-align:top;}
+.cmake.source-cmake .kw1 {color: #1f3f81; font-style: bold;}
+.cmake.source-cmake .kw2 {color: #1f3f81;}
+.cmake.source-cmake .kw3 {color: #077807; font-sytle: italic;}
+.cmake.source-cmake .co1 {color: #666666; font-style: italic;}
+.cmake.source-cmake .es0 {color: #000099; font-weight: bold;}
+.cmake.source-cmake .es1 {color: #b08000;}
+.cmake.source-cmake .es2 {color: #0000cd;}
+.cmake.source-cmake .sy0 {color: #197d8b;}
+.cmake.source-cmake .st0 {color: #912f11;}
+.cmake.source-cmake .re0 {color: #b08000;}
+.cmake.source-cmake .re1 {color: #0000cd;}
+.cmake.source-cmake .ln-xtra, .cmake.source-cmake li.ln-xtra, .cmake.source-cmake div.ln-xtra {background-color: #ffc;}
+.cmake.source-cmake span.xtra { display:block; }
+
+/*]]>*/
+</style></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_Instructions_ForAdministrators skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">ITK/Examples/Instructions/ForAdministrators</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From KitwarePublic</div>
+		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Examples" title="ITK/Examples">Examples</a>&lrm; | <a href="/Wiki/ITK/Examples/Instructions" title="ITK/Examples/Instructions">Instructions</a></span></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Wiki Example Administrators have write access to the <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples">git repository</a>. Wiki Example Developers do not need write access to the repository since the definitive copy of the source code resides on the Wiki. If you are a Wiki Example User <a href="/Wiki/ITK/Examples/Instructions/ForUsers" title="ITK/Examples/Instructions/ForUsers"> go here</a> or a Wiki Example Developer<a href="/Wiki/ITK/Examples/Instructions/ForDevelopers" title="ITK/Examples/Instructions/ForDevelopers"> go here</a>.
+</p><p>Wiki Example Administrators maintain the CMakeLists.txt files, example input files, example regression baseline files and synchronization scripts.
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Organization_of_the_Example_Repository"><span class="tocnumber">1</span> <span class="toctext">Organization of the Example Repository</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Administrator_Tasks"><span class="tocnumber">2</span> <span class="toctext">Administrator Tasks</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Clone_repository_with_write_access"><span class="tocnumber">2.1</span> <span class="toctext">Clone repository with write access</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Add_a_new_topic"><span class="tocnumber">2.2</span> <span class="toctext">Add a new topic</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Add_a_test_that_requires_arguments"><span class="tocnumber">2.3</span> <span class="toctext">Add a test that requires arguments</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Add_a_regression_baseline_image"><span class="tocnumber">2.4</span> <span class="toctext">Add a regression baseline image</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Add_example_input_data"><span class="tocnumber">2.5</span> <span class="toctext">Add example input data</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Add_a_testing_machine_to_the_dashboard"><span class="tocnumber">2.6</span> <span class="toctext">Add a testing machine to the dashboard</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Check_the_dashboard_frequently.21"><span class="tocnumber">2.7</span> <span class="toctext">Check the dashboard frequently!</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Updating_the_links_in_the_ITK_Doxygen"><span class="tocnumber">2.8</span> <span class="toctext">Updating the links in the ITK Doxygen</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Organization_of_the_Example_Repository">Organization of the Example Repository</span></h2>
+<p>The wiki examples are stored in a <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples">git repository</a> hosted at <a rel="nofollow" class="external text" href="http://github.com/">github</a>. The repository contains several types of files:
+</p>
+<ul>
+<li> Top Level <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/CMakeLists.txt"><i>CMakeLists.txt</i></a> file
+</li>
+</ul>
+<dl>
+<dd>This cmake file locates and includes the ITK_USE_FILE and adds directories for each of the topics
+</dd>
+</dl>
+<ul>
+<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/mwclient"><i>mwclient</i></a> files
+</li>
+</ul>
+<dl>
+<dd><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/mwclient/">mwclient</a> is a python framework to access MediaWiki's API. The ScrapeWiki script uses it to pull pages from the wiki and create example source files.
+</dd>
+</dl>
+<ul>
+<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/Admin/ScrapeWiki"><i>Admin/ScrapeWiki</i></a>
+</li>
+</ul>
+<dl>
+<dd> This is a python script that uses <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/mwclient/">mwclient</a> to access the pages of the wiki. It looks for pages in <a href="/Wiki/ITK/Examples" title="ITK/Examples">ITK/Examples</a>. For each page, it looks for second level headings and stores the code that lies between <pre>&lt;source&gt; and &lt;/source&gt;</pre> into a file in the proper topic subdirectory. Anyone, including users, can run this script. It updates the current directory with changes or new examples. If you run this script, be sure to re-run cmake.
+</dd>
+</dl>
+<ul>
+<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/Admin/UploadBaselines"><i>Admin/UploadBaselines</i></a>
+</li>
+</ul>
+<dl>
+<dd> This is a python script that uses <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/mwclient/">mwclient</a> to upload example baselines to the Wiki. The baselines are located in the Wiki git repository in <a rel="nofollow" class="external autonumber" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/Testing/Baseline">[1]</a>. The script walks through the git baselines and checks to see if the baselines exist on the Wiki. If the baseline does not exist on the Wiki, the script uploads it. If the baseline does exist on the Wiki the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/MD5">md5 hash</a> is checked to see if the image has changed.
+</dd>
+</dl>
+<ul>
+<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/Admin/CheckPagesForImages"><i>Admin/CheckPagesForImages</i></a>
+</li>
+</ul>
+<dl>
+<dd> This is a python script that uses <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/mwclient/">mwclient</a> to check each example to see if it should have a reference to a baseline image. If a baseline image exists for an example, the script looks for a ''&lt;div&gt;&lt;/div&gt;'' tag. This tag contains a reference for the baseline image for the example. If the tag is not found, the script generates a cut/paste line to edit the page as well as a cut/paste line that has the proper ''&lt;div&gt;&lt;/div&gt;'' for the baseline image.
+</dd>
+</dl>
+<ul>
+<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/SyncRepoWithWiki.sh"><i>SyncRepoWithWiki.sh</i></a>
+</li>
+</ul>
+<dl>
+<dd> This shell script runs <i>ScrapeWiki</i> to create source files for all wiki examples. Then it uses git to add, remove or modify the source code. The resulting repository is pushed to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples">the github repository</a>. The script is run nightly by a cronjob on a designated host (currently BillsBasement). <b>NOTE: this script should only be run by one individual (currently Lorensen)</b>.
+</dd>
+</dl>
+<ul>
+<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/Testing/Data"><i>Testing/Data</i></a>
+</li>
+</ul>
+<dl>
+<dd> Some examples require input data. A small number of datasets are distributed with the examples and are used by the regression tests. All administrators can add input data.
+</dd>
+</dl>
+<ul>
+<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/Testing/Baseline"><i>Testing/Baseline</i></a>
+</li>
+</ul>
+<dl>
+<dd> Examples that produce images are regression tested. <a rel="nofollow" class="external text" href="http://www.cmake.org/Wiki/CMake_Testing_With_CTest">ctest</a> runs the examples and when appropriate, compares the output  of the example to a baseline image. Each topic has a directory in Testing/Baseline. All administrators can add and modify baseline images. 
+</dd>
+</dl>
+<ul>
+<li> Topic Directories
+</li>
+</ul>
+<dl>
+<dd>Examples for each topic reside in a directory with the topic name. If the examples in a topic directory should be compiled and run, the topic directory has a CMakeLists.txt file. All administrators can create topic directories and CMakeLists.txt files.
+</dd>
+</dl>
+<h2><span class="mw-headline" id="Administrator_Tasks">Administrator Tasks</span></h2>
+<h3><span class="mw-headline" id="Clone_repository_with_write_access">Clone repository with write access</span></h3>
+<p>(Note the git@ instead of https:// as is listed on the Users instructions page)
+</p>
+<pre>git clone git@github.com:InsightSoftwareConsortium/ITKWikiExamples.git
+</pre>
+<h3><span class="mw-headline" id="Add_a_new_topic">Add a new topic</span></h3>
+<ul>
+<li> Create a topic subdirectoy
+</li>
+</ul>
+<pre>mkdir <i><b>MyTopic</b></i>
+cd <i><b>MyTopic</b></i>
+</pre>
+<ul>
+<li> Create a CMakeLists.txt file
+</li>
+</ul>
+<hr />
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">PROJECT</span> <span class="sy0">(</span>MyTopic<span class="sy0">)</span>
+&#160;
+<span class="kw1">SET</span><span class="sy0">(</span>KIT MyTopic<span class="sy0">)</span>
+<span class="kw1">SET</span><span class="sy0">(</span>KIT_LIBS itkHybrid<span class="sy0">)</span>
+&#160;
+<span class="kw1">IF</span><span class="sy0">(</span><span class="kw3">NOT</span> WikiExamples_BINARY_DIR<span class="sy0">)</span>
+  <span class="kw1">FIND_PACKAGE</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
+  <span class="kw1">INCLUDE</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
+<span class="kw1">ENDIF</span><span class="sy0">(</span><span class="kw3">NOT</span> WikiExamples_BINARY_DIR<span class="sy0">)</span>
+&#160;
+<span class="co1">#</span>
+<span class="co1"># Build all .cxx files in the directory</span>
+<span class="kw1">FILE</span><span class="sy0">(</span>GLOB ALL_FILES *.cxx<span class="sy0">)</span>
+<span class="kw1">foreach</span><span class="sy0">(</span>SOURCE_FILE <span class="re0">${ALL_FILES}</span><span class="sy0">)</span>
+  <span class="kw1">STRING</span><span class="sy0">(</span><span class="kw3">REPLACE</span> <span class="st0">&quot;.cxx&quot;</span> <span class="st0">&quot;&quot;</span> TMP <span class="re0">${SOURCE_FILE}</span><span class="sy0">)</span>
+  <span class="kw1">STRING</span><span class="sy0">(</span><span class="kw3">REPLACE</span> <span class="re0">${CMAKE_CURRENT_SOURCE_DIR}</span>/ <span class="st0">&quot;&quot;</span> EXAMPLE <span class="re0">${TMP}</span><span class="sy0">)</span>
+  <span class="kw1">ADD_EXECUTABLE</span><span class="sy0">(</span><span class="re0">${EXAMPLE}</span> <span class="re0">${EXAMPLE}</span>.cxx<span class="sy0">)</span>
+  <span class="kw1">TARGET_LINK_LIBRARIES</span><span class="sy0">(</span><span class="re0">${EXAMPLE}</span> <span class="re0">${KIT_LIBS}</span><span class="sy0">)</span>
+<span class="kw1">endforeach</span><span class="sy0">(</span>SOURCE_FILE<span class="sy0">)</span>
+&#160;
+<span class="co1"># Testing</span>
+<span class="kw1">INCLUDE</span><span class="sy0">(</span><span class="re0">${WikiExamples_SOURCE_DIR}</span>/CMake/ExamplesTesting.cmake<span class="sy0">)</span></pre></div></div>
+<hr />
+<ul>
+<li> Add the directory to the main CMakeLists.txt file
+</li>
+</ul>
+<pre>ADD_SUBDIRECTORY(MyTopic)
+</pre>
+<ul>
+<li> Add and commit the new topic directory and CMakeLists.txt file's to the local repository
+</li>
+</ul>
+<pre>cd ..
+git add MyTopic
+git add MyTopic/CMakeLists.txt
+git commit -m "ENH: Added topic MyTopic and CMakeLists.txt file." CMakeLists.txt MyTopic/CMakeLists.txt
+</pre>
+<ul>
+<li> Push to the master repository
+</li>
+</ul>
+<pre>git push
+</pre>
+<p>If you get an error, you should make sure your rsa key is uploaded to github and that you have done:
+</p>
+<pre>git config remote.origin.pushurl git@github.com:InsightSoftwareConsortium/ITKWikiExamples.git
+</pre>
+<h3><span class="mw-headline" id="Add_a_test_that_requires_arguments">Add a test that requires arguments</span></h3>
+<p>By default, the <i>CMakeLists.txt</i> in a topic directory creates a small test driver for each .cxx file it finds. Then it creates an <b>ADD_TEST</b> command. The default <b>ADD_TEST</b> command assumes that the test has no arguments.
+</p><p>Some tests require arguments. To prevent the <b>ADD_TEST</b> from being generated, add any examples that require arguments to the list <b>NEEDS_ARGS</b>:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1">  <span class="kw1">SET</span><span class="sy0">(</span>NEEDS_ARGS 
+    Example1
+    Example2
+  <span class="sy0">)</span>
+  <span class="kw1">INCLUDE</span><span class="sy0">(</span><span class="re0">${WikiExamples_SOURCE_DIR}</span>/CMake/ExamplesTesting.cmake<span class="sy0">)</span></pre></div></div>
+<p>Then, provide an <b>ADD_TEST</b> for each:
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1">  <span class="kw1">ADD_TEST</span><span class="sy0">(</span><span class="re0">${KIT}</span>-Example1 <span class="re0">${EXECUTABLE_OUTPUT_PATH}</span>/<span class="re0">${KIT}</span>CxxTests
+    TestExample1  arg1 arg2<span class="sy0">)</span>
+  <span class="kw1">ADD_TEST</span><span class="sy0">(</span><span class="re0">${KIT}</span>-Example2 <span class="re0">${EXECUTABLE_OUTPUT_PATH}</span>/<span class="re0">${KIT}</span>CxxTests
+    TestExample2  arg1 arg2 arg3<span class="sy0">)</span></pre></div></div>
+<h3><span class="mw-headline" id="Add_a_regression_baseline_image">Add a regression baseline image</span></h3>
+<p>Any example that uses a render window interactor will expect to find a baseline image for regression testing. The first time the test for the example is run, using ctest, the test will fail and report that a baseline image could not be found.
+</p>
+<ul>
+<li> The test for the example will produce a test output image in WikiExamples-<i><b>build</b></i>/Testing/Temporary. The name of the image will be Test<i><b>ExampleName</b></i>.png
+</li>
+<li> With an image viewer, verify that the image is correct.
+</li>
+<li> Copy the image from Testing/Temporary into WikiExamples/Testing/Baseline/<i><b>Topic</b></i>/Test<b>ExampleName</b>.png
+</li>
+<li> If there is more than one possible output image, name the image WikiExamples/Testing/Baseline/<i><b>Topic</b></i>/Test<b>ExampleName</b>_1.png instead
+</li>
+<li> Rerun ctest -V -R Test<i><b>ExampleName</b></i>
+</li>
+</ul>
+<dl>
+<dd> The test should now pass
+</dd>
+</dl>
+<ul>
+<li> Add the baseline to the repository
+</li>
+</ul>
+<pre>git add Testing/Baseline/Topic/TestExampleName.png
+git commit -m "ENH: Added baseline for TestExampleName regression test
+git push
+</pre>
+<ul>
+<li> Overnight, a script automatically produces and uploads a file with the name 
+</li>
+</ul>
+<pre>ITK_Examples_Baseline_'Folder'_Test'TestName'.png
+</pre>
+<p>You must add this tag to the top of the example page:
+</p><p>
+ &lt;div class=&quot;floatright&quot;&gt;[[File:ITK_Examples_Baseline_'Folder'_Test'TestName'.png]]&lt;/div&gt;
+
+</p><p>An example is:
+
+ &lt;div class=&quot;floatright&quot;&gt;[[File:ITK_Examples_Baseline_Filtering_TestLandmarkTransform.png]]&lt;/div&gt;
+
+</p>
+<h3><span class="mw-headline" id="Add_example_input_data">Add example input data</span></h3>
+<p>We like to keep the example data to a small number of small files. If you must add input data for the tests:
+</p>
+<pre>git add Testing/Data/MyData.whatever
+git commit -m "ENH: Added new example input data." Testing/Data/Mydata.whatever
+git push
+</pre>
+<h3><span class="mw-headline" id="Add_a_testing_machine_to_the_dashboard">Add a testing machine to the dashboard</span></h3>
+<ul>
+<li> The simplest way is to add an Experimental build
+</li>
+</ul>
+<pre>make Experimental
+</pre>
+<ul>
+<li> Or a Nightly build
+</li>
+</ul>
+<pre>make Nightly
+</pre>
+<ul>
+<li> Or create a ctest script. A starting ctest script (SampleBuildTest.cmake) is created when you run cmake. You should edit this line so we know where the submissions is coming from:
+</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">set</span><span class="sy0">(</span>CTEST_SITE <span class="st0">&quot;BillsBasement&quot;</span><span class="sy0">)</span></pre></div></div>
+<p>Then you should comment one of these, depending on which type of build you would like to submit.
+</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">set</span><span class="sy0">(</span>DASHBOARD Nightly<span class="sy0">)</span>
+<span class="kw1">set</span><span class="sy0">(</span>DASHBOARD Experimental<span class="sy0">)</span></pre></div></div>
+<hr />
+<dl>
+<dd>Copy the edited SampleBuildTest.cmake to <i><b>/home/foo/</b></i>WikiExamples.ctest. This can be run nightly from a cronjob (crontab -e)
+</dd>
+</dl>
+<pre>0 23 * * * ctest -S <i><b>/home/foo/</b></i>WikiExamples.ctest -V  &amp;&gt; <i><b>/home/foo/</b></i>WikiExamplesNightly.log
+</pre>
+<h3><span class="mw-headline" id="Check_the_dashboard_frequently.21">Check the dashboard frequently!</span></h3>
+<p><a rel="nofollow" class="external free" href="http://www.cdash.org/CDash/index.php?project=ITKWikiExamples">http://www.cdash.org/CDash/index.php?project=ITKWikiExamples</a>
+</p>
+<h3><span class="mw-headline" id="Updating_the_links_in_the_ITK_Doxygen">Updating the links in the ITK Doxygen</span></h3>
+<p>To create a patch with the latest example links added in the ITK header files (which turn into links in the Doxygen), use
+</p>
+<pre>./InsertDoxygenLink massive-set ../../ITK
+</pre>
+<!-- 
+NewPP limit report
+CPU time usage: 0.080 seconds
+Real time usage: 0.077 seconds
+Preprocessor visited node count: 129/1000000
+Preprocessor generated node count: 244/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8919-0!*!0!!en!*!* and timestamp 20150331054040 and revision id 53484
+ -->
+</div><div class="printfooter">
+Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/Instructions/ForAdministrators&amp;oldid=53484">http://itk.org/Wiki/index.php?title=ITK/Examples/Instructions/ForAdministrators&amp;oldid=53484</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Examples/Instructions/ForAdministrators" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Examples/Instructions/ForAdministrators&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Examples/Instructions/ForAdministrators&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="/Wiki/index.php?title=ITK/Examples/Instructions/ForAdministrators&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FExamples%2FInstructions%2FForAdministrators" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				<li id="pt-createaccount"><a href="/Wiki/Special:RequestAccount">Request account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="/Wiki/Main_Page" style="background-image: url(/Wiki/images/KWLogo.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="/Wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" placeholder="Search" title="Search KitwarePublic [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+
+					</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK/Examples/Instructions/ForAdministrators" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK/Examples/Instructions/ForAdministrators" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="/Wiki/index.php?title=ITK/Examples/Instructions/ForAdministrators&amp;oldid=53484" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="/Wiki/index.php?title=ITK/Examples/Instructions/ForAdministrators&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-coll-print_export" role="navigation">
+		<h3>Print/export</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="coll-create_a_book"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ITK%2FExamples%2FInstructions%2FForAdministrators">Create a book</a></li>
+				<li id="coll-download-as-rl"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ITK%2FExamples%2FInstructions%2FForAdministrators&amp;oldid=53484&amp;writer=rl">Download as PDF</a></li>
+				<li id="t-print"><a href="/Wiki/index.php?title=ITK/Examples/Instructions/ForAdministrators&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-copyrightico">
+		<a href="http://creativecommons.org/licenses/by/2.5/"><img src="http://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" /></a>
+	</div>
+	<div id="f-poweredbyico">
+		<a href="//www.mediawiki.org/"><img src="/Wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 26 July 2013, at 11:21.</li>
+		<li id="viewcount">This page has been accessed 2,800 times.</li>
+		<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+		<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li>
+		<li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"ready","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":227});
+}</script></body></html>

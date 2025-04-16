@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4/Testing On Demand/Tutorial - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"0a6d8d55cffbe8ab01996412","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Testing_On_Demand/Tutorial","wgTitle":"ITK/Release 4/Testing On Demand/Tutorial","wgCurRevisionId":56717,"wgRevisionId":56717,"wgArticleId":7978,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Testing_On_Demand/Tutorial","wgRelevantArticleId":7978,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[
+],"wgRedirectedFrom":"ITK_Release_4/Testing_On_Demand/Tutorial","wgInternalRedirectTargetUrl":"/Wiki/ITK/Release_4/Testing_On_Demand/Tutorial"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4/Testing_On_Demand/Tutorial"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Testing_On_Demand_Tutorial rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Release 4/Testing On Demand/Tutorial</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/Wiki/ITK/Release_4/Testing_On_Demand" title="ITK/Release 4/Testing On Demand">Testing On Demand</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/Testing_On_Demand/Tutorial&amp;redirect=no" class="mw-redirect" title="ITK Release 4/Testing On Demand/Tutorial">ITK Release 4/Testing On Demand/Tutorial</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#How_to_Setup_a_Client"><span class="tocnumber">2</span> <span class="toctext">How to Setup a Client</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#XML_Description"><span class="tocnumber">2.1</span> <span class="toctext">XML Description</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#CTest_script"><span class="tocnumber">2.2</span> <span class="toctext">CTest script</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Common_Script"><span class="tocnumber">2.3</span> <span class="toctext">Common Script</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Run_It"><span class="tocnumber">2.4</span> <span class="toctext">Run It</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#How_to_Schedule_a_Testing_Task"><span class="tocnumber">3</span> <span class="toctext">How to Schedule a Testing Task</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Login_into_CDash"><span class="tocnumber">3.1</span> <span class="toctext">Login into CDash</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Select_the_Scheduling_Icon"><span class="tocnumber">3.2</span> <span class="toctext">Select the Scheduling Icon</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Select_a_Client"><span class="tocnumber">3.3</span> <span class="toctext">Select a Client</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Overview">Overview</span></h1>
+<p>There are two steps for setting up an on-demand CDash test.  If you want make your computer available to the InsightToolkit project for testing, just complete step 1.  Step 2 is only available to CDash administrators.
+</p>
+<ol><li><a href="#How_to_Setup_a_Client"> Configure your client</a></li>
+<li><a href="#How_to_Schedule_a_Testing_Task"> Tell the CDash server to use your client</a></li></ol>
+<h1><span class="mw-headline" id="How_to_Setup_a_Client">How to Setup a Client</span></h1>
+<p>A cdash@home client is a computer that is donating time to CDash.  It makes itself available to run testing tasks, such as builds for the <a href="/Wiki/ITK/Gerrit" title="ITK/Gerrit"> the Gerrit review system</a>, that may be requested by CDash.
+</p>
+<h2><span class="mw-headline" id="XML_Description">XML Description</span></h2>
+<p>Place an XML description of your client machine, whose name is perhaps awesomebox, in an XML file, e.g. <i>awesomebox.cdash.xml</i>.
+</p>
+<pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;cdash&gt;
+  &lt;system&gt;
+    &lt;platform&gt;Linux&lt;/platform&gt;
+    &lt;version&gt;Ubuntu&lt;/version&gt;
+    &lt;bits&gt;64&lt;/bits&gt;
+    &lt;basedirectory&gt;/home/ibanez/Dashboards/cdashclient_workspace/&lt;/basedirectory&gt;
+  &lt;/system&gt;
+  &lt;compiler&gt;
+    &lt;name&gt;gcc&lt;/name&gt;
+    &lt;version&gt;4.4.3&lt;/version&gt;
+    &lt;generator&gt;Unix Makefiles&lt;/generator&gt;
+  &lt;/compiler&gt;
+  &lt;cmake&gt;
+    &lt;version&gt;2.8&lt;/version&gt;
+    &lt;path&gt;/home/ibanez/local/bin/cmake&lt;/path&gt;
+  &lt;/cmake&gt;
+  &lt;program&gt;
+    &lt;name&gt;git&lt;/name&gt;
+    &lt;version&gt;1.7.0.4&lt;/version&gt;
+    &lt;path&gt;/usr/bin/git&lt;/path&gt;
+  &lt;/program&gt;
+  &lt;allowedproject&gt;Insight&lt;/allowedproject&gt;
+&lt;/cdash&gt;
+</pre>
+<p>Valid values for the <i>cdash/system/platform</i> element and the <i>cdash/system/version</i> element can be observed here:
+<a rel="nofollow" class="external text" href="https://www.kitware.com/svn/CDash/trunk/models/clientos.php">Client OS description</a>
+</p>
+<h2><span class="mw-headline" id="CTest_script">CTest script</span></h2>
+<p>A CTest script to advertise your availability to the CDash server.  Pit this in a file such as <i>awesomebox.ctest</i>.
+</p>
+<pre># These variables define the system and should be set
+# In the future CTest might be able to determine this automatically
+set(CDASH_SITENAME "awesomebox")
+set(CDASH_SYSTEMNAME "Ubuntu-64bits")
+get_filename_component(_thisdir "${CMAKE_CURRENT_LIST_FILE}" PATH)
+set(CDASH_SITE_CONFIG_FILE "${_thisdir}/awesomebox.cdash.xml")
+set(CDASH_TEMP_DIRECTORY "${_thisdir}/workspace/tmp")
+set(CTEST_EXECUTABLE "/usr/bin/ctest")
+set(CTEST_DROP_SITE "open.cdash.org")
+set(CTEST_DROP_URL "/submit.php")
+set(CDASH_LOOP_DURATION 64800) # Available for 18 hours / day
+# Now include the common setup for cdash
+include(cdash_client_common.ctest)
+</pre>
+<h2><span class="mw-headline" id="Common_Script">Common Script</span></h2>
+<p>And finally, you need to put in the same directory the common script:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="https://www.kitware.com/svn/CDash/trunk/scripts/cdash_client_common.ctest">cdash_client_common.ctest</a></li></ul>
+<p>that is included at the bottom of the client script.
+</p>
+<h2><span class="mw-headline" id="Run_It">Run It</span></h2>
+<p>you run the ctest script the usual way with CTest
+</p>
+<pre> ctest   -S  awesomebox.ctest   -V
+</pre>
+<p>The system will reply with a message similar to
+</p>
+<pre> Cannot create directory /Testing/Temporary
+ Cannot create log file: LastSubmit.log
+ Submit files (using http)
+    Using HTTP submit method
+    Drop site:<a rel="nofollow" class="external free" href="http://open.cdash.org/submit.php?sitename=awesomebox&amp;systemname=Ubuntu-64bits&amp;submitinfo=1">http://open.cdash.org/submit.php?sitename=awesomebox&amp;systemname=Ubuntu-64bits&amp;submitinfo=1</a>
+    Uploaded: /home/ibanez/Dashboards/cdashclient/cdash-home/awesomebox.cdash.xml
+    Submission successful
+ SiteId=13
+ 2: Nothing to do...
+ 22: Nothing to do...
+ ...
+</pre>
+<p>The client will ping the server every 30 seconds (this value may change in the future) to check if the server has any new tasks for the client.
+</p>
+<h1><span class="mw-headline" id="How_to_Schedule_a_Testing_Task">How to Schedule a Testing Task</span></h1>
+<p>In order to schedule a testing task in CDash you should execute the following steps:
+</p>
+<h2><span class="mw-headline" id="Login_into_CDash">Login into CDash</span></h2>
+<p>Go to the CDash page of your administrator account
+</p>
+<ul><li><a rel="nofollow" class="external free" href="http://open.cdash.org/user.php">http://open.cdash.org/user.php</a></li></ul>
+<h2><span class="mw-headline" id="Select_the_Scheduling_Icon">Select the Scheduling Icon</span></h2>
+<ul><li>Click on the icon of a Floppy disk with a Gear on top
+<ul><li>Marked as "Schedule Build"</li></ul></li></ul>
+<p><a href="/Wiki/File:ITK-testing-on-demand.png" class="image"><img alt="ITK-testing-on-demand.png" src="/Wiki/images/thumb/5/50/ITK-testing-on-demand.png/400px-ITK-testing-on-demand.png" decoding="async" width="400" height="173" srcset="/Wiki/images/thumb/5/50/ITK-testing-on-demand.png/600px-ITK-testing-on-demand.png 1.5x, /Wiki/images/5/50/ITK-testing-on-demand.png 2x" /></a>
+</p>
+<ul><li>This will show the available machines and their platform features.</li>
+<li>The "Schedule Build" icon is available only to CDash users whose project role is "project administrator."</li>
+<li>If you still don't see it as Project Administrator, make sure the <a rel="nofollow" class="external text" href="http://public.kitware.com/Wiki/CDash:Build_Management">$CDASH_MANAGE_CLIENTS variable is '1'</a> in your cdash/config.php.</li></ul>
+<p><br />
+The top of the web interface looks like:
+</p><p><a href="/Wiki/File:ITK-testing-on-demand-02.png" class="image"><img alt="ITK-testing-on-demand-02.png" src="/Wiki/images/thumb/9/9f/ITK-testing-on-demand-02.png/400px-ITK-testing-on-demand-02.png" decoding="async" width="400" height="493" srcset="/Wiki/images/thumb/9/9f/ITK-testing-on-demand-02.png/600px-ITK-testing-on-demand-02.png 1.5x, /Wiki/images/9/9f/ITK-testing-on-demand-02.png 2x" /></a>
+</p><p>and the bottom of the same page looks like:
+</p><p><a href="/Wiki/File:ITK-testsing-on-demand-03.png" class="image"><img alt="ITK-testsing-on-demand-03.png" src="/Wiki/images/thumb/b/b2/ITK-testsing-on-demand-03.png/400px-ITK-testsing-on-demand-03.png" decoding="async" width="400" height="256" srcset="/Wiki/images/thumb/b/b2/ITK-testsing-on-demand-03.png/600px-ITK-testsing-on-demand-03.png 1.5x, /Wiki/images/thumb/b/b2/ITK-testsing-on-demand-03.png/800px-ITK-testsing-on-demand-03.png 2x" /></a>
+</p>
+<h2><span class="mw-headline" id="Select_a_Client">Select a Client</span></h2>
+<p>Select a client or clients by clicking on the
+</p>
+<ul><li>Architecture list</li>
+<li>Compiler list</li></ul>
+<p>and finally going to the bottom of the interface and clicking on the "Schedule" button.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20221002194028
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.017 seconds
+Real time usage: 0.018 seconds
+Preprocessor visited node count: 36/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:7978-0!canonical and timestamp 20221002194028 and revision id 56717. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Testing_On_Demand/Tutorial&amp;oldid=56717">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Testing_On_Demand/Tutorial&amp;oldid=56717</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Testing_On_Demand/Tutorial" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK/Release_4/Testing_On_Demand/Tutorial" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Testing_On_Demand/Tutorial">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Testing_On_Demand/Tutorial&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Testing_On_Demand/Tutorial&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Testing_On_Demand/Tutorial" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK/Release_4/Testing_On_Demand/Tutorial" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4%2FTesting+On+Demand%2FTutorial" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4/Testing_On_Demand/Tutorial" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4/Testing_On_Demand/Tutorial" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Testing_On_Demand/Tutorial&amp;oldid=56717" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Testing_On_Demand/Tutorial&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 31 August 2014, at 04:43.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.017","walltime":"0.018","ppvisitednodes":{"value":36,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20221002194028","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":89});});</script>
+</body></html>

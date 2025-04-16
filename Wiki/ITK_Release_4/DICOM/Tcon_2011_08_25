@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4/DICOM/Tcon 2011 08 25 - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"45e178cd59aa7bf625fdb818","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/DICOM/Tcon_2011_08_25","wgTitle":"ITK/Release 4/DICOM/Tcon 2011 08 25","wgCurRevisionId":44301,"wgRevisionId":44301,"wgArticleId":9499,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/DICOM/Tcon_2011_08_25","wgRelevantArticleId":9499,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],
+"wgRedirectedFrom":"ITK_Release_4/DICOM/Tcon_2011_08_25","wgInternalRedirectTargetUrl":"/Wiki/ITK/Release_4/DICOM/Tcon_2011_08_25"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4/DICOM/Tcon_2011_08_25"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_DICOM_Tcon_2011_08_25 rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Release 4/DICOM/Tcon 2011 08 25</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/Wiki/ITK/Release_4/DICOM" title="ITK/Release 4/DICOM">DICOM</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/DICOM/Tcon_2011_08_25&amp;redirect=no" class="mw-redirect" title="ITK Release 4/DICOM/Tcon 2011 08 25">ITK Release 4/DICOM/Tcon 2011 08 25</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><ul><li>steve: pretty consistent, no surprise</li>
+<li>ron</li>
+<li>- based on ctk which is on top of DCMTK, on the verge of working for slicer (works on steve's almost on ron's)</li>
+<li>- that s the chosen direction</li>
+<li>- we are also planning to developed an internal format that can be stored and retrieved from a PACS (in principle) we called it lollipop internally.</li>
+<li>- now today itk being based on gdcm, the result is some inconsistencies that lead to reading (/writing) twice the images which is wasting.</li>
+<li>- DICOM RT would be nice</li>
+<li>- better support for diffusion (MRI?)</li>
+<li>&gt; steve</li>
+<li>- that s pretty much it</li>
+<li>- ( never understood why DICOM protocol / PACS gdcm support was stressed that much )</li>
+<li>- we have to do a major work to support ITK because of gdcm today and if we have to move to gdcm 2.x it will be a lot of work</li>
+<li>&gt; terry</li>
+<li>- it was not clear at that time that the licence was ok for dcmtk</li>
+<li>- it was not clear that such an active group would exists around DCMTK</li>
+<li>- it's not ITK role to handle GUI, it makes a lot of sense for ctk. Its kind of a PACS GUI lego</li>
+<li>- DCMTK *nowadays* are very active, the overall situation is different today</li>
+<li>- can someone tell me about licencing concern?</li>
+<li>- can someone comment about stability today?</li>
+<li>- metadata dictionnary support should be handled for example outside of the pure image processing (ITK) pipeline for example.</li>
+<li>&gt; steve</li>
+<li>- for really testing, you need to test against hospital environement</li>
+<li>- and against vendors's machine (siemens) and such.</li>
+<li>&gt; terry</li>
+<li>- understand, we need such partners</li>
+<li>- most of our PACS are running within pvt networks, so having an (ITK) dashboard would be great.</li>
+<li>- one of the strength of the ITK project are the volunteers providing machines: NIH, HMS, GE, ...</li>
+<li>- They could check that it operates on a daily basis (even though we might have to drill a hole).</li>
+<li>- If we can achieve that we will have given help to a lot of people. Wether it is gdcm or DCMTK.</li>
+<li>- Did not mean to be defensive of the review process, but we need to check carefully the licence.</li>
+<li>&gt; steve</li>
+<li>- there is no such problem, at least for the parts we are using.</li>
+<li>&gt; terry</li>
+<li>- there is also the concern of the sixe, even though it is not such a concern for itk v4 thanks for modularity</li>
+<li>&gt; steve</li>
+<li>- we are using the 3.6 release now</li>
+<li>- git server in germany slow, might have to mirror</li>
+<li>- 3.6 release was updated to make ctk compiled. everything was sync'ed and the DCMTK team was very proactive</li>
+<li>&gt; bill</li>
+<li>- especially since feb hackfest</li>
+<li>&gt; ron</li>
+<li>- the fact that lots where in europe helped.</li>
+<li>&gt; steve</li>
+<li>- david gobbi shared some cmake script around SLC's NAMIC (3 years ago)</li>
+<li>- since then it s been quite a success story for open source in general</li>
+<li>&gt; bill</li>
+<li>- integration ( gdcm / dcmtk) was fuzzy untill earlier this year</li>
+<li>- realy the communication was the most important</li>
+<li>- but having it in the toolkit did not really make sense</li>
+<li>- the way we used it even before was to use dcmtk to get the image here then use ITK.</li>
+<li>&gt; steve</li>
+<li>- really, to go back to terry point of view, the problem of keeping metadata around</li>
+<li>- also to go back to ron, to avoid rewriting around, keeping the metadata support in ITK, or even in sql DB, that would be ideal.</li>
+<li>&gt; stephen</li>
+<li>- discussion tuesday about streaming</li>
+<li>- do you actually at anytime want to stram directly from the pacs to an ITK pipeline</li>
+<li>- I personally don t think so as we multitask</li>
+<li>&gt; steve</li>
+<li>- I can t imagine any case where we would want to stream directly</li>
+<li>&gt; ron</li>
+<li>- closest usage scenario would be using batch mode</li>
+<li>&gt; steve</li>
+<li>- yeah but you would still want to use FS.</li>
+<li>&gt; bill</li>
+<li>- as it turns out, you never know what kind of DS you will get, so you still will have to parse out the data before you decide what to do with it</li>
+<li>&gt; steve, stephen</li>
+<li>- exactly</li>
+<li>&gt; steve</li>
+<li>- the way we do it in CTK, we first store it in th DB then write it to disk</li>
+<li>- the point is in your DB you construct your DB with knoledge of the hierarchy and so on</li>
+<li>- then you can handle the DB to set up the pipelines and even reconstruct the ITK Image without havign to reparse anything</li>
+<li>- We can then tell ITK not to try to reconstruct anything</li>
+<li>&gt; stephen</li>
+<li>- the way I see it is that we will have to eventually make a choice between gdcm and dcmtk.</li>
+<li>- the reason being once the parsing is done (with dcmtk) you odn t want gdcm to come in because the parsin, the DS to support tags would be different.</li>
+<li>&gt; bill</li>
+<li>- can CTK make the ITK image for you.</li>
+<li>&gt; dan</li>
+<li>[...]</li>
+<li>&gt; bill</li>
+<li>- there are methods in ITK to create an image from a pointer</li>
+<li>- so so the application could form the image and handle it to ITK</li>
+<li>- point being, ctk handle the dicom part and handle the image to ITK</li>
+<li>&gt; dan</li>
+<li>- yeah, it works very well for us, dicom is handled separatly from the (ITK) toolkit, as we need to handle our tags anyway</li>
+<li>&gt; steve</li>
+<li>- in terme of the slicer interface, we will have the same kind of income / outcome filter.</li>
+<li>- when you are ready you can reassociate the rsult with a patient and the metadatat get grafted back in.</li>
+<li>&gt; bill</li>
+<li>- in a way it makes more sense.</li>
+<li>- ITK should not have to know how the metadata shoudl be handle (or even exist)</li>
+<li>&gt; stephen</li>
+<li>- yeah, the analogy is teaching a resampling filter that he has to also modify ....</li>
+<li>&gt; terry</li>
+<li>- what should we do between now and december?</li>
+<li>&gt; alex:</li>
+<li>- drop the PACS implementation in gdcm</li>
+<li>- use dcmtk and ctk for that, at the application level (steve: there is still work, but it s really ahead of gdcm today)</li>
+<li>&gt; terry</li>
+<li>- streaming directly from PACS to ITK pipeline&#160;?</li>
+<li>- alex: consensus on no usage case</li>
+<li>- bill: maybe the only one is a more passive case: a DICOM listener</li>
+<li>- terry: let me rephrase: we shoudl be running tests. Where does those data come from?</li>
+<li>- ron: we had this discussion for ctk. it would be good to have some PACS available for that. without needing to go to IT people</li>
+<li>- steve: realistically, they won t be that helpful as clinical people will not want you to mess with their data / systems.</li>
+<li>- stephen: one step back. Heard from Alex: no PACS in gdcm. Will do RT, diffusion MRI, and streaming from disk. Redirect some effort wrapping/simpleITK effort.</li>
+<li>- stephen: dan point of view: three steps process dcmtk for dicom, then itk, then ... What is mayo clinic plan&#160;? SOme tasks might have a lower priority for ITK v4 point of view?</li>
+<li>- terry: ctk having a script to connect to a PACS and make sure the filters continue to work the way they used to. This testing is important.</li>
+<li>- stephen: sure, but streaming directly in memory is not.</li>
+<li>- terry: yeah, but do you need to have slicer in between to access the legion DS?</li>
+<li>- stephen: i don t think anybody is proposing that.</li>
+<li>- terry: The mayo group might want to take a look at ctk/dcmtk to check.</li>
+<li>- ron: the reason why we use ctk is to compensate for things that are in nobody's else territory.</li>
+<li>- stephen: dan, do you see the solution you are providing will require ctk?</li>
+<li>- dan: no. [...] Now at the meeting last year, mathieu and alex would do the networking, so we decided not to dump dcmtk in ITK. So we decided we would support and take more a testing role for cosmo. As things have evolved, simpleITK took most of effort, and gdcm never went to the point where they would need our help with PACS station.</li>
+<li>- steve: everything related to Qt integration in ctk is not relevant to ITK. But anything that would help bypass the double parsing problem would be beneficial to ITK.</li>
+<li>- terry: what are we going to deliver by december: RT, diffusion, .... but then what&#160;? I hear more basic problem, double parsing. Managing metadata. This is less important for image processing, but to the user it is maybe the most important.</li>
+<li>- stephen: is it the right thing to do it on filter to filter basis? Instead of having a way to handle a "parallel" entity (gdcm? dcmtk?) that handle the metadata part.</li>
+<li>- steve: the concept of modularity, with inter beneficial nature is important. At the dcmtk/ctk level we should be able to do the network and the infrastructure, perhaps in the DB. it would be great if ITK could be pointed to the DB and get infos from there to reconstruct the image. That would be great. Other thing would be for us to be able to within itk to define the in memory metadata dic equivalent of the DB structure. In a ctk application (slicer) then it would be easy to go back and forth. Maybe the API exists today, but convention for metadata dic is not defined. I don t think that IT needs to depend on ctk, we just need as a community to agree on the format.</li>
+<li>- stephen: The capacity from ctk to be able to get data from pacs to the DB should be able to be extracted, not to depend on ctk, and could be integrated in ITK then, maybe as a third party module.</li>
+<li>- steve: yeah, it should be doable. It would be great. As long as we have a convention it could be either a metadata dic or q sqllite, doe snto matter, there would be a one-one mapping.</li>
+<li>- stephen: if we had a DS to represent a dicom study (hierarchical DS), it would be much easier.</li>
+<li>- steve: it will be essential anyway to support dicom RT.</li></ul>
+<ul><li>- terry: what are the action item to make it happen?</li>
+<li>- stephen: i like alex idea, but it creates a gap. The part of including dcmtk in itk is on nobody's plate.</li>
+<li>- terry: This might have priority on other stuff. Make Slicer community happy. We have to deliver a dicom work. It has to meet someone happy. I have one customer I want to make happy, this is slicer. What I just heard from the slicer community is: double parsing is more important than ..., better integration is more important, RT - STRUCT is more important than PACS support.</li>
+<li>- terry: stephen, as you have some idea on how this is implemented, steve piepper as you seem to be the person that has more understanding on how this is integrated, alex, as you are under contract, I want you to coordinate.</li>
+<li>- steve: we will have capacity to help.</li>
+<li>- terry: it needs to be done. stephen , steve, alex, make a new roadmap and deliverable. Drop or close current gdcm tickets. Dan &amp; Bill should/could also join if they want.</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20221004020804
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.004 seconds
+Real time usage: 0.004 seconds
+Preprocessor visited node count: 1/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 1/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9499-0!canonical and timestamp 20221004020804 and revision id 44301. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/DICOM/Tcon_2011_08_25&amp;oldid=44301">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/DICOM/Tcon_2011_08_25&amp;oldid=44301</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/DICOM/Tcon_2011_08_25" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/DICOM/Tcon_2011_08_25&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/DICOM/Tcon_2011_08_25">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM/Tcon_2011_08_25&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM/Tcon_2011_08_25&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/DICOM/Tcon_2011_08_25" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/DICOM/Tcon_2011_08_25&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4%2FDICOM%2FTcon+2011+08+25" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4/DICOM/Tcon_2011_08_25" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4/DICOM/Tcon_2011_08_25" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM/Tcon_2011_08_25&amp;oldid=44301" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/DICOM/Tcon_2011_08_25&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 9 December 2011, at 16:00.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.004","walltime":"0.004","ppvisitednodes":{"value":1,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20221004020804","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":86});});</script>
+</body></html>

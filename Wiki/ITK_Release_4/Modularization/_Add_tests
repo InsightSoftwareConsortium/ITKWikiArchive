@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Release 4/Modularization/ Add tests - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"fb3fd841a7cc36c3efb81b0a","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Modularization/_Add_tests","wgTitle":"ITK/Release 4/Modularization/ Add tests","wgCurRevisionId":59335,"wgRevisionId":59335,"wgArticleId":9029,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Modularization/_Add_tests","wgRelevantArticleId":9029,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],
+"wgRedirectedFrom":"ITK_Release_4/Modularization/_Add_tests","wgInternalRedirectTargetUrl":"/Wiki/ITK/Release_4/Modularization/_Add_tests"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4/Modularization/_Add_tests"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Modularization_Add_tests rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Release 4/Modularization/ Add tests</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/Wiki/ITK/Release_4/Modularization" title="ITK/Release 4/Modularization">Modularization</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/Modularization/_Add_tests&amp;redirect=no" class="mw-redirect" title="ITK Release 4/Modularization/ Add tests">ITK Release 4/Modularization/ Add tests</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>The safe assumption behind testing is that "if it is not tested, it is broken".
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Non-regression_tests"><span class="tocnumber">1</span> <span class="toctext">Non-regression tests</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Regression_tests"><span class="tocnumber">2</span> <span class="toctext">Regression tests</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Approach_A"><span class="tocnumber">2.1</span> <span class="toctext">Approach A</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Approach_B"><span class="tocnumber">2.2</span> <span class="toctext">Approach B</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Add_testing_data_to_ITK"><span class="tocnumber">3</span> <span class="toctext">Add testing data to ITK</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Writing_tests"><span class="tocnumber">4</span> <span class="toctext">Writing tests</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Unit_tests"><span class="tocnumber">4.1</span> <span class="toctext">Unit tests</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Non-regression_tests">Non-regression tests</span></h2>
+<p>The same way it used to be, except the newer syntax in "add_test" command:
+</p><p>&lt;syntaxhighlight lang="cmake"&gt;
+</p>
+<pre>add_executable(itkBinaryThresholdFilterTest itkBinaryThresholdFilterTest.cxx)
+</pre>
+<pre>target_link_libraries(itkBinaryThresholdFilterTest ${ITK-BinaryThreshold_LIBRARIES})
+     
+# adopt the modern CMake syntax&#160;:[NAME, COMMAND]
+</pre>
+<pre>itk_add_test(NAME itkBinaryThresholdFilterTest  
+        COMMAND itkBinaryThresholdFilterTest input.png output.png)
+</pre>
+<p>&lt;/syntaxhighlight&gt;
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Regression_tests">Regression tests</span></h2>
+<h3><span class="mw-headline" id="Approach_A">Approach A</span></h3>
+<p>Using the test driver macro
+The CMake macro "CreateTestDriver" defined in 
+</p>
+<pre> Module/Core/TestKernal/CreateTestDriver.cmake
+</pre>
+<p>is designed for grouped regression tests in ITK. 
+</p><p>All the tests in one module share one test driver.
+</p><p>&lt;syntaxhighlight lang="cmake"&gt;
+</p>
+<pre> set(ITKFooFilterTests
+    itkFooFilterTest1.cxx
+    itkFooFilterTest2.cxx)
+</pre>
+<pre> CreateTestDriver(ITKFooFilter  "${ITK_FooFilter-Test_LIBRARIES}"  "${ITK-FooFilterTest}")
+</pre>
+<pre> itk_add_test(NAME  itkFooFilterTest1
+          COMMAND  ITKFooFilterTestDriver  itkFooFilterTest1)
+
+ itk_add_test(NAME  itkFooFilterTest2
+          COMMAND  ITKFooFilterTestDriver  itkFooFilterTest2)
+</pre>
+<p><br />
+&lt;/syntaxhighlight&gt;
+</p><p><br />
+You can find Approach A used in most of the ITK modules.
+for example in
+</p>
+<pre>   ITK/Modules/IO/BMP/test/CMakeLists.txt
+</pre>
+<h3><span class="mw-headline" id="Approach_B">Approach B</span></h3>
+<p>Stand-alone regression tests
+</p><p>There is also a test driver executable("itkTestdriver") designed for stand-alone regression tests. For instance, all the tests in Examples are stand-alone programs each has its own main function call, in which case, the approach A is not appropriate.
+</p><p><br />
+&lt;syntaxhighlight lang="cmake"&gt;
+</p>
+<pre>  add_exectuable(itkFooTest itkFooTest.cxx)
+</pre>
+<pre>  target_line_libraries( itkFooTest ${ITK_LIBRARIES})
+</pre>
+<pre>  itk_add_test(NAME  itkFooTest
+           COMMAND  itkTestDriver
+           --compare  outputBaseline.png output.png
+                      <b>$&lt;TARGET_FILE:</b>itkFooFilterTest<b>&gt;</b> input.png output.png)
+</pre>
+<p>&lt;/syntaxhighlight&gt;
+</p><p><br />
+The new syntax
+</p>
+<pre>    $&lt;TARGET_FILE: xxx&gt; 
+</pre>
+<p>in the add_test command triggers CMake to locate the executable automatically. No need to specify the path for the executable here.
+</p><p>You can find Approach B used in Examples.
+</p><p>For example in
+</p>
+<pre> ITK/Examples/Filtering/test/CMakeLists.txt
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Add_testing_data_to_ITK">Add testing data to ITK</span></h2>
+<pre>  Please refer to: <a rel="nofollow" class="external text" href="http://www.itk.org/Wiki/index.php?title=ITK/Git/Develop/Data&amp;oldid=41775">| Add Data</a>
+</pre>
+<h2><span class="mw-headline" id="Writing_tests">Writing tests</span></h2>
+<h3><span class="mw-headline" id="Unit_tests">Unit tests</span></h3>
+<p>Writing a unit test helps ensuring that the class being exercised
+</p>
+<ul><li>works as expected,</li>
+<li>works invariably along time,</li>
+<li>works invariably across different platforms.</li></ul>
+<p>It also helps in detecting potential issues, and checking how a given class is affected by changes introduced in the code.
+</p><p>A direct consequence of writing and executing a test is that the <a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/Special:WhatLinksHere/ITK/Code_Coverage_Practices">code coverage</a> is improved.
+When writing a unit test you should consider the following principles:
+</p>
+<ul><li>Make sure that all methods of the class being tested are exercised.</li>
+<li>Make sure that if the class is templated, a number of different instances with different arguments are created so that the class is thoroughly tested.</li>
+<li>Make sure your test returns an EXIT_SUCCESS value when succeeding and an EXIT_FAILURE value when failing.
+<ul><li>When a test checks multiple features that individually may return either an EXIT_SUCCESS or an EXIT_FAILURE code, make sure that the whole test is run, and return the code in the end. This will help in locating more issues in the same run.</li></ul></li></ul>
+<p>&lt;source lang="cpp"&gt;
+// appropriate include files
+</p><p>int main( int, char *[] )
+{
+</p>
+<pre> int testPassStatus = EXIT_SUCCESS;
+</pre>
+<pre> //
+ // ...
+ //
+</pre>
+<pre> if( itk::Math::FloatDifferenceULP( floatRepresentationfx1.asFloat, floatRepresentationfx2.asFloat )&#160;!= -1 )
+   {
+   std::cout &lt;&lt; "Unexpected float distance." &lt;&lt; std::endl;
+   testPassStatus = EXIT_FAILURE;
+   }
+ if( itk::Math::FloatAlmostEqual( floatRepresentationfx1.asFloat, floatRepresentationfx2.asFloat ) )
+   {
+   std::cout &lt;&lt; "floatRepresentationfx1 is almost equal to floatRepresentationfx2\n" &lt;&lt; std::endl;
+   }
+ else
+   {
+   std::cout &lt;&lt; "floatRepresentationfx1 is NOT almost equal to floatRepresentationfx2\n" &lt;&lt; std::endl;
+   testPassStatus = EXIT_FAILURE;
+   }
+</pre>
+<pre> return testPassStatus;
+</pre>
+<p>}
+&lt;/source&gt;
+</p><p>instead of 
+</p><p>&lt;source lang="cpp"&gt;
+// appropriate include files
+</p><p>int main( int, char *[] )
+{
+</p>
+<pre> int testPassStatus = EXIT_SUCCESS;
+</pre>
+<pre> //
+ // ...
+ //
+</pre>
+<pre> if( itk::Math::FloatDifferenceULP( floatRepresentationfx1.asFloat, floatRepresentationfx2.asFloat )&#160;!= -1 )
+   {
+   std::cout &lt;&lt; "Unexpected float distance." &lt;&lt; std::endl;
+   return EXIT_FAILURE;
+   }
+ if( itk::Math::FloatAlmostEqual( floatRepresentationfx1.asFloat, floatRepresentationfx2.asFloat ) )
+   {
+   std::cout &lt;&lt; "floatRepresentationfx1 is almost equal to floatRepresentationfx2\n" &lt;&lt; std::endl;
+   }
+ else
+   {
+   std::cout &lt;&lt; "floatRepresentationfx1 is NOT almost equal to floatRepresentationfx2\n" &lt;&lt; std::endl;
+   return EXIT_FAILURE;
+   }
+</pre>
+<pre> return testPassStatus;
+</pre>
+<p>}
+&lt;/source&gt;
+</p>
+<ul><li>When an exception can be thrown by a class, write a condition (in a try/catch block) in the test that is able to reproduce the exception condition.</li>
+<li>When appropriate, exercise a given method a number of times (with different arguments) so that the method is thoroughly tested.</li>
+<li>When required, print messages to the standard output (or error output) so that any errors happened can be checked by a human reader.</li>
+<li>Whenever possible, test against a baseline (ground truth): if an object is not tested against a baseline, we will not know whether it is working as expected, even if its code coverage is 100%.</li>
+<li>Use the testing macros defined in itkTestingMacros.h. Particularly, make sure that the macro EXERCISE_BASIC_OBJECT_METHODS is called right after the creation of the object whose class is being tested.</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20250110202657
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.007 seconds
+Real time usage: 0.007 seconds
+Preprocessor visited node count: 39/1000000
+Post‐expand include size: 1184/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9029-0!canonical and timestamp 20250110202657 and revision id 59335. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/_Add_tests&amp;oldid=59335">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/_Add_tests&amp;oldid=59335</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Modularization/_Add_tests" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Modularization/_Add_tests&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Modularization/_Add_tests">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Modularization/_Add_tests&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Modularization/_Add_tests&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Modularization/_Add_tests" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Modularization/_Add_tests&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRelease+4%2FModularization%2F+Add+tests" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Release_4/Modularization/_Add_tests" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Release_4/Modularization/_Add_tests" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Modularization/_Add_tests&amp;oldid=59335" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Modularization/_Add_tests&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 16 April 2016, at 15:01.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.007","walltime":"0.007","ppvisitednodes":{"value":39,"limit":1000000},"postexpandincludesize":{"value":1184,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20250110202657","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":95});});</script>
+</body>
+</html>

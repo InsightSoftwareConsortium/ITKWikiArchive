@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Configuring and Building - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"03589708746c3bab16fe89b1","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Configuring_and_Building","wgTitle":"ITK/Configuring and Building","wgCurRevisionId":63170,"wgRevisionId":63170,"wgArticleId":622,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Configuring_and_Building","wgRelevantArticleId":622,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":
+"ITK_Configuring_and_Building","wgInternalRedirectTargetUrl":"/Wiki/ITK/Configuring_and_Building"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Configuring_and_Building"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Configuring_and_Building rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Configuring and Building</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Configuring_and_Building&amp;redirect=no" class="mw-redirect" title="ITK Configuring and Building">ITK Configuring and Building</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Configuring_And_Building"><span class="tocnumber">1</span> <span class="toctext">Configuring And Building</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#CMake"><span class="tocnumber">1.1</span> <span class="toctext">CMake</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Configuration_with_the_cmake_executable"><span class="tocnumber">1.1.1</span> <span class="toctext">Configuration with the <b>cmake</b> executable</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Configuration_with_the_ccmake_executable"><span class="tocnumber">1.1.2</span> <span class="toctext">Configuration with the <b>ccmake</b> executable</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Configuration_with_the_cmake-gui_executable"><span class="tocnumber">1.1.3</span> <span class="toctext">Configuration with the <b>cmake-gui</b> executable</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Using_a_predefined_Configuration"><span class="tocnumber">1.2</span> <span class="toctext">Using a predefined Configuration</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Platform_Specific_Guides"><span class="tocnumber">2</span> <span class="toctext">Platform Specific Guides</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Windows"><span class="tocnumber">2.1</span> <span class="toctext">Windows</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Wrapping_ITK"><span class="tocnumber">3</span> <span class="toctext">Wrapping ITK</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Configuring_And_Building">Configuring And Building</span></h2>
+<p>This page describes the various ways of configuring and building ITK in common configurations.  The build instructions are generally the same across platforms.  Nuances will be noted.
+</p>
+<h3><span class="mw-headline" id="CMake">CMake</span></h3>
+<p>ITK is configured with the cross-platform configuration tool, <a rel="nofollow" class="external text" href="http://cmake.org/">CMake</a>.    CMake will create project files for your build system of choice, e.g. Makefile's, Visual Studio project files, KDevelop project files, etc.  The content of these project files is based on a domain specific language kept in <i>CMakeLists.txt</i> files distributed with the source code, the results of introspecting of the software and hardware features available on a system, and the preferences of the user building the system.
+</p><p>There are three executables used to perform a CMake:
+</p>
+<ol><li><b>cmake</b>: A command line interface.</li>
+<li><b>ccmake</b>: An ncurses (terminal) GUI. (only available on Unix-like systems).</li>
+<li><b>cmake-gui</b>: A Qt-based GUI.</li></ol>
+<p>To perform a CMake configuration, we need three things:
+</p>
+<ol><li><a href="/Wiki/ITK/Source" title="ITK/Source"> The source code directory</a>.</li>
+<li>A different directory to perform the build (make this directory manually).</li>
+<li>One of the three CMake executables.</li></ol>
+<p>Configuration variables can have different types, e.g. a boolean, a string, a filepath, etc.  By convention, most persistent configuration variable names are composed of all capital letters and underscores such as <i>BUILD_SHARED_LIBS</i>.  For this reason, they may resemble environmental variables, but they are not environmental variables.
+</p><p>Persistent configuration variables are stored in a file called <i>CMakeCache.txt</i> that lives at the top level of the build directory.  It is possible to edit these variables by hand before re-running the CMake executable.  Any variable can be changed at any time <b>except</b> the path to the C and C++ compiler.  Since changing compiler in the middle of a build will often result in an unusable build, this is not allowed.  To specify a different compiler other than the first one that is found by the system, it must be specified at the initial CMake configuration.  This is performed with the dialog box that pops up when the build tree is empty for <i>cmake-gui</i>.  The paths to the desired C compiler and C++ compiler can be specified with the <i>CC</i> and <i>CXX</i> environmental variables for the <i>cmake</i> and <i>ccmake</i> executables.
+</p>
+<h4><span class="mw-headline" id="Configuration_with_the_cmake_executable">Configuration with the <b>cmake</b> executable</span></h4>
+<p>The <i>cmake</i> executable is the simplest executable, and it is appropriate for shell use or scripting.  To use the executable, first change your current working directory to the build directory.  For example,
+</p>
+<pre> cd ~/bin/ITK
+</pre>
+<p>Next, run the <i>cmake</i> executable.  For a first time configuration, the required argument is the path to the top level of the source tree.  For example,
+</p>
+<pre> cmake ~/src/ITK
+</pre>
+<p>Configuration variables can be specified with the <i>-D</i> option.  For instance,
+</p>
+<pre> cmake -DBUILD_SHARED_LIBS=ON ~/src/ITK
+</pre>
+<p>Make sure configuration completes successfully without any errors.  Fix an errors and re-run 
+</p><p>Once the project has been configured, it can be built with your build system of choice.  For a list of build systems available, see the list of "Generators" at the end of the <i>cmake --help</i> output.  A different generator can be specified with the <i>-G</i> flag to <i>cmake</i>.
+</p><p>On Linux and Mac, the default generator is <i>Unix Makefiles</i>, so the build can be started by invoking the <i>make</i> executable:
+</p>
+<pre> make
+</pre>
+<p>On Windows, the default generator is a Visual Studio project file, so this file can be opened and the build started.
+</p>
+<h4><span class="mw-headline" id="Configuration_with_the_ccmake_executable">Configuration with the <b>ccmake</b> executable</span></h4>
+<p>Again, the curses interface, <i>ccmake</i>, is only available on Linux on Mac.  Command line arguments are largely the same as the <i>cmake</i> executable.  After startup, though, a curses interface will present an interface to edit the CMake variables.  Pressing <b>h</b> will show the following help:
+</p><p>CMake is used to configure and generate build files for software projects. The
+basic steps for configuring a project with ccmake are as follows:
+</p><p>1. Run ccmake in the directory where you want the object and executable files to
+be placed (build directory). If the source directory is not the same as this build
+directory, you have to specify it as an argument on the command line.
+</p><p>2. When ccmake is run, it will read the configuration files and display the
+current build options. If you have run CMake before and have updated the
+configuration files since then, any new entries will be displayed on top and will
+be marked with a *. On the other hand, the first time you run ccmake, all build
+options will be new and will be marked as such. At this point, you can modify any
+options (see keys below) you want to change. When you are satisfied with your
+changes, press 'c' to have CMake process the configuration files. Please note that
+changing some options may cause new ones to appear. These will be shown on top and
+will be marked with *. Repeat this procedure until you are satisfied with all the
+options and there are no new entries. At this point, a new command will appear:
+Generate and Exit. You can now hit 'g' to have CMake generate all the build files
+(i.e. makefiles or project files) and exit. At any point during the process, you
+can exit ccmake with 'q'. However, this will not generate/change any build files.
+</p><p>ccmake KEYS:
+</p><p>Navigation: You can use the arrow keys and page up, down to navigate the options.
+Alternatively, you can use the following keys:
+</p>
+<ul><li>C-n&#160;: next option</li>
+<li>C-p&#160;: previous options</li>
+<li>C-d&#160;: down one page</li>
+<li>C-u&#160;: up one page</li></ul>
+<p>Editing options: To change an option  press enter or return. If the current
+options is a boolean, this will toggle it's value. Otherwise, ccmake will enter
+edit mode. In this mode you can edit an option using arrow keys and backspace.
+Alternatively, you can use the following keys:
+</p>
+<ul><li>C-b&#160;: back one character</li>
+<li>C-f&#160;: forward one character</li>
+<li>C-a&#160;: go to the beginning of the field</li>
+<li>C-e&#160;: go to the end of the field</li>
+<li>C-d&#160;: delete previous character</li>
+<li>C-k&#160;: kill the rest of the field</li>
+<li>Esc&#160;: Restore field (discard last changes)</li>
+<li>Enter&#160;: Leave edit mode</li></ul>
+<p>You can also delete an option by pressing 'd'
+</p><p>Commands:
+</p>
+<ul><li>q&#160;: quit ccmake without generating build files</li>
+<li>h&#160;: help, shows this screen</li>
+<li>c&#160;: process the configuration files with the current options</li>
+<li>g&#160;: generate build files and exit, only available when there are no new options</li></ul>
+<p>and no errors have been detected during last configuration.
+</p>
+<ul><li>l&#160;: shows last errors</li>
+<li>t&#160;: toggles advanced mode. In normal mode, only the most important options are</li></ul>
+<p>shown. In advanced mode, all options are shown. We recommend using normal mode
+unless you are an expert.
+</p>
+<ul><li>/&#160;: search for a variable name.</li></ul>
+<h4><span class="mw-headline" id="Configuration_with_the_cmake-gui_executable">Configuration with the <b>cmake-gui</b> executable</span></h4>
+<p>The cross-platform Qt GUI is a convenient platform for performing configuration.  First, enter the location of the source and build directories.  Next hit the <i>Configure</i> button.  You will be prompted to choose the compiler and the program will perform the initial configuration.   Configuration variables can be edited with the user interface.  You may need to hit the <i>Configure</i> button multiple times as new configuration options may result from previous runs.  Finally, hit the <i>Generate</i> button to produce the files for your build system of choice.  Execute the project file or Makefile generated in the build directory.
+</p>
+<h3><span class="mw-headline" id="Using_a_predefined_Configuration">Using a predefined Configuration</span></h3>
+<p>CMake can be run interactively to configure a build, in which case all settings begin with system defaults (as determined by <tt>CMakeLists.txt</tt>) and the user customises them.
+</p><p>Alternatively, a predefined configuration (such as those shown above) can be provided, which will provide initial settings for the build (also known as <i>priming</i>).  By creating a file called <tt>CMakeCache.txt</tt> in the top level of the build directory, the settings defined therein will be used to override the default settings for the build.
+</p>
+<h2><span class="mw-headline" id="Platform_Specific_Guides">Platform Specific Guides</span></h2>
+<h3><span class="mw-headline" id="Windows">Windows</span></h3>
+<ul><li><a href="/Wiki/ITK/Configuring_and_Building/VisualStudio" title="ITK/Configuring and Building/VisualStudio">Visual Studio</a></li>
+<li><a href="/Wiki/ITK/Configuring_and_Building/QtCreator" title="ITK/Configuring and Building/QtCreator">QtCreator</a></li>
+<li><a href="/Wiki/ITK/Configuring_and_Building/MinGW" title="ITK/Configuring and Building/MinGW">MinGW</a></li></ul>
+<h2><span class="mw-headline" id="Wrapping_ITK">Wrapping ITK</span></h2>
+<p>ITK can be wrapped for several different languages such as Python, Tcl and Java. 
+</p>
+<ul><li><a href="/Wiki/ITK/Java_Wrapping" title="ITK/Java Wrapping">Java wrapping</a> guide</li>
+<li><a href="/Wiki/ITK/Python_Wrapping" title="ITK/Python Wrapping">Python wrapping</a> guide</li>
+<li><a href="/Wiki/ITK/WrapITK_Status" title="ITK/WrapITK Status">WrapITK status</a></li></ul>
+<p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20240702011149
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.012 seconds
+Real time usage: 0.014 seconds
+Preprocessor visited node count: 34/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.908      1 -total
+100.00%    3.908      1 Template:ITK/Template/Footer
+ 44.52%    1.740      1 Template:ITK/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:622-0!canonical and timestamp 20240702011149 and revision id 63170. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Configuring_and_Building&amp;oldid=63170">https://public.kitware.com/Wiki/index.php?title=ITK/Configuring_and_Building&amp;oldid=63170</a>"</div></div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Configuring_and_Building" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK/Configuring_and_Building" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Configuring_and_Building">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Configuring_and_Building&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Configuring_and_Building&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Configuring_and_Building" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK/Configuring_and_Building" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FConfiguring+and+Building" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Configuring_and_Building" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Configuring_and_Building" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Configuring_and_Building&amp;oldid=63170" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Configuring_and_Building&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 28 April 2019, at 19:12.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.012","walltime":"0.014","ppvisitednodes":{"value":34,"limit":1000000},"postexpandincludesize":{"value":222,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    3.908      1 -total","100.00%    3.908      1 Template:ITK/Template/Footer"," 44.52%    1.740      1 Template:ITK/Template/Categories"]},"cachereport":{"timestamp":"20240702011149","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":115});});</script>
+</body>
+</html>

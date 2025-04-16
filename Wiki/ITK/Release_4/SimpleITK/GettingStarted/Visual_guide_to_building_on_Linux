@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>SimpleITK/GettingStarted/Visual guide to building on Linux - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux","wgTitle":"SimpleITK/GettingStarted/Visual guide to building on Linux","wgCurRevisionId":63991,"wgRevisionId":63991,"wgArticleId":10076,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux","wgRelevantArticleId":10076,"wgRequestId":
+"c02126be40c2d385ac9438a2","wgCSPNonce":!1,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK/Release_4/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux","wgInternalRedirectTargetUrl":"/Wiki/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.monobook.mobile"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<!--[if lt IE 9]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/screen-desktop.css?74a6a" media="screen"/><![endif]--><!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE60Fixes.css?1208f" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.34.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://itk.org/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://itk.org/Wiki/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux"/>
+<!--[if lt IE 9]><script src="/Wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-SimpleITK_GettingStarted_Visual_guide_to_building_on_Linux rootpage-SimpleITK skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">SimpleITK/GettingStarted/Visual guide to building on Linux</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From KitwarePublic</div><div id="contentSub" lang="en" dir="ltr"><span class="subpages">&lt; <a href="/Wiki/SimpleITK" title="SimpleITK">SimpleITK</a>&lrm; | <a href="/Wiki/SimpleITK/GettingStarted" title="SimpleITK/GettingStarted">GettingStarted</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK/Release_4/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux&amp;redirect=no" class="mw-redirect" title="ITK/Release 4/SimpleITK/GettingStarted/Visual guide to building on Linux">ITK/Release 4/SimpleITK/GettingStarted/Visual guide to building on Linux</a>)</span></div><div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="wikitable" style="text-align:center;width: 100%; background-color:#ffff99;" cellpadding="10">
+<tbody><tr>
+<td><b>NOTICE</b>
+</td></tr>
+<tr>
+<td>This page is being migrated to Read The Docs!
+<p>For the up to date version please see <a rel="nofollow" class="external text" href="https://simpleitk.readthedocs.io/en/master/index.html">this page</a>!
+</p>
+</td></tr></tbody></table>
+<div class="center"><div class="floatnone"><a href="/Wiki/File:Simpleitk_logo.png" class="image"><img alt="Simpleitk logo.png" src="/Wiki/images/c/c5/Simpleitk_logo.png" decoding="async" width="200" height="53" /></a></div></div>
+<p>This guide gives detailed instructions for building SimpleITK on Linux. It is written for beginners getting started with SimpleITK.  There are examples of how to develop and execute simple programs in C Sharp and Lua.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Why_Linux.3F"><span class="tocnumber">1</span> <span class="toctext">Why Linux?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Step_1:_Get_Linux"><span class="tocnumber">2</span> <span class="toctext">Step 1: Get Linux</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Step_2:_Install_build_tools"><span class="tocnumber">3</span> <span class="toctext">Step 2: Install build tools</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Step_3:_Get_SimpleITK_source_code"><span class="tocnumber">4</span> <span class="toctext">Step 3: Get SimpleITK source code</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Step_4:_Build_SimpleITK"><span class="tocnumber">5</span> <span class="toctext">Step 4: Build SimpleITK</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Step_5:_Use_SimpleITK"><span class="tocnumber">6</span> <span class="toctext">Step 5: Use SimpleITK</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#A_simple_C.23_program"><span class="tocnumber">6.1</span> <span class="toctext">A simple C# program</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Using_Lua"><span class="tocnumber">6.2</span> <span class="toctext">Using Lua</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span id="Why_Linux?"></span><span class="mw-headline" id="Why_Linux.3F">Why Linux?</span></h2>
+<ul><li>Linux is freely available</li>
+<li>It has all the required tools</li>
+<li>Did I mention it's free?</li></ul>
+<h2><span class="mw-headline" id="Step_1:_Get_Linux">Step 1: Get Linux</span></h2>
+<p>The first step is to install a Linux distribution. Some popular ones are:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://www.ubuntu.com/download">Ubuntu</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.linuxmint.com/download.php">Linux Mint</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.debian.org/">Debian</a></li></ul>
+<p>And here is a <a rel="nofollow" class="external text" href="http://www.makeuseof.com/tag/debian-ubuntu-linux-mint-distribution/">comparison of those distributions</a>.
+</p><p>There are many online tutorials explaining how to install your chosen Linux distribution:
+</p>
+<ul><li>Ubuntu
+<ul><li><a rel="nofollow" class="external text" href="https://help.ubuntu.com/community/Installation">Ubuntu Installation guide</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=GhnLk3gviWY">Learn How to Install Ubuntu Linux in 5 Minutes (youtube)</a></li>
+<li><a rel="nofollow" class="external text" href="https://seogadget.co.uk/the-ubuntu-installation-guide">The Ubuntu Installation Guide (with pictures)</a></li></ul></li>
+<li>Mint
+<ul><li><a rel="nofollow" class="external text" href="http://www.linuxmint.com/documentation/user-guide/english_15.0.pdf">Linux Mint User Guide (English)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.howtogeek.com/howto/20079/install-linux-mint-on-your-windows-computer-or-netbook/">Install Linux Mint on your Windows computer (howtogeek)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=7IK35nZuTlk">How to Install Linux Mint (youtube)</a></li></ul></li>
+<li>Debian
+<ul><li><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=TIuOFqQ-XTk">Debian 7 Installation (youtube)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.wikihow.com/Install-Debian">Install Debian</a></li></ul></li></ul>
+<p>If you are a Windows user, you may consider running Linux on a virtual machine. Some popular virtual machine environments are:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="https://www.virtualbox.org/">VirtualBox</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.vmware.com/">VMWare</a></li></ul>
+<p>If you are a Mac OS X user, you can also run Linux in a virtual machine.  Two virtual machine environments for OS X are:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://www.parallels.com/products/desktop/">Parallels</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.vmware.com/products/fusion/">VMWare Fusion</a></li></ul>
+<p>Again, there are heaps of tutorials:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://www.psychocats.net/ubuntu/virtualbox">Installing Ubuntu inside Windows using VirtualBox</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.wikihow.com/Install-Ubuntu-on-VirtualBox">How to Install Ubuntu on VirtualBox</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.zealfortechnology.com/2014/03/install-linux-mint-16-on-virtualbox.html">Install Mint 16 on VirtualBox</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=D-NYWSoiaTg">How to Install Linux Mint in Virtualbox (youtube)</a></li></ul>
+<p>This guide uses Debian 7, but the steps are very similar for other Linux distributions.
+</p>
+<h2><span class="mw-headline" id="Step_2:_Install_build_tools">Step 2: Install build tools</span></h2>
+<table>
+
+<tbody><tr valign="top">
+<td>The next step is to install the required build tools.
+<p>Open a terminal window (Application Menu &gt; Terminal Emulator) and run the following command:
+</p>
+<pre>sudo apt-get install cmake cmake-curses-gui gcc g++ git
+</pre>
+<p>Confirm that you want to install the packages (press "y"), then wait for the installation to complete.
+</p><p>Alternatively, you could manually select each software package from the <a rel="nofollow" class="external text" href="http://www.nongnu.org/synaptic/">Synaptic Package Manager</a> (Application Menu &gt; Settings &gt; Synaptic Package Manager).
+</p><p>By default building SimpleITK produces the SimpleITK <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/C%2B%2B">C++</a> libraries and the SimpleITK <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Lua_(programming_language)">Lua</a> interpreter.  It also supports bindings for other languages.  To build this support, additional packages need to be installed.  The following table shows the supported language bindings and the corresponding command to install the additional packages required for each language.
+</p>
+<table border="1">
+
+<tbody><tr>
+<th>Programming Language
+</th>
+<th>Command to install the build tools
+</th></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a>
+</td>
+<td>sudo apt-get install monodevelop
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>
+</td>
+<td>sudo apt-get install eclipse
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/R_programming_language">R</a>
+</td>
+<td>sudo apt-get install r-base r-base-dev
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>
+</td>
+<td>sudo apt-get install ruby
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>
+</td>
+<td>sudo apt-get install python python-dev
+</td></tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Tcl">Tcl</a>
+</td>
+<td>sudo apt-get install tcl tcl-dev tk tk-dev
+</td></tr>
+<tr>
+<td>All languages
+</td>
+<td>sudo apt-get install monodevelop eclipse r-base r-base-dev ruby python python-dev tcl tcl-dev tk tk-dev
+</td></tr></tbody></table>
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step02_01.png" class="image"><img alt="" src="/Wiki/images/thumb/8/81/SimpleITK_visual_guide_step02_01.png/200px-SimpleITK_visual_guide_step02_01.png" decoding="async" width="200" height="125" class="thumbimage" srcset="/Wiki/images/thumb/8/81/SimpleITK_visual_guide_step02_01.png/300px-SimpleITK_visual_guide_step02_01.png 1.5x, /Wiki/images/thumb/8/81/SimpleITK_visual_guide_step02_01.png/400px-SimpleITK_visual_guide_step02_01.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step02_01.png" class="internal" title="Enlarge"></a></div>Install the build tools by opening the terminal</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step02_02.png" class="image"><img alt="" src="/Wiki/images/thumb/1/1b/SimpleITK_visual_guide_step02_02.png/200px-SimpleITK_visual_guide_step02_02.png" decoding="async" width="200" height="129" class="thumbimage" srcset="/Wiki/images/thumb/1/1b/SimpleITK_visual_guide_step02_02.png/300px-SimpleITK_visual_guide_step02_02.png 1.5x, /Wiki/images/thumb/1/1b/SimpleITK_visual_guide_step02_02.png/400px-SimpleITK_visual_guide_step02_02.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step02_02.png" class="internal" title="Enlarge"></a></div>In the terminal, use apt-get to install the build tools</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step02_03.png" class="image"><img alt="" src="/Wiki/images/thumb/b/b8/SimpleITK_visual_guide_step02_03.png/200px-SimpleITK_visual_guide_step02_03.png" decoding="async" width="200" height="131" class="thumbimage" srcset="/Wiki/images/thumb/b/b8/SimpleITK_visual_guide_step02_03.png/300px-SimpleITK_visual_guide_step02_03.png 1.5x, /Wiki/images/thumb/b/b8/SimpleITK_visual_guide_step02_03.png/400px-SimpleITK_visual_guide_step02_03.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step02_03.png" class="internal" title="Enlarge"></a></div>Build tools could also be installed using the software manager</div></div></div>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Step_3:_Get_SimpleITK_source_code">Step 3: Get SimpleITK source code</span></h2>
+<table>
+<tbody><tr>
+<td>
+<p>The next step is to get the SimpleITK source code using git.
+</p><p>Decide where you want to put the source code. I'm putting mine in my home directory:
+</p>
+<pre>cd ~
+</pre>
+<p>Now download the SimpleITK source code, by entering the following command in the Terminal:
+</p>
+<pre>git clone --recursive  <a rel="nofollow" class="external free" href="http://itk.org/SimpleITK.git">http://itk.org/SimpleITK.git</a>
+</pre>
+<p>Now change to the SimpleITK directory:
+</p>
+<pre>cd SimpleITK
+</pre>
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step03_02.png" class="image"><img alt="" src="/Wiki/images/thumb/3/36/SimpleITK_visual_guide_step03_02.png/200px-SimpleITK_visual_guide_step03_02.png" decoding="async" width="200" height="124" class="thumbimage" srcset="/Wiki/images/thumb/3/36/SimpleITK_visual_guide_step03_02.png/300px-SimpleITK_visual_guide_step03_02.png 1.5x, /Wiki/images/thumb/3/36/SimpleITK_visual_guide_step03_02.png/400px-SimpleITK_visual_guide_step03_02.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step03_02.png" class="internal" title="Enlarge"></a></div>Get the SimpleITK source code using <code>git</code></div></div></div>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Step_4:_Build_SimpleITK">Step 4: Build SimpleITK</span></h2>
+<p>The next step is to start building.
+</p><p>The recommended way to build is via the so-called "super build".  The build directory should not be inside the source tree.  I put the build directory in the same directory as the source tree.
+</p>
+<pre>cd ~
+mkdir SimpleITK-build
+cd SimpleITK-build
+cmake ../SimpleITK/SuperBuild
+</pre>
+<p>The SuperBuild generates make files which takes care of downloading and building ITK, SWIG, and Lua, as well as SimpleITK.
+</p><p>To start the (long) build process, type:
+</p>
+<pre>make
+</pre>
+<p>On my test system, a 4 core virtual machine with 16 GB of RAM, the build took just over an hour.
+</p><p>After the build is finished, you need to add SimpleITK to your <code>LD_LIBRARY_PATH</code>:
+</p>
+<pre>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/SimpleITK-build/lib
+</pre>
+<p>You can now (optionally) check whether the build was successful:
+</p>
+<pre>cd ~/SimpleITK-build
+ctest
+</pre>
+<p>All (or at least most) of the tests should pass.
+</p>
+<h2><span class="mw-headline" id="Step_5:_Use_SimpleITK">Step 5: Use SimpleITK</span></h2>
+<p>SimpleITK is available to a variety of languages.  In this section we give simple example programs demonstrating the SimpleITK API in C Sharp and Lua.
+</p>
+<h3><span id="A_simple_C#_program"></span><span class="mw-headline" id="A_simple_C.23_program">A simple C# program</span></h3>
+<table>
+
+<tbody><tr valign="top">
+<td>This sub-section will describe how to create a simple C# application using SimpleITK from MonoDevelop.
+<p>To start launch the C# development environment, MonoDevelop (Application Menu &gt; Development &gt; MonoDevelop).
+</p>
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_01.png" class="image"><img alt="" src="/Wiki/images/thumb/f/fa/SimpleITK_visual_guide_step05_CSharp_01.png/200px-SimpleITK_visual_guide_step05_CSharp_01.png" decoding="async" width="200" height="125" class="thumbimage" srcset="/Wiki/images/thumb/f/fa/SimpleITK_visual_guide_step05_CSharp_01.png/300px-SimpleITK_visual_guide_step05_CSharp_01.png 1.5x, /Wiki/images/thumb/f/fa/SimpleITK_visual_guide_step05_CSharp_01.png/400px-SimpleITK_visual_guide_step05_CSharp_01.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_01.png" class="internal" title="Enlarge"></a></div>Open MonoDevelop</div></div></div>
+</td></tr>
+<tr>
+<td>Then create our new Solution (Select File &gt; New &gt; Solution).
+</td></tr>
+<tr>
+<td>Select a C# console project (C# &gt; Console Project). Enter a suitable name e.g. "sitk" and uncheck "Create directory for directory". Select "Forward" and then "OK".
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_02.png" class="image"><img alt="" src="/Wiki/images/thumb/a/aa/SimpleITK_visual_guide_step05_CSharp_02.png/200px-SimpleITK_visual_guide_step05_CSharp_02.png" decoding="async" width="200" height="121" class="thumbimage" srcset="/Wiki/images/thumb/a/aa/SimpleITK_visual_guide_step05_CSharp_02.png/300px-SimpleITK_visual_guide_step05_CSharp_02.png 1.5x, /Wiki/images/thumb/a/aa/SimpleITK_visual_guide_step05_CSharp_02.png/400px-SimpleITK_visual_guide_step05_CSharp_02.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_02.png" class="internal" title="Enlarge"></a></div>Create Console Project</div></div></div>
+</td></tr>
+<tr>
+<td>In the Solution explorer, right-click "Selection" and select "Edit References...".
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_03.png" class="image"><img alt="" src="/Wiki/images/thumb/9/91/SimpleITK_visual_guide_step05_CSharp_03.png/200px-SimpleITK_visual_guide_step05_CSharp_03.png" decoding="async" width="200" height="129" class="thumbimage" srcset="/Wiki/images/thumb/9/91/SimpleITK_visual_guide_step05_CSharp_03.png/300px-SimpleITK_visual_guide_step05_CSharp_03.png 1.5x, /Wiki/images/thumb/9/91/SimpleITK_visual_guide_step05_CSharp_03.png/400px-SimpleITK_visual_guide_step05_CSharp_03.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_03.png" class="internal" title="Enlarge"></a></div>Edit References</div></div></div>
+</td></tr>
+<tr>
+<td>Select the ".Net Assembly" tab, navigate to "~/SimpleITK-build/SimpleITK-build/Wrapping/CSharpBinaries", select "SimpleITKCSharpManaged.dll", click "Add", and then close the window by selecting "OK". This will copy "SimpleITKCSharpManaged.dll" to your build directory e.g. "bin/Debug" or "bin/Release".
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_04.png" class="image"><img alt="" src="/Wiki/images/thumb/1/12/SimpleITK_visual_guide_step05_CSharp_04.png/200px-SimpleITK_visual_guide_step05_CSharp_04.png" decoding="async" width="200" height="130" class="thumbimage" srcset="/Wiki/images/thumb/1/12/SimpleITK_visual_guide_step05_CSharp_04.png/300px-SimpleITK_visual_guide_step05_CSharp_04.png 1.5x, /Wiki/images/thumb/1/12/SimpleITK_visual_guide_step05_CSharp_04.png/400px-SimpleITK_visual_guide_step05_CSharp_04.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_04.png" class="internal" title="Enlarge"></a></div>Add SimpleITKCSharpManaged.dll</div></div></div>
+</td></tr>
+<tr>
+<td>You must also <b>manually copy</b> "libSimpleITKCSharpNative.so" to your build directories:
+<pre>mkdir ~/sitk/bin/Debug
+mkdir ~/sitk/bin/Release
+cp ~/SimpleITK-build/SimpleITK-build/Wrapping/CSharpBinaries/libSimpleITKCSharpNative.so ~/sitk/bin/Debug
+cp ~/SimpleITK-build/SimpleITK-build/Wrapping/CSharpBinaries/libSimpleITKCSharpNative.so ~/sitk/bin/Release
+</pre>
+<p>SimpleITK has now been added as a project reference.
+</p>
+</td></tr>
+<tr>
+<td>The following short program creates an image of a Gaussian blob, generates a derivative image from the Gaussian, scales and windows the derivative's intensities, converts the result to 8-bit unsigned ints, and writes out a PNG file:
+<pre>using System;
+using sitk = itk.simple.SimpleITK;
+
+namespace itk.simple
+{
+    class MainClass
+    {
+        public static void Main (string[] args)
+        {
+            var size = new VectorUInt32 (new uint[] { 128, 128 });
+            var sigma = new VectorDouble (new Double[] { 32.0, 32.0 });
+            var center = new VectorDouble (new Double[] { 64.0, 64.0 });
+
+            var gauss = sitk.GaussianSource (PixelIDValueEnum.sitkFloat32, size, sigma, center);
+
+            var deriv = sitk.Cast (128.0 + 24.0 * sitk.Derivative (gauss), PixelIDValueEnum.sitkUInt8);
+
+            sitk.WriteImage (deriv, "gauss-deriv-test.png");
+        }
+    }
+}
+</pre>
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_05.png" class="image"><img alt="" src="/Wiki/images/thumb/1/13/SimpleITK_visual_guide_step05_CSharp_05.png/200px-SimpleITK_visual_guide_step05_CSharp_05.png" decoding="async" width="200" height="129" class="thumbimage" srcset="/Wiki/images/thumb/1/13/SimpleITK_visual_guide_step05_CSharp_05.png/300px-SimpleITK_visual_guide_step05_CSharp_05.png 1.5x, /Wiki/images/thumb/1/13/SimpleITK_visual_guide_step05_CSharp_05.png/400px-SimpleITK_visual_guide_step05_CSharp_05.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_05.png" class="internal" title="Enlarge"></a></div>A simple C# program</div></div></div>
+</td></tr>
+<tr>
+<td>Note that in the example, the derivative image's intensities are scaled mathematically to illustrate SimpleITK's overloading of the mathematically operators.  The image intensities could also be scaled using SimpleITK's RescaleIntesity function.
+<p>To build the project press "F8" or select Build &gt; Build All from the menu.
+</p><p>To debug the project, add a breakpoint at a desired location and press "F5".
+</p><p>The Gaussian Derivative image to the right shows the results of the C# example program.
+</p>
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:130px;"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_06.png" class="image"><img alt="" src="/Wiki/images/3/3e/SimpleITK_visual_guide_step05_CSharp_06.png" decoding="async" width="128" height="128" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step05_CSharp_06.png" class="internal" title="Enlarge"></a></div>Gaussian Derivative image</div></div></div>
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Using_Lua">Using Lua</span></h3>
+<p><a rel="nofollow" class="external text" href="http://www.lua.org/about.html">Lua</a> is a fast, portable, lightweight scripting language that is included with the SimpleITK source code.  Because the entire source code for Lua is less than 600kb, it takes very little space relative to large projects such as SimpleITK.  That makes Lua very popular as an embedded scripting language.
+</p><p>In this SimpleITK/Lua example we show how to use a text editor to produce a SimpleITK example in Lua and execute the program.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step05_Lua01.png" class="image"><img alt="" src="/Wiki/images/thumb/8/8e/SimpleITK_visual_guide_step05_Lua01.png/200px-SimpleITK_visual_guide_step05_Lua01.png" decoding="async" width="200" height="125" class="thumbimage" srcset="/Wiki/images/thumb/8/8e/SimpleITK_visual_guide_step05_Lua01.png/300px-SimpleITK_visual_guide_step05_Lua01.png 1.5x, /Wiki/images/thumb/8/8e/SimpleITK_visual_guide_step05_Lua01.png/400px-SimpleITK_visual_guide_step05_Lua01.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step05_Lua01.png" class="internal" title="Enlarge"></a></div>Open Mousepad</div></div></div>
+<p>By default, Debian with the Xfce user interface, comes with <b>Mousepad</b> (Application Menu &gt; Accessories &gt; Mousepad), a simple text editor.  Other possible editors include <b>gedit</b> with Gnome or <b>kedit</b> with KDE.
+</p><p><br />
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/Wiki/File:SimpleITK_visual_guide_step05_Lua_02.png" class="image"><img alt="" src="/Wiki/images/thumb/4/4e/SimpleITK_visual_guide_step05_Lua_02.png/200px-SimpleITK_visual_guide_step05_Lua_02.png" decoding="async" width="200" height="158" class="thumbimage" srcset="/Wiki/images/thumb/4/4e/SimpleITK_visual_guide_step05_Lua_02.png/300px-SimpleITK_visual_guide_step05_Lua_02.png 1.5x, /Wiki/images/thumb/4/4e/SimpleITK_visual_guide_step05_Lua_02.png/400px-SimpleITK_visual_guide_step05_Lua_02.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step05_Lua_02.png" class="internal" title="Enlarge"></a></div>Simple Lua Program</div></div></div>
+<p>The following is a simple Lua example similar to the C# example in the previous section.  This program creates an image of a Gaussian blob, computes a derivative image of the Gaussian, rescales the floating point image to 0-255, casts it to a unsigned char image, and writes the result to a PNG file.
+</p>
+<pre>local sitk = {}
+sitk = SimpleITK
+
+size = sitk.VectorUInt32();
+size:push_back(128);
+size:push_back(128);
+
+sigma = sitk.VectorDouble();
+sigma:push_back(32.0);
+sigma:push_back(32.0);
+
+center = sitk.VectorDouble();
+center:push_back(64.0);
+center:push_back(64.0);
+
+gauss = sitk.GaussianSource (sitk.sitkFloat32, size, sigma, center);
+
+deriv = sitk.Derivative(gauss);
+
+result = sitk.RescaleIntensity(deriv, 0, 255.0)
+
+result = sitk.Cast(result, sitk.sitkUInt8)
+
+sitk.WriteImage(result, "sitk-lua-test.png");
+</pre>
+<p>The script is slightly different than the C# example in that the RescaleIntensity filter is used.  In C# mathematical operators are overloaded for SimpleITK images.  This is not the case for Lua, so mathematical operations on SimpleITK images are a bit more complicated.  Therefore I chose to use a built in filter.
+</p><p>To try out the program, copy the code and paste it into Mousepad.  Then Save it as "DerivativeExample.lua" and enter the following command in a Terminal window.
+</p>
+<pre>~/SimpleITK-build/SimpleITK-build/bin/SimpleITKLua DerivativeExample.lua
+</pre>
+<div class="thumb tright"><div class="thumbinner" style="width:130px;"><a href="/Wiki/File:SimpleITK_visual_guide_step05_lua_03.png" class="image"><img alt="" src="/Wiki/images/3/35/SimpleITK_visual_guide_step05_lua_03.png" decoding="async" width="128" height="128" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/Wiki/File:SimpleITK_visual_guide_step05_lua_03.png" class="internal" title="Enlarge"></a></div>Lua Derivative image</div></div></div>
+<p>The Lua Derivative image on the right shows the output of the our SimpleITK Lua example.  The result is similar to, although not the same as the C Sharp produced image.  They are different because the image intensities are not scaled in the same manner.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20211018173532
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.072 seconds
+Real time usage: 0.155 seconds
+Preprocessor visited node count: 41/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 288/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.735      1 Template:SimpleITKMigrationHeader
+100.00%    1.735      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:10076-0!canonical and timestamp 20211018173532 and revision id 63991
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://itk.org/Wiki/index.php?title=SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux&amp;oldid=63991">https://itk.org/Wiki/index.php?title=SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux&amp;oldid=63991</a>"</div>
+<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div><!-- end content --><div class="visualClear"></div></div></div><div class="visualClear"></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="/Wiki/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="/Wiki/index.php?title=SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="/Wiki/index.php?title=SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label"><h3 id="p-cactions-mobile-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main-mobile" class="selected"><a href="/Wiki/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux" title="Page">Page</a></li><li id="ca-talk-mobile" class="new"><a href="/Wiki/index.php?title=Talk:SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux&amp;action=edit&amp;redlink=1" rel="discussion" title=" (page does not exist)">Discussion</a></li><li id="ca-more"><a href="#p-cactions">More</a></li><li id="ca-tools"><a href="#p-tb" title="Tools">Tools</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=SimpleITK%2FGettingStarted%2FVisual+guide+to+building+on+Linux" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="/Wiki/Main_Page" class="mw-wiki-logo" title="Visit the main page"></a></div><div id="sidebar"><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search KitwarePublic" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>  <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/Wiki/index.php?title=SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/Wiki/index.php?title=SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux&amp;oldid=63991" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/Wiki/index.php?title=SimpleITK/GettingStarted/Visual_guide_to_building_on_Linux&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div></div><a href="#sidebar" title="navigation" class="menu-toggle" id="sidebar-toggle"></a><a href="#p-personal" title="user tools" class="menu-toggle" id="p-personal-toggle"></a><a href="#globalWrapper" title="back to top" class="menu-toggle" id="globalWrapper-toggle"></a></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 13 December 2019, at 14:17.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li><li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li></ul></div></div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.072","walltime":"0.155","ppvisitednodes":{"value":41,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":288,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    1.735      1 Template:SimpleITKMigrationHeader","100.00%    1.735      1 -total"]},"cachereport":{"timestamp":"20211018173532","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":226});});</script></body></html>

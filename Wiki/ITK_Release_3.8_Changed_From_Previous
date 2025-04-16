@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK Release 3.8 Changed From Previous - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"270882b2dd48eb5fff0046c9","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_3.8_Changed_From_Previous","wgTitle":"ITK Release 3.8 Changed From Previous","wgCurRevisionId":12765,"wgRevisionId":12765,"wgArticleId":3200,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_3.8_Changed_From_Previous","wgRelevantArticleId":3200,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};
+RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_3_8_Changed_From_Previous rootpage-ITK_Release_3_8_Changed_From_Previous skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK Release 3.8 Changed From Previous</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>This release covers the period April 13,2008 through July 29, 2008
+</p>
+<h2><span class="mw-headline" id="Changes_in_this_Release">Changes in this Release</span></h2>
+<pre>
+
+CMakeLists.txt
+    ENH: Updating the ITK Version number to 3.8. (preparation for release).
+    ENH: Linking the GDCM_LEGACY_SILENT flag to the state of ITK_LEGACY_SILENT.
+    COMP: for the gcc c-compiler, disable two warnings that occur in 3rd party libraries: -Wno-uninitialized and Wno-unused-parameter.
+    ENH:If the user turns on the BUILD_DOXYGEN option, then search for the Doxygen-related executables.
+
+CTestConfig.cmake
+
+DartConfig.cmake
+
+UseITK.cmake.in
+
+itkConfigure.h.in
+
+CMake/CTestCustom.ctest.in
+    COMP: suppress warning about libnetcdf.
+    ENH: added warning exceptions for gdcm deprecation warnings.
+    ENH: bump up max errors.
+
+CMake/Attic/FindUUID.cmake
+    ENH: Move UUID module within gdcm
+
+CMake/itkSampleBuildTest.cmake.in
+    ENH: Add build program.
+
+CMake/itkTestFriendTemplatedFunction.cmake
+
+CMake/itkTestFriendTemplatedFunction
+    ENH: Creating a code example similar to what is found in itk_hashmap and itk_hashtable.
+
+CMake/itkTestTemplatePartialSpecialization
+
+commit-checks.py
+    ENH: new top-level directory
+
+Code/Algorithms/itkAutomaticTopologyMeshSource
+
+Code/Algorithms/itkBalloonForceFilter
+
+Code/Algorithms/itkBalloonForceFilter
+    COMP: initialize points
+    COMP:Remove useless pointers to points v1, v2, v3
+    STYLE: clean ComputeDt method
+
+Code/Algorithms/itkDeformableMesh3DFilter
+    COMP: initialize points
+
+Code/Algorithms/itkFFTRealToComplexConjugateImageFilter
+    COMP: Pipeline methods must be protected.
+
+Code/Algorithms/itkFastMarchingExtensionImageFilter
+
+Code/Algorithms/itkGradientDifferenceImageToImageMetric
+
+Code/Algorithms/itkGradientDifferenceImageToImageMetr
+    COMP: Adding missing member variable to the PrintSelf() method.
+
+Code/Algorithms/itkImageMomentsCalculator
+    ENH: Use new GetInverse API.
+
+Code/Algorithms/itkImageRegistrationMethod
+    BUG: SetFixedImageRegion was missing call to this-&gt;Modified().
+
+Code/Algorithms/itkKappaStatisticImageToImageMetr
+    COMP: warning,variable assigned a value that is never used.
+
+Code/Algorithms/itkLevelSetVelocityNeighborhoodExtractor
+
+Code/Algorithms/itkMIRegistrationFunction
+private/insight-developers/2008-May/010305.html there is no potential backward compatibility issue in changing the API of PDEDeformableRegistrationFunction::GetDeformationField to return a pointer instead of a smart pointer. It would be cleaner to get a const pointer but this would break backward compatibility
+
+Code/Algorithms/itkMeanSquareRegistrationFunction
+private/insight-developers/2008-May/010305.html there is no potential backward compatibility issue in changing the API of PDEDeformableRegistrationFunction::GetDeformationField to return a pointer instead of a smart pointer. It would be cleaner to get a const pointer but this would break backward compatibility
+
+Code/Algorithms/itkMultiResolutionPDEDeformableRegistration
+
+Code/Algorithms/itkMultiResolutionPDEDeformableRegistration
+
+Code/Algorithms/itkNCCRegistrationFunction
+private/insight-developers/2008-May/010305.html there is no potential backward compatibility issue in changing the API of PDEDeformableRegistrationFunction::GetDeformationField to return a pointer instead of a smart pointer. It would be cleaner to get a const pointer but this would break backward compatibility
+
+Code/Algorithms/itkPDEDeformableRegistrationFunction
+private/insight-developers/2008-May/010305.html there is no potential backward compatibility issue in changing the API of PDEDeformableRegistrationFunction::GetDeformationField to return a pointer instead of a smart pointer. It would be cleaner to get a const pointer but this would break backward compatibility
+
+Code/Algorithms/itkRayCastInterpolateImageFunction
+    ENH: fix for bug 0004644, default coordreptype is now more consistent over the toolkit
+
+Code/Algorithms/itkSymmetricForcesDemonsRegistrationFunction
+private/insight-developers/2008-May/010305.html there is no potential backward compatibility issue in changing the API of PDEDeformableRegistrationFunction::GetDeformationField to return a pointer instead of a smart pointer. It would be cleaner to get a const pointer but this would break backward compatibility
+
+Code/Algorithms/itkVnlFFTComplexConjugateToRealImageFilter
+    BUG: Fixed bug #6453. VnlFFTRealToComplexConjugateImageFilter used to compute the conjugate of the transform and vnl_fft_base expects the array dimensions with the fastest varying dimension last whereas the opposite was provided by ITK. Note that a more stringent test is still needed.
+
+Code/Algorithms/itkVnlFFTRealToComplexConjugateImageFilter
+    BUG: Fixed bug #6453. VnlFFTRealToComplexConjugateImageFilter used to compute the conjugate of the transform and vnl_fft_base expects the array dimensions with the fastest varying dimension last whereas the opposite was provided by ITK. Note that a more stringent test is still needed.
+
+Code/BasicFilters/itkBinaryMorphologyImageFilter
+    COMP: *kernel_it &gt; 0 is unsafe if *kernel_it is a bool. Logic using *kernel_it in Analyzekernel was changed to avoid this comparison.
+
+Code/BasicFilters/itkDeformationFieldJacobianDeterminantFilter
+    ENH:  Collasped the code between itkDeformationFieldJacobianDeterminantFilter and itkDisplacementFieldJacobianDeterminantFilter so that the two classes only differ by the virual function EvaluateAtNeighborhood for the different calculations.
+
+Code/BasicFilters/itkDeformationFieldJacobianDeterminantFilter
+    ENH:  Collasped the code between itkDeformationFieldJacobianDeterminantFilter and itkDisplacementFieldJacobianDeterminantFilter so that the two classes only differ by the virual function EvaluateAtNeighborhood for the different calculations.
+
+Code/BasicFilters/itkDeformationFieldSource
+    BUG: wrong type macro
+
+Code/BasicFilters/itkDirectedHausdorffDistanceImageFilter
+    ENH: Added average Hausdorff distance calculation, sometimes called the modified Hausdorff distance
+
+Code/BasicFilters/itkDirectedHausdorffDistanceImageFilter
+    BUG: uninitialzed ivar m_AverageHausdorffDistance.
+    ENH: Added average Hausdorff distance calculation, sometimes called the modified Hausdorff distance
+
+Code/BasicFilters/itkDisplacementFieldJacobianDeterminantFilter
+    ENH:  As discussed on the ITK teleconference on 2008-07-11, a new filer for computing Jacobian Determinants of displacement fields was necessary as the start of a replacement for the itkDeformationFieldJacobianDeterminantFilter that is computes a result that is easily confused with the correct computation of a Jacobian Determinant of a displacement field.
+
+Code/BasicFilters/itkDisplacementFieldJacobianDeterminantFilter
+    COMP: shadowed declaration warning.
+    ENH:  As discussed on the ITK teleconference on 2008-07-11, a new filer for computing Jacobian Determinants of displacement fields was necessary as the start of a replacement for the itkDeformationFieldJacobianDeterminantFilter that is computes a result that is easily confused with the correct computation of a Jacobian Determinant of a displacement field.
+
+Code/BasicFilters/itkEigenAnalysis2DImageFilter
+    STYLE: updated comment, see bug 5435
+
+Code/BasicFilters/itkExtractImageFilter
+
+Code/BasicFilters/itkExtractImageFilter
+    COMP: Fix GCC potential warning when input and output pixel types are different
+
+Code/BasicFilters/itkHausdorffDistanceImageFilter
+    ENH: Added average Hausdorff distance calculation, sometimes called the modified Hausdorff distance
+
+Code/BasicFilters/itkHausdorffDistanceImageFilter
+    BUG: Forgot to add AverageHausdorf ivar to PrintSelf
+
+Code/BasicFilters/itkLog10ImageFilter
+    BUG: 2547 static_cast instead of old-style cast
+
+Code/BasicFilters/itkLogImageFilter
+    BUG: 2547 static_cast instead of old-style cast
+
+Code/BasicFilters/itkPointSetToImageFilter
+
+Code/BasicFilters/itkResampleImageFilter
+    ENH: Const correctness within registration framework
+
+Code/BasicFilters/itkSignedMaurerDistanceMapImageFilter
+    STYLE: Fixing coding style.
+
+Code/BasicFilters/itkSimplexMeshAdaptTopologyFilter
+    COMP: more boolean expression fixes
+    COMP: Fixing warnings about "condition[1-4]" variables shadowing others.
+
+Code/BasicFilters/itkTileImageFilter
+
+Code/BasicFilters/itkVectorCastImageFilter
+    ENH: This filter needs the numeric traits of FixedArray.
+
+Code/BasicFilters/itkVotingBinaryHoleFillingImageFilter
+    COMP: Warning under VS9 that derived class has member function that overrode parent yet differed by const of args.
+
+Code/BasicFilters/itkVotingBinaryImageFilter
+
+Code/BasicFilters/itkVotingBinaryImageFilter
+
+Code/BasicFilters/itkWarpImageFilter
+
+Code/BasicFilters/itkWarpImageFilter
+
+Code/BasicFilters/itkWarpVectorImageFilter
+
+Code/BasicFilters/itkWarpVectorImageFilter
+    COMP: Fixing PrintSelf() defect. Missing to print out the OutputDirection in the PrintSelf() method.
+
+Code/Common/CMakeLists.txt
+    ENH: Adding instantiation of vnl_vector for size_t, needed in Win64.
+    ENH: Adding NumericTraits for FixedArray.
+
+Code/Common/itkBSplineDeformableTransform
+    BUG: Not all pathways set inside to default to true
+
+Code/Common/itkBSplineDerivativeKernelFunction
+    BUG: 2547 static_cast instead of old-style cast
+
+Code/Common/itkByteSwapper
+
+Code/Common/itkCellInterface
+    ENH: Add methods to compute normal and area for a TriangleCell.
+
+Code/Common/itkCenteredTransformInitializer
+    BUG: uninitialized memory. m_UseMoments was not initialized in constructor.
+
+Code/Common/itkColorTable
+    COMP: Adding #include of headers, now required by gcc 4.3
+
+Code/Common/itkDecisionRuleBase
+    COMP: missing copy constructor.
+
+Code/Common/itkDenseFiniteDifferenceImageFilter
+    BUG: 3972. Explicitely added calls to m_UpdateBuffer-&gt;Modified() and GetOutput()-&gt;Modified() after the modification of these images through iterators
+
+Code/Common/itkDifferenceImageFilter
+    ENH: Allows pixels at edges to be ignored - helps when one image has been resampled
+
+Code/Common/itkDifferenceImageFilter
+    COMP: warning, difference is a shadowed variable.
+    PERF: Optimized for improved speed
+
+Code/Common/itkExceptionObject
+private/insight-developers/2008-May/010395.html
+    BUG: Fixed typo in ExceptionObject::SetDescription, reported by Karthik Krishnan, Re: [Insight-developers] ExceptionObject Borland Compile errors
+2008-May/010353.html
+
+Code/Common/itkExceptionObject
+private/insight-developers/2008-May/010395.html
+2008-May/010353.html
+
+Code/Common/itkFixedArray
+
+Code/Common/itkFixedArray
+
+Code/Common/itkImageFunction
+    ENH: warning for deprecated mispelled method names.
+
+Code/Common/itkImageIterator
+
+Code/Common/itkImportImageContainer
+    COMP: Adding #include of headers, now required by gcc 4.3
+
+Code/Common/itkInterpolateImageFunction
+    BUG: 0007013, wrong template arguments for VectorInterpolateImageFunction
+
+Code/Common/itkLandmarkBasedTransformInitializer
+    ENH: give more flexibility to the parameters
+
+Code/Common/itkLevelOrderTreeIterator
+    COMP: Adding #include of headers, now required by gcc 4.3
+
+Code/Common/itkLightObject
+    COMP: fixed compiler warning with Wundef
+    BUG: need additional check for __CYGWIN__  when selecting a windows VS compiler.
+
+Code/Common/itkLightObject
+    COMP: fixed compiler warning with Wundef
+    ENH: Cygwin atomic operations now come from win32 (small clean up)
+    COMP: fix compiler error on Mac OS X
+
+Code/Common/itkLinearInterpolateImageFunction
+    ENH: fix for bug 0004644, default coordreptype is now more consistent over the toolkit
+
+Code/Common/itkLogger
+    COMP: missing copy constructor.
+
+Code/Common/itkMacro
+    BUG: resolve 0916; depricate filename parsing and add test
+
+Code/Common/itkMatrixOffsetTransformBase
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Code/Common/itkMatrixOffsetTransformBase
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+    ENH: warn user when too few parameters are passed
+
+Code/Common/itkMaximumRatioDecisionRule
+    COMP: missing copy constructor.
+
+Code/Common/itkMesh
+    ENH: ZipFunction now handle the case where two QEdges would be joined into an antenna by removing the two QEdges altogether. the euler op JoinVertex now handle the case where the candidate edge belongs to an isolated triangle. It discard the triangle and associated edge for the time being, but we could choose to keep it if we do not want to change the number of component of the mesh, i.e. the euler constant. It also handle more nicely tetrahedron and separable cycles.
+
+Code/Common/itkMe
+    ENH: new cell container design with specific Edge container.
+
+Code/Common/itkMetaDataObject
+    COMP: Adding #include of headers, now required by gcc 4.3
+
+Code/Common/itkMultiThreader
+    COMP: Adding headers needed by Gcc4.3
+    COMP: wrong #ifdef for Visual Studio compilers.  COMP: warnings.
+
+Code/Common/itkMultipleLogOutput
+    COMP: missing copy constructor.
+
+Code/Common/itkNearestNeighborInterpolateImageFunction
+    ENH: fix for bug 0004644, default coordreptype is now more consistent over the toolkit
+
+Code/Common/itkNeighborhood
+
+Code/Common/itkNeighborhood
+    COMP: Adding #include of headers, now required by gcc 4.3
+
+Code/Common/itkNumericTraits
+    COMP: add missing method OneValue()
+
+Code/Common/itkNumericTraitsFixedArrayPixel
+    ENH: Adding NumericTraits for FixedArray.
+
+Code/Common/itkNumericTraitsFixedArrayPixel
+    ENH: Adding instantiation for dimension 1.
+
+Code/Common/itkNumericTraitsRGBAPixel
+
+Code/Common/itkNumericTraitsRGBAPixel
+    ENH: Adding NumericTraits for RGBAPixel type.
+
+Code/Common/itkNumericTraitsRGBPixel
+
+Code/Common/itkNumericTraitsRGBPixel
+
+Code/Common/itkNumericTraitsVectorPixel
+    COMP: Adding the implementations of OneValue().
+    ENH: Adding instantiation for dimension 1.
+
+Code/Common/itkNumericTraitsVectorPixel
+    COMP: Adding the implementations of OneValue().
+
+Code/Common/itkObjectFactoryBase
+    COMP: Adding headers needed by Gcc4.3
+
+Code/Common/itkOffset
+    COMP: warnings.
+
+Code/Common/itkOrientedImage
+
+Code/Common/itkPointSet
+    COMP: warnings.
+
+Code/Common/itkPreOrderTreeIterator
+    ENH: Improvements by Ivo Wolf
+
+Code/Common/itkRGBAPixel
+    ENH: Adding NumericTraits for RGBAPixel type.
+
+Code/Common/itkRGBPixel
+
+Code/Common/itkSize
+    ENH: Fixing constness of operator+, operator+, and operator*.
+
+Code/Common/itkSmartPointer
+
+Code/Common/itkTestMain
+    COMP: warnings.
+
+Code/Common/itkTimeStamp
+    ENH: Use atomic operations to improve the performance of ModifiedTime increments (answer to bug #6599)
+
+Code/Common/itkTransform
+    BUG: itkLegacyMacro must have trailing&#160;;
+    ENH: Making GetInverse method virtual.
+    COMP: warnings.
+
+Code/Common/itkTransformBase
+
+Code/Common/itkTransformFactory
+    ENH: Removing a commented out std::cout that presumably was used for debugging at some point.
+
+Code/Common/itkTransformFactoryBase
+
+Code/Common/itkTreeChangeEvent
+    ENH: Improvements by Ivo Wolf
+
+Code/Common/itkTreeContainer
+    ENH: Improvements by Ivo Wolf
+
+Code/Common/itkTreeContainer
+    ENH: Improvements by Ivo Wolf
+
+Code/Common/itkTreeContainerBase
+    ENH: Improvements by Ivo Wolf
+
+Code/Common/itkTreeIteratorBase
+    ENH: Improvements by Ivo Wolf
+
+Code/Common/itkTreeIteratorBase
+    COMP: MSVC6 errors
+    ENH: Improvements by Ivo Wolf
+
+Code/Common/itkTreeIteratorClone
+    ENH: Improvements by Ivo Wolf
+
+Code/Common/itkTreeNode
+    BUG: Destructor should set the  children to null
+    COMP: Fixing #include missing for gcc 4.3.
+    COMP: Adding #include of headers, now required by gcc 4.3
+
+Code/Common/itkTriangleCell
+    ENH: Add methods to compute barycenter in TriangleCell, and some specific barycenter location (center of mass, circumcenter...)
+    BUG: only add 3 points whenever begin and last iterators are provided. m_PointIds is now a vector
+
+Code/Common/itkTriangleCell
+    BUG: Fixing the computation of the Orthonormal basis.
+    BUG: i is now declared only once in ComputeCircumcenter method
+    ENH: Add methods to compute normal and area for a TriangleCell.
+
+Code/Common/itkVariableLengthVector
+    STYLE: Fixed typo in Doxygen documentation.
+
+Code/Common/itkVariableLengthVector
+    COMP: Adding #include of headers, now required by gcc 4.3
+
+Code/Common/itkVector
+
+Code/Common/itkVectorImage
+    BUG: Typedef of the ValueType was incorrect. It should typedef to the facade pixel: VariableLengthVector&lt;TPixel&gt; rather than the internal pixel type: TPixel
+
+Code/Common/itkVectorInterpolateImageFunction
+    BUG: 0007013, wrong template arguments for VectorInterpolateImageFunction
+
+Code/Common/itkVectorLinearInterpolateImageFunction
+    ENH: fix for bug 0004644, default coordreptype is now more consistent over the toolkit
+
+Code/Common/itkVectorNearestNeighborInterpolateImageFunction
+    ENH: fix for bug 0004644, default coordreptype is now more consistent over the toolkit
+
+Code/Common/itkWin32Header
+025929.html
+
+Code/Common/itkXMLFileOutputWindow
+    COMP: Adding headers needed by Gcc4.3
+
+Code/Common/itkZeroFluxNeumannBoundaryCondition
+    ENH: Wrapped illustrative example image in code tags for literal formatting in doxygen
+
+Code/Common/itk_hash_map
+
+Code/Common/itk_hash_set
+
+Code/Common/itk_hashtable
+    COMP: warnings.
+
+Code/Common/vnl_fft_base+double.3-
+
+Code/Common/vnl_fft_base+float.3-
+
+Code/Common/vnl_vector+size_t-
+    ENH: Adding instantiation of vnl_vector for size_t, needed in Win64.
+
+Code/IO/CMakeLists.txt
+    COMP: Remove -O0 flag from TIFFImageIO. Experiment to isolate errors did not work.
+    COMP: for gcc compiler, suppress warnings in JPEGImageIO and PNGImageIO.
+    COMP: avoid Sun compiler anachronism warning.
+
+Code/IO/itkAnalyzeImageIO
+
+    COMP: change DIMS to something unlikely to collide with another definition of DIMS
+    ENH:  Cleaned up the processing of files to be more like the rest of the ITK IO mechanisms using itksys::SystemTools::GetFilenameLastExtension and itksys::SystemTools::GetFilenameWithoutLastExtension
+
+Code/IO/itkBMPImageIO
+    COMP: warnings about implicit 64-bit to 32-bit loss of precision.
+
+Code/IO/itkBrains2HeaderBase
+    COMP: Adding #include headers that are now required by GCC 4.3.
+
+Code/IO/itkBrains2MaskImageIO
+
+    BUG:  All files that contained the five character string ".mask" were reported as readable and writeable by this IO filter even if it was a substring in the middle of the file name.  This was fixed by using more robust file extension processing.
+
+Code/IO/itkBrains2MaskImageIO
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Code/IO/itkDICOMImageIO2
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Code/IO/itkGDCMImageIO
+
+    ENH: Add comment where the 3rd comp is being lost when writing DICOM
+    ENH: remove assert. Remove dead code (cannot write floating point image anyway). And remove dummy UID generation
+    ENH: Do not try to read the image, when gdcm cannot read it
+
+Code/IO/itkIOCommon
+    BUG: resolve 0916; depricate filename parsing and add test
+
+Code/IO/itkIOCommon
+    BUG: resolve 0916; depricate filename parsing and add test
+
+Code/IO/itkImageFileReader
+    ENH: removing std::ends from ExceptionMacro() to avoid truncation in exception error message.
+
+Code/IO/itkImageFileWriter
+    COMP: add additional {}'s to try and avoid error in exception handling on some VS versions.
+
+Code/IO/itkImageIOBase
+    BUG: fixing bug 4560; add exceptions when indices are out of range; add tests
+    COMP: warnings about implicit 64-bit to 32-bit loss of precision.
+
+Code/IO/itkImageIOBase
+
+Code/IO/itkJPEGImageIO
+
+Code/IO/itkMetaImageIO
+    COMP: warnings about implicit 64-bit to 32-bit loss of precision.
+
+Code/IO/itkNiftiImageIO
+
+    COMP: shadowed variable warning.
+    COMP: warnings about implicit 64-bit to 32-bit loss of precision.
+
+Code/IO/itkPNGImageIO
+
+en-us/library/yz2ez4as(VS.80).aspx
+
+Code/IO/itkPolygonGroupSpatialObjectXMLFile
+    COMP: warnings, missing copy constructors.
+
+Code/IO/itkSiemensVisionImageIO
+    COMP: warnings about implicit 64-bit to 32-bit loss of precision.
+
+Code/IO/itkStimulateImageIO
+    COMP: warnings about implicit 64-bit to 32-bit loss of precision.
+
+Code/IO/itkTIFFImageIO
+    COMP: warnings about implicit 64-bit to 32-bit loss of precision.
+
+Code/IO/itkTransformFileReader
+    COMP: warnings about implicit 64-bit to 32-bit loss of precision.
+
+Code/IO/itkVTKImageIO
+    COMP: warnings about implicit 64-bit to 32-bit loss of precision.
+
+Code/IO/itkXMLFile
+
+Code/IO/itkXMLFile
+    COMP: warnings, missing copy constructors.
+
+Code/Numerics/itkExhaustiveOptimizer
+    COMP: Fix GCC 4.2.3 (-Wall) warnings.
+
+Code/Numerics/itkExhaustiveOptimizer
+    COMP: Fix GCC 4.2.3 (-Wall) warnings.
+
+Code/Numerics/itkFRPROptimizer
+    ENH: Gradient can be a fixed-step gradient (mean magnitude of each component is 1)
+    PERF: Changed to pass by reference for faster performance.
+
+Code/Numerics/itkFRPROptimizer
+
+Code/Numerics/itkMultipleValuedVnlCostFunctionAdaptor
+    BUG: 6887. Now taking m_Scales into account in method ConvertExternalToInternalGradient().
+
+Code/Numerics/itkOnePlusOneEvolutionaryOptimizer
+    ENH: improve debugging output
+
+Code/Numerics/itkOptimizer
+
+Code/Numerics/itkPowellOptimizer
+    ENH: Cleanup to remove duplicate code
+    BUG: Correctly brackets the minimum.   Addresses bug #4827
+
+Code/Numerics/itkPowellOptimizer
+    BUG: Correctly brackets the minimum.   Addresses bug #4827
+
+Code/Numerics/itkSingleValuedVnlCostFunctionAdaptor
+
+Code/Numerics/FEM/CMakeLists.txt
+    COMP: remove itkFEMMaterialBase.cxx and itkFEMLoadBase.cxx from library since they do not contain any code.
+
+Code/Numerics/FEM/itkFEMLinearSystemWrapperItpack
+
+Code/Numerics/FEM/itkFEMObjectFactory
+    COMP: Adding #include for cstdlib that is now required by GCC 4.3.
+
+Code/Numerics/Statistics/d9gmit
+    COMP: possible use of uninitialized variable.
+
+Code/Numerics/Statistics/dlngam
+    COMP: possible use of uninitialized variable.
+
+Code/Numerics/Statistics/itkCovarianceCalculator
+    BUG: 7220 division by zero if first or all bins empty
+
+Code/Numerics/Statistics/itkCovarianceCalculator
+    BUG: 7220 division by zero if first bin or all bins empty. BUG: txx did not include header
+
+Code/Numerics/Statistics/itkHistogram
+
+    COMP: Typo on the type used inside NumericTraits&lt;&gt;.
+
+Code/Numerics/Statistics/itkKdTree
+
+Code/Numerics/Statistics/itkKdTree
+    COMP: Fixing warnings about conversion from double to MeasurementType.
+    ENH: Replacing std::cout with the new last argument of the PrintTree() method.
+
+Code/Numerics/Statistics/itkKdTreeGenerator
+
+Code/Numerics/Statistics/itkKdTreeGenerator
+    STYLE: Typo in endRightIndex (it was missing the "t").
+
+Code/Numerics/Statistics/itkListSample
+
+Code/Numerics/Statistics/itkStatisticsAlgorithm
+    STYLE: Adding documentation explaining the Partition and QuickSelect algorithms.
+
+Code/Numerics/Statistics/itkStatisticsAlgorithm
+    COMP: Fixing warning about comparison between signed and unsigned ints.
+
+Code/Numerics/Statistics/itkWeightedCentroidKdTreeGenerator
+
+Code/Numerics/Statistics/itkWeightedCentroidKdTreeGenerator
+    COMP: Fixing warnings about comparison between signed and unsigned ints.
+
+Code/Numerics/Statistics/itkWeightedCovarianceCalculator
+    BUG: 7220 division by zero if first or all bins empty
+
+Code/Numerics/Statistics/itkWeightedCovarianceCalculator
+    BUG: 7220 division by zero if first or all bins empty
+
+Code/Patented/itkActiveShapeModelCalculator
+    COMP: possible use of uninitialized variables, dxyRef1 and dxyRef2.
+
+Code/Patented/itkActiveShapeModelGradientSearchMethod
+    COMP: possible use of uninitialized variables, dxyRef1 and dxyRef2.
+
+Code/Review/CMakeLists.txt
+
+Code/Review/itkAddConstantToImageFilter
+
+Code/Review/itkBSplineScatteredDataPointSetToImageFilter
+
+Code/Review/itkBSplineScatteredDataPointSetToImageFilter
+    COMP: shadowed variable warning.
+    COMP: Addressing warnings in gcc 4.1
+
+Code/Review/itkBruker2DSEQImageIO
+    ENH: The Read() function was modified so that it uses the same itksys::SystemTools functions to create the 2dseq filename string as CanReadFile().
+    COMP: Removing unnecessary std::string::clear() call. The method is not available in VS6.0.
+    ENH: Fixing style errors reported by KWStyle.
+
+Code/Review/itkBruker2DSEQImageIO
+    STYLE:  Fixed style errors using KWStyle program to test for problems.
+    ENH: Fixing style errors reported by KWStyle.
+
+Code/Review/itkBruker2DSEQImageIOFactory
+    STYLE:  Fixed style errors using KWStyle program to test for problems.
+
+Code/Review/itkBruker2DSEQImageIOFactory
+    STYLE:  Fixed style errors using KWStyle program to test for problems.
+
+Code/Review/itkComposeRGBAImageFilter
+
+Code/Review/Attic/itkConformalFlatteningFunction
+    ENH: this file is not needed anymore.
+
+Code/Review/itkConformalFlatteningMeshFilter
+    ENH: new conformaspherical flattening code from Yi Gao, following work at the NAMIC week.
+    ENH: meshtype shoul dnot be hardcoded. Modified the class to be compliant to a MeshToMesh filter design.
+
+Code/Review/itkConformalFlatteningMeshFilter
+    BUG: multiple decalarations of i in GenerateData method
+    COMP: sort and round function not found as it.
+    BUG: remove class definition from COnformalFlattening class. One file, One class. ENH: Create a conformalFlattening test which uses a QuadEdgeMesh and add it to the test suite.
+
+Code/Review/itkCoxDeBoorBSplineKernelFunction
+    COMP: Addressing warnings in gcc 4.1
+
+Code/Review/itkCoxDeBoorBSplineKernelFunction
+    COMP: Addressing warnings in gcc 4.1
+
+Code/Review/itkDiffeomorphicDemonsRegistrationFilter
+
+Code/Review/itkDiffeomorphicDemonsRegistrationFilter
+    BUG:  Need to set directions in addition to origin and spacing.
+    COMP: Fixing PrintSelf defects.
+
+Code/Review/itkDivideByConstantImageFilter
+    STYLE: Improving documentation. These filters are unrelated to the ExtractImageFilter.
+
+Code/Review/itkESMDemonsRegistrationFunction
+
+Code/Review/itkESMDemonsRegistrationFunction
+    BUG:  Need to set directions in addition to origin and spacing.
+    COMP: Borland doesn't support the use of "or" in lieu of the logical operator "||".
+
+Code/Review/itkExponentialDeformationFieldImageFilter
+
+Code/Review/itkExponentialDeformationFieldImageFilter
+
+Code/Review/itkFFTComplexToComplexImageFilter
+
+Code/Review/itkFFTComplexToComplexImageFilter
+    COMP: Fixing the API after removing direction from the template parameters.
+
+Code/Review/itkFFTWComplexToComplexImageFilter
+    COMP: Fixing the API after removing direction from the template parameters.
+
+Code/Review/itkFFTWComplexToComplexImageFilter
+    COMP: Fixing the API after removing direction from the template parameters.
+
+Code/Review/itkFastSymmetricForcesDemonsRegistrationFilter
+    ENH: Improving const-correctness in the Downcasting method.
+
+Code/Review/itkFastSymmetricForcesDemonsRegistrationFilter
+    ENH: Improving const-correctness in the Downcasting method.
+
+Code/Review/itkGeometricalQuadEdge
+    ENH: performances. Decimation pipeline 16% faster.
+
+Code/Review/itkGeometricalQuadEdge
+    ENH: performances. Decimation pipeline 16% faster.
+
+Code/Review/itkGridForwardWarpImageFilter
+
+Code/Review/itkGridForwardWarpImageFilter
+    COMP: Borland doesn't support the use of "or" in lieu of the logical operator "||".
+
+Code/Review/Attic/itkKappaSigmaThresholdCalculator
+
+Code/Review/Attic/itkKappaSigmaThresholdCalculator
+
+Code/Review/itkKappaSigmaThresholdImageCalculator
+    STYLE: Fixing style.
+
+Code/Review/itkKappaSigmaThresholdImageCalculator
+    STYLE: Fixing style.
+
+Code/Review/itkKappaSigmaThresholdImageFilter
+    COMP: Input image must be const
+
+Code/Review/itkKappaSigmaThresholdImageFilter
+    COMP: Fixing PrintSelf defects.
+
+Code/Review/itkMINC2ImageIO
+    BUG: fixed incorrect memory deallocation, fixed memory leaks
+    COMP: Fixing warning about comparison of signed vs unsigned ints.
+
+Code/Review/itkMagnitudeAndPhaseToComplexImageFilter
+    COMP: Fixing ConcepChecking lines.
+
+Code/Review/itkMemoryUsageObserver
+    ENH: For Mac OS X ( version &gt;10.2 ) the vmmap command can have different output between machines. Handle the case where vmmap outputs don't have Region type summary section.
+
+Code/Review/itkMultiplyByConstantImageFilter
+    STYLE: Improving documentation. These filters are unrelated to the ExtractImageFilter.
+
+Code/Review/itkOptImageToImageMetric
+    BUG: Reverting to the original implementation - if used in a pipeline, fixedImage's region may be undefined when SetFixedImage is called.
+    BUG: in SetFixedImage, a failure to check for NULL pointer caused crashes.
+    ENH: Const correctness within registration framework
+
+Code/Review/itkOptImageToImageMetr
+    BUG: Not all pathways correctly set test for valid sample to default to true
+
+Code/Review/itkOptResampleImageFilter
+    ENH: Const correctness within registration framework
+
+Code/Review/itkPhilipsPAR
+    BUG: comparison with an unitialized variable.
+    COMP: indentation and style.
+    STYLE: Fixing style errors reported by KWStyle.
+
+Code/Review/itkPhilipsPAR
+    STYLE:  Fixed style errors using KWStyle program to test for problems.
+
+Code/Review/itkPhilipsRECImageIO
+
+    COMP: Fixing warning related to signed versus unsigned int comparison.
+    STYLE: Fixing style errors reported by KWStyle.
+
+Code/Review/itkPhilipsRECImageIO
+    STYLE:  Fixed style errors using KWStyle program to test for problems.
+    STYLE: Fixing style errors reported by KWStyle.
+
+Code/Review/itkPhilipsRECImageIOFactory
+    STYLE:  Fixed style errors using KWStyle program to test for problems.
+
+Code/Review/itkPhilipsRECImageIOFactory
+    STYLE:  Fixed style errors using KWStyle program to test for problems.
+
+Code/Review/itkQuadEdge
+    ENH: performances. Decimation pipeline 16% faster.
+
+Code/Review/itkQuadEdge
+    ENH: performances. Decimation pipeline 16% faster.
+
+Code/Review/itkQuadEdgeMesh
+    ENH: new cell container design with specific Edge container.
+    ENH: reorder point container to have consecutive IDs before writting a mesh.
+
+Code/Review/itkQuadEdgeMe
+
+    ENH:Add specific Graft and Initialize methods
+    ENH: remove unecessary dynamic cast.
+    COMP: possibly unitialize variable.
+    COMP: remove comma misused l472
+    BUG: typo.
+
+Code/Review/itkQuadEdgeMeshBoundaryEdgesMeshFunction
+    ENH: new cell container design with specific Edge container.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorFlipEdgeFunction
+    STYLE: access the status of the edge (if it can be flipped or not and why)
+
+Code/Review/itkQuadEdgeMeshEulerOperatorFlipEdgeFunction
+    STYLE: access the status of the edge (if it can be flipped or not and why)
+
+Code/Review/itkQuadEdgeMeshEulerOperatorJoinVertexFunction
+    ENH:Add one more test for join vertex operator in the case where one edge is linking different boundary. NOTE: with this last modification this edge can not be collapsed.
+    BUG: add PrintSelf method
+    COMP: Adding the missing PrintSelf() method.
+    STYLE: start doxygen documentation of undocumented methods.
+    BUG: Correct the tetraedron detection case
+    BUG:missing includes.
+
+Code/Review/itkQuadEdgeMeshEulerOperatorJoinVertexFunction
+    STYLE: clean
+    ENH:Add one more test for join vertex operator in the case where one edge is linking different boundary. NOTE: with this last modification this edge can not be collapsed.
+    ENH: performances. Decimation pipeline 16% faster.
+    STYLE: correct typo error for FACE_ISOLATED.
+    STYLE: Introduce a new type EdgeStatusType (enumerated type)
+    STYLE: Split Evaluate method into different methods depending on the status of the considered edge.
+    STYLE: start doxygen documentation of undocumented methods.
+    ENH: in the case of an isolated polygon, return one quad-edge from NewDest else from NewOrg if there are any.
+    BUG: Correct the tetraedron detection case
+    ENH: ZipFunction now handle the case where two QEdges would be joined into an antenna by removing the two QEdges altogether. the euler op JoinVertex now handle the case where the candidate edge belongs to an isolated triangle. It discard the triangle and associated edge for the time being, but we could choose to keep it if we do not want to change the number of component of the mesh, i.e. the euler constant. It also handle more nicely tetrahedron and separable cycles.
+
+Code/Review/itkQuadEdgeMeshPoint
+    BUG: Constructor taking a Superclass (itk::Point) as argument was missing.
+
+Code/Review/itkQuadEdgeMeshPoint
+    BUG: Constructor taking a Superclass (itk::Point) as argument was missing.
+
+Code/Review/itkQuadEdgeMeshToQuadEdgeMeshFilter
+    COMP: output is now an OutputMeshType::Pointer
+
+Code/Review/itkQuadEdgeMeshToQuadEdgeMeshFilter
+    COMP: output is now an OutputMeshType::Pointer
+
+Code/Review/itkQuadEdgeMeshZipMeshFunction
+    ENH: ZipFunction now handle the case where two QEdges would be joined into an antenna by removing the two QEdges altogether. the euler op JoinVertex now handle the case where the candidate edge belongs to an isolated triangle. It discard the triangle and associated edge for the time being, but we could choose to keep it if we do not want to change the number of component of the mesh, i.e. the euler constant. It also handle more nicely tetrahedron and separable cycles.
+
+Code/Review/itkRealAndImaginaryToComplexImageFilter
+    COMP: Fixing ConcepChecking lines.
+
+Code/Review/itkSliceBySliceImageFilter
+    STYLE: Add documentation in docstring.
+    COMP: shadowed declaration warning.
+
+Code/Review/itkSliceBySliceImageFilter
+    COMP: shadowed declaration warning.
+    COMP: Adding missing member variables to PrintSelf() method.
+    COMP: Fixed compilation problem in VS6.0. Replacing another "typename" with ITK_TYPENAME.
+
+Code/Review/itkSmapsFileParser
+    COMP: for_each is a std function.
+
+Code/Review/itkSmapsFileParser
+    ENH: For Mac OS X ( version &gt;10.2 ) the vmmap command can have different output between machines. Handle the case where vmmap outputs don't have Region type summary section.
+
+Code/Review/itkSmapsFileParser
+    ENH: For Mac OS X ( version &gt;10.2 ) the vmmap command can have different output between machines. Handle the case where vmmap outputs don't have Region type summary section.
+
+Code/Review/itkSubtractConstantFromImageFilter
+
+Code/Review/itkTransformToDeformationFieldSource
+    ENH: Introduced concept checking in TransformToDeformationFieldSource to ensure that the output image has a pixel type which is a vector whose dimension is equal to the image dimension
+
+Code/Review/itkTransformToDeformationFieldSource
+
+Code/Review/itkTxtTransformIO
+    BUG: Adding the ".tfm" extension as a recognized extension for writing.
+
+Code/Review/itkVTKPolyDataReader
+    ENH: fully support of edges cells. Canveat for vertices, and all kind of polygonal cells added. This filter can only handle edges and triangles at that stage.
+
+Code/Review/itkVTKPolyDataWriter
+    ENH: change update to virtual method, and m_Input to protected
+
+Code/Review/itkVTKPolyDataWriter
+    ENH:can now save all kind of polygonal meshes.
+    ENH: fully support of edges cells. Canveat for vertices, and all kind of polygonal cells added. This filter can only handle edges and triangles at that stage.
+
+Code/Review/itkVectorCentralDifferenceImageFunction
+
+Code/Review/itkVectorCentralDifferenceImageFunction
+
+Code/Review/itkVectorLinearInterpolateNearestNeighborExtrapolateImageFunction
+    COMP: Addressing Borland warnings about unused function arguments.
+    COMP: If one of several virtual methods is overridden in a subclass, then they all must be overridden.
+
+Code/Review/itkVectorLinearInterpolateNearestNeighborExtrapolateImageFunction
+    BUG: Override the implementation of VectorLinearInterpolateNearestNeighborExtrapolateImageFunction::EvaluateAtIndex to be consistent with VectorLinearInterpolateNearestNeighborExtrapolateImageFunction::EvaluateAtContinuousIndex. Namely IsInsideBuffer always returns true and EvaluateAtIndex uses NN extrapolation if necessary
+
+Code/Review/itkVoxBoCUBImageIO
+    ENH: minor trick to please bcc32 and not add extra copy overhead
+    COMP: Fixing warning about uninitialized variable.
+    COMP: That quirky Borland compiler needed a temporary std::string to compile.
+
+Code/Review/itkVoxBoCUBImageIO
+
+Code/Review/itkVoxBoCUBImageIOFactory
+
+Code/Review/itkVoxBoCUBImageIOFactory
+
+Code/Review/itkWarpHarmonicEnergyCalculator
+    COMP: Removed declarations of unimplemented methods.
+
+Code/Review/itkWarpHarmonicEnergyCalculator
+    COMP: Fixing PrintSelf defects.
+
+Code/Review/itkWarpJacobianDeterminantFilter
+    ENH:  Intermediate commit while resolving the itkDisplacementFieldJacobianDeterminant and itkDeformationFieldJacobianDeterminant into two well documented and consistant classes.
+
+Code/Review/itkWarpJacobianDeterminantFilter
+    ENH:  Intermediate commit while resolving the itkDisplacementFieldJacobianDeterminant and itkDeformationFieldJacobianDeterminant into two well documented and consistant classes.
+
+Code/SpatialObject/itkArrowSpatialObject
+    ENH: warning for deprecated mispelled method names.
+
+Code/SpatialObject/itkArrowSpatialObject
+
+Code/SpatialObject/itkBlobSpatialObject
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Code/SpatialObject/itkBoxSpatialObject
+
+Code/SpatialObject/itkContourSpatialObject
+
+Code/SpatialObject/itkCylinderSpatialObject
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Code/SpatialObject/itkEllipseSpatialObject
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Code/SpatialObject/itkGaussianSpatialObject
+
+Code/SpatialObject/itkGroupSpatialObject
+
+Code/SpatialObject/itkImageMaskSpatialObject
+    COMP: Dealing with the new API for the GetInverse() method, and the LEGACY variables.
+    ENH: implemented GetAxisAlignedBoundingBoxRegion() for image dimensions other than 3D
+
+Code/SpatialObject/itkImageSpatialObject
+    COMP: Missing to convert a line when removing the new API of the GetInverse() method.
+    COMP: Dealing with the new API for the GetInverse() method, and the LEGACY variables.
+
+Code/SpatialObject/itkLandmarkSpatialObject
+
+Code/SpatialObject/itkLineSpatialObject
+    COMP: Dealing with the new API for the GetInverse() method, and the LEGACY variables.
+
+Code/SpatialObject/itkMeshSpatialObject
+
+Code/SpatialObject/itkPlaneSpatialObject
+
+Code/SpatialObject/itkPointBasedSpatialObject
+
+Code/SpatialObject/itkPolygonGroupSpatialObject
+
+Code/SpatialObject/itkPolygonSpatialObject
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Code/SpatialObject/itkSpatialObject
+
+Code/SpatialObject/itkSpatialObject
+    COMP: Dealing with the new API for the GetInverse() method, and the LEGACY variables.
+
+Code/SpatialObject/itkSpatialObjectTreeContainer
+    COMP: Warning
+
+Code/SpatialObject/itkSpatialObjectTreeContainer
+    COMP: Warning
+
+Code/SpatialObject/itkSurfaceSpatialObject
+
+Code/SpatialObject/itkTubeSpatialObject
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Examples/DataRepresentation/Image/CMakeLists.txt
+
+Examples/DataRepresentation/Mesh/CMakeLists.txt
+
+Examples/DataRepresentation/Path/CMakeLists.txt
+
+Examples/Filtering/CMakeLists.txt
+
+Examples/Filtering/FFTDirectInverse
+
+Examples/Filtering/SignedDanielssonDistanceMapImageFilter
+
+Examples/Iterators/CMakeLists.txt
+
+Examples/Patented/CMakeLists.txt
+    ENH: Adding tests for 3D and for 2D with a distance map.
+
+Examples/Patented/IterativeClosestPoint1
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Examples/Patented/IterativeClosestPoint2
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Examples/Patented/IterativeClosestPoint3
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Examples/Registration/BSplineWarping1
+
+Examples/Registration/BSplineWarping2
+
+Examples/Registration/CMakeLists.txt
+    COMP: increase pixel error tolerance for DeformableRegistration5Test for gcc 4.3.
+
+Examples/Registration/DeformableRegistration12
+
+Examples/Registration/DeformableRegistration13
+
+Examples/Registration/DeformableRegistration14
+
+Examples/Registration/DeformableRegistration15
+
+Examples/Registration/DeformableRegistration16
+
+Examples/Registration/DeformableRegistration17
+
+Examples/Registration/DeformableRegistration4
+
+Examples/Registration/DeformableRegistration6
+
+Examples/Registration/DeformableRegistration7
+
+Examples/Registration/DeformableRegistration8
+
+Examples/Registration/ImageRegistration18
+
+Examples/Segmentation/CMakeLists.txt
+
+Examples/Statistics/CMakeLists.txt
+
+Testing/CMakeLists.txt
+
+Testing/CTestConfig.cmake
+
+Testing/Code/Algorithms/CMakeLists.txt
+    ENH: added a test to compare the result of different FFTRealToComplexConjugateImageFilter implementations, cf. bug #6453
+
+Testing/Code/Algorithms/itkAlgorithmsHeaderTest
+    COMP: Fixing signature of the main() method.
+
+Testing/Code/Algorithms/itkAlgorithmsTests4
+    ENH: added a test to compare the result of different FFTRealToComplexConjugateImageFilter implementations, cf. bug #6453
+
+Testing/Code/Algorithms/itkBioGeneNetworkTest
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/Algorithms/itkBioGeneTest
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/Algorithms/itkBioGenomeTest
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/Algorithms/itkCurvatureFlowTest
+    COMP: Adding additional output if a test fails.
+
+Testing/Code/Algorithms/itkFFTTest
+    ENH: added a test to compare the result of different FFTRealToComplexConjugateImageFilter implementations, cf. bug #6453
+
+Testing/Code/Algorithms/itkImageRegistrationMethodTest
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Testing/Code/Algorithms/itkLaplacianSegmentationLevelSetImageFilterTest
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Testing/Code/Algorithms/itkMeanReciprocalSquareDifferencePointSetToImageMetricTest
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Testing/Code/Algorithms/itkMeanSquaresPointSetToImageMetricTest
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Testing/Code/Algorithms/itkNormalizedCorrelationPointSetToImageMetricTest
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Testing/Code/Algorithms/itkPointSetToImageRegistrationTest_1
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Testing/Code/Algorithms/itkPointSetToPointSetRegistrationTest
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Testing/Code/Algorithms/itkRegionGrow2DTest
+    BUG: reference to uninitialized variable in print.
+
+Testing/Code/BasicFilters/CMakeLists.txt
+    ENH:  Expanded the test to include some actual calculations so that we can ensure that the new versions of this filter produce the same results.
+
+Testing/Code/BasicFilters/itkBasicFiltersHeaderTest
+    ENH:  Expanded the test to include some actual calculations so that we can ensure that the new versions of this filter produce the same results.
+
+Testing/Code/BasicFilters/itkBasicFiltersTests2
+    ENH:  Expanded the test to include some actual calculations so that we can ensure that the new versions of this filter produce the same results.
+
+Testing/Code/BasicFilters/itkDeformationFieldJacobianDeterminantFilterTest
+    ENH:  Expanded the test to include some actual calculations so that we can ensure that the new versions of this filter produce the same results.
+
+Testing/Code/BasicFilters/itkDisplacementFieldJacobianDeterminantFilterTest
+    ENH:  Filled in the stub code to verify that the correct results were being calculated.
+
+Testing/Code/BasicFilters/itkHausdorffDistanceImageFilterTest
+    ENH: Added average Hausdorff distance calculation, sometimes called the modified Hausdorff distance
+
+Testing/Code/BasicFilters/itkWarpVectorImageFilterTest
+    ENH:  Expanded the test to include some actual calculations so that we can ensure that the new versions of this filter produce the same results.
+
+Testing/Code/Common/CMakeLists.txt
+    ENH: Adding explicit test for the itkTriangleCell class.
+    ENH: Program to print system information using kwsys::SystemInformation.
+    ENH: Added a unit test for TimeStamps (part of patch to bug #6599
+
+Testing/Code/Common/itkAffineTransformTest
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Testing/Code/Common/itkBSplineDeformableTransformTest2
+    COMP: missing typename warnings.
+
+Testing/Code/Common/itkCenteredAffineTransformTest
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Testing/Code/Common/itkCenteredEuler3DTransformTest
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Testing/Code/Common/itkCenteredRigid2DTransformTest
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Testing/Code/Common/itkCenteredTransformInitializerTest
+
+Testing/Code/Common/itkCommonHeaderTest
+    COMP: Fixing the signature of main() as indicated by gcc 4.3
+
+Testing/Code/Common/itkCommonTests
+
+Testing/Code/Common/itkCommonTests2
+    ENH: Adding explicit test for the itkTriangleCell class.
+
+Testing/Code/Common/itkEuler2DTransformTest
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Testing/Code/Common/itkFactoryTestLib
+    COMP: Moved static for factory outside of constructor. cygwin was crashing on exit.
+
+Testing/Code/Common/itkFixedArrayTest2
+    BUG: On some compilers everything was optimized away which leaded to irrelevant timings
+    ENH: Improving the criteria for test failure.
+    COMP: Adding #include for &lt;memory&gt; in order to get declaration of memset().
+    ENH: Add computation of performance ratio.
+
+Testing/Code/Common/itkImageIteratorTest
+    BUG: uninitialized memory read. Test image was not initialized.
+    ENH: Adding more methods to increase code coverage of this class.
+
+Testing/Code/Common/itkImageRegionIteratorTest
+
+Testing/Code/Common/itkLinearInterpolateImageFunctionTest
+    ENH: fix for bug 0004644, default coordreptype is now more consistent over the toolkit
+
+Testing/Code/Common/itkRigid2DTransformTest
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Testing/Code/Common/itkRigid3DTransformTest
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Testing/Code/Common/itkSimilarity2DTransformTest
+    COMP: Configuring the GetInverse() method using the LEGACY macro and symbols.
+
+Testing/Code/Common/itkSmartPointerTest
+    COMP: Adding #includes required by Gcc 4.3.
+
+Testing/Code/Common/itkSystemInformation
+    ENH: Program to print system information using kwsys::SystemInformation.
+
+Testing/Code/Common/itkSystemInformationTest
+    COMP: Adding #includes required by Gcc 4.3.
+
+Testing/Code/Common/itkTimeStampTest
+    ENH: Added a unit test for TimeStamps (part of patch to bug #6599
+
+Testing/Code/Common/itkTriangleCellTest
+    ENH: Adding two more points in unique regions of the barycentric coordinates.
+    ENH: Fixing the helper Triangle class used to expose EvaluatePosition() to the public API.
+    ENH: Adding explicit test for the itkTriangleCell class.
+
+Testing/Code/IO/CMakeLists.txt
+    ENH: Added new test for stream reader
+    ENH: Test for .img.gz analyze files
+    BUG: resolve 0916; depricate filename parsing and add test
+
+Testing/Code/IO/itkAnalyzeImageIOTest
+    BUG: fixed crash in AnalyzeImageIO for 2D images
+    ENH: Test for .img.gz analyze files
+
+Testing/Code/IO/itkBrains2MaskImageIOTest
+
+Testing/Code/IO/itkIOCommonTest
+    COMP: gcc4.3 include &lt;cstring&gt; for strcpy.
+    BUG: resolve 0916; depricate filename parsing and add test
+
+Testing/Code/IO/itkIOHeaderTest
+    COMP: Fixing the signature of the main() method. This is signaled by gcc 4.3.
+
+Testing/Code/IO/itkIOTests
+    ENH: Adding a test for the supported filename extensions in the ImageIO classes.
+    BUG: resolve 0916; depricate filename parsing and add test
+
+Testing/Code/IO/itkImageFileWriterTest
+    COMP: tracking down some platform specific errors.
+
+Testing/Code/IO/itkImageIOBaseTest
+    COMP: fix compiler warning: passing double as int
+    BUG: fixing bug 4560; add exceptions when indices are out of range; add tests
+
+Testing/Code/IO/itkImageIOFileNameExtensionsTests
+    ENH: Adding a test for the supported filename extensions in the ImageIO classes.
+
+Testing/Code/IO/itkRawImageIOTest2
+    STYLE: fix bad variable name
+
+Testing/Code/IO/testMetaBlob
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/IO/testMetaGroup
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/IO/testMetaImage
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/IO/testMetaLandmark
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/IO/testMetaLine
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/IO/testMetaMe
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/IO/testMetaScene
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/IO/testMetaSurface
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/IO/testMetaTube
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/IO/testMetaUtils
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/Numerics/itkAmoebaOptimizerTest
+    COMP: Adding #include for cstdlib, required by gcc 4.3 for the EXIT_SUCCESS and EXIT_FAILURE macros.
+
+Testing/Code/Numerics/itkCompositeValleyFunctionTest
+    COMP: Adding #include for cstdlib, required by gcc 4.3 for the EXIT_SUCCESS and EXIT_FAILURE macros.
+
+Testing/Code/Numerics/itkConjugateGradientOptimizerTest
+    COMP: Adding #include for cstdlib, required by gcc 4.3 for the EXIT_SUCCESS and EXIT_FAILURE macros.
+
+Testing/Code/Numerics/itkCumulativeGaussianOptimizerTest
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/Numerics/itkExhaustiveOptimizerTest
+    COMP: warning, unused variable.
+    COMP: Fix GCC 4.2.3 (-Wall) warnings.
+
+Testing/Code/Numerics/itkFRPROptimizerTest
+    COMP: Adding #include for &lt;cstdlib&gt; required by Gcc 4.3 for the EXIT_ macros.
+
+Testing/Code/Numerics/itkNumericsHeaderTest
+
+Testing/Code/Numerics/itkPowellOptimizerTest
+    ENH: Need to change step tolerance to match test tolerence
+
+Testing/Code/Numerics/NeuralNetworks/itkNeuralNetworksHeaderTest
+    COMP: Fixing the signature of main() as indicated by gcc 4.3
+
+Testing/Code/Numerics/Statistics/CMakeLists.txt
+    ENH: Adding explicit test for the NthElement algorithm in StatisticsAlgorithms.
+    ENH: Adding a smaller test with just 10 input points.
+    ENH: Adding an explicit test for the Statistics::QuickSelect function.
+    ENH: Adding test cases for multiple values of BucketSize.
+
+Testing/Code/Numerics/Statistics/itkKdTreeBasedKmeansEstimatorTest
+
+Testing/Code/Numerics/Statistics/itkKdTreeTest1
+    COMP: Removing unused variable. Fixing Borland warnings.
+    ENH: Making optional the generation of the Graphviz-dot plot of the KdTree.
+    BUG: Fixing the numbering of argv command line arguments.
+    BUG: Missing return EXIT_FAILURE when command line argumentas were insufficient.
+    COMP: Fixing warnings.
+
+Testing/Code/Numerics/Statistics/itkKdTreeTest2
+    ENH: Removing unused header for the WeightedCentroidKdTreeGenerator.
+    COMP: Fixing warnings.
+    ENH: Now checking all the points in the collection.
+
+Testing/Code/Numerics/Statistics/itkListSampleTest
+    ENH: added more output to track down crash on VS9.
+
+Testing/Code/Numerics/Statistics/itkNthElementTest1
+    BUG: nth_element missing std:: namespace.
+
+Testing/Code/Numerics/Statistics/itkQuickSelectTest1
+    BUG: nth_element missing std:: namespace.
+    ENH: Testing all possible kth entries with calls to QuickSelect.
+    ENH: Adding an explicit test for the Statistics::QuickSelect function.
+
+Testing/Code/Numerics/Statistics/itkStatisticsAlgorithmTest
+
+Testing/Code/Numerics/Statistics/itkStatisticsHeaderTest
+    COMP: Fixing signature of main() according to error message from gcc 4.3.
+
+Testing/Code/Numerics/Statistics/itkStatisticsTests
+    ENH: Adding explicit test for the NthElement algorithm in StatisticsAlgorithms.
+
+Testing/Code/Numerics/Statistics/itkWeightedCentroidKdTreeGeneratorTest1
+
+Testing/Code/Patented/itkPatentedHeaderTest
+
+Testing/Code/Review/CMakeLists.txt
+    BUG: The FastSymmetricForcesDemonsRegistrationFilterTest was not run by make test
+    COMP: itkGridForwardWarpImageFilterTest and itkWarpHarmonicEnergyCalculatorTest were not run by make test
+    ENH: Fine tunning the remaining tests of Diffeomorphic demons.
+    ENH: Trying to fine tune the test itkDiffeomorphicDemonsRegistrationFilterTest02.
+    ENH: Fine-tunning the parameters and relaxing the test for the Diffeomorphic Demons implementation.
+    ENH: Splitting the itkBSplineScatteredDataPointSetToImageFilterTest in three separate tests.
+    COMP: remove QuadEdgeMeshEulerOperatorsTest from the list of tests to be performed and fixed some warning
+    ENH: Adding (temporary) expected threshold values to the KappaSigma calculator.
+    ENH: improved logic for checking joinvertex cases. ENH: new test case for the m_NoPoint problem reported by thomas.
+    ENH: Adding tests for the Add and Subtract image filters.
+    ENH: reorder point container to have consecutive IDs before writting a mesh.
+    BUG: remove class definition from COnformalFlattening class. One file, One class. ENH: Create a conformalFlattening test which uses a QuadEdgeMesh and add it to the test suite.
+    COMP: Renaming the ITKReview library as ITKTransformIOReview to prevent configuration problems when ITK_USE_TRANSFORM_IO_FACTORIES is OFF.
+    ENH: Adding specific tests for reading an writing CUB and CUB.gz files.
+
+Testing/Code/Review/itkAddConstantToImageFilterTest
+    ENH: Adding tests for the Add and Subtract image filters.
+
+Testing/Code/Review/itkAutomaticTopologyQuadEdgeMeshSourceTest
+    ENH: new cell container design with specific Edge container.
+
+Testing/Code/Review/itkBSplineScatteredDataPointSetToImageFilterTest
+    ENH: Splitting the itkBSplineScatteredDataPointSetToImageFilterTest in three separate tests.
+
+Testing/Code/Review/itkBSplineScatteredDataPointSetToImageFilterTest2
+    COMP: disable bogus VS warning about arithmetic overflow.
+    ENH: Splitting the itkBSplineScatteredDataPointSetToImageFilterTest in three separate tests.
+
+Testing/Code/Review/itkBSplineScatteredDataPointSetToImageFilterTest3
+    BUG: uninitialized variable introduced in last checkin.
+    COMP: disable bogus VS warning about arithmetic overflow.
+    ENH: Splitting the itkBSplineScatteredDataPointSetToImageFilterTest in three separate tests.
+
+Testing/Code/Review/itkBinaryMask3DQuadEdgeMeshSourceTest
+    ENH: added test for BinaryMask3DMeshSource using QuadEdgeMesh. Worked out of the box by just changing the meshtype definition. Noticeably slower though.
+
+Testing/Code/Review/itkBruker2DSEQImageIOTest
+
+Testing/Code/Review/itkComposeRGBAImageFilterTest
+
+Testing/Code/Review/itkConformalFlatteningMeshFilterTest
+    ENH: new conformaspherical flattening code from Yi Gao, following work at the NAMIC week.
+
+Testing/Code/Review/itkConformalFlatteningQuadEdgeMeshFilterTest
+    BUG: remove class definition from COnformalFlattening class. One file, One class. ENH: Create a conformalFlattening test which uses a QuadEdgeMesh and add it to the test suite.
+
+Testing/Code/Review/itkDiffeomorphicDemonsRegistrationFilterTest
+    BUG: Accidentally committed the version used for debugging (it had a "main").
+    ENH: Fine-tunning the parameters and relaxing the test for the Diffeomorphic Demons implementation.
+
+Testing/Code/Review/itkDiffeomorphicDemonsRegistrationFilterTest2
+
+Testing/Code/Review/itkDivideByConstantImageFilterTest
+    BUG: The expected value should be computed by division.
+
+Testing/Code/Review/itkExponentialDeformationFieldImageFilterTest
+
+Testing/Code/Review/itkFFTComplexToComplexImageFilterTest01
+    COMP: The internal name of the function name didn't match the filename.
+
+Testing/Code/Review/itkFFTComplexToComplexImageFilterTest02
+    COMP: The internal name of the function name didn't match the filename.
+
+Testing/Code/Review/itkFastSymmetricForcesDemonsRegistrationFilterTest
+    ENH: set the default value of the interpolated imageequal to the background value
+
+Testing/Code/Review/itkGridForwardWarpImageFilterTest
+
+Testing/Code/Review/itkImageReadComplexWriteMagnitudeAndPhaseTest
+
+Testing/Code/Review/itkImageReadMagnitudeAndPhaseWriteComplexTest
+
+Testing/Code/Review/itkImageReadRealAndImaginaryWriteComplexTest
+
+Testing/Code/Review/itkKappaSigmaThresholdImageCalculatorTest
+
+Testing/Code/Review/itkKappaSigmaThresholdImageFilterTest
+
+Testing/Code/Review/itkMultiplyByConstantImageFilterTest
+
+Testing/Code/Review/itkPhilipsRECImageIOTest
+
+Testing/Code/Review/itkQuadEdgeMeshCountingCellsTest
+
+Testing/Code/Review/itkQuadEdgeMeshDeletePointAndReorderIDsTest
+    ENH: reorder point container to have consecutive IDs before writting a mesh.
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorCreateCenterVertexTest
+    STYLE: split euler operator tests into several ones
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorDeleteCenterVertexTest
+    STYLE: split euler operator tests into several ones
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorFlipTest
+    STYLE: split euler operator tests into several ones
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorJoinFacetTest
+    COMP: remove QuadEdgeMeshEulerOperatorsTest from the list of tests to be performed and fixed some warning
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorJoinVertexTest
+    COMP: remove QuadEdgeMeshEulerOperatorsTest from the list of tests to be performed and fixed some warning
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorSplitEdgeTest
+    STYLE: split euler operator tests into several ones
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorSplitFaceTest
+    STYLE: split euler operator tests into several ones
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorSplitVertexTest
+    STYLE: split euler operator tests into several ones
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorsTest
+    ENH: improved logic for checking joinvertex cases. ENH: new test case for the m_NoPoint problem reported by thomas.
+    COMP: shadowed variable warning for pts2.
+
+Testing/Code/Review/itkQuadEdgeMeshEulerOperatorsTestHelper
+    STYLE: split euler operator tests into several ones
+
+Testing/Code/Review/itkQuadEdgeMeshPointTest1
+    BUG: Constructor taking a Superclass (itk::Point) as argument was missing.
+
+Testing/Code/Review/itkQuadEdgeMeshTest1
+    ENH: new cell container design with specific Edge container.
+
+Testing/Code/Review/itkQuadEdgeMeshTest2
+    ENH: new cell container design with specific Edge container.
+
+Testing/Code/Review/itkQuadEdgem_NoPointTest
+    ENH: an actual test for the m_NoPoint problem reported by thomas.
+
+Testing/Code/Review/itkReviewHeaderTest
+
+Testing/Code/Review/itkReviewPrintTest
+    ENH: meshtype shoul dnot be hardcoded. Modified the class to be compliant to a MeshToMesh filter design.
+
+Testing/Code/Review/itkReviewTests
+    ENH: Splitting the itkBSplineScatteredDataPointSetToImageFilterTest in three separate tests.
+    COMP: remove QuadEdgeMeshEulerOperatorsTest from the list of tests to be performed and fixed some warning
+    ENH: improved logic for checking joinvertex cases. ENH: new test case for the m_NoPoint problem reported by thomas.
+    ENH: Adding tests for the Add and Subtract image filters.
+    ENH: reorder point container to have consecutive IDs before writting a mesh.
+    BUG: remove class definition from COnformalFlattening class. One file, One class. ENH: Create a conformalFlattening test which uses a QuadEdgeMesh and add it to the test suite.
+
+Testing/Code/Review/itkSliceBySliceImageFilterTest
+    ENH: Exercising the PrintSelf() method.
+
+Testing/Code/Review/itkSubtractConstantFromImageFilterTest
+    ENH: Adding tests for the Add and Subtract image filters.
+
+Testing/Code/Review/itkTransformFileReaderWriterTest
+
+Testing/Code/Review/itkTransformToDeformationFieldSourceTest
+    COMP: Fixing the signature of the test. Replacing char ** argv with char * argv [].
+
+Testing/Code/Review/itkVTKPolyDataReaderQuadEdgeMeshTest
+    ENH: ZipFunction now handle the case where two QEdges would be joined into an antenna by removing the two QEdges altogether. the euler op JoinVertex now handle the case where the candidate edge belongs to an isolated triangle. It discard the triangle and associated edge for the time being, but we could choose to keep it if we do not want to change the number of component of the mesh, i.e. the euler constant. It also handle more nicely tetrahedron and separable cycles.
+
+Testing/Code/Review/itkVectorLinearInterpolateNearestNeighborExtrapolateImageFunctionTest
+    COMP: Fixing the name of the test function.
+
+Testing/Code/Review/itkVoxBoCUBImageIOTest
+
+Testing/Code/Review/itkWarpHarmonicEnergyCalculatorTest
+    ENH: On the simple test for WarpHarmonicEnergyCalculator, check that the result is zero
+
+Testing/Code/Review/itkWarpJacobianDeterminantFilterTest
+    ENH:  Intermediate commit while resolving the itkDisplacementFieldJacobianDeterminant and itkDeformationFieldJacobianDeterminant into two well documented and consistant classes.
+
+Testing/Code/SpatialObject/CMakeLists.txt
+    BUG: fixed bug 0005359 "PolygonSpatialObject ClosestPoint() returns incorrect value"; added test
+
+Testing/Code/SpatialObject/itkPolygonSpatialObjectTest
+    BUG: fixed bug 0005359 "PolygonSpatialObject ClosestPoint() returns incorrect value"; added test
+
+Testing/Code/SpatialObject/itkSpatialObjectHeaderTest
+    COMP: Fixing signature of main() function. This was signaled by gcc 4.3.
+
+Testing/Code/SpatialObject/itkSpatialObjectTests2
+    BUG: fixed bug 0005359 "PolygonSpatialObject ClosestPoint() returns incorrect value"; added test
+
+Testing/Data/Baseline/Algorithms/VectorThresholdSegmentationLevelSetImageFilterTest.1.png
+    ENH: new Windows VS baselines after change of default coordtype to double.
+
+Testing/Data/Baseline/IO/RGBTestImageCCITTFax3.mha
+    ENH: Baseline images for TIFF fax tests.
+
+Testing/Data/Baseline/IO/RGBTestImageCCITTFax4.mha
+    ENH: Baseline images for TIFF fax tests.
+
+Testing/Data/Baseline/Registration/ImageRegistration14Test.1.png
+
+Testing/Data/Baseline/Registration/ImageRegistration14Test.png
+view.php?id=4547
+
+Testing/Data/Baseline/Registration/MultiResImageRegistration2Test.2.png
+
+Testing/Data/Baseline/Segmentation/ThresholdSegmentationLevelSetWhiteMatterTest.1.png
+    ENH: new Windows VS baselines after change of default coordtype to double.
+
+Testing/Data/Input/BSplineScatteredApproximationDataPointsInput.txt
+
+Testing/Data/Input/HeadMRVolume.cub
+    BUG: test data input should be in the repository and not generated by other tests.
+
+Testing/Data/Input/HeadMRVolume1.cub
+    BUG: test data input should be in the repository and not generated by other tests.
+
+Testing/Data/Input/HeadMRVolume1.cub.gz
+    BUG: test data input should be in the repository and not generated by other tests.
+
+Testing/Data/Input/HeadMRVolume2.cub
+    BUG: test data input should be in the repository and not generated by other tests.
+
+Testing/Data/Input/HeadMRVolume2.cub.gz
+    BUG: test data input should be in the repository and not generated by other tests.
+
+Testing/Data/Input/IntensityRamp64.png
+
+Testing/Data/Input/LittleEndianZ.hdr
+    COMP: Added test file for compressed analyze
+
+Testing/Data/Input/LittleEndianZ.img.gz
+    COMP: Added test file for compressed analyze
+
+Testing/Data/Input/Number1inText.png
+
+Testing/Data/Input/Number2inText.png
+
+Testing/Data/Input/Number3inText.png
+
+Testing/Data/Input/T1_MEASUREMENT_4_1.PAR
+
+Testing/Data/Input/T1_MEASUREMENT_4_1.REC
+
+Testing/Data/Input/itkAffineTransform00.txt
+    ENH: Adding standard transforms for testing TransformFileReader and TransformFileWriter.
+
+Testing/Data/Input/itkAffineTransform01.txt
+    ENH: Adding standard transforms for testing TransformFileReader and TransformFileWriter.
+
+Testing/Data/Input/parametersBSpline.txt
+
+Testing/Data/Input/pointsForKdTree.txt
+
+Testing/Data/Input/pointsForKdTree2.txt
+    ENH: Adding one level more of branching in the fractal structure of the 2D point distribution.
+
+Testing/Data/Input/pointsForQuickSelect1.txt
+    ENH: Removing spaces.
+
+Testing/Data/Input/pointsForQuickSelect2.txt
+    ENH: In quest for the minimal test...
+
+Testing/Data/Input/pointsForQuickSelect3.txt
+
+Testing/Data/Input/DCB120604.t61/AdjStatePerStudy
+
+Testing/Data/Input/DCB120604.t61/subject
+
+Testing/Data/Input/DCB120604.t61/11/acqp
+
+Testing/Data/Input/DCB120604.t61/11/imnd
+
+Testing/Data/Input/DCB120604.t61/11/pulseprogram
+
+Testing/Data/Input/DCB120604.t61/11/spnam0
+
+Testing/Data/Input/DCB120604.t61/11/spnam1
+
+Testing/Data/Input/DCB120604.t61/11/pdata/1/2dseq
+
+Testing/Data/Input/DCB120604.t61/11/pdata/1/d3pr
+
+Testing/Data/Input/DCB120604.t61/11/pdata/1/meta
+
+Testing/Data/Input/DCB120604.t61/11/pdata/1/procs
+
+Testing/Data/Input/DCB120604.t61/11/pdata/1/reco
+
+Testing/Data/Input/DCB120604.t61/11/pdata/1/roi
+
+Utilities/CMakeLists.txt
+    ENH: fix some Mac build, kwsys is required to build metaio
+    ENH: Uses new directory structure in KWPublic
+
+Utilities/README.itklibxml2
+    STYLE: typo
+
+Utilities/DICOMParser/DICOMAppHelper
+porting_to.html for a more detailed explanation.
+
+Utilities/DICOMParser/DICOMBuffer
+porting_to.html for a more detailed explanation.
+
+Utilities/DICOMParser/DICOMParser
+    BUG: applied fix from VTK where a stray semicolon was causing the body of a loop to execute only once
+
+Utilities/DICOMParser/DICOMParser
+porting_to.html for a more detailed explanation.
+
+Utilities/DICOMParser/DICOMSource
+porting_to.html for a more detailed explanation.
+
+Utilities/Dart/BuildHeaderTest.tcl
+
+Utilities/Doxygen/CMakeLists.txt
+
+Utilities/Doxygen/doxygen.config.in
+    BUG: The location of the perl script for itkdoxygen.pl was not updated.
+
+Utilities/MetaIO/.svnrev
+    ENH: subversion revision 451 commited to CVS
+    ENH: subversion revision 432 commited to CVS
+    ENH: subversion revision 371 commited to CVS
+    ENH: subversion revision 198 commited to CVS
+    ENH: subversion revision 195 commited to CVS
+
+Utilities/MetaIO/CMakeLists.txt
+
+Utilities/MetaIO/metaCommand
+
+Utilities/MetaIO/metaCommand
+
+Utilities/MetaIO/metaContour
+
+Utilities/MetaIO/metaDTITube
+
+Utilities/MetaIO/metaImage
+
+Utilities/MetaIO/metaImage
+
+Utilities/MetaIO/metaMe
+
+Utilities/MetaIO/metaOutput
+
+Utilities/MetaIO/metaScene
+
+Utilities/MetaIO/metaUtils
+
+Utilities/MetaIO/metaUtils
+
+Utilities/NrrdIO/754
+    COMP: wrong #ifdef for Visual Studio compilers.
+
+Utilities/NrrdIO/CMakeLists.txt
+    COMP: suppress strict aliasing warning.
+
+Utilities/NrrdIO/axis
+
+Utilities/NrrdIO/biffbiff
+    COMP: warning, isprint and isspace take int args.
+
+Utilities/NrrdIO/encodingAscii
+
+Utilities/NrrdIO/encodingGzip
+
+Utilities/NrrdIO/encodingHex
+
+Utilities/NrrdIO/gzio
+
+Utilities/NrrdIO/methodsNrrd
+    COMP: size_t needs a "z" length modifier for sprintf.
+
+Utilities/NrrdIO/parseNrrd
+
+Utilities/NrrdIO/read
+    COMP: Addressing warnings on 64bits Windows regarding conversions between size_t and int.
+
+Utilities/NrrdIO/reorder
+
+Utilities/NrrdIO/simple
+
+Utilities/NrrdIO/string
+    COMP: warning, isprint and isspace take int args.
+
+Utilities/NrrdIO/write
+    COMP: Addressing warnings on 64bits Windows regarding conversions between size_t and int.
+
+Utilities/expat/xmltok_impl
+    COMP: redefinition of #define'ed symbol.
+
+Utilities/gdcm/CMakeLists.txt
+
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/gdcm/gdcmConfigure.h.in
+
+Utilities/gdcm/CMake/FindUUID.cmake
+
+Utilities/gdcm/Dicts/CMakeLists.txt
+    STYLE: sync with Creatis
+
+Utilities/gdcm/Dicts/dicomVR.d
+    BUG: fix issue with VR=OF in file
+
+Utilities/gdcm/src/CMakeLists.txt
+    STYLE: sync with Creatis
+    ENH: Backport from gdcm 1.2.4 the new improved UUID generator
+
+Utilities/gdcm/src/gdcmArgMgr
+    ENH: Backport fix from gdcm CVS HEAD. Thanks to Sean McBride for report
+
+Utilities/gdcm/src/gdcmCommon
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/gdcm/src/gdcmDebug
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/gdcm/src/gdcmDicomDir
+
+Utilities/gdcm/src/gdcmDocument
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/gdcm/src/gdcmDocument
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/gdcm/src/gdcmFile
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/gdcm/src/gdcmFileHelper
+    COMP: shadowed variable warning.
+    ENH: when creating image from ex-nihilo make sure meta header is consistand with dataset
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/gdcm/src/gdcmJPEGFragmentsInfo
+    ENH: prevent segfault. The last else should not always call the jpeg decompressor when the image is NOT jpeg
+
+Utilities/gdcm/src/gdcmJpeg2000
+    STYLE: sync with Creatis
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/gdcm/src/gdcmPixelReadConvert
+    STYLE: sync with Creatis
+    ENH: prevent segfault. The last else should not always call the jpeg decompressor when the image is NOT jpeg
+
+Utilities/gdcm/src/gdcmPixelWriteConvert
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/gdcm/src/gdcmSerieHelper
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/gdcm/src/gdcmUtil
+    ENH: When a UUID lib is found disable the old path, and use the new approach to generate UUIDs
+    ENH: Backport from gdcm 1.2.4 the new improved UUID generator
+
+Utilities/gdcm/src/gdcmUtil
+    ENH: When a UUID lib is found disable the old path, and use the new approach to generate UUIDs
+    ENH: Backport more bug fixes from official gdcm 1.2.4 (sync in progress)
+
+Utilities/itkpng/pngpread
+
+Utilities/itkpng/pngread
+
+Utilities/itkpng/pngrutil
+
+Utilities/itkpng/pngset
+
+Utilities/itkpng/pngwio
+
+Utilities/itkpng/pngwrite
+
+Utilities/itkpng/pngwutil
+
+Utilities/itktiff/CMakeLists.txt
+    COMP: suppress strict aliasing warning.
+
+Utilities/itktiff/tif_config.h.in
+    COMP: use include guards to prevent multiple definitions.
+
+Utilities/itktiff/tif_dirread
+    COMP: possible use of unitialized variable.
+
+Utilities/kwsys/CMakeLists.txt
+
+Utilities/kwsys/CPU.h.in
+
+Utilities/kwsys/DynamicLoader
+
+Utilities/kwsys/ProcessUNIX
+    ENH: all ctype function have the same issue: char can be signed or unsigned, since isspace only deal with &gt;=0 value (except EOF) one has to first cast it to unsigned char
+
+Utilities/kwsys/ProcessWin32
+    COMP: sprintf warnings. DWORD should use %ld rather than %d. Also, const char *p, a shadowed variable warning.
+
+Utilities/kwsys/RegularExpression
+    COMP: remove warning and check for assignment to itself in operator=
+    ENH: Add assignment operator to KWSys RegularExpression.
+
+Utilities/kwsys/RegularExpression.hxx.in
+    ENH: Add assignment operator to KWSys RegularExpression.
+
+Utilities/kwsys/System
+    BUG: Fix escaping of more characters on Windows shells.
+
+Utilities/kwsys/SystemInformation
+    ENH: fix crash on dash17 linux where the parsing of the proc file must not have worked right
+    BUG:cpuinfo format are different between Linux and Cygwin. Cygwin does not have physical id tag or cpu cores tag.
+    BUG:Fixed NumberOfLogicalCPU, NumberOfPhysicalCPU and LogicalProcessorsPerPhysical under Linux. Some part was just wrong. Some other part missed to take the multicore value into account.
+    BUG: really fix build on vs6
+    ENH: use GlobalMemoryStatusEx as it is able to report more than 2gigs
+    ENH: remove odd chars from file
+
+Utilities/kwsys/SystemTools
+    COMP: sprintf warnings. DWORD should use %ld rather than %d. Also, const char *p, a shadowed variable warning.
+
+Utilities/kwsys/SystemTools.hxx.in
+
+Utilities/kwsys/Terminal
+
+Utilities/kwsys/kwsysDateStamp.cmake
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+    STYLE: Nightly Date Stamp
+
+Utilities/nifti/niftilib/nifti1_io
+    COMP: warning, isprint and isspace take int args.
+
+Utilities/nifti/znzlib/znzlib
+
+Utilities/openjpeg/CMakeLists.txt
+    COMP: Fix comp on Proximal Win32-bcc5.5-Static
+
+Utilities/vxl/core/testlib/testlib_main
+    STYLE: Fix inclusion of cstdlib to be vcl-ified.  The inclusion of this header was already done in vxl upstream.
+
+Utilities/vxl/core/vnl/vnl_gamma
+vnl_gamma.cxx about constant controlling expression in assert.
+
+Utilities/vxl/core/vnl/vnl_matlab_header
+    COMP:  Accidently commited local changes.  Rolling back to proper version.
+
+Utilities/vxl/core/vnl/vnl_numeric_traits
+    ENH: Adding traits for size_t, needed in Windows 64 bits.
+
+Utilities/vxl/core/vnl/vnl_sse
+    BUG: fixed 7214, allowing Mac OS X Universal Binary builds to succeed even if VNL_CONFIG_ENABLE_SSE2 is ON
+
+Utilities/vxl/core/vnl/algo/vnl_lbfgsb
+    ENH: Always return the best known function input from vnl_lbfgsb even when an error occurs.  Patch from Tom Vercauteren on ITK users list.
+
+Utilities/vxl/core/vnl/tests/test_vector
+    COMP: tracking down test failure for Intel ICC 10.0 compiler.
+    COMP: added extra output to try and track down a failing test in INTEL icc 10.0.
+
+Utilities/vxl/v3p/netlib/CMakeLists.txt
+
+Utilities/vxl/v3p/netlib/opt/lbfgsb
+    COMP: Fixing warning for uninitialized variable cpu1.
+
+Wrapping/CSwig/CMakeLists.txt
+
+Wrapping/ExplicitITK/Modules/Common/wrap_itkImage.cmake
+    COMP: drop duplicated instantiations.
+
+Wrapping/ExplicitITK/Modules/Common/wrap_itkImageFunction.cmake
+
+Wrapping/ExplicitITK/Modules/Common/wrap_itkLinearInterpolateImageFunction.cmake
+
+Wrapping/ExplicitITK/Modules/Common/wrap_itkVectorLinearInterpolateImageFunction.cmake
+
+Wrapping/ExplicitITK/Modules/Common/wrap_itkZeroFluxNeumannBoundaryCondition.cmake
+    COMP: drop duplicated instantiations.
+
+Wrapping/WrapITK/ConfigureWrapping.cmake
+    ENH: additional macros to let external projects build with both stable and unstable wrapitk
+
+Wrapping/WrapITK/CreateWrapperLibrary.cmake
+    ENH: additional macros to let external projects build with both stable and unstable wrapitk
+
+Wrapping/WrapITK/WrapITKTypes.cmake
+    ENH: additional macros to let external projects build with both stable and unstable wrapitk
+
+Wrapping/WrapITK/Java/Tests/CMakeLists.txt
+    COMP: Use 'ALL' to force the build of the java tests.
+
+Wrapping/WrapITK/Modules/Base/wrap_itkNumericTraits.cmake
+    ENH: Adding the new file itkNumericTraitsFixedArrayPixel.h.
+
+Wrapping/WrapITK/Modules/Interpolators/wrap_itkWindowedSincInterpolateImageFunction.cmake
+    ENH:  Added the Windowed SincInterpolateImageFunction to the standard wrapping.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkBinaryProjectionImageFilter.cmake
+    ENH: keep only integer types - that's a binary filter.
+
+Wrapping/WrapITK/Modules/Review/wrap_itkBinaryThresholdProjectionImageFilter.cmake
+    COMP: Reduce the number of wrapped types to avoid the hierarchy gaps warnings
+
+Wrapping/WrapITK/Modules/Review/wrap_itkKappaSigmaThresholdImageFilter.cmake
+    ENH: wrap KappaSigmaThresholdImageFilter and SliceBySliceImageFilter
+
+Wrapping/WrapITK/Modules/Review/wrap_itkSliceBySliceImageFilter.cmake
+    ENH: wrap KappaSigmaThresholdImageFilter and SliceBySliceImageFilter
+
+Wrapping/WrapITK/Modules/SimpleFilters/Attic/wrap_itkInterpolateImageFilter.cmake
+    COMP: Remove InterpolateImageFilter to avoid cableswig warnings.
+
+Wrapping/WrapITK/images/FFTImageFilterImaginary.png
+    BUG: Fix PythonFFTImageFilter test.
+
+Wrapping/WrapITK/images/Attic/capture1.png
+    ENH: Removing large image that is not needed for testing.
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20220806221220
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.005 seconds
+Real time usage: 0.005 seconds
+Preprocessor visited node count: 6/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 77311/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3200-0!canonical and timestamp 20220806221220 and revision id 12765. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_3.8_Changed_From_Previous&amp;oldid=12765">https://public.kitware.com/Wiki/index.php?title=ITK_Release_3.8_Changed_From_Previous&amp;oldid=12765</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK_Release_3.8_Changed_From_Previous" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_3.8_Changed_From_Previous&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK_Release_3.8_Changed_From_Previous">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.8_Changed_From_Previous&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.8_Changed_From_Previous&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK_Release_3.8_Changed_From_Previous" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_3.8_Changed_From_Previous&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK+Release+3.8+Changed+From+Previous" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK_Release_3.8_Changed_From_Previous" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK_Release_3.8_Changed_From_Previous" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.8_Changed_From_Previous&amp;oldid=12765" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_3.8_Changed_From_Previous&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 30 July 2008, at 03:40.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.005","walltime":"0.005","ppvisitednodes":{"value":6,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":77311,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220806221220","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":74});});</script>
+</body></html>

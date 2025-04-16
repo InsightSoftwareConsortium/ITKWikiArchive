@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Tcons/Agendas/2011 01 04 - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d6ab410988b5bf7f2b65cc20","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Tcons/Agendas/2011_01_04","wgTitle":"ITK/Tcons/Agendas/2011 01 04","wgCurRevisionId":36103,"wgRevisionId":36103,"wgArticleId":8514,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Tcons/Agendas/2011_01_04","wgRelevantArticleId":8514,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready",
+"noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Tcons_Agendas_2011_01_04 rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/Tcons/Agendas/2011 01 04</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Tcons" title="ITK/Tcons">Tcons</a>&lrm; | <a href="/Wiki/ITK/Tcons/Agendas" title="ITK/Tcons/Agendas">Agendas</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#How_to_Join_the_Tcon"><span class="tocnumber">1</span> <span class="toctext">How to Join the Tcon</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Number_to_Call"><span class="tocnumber">1.1</span> <span class="toctext">Number to Call</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Webex"><span class="tocnumber">1.2</span> <span class="toctext">Webex</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Project_Management"><span class="tocnumber">2</span> <span class="toctext">Project Management</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#February_Meeting_in_Boston"><span class="tocnumber">2.1</span> <span class="toctext">February Meeting in Boston</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Changing_Tcon_Day/Time"><span class="tocnumber">2.2</span> <span class="toctext">Changing Tcon Day/Time</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Technical_Topics"><span class="tocnumber">3</span> <span class="toctext">Technical Topics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Dashboard"><span class="tocnumber">3.1</span> <span class="toctext">Dashboard</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Lingering_Failing_Tests_(_Feet_+_Heat_)"><span class="tocnumber">3.1.1</span> <span class="toctext">Lingering Failing Tests ( Feet + Heat )</span></a>
+<ul>
+<li class="toclevel-4 tocsection-10"><a href="#New_Year&#39;s_Resolutions"><span class="tocnumber">3.1.1.1</span> <span class="toctext">New Year's Resolutions</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#Schedule"><span class="tocnumber">3.2</span> <span class="toctext">Schedule</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#ITKv4-A04"><span class="tocnumber">3.2.1</span> <span class="toctext">ITKv4-A04</span></a>
+<ul>
+<li class="toclevel-4 tocsection-13"><a href="#Major_topics_to_be_merged"><span class="tocnumber">3.2.1.1</span> <span class="toctext">Major topics to be merged</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-14"><a href="#ITKv4_A05"><span class="tocnumber">3.2.2</span> <span class="toctext">ITKv4 A05</span></a>
+<ul>
+<li class="toclevel-4 tocsection-15"><a href="#Major_topics_to_be_completed"><span class="tocnumber">3.2.2.1</span> <span class="toctext">Major topics to be completed</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Outreach"><span class="tocnumber">3.3</span> <span class="toctext">Outreach</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Redmine_demo"><span class="tocnumber">3.4</span> <span class="toctext">Redmine demo</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Gerrit_Reviews"><span class="tocnumber">3.5</span> <span class="toctext">Gerrit Reviews</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Doxygen_Nightly"><span class="tocnumber">3.6</span> <span class="toctext">Doxygen Nightly</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#ITK_Data"><span class="tocnumber">3.7</span> <span class="toctext">ITK Data</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="#Use_Cases"><span class="tocnumber">3.7.1</span> <span class="toctext">Use Cases</span></a>
+<ul>
+<li class="toclevel-4 tocsection-22"><a href="#Cone_Beam_CT"><span class="tocnumber">3.7.1.1</span> <span class="toctext">Cone Beam CT</span></a></li>
+<li class="toclevel-4 tocsection-23"><a href="#BrainWeb"><span class="tocnumber">3.7.1.2</span> <span class="toctext">BrainWeb</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-24"><a href="#Migration_Guide_Process"><span class="tocnumber">3.8</span> <span class="toctext">Migration Guide Process</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Simple_ITK"><span class="tocnumber">3.9</span> <span class="toctext">Simple ITK</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#GPU"><span class="tocnumber">3.10</span> <span class="toctext">GPU</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#DICOM"><span class="tocnumber">3.11</span> <span class="toctext">DICOM</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Image_Registration_Revision"><span class="tocnumber">3.12</span> <span class="toctext">Image Registration Revision</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Level_Set"><span class="tocnumber">3.13</span> <span class="toctext">Level Set</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Time_Stamp_Proposal"><span class="tocnumber">3.14</span> <span class="toctext">Time Stamp Proposal</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Modularization"><span class="tocnumber">3.15</span> <span class="toctext">Modularization</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#TIFF_Update"><span class="tocnumber">3.16</span> <span class="toctext">TIFF Update</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#Sequestered_Reference_Applications"><span class="tocnumber">3.17</span> <span class="toctext">Sequestered Reference Applications</span></a>
+<ul>
+<li class="toclevel-3 tocsection-34"><a href="#Ongoing"><span class="tocnumber">3.17.1</span> <span class="toctext">Ongoing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-35"><a href="#Development_Versions_following_ITKv4"><span class="tocnumber">3.18</span> <span class="toctext">Development Versions following ITKv4</span></a>
+<ul>
+<li class="toclevel-3 tocsection-36"><a href="#Pending"><span class="tocnumber">3.18.1</span> <span class="toctext">Pending</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-37"><a href="#Wrapping"><span class="tocnumber">3.19</span> <span class="toctext">Wrapping</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#ITK_Readers_for_Microscopy_formats"><span class="tocnumber">3.20</span> <span class="toctext">ITK Readers for Microscopy formats</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="How_to_Join_the_Tcon">How to Join the Tcon</span></h1>
+<h2><span class="mw-headline" id="Number_to_Call">Number to Call</span></h2>
+<ul><li>1-800-728-9607 (in the US) or</li>
+<li>+1 9139049873 (international)</li>
+<li>access code 6815251</li></ul>
+<h2><span class="mw-headline" id="Webex">Webex</span></h2>
+<ul><li>Meeting link</li>
+<li><a rel="nofollow" class="external free" href="https://emeetings.webex.com/emeetings/j.php?ED=138191182&amp;UID=482060457&amp;PW=NNzJiNDk1ZGU3">https://emeetings.webex.com/emeetings/j.php?ED=138191182&amp;UID=482060457&amp;PW=NNzJiNDk1ZGU3</a></li></ul>
+<h1><span class="mw-headline" id="Project_Management">Project Management</span></h1>
+<h2><span class="mw-headline" id="February_Meeting_in_Boston">February Meeting in Boston</span></h2>
+<ul><li>Set for February 2-3, 2011 in Boston at Harvard Medical School.</li></ul>
+<ul><li><ul><li><a rel="nofollow" class="external free" href="http://www.events.harvard.edu/web/2281">http://www.events.harvard.edu/web/2281</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.itk.org/Wiki/Winter_ITKv4_2011_Meeting">http://www.itk.org/Wiki/Winter_ITKv4_2011_Meeting</a></li></ul></li></ul>
+<p>Please register for the meeting ASAP. Here is the link for the registration:
+</p>
+<ul><li><a rel="nofollow" class="external free" href="http://www.events.harvard.edu/30325">http://www.events.harvard.edu/30325</a></li></ul>
+<h2><span id="Changing_Tcon_Day.2FTime"></span><span class="mw-headline" id="Changing_Tcon_Day/Time">Changing Tcon Day/Time</span></h2>
+<p>We ran a survey:
+</p>
+<ul><li><a rel="nofollow" class="external free" href="http://www.scheduleonce.com/MeetingProposal.aspx?param=TT0zNTg2Ny5UPTEuVT0tMQqualqual">http://www.scheduleonce.com/MeetingProposal.aspx?param=TT0zNTg2Ny5UPTEuVT0tMQqualqual</a></li></ul>
+<p>Wednesday at 10am EST seems to be the time that matches all the people who responded the survey.
+</p>
+<h1><span class="mw-headline" id="Technical_Topics">Technical Topics</span></h1>
+<h2><span class="mw-headline" id="Dashboard">Dashboard</span></h2>
+<ul><li>Dashboard Status - <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=Insight">Today's Dashboard</a></li></ul>
+<h3><span id="Lingering_Failing_Tests_.28_Feet_.2B_Heat_.29"></span><span class="mw-headline" id="Lingering_Failing_Tests_(_Feet_+_Heat_)">Lingering Failing Tests ( Feet + Heat )</span></h3>
+<ul><li>DICOM Tests tkGDCMSeriesStreamReadImageWrite3 and tkGDCMSeriesStreamReadImageWrite4
+<ul><li>Malaterre/Roden status update</li>
+<li>Able to reproduce the problem?</li>
+<li>resolution?</li></ul></li></ul>
+<ul><li>LabelMap tests failing on certain Windows systems
+<ul><li><a rel="nofollow" class="external free" href="http://www.cdash.org/CDash/viewTest.php?onlyfailed&amp;buildid=805695">http://www.cdash.org/CDash/viewTest.php?onlyfailed&amp;buildid=805695</a></li>
+<li>Who is responsible to address?</li></ul></li></ul>
+<ul><li>KWStyle failing
+<ul><li>Add KWStyle tests to CDash@Home</li></ul></li></ul>
+<p><br />
+</p>
+<h4><span id="New_Year.27s_Resolutions"></span><span class="mw-headline" id="New_Year's_Resolutions">New Year's Resolutions</span></h4>
+<ul><li>Keep Valgrind errors at <b>Zero</b>.</li>
+<li>There are only two Valgrind errors now.
+<ul><li><a rel="nofollow" class="external free" href="http://www.cdash.org/CDash/viewDynamicAnalysis.php?buildid=816931">http://www.cdash.org/CDash/viewDynamicAnalysis.php?buildid=816931</a></li>
+<li>They are related to loading Dynamic Libraries and Object Factories.</li></ul></li></ul>
+<h2><span class="mw-headline" id="Schedule">Schedule</span></h2>
+<h3><span class="mw-headline" id="ITKv4-A04">ITKv4-A04</span></h3>
+<ul><li>Date: Friday - January 7th 2011</li></ul>
+<h4><span class="mw-headline" id="Major_topics_to_be_merged">Major topics to be merged</span></h4>
+<ul><li>Fixing Windows 64bits problem with "long"...
+<ul><li>Committed&#160;!!</li>
+<li>A couple of warning and tests to be addressed</li></ul></li>
+<li>Data class additions/hierarchies?</li>
+<li>TimeStamps (will try)</li></ul>
+<h3><span class="mw-headline" id="ITKv4_A05">ITKv4 A05</span></h3>
+<ul><li>Date: January 28th ( hard deadline before Winter Design Meeting )</li></ul>
+<h4><span class="mw-headline" id="Major_topics_to_be_completed">Major topics to be completed</span></h4>
+<ul><li>GPU Draft Implementation</li>
+<li>SimpleITK Draft Implementation</li></ul>
+<h2><span class="mw-headline" id="Outreach">Outreach</span></h2>
+<ul><li>MICCAI 2011 Call for Workshops and Tutorials
+<ul><li><a href="/Wiki/ITK_Release_4/Outreach/Conferences/MICCAI_2011" class="mw-redirect" title="ITK Release 4/Outreach/Conferences/MICCAI 2011">Suggested Tutorials for MICCAI 2011</a></li></ul></li>
+<li>Note that we already have an accepted tutorial for CVPR 2011 on the use of ITK+OpenCV</li></ul>
+<h2><span class="mw-headline" id="Redmine_demo">Redmine demo</span></h2>
+<ul><li>Project management software</li>
+<li><a rel="nofollow" class="external text" href="http://ec2-184-72-196-165.compute-1.amazonaws.com:8080/redmine/">SimpleITK Redmine</a> instance on EC2</li></ul>
+<h2><span class="mw-headline" id="Gerrit_Reviews">Gerrit Reviews</span></h2>
+<ul><li><a rel="nofollow" class="external free" href="http://review.source.kitware.com/#q,status:open,n,z">http://review.source.kitware.com/#q,status:open,n,z</a></li></ul>
+<h2><span class="mw-headline" id="Doxygen_Nightly">Doxygen Nightly</span></h2>
+<ul><li><ul><li><a rel="nofollow" class="external free" href="http://www.itk.org/Wiki/ITK_Documentation">http://www.itk.org/Wiki/ITK_Documentation</a></li></ul></li></ul>
+<h2><span class="mw-headline" id="ITK_Data">ITK Data</span></h2>
+<p>We had a tcon on December 16th.
+</p><p>Summary here:
+</p><p><a href="/Wiki/ITK_Release_4/Data_Collection" title="ITK Release 4/Data Collection">Data Collection</a>
+</p>
+<h3><span class="mw-headline" id="Use_Cases">Use Cases</span></h3>
+<h4><span class="mw-headline" id="Cone_Beam_CT">Cone Beam CT</span></h4>
+<ul><li>Use case with Cone Beam CT datasets uploaded to <a rel="nofollow" class="external text" href="http://midas.kitware.com/">MIDAS</a>.</li>
+<li>Downloading through web interface is at the item level, for larger data sets (collections/communities) kitware is developing a desktop application.</li></ul>
+<h4><span class="mw-headline" id="BrainWeb">BrainWeb</span></h4>
+<p>Gerrit patch intended to facilitate the use of BrainWeb datasets:
+</p>
+<pre> <a rel="nofollow" class="external free" href="http://review.source.kitware.com/#change,605">http://review.source.kitware.com/#change,605</a>
+</pre>
+<h2><span class="mw-headline" id="Migration_Guide_Process">Migration Guide Process</span></h2>
+<ul><li><a href="/Wiki/ITK_Release_4/Users_Migration_Guide" title="ITK Release 4/Users Migration Guide">Users Migration Guide</a> (Gabe Hart)
+<ul><li><a href="/Wiki/ITK_Release_4/What_Developers_Must_Do_To_Contribute_to_the_Users_Migration_Guide" title="ITK Release 4/What Developers Must Do To Contribute to the Users Migration Guide">What Developers Must Do To Contribute to the Users Migration Guide</a></li>
+<li><a href="/Wiki/ITK_Release_4/MigrationGuideDeveloperTutorial" title="ITK Release 4/MigrationGuideDeveloperTutorial">Developer Tutorial</a></li></ul></li>
+<li>Example XML
+<ul><li><a rel="nofollow" class="external free" href="http://review.source.kitware.com/#patch,sidebyside,224,2,Migration/DecoupleNumericTraitsFromContainers.xml">http://review.source.kitware.com/#patch,sidebyside,224,2,Migration/DecoupleNumericTraitsFromContainers.xml</a></li></ul></li></ul>
+<h2><span class="mw-headline" id="Simple_ITK">Simple ITK</span></h2>
+<ul><li>Code generations
+<ul><li>Using Lua and JSON</li></ul></li></ul>
+<ul><li>Interfacing to
+<ul><li>ImageJ / Fiji</li>
+<li>CellProfiler</li></ul></li></ul>
+<h2><span class="mw-headline" id="GPU">GPU</span></h2>
+<ul><li>Summary of tcon with NVIDIA from Monday Nov 22 at 1pm EST (Won Ki)</li>
+<li><a href="/Wiki/ITK_Release_4/GPU_Acceleration" class="mw-redirect" title="ITK Release 4/GPU Acceleration">GPU Acceleration - V4</a>
+<ul><li><a href="/Wiki/ITK_Release_4/GPU_Acceleration/Tcon-2010-11-22" class="mw-redirect" title="ITK Release 4/GPU Acceleration/Tcon-2010-11-22">Tcon 2010-11-22</a></li></ul></li>
+<li>Next tcon with NVidia, scheduled for <b>Thursday Jan 6th 1pm EST</b></li></ul>
+<h2><span class="mw-headline" id="DICOM">DICOM</span></h2>
+<p>Dan and Mathieu to report
+</p>
+<ul><li><a href="/Wiki/ITKv4_DICOM_Communications_Discussion" title="ITKv4 DICOM Communications Discussion"> Beginnings of a requirements document</a>.  Comments welcome.</li>
+<li>Proposed <a href="/Wiki/ITK_Release_4/DICOM/Tcon_Proposal" class="mw-redirect" title="ITK Release 4/DICOM/Tcon Proposal"> TConf</a></li></ul>
+<h2><span class="mw-headline" id="Image_Registration_Revision">Image Registration Revision</span></h2>
+<ul><li>Start sending patches to Gerrit
+<ul><li>New CompositeTransform class is underway</li>
+<li>New DeformationFieldTransform class is underway</li>
+<li>Transform IO will be adjusted accordingly</li></ul></li></ul>
+<h2><span class="mw-headline" id="Level_Set">Level Set</span></h2>
+<ul><li>Refactoring page
+<ul><li><a href="/Wiki/Refactoring_Level-Set_framework_-_V4" title="Refactoring Level-Set framework - V4">Refactoring Level-Set framework - V4</a></li></ul></li></ul>
+<h2><span class="mw-headline" id="Time_Stamp_Proposal">Time Stamp Proposal</span></h2>
+<ul><li><a href="/Wiki/ITK_Release_4/Video/Time_Stamp" title="ITK Release 4/Video/Time Stamp">Time Stamp</a></li></ul>
+<h2><span class="mw-headline" id="Modularization">Modularization</span></h2>
+<ul><li>Had a Tcon about modularization on Dec 3 <a rel="nofollow" class="external autonumber" href="http://www.itk.org/Wiki/ITK_Release_4/Modularization/Tcon-2010-12-03">[1]</a>.</li></ul>
+<p>The initial partition seems to be good to start with.
+</p>
+<ul><li>Brad King worked on cmake packaging prototypes</li>
+<li>Xiaoxiao is working on building the modular ITK  module by module. Details of the status can be found in <a rel="nofollow" class="external autonumber" href="http://www.itk.org/Wiki/ITK_Release_4/Modularization/Status">[2]</a>.</li></ul>
+<h2><span class="mw-headline" id="TIFF_Update">TIFF Update</span></h2>
+<ul><li>Brad King addressed the int issues</li>
+<li>Currently at</li></ul>
+<pre> git fetch <a rel="nofollow" class="external free" href="git://kwsource.kitwarein.com/~bradking/itk/bradkings-itk.git">git://kwsource.kitwarein.com/~bradking/itk/bradkings-itk.git</a> +libtiff4beta6:libtiff4beta6
+</pre>
+<h2><span class="mw-headline" id="Sequestered_Reference_Applications">Sequestered Reference Applications</span></h2>
+<p>We have already made significant changes, and they are not being recorded yet. It is time to setup these reference applications.
+</p>
+<h3><span class="mw-headline" id="Ongoing">Ongoing</span></h3>
+<ul><li>V3D Plugins</li>
+<li>Slicer
+<ul><li>3.6 sequestered in Github</li>
+<li>4.0 to be adjusted now during the NAMIC AHM meeting.</li></ul></li>
+<li>VV</li>
+<li>Insight Applications now submitting
+<ul><li>Broken: need to use it as an example for the Migration Guide.</li></ul></li></ul>
+<h2><span class="mw-headline" id="Development_Versions_following_ITKv4">Development Versions following ITKv4</span></h2>
+<ul><li>OTB
+<ul><li><a rel="nofollow" class="external free" href="http://dash.orfeo-toolbox.org/buildSummary.php?buildid=29602">http://dash.orfeo-toolbox.org/buildSummary.php?buildid=29602</a></li></ul></li>
+<li>GoFigure2
+<ul><li>Nightly build use the current ITKv4.</li>
+<li><a rel="nofollow" class="external free" href="http://my.cdash.org/index.php?project=GoFigure2">http://my.cdash.org/index.php?project=GoFigure2</a></li></ul></li></ul>
+<h3><span class="mw-headline" id="Pending">Pending</span></h3>
+<ul><li>IGSTK, after SPIE'11 (<a rel="nofollow" class="external text" href="http://public.kitware.com/IGSTKWIKI/index.php/IGSTK5.0">IGSTK5.0</a>)</li>
+<li>Insight Applications (ITKApps from v3.20)</li>
+<li>ITK tests from v3.20</li></ul>
+<h2><span class="mw-headline" id="Wrapping">Wrapping</span></h2>
+<ul><li>Status (Alex)</li>
+<li><a href="/Wiki/ITK_Release_4/Wrapping" class="mw-redirect" title="ITK Release 4/Wrapping">Wrapping</a></li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="ITK_Readers_for_Microscopy_formats">ITK Readers for Microscopy formats</span></h2>
+<ul><li>There's a need for readers in the microscopy community in order to be able to use ITK
+<ul><li>Zeiss (LSM and ZVI)</li>
+<li>Leica (LIF)</li>
+<li>Olympus (OIB)</li>
+<li>Nikon ()</li></ul></li>
+<li><a rel="nofollow" class="external text" href="http://www.loci.wisc.edu/software/bio-formats">BioFormats</a> has readers and example files for these. It is Java with C++ bindings for ITK, BUT it's GPL.</li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20220527030115
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.019 seconds
+Real time usage: 0.020 seconds
+Preprocessor visited node count: 125/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8514-0!canonical and timestamp 20220527030115 and revision id 36103. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Tcons/Agendas/2011_01_04&amp;oldid=36103">https://public.kitware.com/Wiki/index.php?title=ITK/Tcons/Agendas/2011_01_04&amp;oldid=36103</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Tcons/Agendas/2011_01_04" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Tcons/Agendas/2011_01_04&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Tcons/Agendas/2011_01_04">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Tcons/Agendas/2011_01_04&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Tcons/Agendas/2011_01_04&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Tcons/Agendas/2011_01_04" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Tcons/Agendas/2011_01_04&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FTcons%2FAgendas%2F2011+01+04" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Tcons/Agendas/2011_01_04" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Tcons/Agendas/2011_01_04" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Tcons/Agendas/2011_01_04&amp;oldid=36103" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Tcons/Agendas/2011_01_04&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 4 January 2011, at 16:01.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.019","walltime":"0.020","ppvisitednodes":{"value":125,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20220527030115","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":68});});</script>
+</body></html>

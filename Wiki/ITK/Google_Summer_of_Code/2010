@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>ITK/Google Summer of Code/2010 - KitwarePublic</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="generator" content="MediaWiki 1.23.8" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://www.itk.org/Wiki/api.php?action=rsd" />
+<link rel="copyright" href="https://creativecommons.org/licenses/by/2.5/" />
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
+<script src="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Google_Summer_of_Code/2010","wgTitle":"ITK/Google Summer of Code/2010","wgCurRevisionId":45909,"wgRevisionId":45909,"wgArticleId":3581,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK/Google_Summer_of_Code/2010","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-js:7:6fb34dd1cd86154205b858dd017713f7 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Google_Summer_of_Code_2010 skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">ITK/Google Summer of Code/2010</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From KitwarePublic</div>
+		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Google_Summer_of_Code" title="ITK/Google Summer of Code">Google Summer of Code</a></span></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Preparation_Schedule"><span class="tocnumber">1</span> <span class="toctext">Preparation Schedule</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Mentors"><span class="tocnumber">2</span> <span class="toctext">Mentors</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Projects"><span class="tocnumber">3</span> <span class="toctext">Projects</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Fixing_Pixel_Centering"><span class="tocnumber">3.1</span> <span class="toctext">Fixing Pixel Centering</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Raised_Code_Coverage"><span class="tocnumber">3.2</span> <span class="toctext">Raised Code Coverage</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Increase_the_Level_Set_Method_Tools"><span class="tocnumber">3.3</span> <span class="toctext">Increase the Level Set Method Tools</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#PDE-based_Registration_Improvements"><span class="tocnumber">3.4</span> <span class="toctext">PDE-based Registration Improvements</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Move_IJ_contributions_to_ITK"><span class="tocnumber">3.5</span> <span class="toctext">Move IJ contributions to ITK</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Add_support_to_WrapITK_for_.NET"><span class="tocnumber">3.6</span> <span class="toctext">Add support to WrapITK for .NET</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Student_Application_Form"><span class="tocnumber">4</span> <span class="toctext">Student Application Form</span></a></li>
+</ul>
+</div>
+
+<p>Google Summer of Code
+</p>
+<h1><span class="mw-headline" id="Preparation_Schedule">Preparation Schedule</span></h1>
+<table border="1">
+
+<tr bgcolor="#abcdef">
+<th> Action </th>
+<th> From </th>
+<th>  To
+</th></tr>
+<tr>
+<td> Prepare List of Projects </td>
+<td> April 2009 </td>
+<td> January 2010
+</td></tr>
+<tr>
+<td> Define List of Mentors &amp; Substitutes </td>
+<td> November 2009 </td>
+<td> January 2010
+</td></tr>
+<tr>
+<td> Register with Google </td>
+<td> February 2010 </td>
+<td> March 2010
+</td></tr></table>
+<h1><span class="mw-headline" id="Mentors">Mentors</span></h1>
+<ul>
+<li> Luis Ibanez
+</li>
+<li> Gaëtan Lehmann
+</li>
+<li> Dan Mueller
+</li>
+</ul>
+<h1><span class="mw-headline" id="Projects">Projects</span></h1>
+<h2><span class="mw-headline" id="Fixing_Pixel_Centering">Fixing Pixel Centering</span></h2>
+<p>This is a system-wide fix that requires a lot of attention to testing.
+</p><p>The issue is that ITK uses in different places in the toolkit, a different approach for converting pixel index coordinates for physical coordinates. We seek to fix this inconsistency and make uniform across the toolkit the way this conversion is computed.
+</p>
+<h2><span class="mw-headline" id="Raised_Code_Coverage">Raised Code Coverage</span></h2>
+<p>Address the 10 most uncovered files in the toolkit.
+</p><p>Our current code coverage is 81%, and we estimate that by addressing the ten most uncovered files we will be able to raise the code coverage to a number between 85% and 90%.
+</p>
+<h2><span class="mw-headline" id="Increase_the_Level_Set_Method_Tools">Increase the Level Set Method Tools</span></h2>
+<ol>
+<li> Sobolev Active Contours
+</li>
+<li> Region-based energies
+</li>
+<li> Multiphase level sets, e.g.,
+<ol>
+<li> Chan-Vese
+</li>
+<li> Monsouri-Mitiche-Vazquez
+</li>
+</ol>
+</li>
+<li> Radial Basis Function (RBF) representation of level sets
+</li>
+</ol>
+<p>Region-based energies, chan and vesse and multiphase level set are already in IJ
+already in IJ (<a rel="nofollow" class="external free" href="http://hdl.handle.net/1926/1532">http://hdl.handle.net/1926/1532</a>)
+already in IJ (<a rel="nofollow" class="external free" href="http://hdl.handle.net/1926/1533">http://hdl.handle.net/1926/1533</a>)
+</p><p>Level Set modelisation with RBF is an ongoing work by A. Gelas @ harvard related to his previous publications (see below). Should be delivered to the IJ by next NAMIC meeting (june 2009):
+</p>
+<ul>
+<li> Arnaud Gelas, Olivier Bernard, Denis Friboulet, Rémy Prost. "Compactly Supported Radial Basis Functions Collocation Method for Image Segmentation". IEEE Transaction on Image Processing, vol. 16(7), pp.1873--1887 2007.
+</li>
+<li> Arnaud Gelas, Joel Schaerer, Olivier Bernard, Denis Friboulet, Patrick Clarysse, Isabelle Magnin, Rémy Prost. "Radial basis functions collocation methods for model based level-set segmentation". IEEE ICIP 2007 Proceedings, vol. 2, pp.237--240, San Antonio, Texa, USA, September 2007.
+</li>
+<li> Arnaud Gelas, Rémy Prost. "Adaptive Approximation of Multi-Dimensional Irregularly Sampled Signals with Compactly Supported Radial Basis Functions". ICSP 2006's Proceedings, vol. 2, pp.1091--1094, Guilin, China, November 2006.
+</li>
+<li> Arnaud Gelas, Rémy Prost. "Multi-resolution reconstruction of irregularly sampled signals with compactly supported radial basis functions". IEEE ICASSP 2006's Proceedings, vol. 3, pp.388--391, Toulouse, France, May 2006.
+</li>
+</ul>
+<h2><span class="mw-headline" id="PDE-based_Registration_Improvements">PDE-based Registration Improvements</span></h2>
+<ol>
+<li> Proper fluid and elastic regularization, rather than approximation by Demons algorithm
+</li>
+<li> Diffeomorphic flows
+</li>
+</ol>
+<h2><span class="mw-headline" id="Move_IJ_contributions_to_ITK">Move IJ contributions to ITK</span></h2>
+<p>Many contributions are still waiting in the Insight Journal to be moved in the ITK repository. The student would review the provided code, adapt it to fit the ITK coding style, and add the tests needed to reach the 100% of code coverage for the new classes.
+</p>
+<h2><span class="mw-headline" id="Add_support_to_WrapITK_for_.NET">Add support to WrapITK for .NET</span></h2>
+<p>.NET is an increasingly popular runtime environment, supporting a number of languages (<a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/vcsharp/aa336809.aspx">C#</a>, <a rel="nofollow" class="external text" href="http://www.codeplex.com/IronPython">IronPython</a>, <a rel="nofollow" class="external text" href="http://research.microsoft.com/fsharp/fsharp.aspx">F#</a>), and &#8212; with the inception of <a rel="nofollow" class="external text" href="http://mono-project.com/Main_Page">Mono</a> &#8212; a number of platforms (<a rel="nofollow" class="external text" href="http://msdn.microsoft.com/netframework/">Windows</a>, <a rel="nofollow" class="external text" href="http://www.mono-project.com/Interop_with_Native_Libraries#Linux_Shared_Library_Search_Path">Linux</a>, and <a rel="nofollow" class="external text" href="http://www.mono-project.com/Interop_with_Native_Libraries#Mac_OS_X_Framework_and_.dylib_Search_Path">Mac OS X</a>).
+</p><p>ITK functionality can currently be used from .NET languages on the Windows platform using <a rel="nofollow" class="external text" href="http://code.google.com/p/manageditk">ManagedITK</a>. Unfortunately ManagedITK has a number of drawbacks:
+</p>
+<ul>
+<li> Semi-automated/manual wrapping
+</li>
+<li> Windows platform only (due to use of <a rel="nofollow" class="external text" href="http://binf.gmu.edu/software/SWIG/CSharp.html">C++/CLI</a>)
+</li>
+<li> Maintaining separate code base branched from <a rel="nofollow" class="external text" href="http://code.google.com/p/wrapitk/">WrapITK</a> over 18 months ago
+</li>
+</ul>
+<p>This project would involve adding support to <a rel="nofollow" class="external text" href="http://code.google.com/p/wrapitk/">WrapITK</a> for generating C# wrappers. Such wrappers would be callable from any .NET language on Windows, Linux, and Apple Mac platforms. This project would give the participant a good understanding of <a rel="nofollow" class="external text" href="http://www.swig.org">SWIG</a>, <a rel="nofollow" class="external text" href="http://www.cmake.org">CMake</a>, <a rel="nofollow" class="external text" href="http://code.google.com/p/wrapitk/">WrapITK</a>, and provide a good overview of ITK functionality (without having to be an ITK expert).
+</p>
+<h1><span class="mw-headline" id="Student_Application_Form">Student Application Form</span></h1>
+<p>Will contain
+</p>
+<ol>
+<li> Names
+</li>
+<li> Contact information: email &amp; phone number
+</li>
+<li> Years of experience with C++
+</li>
+<li> Years of experience with ITK
+</li>
+<li> Preferred platform of development (Linux/Windows/Mac/Other)
+</li>
+<li> Organization Affiliation
+</li>
+</ol>
+<p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td bgcolor="#F9F9F9"> <center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></table>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.044 seconds
+Real time usage: 0.047 seconds
+Preprocessor visited node count: 43/1000000
+Preprocessor generated node count: 60/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3581-0!*!0!!en!*!* and timestamp 20151001235702 and revision id 45909
+ -->
+</div><div class="printfooter">
+Retrieved from "<a href="http://www.itk.org/Wiki/index.php?title=ITK/Google_Summer_of_Code/2010&amp;oldid=45909">http://www.itk.org/Wiki/index.php?title=ITK/Google_Summer_of_Code/2010&amp;oldid=45909</a>"</div>
+		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Google_Summer_of_Code/2010" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Google_Summer_of_Code/2010&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Google_Summer_of_Code/2010&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="/Wiki/index.php?title=ITK/Google_Summer_of_Code/2010&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="/Wiki/User:207.241.229.49" class="new" title="The user page for the IP address you are editing as [.]" accesskey=".">207.241.229.49</a></li>
+				<li id="pt-anontalk"><a href="/Wiki/User_talk:207.241.229.49" class="new" title="Discussion about edits from this IP address [n]" accesskey="n">Talk for this IP address</a></li>
+				<li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FGoogle+Summer+of+Code%2F2010" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				<li id="pt-createaccount"><a href="/Wiki/Special:RequestAccount">Request account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="/Wiki/Main_Page" style="background-image: url(/Wiki/images/KWLogo.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="/Wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" placeholder="Search" title="Search KitwarePublic [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+
+					</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK/Google_Summer_of_Code/2010" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK/Google_Summer_of_Code/2010" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="/Wiki/index.php?title=ITK/Google_Summer_of_Code/2010&amp;oldid=45909" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="/Wiki/index.php?title=ITK/Google_Summer_of_Code/2010&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-coll-print_export" role="navigation">
+		<h3>Print/export</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="coll-create_a_book"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ITK%2FGoogle+Summer+of+Code%2F2010">Create a book</a></li>
+				<li id="coll-download-as-rl"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ITK%2FGoogle+Summer+of+Code%2F2010&amp;oldid=45909&amp;writer=rl">Download as PDF</a></li>
+				<li id="t-print"><a href="/Wiki/index.php?title=ITK/Google_Summer_of_Code/2010&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-copyrightico">
+		<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" /></a>
+	</div>
+	<div id="f-poweredbyico">
+		<a href="//www.mediawiki.org/"><img src="/Wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 11 February 2012, at 17:11.</li>
+		<li id="viewcount">This page has been accessed 4,941 times.</li>
+		<li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+		<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li>
+		<li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"ready","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":303});
+}</script></body></html>

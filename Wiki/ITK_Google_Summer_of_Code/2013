@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK Google Summer of Code/2013 - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Google_Summer_of_Code/2013","wgTitle":"ITK Google Summer of Code/2013","wgCurRevisionId":52084,"wgRevisionId":52084,"wgArticleId":11380,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK_Google_Summer_of_Code/2013","wgRelevantArticleId":11380,"wgRequestId":"b062913c1ccc5ef51bc9fd5d","wgCSPNonce":!1,"wgIsProbablyEditable":!1,
+"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.monobook.mobile"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<!--[if lt IE 9]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/screen-desktop.css?74a6a" media="screen"/><![endif]--><!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE60Fixes.css?1208f" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.34.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://itk.org/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/Wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Google_Summer_of_Code_2013 rootpage-ITK_Google_Summer_of_Code skin-monobook action-view"><div id="globalWrapper"><div id="column-content"><div id="content" class="mw-body" role="main"><a id="top"></a><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">ITK Google Summer of Code/2013</h1><div id="bodyContent" class="mw-body-content"><div id="siteSub">From KitwarePublic</div><div id="contentSub" lang="en" dir="ltr"><span class="subpages">&lt; <a href="/Wiki/ITK_Google_Summer_of_Code" class="mw-redirect" title="ITK Google Summer of Code">ITK Google Summer of Code</a></span></div><div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>Project ideas for the Google Summer of Code 2013
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Guidelines"><span class="tocnumber">1</span> <span class="toctext">Guidelines</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Students"><span class="tocnumber">1.1</span> <span class="toctext">Students</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Adding_Ideas"><span class="tocnumber">1.2</span> <span class="toctext">Adding Ideas</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Project_Ideas"><span class="tocnumber">2</span> <span class="toctext">Project Ideas</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Project:_Examples_for_Coders"><span class="tocnumber">2.1</span> <span class="toctext">Project: Examples for Coders</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Project:_Improved_ObjectFactory_backend_with_CPPMicroServices"><span class="tocnumber">2.2</span> <span class="toctext">Project: Improved ObjectFactory backend with CPPMicroServices</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Project:_A_Clang.2FLLVM_based_replacement_for_GCCXML"><span class="tocnumber">2.3</span> <span class="toctext">Project: A Clang/LLVM based replacement for GCCXML</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Project:_Cloud_Enabled_Remote_ITK_Process"><span class="tocnumber">2.4</span> <span class="toctext">Project: Cloud Enabled Remote ITK Process</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Project:_ImageJ2_SimpleITK_Plugin"><span class="tocnumber">2.5</span> <span class="toctext">Project: ImageJ2 SimpleITK Plugin</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Guidelines">Guidelines</span></h2>
+<h3><span class="mw-headline" id="Students">Students</span></h3>
+<p>These ideas were contributed by developers and users of <a rel="nofollow" class="external text" href="http://www.itk.org/">ITK</a>. If you wish to submit a proposal based on these ideas you should contact the community members identified below to find out more about the idea, get to know the community member that will review your proposal, and receive feedback on your ideas.
+</p><p>The Google Summer of Code program is competitive, and accepted students will usually have thoroughly researched the technologies of their proposed project, been in frequent contact with potential mentors, and ideally have submitted a patch or two to fix bugs in their project (through Gerrit). Kitware makes extensive use of mailing lists, and this would be your best point of initial contact to apply for any of the proposed projects. The mailing lists can be found on the project pages linked in the preceding paragraph. Please see <a href="/Wiki/GSoC_proposal_guidelines" title="GSoC proposal guidelines">GSoC proposal guidelines</a> for further guidelines on writing your proposal.
+</p>
+<h3><span class="mw-headline" id="Adding_Ideas">Adding Ideas</span></h3>
+<p>When adding a new idea to this page, please try to include the following information:
+</p>
+<ul><li>A brief explanation of the idea</li>
+<li>Expected results/feature additions</li>
+<li>Any prerequisites for working on the project</li>
+<li>Links to any further information, discussions, bug reports etc</li>
+<li>Any special mailing lists if not the standard mailing list for ITK</li>
+<li>Your name and email address for contact (if willing to mentor, or nominated mentor)</li></ul>
+<h2><span class="mw-headline" id="Project_Ideas">Project Ideas</span></h2>
+<p><a rel="nofollow" class="external text" href="http://www.itk.org/">Project page</a>, <a rel="nofollow" class="external text" href="http://www.itk.org/ITK/help/mailing.html">mailing lists</a>, <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=Insight">dashboard</a>.
+</p>
+<h3><span class="mw-headline" id="Project:_Examples_for_Coders">Project: Examples for Coders</span></h3>
+<p><b>Brief explanation:</b> The <a rel="nofollow" class="external text" href="http://itk.org/ITKExamples/">ITKExamples project</a> is an attempt to bring an improved, collaboratively develop code example documentation system to ITK and the broader open source community.  The  project brings features such as Git version controlled development, easy regression testing, self-contained, downloadable examples, support for multiple language, HTML, PDF, and EPub archives, acknowledgements through nightly-generated web-based rendering of git-stats, an index, and visualization.
+</p><p><b>Expected results:</b> While the local development capabilities have many advantages, a browser-based contribution system is also desired.  This has begun with the <a rel="nofollow" class="external text" href="https://github.com/thewtex/vcwebedit">vcwebedit</a> Sphinx Javascript extension project, but a Git-patch server that acts as a broker is still needed.  3D web-visualization of the 3D medical images via OpenGL with a project like <a rel="nofollow" class="external text" href="https://github.com/xtk/X">Xtk</a> is also desirable.  Finally, more examples are needed.
+</p><p><b>Prerequisites:</b> Experience in Javascript, Python, Sphinx, and C++ desired.
+</p><p><b>Mentor:</b> Matt McCormick (matt dot mccormick at kitware dot com). David Doria (daviddoria at gmail dot com). Arnaud Gelas (arnaudgelas at gmail dot com).
+</p>
+<h3><span class="mw-headline" id="Project:_Improved_ObjectFactory_backend_with_CPPMicroServices">Project: Improved ObjectFactory backend with CPPMicroServices</span></h3>
+<p><b>Brief explanation:</b> ITK implements the object factory design pattern to allow the dynamic registration of specialized class implementations.  It is currently used to provide the variety of ImageIO classes, but the toolkit could also benefit from broader adoption.  There are also limitations in adding new ImageIO classes that live outside the main repository, which is possible with the new modular infrastructure in ITKv4.
+</p><p><b>Expected results:</b> <a rel="nofollow" class="external text" href="https://github.com/saschazelzer/CppMicroServices">CPPMicroServices</a> is a "library provides a dynamic service registry based on the service layer as specified in the OSGi R4.2 specifications. It enables users to realize a service oriented approach within their software stack."  This small, cross platform library could be used to greatly improve the capabilities of the ITK ObjectFactory system by extending the situations where objects can be registered into the factory and object priority can be assigned.
+</p><p><b>Prerequisites:</b> Experience in C++ and cross-platform development.
+</p><p><b>Mentor:</b> Matt McCormick (matt dot mccormick at kitware dot com), Sascha Zelzer (s dot zelzer at dkfz dot de).
+</p>
+<h3><span id="Project:_A_Clang/LLVM_based_replacement_for_GCCXML"></span><span class="mw-headline" id="Project:_A_Clang.2FLLVM_based_replacement_for_GCCXML">Project: A Clang/LLVM based replacement for GCCXML</span></h3>
+<p><b>Brief explanation:</b> The <a rel="nofollow" class="external text" href="http://www.gccxml.org/HTML/Index.html">GCCXML</a> project parses C++ source code to create an XML description that can be worked with by other projects.  This backend is used by WrapITK to generate SWIG wrappers for ITK.  However, there is a high maintenance burden when migrating to a newer GCC backend and making adjustments for newer versions of Visual Studio.  The Clang/LLVM project provides a library that to parse source code.  A GCCXML replacement based off <a rel="nofollow" class="external text" href="http://clang.llvm.org/doxygen/group__CINDEX.html">libclang</a> would be more maintainable.
+</p><p><b>Expected results:</b> A new project to replace GCCXML based on libclang is created to build WrapITK.  A Visual Studio 2010 build of WrapITK.
+</p><p><b>Prerequisites:</b> Experience in C++.  Experience in SWIG would be helpful.
+</p><p><b>Mentor:</b> Matt McCormick (matt dot mccormick at kitware dot com).
+</p>
+<h3><span class="mw-headline" id="Project:_Cloud_Enabled_Remote_ITK_Process">Project: Cloud Enabled Remote ITK Process</span></h3>
+<p><b>Brief explanation:</b> ITK has an extensive set of image image capabilities that are commonly used in desktop and laptop computers. This project will enable web and cloud processing directly in ITK using the python wrapped SimpleITK engine. The resulting application will need to interact with <a rel="nofollow" class="external text" href="http://ipython.org/notebook.html">IPython Notebooks</a> to accept user commands and will need to interact with data sources such as JSON, XML and web hosted files/databases for input and output. The benefits of this application are three-fold. First, this will encourage reproducible research by enabling the sharing of the specific algorithms and data. Second, this will enable transparent migration of ITK code from a local installation to the cloud as problem sizes increase. And third, this becomes a powerful teaching tool for algorithms in medical imaging analysis.
+</p><p><b>Expected results:</b> A ITK/python based application suitable for cloud processing of distributed data resources.
+</p><p><b>Prerequisites:</b> Experience in web development, C++, ITK, and Python.
+</p><p><b>Mentor:</b> Matt McCormick (matt dot mccormick at kitware dot com).
+</p>
+<h3><span class="mw-headline" id="Project:_ImageJ2_SimpleITK_Plugin">Project: ImageJ2 SimpleITK Plugin</span></h3>
+<p><b>Brief explanation:</b> <a rel="nofollow" class="external text" href="http://developer.imagej.net/">ImageJ</a> is another tool that is popular for multi-dimensional image analysis in the life science and medical imaging spheres.  ImageJ has a powerful plugin framework, and ITK algorithms could be made available to the ImageJ community through this plugin mechanism.  However, additional work is needed to SimpleITK java wrapping along with translation of SimpleITK-ImageJ data structures.
+</p><p><b>Expected results:</b> An example ImageJ2 plugin using SimpleITK to perform deconvolution.
+</p><p><b>Prerequisites:</b> Experience in C++ and Java.
+</p><p><b>Mentor:</b> Matt McCormick (matt dot mccormick at kitware dot com), Bradley Lowekamp (blowekamp at mail dot nih dot gov).
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20211019175136
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.031 seconds
+Real time usage: 0.031 seconds
+Preprocessor visited node count: 28/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:11380-0!canonical and timestamp 20211019175136 and revision id 52084
+ -->
+</div></div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://itk.org/Wiki/index.php?title=ITK_Google_Summer_of_Code/2013&amp;oldid=52084">https://itk.org/Wiki/index.php?title=ITK_Google_Summer_of_Code/2013&amp;oldid=52084</a>"</div>
+<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div><!-- end content --><div class="visualClear"></div></div></div><div class="visualClear"></div></div><div id="column-one" lang="en" dir="ltr"><h2>Navigation menu</h2><div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label"><h3 id="p-cactions-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK_Google_Summer_of_Code/2013" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK_Google_Summer_of_Code/2013&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK_Google_Summer_of_Code/2013&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history"><a href="/Wiki/index.php?title=ITK_Google_Summer_of_Code/2013&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li></ul></div></div><div role="navigation" class="portlet" id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label"><h3 id="p-cactions-mobile-label" lang="en" dir="ltr">Page actions</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="ca-nstab-main-mobile" class="selected"><a href="/Wiki/ITK_Google_Summer_of_Code/2013" title="Page">Page</a></li><li id="ca-talk-mobile" class="new"><a href="/Wiki/index.php?title=Talk:ITK_Google_Summer_of_Code/2013&amp;action=edit&amp;redlink=1" rel="discussion" title=" (page does not exist)">Discussion</a></li><li id="ca-more"><a href="#p-cactions">More</a></li><li id="ca-tools"><a href="#p-tb" title="Tools">Tools</a></li></ul></div></div><div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label"><h3 id="p-personal-label" lang="en" dir="ltr">Personal tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK+Google+Summer+of+Code%2F2013" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul></div></div><div class="portlet" id="p-logo" role="banner"><a href="/Wiki/Main_Page" class="mw-wiki-logo" title="Visit the main page"></a></div><div id="sidebar"><div role="navigation" class="portlet generated-sidebar" id="p-navigation" aria-labelledby="p-navigation-label"><h3 id="p-navigation-label" lang="en" dir="ltr">Navigation</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul></div></div><div role="search" class="portlet" id="p-search"><h3 id="p-search-label" lang="en" dir="ltr"><label for="searchInput">Search</label></h3><div class="pBody" id="searchBody"><form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"/><input type="search" name="search" placeholder="Search KitwarePublic" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton"/>  <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton"/></form></div></div><div role="navigation" class="portlet" id="p-tb" aria-labelledby="p-tb-label"><h3 id="p-tb-label" lang="en" dir="ltr">Tools</h3><div class="pBody"><ul lang="en" dir="ltr"><li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK_Google_Summer_of_Code/2013" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK_Google_Summer_of_Code/2013" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/Wiki/index.php?title=ITK_Google_Summer_of_Code/2013&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/Wiki/index.php?title=ITK_Google_Summer_of_Code/2013&amp;oldid=52084" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/Wiki/index.php?title=ITK_Google_Summer_of_Code/2013&amp;action=info" title="More information about this page">Page information</a></li></ul></div></div></div><a href="#sidebar" title="navigation" class="menu-toggle" id="sidebar-toggle"></a><a href="#p-personal" title="user tools" class="menu-toggle" id="p-personal-toggle"></a><a href="#globalWrapper" title="back to top" class="menu-toggle" id="globalWrapper-toggle"></a></div><!-- end of the left (by default at least) column --><div class="visualClear"></div><div id="footer" role="contentinfo" lang="en" dir="ltr"><div id="f-copyrightico" class="footer-icons"><a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31"/></a></div><div id="f-poweredbyico" class="footer-icons"><a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></div><ul id="f-list"><li id="lastmod"> This page was last edited on 3 April 2013, at 08:28.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li><li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li></ul></div></div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.031","walltime":"0.031","ppvisitednodes":{"value":28,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20211019175136","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":234});});</script></body></html>

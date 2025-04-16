@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/Roadmap 2005 2006 - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"dbdfff2e50b570221b11a352","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Roadmap_2005_2006","wgTitle":"ITK/Roadmap 2005 2006","wgCurRevisionId":45941,"wgRevisionId":45941,"wgArticleId":1001,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Roadmap_2005_2006","wgRelevantArticleId":1001,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":
+"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Roadmap_2005_2006 rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Roadmap 2005 2006</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Users/Developers_Support"><span class="tocnumber">2</span> <span class="toctext">Users/Developers Support</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Tutorials"><span class="tocnumber">2.1</span> <span class="toctext">Tutorials</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Conferences"><span class="tocnumber">2.1.1</span> <span class="toctext">Conferences</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Advanced_Tutorials"><span class="tocnumber">2.1.2</span> <span class="toctext">Advanced Tutorials</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Workshops"><span class="tocnumber">2.2</span> <span class="toctext">Workshops</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Documentation"><span class="tocnumber">2.3</span> <span class="toctext">Documentation</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Doxygen"><span class="tocnumber">2.3.1</span> <span class="toctext">Doxygen</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Software_Guide"><span class="tocnumber">2.3.2</span> <span class="toctext">Software Guide</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#WIKI"><span class="tocnumber">2.3.3</span> <span class="toctext">WIKI</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#The_Insight_Journal"><span class="tocnumber">2.3.4</span> <span class="toctext">The Insight Journal</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Extending_to_new_Wrapping_approach"><span class="tocnumber">2.3.5</span> <span class="toctext">Extending to new Wrapping approach</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#ITK-Pyhton"><span class="tocnumber">2.3.6</span> <span class="toctext">ITK-Pyhton</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Features_and_Functionalities"><span class="tocnumber">3</span> <span class="toctext">Features and Functionalities</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#Software_Engineering"><span class="tocnumber">3.1</span> <span class="toctext">Software Engineering</span></a>
+<ul>
+<li class="toclevel-3 tocsection-16"><a href="#Categorize_expectations_on_PixelType_API_from_every_filter"><span class="tocnumber">3.1.1</span> <span class="toctext">Categorize expectations on PixelType API from every filter</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#Making_VNL_Thread-Safe:"><span class="tocnumber">3.1.2</span> <span class="toctext">Making VNL Thread-Safe:</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Explicit_Template_Instantiations"><span class="tocnumber">3.1.3</span> <span class="toctext">Explicit Template Instantiations</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Typeless_layer"><span class="tocnumber">3.1.4</span> <span class="toctext">Typeless layer</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#Increasing_Code_Coverage"><span class="tocnumber">3.1.5</span> <span class="toctext">Increasing Code Coverage</span></a>
+<ul>
+<li class="toclevel-4 tocsection-21"><a href="#Add_support_to_CTest_for_reducing_redundant_tests"><span class="tocnumber">3.1.5.1</span> <span class="toctext">Add support to CTest for reducing redundant tests</span></a></li>
+<li class="toclevel-4 tocsection-22"><a href="#Explore_other_tools_for_code_coverage_in_CTest"><span class="tocnumber">3.1.5.2</span> <span class="toctext">Explore other tools for code coverage in CTest</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-23"><a href="#Increasing_Valgrind/Purify_Testing"><span class="tocnumber">3.1.6</span> <span class="toctext">Increasing Valgrind/Purify Testing</span></a>
+<ul>
+<li class="toclevel-4 tocsection-24"><a href="#Add_support_to_CTest_for_runtime_profiling"><span class="tocnumber">3.1.6.1</span> <span class="toctext">Add support to CTest for runtime profiling</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-25"><a href="#Add_Support_for_parallel_testing_in_CTest"><span class="tocnumber">3.1.7</span> <span class="toctext">Add Support for parallel testing in CTest</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="#Add_Support_to_CTest_for_generating_reports_locally"><span class="tocnumber">3.1.8</span> <span class="toctext">Add Support to CTest for generating reports locally</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#Adopting_Dart2"><span class="tocnumber">3.1.9</span> <span class="toctext">Adopting Dart2</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="#Deprecation_Policy"><span class="tocnumber">3.1.10</span> <span class="toctext">Deprecation Policy</span></a></li>
+<li class="toclevel-3 tocsection-29"><a href="#Creating_a_separate_IO_Toolkit"><span class="tocnumber">3.1.11</span> <span class="toctext">Creating a separate IO Toolkit</span></a></li>
+<li class="toclevel-3 tocsection-30"><a href="#Refactor_FEM"><span class="tocnumber">3.1.12</span> <span class="toctext">Refactor FEM</span></a></li>
+<li class="toclevel-3 tocsection-31"><a href="#Refactor_ITK_Mesh"><span class="tocnumber">3.1.13</span> <span class="toctext">Refactor ITK Mesh</span></a></li>
+<li class="toclevel-3 tocsection-32"><a href="#Refactor_ITK_Optimizers"><span class="tocnumber">3.1.14</span> <span class="toctext">Refactor ITK Optimizers</span></a></li>
+<li class="toclevel-3 tocsection-33"><a href="#ITK_Complete"><span class="tocnumber">3.1.15</span> <span class="toctext">ITK Complete</span></a></li>
+<li class="toclevel-3 tocsection-34"><a href="#Experimental_repository_with_Subversion_(SVN)"><span class="tocnumber">3.1.16</span> <span class="toctext">Experimental repository with Subversion (SVN)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-35"><a href="#Image_Modalities"><span class="tocnumber">3.2</span> <span class="toctext">Image Modalities</span></a>
+<ul>
+<li class="toclevel-3 tocsection-36"><a href="#Color_Images"><span class="tocnumber">3.2.1</span> <span class="toctext">Color Images</span></a></li>
+<li class="toclevel-3 tocsection-37"><a href="#Multi-Spectral_Images"><span class="tocnumber">3.2.2</span> <span class="toctext">Multi-Spectral Images</span></a></li>
+<li class="toclevel-3 tocsection-38"><a href="#4D_Images_(time_series)"><span class="tocnumber">3.2.3</span> <span class="toctext">4D Images (time series)</span></a></li>
+<li class="toclevel-3 tocsection-39"><a href="#Tensor_Images"><span class="tocnumber">3.2.4</span> <span class="toctext">Tensor Images</span></a></li>
+<li class="toclevel-3 tocsection-40"><a href="#Microscopy_Images"><span class="tocnumber">3.2.5</span> <span class="toctext">Microscopy Images</span></a></li>
+<li class="toclevel-3 tocsection-41"><a href="#Confocal_Microscopy_Images"><span class="tocnumber">3.2.6</span> <span class="toctext">Confocal Microscopy Images</span></a></li>
+<li class="toclevel-3 tocsection-42"><a href="#Transmision_Electron_Microscopy_(TEM)"><span class="tocnumber">3.2.7</span> <span class="toctext">Transmision Electron Microscopy (TEM)</span></a></li>
+<li class="toclevel-3 tocsection-43"><a href="#Tomography_from_Transmision_Electron_Microscopy_(TEM)"><span class="tocnumber">3.2.8</span> <span class="toctext">Tomography from Transmision Electron Microscopy (TEM)</span></a></li>
+<li class="toclevel-3 tocsection-44"><a href="#X-Ray_Microscopy"><span class="tocnumber">3.2.9</span> <span class="toctext">X-Ray Microscopy</span></a></li>
+<li class="toclevel-3 tocsection-45"><a href="#Endoscopic_Images"><span class="tocnumber">3.2.10</span> <span class="toctext">Endoscopic Images</span></a></li>
+<li class="toclevel-3 tocsection-46"><a href="#Fluoroscopy_Images"><span class="tocnumber">3.2.11</span> <span class="toctext">Fluoroscopy Images</span></a></li>
+<li class="toclevel-3 tocsection-47"><a href="#Mamography_Images"><span class="tocnumber">3.2.12</span> <span class="toctext">Mamography Images</span></a></li>
+<li class="toclevel-3 tocsection-48"><a href="#Perfusion_Images"><span class="tocnumber">3.2.13</span> <span class="toctext">Perfusion Images</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-49"><a href="#Slice_dis-contiguous_images"><span class="tocnumber">3.3</span> <span class="toctext">Slice dis-contiguous images</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="#SpatialObjects"><span class="tocnumber">3.4</span> <span class="toctext">SpatialObjects</span></a></li>
+<li class="toclevel-2 tocsection-51"><a href="#Neural_Networks"><span class="tocnumber">3.5</span> <span class="toctext">Neural Networks</span></a></li>
+<li class="toclevel-2 tocsection-52"><a href="#DICOM_Query_and_Retrieve"><span class="tocnumber">3.6</span> <span class="toctext">DICOM Query and Retrieve</span></a></li>
+<li class="toclevel-2 tocsection-53"><a href="#Multi-phase_Level_Sets"><span class="tocnumber">3.7</span> <span class="toctext">Multi-phase Level Sets</span></a></li>
+<li class="toclevel-2 tocsection-54"><a href="#Topology_preserving_Level_Sets"><span class="tocnumber">3.8</span> <span class="toctext">Topology preserving Level Sets</span></a></li>
+<li class="toclevel-2 tocsection-55"><a href="#Independent_component_analysis"><span class="tocnumber">3.9</span> <span class="toctext">Independent component analysis</span></a></li>
+<li class="toclevel-2 tocsection-56"><a href="#Iso-Surface_Extraction"><span class="tocnumber">3.10</span> <span class="toctext">Iso-Surface Extraction</span></a></li>
+<li class="toclevel-2 tocsection-57"><a href="#Support_Vector_Machines"><span class="tocnumber">3.11</span> <span class="toctext">Support Vector Machines</span></a></li>
+<li class="toclevel-2 tocsection-58"><a href="#Harmonization_of_the_IO"><span class="tocnumber">3.12</span> <span class="toctext">Harmonization of the IO</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-59"><a href="#Update_/_Remove_the_Projects_web_page"><span class="tocnumber">4</span> <span class="toctext">Update / Remove the Projects web page</span></a></li>
+<li class="toclevel-1 tocsection-60"><a href="#What_to_include_in_ITK_2.2_(Scheduled_for_September_2005)"><span class="tocnumber">5</span> <span class="toctext">What to include in ITK 2.2 (Scheduled for September 2005)</span></a>
+<ul>
+<li class="toclevel-2 tocsection-61"><a href="#Tensor_Images_2"><span class="tocnumber">5.1</span> <span class="toctext">Tensor Images</span></a></li>
+<li class="toclevel-2 tocsection-62"><a href="#FITS_File_Format"><span class="tocnumber">5.2</span> <span class="toctext">FITS File Format</span></a></li>
+<li class="toclevel-2 tocsection-63"><a href="#Support_for_Logging"><span class="tocnumber">5.3</span> <span class="toctext">Support for Logging</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-64"><a href="#What_to_include_in_ITK_2.4_(Scheduled_for_November_30_2006)"><span class="tocnumber">6</span> <span class="toctext">What to include in ITK 2.4 (Scheduled for November 30 2006)</span></a></li>
+<li class="toclevel-1 tocsection-65"><a href="#What_to_include_in_ITK_2.6_(Scheduled_for_February_2006)"><span class="tocnumber">7</span> <span class="toctext">What to include in ITK 2.6 (Scheduled for February 2006)</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Introduction">Introduction</span></h1>
+<p>The future developement of ITK relies heavily on feedback from the community of users and developers as well as guidelines from the clinical and medical research community.
+</p><p>This page is intended to gather feedback regarding the future direction of ITK and in particular to list specific features and functionalities that would make the toolkit more useful for the medical imaging community.
+</p>
+<h1><span id="Users.2FDevelopers_Support"></span><span class="mw-headline" id="Users/Developers_Support">Users/Developers Support</span></h1>
+<p>This section relates to the services that will help beginners to start with ITK as well as material that will help experienced users to take better advantage of the functionalities available in the Insight toolkit.
+</p>
+<h2><span class="mw-headline" id="Tutorials">Tutorials</span></h2>
+<h3><span class="mw-headline" id="Conferences">Conferences</span></h3>
+<p>Tutorials have been typically presented in conferences related to Medical Imaging
+</p>
+<ul><li>MICCAI</li>
+<li>SPIE Medical Imaging</li>
+<li>IEEE Visualization</li>
+<li>ISMRM</li>
+<li>ISBI</li></ul>
+<h3><span class="mw-headline" id="Advanced_Tutorials">Advanced Tutorials</span></h3>
+<p>The tutorials so far have been focused on Introductory material. The typical introductory tutorial is presented in 8 hours and does not allow for hands-on experience with the segmentation and registration methods. Now that the toolkit has a considerable user-base it seems appropriate to develop tutorials in more advanced topics and present those tutorials at conferences. Advanced tutorial could cover topics such as
+</p>
+<ul><li>How to write an ITK filter
+<ul><li>How to deal with Traits and Multi-platform</li>
+<li>How to enjoy Multi-threading</li></ul></li>
+<li>Advanced registration
+<ul><li>Fine tuning parameters</li>
+<li>Profiling metrics</li>
+<li>Improving performance</li>
+<li>Specific clinical uses</li></ul></li>
+<li>Advanced segmentation
+<ul><li>Fine tuning parameters</li>
+<li>Specific clinical uses</li></ul></li></ul>
+<ul><li>Statistics</li></ul>
+<ul><li>Spatial Objects
+<ul><li>How to use them</li>
+<li>How to extend them</li></ul></li></ul>
+<ul><li>Level Sets
+<ul><li>creating new level set methods</li></ul></li></ul>
+<ul><li>Registration
+<ul><li>How to write new metrics</li>
+<li>How to write new transforms</li>
+<li>How to write new optimizers</li></ul></li></ul>
+<h2><span class="mw-headline" id="Workshops">Workshops</span></h2>
+<p>Workshops allow for a more interactive experience than tutorials. In the context of a workshop, attendants are expected to contribute material and share it with colleagues. The framework of a workshop could provide a more effective atmosphere for discussing the addition of new classes to the toolkit and for improving the implementation of existing ones.
+</p>
+<h2><span class="mw-headline" id="Documentation">Documentation</span></h2>
+<p>Documentation for ITK is provided at several levels. It includes the user's manual level provided by the ITK Software Guide, the reference manual level as provided by Doxygen and the community forum as provided by the Wiki.
+</p>
+<h3><span class="mw-headline" id="Doxygen">Doxygen</span></h3>
+<ul><li>How to make Doxygen a more effective tool for assisting users.</li>
+<li>Identify classes with poor documentation level and take correction action.</li>
+<li>Increase the crosslinking of Doxygen with the software guide.</li>
+<li>Improve description of parameters</li>
+<li>Clean up documentation as part of the release process.</li>
+<li>namespaces: Functors/Function</li></ul>
+<h3><span class="mw-headline" id="Software_Guide">Software Guide</span></h3>
+<ul><li>Adding more 3D Examples</li>
+<li>Adding some 4D Examples</li>
+<li>Adding more links to papers</li>
+<li>Add a section on the inner-workings of the pipeline.</li>
+<li>Add the neural nets</li>
+<li>Transforms IO</li>
+<li>more DICOM examples
+<ul><li>How to generate a valid DICOM</li>
+<li>Read/Write/Anonymize DICOM</li></ul></li>
+<li>Add the Archetype reader</li>
+<li>How to combine ITK and VTK (related to  ISC efforts)</li>
+<li>Section on how to integrate ITK with other applications.
+<ul><li>Matlab</li>
+<li>Analyze</li>
+<li>SCIRun</li>
+<li>VolView</li></ul></li></ul>
+<ul><li>How to submit to the Insight Journal</li></ul>
+<h3><span class="mw-headline" id="WIKI">WIKI</span></h3>
+<ul><li>Add a Google search button (like NAMIC)</li>
+<li>How to make the wiki more effective tool for the community</li>
+<li>Flag particular sections of the Wiki that may have become outdated and correct them</li>
+<li>Reduce the duplication of information (e.g. ITK installation is explained in the tutorials material, the software guide, the wiki and the HTML pages).</li>
+<li>Use stories of ITK (news?)</li>
+<li>Gallery of ITK results.</li>
+<li>List of publications that cite ITK.</li></ul>
+<h3><span class="mw-headline" id="The_Insight_Journal">The Insight Journal</span></h3>
+<p>The Insight Journal will come up online very soon. 
+</p><p>We anticipate it to be the standard mechanism for 
+</p>
+<ul><li>Bringing new algorithms into ITK.</li>
+<li>Evaluating existing algorithms.</li>
+<li>Sharing experiences and "how-to" knowledge among the community.</li></ul>
+<p>In particular, the Insight Journal will become a repository on specific recipies on how to process specific types of data sets. This will bring ITK a layer above of the plain image processing and into the more domain specific area of Medical Image Analysis.
+</p>
+<h3><span class="mw-headline" id="Extending_to_new_Wrapping_approach">Extending to new Wrapping approach</span></h3>
+<ul><li>Check on Matlab integration</li>
+<li>Check on C++ non-templated layer</li></ul>
+<h3><span class="mw-headline" id="ITK-Pyhton">ITK-Pyhton</span></h3>
+<ul><li>Creating Python wrapper files for existing and future ITK filters</li>
+<li>Implementation of ITK filters in Python</li>
+<li>Embedding Python in applications for calling ITK classes</li></ul>
+<h1><span class="mw-headline" id="Features_and_Functionalities">Features and Functionalities</span></h1>
+<h2><span class="mw-headline" id="Software_Engineering">Software Engineering</span></h2>
+<h3><span class="mw-headline" id="Categorize_expectations_on_PixelType_API_from_every_filter">Categorize expectations on PixelType API from every filter</span></h3>
+<p>Filters should be classified according to the pixel types that they can manage 
+</p>
+<ul><li>Scalar</li>
+<li>Vector</li>
+<li>Tensor</li></ul>
+<p>The functionalities of the pixels should include, for example, being "additive", supporting "product by scalar", and so on.
+</p><p>This categorization should encompass two aspects
+</p>
+<ol><li>Documentation</li>
+<li>Verification at compilation time, using concept-checking-like error messages</li></ol>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Making_VNL_Thread-Safe:">Making VNL Thread-Safe:</span></h3>
+<ul><li>Maybe by removing Static Variables from vnl</li></ul>
+<h3><span class="mw-headline" id="Explicit_Template_Instantiations">Explicit Template Instantiations</span></h3>
+<p>Most of ITK is provided as class templates.  User code must instantiate these templates in order to use them.  As a result very little of ITK is actually compiled when ITK itself is built.  Only when testing, wrapping, or application code is compiled do the ITK class templates actually get instantiated and compiled.  This leads to excessive compilation times for this code because every source that is compiled includes the implementation code of ITK for every class template it uses and everything those templates need to compile.  It also leads to translation units that are too large to compile on certain compilers.
+</p><p>The motivation for using templates in the original design was to allow users to work with any kind of data.  This functionality has been successfully provided, but most users' needs can be met by a few common instantiations of ITK's class templates.  We plan to provide common instantiations in the ITK libraries themselves.  It will then be possible for user code to use these instantiations by including only the interface (.h) files and not the implementation (.txx) files.
+</p><p>If we provide an explicit instantiation for every template currently instantiated by testing, wrapping, and common application code the following benefits will be reaped:
+</p>
+<ul>
+ <li> Reduced compilation times for sources outside ITK libraries
+ </li><li> Reduced wrapper module sizes
+ </li><li> Reduced executable sizes when using shared libraries
+ </li><li> Increased testing of compilation of ITK templates
+</li></ul>
+<p>and the following drawbacks will be met:
+</p>
+<ul>
+  <li> Increased compilation time of ITK libraries themselves (though total time for ITK+application code will still be reduced)
+  </li><li> Increased complexity in ITK sources to specify instantiations (similar to current wrapping specification)
+</li></ul>
+<h3><span class="mw-headline" id="Typeless_layer">Typeless layer</span></h3>
+<p>A C++ typeless layer will provide users with a toolkit where the pixel type and dimension of the image do not have to be decided in advance.  This layer will look very close to what VTK uses for representing images and imaging filters.
+</p>
+<h3><span class="mw-headline" id="Increasing_Code_Coverage">Increasing Code Coverage</span></h3>
+<p>Code coverage is low for a significan number of files. It is usually correlated with the less used classes in the toolkit
+</p>
+<h4><span class="mw-headline" id="Add_support_to_CTest_for_reducing_redundant_tests">Add support to CTest for reducing redundant tests</span></h4>
+<p>CTest could provide coverage of classes per test in order to determine if a particular class is being covered in multiple tests. From this analysis, developers could remove redundant testing in the toolkit.
+</p>
+<h4><span class="mw-headline" id="Explore_other_tools_for_code_coverage_in_CTest">Explore other tools for code coverage in CTest</span></h4>
+<p>Currently we use gcov but this tool have some limitations. It will be desirable to have an alternative way of measuring code coverage.
+</p><p>CTest will have to parse the output of these alternative tools and format it according to what Dart/Dart2 expects as input.
+</p><p><br />
+Potential Candidates
+</p>
+<ul><li>Valgrind</li></ul>
+<pre> Valgrind is a good candidate since it has so many different tools/skin. It allow profile on memory usage, do profiling of code.. (see addrcheck, cachegrind, corecheck, lackey, massif, memcheck )
+</pre>
+<ul><li>Visual Studio</li>
+<li><a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?CodeCoverageTools">http://c2.com/cgi/wiki?CodeCoverageTools</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.testing.com/writings/coverage-terminology.html">http://www.testing.com/writings/coverage-terminology.html</a></li></ul>
+<h3><span id="Increasing_Valgrind.2FPurify_Testing"></span><span class="mw-headline" id="Increasing_Valgrind/Purify_Testing">Increasing Valgrind/Purify Testing</span></h3>
+<p>Testing for run-time problems has received reduced attention. As ITK move more and more into applications, we should pay closer attention to the run-time correctness of the code. We should setup more machines for running Valgrind/Purify testing
+</p><p>Since these builds take longer, we could take advantage here of Dart2 new alternative periodicity. For example, run these tests on a weekly or montly basis and then enter in sessions for cleaning up the code.
+</p>
+<h4><span class="mw-headline" id="Add_support_to_CTest_for_runtime_profiling">Add support to CTest for runtime profiling</span></h4>
+<p>Improving run-timeperformance of ITK algorithem requires to analyze the amount of time that each piece of code take for execution.
+</p><p>Potential candidate tools
+</p>
+<ul><li>Visual Studio</li>
+<li>gprof</li>
+<li>Valgrind/Calltree</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Add_Support_for_parallel_testing_in_CTest">Add Support for parallel testing in CTest</span></h3>
+<p>This will make possible to launch multiple test simultaneously from CTest. In this way, users with multiprocessor machines will be able to reduce the time needed for running the test suite.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Add_Support_to_CTest_for_generating_reports_locally">Add Support to CTest for generating reports locally</span></h3>
+<p>This functionality will make possible to analyze the results of the tests suite in a local machine, before it is submitted to the Dart/Dart2 server.
+</p>
+<h3><span class="mw-headline" id="Adopting_Dart2">Adopting Dart2</span></h3>
+<p>Dart2 will bring a large number of interesting features that will improve the quality control system for ITK. We should plan the transition from Dart to Dart2 in a progressive and organized way.
+</p>
+<h3><span class="mw-headline" id="Deprecation_Policy">Deprecation Policy</span></h3>
+<p>A committee has been named for designing and enforcing the implementation of a compassionate and user-friendly deprecation policy.
+</p><p>Technical solutions to allow compile time deprecation warnings is to use vendor specifc flags:
+</p>
+<ul><li>__attribute__((deprecated)) for gcc</li>
+<li>__declspec(deprecated) for Visual Studio compiler.</li></ul>
+<p>For more info see VTK_LEGACY in vtkSetGet.h
+</p>
+<ul><li>How to measure the popularity of a class
+<ul><li>How useful it is to users</li>
+<li>Should a class be removed/replaced</li></ul></li></ul>
+<h3><span class="mw-headline" id="Creating_a_separate_IO_Toolkit">Creating a separate IO Toolkit</span></h3>
+<ul><li>Factorizing IO Classes with VTK</li></ul>
+<p>The ITK IO classes in ITK are very similar to the VTK ones. In many cases they were simply copy/pasted from VTK
+</p>
+<ul><li>A particular attention should be done for jpeg since ITK and VTK does not use exactly the same one.</li>
+<li>Question: Does this mean that VTK/ITK should be synchronized on let say the exact same png library&#160;?</li></ul>
+<ul><li>Include the .vti format from VTK (XML compressed images)</li>
+<li>HDF5 (check on VTK)</li>
+<li>Statistics IO
+<ul><li>Neural Networks</li>
+<li>Meshes (VTK style&#160;?, ITK style&#160;?)</li>
+<li>Samples (Statistics)</li></ul></li>
+<li>Shared Memory
+<ul><li>passing data between processes using the IO classes.</li>
+<li>including support for CreateFileMapping() and shm_open()</li></ul></li></ul>
+<h3><span class="mw-headline" id="Refactor_FEM">Refactor FEM</span></h3>
+<ul><li>Update the FEM library from UPenn's version</li>
+<li>Integrate with a new ITK Mesh</li></ul>
+<h3><span class="mw-headline" id="Refactor_ITK_Mesh">Refactor ITK Mesh</span></h3>
+<ul><li>Create a simpler Mesh</li></ul>
+<h3><span class="mw-headline" id="Refactor_ITK_Optimizers">Refactor ITK Optimizers</span></h3>
+<ul><li>Revisit the API of ITK optimizers
+<ul><li>Make it more uniform</li></ul></li>
+<li>Find a mechanism for specifying the Parameter Scaling from the transforms.
+<ul><li>Maybe a default or a recomended scaling</li>
+<li>Is there a way of avoiding the scaling altogether&#160;?</li></ul></li></ul>
+<ul><li>Standarize the order of parameters in the Transform.</li>
+<li>Some optimizers need to know about the Transforms.</li></ul>
+<ul><li>Add more Transform Initializer classes
+<ul><li>Maybe some of them could be trainable.</li></ul></li></ul>
+<h3><span class="mw-headline" id="ITK_Complete">ITK Complete</span></h3>
+<p>Package a release of ITK that contains
+</p>
+<ul><li>Insight</li>
+<li>InsightApplications</li>
+<li>VTK</li>
+<li>FLTK</li></ul>
+<p>Along with a common CMakeLists.txt file that will allow to configure the entire package with consistent options and minimal effort.
+</p>
+<ul><li>These distribution will factorize common resources such as KWSYS/PNG/JPEG/TIFF/expat/gdcm/</li></ul>
+<ul><li>CPack may solve this issue.</li></ul>
+<h3><span id="Experimental_repository_with_Subversion_.28SVN.29"></span><span class="mw-headline" id="Experimental_repository_with_Subversion_(SVN)">Experimental repository with Subversion (SVN)</span></h3>
+<p>Subversion is an alternative to CVS and provides functionalites that are superior to CVS. Since this is quite a significant change, what we probably want to do is to start maintaining a parallel Subversion repository in order to gain experience with it for a project of the size of ITK.
+</p>
+<ul><li>This may be the same Sandbox used by the Insight Journal.</li></ul>
+<h2><span class="mw-headline" id="Image_Modalities">Image Modalities</span></h2>
+<p>A variety of image modalities are now well supported in ITK at this point. New image modalities may become important for the medical research community and later on for the clinical users. This section list the upcoming image modalities, their relevance and what would it take to support them in ITK. Note that the categories are not independent and that some of them will overlap.
+</p>
+<h3><span class="mw-headline" id="Color_Images">Color Images</span></h3>
+<p>Basic support exists now in ITK for dealing with RGB images. A reduced number of filters and segmenation techniques are ready-to-use in the toolkit. No support for registration of color images is currently available. Although several users have explored this domains, have written ITK classes for it and are willing to contribute their code to the toolkit.
+</p><p>The challenges are 
+</p>
+<ul><li>Color model conversion (HSV, RGB)</li>
+<li>Image IO</li>
+<li>Segmentation
+<ul><li>Statistical classifications</li>
+<li>Region growing</li>
+<li>Levelsets</li></ul></li></ul>
+<h3><span class="mw-headline" id="Multi-Spectral_Images">Multi-Spectral Images</span></h3>
+<p>Multi-spectral images are used for modalities such as Microscopy, MRI and optical tomograpy. Not to mention that ITK has been used for astronomy and for satellite imagery. The issues here are very similar to the ones of color images, with the distinction that here we are not subject to the particularities of the human visual system.
+</p><p>The challenges are
+</p>
+<ul><li>Enhancement and Noise reduction</li>
+<li>Principla components analysis</li>
+<li>Registration for multiple-component images</li>
+<li>Callibration</li>
+<li>Segmentation
+<ul><li>Statistical classification</li>
+<li>Region growing</li>
+<li>Multicomponents level sets</li></ul></li>
+<li>Pattern recognition</li>
+<li>Image registration</li>
+<li>File formats</li></ul>
+<p><br />
+</p>
+<h3><span id="4D_Images_.28time_series.29"></span><span class="mw-headline" id="4D_Images_(time_series)">4D Images (time series)</span></h3>
+<p>Time series are becoming more and more commong in clinical and medical research applications. ITK has the advantage of providing support for N-D images and algorithms. However few of it has been exercised in real cases, and few 4D specific studies have been performed.  This issue is relevant for
+</p>
+<ul><li>Functional MRI</li>
+<li>Perfusion images</li>
+<li>Cardiac 4D
+<ul><li>MRI</li>
+<li>CT</li></ul></li>
+<li>3D Ultrasound + time</li>
+<li>PET</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Tensor_Images">Tensor Images</span></h3>
+<p>Diffusion tensor images are probably the best known variant of tensor images. However, a large number of other physical properties of tissue are represented with Tensors, for example 
+</p>
+<ul><li>Electrical conductivity</li>
+<li>Refraction index</li>
+<li>Mechanical resistance</li></ul>
+<p>It is conceivable that images measuring such parameters will become availabe in the near future.
+</p><p>ITK currently has expanded its support for DTI (Diffusion Tensor Images), but much remains to be done in order to provide all the functionalities needed for helping users to develop medical applications.
+</p><p><br />
+The challenges are
+</p>
+<ul><li>File formats</li>
+<li>Image size</li>
+<li>Tensor operations</li>
+<li>Tractography</li>
+<li>Tensor based Segmentation</li>
+<li>Tensor based Registration
+<ul><li>Tensor to Tensor images</li>
+<li>Tensor to Vector images</li>
+<li>Tensor to Scalar images</li></ul></li>
+<li>Feature detection</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Microscopy_Images">Microscopy Images</span></h3>
+<p>The specific features of microscopy images are
+</p>
+<ul><li>2D images</li>
+<li>Large images (1K x 1K) up to (8K to 8K)</li>
+<li>Mosaics</li>
+<li>Need for annotations</li>
+<li>Movement and tracking of particles</li>
+<li>Multi-spectral images</li>
+<li>Polarization</li>
+<li>File formats (the microscopy community uses a large set of fileformats)</li>
+<li>Deconvolution</li></ul>
+<h3><span class="mw-headline" id="Confocal_Microscopy_Images">Confocal Microscopy Images</span></h3>
+<p>The specific features of Confocal Microscopy images are
+</p>
+<ul><li>3D images</li>
+<li>Time series (4D)</li>
+<li>Strong anisotropy (Z spacing &gt;&gt; X,Y spacing)</li>
+<li>Attenuation in Z</li>
+<li>Large images</li>
+<li>Multi-spectral images</li>
+<li>Need for registration</li>
+<li>3D Mosaics</li>
+<li>File formats (the microscopy community uses a large set of fileformats)</li>
+<li>Image features are close to the image resolution</li>
+<li>Deconvolution</li></ul>
+<h3><span id="Transmision_Electron_Microscopy_.28TEM.29"></span><span class="mw-headline" id="Transmision_Electron_Microscopy_(TEM)">Transmision Electron Microscopy (TEM)</span></h3>
+<p>The specific features of Transmission Electron Microscopy images are
+</p>
+<ul><li>2D images</li>
+<li>3D images (protein structures)</li>
+<li>4D images (3D + Time, a couple of instants).</li>
+<li>Small signal to noise ratio</li>
+<li>Large images</li>
+<li>Need for model based segmentation techniques</li>
+<li>Image features are close to the image resolution</li>
+<li>HDF5 Image IO class</li></ul>
+<h3><span id="Tomography_from_Transmision_Electron_Microscopy_.28TEM.29"></span><span class="mw-headline" id="Tomography_from_Transmision_Electron_Microscopy_(TEM)">Tomography from Transmision Electron Microscopy (TEM)</span></h3>
+<p>The specific features of TEM Tomography images are
+</p>
+<ul><li>3D images</li>
+<li>Small signal to noise ratio</li>
+<li>Large images</li>
+<li>Need for model based segmentation techniques</li>
+<li>Image features are close to the image resolution</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="X-Ray_Microscopy">X-Ray Microscopy</span></h3>
+<p>The specific features of X-Ray microscopy images are
+</p>
+<ul><li>3D images</li>
+<li>Small signal to noise ratio</li>
+<li>Large images</li>
+<li>Need for model based segmentation techniques</li>
+<li>Image features are close to the image resolution</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Endoscopic_Images">Endoscopic Images</span></h3>
+<p>The specific features of Endoscopic Microscopy images are
+</p>
+<ul><li>Video images</li>
+<li>Color</li>
+<li>Reflections in tissue</li>
+<li>Continues movement</li>
+<li>Shape from shading</li></ul>
+<p>Endoscopic images are more on the domain of computer vision but they are quite important in clinical applications.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Fluoroscopy_Images">Fluoroscopy Images</span></h3>
+<p>Fluoroscopic images are very important for image guided surgery, and for computer assisted diagnosis. 
+Since fluoroscopy images are 2D projections of a 3D structure, they have specific challenges.
+</p>
+<ul><li>Time varying images (video)</li>
+<li>Geometric distorsion</li>
+<li>Need for detection and tracking of instruments</li>
+<li>3D / 2D registration with 3D preoperative images</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Mamography_Images">Mamography Images</span></h3>
+<p>Very few is availble in ITK in order to support Mamograms. This is an area of significant public health relevance and deserves more attention.
+</p><p>Particular issues are
+</p>
+<ul><li>Large images</li>
+<li>12 bits / 16 bits</li>
+<li>Contrast enhancement</li>
+<li>Calcification detection</li>
+<li>Significance for Biopsies (assist localization)</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Perfusion_Images">Perfusion Images</span></h3>
+<p>Perfusion images are quite important for evaluating the vascularization of tissue and for diagnosis and treatement of cardiovascular disorders.
+</p><p>The challenges with this images are
+</p>
+<ul><li>Intensity normalization</li>
+<li>Time series</li>
+<li>Vascular modeling</li>
+<li>High noise level (due to anatomic variation)</li></ul>
+<h2><span class="mw-headline" id="Slice_dis-contiguous_images">Slice dis-contiguous images</span></h2>
+<p>ITK uses a contiguous image memory model. All the pixels in an image/volume are in a single contiguous memory block.  Many existing medical image analysis systems use a slice contiguous memory model.  Here, all the pixels in a slice are in a contiguous memory block but the slices may not be contiguous in memory.  A slice contiguous memory model has benefits over a volume contiguous memory model in memory management and cache coherency. ITK should consider adding an ability to operate on slice contiguous volumes. This will require modification to the image iterators and anywhere Image::GetBufferPointer() is called.
+</p>
+<h2><span class="mw-headline" id="SpatialObjects">SpatialObjects</span></h2>
+<p>Spatial objects are being used by a variety of projects in foreseen and unforeseen ways, and their API must be reviewed/expanded to support the unforeseen applications. Additionally, SpatialObjects remain relatively unconnected to the rest of ITK - they are easy to use as a product of ITK processing, but there is limited support for having them drive ITK processing. Specifically,
+</p>
+<ol><li>Enable SpatialObjects to be passed along ITK's pipeline. This requires the definition of an itkSpatialObjectSource class as well as derived classes such as itkImageToSpatialObjectFilter</li>
+<li>Implement SpatialObject traits. SpatialObjects use the itkTree data structure; however, methods for querying that tree are very limited. Currently spatialObject type definition is maintained by a class-specific string accessed via GetTypeName(). A standard naming structure or other form of type designation (e.g., traits) is needed so that filters can be tuned by spatialObject type. For example, certain filters can work on Tube, DTITube, and VesselTube spatialObjects (these classes have a common derivation), but the current GetTypeName designations do not expose their common derivation.</li></ol>
+<p><br /> 
+</p>
+<h2><span class="mw-headline" id="Neural_Networks">Neural Networks</span></h2>
+<p>Neural network methods will be added to ITK. These include multilayered neural networks with linear, sigmoid, and radial basis transfer functions. Training strategies such as backpropagation and quickprop. Also Kohonen self-organizing feature maps will be added. Helper-classes will simplify the implementation and use of traditional 3-layer backprop, non-linear component analysis, radial basis function, and feature map networks.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="DICOM_Query_and_Retrieve">DICOM Query and Retrieve</span></h2>
+<p>A file-dialog-style FLTK-based tool will be provided for dicom query and retrieve. This tool will be require the use of DCMTK. Using this tool, studies on a remote dicom server can be searched, retrieved, and loaded by an ITK application with minimal programming.
+</p>
+<h2><span class="mw-headline" id="Multi-phase_Level_Sets">Multi-phase Level Sets</span></h2>
+<h2><span class="mw-headline" id="Topology_preserving_Level_Sets">Topology preserving Level Sets</span></h2>
+<h2><span class="mw-headline" id="Independent_component_analysis">Independent component analysis</span></h2>
+<h2><span class="mw-headline" id="Iso-Surface_Extraction">Iso-Surface Extraction</span></h2>
+<ul><li>2D</li>
+<li>3D</li></ul>
+<h2><span class="mw-headline" id="Support_Vector_Machines">Support Vector Machines</span></h2>
+<h2><span class="mw-headline" id="Harmonization_of_the_IO">Harmonization of the IO</span></h2>
+<ul><li>Pixel types across File Formats
+<ul><li>What types are supported by each format</li></ul></li>
+<li>MetaDataDictionary
+<ul><li>How to make sure that it is consistent.</li>
+<li>Naming for specific files</li>
+<li>How to move it through the pipeline</li></ul></li></ul>
+<h1><span id="Update_.2F_Remove_the_Projects_web_page"></span><span class="mw-headline" id="Update_/_Remove_the_Projects_web_page">Update / Remove the Projects web page</span></h1>
+<h1><span id="What_to_include_in_ITK_2.2_.28Scheduled_for_September_2005.29"></span><span class="mw-headline" id="What_to_include_in_ITK_2.2_(Scheduled_for_September_2005)">What to include in ITK 2.2 (Scheduled for September 2005)</span></h1>
+<h2><span class="mw-headline" id="Tensor_Images_2">Tensor Images</span></h2>
+<ul><li>Symmetric Second Rank Pixel</li>
+<li>Diffusion Tensor Pixel</li>
+<li>Eigen Values Calculator</li>
+<li>Image IO for Tensor Images</li>
+<li>Support for registration of Tensor Images</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="FITS_File_Format">FITS File Format</span></h2>
+<p>This file format is mostly used in Astronomy, but has the among others, the following interesting features
+</p>
+<ul><li>Supporting streaming. That is, we can load block of data from the files.</li>
+<li>Supports N-Dimensional data blocks</li>
+<li>Supports Multiple components per pixel</li></ul>
+<p>This file format seems to be suitable for managing Tensor images, Microscopy images, and very large datasets.
+</p>
+<h2><span class="mw-headline" id="Support_for_Logging">Support for Logging</span></h2>
+<p>Logging classes are useful for debugging purposes and for facilitating to track the behaviour of applications at run time. Classes have been already developed by the ISIS center at Georgtown University and are planned to be integrated into ITK.
+</p>
+<h1><span id="What_to_include_in_ITK_2.4_.28Scheduled_for_November_30_2006.29"></span><span class="mw-headline" id="What_to_include_in_ITK_2.4_(Scheduled_for_November_30_2006)">What to include in ITK 2.4 (Scheduled for November 30 2006)</span></h1>
+<ul><li>new wrapping</li></ul>
+<h1><span id="What_to_include_in_ITK_2.6_.28Scheduled_for_February_2006.29"></span><span class="mw-headline" id="What_to_include_in_ITK_2.6_(Scheduled_for_February_2006)">What to include in ITK 2.6 (Scheduled for February 2006)</span></h1>
+<ul><li>New Mesh class
+<ul><li>Simpler triangular Mesh (2D manifold in 3D space).</li></ul></li></ul>
+<p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20230602002927
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.030 seconds
+Real time usage: 0.032 seconds
+Preprocessor visited node count: 198/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.803      1 -total
+100.00%    3.803      1 Template:ITK/Template/Footer
+ 45.41%    1.727      1 Template:ITK/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:1001-0!canonical and timestamp 20230602002927 and revision id 45941. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Roadmap_2005_2006&amp;oldid=45941">https://public.kitware.com/Wiki/index.php?title=ITK/Roadmap_2005_2006&amp;oldid=45941</a>"</div></div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Roadmap_2005_2006" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Roadmap_2005_2006&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Roadmap_2005_2006">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Roadmap_2005_2006&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Roadmap_2005_2006&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Roadmap_2005_2006" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Roadmap_2005_2006&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FRoadmap+2005+2006" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/Roadmap_2005_2006" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/Roadmap_2005_2006" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Roadmap_2005_2006&amp;oldid=45941" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Roadmap_2005_2006&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 11 February 2012, at 21:14.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.030","walltime":"0.032","ppvisitednodes":{"value":198,"limit":1000000},"postexpandincludesize":{"value":222,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    3.803      1 -total","100.00%    3.803      1 Template:ITK/Template/Footer"," 45.41%    1.727      1 Template:ITK/Template/Categories"]},"cachereport":{"timestamp":"20230602002927","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":82});});</script>
+</body>
+</html>

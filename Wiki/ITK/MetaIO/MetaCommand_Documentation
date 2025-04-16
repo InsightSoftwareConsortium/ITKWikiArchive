@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/MetaIO/MetaCommand Documentation - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"5eb41ce9bb515a4312584e6a","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/MetaIO/MetaCommand_Documentation","wgTitle":"ITK/MetaIO/MetaCommand Documentation","wgCurRevisionId":47457,"wgRevisionId":47457,"wgArticleId":2918,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/MetaIO/MetaCommand_Documentation","wgRelevantArticleId":2918,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={
+"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_MetaIO_MetaCommand_Documentation rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/MetaIO/MetaCommand Documentation</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/MetaIO" title="ITK/MetaIO">MetaIO</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#MetaCommand"><span class="tocnumber">1</span> <span class="toctext">MetaCommand</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Introduction:"><span class="tocnumber">1.1</span> <span class="toctext">Introduction:</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#MetaCommand_in_use:"><span class="tocnumber">1.2</span> <span class="toctext">MetaCommand in use:</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#MetaOutput"><span class="tocnumber">2</span> <span class="toctext">MetaOutput</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="MetaCommand">MetaCommand</span></h1>
+<h2><span class="mw-headline" id="Introduction:">Introduction:</span></h2>
+<p>Thanks to MetaCommand you can easily receive parameters in your software from the command line.The purpose of this class is to provide a unified framework for command line parsing.
+</p><p>For instance, all programs that use MetaCommand are self-described using the command line –vxml:
+</p>
+<pre>$ ./AtlasSummation -vxml
+&lt;option&gt;
+&lt;number&gt;0&lt;/number&gt;
+&lt;name&gt;Outputcount&lt;/name&gt;
+&lt;tag&gt;oc&lt;/tag&gt;
+&lt;description&gt;Image of count values for each voxel&lt;/description&gt;
+&lt;required&gt;0&lt;/required&gt;
+&lt;nvalues&gt;1&lt;/nvalues&gt;
+&lt;field&gt;
+&lt;name&gt;filename&lt;/name&gt;
+&lt;description&gt;&lt;/description&gt;
+&lt;type&gt;string&lt;/type&gt;
+&lt;value&gt;&lt;/value&gt;
+&lt;external&gt;0&lt;/external&gt;
+&lt;required&gt;1&lt;/required&gt;
+…
+</pre>
+<p>Moreover, The description of the parameters can be easily retrieve at runtime via
+./your_program –v&#160;: 
+</p><p><br />
+</p>
+<pre>$ ./AtlasSummation -v
+Usage&#160;: d:\Work\itkUNCApplications-VC++\bin\debug\AtlasSummation.exe
+[-oc &lt;filename&gt; &#160;: Image of count values for each voxel]
+[-ao &#160;: Adjust the mean origin to the input images]
+[-as &#160;: Adjust the mean size to fit the input images]
+[-stdev &lt;bool&gt; (true)&#160;: Is the sigma image standard deviation?]
+[-LT [number] (4)&#160;: lowerThreshold&#160;: Minimum number of contributing images for pixel to be counted in output]
+[-OS &lt;X&gt; &lt;Y&gt; &lt;Z&gt; &#160;: outputImageSize X Y Z&#160;: output size (can't use with adjust size)]
+[-OSp &lt;X&gt; &lt;Y&gt; &lt;Z&gt; &#160;: output spacing (default- initial image spacing)]
+&lt;infile&gt; &#160;: infile filename
+&lt;outputmean&gt; &#160;: output mean filename
+&lt;outputvar&gt; &#160;: output variance filename
+</pre>
+<p>All these advantages are provided for you in the MetaCommand class.
+</p>
+<h2><span class="mw-headline" id="MetaCommand_in_use:">MetaCommand in use:</span></h2>
+<p><b>Definitions:</b> 
+</p><p>Metacommand differentiates the term ‘Option’ and ‘Field’. Basically an option can be placed anywhere in the command line as long as it is defined by a tag. On the other hand, the fields are placed in order and do not require any tag.
+</p><p><br />	 
+<b>Programmer’ point of view:</b> 
+</p><p>To use MetaCommand you have to include the file metaCommand.h in your code.
+</p>
+<pre>#include &lt;metaCommand.h&gt;
+</pre>
+<p>Then you need to declare a MetaCommand object, for example:
+</p>
+<pre>MetaCommand command;
+</pre>
+<p>To add an option (a tag + a field) you have to use 2 methods: 
+</p>
+<ul><li>To define an option:</li></ul>
+<pre>SetOption(std::string name, std::string tag, bool required, 
+          std::string description)
+</pre>
+<p>There are two more arguments (the type = flag, and the default value=””) but it is not necessary to put them because they are initialized correctly by default. The first argument is the name of the tag, the second is the string to write in your command line to use this option, the third indicates if the tag is required or not, and the last one is a description of the tag.
+</p>
+<pre>AddOptionField(std::string optionName, std::string Name,
+              MetaCommand::TypeEnumType Type, bool required, 
+              std::string defValue).
+</pre>
+<p>The first argument indicates at which tag the field belongs giving the name of the tag (see first argument of SetOption), the second argument is the name of the field, the third one is the type of the field (bool, int, float or string), the fourth argument indicates if the field is required or not, and the last one is the default value (note that you have to put a string even if it is your type is int or float). NOTE: you can use several times the method AddOptionFIeld for a same tag.
+</p>
+<ul><li>To define a field:</li></ul>
+<p>You can also just add a field (without the tag) thanks to the following method:
+</p>
+<pre>AddField(std::string Name, std::string Description, 
+         MetaCommand::TypeEnumType Type, bool ExternalData).
+</pre>
+<p>The first argument is the name of the field, the second his description, the third one his type and the last one indicates if that data is external to your application or not (e.g&#160;: a filename is external but the size of the input image is internal).
+</p><p><br />	
+<b>Example</b> 
+</p><p>Let’s define a command line like: ./example input.mha –w 2 output.mha 
+This will be coded as:
+</p>
+<pre>MetaCommand command;
+
+command.SetOption("Write","w",false,"writes the current image to the designated file with a type");
+command.AddOptionField("Write","filename",MetaCommand::STRING,true);
+command.AddOptionField("Write","Type",MetaCommand::INT,false,”1”); //by default type=1
+command.AddField("infile","infile filename",MetaCommand::STRING,true);
+</pre>
+<p>Then the user can parse the command line thanks to the method:
+</p>
+<pre>Parse(int argc, char* argv[])
+if( !command.Parse(argc,argv) )
+{
+return 1;
+}
+</pre>
+<p><br />
+Finally to access the different options, one of these 4 methods can be used:
+</p>
+<pre>   * GetValueAsString(Option option, std::string fieldName)
+   * GetValueAsFloat(Option option, std::string fieldName)
+   * GetValueAsInt(Option option, std::string fieldName)
+   * GetValueAsBool(Option option, std::string fieldName) 
+</pre>
+<p>To recover the parameters of an option (tag + field), in the first argument of these methods the name of the tag has to be specified and in the second argument the name of the field.
+To recover the parameter of a single field you just need to specify the first argument: the name of the field.
+</p><p><br />
+<b>Example:</b> to access the parameters of the previous example&#160;:
+</p>
+<pre>std::string imageIn = command.GetValueAsString("infile");
+std::string imageOut = command.GetValueAsString("Write","filename");
+int OutputType = command.GetValueAsInt(“Write","Type");
+</pre>
+<p><br />
+</p>
+<h1><span class="mw-headline" id="MetaOutput">MetaOutput</span></h1>
+<p>To use MetaOutput you have to include the file metaOutput.h in your code.
+</p>
+<pre>#include &lt;metaOutput.h&gt;
+</pre>
+<p>Then you need to declare a MetaOutput object, for example:
+</p>
+<pre>MetaOutput output;
+</pre>
+<p>And you should be put this code, before the parsing&#160;:
+</p>
+<pre> output.SetMetaCommand(&amp;command);
+</pre>
+<p>Then you could add a field to see a variable in BatchMake.
+In that example , x is an int variable, and we need to see its value in BatchMake:
+</p>
+<pre> int x = 10;
+ output.AddFloatField("Result","Computation Result",x); //Result will be the filed of output
+ output.Write();
+</pre>
+<p>Now, you can access to the variable "x" via BatchMake with the command line&#160;:
+</p>
+<pre>Run(output ${example})
+<b>Set(result example.Result)</b> 
+Echo(x = ${result})
+</pre>
+<p>But before that, you need to add this command line at the beginning of your script&#160;:
+</p>
+<pre>SetAppOption(example.GenerateXMLMetaOutput 1)
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20240430095316
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.006 seconds
+Real time usage: 0.007 seconds
+Preprocessor visited node count: 11/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:2918-0!canonical and timestamp 20240430095316 and revision id 47457. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/MetaIO/MetaCommand_Documentation&amp;oldid=47457">https://public.kitware.com/Wiki/index.php?title=ITK/MetaIO/MetaCommand_Documentation&amp;oldid=47457</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/MetaIO/MetaCommand_Documentation" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/MetaIO/MetaCommand_Documentation&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/MetaIO/MetaCommand_Documentation">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/MetaIO/MetaCommand_Documentation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/MetaIO/MetaCommand_Documentation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/MetaIO/MetaCommand_Documentation" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/MetaIO/MetaCommand_Documentation&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FMetaIO%2FMetaCommand+Documentation" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/MetaIO/MetaCommand_Documentation" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/MetaIO/MetaCommand_Documentation" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/MetaIO/MetaCommand_Documentation&amp;oldid=47457" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/MetaIO/MetaCommand_Documentation&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 9 June 2012, at 19:40.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.006","walltime":"0.007","ppvisitednodes":{"value":11,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240430095316","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":103});});</script>
+</body>
+</html>

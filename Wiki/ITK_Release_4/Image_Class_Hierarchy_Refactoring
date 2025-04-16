@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK Release 4/Image Class Hierarchy Refactoring - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"8706d0222fc3b63140ae9499","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/Image_Class_Hierarchy_Refactoring","wgTitle":"ITK Release 4/Image Class Hierarchy Refactoring","wgCurRevisionId":32517,"wgRevisionId":32517,"wgArticleId":7059,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/Image_Class_Hierarchy_Refactoring","wgRelevantArticleId":7059,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],
+"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.38.6"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Image_Class_Hierarchy_Refactoring rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK Release 4/Image Class Hierarchy Refactoring</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK_Release_4" class="mw-redirect" title="ITK Release 4">ITK Release 4</a></span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Image_Class_Hierarchy_Refactoring"><span class="tocnumber">1</span> <span class="toctext">Image Class Hierarchy Refactoring</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Motivation"><span class="tocnumber">1.1</span> <span class="toctext">Motivation</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Goals"><span class="tocnumber">1.2</span> <span class="toctext">Goals</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Requirements"><span class="tocnumber">1.3</span> <span class="toctext">Requirements</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Challenges_and_Potential_Pitfalls"><span class="tocnumber">1.4</span> <span class="toctext">Challenges and Potential Pitfalls</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Design"><span class="tocnumber">2</span> <span class="toctext">Design</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Class_Hierarchy"><span class="tocnumber">2.1</span> <span class="toctext">Class Hierarchy</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Class_Diagram"><span class="tocnumber">2.1.1</span> <span class="toctext">Class Diagram</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#Image_Types"><span class="tocnumber">2.2</span> <span class="toctext">Image Types</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#ImageBase"><span class="tocnumber">2.2.1</span> <span class="toctext">ImageBase</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#PhysicalImageBase"><span class="tocnumber">2.2.2</span> <span class="toctext">PhysicalImageBase</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#RegularImageBase"><span class="tocnumber">2.2.3</span> <span class="toctext">RegularImageBase</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Image_(subclass_of_itkRegularImageBase)"><span class="tocnumber">2.2.4</span> <span class="toctext">Image (subclass of itkRegularImageBase)</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#RectilinearImageBase"><span class="tocnumber">2.2.5</span> <span class="toctext">RectilinearImageBase</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#RectilinearImage"><span class="tocnumber">2.2.6</span> <span class="toctext">RectilinearImage</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#LabelMap"><span class="tocnumber">2.2.7</span> <span class="toctext">LabelMap</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#BloxImage"><span class="tocnumber">2.2.8</span> <span class="toctext">BloxImage</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#SparseImage"><span class="tocnumber">2.2.9</span> <span class="toctext">SparseImage</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-19"><a href="#ImageAdaptors"><span class="tocnumber">2.3</span> <span class="toctext">ImageAdaptors</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#ResampleImageFilter_and_WarpImageFilter"><span class="tocnumber">2.4</span> <span class="toctext">ResampleImageFilter and WarpImageFilter</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Outstanding_Questions"><span class="tocnumber">2.5</span> <span class="toctext">Outstanding Questions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#Implementation_Plan"><span class="tocnumber">3</span> <span class="toctext">Implementation Plan</span></a>
+<ul>
+<li class="toclevel-2 tocsection-23"><a href="#Phase_1"><span class="tocnumber">3.1</span> <span class="toctext">Phase 1</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Phase_2"><span class="tocnumber">3.2</span> <span class="toctext">Phase 2</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Phase_3"><span class="tocnumber">3.3</span> <span class="toctext">Phase 3</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Phase_4"><span class="tocnumber">3.4</span> <span class="toctext">Phase 4</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="#Participants"><span class="tocnumber">4</span> <span class="toctext">Participants</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#Appendix:_Classes_that_use_Regular_Spacing_of_Images"><span class="tocnumber">5</span> <span class="toctext">Appendix: Classes that use Regular Spacing of Images</span></a>
+<ul>
+<li class="toclevel-2 tocsection-29"><a href="#Algorithms"><span class="tocnumber">5.1</span> <span class="toctext">Algorithms</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#BasicFilters"><span class="tocnumber">5.2</span> <span class="toctext">BasicFilters</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Common"><span class="tocnumber">5.3</span> <span class="toctext">Common</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#IO"><span class="tocnumber">5.4</span> <span class="toctext">IO</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#Numerics"><span class="tocnumber">5.5</span> <span class="toctext">Numerics</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#Review"><span class="tocnumber">5.6</span> <span class="toctext">Review</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#Spatial_Object"><span class="tocnumber">5.7</span> <span class="toctext">Spatial Object</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Image_Class_Hierarchy_Refactoring">Image Class Hierarchy Refactoring</span></h1>
+<p>The goal of this proposal is to refactor ITK's image class hierarchy to make adding other image types to ITK easier and to simplify the interface of image classes wherever possible. 
+</p>
+<h2><span class="mw-headline" id="Motivation">Motivation</span></h2>
+<p>ITK currently supports several types of image:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1Image.html">Image</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1VectorImage.html">VectorImage</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1SpecialCoordinatesImage.html">SpecialCoordinatesImage</a>
+<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1PhasedArray3DSpecialCoordinatesImage.html">PhasedArray3DSpecialCoordinatesImage</a></li></ul></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxImage.html">BloxImage</a>
+<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxCoreAtomImage.html">BloxCoreAtomImage</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxBoundaryProfileImage.html">BloxBoundaryProfileImage</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxBoundaryPointImage.html">BloxBoundaryPointImage</a></li></ul></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1SparseImage.html">SparseImage</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1LabelMap.html">LabelMap</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1ImageAdaptor.html">ImageAdaptors</a> and subclasses</li>
+<li><a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/646">Slice contiguous, sparse, and single-bit binary images</a> - Insight Journal article from Dan Mueller</li></ul>
+<p>Most of the image types supported by ITK assume that the image topology is an n-dimensional lattice and that voxels have regular physical spacing in each dimension. While it makes sense to preserve the topology assumption in a library focused on image analysis, the regular spacing assumption should be relaxed wherever possible. The regular spacing assumption covers many cases in biomedical imaging, but it is insufficient for certain types of images in other applications. For example, certain motorized stages used in fluorescence microscopes fail to achieve regular spacing in z when acquiring a 3D image. Helpfully, these stages report the positions of z-planes acquired during image stack collection. Assuming a regular z-spacing in place of the actual z-plane positions may result in significant errors in image analysis algorithms run on the image.
+</p><p>It is possible to create image types in ITK that do not assume regular spacing: <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1PhasedArray3DSpecialCoordinatesImage.html">PhasedArray3DSpecialCoordinatesImage</a> is an example. Nevertheless, its interface still has the SetSpacing() and GetSpacing() methods defined in the ImageBase class (and overriden in SpecialCoordinatesImage). These methods are required for compatibility in filter pipelines, but their presence in this class is misleading; they do nothing. Other types of images may consist of samples not associated with a physical space. For these image types, class methods for setting metadata about the physical embedding of the image are not needed.
+</p>
+<h2><span class="mw-headline" id="Goals">Goals</span></h2>
+<p>The primary goal in this refactoring is to produce a logical image class hierarchy in ITK that removes methods in image types where they are not needed.
+</p><p>The secondary goal is to add a RectilinearImage class, a physically embedded image with origin, irregular spacing in each dimension, and orientation.
+</p>
+<h2><span class="mw-headline" id="Requirements">Requirements</span></h2>
+<ul><li>Make changes fully backwards compatible with examples and tests (all examples and tests should compile and run without modification and all tests should pass)</li>
+<li>Each of the physically embedded image types will properly calculate transforms from indices to physical coordinates and back.</li>
+<li>All physically embedded images should support orientations.</li>
+<li>ImageAdaptors should work on all image types</li>
+<li>Resampling should be supported for all physically embedded image types</li>
+<li>Conversion of new image types to appropriate VTK classes for visualization</li></ul>
+<h2><span class="mw-headline" id="Challenges_and_Potential_Pitfalls">Challenges and Potential Pitfalls</span></h2>
+<ul><li>ImageAdaptors should present the correct interface for the image type they adapt. This can be accomplished with partial template specialization of the ImageAdaptor class to avoid modifying any of the existing adaptors.</li>
+<li>Numerous classes use regular spacing of images (they call GetSpacing()) directly and will need to be modified to handle the new image types or be restricted to work with only image types with regular sample spacing. A list of these classes can be found at the appendix at the end of this page.</li>
+<li>Filters that require voxel positions should ideally use methods TransformIndexToPhysicalPoint, etc., but this may not be optimal for performance.</li>
+<li>Adding image types will add significant compilation time to wrapping</li></ul>
+<h1><span class="mw-headline" id="Design">Design</span></h1>
+<p>ImageBase will be stripped to the bare minimum functionality required to support images with lattice topology. Other image types will have more specialized base classes, all descended (perhaps indirectly) from ImageBase. The base classes will provide support for additional image metadata.
+</p>
+<h2><span class="mw-headline" id="Class_Hierarchy">Class Hierarchy</span></h2>
+<p>The class hierarchy will look like this:
+</p>
+<ul><li>ImageBase&lt; unsigned int VDimension &gt;
+<ul><li>PhysicalImageBase&lt; unsigned int VDimension &gt;
+<ul><li>RegularImageBase&lt; unsigned int VDimension &gt;
+<ul><li>Image&lt; class TPixel, unsigned int VDimension &gt;
+<ul><li>BloxImage&lt; class TPixel, unsigned int VDimension &gt;
+<ul><li>BloxImage subclasses</li></ul></li>
+<li>SparseImage&lt; class TNode, unsigned int VDimension &gt;</li></ul></li>
+<li>VectorImage&lt; class TPixel, unsigned int VDimension &gt;</li>
+<li>LabelMap&lt; class TPixel, unsigned int VDimension &gt;</li></ul></li>
+<li>RectilinearImageBase &lt; unsigned int VDimension &gt;
+<ul><li>RectilinearImage &lt;class TPixel, unsigned in VDimension &gt;</li></ul></li>
+<li>PhasedArray3DSpecialCoordinatesImage&lt; class TPixel &gt;</li></ul></li></ul></li></ul>
+<p>All base image classes specify the interface for only the metadata of the image. This design is required to support the method CopyInformation(). For example, you may encounter a situation where you copy information from a RectilinearImage&lt;float, 3&gt; to a RectilinearImage&lt;double, 3&gt;. Dynamic casting from a RectilinearImage&lt;float, 3&gt; to a RectilinearImage&lt;double, 3&gt; won't work, so the method will throw an exception. Casting a RectilinearImage&lt;float, 3&gt; to a RectilinearImageBase&lt; 3 &gt; will work, enabling access to the metadata methods (GetSpacing(), GetOrigin(), etc.) from the source image.
+</p><p>Specific methods defined or overridden in each class are provided below.
+</p>
+<h3><span class="mw-headline" id="Class_Diagram">Class Diagram</span></h3>
+<p><map name="ITK Release 4_Image Class Hierarchy Refactoring_digraph G "> 
+</map></p><p><img class="" style="" alt="This is a graph with borders and nodes. Maybe there is an Imagemap used so the nodes may be linking to some Pages." src="/Wiki/images/graphviz/ITK Release 4_Image Class Hierarchy Refactoring_digraph G .png" usemap="#ITK Release 4_Image Class Hierarchy Refactoring_digraph G " />
+</p>
+<h2><span class="mw-headline" id="Image_Types">Image Types</span></h2>
+<h3><span class="mw-headline" id="ImageBase">ImageBase</span></h3>
+<p>Methods:
+</p>
+<ul><li>Allocate()</li>
+<li>ComputeIndex()</li>
+<li>ComputeOffset()</li>
+<li>ComputeOffsetTable()</li>
+<li>CopyInformation()</li>
+<li>GetBufferedRegion()</li>
+<li>GetImageDimension()</li>
+<li>GetLargestPossibleRegion()</li>
+<li>GetNumberOfComponentsPerPixel()</li>
+<li>GetOffsetTable()</li>
+<li>GetRequestedRegion()</li>
+<li>Graft()</li>
+<li>Initialize()</li>
+<li>InitializeBufferedRegion()</li>
+<li>RequestedRegionIsOutsideOfTheBufferedRegion()</li>
+<li>SetBufferedRegion()</li>
+<li>SetLargestPossibleRegion()</li>
+<li>SetNumberOfComponentsPerPixel()</li>
+<li>SetRequestedRegion(const RegionType &amp;region)</li>
+<li>SetRequestedRegion(DataObject *data)</li>
+<li>SetRequestedRegionToLargestPossibleRegion()</li>
+<li>UpdateOutputData()</li>
+<li>UpdateOutputInformation()</li></ul>
+<h3><span class="mw-headline" id="PhysicalImageBase">PhysicalImageBase</span></h3>
+<p>Methods overridden from ImageBase
+</p>
+<ul><li>CopyInformation()</li></ul>
+<p>Additional methods
+</p>
+<ul><li>GetOrigin()</li>
+<li>SetOrigin()</li>
+<li>GetDirection()</li>
+<li>SetDirection()</li></ul>
+<h3><span class="mw-headline" id="RegularImageBase">RegularImageBase</span></h3>
+<p>Methods overridden from PhysicalImageBase
+</p>
+<ul><li>CopyInformation()</li></ul>
+<p>Additional methods
+</p>
+<ul><li>ComputeIndexToPhysicalPointMatrices()</li>
+<li>GetSpacing()</li>
+<li>SetSpacing()</li>
+<li>TransformContinuousIndexToPhysicalPoint(const ContinuousIndex&lt; TCoordRep, VImageDimension &gt; &amp;index, Point&lt; TCoordRep, VImageDimension &gt; &amp;point) const</li>
+<li>TransformIndexToPhysicalPoint(const IndexType &amp;index, Point&lt; TCoordRep, VImageDimension &gt; &amp;point) const</li>
+<li>TransformLocalVectorToPhysicalVector(const FixedArray&lt; TCoordRep, VImageDimension &gt; &amp;inputGradient, FixedArray&lt; TCoordRep, VImageDimension &gt; &amp;outputGradient) const</li>
+<li>TransformPhysicalPointToContinuousIndex(const Point&lt; TCoordRep, VImageDimension &gt; &amp;point, ContinuousIndex&lt; TCoordRep, VImageDimension &gt; &amp;index) const</li>
+<li>TransformPhysicalPointToIndex(const Point&lt; TCoordRep, VImageDimension &gt; &amp;point, IndexType &amp;index) const</li></ul>
+<h3><span id="Image_.28subclass_of_itkRegularImageBase.29"></span><span class="mw-headline" id="Image_(subclass_of_itkRegularImageBase)">Image (subclass of itkRegularImageBase)</span></h3>
+<p>Methods overridden from RegularImageBase
+</p>
+<ul><li>Allocate()</li>
+<li>Graft()</li>
+<li>Initialize()</li></ul>
+<p>Additional methods
+</p>
+<ul><li>operator[]</li>
+<li>FillBuffer()</li>
+<li>GetBufferPointer()</li>
+<li>GetNeighborhoodAccessor()</li>
+<li>GetPixel(const IndexType &amp;index) const</li>
+<li>GetPixel(const IndexType &amp;index)</li>
+<li>GetPixelAccessor(void)</li>
+<li>GetPixelAccessor(void) const</li>
+<li>GetPixelContainer()</li>
+<li>GetPixelContainer() const</li>
+<li>SetNeighborhoodAccessor()</li>
+<li>SetPixel(const IndexType &amp;index, const TPixel &amp;value)</li>
+<li>SetPixelContainer(PixelContainer *container)</li></ul>
+<h3><span class="mw-headline" id="RectilinearImageBase">RectilinearImageBase</span></h3>
+<p>Methods overridden from PhysicalImageBase
+</p>
+<ul><li>CopyInformation()</li>
+<li>SetLargestPossibleRegion()</li></ul>
+<p>Additional methods
+</p>
+<ul><li>ComputeSpacingPrefixSum()</li>
+<li>GetDefaultSpacing()</li>
+<li>GetDimensionSpacing(unsigned int dimension)</li>
+<li>InitializeWithDefaultSpacings()</li>
+<li>SetDefaultSpacing()</li>
+<li>SetSpacing(unsigned int dimension, long index, Array&lt;PointValueType&gt;)</li>
+<li>TransformContinuousIndexToPhysicalPoint(const ContinuousIndex&lt; TCoordRep, VImageDimension &gt; &amp;index, Point&lt; TCoordRep, VImageDimension &gt; &amp;point) const</li>
+<li>TransformIndexToPhysicalPoint(const IndexType &amp;index, Point&lt; TCoordRep, VImageDimension &gt; &amp;point) const</li>
+<li>TransformLocalVectorToPhysicalVector(const FixedArray&lt; TCoordRep, VImageDimension &gt; &amp;inputGradient, FixedArray&lt; TCoordRep, VImageDimension &gt; &amp;outputGradient) const</li>
+<li>TransformPhysicalPointToContinuousIndex(const Point&lt; TCoordRep, VImageDimension &gt; &amp;point, ContinuousIndex&lt; TCoordRep, VImageDimension &gt; &amp;index) const</li>
+<li>TransformPhysicalPointToIndex(const Point&lt; TCoordRep, VImageDimension &gt; &amp;point, IndexType &amp;index) const</li></ul>
+<h3><span class="mw-headline" id="RectilinearImage">RectilinearImage</span></h3>
+<p>Methods overridden from RectilinearImageBase
+</p>
+<ul><li>Allocate()</li>
+<li>Graft()</li>
+<li>Initialize()</li></ul>
+<p>Additional methods
+</p>
+<ul><li>operator[]</li>
+<li>FillBuffer()</li>
+<li>GetBufferPointer()</li>
+<li>GetPixel(const IndexType &amp;index) const</li>
+<li>GetPixel(const IndexType &amp;index)</li>
+<li>GetPixelAccessor(void)</li>
+<li>GetPixelAccessor(void) const</li>
+<li>GetPixelContainer()</li>
+<li>GetPixelContainer() const</li>
+<li>GetNeighborhoodAccessor()</li>
+<li>GetNeighborhoodAccessor() const</li>
+<li>SetPixel(const IndexType &amp;index, const TPixel &amp;value)</li>
+<li>SetPixelContainer(PixelContainer *container)</li></ul>
+<h3><span class="mw-headline" id="LabelMap">LabelMap</span></h3>
+<p>No change needed, but the new interface will not have the methods:
+</p>
+<ul><li>GetDirection()</li>
+<li>GetSpacing()</li>
+<li>SetDirection()</li>
+<li>SetSpacing()</li></ul>
+<p>If LabelMaps have a physical embedding, then the LabelMap class should be changed to inherit from PhysicalImageBase.
+</p>
+<h3><span class="mw-headline" id="BloxImage">BloxImage</span></h3>
+<p>This class currently descends from Image. If it has no spatial embedding, then it could be changed to descend from a new DigitalImage class.
+</p>
+<h3><span class="mw-headline" id="SparseImage">SparseImage</span></h3>
+<p>This class currently descends from Image. If it has no spatial embedding, then it could be changed to descend from a new DigitalImage class.
+</p>
+<h2><span class="mw-headline" id="ImageAdaptors">ImageAdaptors</span></h2>
+<p>The ImageAdaptor class should be designed to present the proper API for each of the new image types. This requires partial template specialization of the ImageAdaptor template class to maintain backwards compatibility. Specifically, several definitions of the ImageAdaptor class will need to be defined, one for each image type.
+</p><p>To work with the CopyInformation() method in the various Image subclasses, each ImageBase type (RegularImageBase, RectilinearImageBase, etc.) will need to have a corresponding ImageAdaptor type (RegularImageAdaptor, RectilinearImageAdaptor, etc.), each of which is a subclass of its corresponding image base type. They CANNOT be subclasses of the image types with pixel containers because of the problem with dynamic casting in the CopyInformation() method mentioned above.
+</p>
+<h2><span class="mw-headline" id="ResampleImageFilter_and_WarpImageFilter">ResampleImageFilter and WarpImageFilter</span></h2>
+<p>The method SetOutputParametersFromImage() takes an ImageBase as input. Now that the metadata is stored in subclasses of ImageBase, this may be suboptimal.
+</p><p>One solution is to try to dynamic_cast the ImageBase input to the various descendants of ImageBase (PhysicalImageBase, RegularImageBase, RectilinearImageBase, etc.). Upon successful casting, the relevant parameters from the ImageBase input can be copied over to the filter. However, say we're resampling to a RectilinearImage with the ResampleImageFilter. The ResampleImageFilter would need to have a method to support individual voxel spacings. But this method isn't needed for resampling to an Image, so it would go to waste.
+</p><p>Alternatively, these classes could be specialized for the output image type much like the ImageAdaptor is specialized. This seems like the best option.
+</p>
+<h2><span class="mw-headline" id="Outstanding_Questions">Outstanding Questions</span></h2>
+<ul><li>Are BloxImages and SparseImages physically embedded images?</li>
+<li>Should image sources be specialized for different image types?</li>
+<li>Will interpolators work out-of-the-box for Images with implementations of TransformIndexToPhysicalPoint, etc?</li>
+<li>File readers?</li>
+<li>Use concept checking in filters and image sources to check support for input/output image types?</li></ul>
+<h1><span class="mw-headline" id="Implementation_Plan">Implementation Plan</span></h1>
+<p>After all phases of implementation, existing tests must compile and pass.
+</p><p>A sample implementation encompassing phases 1-3 is available at <a rel="nofollow" class="external text" href="http://github.com/cquammen/ITK/tree/image-hierarchy-refactoring">GitHub</a>.
+</p>
+<h2><span class="mw-headline" id="Phase_1">Phase 1</span></h2>
+<ul><li>Implement PhysicalImageBase&lt; unsigned int VDimension &gt;</li>
+<li>Implement RegularImageBase</li>
+<li>Make Image and VectorImage subclasses of RegularImageBase</li>
+<li>Make SpecialCoordinatesImage a subclass of RegularImageBase</li></ul>
+<p><b>Example implementation complete</b>
+</p>
+<h2><span class="mw-headline" id="Phase_2">Phase 2</span></h2>
+<ul><li>Write RegularImageAdaptor</li>
+<li>Specialize the ImageAdaptor template for Image, VectorImage, and PhasedArray3DSpecialCoordinatesImage classes.</li>
+<li>Remove unnecessary methods from adaptor classes.</li>
+<li>Remove unnecessary methods, typedefs, and member variables from ImageBase, PhysicalImageBase, and RegularImageBase.</li></ul>
+<p><b>Example implementation complete</b>
+</p>
+<h2><span class="mw-headline" id="Phase_3">Phase 3</span></h2>
+<ul><li>Implement RectilinearImageBase and RectilinearImage</li>
+<li>Specialize the ImageAdaptor template for RectilinearImages</li>
+<li>Add example tests for rectilinear images</li></ul>
+<p><b>Example implementation complete</b>
+</p>
+<h2><span class="mw-headline" id="Phase_4">Phase 4</span></h2>
+<ul><li>Specialize ResampleImageFilter</li>
+<li>Specialize WarpImageFilter</li></ul>
+<h1><span class="mw-headline" id="Participants">Participants</span></h1>
+<ul><li>Cory Quammen (UNC Chapel Hill)</li></ul>
+<h1><span class="mw-headline" id="Appendix:_Classes_that_use_Regular_Spacing_of_Images">Appendix: Classes that use Regular Spacing of Images</span></h1>
+<h2><span class="mw-headline" id="Algorithms">Algorithms</span></h2>
+<ul><li><ul><li>Algorithms/itkBinaryMask3DMeshSource.txx
+<ul><li>Should be easily modified to use TransformIndexToPhysicalPoint</li></ul></li>
+<li>Algorithms/itkCollidingFrontsImageFilter.txx
+<ul><li>GetSpacing() required by FastMarchingUpwindGradientImageFilter-&gt;GetOutputSpacing()</li></ul></li>
+<li>Algorithms/itkDeformableSimplexMesh3DGradientConstraintForceFilter.txx
+<ul><li>Should be easily modified to use TransformIndexToPhysicalPoint</li></ul></li>
+<li>Algorithms/itkDemonsRegistrationFunction.txx
+<ul><li>Should be able to calculate m_Normalizer by getting the volume of a voxel</li></ul></li>
+<li>Algorithms/itkFastMarchingImageFilter.txx
+<ul><li>?</li></ul></li>
+<li>Algorithms/itkFastMarchingUpwindGradientImageFilter.txx
+<ul><li>Spacing in finite difference calculation should be replaceable by more general image spacing; images with curvilinear coordinate systems won't work</li></ul></li>
+<li>Algorithms/itkFastSymmetricForcesDemonsRegistrationFunction.txx
+<ul><li>Should be able to calculate m_Normalizer by getting the volume of a voxel</li></ul></li>
+<li>Algorithms/itkFEMRegistrationFilter.txx
+<ul><li>Spacing is passed to WarpImageFilter; could be resolved by calling SetOutputParametersFromImage()</li></ul></li>
+<li>Algorithms/itkGradientDifferenceImageToImageMetric.txx
+<ul><li>Spacing is passed to ResampleImageFilter; could be resolved by calling SetOutputParametersFromImage()</li></ul></li>
+<li>Algorithms/itkImageToImageMetric.txx
+<ul><li>Uses the largest voxel size as the sigma in an internal gradient filter</li></ul></li>
+<li>Algorithms/itkIsoContourDistanceImageFilter.txx
+<ul><li>?</li></ul></li>
+<li>Algorithms/itkKLMRegionGrowImageFilter.txx
+<ul><li>Uses spacing to compute region border lengths; could be replaced with a method in an image class</li></ul></li>
+<li>Algorithms/itkLevelSetMotionRegistrationFunction.txx
+<ul><li>Uses spacing for forward difference calculation</li></ul></li>
+<li>Algorithms/itkMeanSquareRegistrationFunction.txx
+<ul><li>?</li></ul></li>
+<li>Algorithms/itkMultiResolutionPDEDeformableRegistration.txx
+<ul><li>?</li></ul></li>
+<li>Algorithms/itkMultiResolutionPyramidImageFilter.txx
+<ul><li>Sets spacing of output images at each level; it seems unlikely to want to generate irregular images for a multi-resolution pyramid</li></ul></li>
+<li>Algorithms/itkNCCRegistrationFunction.txx;
+<ul><li>Uses spacings in computing the gradient squared magnitude for the fixed image</li></ul></li>
+<li>Algorithms/itkPDEDeformableRegistrationFilter.txx
+<ul><li>Forwards spacing from output to a temporary deformation field</li></ul></li>
+<li>Algorithms/itkPointSetToImageMetric.txx
+<ul><li>Uses the largest voxel size as the sigma in an internal gradient filter</li></ul></li>
+<li>Algorithms/itkRayCastInterpolateImageFunction.txx
+<ul><li>This class is heavily tied to the assumption of regular spacing</li></ul></li>
+<li>Algorithms/itkReinitializeLevelSetImageFilter.txx
+<ul><li>Forwards spacing from input image to the FastMarchingImageFilterType</li></ul></li>
+<li>Algorithms/itkSymmetricForcesDemonsRegistrationFunction.txx
+<ul><li>Should be able to calculate m_Normalizer by getting the volume of a voxel</li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="BasicFilters">BasicFilters</span></h2>
+<ul><li><ul><li>BasicFilters/itkAccumulateImageFilter.txx
+<ul><li>Essentially forwards the spacing to the output, except for the collapsed dimension which has the spacing set to the size of the original image in the collapsed dimension</li></ul></li>
+<li>BasicFilters/itkAnisotropicDiffusionImageFilter.txx
+<ul><li>Uses spacing to determine a timestep that produces stable solutions</li></ul></li>
+<li>BasicFilters/itkBilateralImageFilter.txx
+<ul><li>?</li></ul></li>
+<li>BasicFilters/itkBSplineDownsampleImageFilter.txx
+<ul><li>Output image spacing is twice that of the input; should be able to do something for images with non-regular spacing</li></ul></li>
+<li>BasicFilters/itkBSplineInterpolateImageFunction.txx
+<ul><li>Used in derivative calculation</li></ul></li>
+<li>BasicFilters/itkBSplineUpsampleImageFilter.txx
+<ul><li>Output image spacing is half that of the input; should be able to do something for images with non-regular spacing</li></ul></li>
+<li>BasicFilters/itkChangeInformationImageFilter.txx
+<ul><li>Should probably have a special ChangeInformationImageFilter for other image types</li></ul></li>
+<li>BasicFilters/itkDanielssonDistanceMapImageFilter.txx
+<ul><li>?</li></ul></li>
+<li>BasicFilters/itkDerivativeImageFilter.txx
+<ul><li>Used for scaling coefficient in DerivativeOperator; this may not work well for images with irregular spacing</li></ul></li>
+<li>BasicFilters/itkDiscreteGaussianImageFilter.txx
+<ul><li>Depends on GaussianOperator supporting irregular spacing</li></ul></li>
+<li>BasicFilters/itkDisplacementFieldJacobianDeterminantFilter.txx
+<ul><li>Used in m_DerivativeWeights and m_HalfDerivativeWeights, which themselves don't seem to be used anywhere</li></ul></li>
+<li>BasicFilters/itkExpandImageFilter.txx
+<ul><li>Should be straightforward to implement for images of irregular spacing</li></ul></li>
+<li>BasicFilters/itkExtractImageFilter.txx
+<ul><li>Should be straightforward to implement for images of irregular spacing</li></ul></li>
+<li>BasicFilters/itkGradientImageFilter.txx
+<ul><li>Depends on DerivativeOperator supporting irregular spacing</li></ul></li>
+<li>BasicFilters/itkGradientImageToBloxBoundaryPointImageFilter.txx
+<ul><li>Sets output image spacing to multiple of the input image spacing</li></ul></li>
+<li>BasicFilters/itkGradientMagnitudeImageFilter.txx
+<ul><li>Depends on DerivativeOperator supporting irregular spacing</li></ul></li>
+<li>BasicFilters/itkGradientMagnitudeRecursiveGaussianImageFilter.txx
+<ul><li>?</li></ul></li>
+<li>BasicFilters/itkGradientRecursiveGaussianImageFilter.txx
+<ul><li>Spacing used to divide output scalar values</li></ul></li>
+<li>BasicFilters/itkHessianRecursiveGaussianImageFilter.txx
+<ul><li>Used to normalize output values</li></ul></li>
+<li>BasicFilters/itkHoughTransform2DCirclesImageFilter.txx
+<ul><li>Forwards spacing from input image to radius image</li></ul></li>
+<li>BasicFilters/itkHoughTransform2DLinesImageFilter.txx
+<ul><li>Forwards spacing from input image to m_SimplifyAccumulator image</li></ul></li>
+<li>BasicFilters/itkImportImageFilter.h
+<ul><li>Would need to write a version for images with irregular spacing</li></ul></li>
+<li>BasicFilters/itkInterpolateImagePointsFilter.txx
+<ul><li>Spacing of the image specifying the x-coordinates of the interpolation points is used as the spacing of the output image; this is rather arbitrary as the output image sample coordinates are arbitrary</li></ul></li>
+<li>BasicFilters/itkInverseDeformationFieldImageFilter.txx
+<ul><li>A scale factor of the input image spacing is used as the output image spacing</li></ul></li>
+<li>BasicFilters/itkIterativeInverseDeformationFieldImageFilter.txx
+<ul><li>Sets output spacing to that of the input image</li></ul></li>
+<li>BasicFilters/itkJoinSeriesImageFilter.txx
+<ul><li>Spacing of new dimension is set by the filter; this would have to be an array of spacings for a RectilinearImage</li></ul></li>
+<li>BasicFilters/itkLaplacianImageFilter.txx
+<ul><li>Depends on LaplacianOperator supporting irregular spacing</li></ul></li>
+<li>BasicFilters/itkLaplacianRecursiveGaussianImageFilter.txx
+<ul><li>Uses spacing as normalizer</li></ul></li>
+<li>BasicFilters/itkLaplacianSharpeningImageFilter.txx
+<ul><li>Depends on LaplacianOperator supporting irregular spacing</li></ul></li>
+<li>BasicFilters/itkParallelSparseFieldLevelSetImageFilter.txx
+<ul><li>?</li></ul></li>
+<li>BasicFilters/itkPermuteAxesImageFilter.txx
+<ul><li>Forwards spacing of input image to the output image</li></ul></li>
+<li>BasicFilters/itkPolylineMask2DImageFilter.txx
+<ul><li>Forwards spacing from input to output image</li></ul></li>
+<li>BasicFilters/itkPolylineMaskImageFilter.txx
+<ul><li>Forwards spacing from input to output image</li></ul></li>
+<li>BasicFilters/itkProjectionImageFilter.txx
+<ul><li>Forwards spacing from input to output image</li></ul></li>
+<li>BasicFilters/itkRecursiveSeparableImageFilter.txx
+<ul><li>Regular spacing assumption is encoded as a parameter in the SetUp pure virtual method</li></ul></li>
+<li>BasicFilters/itkRelabelComponentImageFilter.txx
+<ul><li>Spacing used to compute volume of voxels</li></ul></li>
+<li>BasicFilters/itkResampleImageFilter.txx
+<ul><li>Discussed in more detail below</li></ul></li>
+<li>BasicFilters/itkShrinkImageFilter.txx
+<ul><li>Filter shrinks an image to an integer multiple of the original image size</li></ul></li>
+<li>BasicFilters/itkSignedMaurerDistanceMapImageFilter.txx
+<ul><li>Uses spacing to map index of voxel position to physical space</li></ul></li>
+<li>BasicFilters/itkSparseFieldLevelSetImageFilter.txx
+<ul><li>?</li></ul></li>
+<li>BasicFilters/itkSpatialObjectToImageStatisticsCalculator.txx
+<ul><li>Used to remove spacing considerations from an internal FloodFill iterator</li></ul></li>
+<li>BasicFilters/itkTileImageFilter.txx
+<ul><li>Forwards spacing from input to output image</li></ul></li>
+<li>BasicFilters/itkTriangleMeshToBinaryImageFilter.txx
+<ul><li>Generates image with a given spacing</li></ul></li>
+<li>BasicFilters/itkUnaryFunctorImageFilter.txx
+<ul><li>Forwards spacing from input to output image</li></ul></li>
+<li>BasicFilters/itkVectorExpandImageFilter.txx
+<ul><li>Output image spacing is an integer multiple of input image spacing</li></ul></li>
+<li>BasicFilters/itkVectorGradientMagnitudeImageFilter.txx
+<ul><li>Spacing used as derivative weights</li></ul></li>
+<li>BasicFilters/itkWarpImageFilter.txx
+<ul><li>See discussion below</li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="Common">Common</span></h2>
+<ul><li><ul><li>Common/itkAnnulusOperator.h
+<ul><li>Uses spacing to ensure annulus is spherical</li></ul></li>
+<li>Common/itkBSplineDeformableTransform.txx
+<ul><li>Used to set the coefficient grid spacing</li></ul></li>
+<li>Common/itkCentralDifferenceImageFunction.txx
+<ul><li>Used in finite difference calculation</li></ul></li>
+<li>Common/itkDenseFiniteDifferenceImageFilter.txx
+<ul><li>Used to set spacing of output image</li></ul></li>
+<li>Common/itkFiniteDifferenceImageFilter.txx
+<ul><li>Spacing used in finite difference coefficients</li></ul></li>
+<li>Common/itkFloodFilledFunctionConditionalConstIterator.txx
+<ul><li>Not clear where the spacing is used.</li></ul></li>
+<li>Common/itkGaussianBlurImageFunction.txx
+<ul><li>Depends on irregular spacing support in GaussianOperator</li></ul></li>
+<li>Common/itkGaussianDerivativeImageFunction.txx
+<ul><li>Depends on irregular spacing support in GaussianOperator</li></ul></li>
+<li>Common/itkImageDuplicator.txx
+<ul><li>Forwards spacing of input image to output image</li></ul></li>
+<li>Common/itkPathConstIterator.txx
+<ul><li>Not clear where the spacing is used.</li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="IO">IO</span></h2>
+<ul><li><ul><li>IO/itkGDCMImageIO.cxx
+<ul><li>Sets spacing from image</li></ul></li>
+<li>IO/itkImageFileReader.txx
+<ul><li>Sets spacing from image</li></ul></li>
+<li>IO/itkImageFileWriter.txx
+<ul><li>Writes spacing to file</li></ul></li>
+<li>IO/itkImageIOBase.h
+<ul><li>Spacing goes to/comes from image file</li></ul></li>
+<li>IO/itkImageSeriesReader.txx
+<ul><li>Produces regular image</li></ul></li>
+<li>IO/itkImageSeriesWriter.txx
+<ul><li>Geared to images with regular spacing</li></ul></li>
+<li>IO/itkMetaImageIO.cxx
+<ul><li>Geared to images with regular spacing</li></ul></li>
+<li>IO/itkNiftiImageIO.cxx
+<ul><li>Geared to images with regular spacing</li></ul></li>
+<li>IO/itkNrrdImageIO.cxx
+<ul><li>Geared to images with regular spacing</li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="Numerics">Numerics</span></h2>
+<ul><li><ul><li>Numerics/Statistics/itkHistogramToImageFilter.h
+<ul><li>Sets size of output image</li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="Review">Review</span></h2>
+<ul><li><ul><li>Review/itkAreaClosingImageFilter.h
+<ul><li>Can optionally use spacing to compute area.</li></ul></li>
+<li>Review/itkAreaOpeningImageFilter.h
+<ul><li>Can optionally use spacing to compute area.</li></ul></li>
+<li>Review/itkBSplineDeformableTransformInitializer.txx
+<ul><li>Uses image spacing to calculate grid spacing</li></ul></li>
+<li>Review/itkBSplineScatteredDataPointSetToImageFilter.txx
+<ul><li>?</li></ul></li>
+<li>Review/itkConstrainedRegionBasedLevelSetFunctionSharedData.h
+<ul><li>Spacing used to determine query points</li></ul></li>
+<li>Review/itkDiffeomorphicDemonsRegistrationFilter.txx
+<ul><li>Sets output spacing to that of input</li></ul></li>
+<li>Review/itkDirectFourierReconstructionImageToImageFilter.txx
+<ul><li>Spacing of output image set from input image</li></ul></li>
+<li>Review/itkDiscreteGaussianDerivativeImageFilter.txx
+<ul><li>Depends on GaussianDerivativeOperator</li></ul></li>
+<li>Review/itkDiscreteGaussianDerivativeImageFunction.txx
+<ul><li>Depends on GaussianDerivativeOperator</li></ul></li>
+<li>Review/itkDiscreteGradientMagnitudeGaussianImageFunction.txx
+<ul><li>Depends on GaussianDerivativeOperator</li></ul></li>
+<li>Review/itkDiscreteHessianGaussianImageFunction.txx
+<ul><li>Used by NeighborhoodOperatorImageFunction</li></ul></li>
+<li>Review/itkESMDemonsRegistrationFunction.txx
+<ul><li>Spacing is used to computer normalizer</li></ul></li>
+<li>Review/itkExponentialDeformationFieldImageFilter.txx
+<ul><li>Used to calculate number of iterations</li></ul></li>
+<li>Review/itkFastSymmetricForcesDemonsRegistrationFilter.txx
+<ul><li>Copies input spacing to output image</li></ul></li>
+<li>Review/itkGaborImageSource.txx
+<ul><li>User sets spacing</li></ul></li>
+<li>Review/itkGridForwardWarpImageFilter.txx
+<ul><li>Copies input spacing to output image</li></ul></li>
+<li>Review/itkGridImageSource.txx
+<ul><li>User sets spacing</li></ul></li>
+<li>Review/itkJPEG2000ImageIO.cxx
+<ul><li>Produces regular images</li></ul></li>
+<li>Review/itkLabelGeometryImageFilter.txx
+<ul><li>Copies input spacing to output spacing</li></ul></li>
+<li>Review/itkLabelPerimeterEstimationCalculator.txx
+<ul><li>Uses spacing to compute physical size of voxels</li></ul></li>
+<li>Review/itkMINC2ImageIO.cxx
+<ul><li>Produces regular images</li></ul></li>
+<li>Review/itkMultiphaseFiniteDifferenceImageFilter.txx
+<ul><li>Spacing used for scale coefficients  in the difference functions</li></ul></li>
+<li>Review/itkMultiphaseSparseFiniteDifferenceImageFilter.txx
+<ul><li>?</li></ul></li>
+<li>Review/itkRegionBasedLevelSetFunction.h
+<ul><li>Spacing used in gradient computation</li></ul></li>
+<li>Review/itkShapedFloodFilledFunctionConditionalConstIterator.txx
+<ul><li>?</li></ul></li>
+<li>Review/itkShapeLabelMapFilter.txx
+<ul><li>Spacing used for physical volume measurements</li></ul></li>
+<li>Review/itkStatisticsLabelMapFilter.txx
+<ul><li>Used for statistics of physical dimensions of voxels</li></ul></li>
+<li>Review/itkStochasticFractalDimensionImageFilter.txx
+<ul><li>?</li></ul></li>
+<li>Review/itkStreamingImageIOBase.cxx
+<ul><li>Produces images with regular spacing</li></ul></li>
+<li>Review/itkTransformToDeformationFieldSource.txx
+<ul><li>Can optionally use spacing from reference image</li></ul></li>
+<li>Review/itkVectorCentralDifferenceImageFunction.txx
+<ul><li>Used in derivative weights</li></ul></li>
+<li>Review/itkVTKImageIO2.cxx
+<ul><li>Produces images with regular spacing</li></ul></li>
+<li>Review/itkWarpHarmonicEnergyCalculator.txx
+<ul><li>Used in derivative weights</li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="Spatial_Object">Spatial Object</span></h2>
+<ul><li><ul><li>SpatialObject/itkImageSpatialObject.txx
+<ul><li>spacing doesn't seem to be used</li></ul></li>
+<li>SpatialObject/itkMetaImageConverter.txx
+<ul><li>Spacing is set on the metaimage.</li></ul></li>
+<li>SpatialObject/itkSpatialObject.h
+<ul><li>spacing is essentially a geometric scaling factor</li></ul></li></ul></li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20250110170901
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.028 seconds
+Real time usage: 0.041 seconds
+Preprocessor visited node count: 109/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 385/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:7059-0!canonical and timestamp 20250110170901 and revision id 32517. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Image_Class_Hierarchy_Refactoring&amp;oldid=32517">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Image_Class_Hierarchy_Refactoring&amp;oldid=32517</a>"</div></div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK_Release_4/Image_Class_Hierarchy_Refactoring" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_4/Image_Class_Hierarchy_Refactoring&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK_Release_4/Image_Class_Hierarchy_Refactoring">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/Image_Class_Hierarchy_Refactoring&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/Image_Class_Hierarchy_Refactoring&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK_Release_4/Image_Class_Hierarchy_Refactoring" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK_Release_4/Image_Class_Hierarchy_Refactoring&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK+Release+4%2FImage+Class+Hierarchy+Refactoring" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" icon="die" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" ><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" aria-label="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" id="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" class="searchButton mw-fallbackSearchButton" id="mw-searchButton"/></form>
+			</div>
+		</div>
+		
+<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK_Release_4/Image_Class_Hierarchy_Refactoring" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK_Release_4/Image_Class_Hierarchy_Refactoring" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/Image_Class_Hierarchy_Refactoring&amp;oldid=32517" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK_Release_4/Image_Class_Hierarchy_Refactoring&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 16 October 2010, at 18:32.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.028","walltime":"0.041","ppvisitednodes":{"value":109,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":385,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20250110170901","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":87});});</script>
+</body>
+</html>

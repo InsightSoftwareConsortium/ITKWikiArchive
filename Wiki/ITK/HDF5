@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>ITK/HDF5 - KitwarePublic</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="generator" content="MediaWiki 1.23.8" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://www.itk.org/Wiki/api.php?action=rsd" />
+<link rel="copyright" href="https://creativecommons.org/licenses/by/2.5/" />
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
+<script src="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/HDF5","wgTitle":"ITK/HDF5","wgCurRevisionId":39373,"wgRevisionId":39373,"wgArticleId":9066,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK/HDF5","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-js:7:6fb34dd1cd86154205b858dd017713f7 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_HDF5 skin-monobook action-view">
+<div id="globalWrapper">
+<div id="column-content"><div id="content" class="mw-body-primary" role="main">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">ITK/HDF5</span></h1>
+	<div id="bodyContent" class="mw-body">
+		<div id="siteSub">From KitwarePublic</div>
+		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span></div>
+		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+		<!-- start content -->
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#HDF5_file_format_and_library"><span class="tocnumber">1</span> <span class="toctext">HDF5 file format and library</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Use_cases"><span class="tocnumber">2</span> <span class="toctext">Use cases</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#ImageIO"><span class="tocnumber">2.1</span> <span class="toctext">ImageIO</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#TransformIO"><span class="tocnumber">2.2</span> <span class="toctext">TransformIO</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Protocol"><span class="tocnumber">3</span> <span class="toctext">Protocol</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Typing"><span class="tocnumber">3.1</span> <span class="toctext">Typing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Managing_versions"><span class="tocnumber">4</span> <span class="toctext">Managing versions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Atomic_objects"><span class="tocnumber">4.1</span> <span class="toctext">Atomic objects</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Index"><span class="tocnumber">4.1.1</span> <span class="toctext">Index</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Size"><span class="tocnumber">4.1.2</span> <span class="toctext">Size</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Point"><span class="tocnumber">4.1.3</span> <span class="toctext">Point</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Matrix"><span class="tocnumber">4.1.4</span> <span class="toctext">Matrix</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Vector"><span class="tocnumber">4.1.5</span> <span class="toctext">Vector</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="#Composite_objects"><span class="tocnumber">4.2</span> <span class="toctext">Composite objects</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="#ImageRegion"><span class="tocnumber">4.2.1</span> <span class="toctext">ImageRegion</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#Histogram"><span class="tocnumber">4.2.2</span> <span class="toctext">Histogram</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="#ImageBase"><span class="tocnumber">4.2.3</span> <span class="toctext">ImageBase</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Image"><span class="tocnumber">4.2.4</span> <span class="toctext">Image</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#LabelObjectLine"><span class="tocnumber">4.2.5</span> <span class="toctext">LabelObjectLine</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="#LabelObject"><span class="tocnumber">4.2.6</span> <span class="toctext">LabelObject</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#LabelMap"><span class="tocnumber">4.2.7</span> <span class="toctext">LabelMap</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#Base_path"><span class="tocnumber">5</span> <span class="toctext">Base path</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="HDF5_file_format_and_library">HDF5 file format and library</span></h2>
+<p>HDF5 is both a file format and a library dedicated to reading and writing files in that format.
+</p><p>According to Wikipedia, "HDF5 include only two major types of object:
+</p>
+<ul>
+<li> Datasets, which are multidimensional arrays of a homogenous type
+</li>
+<li> Groups, which are container structures which can hold datasets and other groups
+</li>
+</ul>
+<p>This results in a truly hierarchical, filesystem-like data format. In fact, resources in an HDF5 file are even accessed using the POSIX-like syntax /path/to/resource. Metadata is stored in the form of user-defined, named attributes attached to groups and datasets. More complex storage APIs representing images and tables can then be built up using datasets, groups and attributes.
+In addition to these advances in the file format, HDF5 includes an improved type system, and dataspace objects which represent selections over dataset regions. The API is also object-oriented with respect to datasets, groups, attributes, types, dataspaces and property lists.
+Because it uses B-trees to index table objects, HDF5 works well for Time series data such as stock price series, network monitoring data, and 3D meteorological data. The bulk of the data goes into straightforward arrays (the table objects) that can be accessed much more quickly than the rows of a SQL database, but B-Tree access is available for non-array data. The HDF5 data storage mechanism can be simpler and faster than an SQL Star schema."
+</p><p>It is available in BSD-like license.
+</p>
+<h2><span class="mw-headline" id="Use_cases">Use cases</span></h2>
+<h3><span class="mw-headline" id="ImageIO">ImageIO</span></h3>
+<p>(From<a href="/Wiki/Proposals:HDF5_ImageIO" title="Proposals:HDF5 ImageIO">Proposals:HDF5_ImageIO</a>)
+</p>
+<ul>
+<li> Chunking (streaming)
+</li>
+<li> Multi-Resolution
+</li>
+<li> Multi-Channel images
+</li>
+<li> Large datasets ( Size &gt; 4Gb )
+</li>
+<li> Single experiment images of size 1024 x 1024 x 75 (XYZ), 2 channels, 1000 time-points
+</li>
+<li> 8bit and 16bit
+</li>
+<li> Images stored as 2D PNGs with filenames giving location
+</li>
+<li> Need to support optimized reading (image streaming) of a sub-volume
+</li>
+<li> Eg: Box filtering using a kernel of size 5x5x1x1x3
+</li>
+<li> Cyclic buffer optimization in the ITK reader that keeps overlapping data and only reads new data
+</li>
+<li> Multi-resolution images for heirarchical registration of multiple experimental sets
+</li>
+<li> Compression is not as important in the short term but will be needed in the long term
+</li>
+</ul>
+<h3><span class="mw-headline" id="TransformIO">TransformIO</span></h3>
+<h2><span class="mw-headline" id="Protocol">Protocol</span></h2>
+<h3><span class="mw-headline" id="Typing">Typing</span></h3>
+<p>With HDF5, everything is either a group or a dataset.
+</p><p>The actual ITK type must be stored as a string attribute called "Type" and must correspond to the RTTI typeinfo.
+</p>
+<h2><span class="mw-headline" id="Managing_versions">Managing versions</span></h2>
+<p>Each object must store its version in an attribute called "Version". The version is a string corresponding to the ITK version.
+</p>
+<h3><span class="mw-headline" id="Atomic_objects">Atomic objects</span></h3>
+<p>Atomic objects or unbreakable basic types. They are (generally?) stored as datasets in the HDF5 files.
+</p>
+<h4><span class="mw-headline" id="Index">Index</span></h4>
+<p>This is stored as a 1D dataset of Dimension elements.
+</p>
+<h4><span class="mw-headline" id="Size">Size</span></h4>
+<p>This is stored as a 1D dataset of Dimension elements.
+</p>
+<h4><span class="mw-headline" id="Point">Point</span></h4>
+<p>This is stored as a 1D dataset of Dimension elements.
+</p>
+<h4><span class="mw-headline" id="Matrix">Matrix</span></h4>
+<p>This is stored as a 2D dataset of Dimension elements.
+</p>
+<h4><span class="mw-headline" id="Vector">Vector</span></h4>
+<p>This is stored as a 1D dataset of Dimension elements.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Composite_objects">Composite objects</span></h3>
+<p>Composite objects are store as groups in the HDF5 file and are made of one or more atomic or composite objects. Each object is named in the same way it is named in the ITK classes, without the leading "m_".
+</p>
+<h4><span class="mw-headline" id="ImageRegion">ImageRegion</span></h4>
+<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1ImageRegion.html">ImageRegion</a>.
+</p>
+<table border="1">
+<tr>
+<th> Member </th>
+<th> Type
+</th></tr>
+<tr>
+<td> Index </td>
+<td> <a href="#Index"> Index</a>
+</td></tr>
+<tr>
+<td> Size </td>
+<td> <a href="#Size"> Size</a>
+</td></tr></table>
+<p>The dimension of the Size and the Index must match.
+</p>
+<h4><span class="mw-headline" id="Histogram">Histogram</span></h4>
+<p>TODO
+</p>
+<h4><span class="mw-headline" id="ImageBase">ImageBase</span></h4>
+<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1ImageBase.html">ImageBase</a>.
+</p>
+<table border="1">
+<tr>
+<th> Member </th>
+<th> Type </th>
+<th> Comment
+</th></tr>
+<tr>
+<td> Region </td>
+<td> <a href="#ImageRegion"> ImageRegion</a> </td>
+<td> This is the largest possible region shortened, because the different regions in itk::Image doesn't really make sense in a file storage.
+</td></tr>
+<tr>
+<td> Spacing </td>
+<td> <a href="#Vector"> Vector</a> </td>
+<td>
+</td></tr>
+<tr>
+<td> Origin </td>
+<td> <a href="#Point"> Point</a> </td>
+<td>
+</td></tr>
+<tr>
+<td> Direction </td>
+<td> <a href="#Matrix"> Matrix</a> </td>
+<td>
+</td></tr></table>
+<h4><span class="mw-headline" id="Image">Image</span></h4>
+<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1Image.html">Image</a>.
+Image inherits the members of <a href="#ImageBase"> ImageBase</a> and adds its own members.
+</p>
+<table border="1">
+<tr>
+<th> Member </th>
+<th> Type </th>
+<th> Comment
+</th></tr>
+<tr>
+<td> Pixels </td>
+<td> TODO </td>
+<td> which type should be used? a dataset directly? an atomic type?
+</td></tr></table>
+<p>This is not a strict requirement, but images should be saved in chunks to allow them to be efficiently streamed (both read and write) and compressed.
+The chunk size should be one on all the dimensions but x and y.
+</p>
+<h4><span class="mw-headline" id="LabelObjectLine">LabelObjectLine</span></h4>
+<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LabelObjectLine.html">LabelObjectLine</a>.
+</p>
+<table border="1">
+<tr>
+<th> Member </th>
+<th> Type </th>
+<th> Comment
+</th></tr>
+<tr>
+<td> Index </td>
+<td> <a href="#Index"> Index</a> </td>
+<td>
+</td></tr>
+<tr>
+<td> Length </td>
+<td> unsigned integer </td>
+<td> how do we describe this type?
+</td></tr></table>
+<h4><span class="mw-headline" id="LabelObject">LabelObject</span></h4>
+<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LabelObject.html">LabelObject</a>.
+</p>
+<table border="1">
+<tr>
+<th> Member </th>
+<th> Type </th>
+<th> Comment
+</th></tr>
+<tr>
+<td> Label </td>
+<td> integer </td>
+<td> how do we describe this type?
+</td></tr>
+<tr>
+<td> Lines </td>
+<td> TODO </td>
+<td> which type should be used? a group directly? an composite type?
+</td></tr></table>
+<h4><span class="mw-headline" id="LabelMap">LabelMap</span></h4>
+<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LabelMap.html">LabelMap</a>.
+LabelMap inherits the members of <a href="#ImageBase"> ImageBase</a> and adds its own members.
+</p>
+<table border="1">
+<tr>
+<th> Member </th>
+<th> Type </th>
+<th> Comment
+</th></tr>
+<tr>
+<td> LabelObjects </td>
+<td> TODO </td>
+<td> which type should be used? a group directly? an composite type?
+</td></tr></table>
+<h2><span class="mw-headline" id="Base_path">Base path</span></h2>
+<p>By default, the object of interest is stored in <b>/ITK</b>, so it can be either a atomic (HDF5 dataset) or composite object (HDF5 group). Of course it is possible to access the objects by using another or a longer path. Some classes in ITK may not provide a way to change the path of the object of interest (for example HDF5ImageIO).
+</p>
+<!-- 
+NewPP limit report
+CPU time usage: 0.044 seconds
+Real time usage: 0.044 seconds
+Preprocessor visited node count: 128/1000000
+Preprocessor generated node count: 210/1000000
+Post‐expand include size: 430/2097152 bytes
+Template argument size: 118/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9066-0!*!0!!en!*!* and timestamp 20160422172537 and revision id 39373
+ -->
+</div><div class="printfooter">
+Retrieved from "<a href="http://www.itk.org/Wiki/index.php?title=ITK/HDF5&amp;oldid=39373">http://www.itk.org/Wiki/index.php?title=ITK/HDF5&amp;oldid=39373</a>"</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<h2>Navigation menu</h2>
+	<div id="p-cactions" class="portlet" role="navigation">
+		<h3>Views</h3>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/HDF5" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk"><a href="/Wiki/Talk:ITK/HDF5" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/HDF5&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="/Wiki/index.php?title=ITK/HDF5&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal" role="navigation">
+		<h3>Personal tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FHDF5" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				<li id="pt-createaccount"><a href="/Wiki/Special:RequestAccount">Request account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo" role="banner">
+<a href="/Wiki/Main_Page" style="background-image: url(/Wiki/images/KWLogo.png);" title="Visit the main page"></a>
+	</div>
+	<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+				<li id="n-recentchanges"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet" role="search">
+		<h3><label for="searchInput">Search</label></h3>
+		<div id="searchBody" class="pBody">
+			<form action="/Wiki/index.php" id="searchform">
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input type="search" name="search" placeholder="Search" title="Search KitwarePublic [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+			</form>
+
+					</div>
+	</div>
+	<div class="portlet" id="p-tb" role="navigation">
+		<h3>Tools</h3>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/Wiki/Special:WhatLinksHere/ITK/HDF5" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/Wiki/Special:RecentChangesLinked/ITK/HDF5" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+				<li id="t-specialpages"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-permalink"><a href="/Wiki/index.php?title=ITK/HDF5&amp;oldid=39373" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-info"><a href="/Wiki/index.php?title=ITK/HDF5&amp;action=info">Page information</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-coll-print_export" role="navigation">
+		<h3>Print/export</h3>
+		<div class='pBody'>
+			<ul>
+				<li id="coll-create_a_book"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ITK%2FHDF5">Create a book</a></li>
+				<li id="coll-download-as-rl"><a href="/Wiki/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ITK%2FHDF5&amp;oldid=39373&amp;writer=rl">Download as PDF</a></li>
+				<li id="t-print"><a href="/Wiki/index.php?title=ITK/HDF5&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer" role="contentinfo">
+	<div id="f-copyrightico">
+		<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" /></a>
+	</div>
+	<div id="f-poweredbyico">
+		<a href="//www.mediawiki.org/"><img src="/Wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 27 April 2011, at 04:29.</li>
+		<li id="viewcount">This page has been accessed 3,070 times.</li>
+		<li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+		<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li>
+		<li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"ready","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":242});
+}</script></body></html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ITK/ImageRegistration - KitwarePublic</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"8258df2bf7e27d943d6fcad7","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/ImageRegistration","wgTitle":"ITK/ImageRegistration","wgCurRevisionId":35200,"wgRevisionId":35200,"wgArticleId":625,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/ImageRegistration","wgRelevantArticleId":625,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Image_Registration",
+"wgInternalRedirectTargetUrl":"/Wiki/ITK/ImageRegistration"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
+<meta name="generator" content="MediaWiki 1.37.1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
+<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/ImageRegistration"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_ImageRegistration rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
+	<div id="column-content">
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice"></div>
+			<div class="mw-indicators">
+			</div>
+			<h1 id="firstHeading" class="firstHeading"
+				>ITK/ImageRegistration</h1>
+			<div id="bodyContent" class="monobook-body">
+				<div id="siteSub">From KitwarePublic</div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Image_Registration&amp;redirect=no" class="mw-redirect" title="ITK Image Registration">ITK Image Registration</a>)</span></div>
+				
+				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
+				<!-- start content -->
+				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Image_Registration_Process"><span class="tocnumber">1</span> <span class="toctext">Image Registration Process</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Image_Registration_Components"><span class="tocnumber">2</span> <span class="toctext">Image Registration Components</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Image_Similarity_Metrics"><span class="tocnumber">2.1</span> <span class="toctext">Image Similarity Metrics</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Transforms"><span class="tocnumber">2.2</span> <span class="toctext">Transforms</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Optimizers"><span class="tocnumber">2.3</span> <span class="toctext">Optimizers</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Interpolators"><span class="tocnumber">2.4</span> <span class="toctext">Interpolators</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Parameter_Selection"><span class="tocnumber">3</span> <span class="toctext">Parameter Selection</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Optimizers_2"><span class="tocnumber">3.1</span> <span class="toctext">Optimizers</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Use_Cases"><span class="tocnumber">4</span> <span class="toctext">Use Cases</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#MultiResMIRegistration_Application"><span class="tocnumber">4.1</span> <span class="toctext">MultiResMIRegistration Application</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#CT-MRI_Brain_Registration"><span class="tocnumber">4.2</span> <span class="toctext">CT-MRI Brain Registration</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#PET-CT_Registration"><span class="tocnumber">4.3</span> <span class="toctext">PET-CT Registration</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Image_Registration_Process">Image Registration Process</span></h2>
+<ul><li>Declare types</li>
+<li>Instantiate objects via New()</li>
+<li>Connect components and images to the ImageRegistrationMethod using Set methods</li>
+<li>Set initial transform parameters</li>
+<li>Setup each component
+<ul><li>optimization parameters (e.g., for the RegularStepGradientDescent: number of iterations, minimum and maximum step lentghs, transformation parameters scales)</li>
+<li>Metric parameters (e.g., for Mutual Information: number of samples, ...)</li></ul></li>
+<li>Connect up observers</li>
+<li>StartRegistration()
+<ul><li>Inside a try/catch block</li></ul></li>
+<li>Get the last transform parameters</li>
+<li>Create registered image using ResampledImageFilter</li></ul>
+<p>Based on: <b>Lydia Ng, "Overview: ITK Registration Methods," SPIE 2005: Medical Image Registration and Segmentation with ITK, February 12, 2005</b>
+<br />
+File name: SPIE2005-RegistrationMethodsOverview.ppt <br />
+Available at:
+<a rel="nofollow" class="external free" href="http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments">http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments</a> <br />
+Last accessed on: January 06, 2006
+</p>
+<h2><span class="mw-headline" id="Image_Registration_Components">Image Registration Components</span></h2>
+<h3><span class="mw-headline" id="Image_Similarity_Metrics">Image Similarity Metrics</span></h3>
+<ul><li><a href="/Wiki/ITK_Mutual_Information" class="mw-redirect" title="ITK Mutual Information">Mutual Information</a></li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Transforms">Transforms</span></h3>
+<p>How centered transforms work:
+</p><p>p' = R (p - C)  + C  + T
+</p><p>where p' = transformed point, p = original point, C = Center, T= 
+Translation. R= Rotation matrix.
+</p><p>This can be re-written as
+</p><p>p' = Rp + Offset         where Offset = -RC + C + T
+</p><p>It is clear that for any transform with any set of parameters, it is 
+always possible to find an equivalent transform satisfying
+</p><p>p' = R(p - 0) + T'       where the Offset / translation have a value T' and the center is 0.
+</p><p>This is how transforms operate by default in ITK.
+</p><p><a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2005-July/013868.html">http://public.kitware.com/pipermail/insight-users/2005-July/013868.html</a>
+</p><p><br />
+The GetInverse method is one of those methods that changes the matrix 
+and the offset, since it has to compute the inverse matrix.
+</p><p>The correct way to invert a transformation and retain the option of 
+defining your own center is to do it in the following order:
+</p><p>transform2-&gt;SetCenter( transform1-&gt;GetCenter() );
+transform1-&gt;GetInverse( transform2 );
+</p><p>transform2 will now contain the inverse of transform1 and will contain 
+transform1's center. Flipping the two statements will produce an 
+incorrect transform.
+</p><p><a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2005-July/013866.html">http://public.kitware.com/pipermail/insight-users/2005-July/013866.html</a>
+</p>
+<h3><span class="mw-headline" id="Optimizers">Optimizers</span></h3>
+<h3><span class="mw-headline" id="Interpolators">Interpolators</span></h3>
+<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1NearestNeighborInterpolateImageFunction.html">itk::NearestNeighborInterpolateFunction</a>
+<ul><li>Assumes image is piecewise constant</li></ul></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html">itk::LinearInterpolateFunction</a>
+<ul><li>Assumes image is piecewise linear</li></ul></li>
+<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1BSplineInterpolateImageFunction.html">itk::BSplineInterpolateFunction</a>
+<ul><li>Underlying image represented using B-spline basis functions</li>
+<li>On connection, image of B-spline coefficients is computed</li></ul></li></ul>
+<p>From: <b>Lydia Ng, "Overview: ITK Registration Methods," SPIE 2005: Medical Image Registration and Segmentation with ITK, February 12, 2005</b>
+<br />
+File name: SPIE2005-RegistrationMethodsOverview.ppt <br />
+Available at:
+<a rel="nofollow" class="external free" href="http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments">http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments</a> <br />
+Last accessed on: January 06, 2006
+</p>
+<h2><span class="mw-headline" id="Parameter_Selection">Parameter Selection</span></h2>
+<h3><span class="mw-headline" id="Optimizers_2">Optimizers</span></h3>
+<p>"[...] In order to get some insight on how to tune the parameters
+for your optimization, probably the best thing to do is to
+study the characteristics of the Metric when computed over
+your images.  Please find attached a small program  that allows
+you to explore the values of the metric using a translation
+transform. You want to plot these values in order to get a
+feeling on the level of noise of the Metric, the presence
+of local minima, and the overall reproducibility of the Metric
+function itself. (you will have to convert the dimension
+to 3D, since the example was configured for 2D)
+</p><p>Please run this program first using the *same* input image
+as fixed and moving images, and let the translation be
+evaluated for a range that is close to 1/2 of the image extent
+(physical extent in millimeters).
+</p><p>Plot the values using your favorite plotting program. (anything
+from GNUPlot to Excel).
+</p><p>For examples on how these plot will look like, please take
+a  look at the course in Image Registration:
+</p>
+<pre>    <a rel="nofollow" class="external free" href="http://www.cs.rpi.edu/courses/spring04/imagereg/">http://www.cs.rpi.edu/courses/spring04/imagereg/</a>
+</pre>
+<p>In particular, look at lectures 8 and 9.
+</p><p>[...] It is not productive to fight with the registration + optimization
+until you find a way of generating relatively smooth Metric plots.
+Note that this is just an exercise on learning how to tune the
+parameters.  Once you figure out the parameters, you will not need
+to plot the Metric anymore.
+</p><p>Make sure that origin and spacing are correctly set in your images
+before you start computing all these metric plots."
+</p><p><br />
+</p>
+<pre>#include "itkImage.h"
+#include "itkImageFileReader.h"
+#include "itkImageFileWriter.h"
+#include "itkMattesMutualInformationImageToImageMetric.h"
+#include "itkTranslationTransform.h"
+#include "itkLinearInterpolateImageFunction.h"
+
+
+int main( int argc, char * argv[] )
+{
+  if( argc &lt; 3 )
+    {
+    std::cerr &lt;&lt; "Usage: " &lt;&lt; std::endl;
+    std::cerr &lt;&lt; argv[0] &lt;&lt; "  fixedImage  movingImage" &lt;&lt; std::endl;
+    return 1;
+    }
+
+  const     unsigned int   Dimension = 2;
+  typedef   unsigned char  PixelType;
+
+  typedef itk::Image&lt; PixelType, Dimension &gt;   ImageType;
+  typedef itk::Image&lt; PixelType, Dimension &gt;   ImageType;
+
+
+  typedef itk::ImageFileReader&lt; ImageType &gt;  ReaderType;
+
+  ReaderType::Pointer fixedReader  = ReaderType::New();
+  ReaderType::Pointer movingReader = ReaderType::New();
+
+  fixedReader-&gt;SetFileName(  argv[ 1 ] );
+  movingReader-&gt;SetFileName( argv[ 2 ] );
+
+  try 
+    {
+    fixedReader-&gt;Update();
+    movingReader-&gt;Update();
+    }
+  catch( itk::ExceptionObject &amp; excep )
+    {
+    std::cerr &lt;&lt; "Exception catched&#160;!" &lt;&lt; std::endl;
+    std::cerr &lt;&lt; excep &lt;&lt; std::endl;
+    }
+
+
+  typedef itk::MattesMutualInformationImageToImageMetric&lt; ImageType, ImageType &gt;  MetricType;
+
+  MetricType::Pointer metric = MetricType::New();
+
+
+
+  typedef itk::TranslationTransform&lt; double, Dimension &gt;  TransformType;
+
+  TransformType::Pointer transform = TransformType::New();
+
+
+
+  typedef itk::LinearInterpolateImageFunction&lt; 
+                                 ImageType, double &gt;  InterpolatorType;
+
+  InterpolatorType::Pointer interpolator = InterpolatorType::New();
+
+
+  metric-&gt;SetInterpolator( interpolator );
+  metric-&gt;SetTransform( transform );
+
+  metric-&gt;SetNumberOfHistogramBins( 20 );
+  metric-&gt;SetNumberOfSpatialSamples( 10000 );
+
+  transform-&gt;SetIdentity();
+
+  ImageType::ConstPointer fixedImage  = fixedReader-&gt;GetOutput();
+  ImageType::ConstPointer movingImage = movingReader-&gt;GetOutput();
+
+  metric-&gt;SetFixedImage(  fixedImage  );
+  metric-&gt;SetMovingImage( movingImage );
+
+  metric-&gt;SetFixedImageRegion(  fixedImage-&gt;GetBufferedRegion()  );
+
+  try 
+    {
+    metric-&gt;Initialize();
+    }
+  catch( itk::ExceptionObject &amp; excep )
+    {
+    std::cerr &lt;&lt; "Exception catched&#160;!" &lt;&lt; std::endl;
+    std::cerr &lt;&lt; excep &lt;&lt; std::endl;
+    return -1;
+    }
+
+
+  MetricType::TransformParametersType displacement( Dimension );
+
+  int rangex = 50;
+  int rangey = 50;
+
+  for( int dx = -rangex; dx &lt;= rangex; dx++ )
+    {
+    for( int dy = -rangey; dy &lt;= rangey; dy++ )
+      {
+      displacement[0] = dx;
+      displacement[1] = dy;
+      const double value = metric-&gt;GetValue( displacement );
+
+      std::cout &lt;&lt; dx &lt;&lt; "   "  &lt;&lt; dy &lt;&lt; "   " &lt;&lt; value &lt;&lt; std::endl;
+      }
+    }
+
+  std::cout &lt;&lt; std::endl;
+
+
+  return 0;
+}</pre>
+<p><br />
+<a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2004-April/008043.html">http://public.kitware.com/pipermail/insight-users/2004-April/008043.html</a>
+</p><p><br />
+</p><p><br />
+<b><u>Optimizer-&gt;SetScales()</u></b>
+</p><p><br />
+The rule of thumb is to figure out how much each one of those
+parameters will change for your registration, and then rescale
+that range to [-1:1].
+</p><p><br />
+</p><p><u>In the case that you know the anticipated range of translations and rotations,</u>
+</p><p><br />
+"[...]if you are doing 2D rigid you will have a 2D transform with
+three parameters:
+</p>
+<pre>     Tx  translation in millimeters along X
+     Ty  translation in millimeters along Y
+     R   rotation in radians
+</pre>
+<p>and you anticipate that your images need a correction of the
+order of 10 to 50 millimeters in translation and 0.01 to 0.1
+radians in rotation, then you should put scales:
+</p>
+<pre>     scale[0] = 1/50;     scale for Tx
+     scale[1] = 1/50;     scale for Ty
+     scale[2] = 1/0.1;    scale for Rotation
+</pre>
+<p>Of course, those will be just "good values to start with".
+You will still need to refine them according to the behavior
+of the optimizer."
+</p><p><a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2005-April/012896.html">http://public.kitware.com/pipermail/insight-users/2005-April/012896.html</a>
+</p><p><br />
+</p><p><u>In the case that you do not know the anticipated range of translations and rotations,</u>
+</p><p><br />
+"[...]the recommendation for the scaling of translation parameters versus
+rotation parameter is to use a factor proportional to the diagonal
+length of the image.
+</p><p>For your case the, you have 100 pixels with 1 mm / pixel, therefore the
+physical extent of your image is
+</p>
+<pre>       100mm  X  100mm  X 100mm
+</pre>
+<p>The diagonal the image bounding box is
+</p>
+<pre>         sqrt(3) * 100 mm
+</pre>
+<p>which is about
+</p>
+<pre>             173.2
+</pre>
+<p>and extra factor of 10X is usually useful, so you should probably try a
+factor of
+</p>
+<pre>    1.0 / ( 10 x 173.2 )  =  1.0 / 1732.0
+</pre>
+<p>You could use this same factor for the three components
+of the translation or you could estimate independent
+factor for each component in the way it is done in the
+VolView plugin.
+</p><p>Note that this factors are not expected to be computed precisely. Their
+purpose is simply to bring the rotational and translational parameters
+to a similar numerical scale.
+</p><p>By default, they are quite disproportionate since rotation
+are in radians, therefore in a range about -1:1, while translations are
+in millimeters, and for an image of 100mm you probably can expect
+translations as large as 50mm."
+</p><p><a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2004-July/009558.html">http://public.kitware.com/pipermail/insight-users/2004-July/009558.html</a>
+</p><p><br />
+</p><p>In short,
+</p><p><br />
+"[...]for an 3D AffineTransform, you get 12 parameters: the
+first 9 are the coefficients of the matrix (representing
+rotation, scale and shearing) the last 3 are the components
+of a translation vector.  You want then to provide an
+array of 12 values with the first 9 being =1.0 and the last
+three being on the range of 1.0 / the image size (in millimeters)."
+</p><p><a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2002-October/001400.html">http://public.kitware.com/pipermail/insight-users/2002-October/001400.html</a>
+</p><p><br />
+</p><p><b><u>itk::RegularStepGradientDescentOptimizer-&gt;SetMaximumStepLength()</u></b>
+</p><p><b><u>itk::RegularStepGradientDescentOptimizer-&gt;SetMinimumStepLength()</u></b>
+</p><p><br />
+"[...]There is no magic recipe for selecting one. You probably
+want to start experimenting with a small value (e.g. 0.01)
+and plot the metric evaluations during the registration
+process.  If you observe that the metric values are fairly
+monotonic, that means that you can safely increment the
+step length. Such an increment has the advantage of reducing
+the time required to reach an extrema of the cost function
+(the image metric in this case).   You could restart the
+registration with larger values of the step length, as long
+as you don't observe a noisy and/or erratic behavior on the
+Metric values.
+</p><p>Step length issues are discussed in the course material
+from the "Image Registration Techniques" course at RPI.
+</p>
+<pre>  <a rel="nofollow" class="external free" href="http://www.cs.rpi.edu/courses/spring04/imagereg/">http://www.cs.rpi.edu/courses/spring04/imagereg/</a>
+</pre>
+<p>for example in lecture 9:
+</p>
+<pre>  <a rel="nofollow" class="external free" href="http://www.cs.rpi.edu/courses/spring04/imagereg/lecture09.ppt">http://www.cs.rpi.edu/courses/spring04/imagereg/lecture09.ppt</a>"
+</pre>
+<p><br />
+<a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2004-July/009558.html">http://public.kitware.com/pipermail/insight-users/2004-July/009558.html</a>
+</p><p><br />
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Use_Cases">Use Cases</span></h2>
+<h3><span class="mw-headline" id="MultiResMIRegistration_Application">MultiResMIRegistration Application</span></h3>
+<p>"When I first implemented the Viola and Wells, the results
+I got was pretty pathetic as well. I[t] took me several months
+to finally figure out how to make it work. The main lessons
+I learnt are:
+</p>
+<ul><li>you need to do the registration in a multiresolution way</li>
+<li>you got to use lots of iterations (order of thousands per level)</li>
+<li>you got to normalize the image in some way otherwise you will need to reselect the standard deviation (parzen window) width for each and every image you want to register</li>
+<li>you can't set your learning rate too high or you will quickly walk out of your capture region</li>
+<li>you need to scale between rotation parameters and translation parameters</li></ul>
+<p>I have work out for myself a set of heuristic [...]
+</p>
+<ul><li>start the multiresolution so that coarsest level is approx isotropic</li>
+<li>don't downsample too much (say about 64x64 in-plane)</li>
+<li>normalize the image to mean zero, std of 1</li>
+<li>use stddev of approx 0.4</li>
+<li>use 50-80 sample points (using more is too costly)</li>
+<li>set translation scale to approx the size of image in mm</li>
+<li>set learning rate conservatively say 1e-3</li></ul>
+<p>I used these "rules" as a start and then refine.
+Setting these parameters is an art and will depend on the images
+and modality.
+</p><p>My heuristic for the translation scale comes from:
+if rotate about the center by x degrees how does that translate
+to motion at the edge of the image?"
+</p><p><a rel="nofollow" class="external free" href="http://www.itk.org/pipermail/insight-users/2002-April/000276.html">http://www.itk.org/pipermail/insight-users/2002-April/000276.html</a>
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="CT-MRI_Brain_Registration">CT-MRI Brain Registration</span></h3>
+<h3><span class="mw-headline" id="PET-CT_Registration">PET-CT Registration</span></h3>
+<p><br />
+</p>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr>
+<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20220120224212
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.035 seconds
+Real time usage: 0.036 seconds
+Preprocessor visited node count: 45/1000000
+Post‐expand include size: 222/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 2944/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.949      1 -total
+100.00%    2.949      1 Template:ITK/Template/Footer
+ 39.74%    1.172      1 Template:ITK/Template/Categories
+-->
+
+<!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:625-0!canonical and timestamp 20220120224212 and revision id 35200. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/ImageRegistration&amp;oldid=35200">https://public.kitware.com/Wiki/index.php?title=ITK/ImageRegistration&amp;oldid=35200</a>"</div></div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+				<!-- end content -->
+				<div class="visualClear"></div>
+			</div>
+		</div>
+		<div class="visualClear"></div>
+	</div>
+	<div id="column-one" >
+		<h2>Navigation menu</h2>
+		<div role="navigation" class="portlet" id="p-cactions" aria-labelledby="p-cactions-label">
+			<h3 id="p-cactions-label" >Page actions</h3>
+			<div class="pBody">
+				<ul >
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/ImageRegistration" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/ImageRegistration&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/ImageRegistration">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/ImageRegistration&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/ImageRegistration&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				
+				</ul>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-cactions-mobile"
+	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
+	<h3 id="p-cactions-mobile-label" >Page actions</h3>
+	<div class="pBody">
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/ImageRegistration" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/ImageRegistration&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="navigation" class="portlet" id="p-personal" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label" >Personal tools</h3>
+			<div class="pBody">
+				<ul >
+				<li id="pt-login" class="mw-list-item"><a href="/Wiki/index.php?title=Special:UserLogin&amp;returnto=ITK%2FImageRegistration" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="portlet" id="p-logo" role="banner">
+			<a href="/Wiki/Main_Page" class="mw-wiki-logo"></a>
+		</div>
+		<div id="sidebar">
+		<div role="navigation" class="portlet mw-portlet mw-portlet-navigation"
+	id="p-navigation" aria-labelledby="p-navigation-label">
+	<h3 id="p-navigation-label" >Navigation</h3>
+	<div class="pBody">
+		<ul ><li id="n-mainpage-description" class="mw-list-item"><a href="/Wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges" class="mw-list-item"><a href="/Wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage" class="mw-list-item"><a href="/Wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">Help about MediaWiki</a></li></ul>
+		
+	</div>
+</div>
+
+		<div role="search" class="portlet" id="p-search">
+			<h3 id="p-search-label" dir="ltr" lang="en-GB"><label for="searchInput">Search</label></h3>
+			<div class="pBody" id="searchBody">
+				<form action="/Wiki/index.php" id="searchform"><input type="hidden" value="Special:Search" name="title"><input type="search" name="search" placeholder="Search KitwarePublic" autocapitalize="sentences" title="Search KitwarePublic [f]" accesskey="f" id="searchInput"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/> <input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/></form>
+			</div>
+		</div>
+		<div role="navigation" class="portlet mw-portlet mw-portlet-tb"
+	id="p-tb" aria-labelledby="p-tb-label">
+	<h3 id="p-tb-label" >Tools</h3>
+	<div class="pBody">
+		<ul ><li id="t-whatlinkshere" class="mw-list-item"><a href="/Wiki/Special:WhatLinksHere/ITK/ImageRegistration" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/Wiki/Special:RecentChangesLinked/ITK/ImageRegistration" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages" class="mw-list-item"><a href="/Wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/ImageRegistration&amp;oldid=35200" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/ImageRegistration&amp;action=info" title="More information about this page">Page information</a></li></ul>
+		
+	</div>
+</div>
+
+		
+		</div>
+		<a href="#sidebar" title="Jump to navigation"
+			class="menu-toggle" id="sidebar-toggle"></a>
+		<a href="#p-personal" title="user tools"
+			class="menu-toggle" id="p-personal-toggle"></a>
+		<a href="#globalWrapper" title="back to top"
+			class="menu-toggle" id="globalWrapper-toggle"></a>
+	</div>
+	<!-- end of the left (by default at least) column -->
+	<div class="visualClear"></div>
+	<div id="footer" class="mw-footer" role="contentinfo"
+		>
+		<div id="f-copyrightico" class="footer-icons">
+			<a href="https://creativecommons.org/licenses/by/2.5/"><img src="https://creativecommons.org/images/public/somerights20.png" alt="Attribution2.5" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<div id="f-poweredbyico" class="footer-icons">
+			<a href="https://www.mediawiki.org/"><img src="/Wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/Wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /Wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a>
+		</div>
+		<ul id="f-list">
+			<li id="lastmod"> This page was last edited on 6 December 2010, at 13:09.</li><li id="copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by/2.5/">Attribution2.5</a> unless otherwise noted.</li>
+			<li id="privacy"><a href="/Wiki/KitwarePublic:Privacy_policy" title="KitwarePublic:Privacy policy">Privacy policy</a></li><li id="about"><a href="/Wiki/KitwarePublic:About" title="KitwarePublic:About">About KitwarePublic</a></li><li id="disclaimer"><a href="/Wiki/KitwarePublic:General_disclaimer" title="KitwarePublic:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div>
+</div>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.035","walltime":"0.036","ppvisitednodes":{"value":45,"limit":1000000},"postexpandincludesize":{"value":222,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":2944,"limit":5000000},"timingprofile":["100.00%    2.949      1 -total","100.00%    2.949      1 Template:ITK/Template/Footer"," 39.74%    1.172      1 Template:ITK/Template/Categories"]},"cachereport":{"timestamp":"20220120224212","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":298});});</script>
+</body></html>
