@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Complete Setup - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"e129fb4b76d76b919374a490","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Complete_Setup","wgTitle":"ITK/Complete Setup","wgCurRevisionId":45621,"wgRevisionId":45621,"wgArticleId":1668,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CompleteSetup"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Complete_Setup","wgRelevantArticleId":1668,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":
 "ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.7"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.7" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Complete_Setup rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>This page will describe setting up the Kitware tools on an Ubuntu (or any Debian, really) workstation.  I assume that you have a basic install of Debian/Ubuntu.
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>This page will describe setting up the Kitware tools on an Ubuntu (or any Debian, really) workstation.  I assume that you have a basic install of Debian/Ubuntu.
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Preparing_your_system"><span class="tocnumber">1</span> <span class="toctext">Preparing your system</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Getting_the_sources"><span class="tocnumber">2</span> <span class="toctext">Getting the sources</span></a>
@@ -48,7 +49,6 @@
 <li class="toclevel-1 tocsection-16"><a href="#Writing_a_Simple_Program_(ITK+VTK+KWWidgets)"><span class="tocnumber">9</span> <span class="toctext">Writing a Simple Program (ITK+VTK+KWWidgets)</span></a></li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="Preparing_your_system">Preparing your system</span></h2>
 <p>For ITK, install the following packages:
 </p>
@@ -180,8 +180,8 @@
 <p>Read the Examples subdirectory of the VTK distribution.  Start with VTK/Examples/Tutorial/README.txt
 </p>
 <h2><span id="Writing_a_Simple_Program_.28ITK.2BVTK.29"></span><span class="mw-headline" id="Writing_a_Simple_Program_(ITK+VTK)">Writing a Simple Program (ITK+VTK)</span></h2>
-<p><a rel="nofollow" class="external free" href="http://www.na-mic.org/Wiki/images/e/ed/Insight-VTK.ppt">http://www.na-mic.org/Wiki/images/e/ed/Insight-VTK.ppt</a>
-<a rel="nofollow" class="external free" href="http://www.itk.org/Wiki/Itk_FAQ#How_to_combine_ITK_and_VTK_in_my_application">http://www.itk.org/Wiki/Itk_FAQ#How_to_combine_ITK_and_VTK_in_my_application</a>
+<p><a class="external free" href="http://www.na-mic.org/Wiki/images/e/ed/Insight-VTK.ppt" rel="nofollow">http://www.na-mic.org/Wiki/images/e/ed/Insight-VTK.ppt</a>
+<a class="external free" href="http://www.itk.org/Wiki/Itk_FAQ#How_to_combine_ITK_and_VTK_in_my_application" rel="nofollow">http://www.itk.org/Wiki/Itk_FAQ#How_to_combine_ITK_and_VTK_in_my_application</a>
 </p><p>See also InsightApplications/Auxiliary/vtk/
 </p><p>Here's a simple program I wrote which reads in a 3D Image via ITK and uses the itkImageToVTKImageFilter to convert it to a vtkVolume and display it.
 </p><p><a href="/Wiki/Test.cxx" title="Test.cxx">test.cxx</a> <a href="/Wiki/Test.cxx_CMakeLists.txt" title="Test.cxx CMakeLists.txt">test.cxx_CMakeLists.txt</a>
@@ -190,13 +190,12 @@
 <h2><span id="Writing_a_Simple_Program_.28ITK.2BVTK.2BKWWidgets.29"></span><span class="mw-headline" id="Writing_a_Simple_Program_(ITK+VTK+KWWidgets)">Writing a Simple Program (ITK+VTK+KWWidgets)</span></h2>
 <p>I extended the above ITK+VTK example by creating a vtkKWApplication with a vtkKWRenderWidget and assigning my renderer to it.  I also added a widget which allows you to modify the opacity in real-time (vtkKWPiecewiseFunctionEditor).
 </p><p><a href="/Wiki/KWHelloWorldExample-alex.cxx" title="KWHelloWorldExample-alex.cxx">KWHelloWorldExample-alex.cxx</a> <a href="/Wiki/KWHelloWorldExample-alex.cxx_CMakeLists.txt" title="KWHelloWorldExample-alex.cxx CMakeLists.txt">KWHelloWorldExample-alex.cxx_CMakeLists.txt</a>
-</p><p><br />
+</p><p><br/>
 </p>
-<hr />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tbody><tr>
-<td bgcolor="#F9F9F9"><center><small>Complete Setup: &#91;<a href="/Wiki/index.php?title=CompleteSetup&amp;action=edit&amp;redlink=1" class="new" title="CompleteSetup (page does not exist)">Welcome</a> | <a href="/Wiki/index.php?title=Category:CompleteSetup&amp;action=edit&amp;redlink=1" class="new" title="Category:CompleteSetup (page does not exist)">Site Map</a>&#93;</small></center>
+<td bgcolor="#F9F9F9"><center><small>Complete Setup: [<a class="new" href="/Wiki/index.php?title=CompleteSetup&amp;action=edit&amp;redlink=1" title="CompleteSetup (page does not exist)">Welcome</a> | <a class="new" href="/Wiki/index.php?title=Category:CompleteSetup&amp;action=edit&amp;redlink=1" title="Category:CompleteSetup (page does not exist)">Site Map</a>]</small></center>
 </td></tr></tbody></table>
 <!-- 
 NewPP limit report
@@ -220,11 +219,10 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    3.423      1 Template:CompleteSetup/Template/Footer
  44.49%    1.523      1 Template:CompleteSetup/Template/Categories
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:1668-0!canonical and timestamp 20250330153405 and revision id 45621. Serialized with JSON.
  -->
 </div>
 <div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Complete_Setup&amp;oldid=45621">https://public.kitware.com/Wiki/index.php?title=ITK/Complete_Setup&amp;oldid=45621</a>"</div></div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/index.php?title=Category:CompleteSetup&amp;action=edit&amp;redlink=1" class="new" title="Category:CompleteSetup (page does not exist)">CompleteSetup</a></li></ul></div></div>
-				<!-- end content --></body>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a class="new" href="/Wiki/index.php?title=Category:CompleteSetup&amp;action=edit&amp;redlink=1" title="Category:CompleteSetup (page does not exist)">CompleteSetup</a></li></ul></div></div>
+<!-- end content --></body>
 </html>

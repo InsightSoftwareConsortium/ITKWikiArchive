@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Coding Style Guide - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"34ecf8cc7ce8d413ab8593bd","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Coding_Style_Guide","wgTitle":"ITK/Coding Style Guide","wgCurRevisionId":62220,"wgRevisionId":62220,"wgArticleId":1038,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia shortcut box first parameter needs fixing","Inactive project pages","ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Coding_Style_Guide","wgRelevantArticleId":1038,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,
 "wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.pygments":"ready","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Coding_Style_Guide rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><table class="metadata plainlinks ambox ambox-notice" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/30px-Historical.svg.png" decoding="async" width="30" height="38" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/45px-Historical.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/60px-Historical.svg.png 2x" /></div></td><td class="mbox-text"><span class="mbox-text-span">{{#switch:|User|User talk=<b>This user {{#ifeq:ITK|ITK/Coding Style Guide||sub}}page is currently inactive and is retained for historical reference.</b> {{#if: |It was last updated {{{last}}}.}}<br />If you want to revive discussion regarding the subject, you might try contacting <a href="/Wiki/index.php?title=User_talk:ITK&amp;action=edit&amp;redlink=1" class="new" title="User talk:ITK (page does not exist)">the user in question</a> or seeking broader input via a forum such as the <a href="http://www.wikipedia.org/wiki/Village_pump_(proposals)" class="extiw" title="wikipedia:Village pump (proposals)">village pump</a>.|#default={{#switch:{{{type}}}|policy=<b>This former <a href="http://www.wikipedia.org/wiki/Policies_and_guidelines" class="extiw" title="wikipedia:Policies and guidelines">Wikipedia policy</a>, no longer backed by community consensus, is retained for historical reference.</b>|guideline=<b>This former <a href="http://www.wikipedia.org/wiki/Policies_and_guidelines" class="extiw" title="wikipedia:Policies and guidelines">Wikipedia guideline</a>, no longer backed by community consensus, is retained for historical reference.</b>|
-<p>|section=<b>This section is currently out-of-date and may contain errors but is retained for historical reference. </b>{{#if: || For peer-reviewed, authoritative guidance on ITK, see <a rel="nofollow" class="external text" href="https://itk.org/ITKSoftwareGuide/html/">The ITK Software Guide.</a>. Additional guidance can be found via the <a rel="nofollow" class="external text" href="https://itk.org/ITK/help/mailing.html">mailing lists</a>.}}
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><table class="metadata plainlinks ambox ambox-notice" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="" decoding="async" height="38" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/30px-Historical.svg.png" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/45px-Historical.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/60px-Historical.svg.png 2x" width="30"/></div></td><td class="mbox-text"><span class="mbox-text-span">{{#switch:|User|User talk=<b>This user {{#ifeq:ITK|ITK/Coding Style Guide||sub}}page is currently inactive and is retained for historical reference.</b> {{#if: |It was last updated {{{last}}}.}}<br/>If you want to revive discussion regarding the subject, you might try contacting <a class="new" href="/Wiki/index.php?title=User_talk:ITK&amp;action=edit&amp;redlink=1" title="User talk:ITK (page does not exist)">the user in question</a> or seeking broader input via a forum such as the <a class="extiw" href="http://www.wikipedia.org/wiki/Village_pump_(proposals)" title="wikipedia:Village pump (proposals)">village pump</a>.|#default={{#switch:{{{type}}}|policy=<b>This former <a class="extiw" href="http://www.wikipedia.org/wiki/Policies_and_guidelines" title="wikipedia:Policies and guidelines">Wikipedia policy</a>, no longer backed by community consensus, is retained for historical reference.</b>|guideline=<b>This former <a class="extiw" href="http://www.wikipedia.org/wiki/Policies_and_guidelines" title="wikipedia:Policies and guidelines">Wikipedia guideline</a>, no longer backed by community consensus, is retained for historical reference.</b>|
+<p>|section=<b>This section is currently out-of-date and may contain errors but is retained for historical reference. </b>{{#if: || For peer-reviewed, authoritative guidance on ITK, see <a class="external text" href="https://itk.org/ITKSoftwareGuide/html/" rel="nofollow">The ITK Software Guide.</a>. Additional guidance can be found via the <a class="external text" href="https://itk.org/ITK/help/mailing.html" rel="nofollow">mailing lists</a>.}}
 </p>
-|woundup=<b>This page has been closed down by <a href="http://www.wikipedia.org/wiki/Consensus" class="extiw" title="wikipedia:Consensus">community consensus</a>, and is retained only for historical reference.</b> For peer-reviewed, authoritative guidance on ITK, see <a rel="nofollow" class="external text" href="https://itk.org/ITKSoftwareGuide/html/">The ITK Software Guide.</a> If you wish to restart discussion on the status of this page, seek community input via the <a rel="nofollow" class="external text" href="https://itk.org/ITK/help/mailing.html">mailing lists</a>].|#default=<b>This section is currently out-of-date and may contain errors but is retained for historical reference. </b>{{#if: || For peer-reviewed, authoritative guidance on ITK, see <a rel="nofollow" class="external text" href="https://itk.org/ITKSoftwareGuide/html/">The ITK Software Guide.</a> Additional guidance can be found via the <a rel="nofollow" class="external text" href="https://discourse.itk.org">ITK Discourse</a>.}}}} {{#if: |{{{comment}}}|}} {{#if: |It was last updated {{{last}}}.}}  }}</span></td><td class="mbox-imageright"><div style="width:52px">{{#if: | <div role="note" class="shortcutbox plainlist noprint" style="float: right; border: 1px solid #aaa; background: #fff; margin: 0; padding: 0.3em; text-align: center; line-height: 1.4em; font-weight: bold; font-size: smaller;">{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if: |<span id=""></span> }}<a href="http://www.wikipedia.org/wiki/Shortcut" class="extiw" title="wikipedia:Shortcut">Shortcut{{#if:|s}}</a>:<ul>{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if: |<li>[[ ]]</li>}}</ul>
+|woundup=<b>This page has been closed down by <a class="extiw" href="http://www.wikipedia.org/wiki/Consensus" title="wikipedia:Consensus">community consensus</a>, and is retained only for historical reference.</b> For peer-reviewed, authoritative guidance on ITK, see <a class="external text" href="https://itk.org/ITKSoftwareGuide/html/" rel="nofollow">The ITK Software Guide.</a> If you wish to restart discussion on the status of this page, seek community input via the <a class="external text" href="https://itk.org/ITK/help/mailing.html" rel="nofollow">mailing lists</a>].|#default=<b>This section is currently out-of-date and may contain errors but is retained for historical reference. </b>{{#if: || For peer-reviewed, authoritative guidance on ITK, see <a class="external text" href="https://itk.org/ITKSoftwareGuide/html/" rel="nofollow">The ITK Software Guide.</a> Additional guidance can be found via the <a class="external text" href="https://discourse.itk.org" rel="nofollow">ITK Discourse</a>.}}}} {{#if: |{{{comment}}}|}} {{#if: |It was last updated {{{last}}}.}}  }}</span></td><td class="mbox-imageright"><div style="width:52px">{{#if: | <div class="shortcutbox plainlist noprint" role="note" style="float: right; border: 1px solid #aaa; background: #fff; margin: 0; padding: 0.3em; text-align: center; line-height: 1.4em; font-weight: bold; font-size: smaller;">{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if: |<span id=""></span> }}<a class="extiw" href="http://www.wikipedia.org/wiki/Shortcut" title="wikipedia:Shortcut">Shortcut{{#if:|s}}</a>:<ul>{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if: |<li>[[ ]]</li>}}</ul>
 </div>{{#if:
 <p>| {{#ifexist:
 </p>
@@ -33,7 +34,7 @@
  }} 
 </pre>
 }} }}</div></td></tr></tbody></table><p>{{#switch:|User|User talk=|#default={{#ifeq:{{{category}}}|no||}}}}
-</p><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+</p><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#C++_Code_Style"><span class="tocnumber">1</span> <span class="toctext">C++ Code Style</span></a>
 <ul>
@@ -97,9 +98,8 @@
 </li>
 </ul>
 </div>
-
 <h1><span id="C.2B.2B_Code_Style"></span><span class="mw-headline" id="C++_Code_Style">C++ Code Style</span></h1>
-<p>The document located <a href="/Wiki/images/c/c6/ITKStyle.pdf" class="internal" title="ITKStyle.pdf">HERE</a> describes ITK coding conventions. Developers should follow these conventions when submitting contributions.
+<p>The document located <a class="internal" href="/Wiki/images/c/c6/ITKStyle.pdf" title="ITKStyle.pdf">HERE</a> describes ITK coding conventions. Developers should follow these conventions when submitting contributions.
 </p><p>ITK Style Guide
 Insight Software Consortium
 </p>
@@ -125,7 +125,7 @@ and adhere to the standards described here.
 </p><p>Please dialog with the ITK developers if you wish to add, modify, or delete the rules described in these guidelines.
 </p><p>See:
 </p>
-<pre><a rel="nofollow" class="external free" href="http://www.itk.org/ITK/help/mailing.html">http://www.itk.org/ITK/help/mailing.html</a>
+<pre><a class="external free" href="http://www.itk.org/ITK/help/mailing.html" rel="nofollow">http://www.itk.org/ITK/help/mailing.html</a>
 </pre>
 <p>for more information about joining the ITK developers mailing list. This forum is one of the best venues in which to propose changes to these style guidelines.
 </p>
@@ -194,18 +194,18 @@ addressed by ITK other than providing simple examples of applications.
 <p>The ITK build environment is CMake. CMake is an open-source, advanced cross-platform build
 system that enables developers to write simple \makefiles" (named CMakeLists.txt) that are processed
 to generated native build tools for a particular operating system/compiler combinations.
-See the CMake web pages at <a rel="nofollow" class="external free" href="http://www.cmake.org">http://www.cmake.org</a> for more information.
+See the CMake web pages at <a class="external free" href="http://www.cmake.org" rel="nofollow">http://www.cmake.org</a> for more information.
 </p>
 <h4><span class="mw-headline" id="Doxygen_Documentation_System">Doxygen Documentation System</span></h4>
 <p>The Doxygen open-source system is used to generate on-line documentation. Doxygen requires the
 embedding of simple comments in the code which is in turn extracted and formatted into documentation.
 </p><p>For more information about Doxygen, please see
 </p>
-<pre>  <a rel="nofollow" class="external free" href="http://www.stack.nl/dimitri/doxygen/">http://www.stack.nl/dimitri/doxygen/</a>
+<pre>  <a class="external free" href="http://www.stack.nl/dimitri/doxygen/" rel="nofollow">http://www.stack.nl/dimitri/doxygen/</a>
 </pre>
 <h4><span class="mw-headline" id="vnl_Math_Library">vnl Math Library</span></h4>
 <p>ITK has adopted the vnl math library. Vnl is a portion of the vxl image understanding environment.
-See <a rel="nofollow" class="external free" href="http://www.robots.ox.ac.uk/">http://www.robots.ox.ac.uk/</a> vxl/ for more information about vxl and vnl.
+See <a class="external free" href="http://www.robots.ox.ac.uk/" rel="nofollow">http://www.robots.ox.ac.uk/</a> vxl/ for more information about vxl and vnl.
 </p>
 <h4><span class="mw-headline" id="Reference_Counting">Reference Counting</span></h4>
 <p>ITK has adopted reference counting via so-called "smart pointers" to manage object references.
@@ -238,7 +238,7 @@ code file. The current copyright header and license reads as follows:
  *                                                                                                                                                               
  *=========================================================================*/
 </pre>
-<p><a href="/Wiki/ITK_Copyright_Header" class="mw-redirect" title="ITK Copyright Header">Copyright Header</a>
+<p><a class="mw-redirect" href="/Wiki/ITK_Copyright_Header" title="ITK Copyright Header">Copyright Header</a>
 </p>
 <h3><span class="mw-headline" id="File_Organization">File Organization</span></h3>
 <p>Classes are created and (usually) organized into a single class per file set. A file set consists of .h
@@ -264,7 +264,7 @@ ITK/Modules and consists of the following subdirectories:
 </p><p>Please discuss with the ITK Developers about the best Module to place your new code.
 </p><p>For a full list of Modules, please see:
 </p>
-<pre> <a rel="nofollow" class="external free" href="http://www.itk.org/Doxygen/html/modules.html">http://www.itk.org/Doxygen/html/modules.html</a>
+<pre> <a class="external free" href="http://www.itk.org/Doxygen/html/modules.html" rel="nofollow">http://www.itk.org/Doxygen/html/modules.html</a>
 </pre>
 <h3><span class="mw-headline" id="Naming_Conventions">Naming Conventions</span></h3>
 <p>In general, 
@@ -327,7 +327,7 @@ name.
 <li><b>Traits</b> A collection of template parameters used to control the instantiation of other classes.</li>
 <li><b>Transform</b> Various types of transformations including affine, procedural, and so on.</li>
 <li><b>Writer</b> A filter that terminates the data processing pipeline by writing data to disk or to a communicationsport.</li></ul>
-<p><br />
+<p><br/>
 The naming of classes is an art form; please review existing names to catch the spirit of the naming
 convention.
 </p><p>Example names include:
@@ -376,7 +376,7 @@ helping other developers.
 the capital letter T or V. Type parameters begin with the letter T while value template parameters
 begin with the letter V.
 </p>
-<ul><li>For template parameters the use of "typename" is preferred over "class".  Very early c++ compilers did not have a "typename" keyword, and "class" was repurposed for declaring template parameters.  It was later discovered that this lead to ambiguity in some valid code constructs, and the "typename" key word was added.  It is often agreed (<a rel="nofollow" class="external free" href="http://blogs.msdn.com/b/slippman/archive/2004/08/11/212768.aspx">http://blogs.msdn.com/b/slippman/archive/2004/08/11/212768.aspx</a>) that "typename" is marginally more expressive in its intent and ITK should consistently use "typename" instead of "class".</li></ul>
+<ul><li>For template parameters the use of "typename" is preferred over "class".  Very early c++ compilers did not have a "typename" keyword, and "class" was repurposed for declaring template parameters.  It was later discovered that this lead to ambiguity in some valid code constructs, and the "typename" key word was added.  It is often agreed (<a class="external free" href="http://blogs.msdn.com/b/slippman/archive/2004/08/11/212768.aspx" rel="nofollow">http://blogs.msdn.com/b/slippman/archive/2004/08/11/212768.aspx</a>) that "typename" is marginally more expressive in its intent and ITK should consistently use "typename" instead of "class".</li></ul>
 <h4><span class="mw-headline" id="Naming_Typedefs">Naming Typedefs</span></h4>
 <p>Typedefs are absolutely essential in generic programming. They significantly improve the readibility
 of code, and facilitate the declaration of complex syntactic combinations. Unfortunately, creation
@@ -410,7 +410,7 @@ discouraged). In this case, underscores are allowed to separate words.
 <h4><span class="mw-headline" id="Header_Includes">Header Includes</span></h4>
 <p>Header includes use the style
 </p>
-<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;itkImage.h&quot;</span><span class="cp"></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#include</span> <span class="cpf">"itkImage.h"</span><span class="cp"></span>
 </pre></div>
 <p>Only the required headers should be included. If an included header already includes a header for a class also used in the current file, the header for that class should not be included.
 </p><p>Header includes are preferred over forward declarations. Forward declarations are only used to prevent circular dependencies.
@@ -456,10 +456,10 @@ discouraged). In this case, underscores are allowed to separate words.
 <div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#ifndef itkImage_h</span>
 <span class="cp">#define itkImage_h</span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;itkImageBase.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkPixelTraits.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkDefaultImageTraits.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkDefaultDataAccessor.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkImageBase.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkPixelTraits.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkDefaultImageTraits.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkDefaultDataAccessor.h"</span><span class="cp"></span>
 
 <span class="k">namespace</span> <span class="n">itk</span>
 <span class="p">{</span>
@@ -484,7 +484,7 @@ discouraged). In this case, underscores are allowed to separate words.
 <span class="p">}</span> <span class="c1">// end namespace itk</span>
 
 <span class="cp">#ifndef ITK_MANUAL_INSTANTIATION</span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkImage.hxx&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkImage.hxx"</span><span class="cp"></span>
 <span class="cp">#endif</span>
 
 <span class="cp">#endif</span>
@@ -512,7 +512,7 @@ discouraged). In this case, underscores are allowed to separate words.
   <span class="p">...</span>
   <span class="p">}</span>
 </pre></div>
-<p><br />
+<p><br/>
 or when using an if:
 </p>
 <div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">if</span><span class="p">(</span> <span class="n">condition</span> <span class="p">)</span>
@@ -528,7 +528,7 @@ or when using an if:
   <span class="p">....</span>
   <span class="p">}</span>
 </pre></div>
-<p><br />
+<p><br/>
 </p>
 <h4><span class="mw-headline" id="Indentation_Inside_Braces">Indentation Inside Braces</span></h4>
 <p>Source code in the body of the brackets must be aligned along with the brackets. As in
@@ -546,7 +546,7 @@ or when using an if:
 <li>To use Doxygen effectively, the developer must insert comments, delimited in a special way, that Doxygen extracts to produce the documentation. While there are a large number of options to Doxygen, developers at a minimum should insert the following Doxygen commands.</li></ul>
 <p>See more at
 </p>
-<pre> <a rel="nofollow" class="external free" href="https://www.stack.nl/~dimitri/doxygen/manual/index.html">https://www.stack.nl/~dimitri/doxygen/manual/index.html</a>
+<pre> <a class="external free" href="https://www.stack.nl/~dimitri/doxygen/manual/index.html" rel="nofollow">https://www.stack.nl/~dimitri/doxygen/manual/index.html</a>
 </pre>
 <h4><span class="mw-headline" id="Documenting_a_Class">Documenting a Class</span></h4>
 <ul><li>Classes should be documented using the <b>class</b> and <b>brief</b> Doxygen commands, followed by the detailed class description:</li></ul>
@@ -618,13 +618,12 @@ or when using an if:
 <li>Larger documents, such as the user's or developer's guide, are written in LATEX.</li></ul>
 <h2><span class="mw-headline" id="CMake_Style">CMake Style</span></h2>
 <p>A proposal style guide for CMake variables is presented <a href="/Wiki/ITK_CMake_Style" title="ITK CMake Style">HERE</a>.
-</p><p><br />
+</p><p><br/>
 </p>
-<hr />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tbody><tr>
-<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+<td bgcolor="#F9F9F9"><center><small>ITK: [<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>]</small></center>
 </td></tr></tbody></table>
 <!-- 
 NewPP limit report
@@ -654,10 +653,9 @@ Transclusion expansion time report (%,ms,calls,template)
   0.19%    3.374      1 Template:Ombox/shortcut
   0.09%    1.645      1 Template:ITK/Template/Categories
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:1038-0!canonical and timestamp 20220628024346 and revision id 62220. Serialized with JSON.
  -->
 </div>
 <div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Coding_Style_Guide&amp;oldid=62220">https://public.kitware.com/Wiki/index.php?title=ITK/Coding_Style_Guide&amp;oldid=62220</a>"</div></div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/Wiki/index.php?title=Category:Wikipedia_shortcut_box_first_parameter_needs_fixing&amp;action=edit&amp;redlink=1" class="new" title="Category:Wikipedia shortcut box first parameter needs fixing (page does not exist)">Wikipedia shortcut box first parameter needs fixing</a></li><li><a href="/Wiki/index.php?title=Category:Inactive_project_pages&amp;action=edit&amp;redlink=1" class="new" title="Category:Inactive project pages (page does not exist)">Inactive project pages</a></li><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
-				<!-- end content --></body></html>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a class="new" href="/Wiki/index.php?title=Category:Wikipedia_shortcut_box_first_parameter_needs_fixing&amp;action=edit&amp;redlink=1" title="Category:Wikipedia shortcut box first parameter needs fixing (page does not exist)">Wikipedia shortcut box first parameter needs fixing</a></li><li><a class="new" href="/Wiki/index.php?title=Category:Inactive_project_pages&amp;action=edit&amp;redlink=1" title="Category:Inactive project pages (page does not exist)">Inactive project pages</a></li><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+<!-- end content --></body></html>

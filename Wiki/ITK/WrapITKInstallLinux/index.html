@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/WrapITKInstallLinux - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"e15eb7e57b0f85a2e1f163d7","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/WrapITKInstallLinux","wgTitle":"ITK/WrapITKInstallLinux","wgCurRevisionId":56933,"wgRevisionId":56933,"wgArticleId":12270,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/WrapITKInstallLinux","wgRelevantArticleId":12270,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript"
 :"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_WrapITKInstallLinux rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Installation_Linux"><span class="tocnumber">1</span> <span class="toctext">Installation Linux</span></a>
 <ul>
@@ -34,7 +35,6 @@
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Installation_Linux">Installation Linux</span></h1>
 <p>This section describes how to install ITK with python wrappings on Fedora 19 or 20, or Ubuntu 14.
 This can of course be extended to other Linuxes.
@@ -53,7 +53,7 @@ This can of course be extended to other Linuxes.
 <p>Clone the git repository in /home/yourname/ITK:
 </p>
 <ul><li>cd</li>
-<li>git clone <a rel="nofollow" class="external free" href="git://itk.org/ITK.git">git://itk.org/ITK.git</a></li>
+<li>git clone <a class="external free" href="git://itk.org/ITK.git" rel="nofollow">git://itk.org/ITK.git</a></li>
 <li>git checkout tags/v4.5.2  # Optional, if you want to use a stable version</li></ul>
 <p>Create a build directory, it is recommended to build outside of the source directory:
 </p>
@@ -104,13 +104,12 @@ Now, you have to tell the system that the files have been installed here.
 <li>import itk</li>
 <li>itk.Image</li></ul>
 <p>This should run without producing an error.
-</p><p><br />
+</p><p><br/>
 </p>
-<hr />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tbody><tr>
-<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+<td bgcolor="#F9F9F9"><center><small>ITK: [<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>]</small></center>
 </td></tr></tbody></table>
 <!-- 
 NewPP limit report
@@ -134,10 +133,9 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    3.951      1 Template:ITK/Template/Footer
  45.15%    1.784      1 Template:ITK/Template/Categories
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:12270-0!canonical and timestamp 20220628144101 and revision id 56933. Serialized with JSON.
  -->
 </div>
 <div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/WrapITKInstallLinux&amp;oldid=56933">https://public.kitware.com/Wiki/index.php?title=ITK/WrapITKInstallLinux&amp;oldid=56933</a>"</div></div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
-				<!-- end content --></body></html>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+<!-- end content --></body></html>

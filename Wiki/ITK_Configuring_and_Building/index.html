@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Configuring and Building - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"03589708746c3bab16fe89b1","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Configuring_and_Building","wgTitle":"ITK/Configuring and Building","wgCurRevisionId":63170,"wgRevisionId":63170,"wgArticleId":622,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Configuring_and_Building","wgRelevantArticleId":622,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":
 "ITK_Configuring_and_Building","wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Configuring_and_Building"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Configuring_and_Building"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Configuring_and_Building" rel="canonical"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Configuring_and_Building rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Configuring_And_Building"><span class="tocnumber">1</span> <span class="toctext">Configuring And Building</span></a>
 <ul>
@@ -43,12 +44,11 @@
 <li class="toclevel-1 tocsection-9"><a href="#Wrapping_ITK"><span class="tocnumber">3</span> <span class="toctext">Wrapping ITK</span></a></li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="Configuring_And_Building">Configuring And Building</span></h2>
 <p>This page describes the various ways of configuring and building ITK in common configurations.  The build instructions are generally the same across platforms.  Nuances will be noted.
 </p>
 <h3><span class="mw-headline" id="CMake">CMake</span></h3>
-<p>ITK is configured with the cross-platform configuration tool, <a rel="nofollow" class="external text" href="http://cmake.org/">CMake</a>.    CMake will create project files for your build system of choice, e.g. Makefile's, Visual Studio project files, KDevelop project files, etc.  The content of these project files is based on a domain specific language kept in <i>CMakeLists.txt</i> files distributed with the source code, the results of introspecting of the software and hardware features available on a system, and the preferences of the user building the system.
+<p>ITK is configured with the cross-platform configuration tool, <a class="external text" href="http://cmake.org/" rel="nofollow">CMake</a>.    CMake will create project files for your build system of choice, e.g. Makefile's, Visual Studio project files, KDevelop project files, etc.  The content of these project files is based on a domain specific language kept in <i>CMakeLists.txt</i> files distributed with the source code, the results of introspecting of the software and hardware features available on a system, and the preferences of the user building the system.
 </p><p>There are three executables used to perform a CMake:
 </p>
 <ol><li><b>cmake</b>: A command line interface.</li>
@@ -107,38 +107,38 @@ can exit ccmake with 'q'. However, this will not generate/change any build files
 </p><p>Navigation: You can use the arrow keys and page up, down to navigate the options.
 Alternatively, you can use the following keys:
 </p>
-<ul><li>C-n&#160;: next option</li>
-<li>C-p&#160;: previous options</li>
-<li>C-d&#160;: down one page</li>
-<li>C-u&#160;: up one page</li></ul>
+<ul><li>C-n : next option</li>
+<li>C-p : previous options</li>
+<li>C-d : down one page</li>
+<li>C-u : up one page</li></ul>
 <p>Editing options: To change an option  press enter or return. If the current
 options is a boolean, this will toggle it's value. Otherwise, ccmake will enter
 edit mode. In this mode you can edit an option using arrow keys and backspace.
 Alternatively, you can use the following keys:
 </p>
-<ul><li>C-b&#160;: back one character</li>
-<li>C-f&#160;: forward one character</li>
-<li>C-a&#160;: go to the beginning of the field</li>
-<li>C-e&#160;: go to the end of the field</li>
-<li>C-d&#160;: delete previous character</li>
-<li>C-k&#160;: kill the rest of the field</li>
-<li>Esc&#160;: Restore field (discard last changes)</li>
-<li>Enter&#160;: Leave edit mode</li></ul>
+<ul><li>C-b : back one character</li>
+<li>C-f : forward one character</li>
+<li>C-a : go to the beginning of the field</li>
+<li>C-e : go to the end of the field</li>
+<li>C-d : delete previous character</li>
+<li>C-k : kill the rest of the field</li>
+<li>Esc : Restore field (discard last changes)</li>
+<li>Enter : Leave edit mode</li></ul>
 <p>You can also delete an option by pressing 'd'
 </p><p>Commands:
 </p>
-<ul><li>q&#160;: quit ccmake without generating build files</li>
-<li>h&#160;: help, shows this screen</li>
-<li>c&#160;: process the configuration files with the current options</li>
-<li>g&#160;: generate build files and exit, only available when there are no new options</li></ul>
+<ul><li>q : quit ccmake without generating build files</li>
+<li>h : help, shows this screen</li>
+<li>c : process the configuration files with the current options</li>
+<li>g : generate build files and exit, only available when there are no new options</li></ul>
 <p>and no errors have been detected during last configuration.
 </p>
-<ul><li>l&#160;: shows last errors</li>
-<li>t&#160;: toggles advanced mode. In normal mode, only the most important options are</li></ul>
+<ul><li>l : shows last errors</li>
+<li>t : toggles advanced mode. In normal mode, only the most important options are</li></ul>
 <p>shown. In advanced mode, all options are shown. We recommend using normal mode
 unless you are an expert.
 </p>
-<ul><li>/&#160;: search for a variable name.</li></ul>
+<ul><li>/ : search for a variable name.</li></ul>
 <h4><span class="mw-headline" id="Configuration_with_the_cmake-gui_executable">Configuration with the <b>cmake-gui</b> executable</span></h4>
 <p>The cross-platform Qt GUI is a convenient platform for performing configuration.  First, enter the location of the source and build directories.  Next hit the <i>Configure</i> button.  You will be prompted to choose the compiler and the program will perform the initial configuration.   Configuration variables can be edited with the user interface.  You may need to hit the <i>Configure</i> button multiple times as new configuration options may result from previous runs.  Finally, hit the <i>Generate</i> button to produce the files for your build system of choice.  Execute the project file or Makefile generated in the build directory.
 </p>
@@ -157,13 +157,12 @@ unless you are an expert.
 <ul><li><a href="/ITKWikiArchive/Wiki/ITK/Java_Wrapping" title="ITK/Java Wrapping">Java wrapping</a> guide</li>
 <li><a href="/ITKWikiArchive/Wiki/ITK/Python_Wrapping" title="ITK/Python Wrapping">Python wrapping</a> guide</li>
 <li><a href="/ITKWikiArchive/Wiki/ITK/WrapITK_Status" title="ITK/WrapITK Status">WrapITK status</a></li></ul>
-<p><br />
+<p><br/>
 </p>
-<hr />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tbody><tr>
-<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+<td bgcolor="#F9F9F9"><center><small>ITK: [<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>]</small></center>
 </td></tr></tbody></table>
 <!-- 
 NewPP limit report
@@ -187,11 +186,10 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    3.908      1 Template:ITK/Template/Footer
  44.52%    1.740      1 Template:ITK/Template/Categories
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:622-0!canonical and timestamp 20240702011149 and revision id 63170. Serialized with JSON.
  -->
 </div>
 <div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Configuring_and_Building&amp;oldid=63170">https://public.kitware.com/Wiki/index.php?title=ITK/Configuring_and_Building&amp;oldid=63170</a>"</div></div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
-				<!-- end content --></body>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+<!-- end content --></body>
 </html>

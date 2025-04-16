@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Release 2.8 - KitwarePublic</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://www.itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="https://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://www.itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -28,7 +29,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 }</script>
 </head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Release_2_8 skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Release_2.8"><span class="tocnumber">1</span> <span class="toctext">Release 2.8</span></a>
 <ul>
@@ -44,13 +45,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Release_2.8">Release 2.8</span></h1>
 <p>This release covers the period March 15, 2006 through May 30, 2006.
 </p>
 <h2><span class="mw-headline" id="Schedule">Schedule</span></h2>
 <table border="1">
-
 <tr bgcolor="#abcdef">
 <th> Release Number </th>
 <th> Start Date </th>
@@ -81,12 +80,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> May 29 2006 </td>
 <td> May 30 2006
 </td></tr></table>
-<p><br />
+<p><br/>
 </p>
 <h2><span class="mw-headline" id="Adoption_of_CMake_2.2.3">Adoption of CMake 2.2.3</span></h2>
 <p>ITK 2.8 requires the use of CMake 2.2.3.
 </p><p>It is recommended that when moving into CMake 2.2 from CMake 2.0, the developer should start with a fresh build process.
-</p><p><br />
+</p><p><br/>
 </p>
 <h2><span class="mw-headline" id="New_Features_in_this_Release">New Features in this Release</span></h2>
 <ul>
@@ -204,7 +203,7 @@ CMakeLists.txt
     BUG: No quotes
     ENH: Forcing Concept checking to be always disabled for the Borland compiler.
     ENH: Added explicit instantiation support framework to itkMacro.h.  See this header for details and documentation of the support macros.  Added option ITK_EXPLICIT_INSTANTIATION to itkConfigure.h because it is used to determine whether ITK provides explicit instantiations, which does not change outside the project.  Added instantiations of some common core types.  Removed old explicit instantiation beta code.
-    ENH: Moving minor number to &quot;7&quot; after tagging for release ITK 2.6.
+    ENH: Moving minor number to "7" after tagging for release ITK 2.6.
 
 ITKConfig.cmake.in
     ENH: Specify ITK_GDCM_DIR and ITK_USE_SYSTEM_GDCM in the export configuration so that projects using ITK know about it
@@ -1522,7 +1521,7 @@ Code/Common/itkConstSliceIterator
     STYLE: Fixed style
 
 Code/Common/itkConstantBoundaryCondition
-    BUG: #3151. Boundary conditions could access unactivated indices in shaped iterators.&quot;
+    BUG: #3151. Boundary conditions could access unactivated indices in shaped iterators."
 
 Code/Common/itkContinuousIndex
     STYLE: Fixed style
@@ -1670,7 +1669,7 @@ Code/Common/itkImageBase
     ENH: Added explicit instantiation support framework to itkMacro.h.  See this header for details and documentation of the support macros.  Added option ITK_EXPLICIT_INSTANTIATION to itkConfigure.h because it is used to determine whether ITK provides explicit instantiations, which does not change outside the project.  Added instantiations of some common core types.  Removed old explicit instantiation beta code.
 
 Code/Common/itkImageBoundaryCondition
-    BUG: #3151. Boundary conditions could access unactivated indices in shaped iterators.&quot;
+    BUG: #3151. Boundary conditions could access unactivated indices in shaped iterators."
 
 Code/Common/itkImageFunction
     STYLE: spelling error.
@@ -3001,14 +3000,14 @@ Code/Review/Attic/itkThresholdMaximumConnectedComponentsImageFilter
     ENH: Moved code, tests and baselines from Review into Algorithms and BasicFilters.
     STYLE: various KWSTYLE issues.
     BUG: must use itkGetStaticConstMacro to access ImageDimension.
-    COMP: &quot;typename&quot; keywords missing.
+    COMP: "typename" keywords missing.
 
 Code/Review/Attic/itkThresholdMaximumConnectedComponentsImageFilter
     ENH: Moved code, tests and baselines from Review into Algorithms and BasicFilters.
     ENH: Use SetMinimumObjectSize of the RelabelComponentImageFilter instead of calculating it separately.  This changes results slightly because previously the algorithm found all objects *greater* than the minimum object size, not *greater than or equal to* as RelabelComponentImageFilter does.  Also, we now use a MinimumMaximumImageCalculator to find the range of possible thresholds to speed up the binary search and ensure that the found threshold is in this range.
     STYLE: various KWSTYLE issues.
     BUG: mid point was not computed correctly.
-    COMP: &quot;typename&quot; keywords missing.
+    COMP: "typename" keywords missing.
 
 Code/Review/xermsg
     ENH: Probability distribution library allowing for Student-t and Chi-Square pdf, cdf, and inverse cdf calculations.
@@ -3651,7 +3650,7 @@ Utilities/kwsys/ProcessUNIX
     ENH: Enabling process tree killing on Cygwin.
     ENH: Enabled process tree killing on the SGI.
     ENH: Enabled process tree killing on HP-UX.
-    ENH: Added implementation of process tree killing that runs &quot;ps&quot; to traverse the tree.
+    ENH: Added implementation of process tree killing that runs "ps" to traverse the tree.
 
 Utilities/kwsys/ProcessWin32
     BUG: Fixed deadlock condition when grandchildren are running after the children exit.
@@ -3777,15 +3776,13 @@ Wrapping/CSwig/SwigRuntime/CMakeLists.txt
 Wrapping/CSwig/Tcl/CMakeLists.txt
     ENH: Adding ITK version number to the soname of shared libraries on linux.  This is a patch from Steve Robbins given in bug#3249.
 </pre>
-<p><br />
+<p><br/>
 </p>
-<hr />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tr>
-<td bgcolor="#F9F9F9"> <center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+<td bgcolor="#F9F9F9"> <center><small>ITK: [<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>]</small></center>
 </td></tr></table>
-
 <!-- 
 NewPP limit report
 CPU time usage: 0.088 seconds
@@ -3797,9 +3794,8 @@ Template argument size: 0/2097152 bytes
 Highest expansion depth: 2/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:2171-0!*!0!!en!*!* and timestamp 20151001044348 and revision id 45935
  -->
 </div><div class="printfooter">
 Retrieved from "<a href="http://www.itk.org/Wiki/index.php?title=ITK/Release_2.8&amp;oldid=45935">http://www.itk.org/Wiki/index.php?title=ITK/Release_2.8&amp;oldid=45935</a>"</div>
-		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>		<!-- end content --></body></html>
+<div class="catlinks" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div> <!-- end content --></body></html>

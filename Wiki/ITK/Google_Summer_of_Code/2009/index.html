@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Google Summer of Code/2009 - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d15c78819a6dd2585c5ca543","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Google_Summer_of_Code/2009","wgTitle":"ITK/Google Summer of Code/2009","wgCurRevisionId":45907,"wgRevisionId":45907,"wgArticleId":3560,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Google_Summer_of_Code/2009","wgRelevantArticleId":3560,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles"
 :"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Google_Summer_of_Code_2009 rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Mentors"><span class="tocnumber">1</span> <span class="toctext">Mentors</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Projects"><span class="tocnumber">2</span> <span class="toctext">Projects</span></a>
@@ -36,7 +37,6 @@
 <li class="toclevel-1 tocsection-9"><a href="#Student_Application_Form"><span class="tocnumber">3</span> <span class="toctext">Student Application Form</span></a></li>
 </ul>
 </div>
-
 <p>Google Summer of Code
 </p>
 <h1><span class="mw-headline" id="Mentors">Mentors</span></h1>
@@ -60,8 +60,8 @@
 <li>Monsouri-Mitiche-Vazquez</li></ol></li>
 <li>Radial Basis Function (RBF) representation of level sets</li></ol>
 <p>Region-based energies, chan and vesse and multiphase level set are already in IJ
-already in IJ (<a rel="nofollow" class="external free" href="http://hdl.handle.net/1926/1532">http://hdl.handle.net/1926/1532</a>)
-already in IJ (<a rel="nofollow" class="external free" href="http://hdl.handle.net/1926/1533">http://hdl.handle.net/1926/1533</a>)
+already in IJ (<a class="external free" href="http://hdl.handle.net/1926/1532" rel="nofollow">http://hdl.handle.net/1926/1532</a>)
+already in IJ (<a class="external free" href="http://hdl.handle.net/1926/1533" rel="nofollow">http://hdl.handle.net/1926/1533</a>)
 </p><p>Level Set modelisation with RBF is an ongoing work by A. Gelas @ harvard related to his previous publications (see below). Should be delivered to the IJ by next NAMIC meeting (june 2009):
 </p>
 <ul><li>Arnaud Gelas, Olivier Bernard, Denis Friboulet, Rémy Prost. "Compactly Supported Radial Basis Functions Collocation Method for Image Segmentation". IEEE Transaction on Image Processing, vol. 16(7), pp.1873--1887 2007.</li>
@@ -75,13 +75,13 @@ already in IJ (<a rel="nofollow" class="external free" href="http://hdl.handle.n
 <p>Many contributions are still waiting in the Insight Journal to be moved in the ITK repository. The student would review the provided code, adapt it to fit the ITK coding style, and add the tests needed to reach the 100% of code coverage for the new classes.
 </p>
 <h2><span class="mw-headline" id="Add_support_to_WrapITK_for_.NET">Add support to WrapITK for .NET</span></h2>
-<p>.NET is an increasingly popular runtime environment, supporting a number of languages (<a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/vcsharp/aa336809.aspx">C#</a>, <a rel="nofollow" class="external text" href="http://www.codeplex.com/IronPython">IronPython</a>, <a rel="nofollow" class="external text" href="http://research.microsoft.com/fsharp/fsharp.aspx">F#</a>), and &#8212; with the inception of <a rel="nofollow" class="external text" href="http://mono-project.com/Main_Page">Mono</a> &#8212; a number of platforms (<a rel="nofollow" class="external text" href="http://msdn.microsoft.com/netframework/">Windows</a>, <a rel="nofollow" class="external text" href="http://www.mono-project.com/Interop_with_Native_Libraries#Linux_Shared_Library_Search_Path">Linux</a>, and <a rel="nofollow" class="external text" href="http://www.mono-project.com/Interop_with_Native_Libraries#Mac_OS_X_Framework_and_.dylib_Search_Path">Mac OS X</a>).
-</p><p>ITK functionality can currently be used from .NET languages on the Windows platform using <a rel="nofollow" class="external text" href="http://code.google.com/p/manageditk">ManagedITK</a>. Unfortunately ManagedITK has a number of drawbacks:
+<p>.NET is an increasingly popular runtime environment, supporting a number of languages (<a class="external text" href="http://msdn.microsoft.com/en-us/vcsharp/aa336809.aspx" rel="nofollow">C#</a>, <a class="external text" href="http://www.codeplex.com/IronPython" rel="nofollow">IronPython</a>, <a class="external text" href="http://research.microsoft.com/fsharp/fsharp.aspx" rel="nofollow">F#</a>), and — with the inception of <a class="external text" href="http://mono-project.com/Main_Page" rel="nofollow">Mono</a> — a number of platforms (<a class="external text" href="http://msdn.microsoft.com/netframework/" rel="nofollow">Windows</a>, <a class="external text" href="http://www.mono-project.com/Interop_with_Native_Libraries#Linux_Shared_Library_Search_Path" rel="nofollow">Linux</a>, and <a class="external text" href="http://www.mono-project.com/Interop_with_Native_Libraries#Mac_OS_X_Framework_and_.dylib_Search_Path" rel="nofollow">Mac OS X</a>).
+</p><p>ITK functionality can currently be used from .NET languages on the Windows platform using <a class="external text" href="http://code.google.com/p/manageditk" rel="nofollow">ManagedITK</a>. Unfortunately ManagedITK has a number of drawbacks:
 </p>
 <ul><li>Semi-automated/manual wrapping</li>
-<li>Windows platform only (due to use of <a rel="nofollow" class="external text" href="http://binf.gmu.edu/software/SWIG/CSharp.html">C++/CLI</a>)</li>
-<li>Maintaining separate code base branched from <a rel="nofollow" class="external text" href="http://code.google.com/p/wrapitk/">WrapITK</a> over 18 months ago</li></ul>
-<p>This project would involve adding support to <a rel="nofollow" class="external text" href="http://code.google.com/p/wrapitk/">WrapITK</a> for generating C# wrappers. Such wrappers would be callable from any .NET language on Windows, Linux, and Apple Mac platforms. This project would give the participant a good understanding of <a rel="nofollow" class="external text" href="http://www.swig.org">SWIG</a>, <a rel="nofollow" class="external text" href="http://www.cmake.org">CMake</a>, <a rel="nofollow" class="external text" href="http://code.google.com/p/wrapitk/">WrapITK</a>, and provide a good overview of ITK functionality (without having to be an ITK expert).
+<li>Windows platform only (due to use of <a class="external text" href="http://binf.gmu.edu/software/SWIG/CSharp.html" rel="nofollow">C++/CLI</a>)</li>
+<li>Maintaining separate code base branched from <a class="external text" href="http://code.google.com/p/wrapitk/" rel="nofollow">WrapITK</a> over 18 months ago</li></ul>
+<p>This project would involve adding support to <a class="external text" href="http://code.google.com/p/wrapitk/" rel="nofollow">WrapITK</a> for generating C# wrappers. Such wrappers would be callable from any .NET language on Windows, Linux, and Apple Mac platforms. This project would give the participant a good understanding of <a class="external text" href="http://www.swig.org" rel="nofollow">SWIG</a>, <a class="external text" href="http://www.cmake.org" rel="nofollow">CMake</a>, <a class="external text" href="http://code.google.com/p/wrapitk/" rel="nofollow">WrapITK</a>, and provide a good overview of ITK functionality (without having to be an ITK expert).
 </p>
 <h1><span class="mw-headline" id="Student_Application_Form">Student Application Form</span></h1>
 <p>Will contain
@@ -92,13 +92,12 @@ already in IJ (<a rel="nofollow" class="external free" href="http://hdl.handle.n
 <li>Years of experience with ITK</li>
 <li>Preferred platform of development (Linux/Windows/Mac/Other)</li>
 <li>Organization Affiliation</li></ol>
-<p><br />
+<p><br/>
 </p>
-<hr />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tbody><tr>
-<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+<td bgcolor="#F9F9F9"><center><small>ITK: [<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>]</small></center>
 </td></tr></tbody></table>
 <!-- 
 NewPP limit report
@@ -122,11 +121,10 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    3.872      1 Template:ITK/Template/Footer
  46.77%    1.811      1 Template:ITK/Template/Categories
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3560-0!canonical and timestamp 20240427082521 and revision id 45907. Serialized with JSON.
  -->
 </div>
 <div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Google_Summer_of_Code/2009&amp;oldid=45907">https://public.kitware.com/Wiki/index.php?title=ITK/Google_Summer_of_Code/2009&amp;oldid=45907</a>"</div></div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
-				<!-- end content --></body>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+<!-- end content --></body>
 </html>

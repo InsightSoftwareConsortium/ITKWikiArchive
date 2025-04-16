@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/GDBPretty - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"73a420a7dab852fecf2058dc","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/GDBPretty","wgTitle":"ITK/GDBPretty","wgCurRevisionId":36764,"wgRevisionId":36764,"wgArticleId":8148,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/GDBPretty","wgRelevantArticleId":8148,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready",
 "user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_GDBPretty rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>GDB scripts for debugging ITK or tools based on ITK.  When 'printing' an image object in the debugger, it can, e.g., instantly render and display the image in memory.  A number of text printers also exist that mimic the object-&gt;Print( std::cout ) functionality.
-</p><p><br />
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>GDB scripts for debugging ITK or tools based on ITK.  When 'printing' an image object in the debugger, it can, e.g., instantly render and display the image in memory.  A number of text printers also exist that mimic the object-&gt;Print( std::cout ) functionality.
+</p><p><br/>
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Documentation"><span class="tocnumber">1</span> <span class="toctext">Documentation</span></a>
 <ul>
@@ -37,41 +38,39 @@
 <li class="toclevel-1 tocsection-6"><a href="#Repositories"><span class="tocnumber">3</span> <span class="toctext">Repositories</span></a></li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="Documentation">Documentation</span></h2>
 <h3><span class="mw-headline" id="Articles">Articles</span></h3>
-<ul><li><a rel="nofollow" class="external text" href="http://www.kitware.com/products/html/VisualDebuggingOfITK.html">Article in The Source</a></li></ul>
+<ul><li><a class="external text" href="http://www.kitware.com/products/html/VisualDebuggingOfITK.html" rel="nofollow">Article in The Source</a></li></ul>
 <h3><span class="mw-headline" id="Examples">Examples</span></h3>
-<ul><li><a rel="nofollow" class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-libstdcxx/trees/thewtex/examples">libstdcxx example</a></li>
-<li><a rel="nofollow" class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-itk/trees/master/examples">itk example</a></li>
-<li><a rel="nofollow" class="external text" href="https://github.com/antonin07130/itkCompareProject/tree/master/Testing/Code/GDBPretty/">itkCompareProject example</a></li></ul>
+<ul><li><a class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-libstdcxx/trees/thewtex/examples" rel="nofollow">libstdcxx example</a></li>
+<li><a class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-itk/trees/master/examples" rel="nofollow">itk example</a></li>
+<li><a class="external text" href="https://github.com/antonin07130/itkCompareProject/tree/master/Testing/Code/GDBPretty/" rel="nofollow">itkCompareProject example</a></li></ul>
 <h3><span class="mw-headline" id="Screencasts">Screencasts</span></h3>
-<ul><li><a rel="nofollow" class="external text" href="http://www.archive.org/details/VisualDebuggingWithCustomPrettyPrinters">Screencast demo</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.archive.org/details/icpGui">itkCompareProject demo</a></li></ul>
+<ul><li><a class="external text" href="http://www.archive.org/details/VisualDebuggingWithCustomPrettyPrinters" rel="nofollow">Screencast demo</a></li>
+<li><a class="external text" href="http://www.archive.org/details/icpGui" rel="nofollow">itkCompareProject demo</a></li></ul>
 <h2><span class="mw-headline" id="Installation">Installation</span></h2>
 <ul><li><a href="/ITKWikiArchive/Wiki/ITK/GDBPretty/Installation/Linux" title="ITK/GDBPretty/Installation/Linux"> Linux</a></li>
-<li><a href="/Wiki/index.php?title=ITK/GDBPretty/Installation/Mac&amp;action=edit&amp;redlink=1" class="new" title="ITK/GDBPretty/Installation/Mac (page does not exist)"> Mac</a></li>
-<li><a href="/Wiki/index.php?title=ITK/GDBPretty/Installation/Windows&amp;action=edit&amp;redlink=1" class="new" title="ITK/GDBPretty/Installation/Windows (page does not exist)"> Windows</a></li></ul>
+<li><a class="new" href="/Wiki/index.php?title=ITK/GDBPretty/Installation/Mac&amp;action=edit&amp;redlink=1" title="ITK/GDBPretty/Installation/Mac (page does not exist)"> Mac</a></li>
+<li><a class="new" href="/Wiki/index.php?title=ITK/GDBPretty/Installation/Windows&amp;action=edit&amp;redlink=1" title="ITK/GDBPretty/Installation/Windows (page does not exist)"> Windows</a></li></ul>
 <h2><span class="mw-headline" id="Repositories">Repositories</span></h2>
-<ul><li><a rel="nofollow" class="external text" href="http://gitorious.org/~thewtex/gdb-python/archer-thewtex-python">Custom GDB</a>
+<ul><li><a class="external text" href="http://gitorious.org/~thewtex/gdb-python/archer-thewtex-python" rel="nofollow">Custom GDB</a>
 <ul><li>There are some changes here until we have time to push them upstream.</li></ul></li>
-<li><a rel="nofollow" class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-libstdcxx">gdb-pretty-libstdcxx</a>
+<li><a class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-libstdcxx" rel="nofollow">gdb-pretty-libstdcxx</a>
 <ul><li>Pretty printers by Tom Tromey from GDB for GNU implementation of the C++ standard library.</li></ul></li>
-<li><a rel="nofollow" class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-science">gdb-pretty-science</a>
+<li><a class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-science" rel="nofollow">gdb-pretty-science</a>
 <ul><li>Pretty printers for "science" -- mostly image viewers at the moment.</li></ul></li>
-<li><a rel="nofollow" class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-itk">gdb-pretty-itk</a>
+<li><a class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-itk" rel="nofollow">gdb-pretty-itk</a>
 <ul><li>Text and image viewer printers for the InsightToolkit.</li></ul></li>
-<li><a rel="nofollow" class="external text" href="https://github.com/gofigure2/QGoImageCompare">QGoImageCompare</a>
+<li><a class="external text" href="https://github.com/gofigure2/QGoImageCompare" rel="nofollow">QGoImageCompare</a>
 <ul><li>ITK image viewer pretty printer that synchronizes views over a session.</li></ul></li>
-<li><a rel="nofollow" class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-itk-cmake">gdb-pretty-itk-cmake</a>
+<li><a class="external text" href="http://gitorious.org/gdb-pretty/gdb-pretty-itk-cmake" rel="nofollow">gdb-pretty-itk-cmake</a>
 <ul><li>CMake module to register the ITK pretty printers in your project.</li></ul></li></ul>
-<p><br />
+<p><br/>
 </p>
-<hr />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tbody><tr>
-<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+<td bgcolor="#F9F9F9"><center><small>ITK: [<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>]</small></center>
 </td></tr></tbody></table>
 <!-- 
 NewPP limit report
@@ -95,10 +94,9 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    3.336      1 Template:ITK/Template/Footer
  46.22%    1.542      1 Template:ITK/Template/Categories
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8148-0!canonical and timestamp 20221004170519 and revision id 36764. Serialized with JSON.
  -->
 </div>
 <div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/GDBPretty&amp;oldid=36764">https://public.kitware.com/Wiki/index.php?title=ITK/GDBPretty&amp;oldid=36764</a>"</div></div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
-				<!-- end content --></body></html>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+<!-- end content --></body></html>

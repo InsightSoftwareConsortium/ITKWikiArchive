@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Procedure for Contributing New Classes and Algorithms - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c38578c90fa99bf30afd91e9","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Procedure_for_Contributing_New_Classes_and_Algorithms","wgTitle":"ITK/Procedure for Contributing New Classes and Algorithms","wgCurRevisionId":45654,"wgRevisionId":45654,"wgArticleId":1479,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Procedure_for_Contributing_New_Classes_and_Algorithms","wgRelevantArticleId":1479,"wgIsProbablyEditable":!1,
 "wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Procedure_for_Contributing_New_Classes_and_Algorithms rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#The_Rationale"><span class="tocnumber">2</span> <span class="toctext">The Rationale</span></a>
@@ -49,7 +50,7 @@
 <li class="toclevel-2 tocsection-17"><a href="#Template_for_a_Submission"><span class="tocnumber">3.3</span> <span class="toctext">Template for a Submission</span></a>
 <ul>
 <li class="toclevel-3 tocsection-18"><a href="#From_the_Subversion_Repository"><span class="tocnumber">3.3.1</span> <span class="toctext">From the Subversion Repository</span></a></li>
-<li class="toclevel-3 tocsection-19"><a href="#From_Kitware&#39;s_HTTP_site"><span class="tocnumber">3.3.2</span> <span class="toctext">From Kitware's HTTP site</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#From_Kitware's_HTTP_site"><span class="tocnumber">3.3.2</span> <span class="toctext">From Kitware's HTTP site</span></a></li>
 </ul>
 </li>
 <li class="toclevel-2 tocsection-20"><a href="#The_Automatic_Testing_System_of_the_Insight_Journal"><span class="tocnumber">3.4</span> <span class="toctext">The Automatic Testing System of the Insight Journal</span></a></li>
@@ -58,10 +59,9 @@
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Introduction">Introduction</span></h1>
-<p>This page describes the procedure for contributing new algorithms and classes to the <a rel="nofollow" class="external text" href="http://www.itk.org">Insight Toolkit</a>. 
-</p><p>The fundamental idea of this procedure is to make the <a rel="nofollow" class="external text" href="http://www.insight-journal.org/">Insight Journal</a> to be the entry gate of new classes and algorithms to the Insight Toolkit. This means that developers should not publish new classes into the Git repository unless they have been already posted as papers to the Insight Journal and have received positive reviews from the community.
+<p>This page describes the procedure for contributing new algorithms and classes to the <a class="external text" href="http://www.itk.org" rel="nofollow">Insight Toolkit</a>. 
+</p><p>The fundamental idea of this procedure is to make the <a class="external text" href="http://www.insight-journal.org/" rel="nofollow">Insight Journal</a> to be the entry gate of new classes and algorithms to the Insight Toolkit. This means that developers should not publish new classes into the Git repository unless they have been already posted as papers to the Insight Journal and have received positive reviews from the community.
 </p><p>Although this may appear as a bureaucratic procedure, it should be quite agile in practice because the Insight Journal is not a typical Journal. The time between submitting a paper and finding it posted online should be in the range of minutes for an average case, and a couple of  hours as a worst case. The time difference will depend on how computing-intensive the testing for the code is.
 </p><p>As soon as a paper is posted online, the source code that <b>must</b> accompany the paper becomes also freely available online. So the time for sharing the contributions with the community should be in all cases less than 24 hours.
 </p><p>The following sections describe the rationale behind this procedure, and the technical details on how to prepare a submission and follow it through until the source code is published in to the ITK Git repository.
@@ -78,7 +78,7 @@
 <li>Ensure that new algorithms are properly documented</li>
 <li>Gather feedback from the community</li>
 <li>Hold a continuously open forum where algorithmic, and performance issues are discussed.</li></ol>
-<p>Since some of these goals may be conflicting, it will be the prerrogative of the <a href="/Wiki/ITK_Oversight_Committee" class="mw-redirect" title="ITK Oversight Committee">Oversight Committee</a> to rule on whether one criteria should be given more importance over another one. This decisions will have to be made on a case-by-case basis.
+<p>Since some of these goals may be conflicting, it will be the prerrogative of the <a class="mw-redirect" href="/Wiki/ITK_Oversight_Committee" title="ITK Oversight Committee">Oversight Committee</a> to rule on whether one criteria should be given more importance over another one. This decisions will have to be made on a case-by-case basis.
 </p>
 <h2><span class="mw-headline" id="Technical_Correctness">Technical Correctness</span></h2>
 <p>The community should pounder whether the technical concepts behind a new algorithm are acceptable. Technical correctness requires the contributor to provide a background on the proposed algorithm. Some algorithms may be so widely known that a simple citation to a major paper describing the algorithm may be enough for satisfying the requirement of technical correctness. Less known algorithms would require more detailed descriptions in order to make the case for their technical correctness. There are no hard rules on how deep this description should be. The only clear cut criteria is that it should be clear enough  for not raising major objections from the community.
@@ -99,7 +99,7 @@
 </p><p>Lack of code coverage breaks the basic assumptions of the quality control system based on the Dart Dashboard.
 </p>
 <h2><span class="mw-headline" id="Maximize_maintainability">Maximize maintainability</span></h2>
-<p>Once <b>any</b> class is included in the toolkit, the developers community gets engaged in maintaining this code for as long as the Toolkit is available. This can easily mean five to ten years of software maintenance. It is a well known fact that 80% of the cost and effort of software development is spent in maintenance and bug fixes. The bulk of this maintenance effort is the time spend by future developers in <b>understanding</b>. Also, one code is delivered in a release, the developers have a responsibility to maintain that code's API. See the Insight Consortium's <a rel="nofollow" class="external text" href="http://insightsoftwareconsortium.org/wiki/index.php/Administration-BackwardCompatibility">Policy on Backward Compatibility</a>.
+<p>Once <b>any</b> class is included in the toolkit, the developers community gets engaged in maintaining this code for as long as the Toolkit is available. This can easily mean five to ten years of software maintenance. It is a well known fact that 80% of the cost and effort of software development is spent in maintenance and bug fixes. The bulk of this maintenance effort is the time spend by future developers in <b>understanding</b>. Also, one code is delivered in a release, the developers have a responsibility to maintain that code's API. See the Insight Consortium's <a class="external text" href="http://insightsoftwareconsortium.org/wiki/index.php/Administration-BackwardCompatibility" rel="nofollow">Policy on Backward Compatibility</a>.
 </p><p>Therefore it is quite important for any class contributed to the toolkit to be analyzed for maintainability. 
 </p><p>Among the most important criteria for maintainability
 </p>
@@ -115,14 +115,14 @@
 <p>Given that the reviews are non-anonymous and public, authors are free to have a two-way communication with the reviewers and constructibly discuss the details of the proposed algorithms. This dialog gets recorded in the form of reviews and replies to reviews and is also shared with the community. Readers of the papers can benefit from reading these dialogs since they will give them insight on the issues that may be raised by the article's content.
 </p>
 <h1><span class="mw-headline" id="The_Procedure">The Procedure</span></h1>
-<p><b>Note</b>: the methods for making contributions in the ITK community will change with ITKv4 as <a href="/Wiki/ITK_Release_4/New_Code_Contribution_Process" class="mw-redirect" title="ITK Release 4/New Code Contribution Process">made possible by the new modular architecture</a>.
+<p><b>Note</b>: the methods for making contributions in the ITK community will change with ITKv4 as <a class="mw-redirect" href="/Wiki/ITK_Release_4/New_Code_Contribution_Process" title="ITK Release 4/New Code Contribution Process">made possible by the new modular architecture</a>.
 </p>
 <h2><span class="mw-headline" id="Life_Cycle_of_a_Submission">Life Cycle of a Submission</span></h2>
-<p>The procedure for contributing new classes and algorithms to <a rel="nofollow" class="external text" href="http://www.itk.org">ITK</a> is the following.
+<p>The procedure for contributing new classes and algorithms to <a class="external text" href="http://www.itk.org" rel="nofollow">ITK</a> is the following.
 </p>
-<ol><li>An Author will propose an algorithm to the developers list or to the weekly tcon.<br />This will be an initial check to make sure that the algorithm is not already available in ITK, or that it can not be constructed with components already existing on the toolkit.</li>
+<ol><li>An Author will propose an algorithm to the developers list or to the weekly tcon.<br/>This will be an initial check to make sure that the algorithm is not already available in ITK, or that it can not be constructed with components already existing on the toolkit.</li>
 <li>The Author will prepare a working prototype of source code and test the code with realistic data.</li>
-<li>The Author will submit a paper to the Insight Journal. <br />The paper <b>must</b> include the following
+<li>The Author will submit a paper to the Insight Journal. <br/>The paper <b>must</b> include the following
 <ol><li>The source code of the prototype</li>
 <li>The source code of the test</li>
 <li>The realistic input data required by the test</li>
@@ -135,14 +135,14 @@
 <li>Every week, at the tcon, the oversight committee will select papers from the eligible set and assign developers to shepard the code into the CVS repository.</li>
 <li>Before each release, the oversight committee will select papers from the set that currently do not have the necessary number of reviews and assign additional reviewers.</li>
 <li>Before each release, the oversight committee will select papers from the eligible set and assign developers to shepard the code into the CVS repository.</li>
-<li>The shepards will request and verify that the authors have faxed a <a rel="nofollow" class="external text" href="http://www.insightsoftwareconsortium.org/documents/policies/OSCertification-v2006-02-01.pdf">copyright transfer form</a> to Josh Cates at The University of Utah.
+<li>The shepards will request and verify that the authors have faxed a <a class="external text" href="http://www.insightsoftwareconsortium.org/documents/policies/OSCertification-v2006-02-01.pdf" rel="nofollow">copyright transfer form</a> to Josh Cates at The University of Utah.
 <ol><li>Although copyright transfer isn't required for submission to the IJ, it is required for code to be distributed in ITK, using the ITK copyright.</li>
 <li>Authors of code will still be acknowledged as the author in the code's comments.</li>
 <li>Copyright transfer ensures the continued and consistent open-source licensing of ISC supported software.</li></ol></li>
 <li>The assignment will be added as a Feature Request in the bug tracker in order to ensure that it gets checked before the following release of the Toolkit.</li>
-<li>The code will be added to the Review directory and will go through code reviews according to the <a href="/Wiki/ITK_Code_Review_Check_List" class="mw-redirect" title="ITK Code Review Check List">Code Review Check List</a></li>
+<li>The code will be added to the Review directory and will go through code reviews according to the <a class="mw-redirect" href="/Wiki/ITK_Code_Review_Check_List" title="ITK Code Review Check List">Code Review Check List</a></li>
 <li>Once the code is in the ITK repository, further improvements to the code will be accompanied by short papers to the Insight Journal. The need for these papers will be limited to algorithmic improvements.</li></ol>
-<p><br />
+<p><br/>
 It must be noted that papers to the Insight Journal are not the typical burdersome papers expected by the traditional Journals. Instead, these papers are a kind of technical report addressed to future developers, maintainers and users of the code. The goal of the papers is to provide enough technical information for making possible to use the algorithms, and to maintain their code in the years to come. The papers will be focused on the reproducibility of the test, and in instructing users on how to adapt the algorithm parameters to other data scenarios.
 </p>
 <h2><span class="mw-headline" id="The_ITK_Editorial_Committee">The ITK Editorial Committee</span></h2>
@@ -152,7 +152,6 @@ It must be noted that papers to the Insight Journal are not the typical burderso
 <p>The following is the list of current editors and their subjects.
 </p>
 <table border="1">
-
 <tbody><tr bgcolor="#abcdef">
 <th>Subject Matter</th>
 <th>Editor</th>
@@ -188,7 +187,6 @@ It must be noted that papers to the Insight Journal are not the typical burderso
 </p><p>Current areas and their editors are listed following table.
 </p>
 <table border="1">
-
 <tbody><tr bgcolor="#abcdef">
 <th>Toolkit Area</th>
 <th>Editor</th>
@@ -233,29 +231,28 @@ It must be noted that papers to the Insight Journal are not the typical burderso
 <h3><span class="mw-headline" id="From_the_Subversion_Repository">From the Subversion Repository</span></h3>
 <p>The template for submitting to the Insight Journal can be found at:
 </p>
-<ul><li><a rel="nofollow" class="external free" href="http://www.na-mic.org:8000/svn/NAMICSandBox/trunk/InsightJournal/SubmissionTemplate/">http://www.na-mic.org:8000/svn/NAMICSandBox/trunk/InsightJournal/SubmissionTemplate/</a></li></ul>
+<ul><li><a class="external free" href="http://www.na-mic.org:8000/svn/NAMICSandBox/trunk/InsightJournal/SubmissionTemplate/" rel="nofollow">http://www.na-mic.org:8000/svn/NAMICSandBox/trunk/InsightJournal/SubmissionTemplate/</a></li></ul>
 <h3><span id="From_Kitware.27s_HTTP_site"></span><span class="mw-headline" id="From_Kitware's_HTTP_site">From Kitware's HTTP site</span></h3>
-<p>The template for submitting to the Insight Journal can be found <a rel="nofollow" class="external text" href="http://public.kitware.com/pub/itk/InsightJournal/">here</a>:
+<p>The template for submitting to the Insight Journal can be found <a class="external text" href="http://public.kitware.com/pub/itk/InsightJournal/" rel="nofollow">here</a>:
 </p>
-<ul><li><a rel="nofollow" class="external free" href="http://public.kitware.com/pub/itk/InsightJournal/InsightJournalSubmissionTemplate.tgz">http://public.kitware.com/pub/itk/InsightJournal/InsightJournalSubmissionTemplate.tgz</a></li>
-<li><a rel="nofollow" class="external free" href="http://public.kitware.com/pub/itk/InsightJournal/InsightJournalSubmissionTemplate.zip">http://public.kitware.com/pub/itk/InsightJournal/InsightJournalSubmissionTemplate.zip</a></li></ul>
+<ul><li><a class="external free" href="http://public.kitware.com/pub/itk/InsightJournal/InsightJournalSubmissionTemplate.tgz" rel="nofollow">http://public.kitware.com/pub/itk/InsightJournal/InsightJournalSubmissionTemplate.tgz</a></li>
+<li><a class="external free" href="http://public.kitware.com/pub/itk/InsightJournal/InsightJournalSubmissionTemplate.zip" rel="nofollow">http://public.kitware.com/pub/itk/InsightJournal/InsightJournalSubmissionTemplate.zip</a></li></ul>
 <h2><span class="mw-headline" id="The_Automatic_Testing_System_of_the_Insight_Journal">The Automatic Testing System of the Insight Journal</span></h2>
 <p>The infrastructure of the Insight Journal will automatically test the source code of a submitted paper.
 </p><p>A full description of the testing environment is described in the following link
-</p><p><a rel="nofollow" class="external free" href="http://www.insight-journal.org/help">http://www.insight-journal.org/help</a>
+</p><p><a class="external free" href="http://www.insight-journal.org/help" rel="nofollow">http://www.insight-journal.org/help</a>
 </p>
 <h2><span class="mw-headline" id="How_to_Prepare_a_Submission_to_the_Insight_Journal">How to Prepare a Submission to the Insight Journal</span></h2>
 <p>The full description of the process on how to prepare a submission to the Insight Journal can be found at
-<a rel="nofollow" class="external free" href="http://www.insight-journal.org/help/submission">http://www.insight-journal.org/help/submission</a>
+<a class="external free" href="http://www.insight-journal.org/help/submission" rel="nofollow">http://www.insight-journal.org/help/submission</a>
 </p><p>Templates for papers and CMakeLists files are available in this link.
-</p><p>For instructions on inserting code into your paper (using the LaTeX package "listings") see <a rel="nofollow" class="external text" href="http://www.itk.org/pipermail/insight-users/2009-January/028763.html">this</a> Insight Users post.
-</p><p><br />
+</p><p>For instructions on inserting code into your paper (using the LaTeX package "listings") see <a class="external text" href="http://www.itk.org/pipermail/insight-users/2009-January/028763.html" rel="nofollow">this</a> Insight Users post.
+</p><p><br/>
 </p>
-<hr />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tbody><tr>
-<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+<td bgcolor="#F9F9F9"><center><small>ITK: [<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>]</small></center>
 </td></tr></tbody></table>
 <!-- 
 NewPP limit report
@@ -279,10 +276,9 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    3.898      1 Template:ITK/Template/Footer
  43.61%    1.700      1 Template:ITK/Template/Categories
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:1479-0!canonical and timestamp 20220517083902 and revision id 45654. Serialized with JSON.
  -->
 </div>
 <div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Procedure_for_Contributing_New_Classes_and_Algorithms&amp;oldid=45654">https://public.kitware.com/Wiki/index.php?title=ITK/Procedure_for_Contributing_New_Classes_and_Algorithms&amp;oldid=45654</a>"</div></div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
-				<!-- end content --></body></html>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+<!-- end content --></body></html>

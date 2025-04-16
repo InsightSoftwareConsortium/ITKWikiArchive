@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/ImageRegistration - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"8258df2bf7e27d943d6fcad7","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/ImageRegistration","wgTitle":"ITK/ImageRegistration","wgCurRevisionId":35200,"wgRevisionId":35200,"wgArticleId":625,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/ImageRegistration","wgRelevantArticleId":625,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Image_Registration",
 "wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/ImageRegistration"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/ImageRegistration"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/ImageRegistration" rel="canonical"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_ImageRegistration rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Image_Registration_Process"><span class="tocnumber">1</span> <span class="toctext">Image Registration Process</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Image_Registration_Components"><span class="tocnumber">2</span> <span class="toctext">Image Registration Components</span></a>
@@ -47,7 +48,6 @@
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="Image_Registration_Process">Image Registration Process</span></h2>
 <ul><li>Declare types</li>
 <li>Instantiate objects via New()</li>
@@ -62,16 +62,16 @@
 <li>Get the last transform parameters</li>
 <li>Create registered image using ResampledImageFilter</li></ul>
 <p>Based on: <b>Lydia Ng, "Overview: ITK Registration Methods," SPIE 2005: Medical Image Registration and Segmentation with ITK, February 12, 2005</b>
-<br />
-File name: SPIE2005-RegistrationMethodsOverview.ppt <br />
+<br/>
+File name: SPIE2005-RegistrationMethodsOverview.ppt <br/>
 Available at:
-<a rel="nofollow" class="external free" href="http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments">http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments</a> <br />
+<a class="external free" href="http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments" rel="nofollow">http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments</a> <br/>
 Last accessed on: January 06, 2006
 </p>
 <h2><span class="mw-headline" id="Image_Registration_Components">Image Registration Components</span></h2>
 <h3><span class="mw-headline" id="Image_Similarity_Metrics">Image Similarity Metrics</span></h3>
-<ul><li><a href="/Wiki/ITK_Mutual_Information" class="mw-redirect" title="ITK Mutual Information">Mutual Information</a></li></ul>
-<p><br />
+<ul><li><a class="mw-redirect" href="/Wiki/ITK_Mutual_Information" title="ITK Mutual Information">Mutual Information</a></li></ul>
+<p><br/>
 </p>
 <h3><span class="mw-headline" id="Transforms">Transforms</span></h3>
 <p>How centered transforms work:
@@ -84,8 +84,8 @@ Translation. R= Rotation matrix.
 always possible to find an equivalent transform satisfying
 </p><p>p' = R(p - 0) + T'       where the Offset / translation have a value T' and the center is 0.
 </p><p>This is how transforms operate by default in ITK.
-</p><p><a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2005-July/013868.html">http://public.kitware.com/pipermail/insight-users/2005-July/013868.html</a>
-</p><p><br />
+</p><p><a class="external free" href="http://public.kitware.com/pipermail/insight-users/2005-July/013868.html" rel="nofollow">http://public.kitware.com/pipermail/insight-users/2005-July/013868.html</a>
+</p><p><br/>
 The GetInverse method is one of those methods that changes the matrix 
 and the offset, since it has to compute the inverse matrix.
 </p><p>The correct way to invert a transformation and retain the option of 
@@ -95,22 +95,22 @@ transform1-&gt;GetInverse( transform2 );
 </p><p>transform2 will now contain the inverse of transform1 and will contain 
 transform1's center. Flipping the two statements will produce an 
 incorrect transform.
-</p><p><a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2005-July/013866.html">http://public.kitware.com/pipermail/insight-users/2005-July/013866.html</a>
+</p><p><a class="external free" href="http://public.kitware.com/pipermail/insight-users/2005-July/013866.html" rel="nofollow">http://public.kitware.com/pipermail/insight-users/2005-July/013866.html</a>
 </p>
 <h3><span class="mw-headline" id="Optimizers">Optimizers</span></h3>
 <h3><span class="mw-headline" id="Interpolators">Interpolators</span></h3>
-<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1NearestNeighborInterpolateImageFunction.html">itk::NearestNeighborInterpolateFunction</a>
+<ul><li><a class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1NearestNeighborInterpolateImageFunction.html" rel="nofollow">itk::NearestNeighborInterpolateFunction</a>
 <ul><li>Assumes image is piecewise constant</li></ul></li>
-<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html">itk::LinearInterpolateFunction</a>
+<li><a class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html" rel="nofollow">itk::LinearInterpolateFunction</a>
 <ul><li>Assumes image is piecewise linear</li></ul></li>
-<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1BSplineInterpolateImageFunction.html">itk::BSplineInterpolateFunction</a>
+<li><a class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1BSplineInterpolateImageFunction.html" rel="nofollow">itk::BSplineInterpolateFunction</a>
 <ul><li>Underlying image represented using B-spline basis functions</li>
 <li>On connection, image of B-spline coefficients is computed</li></ul></li></ul>
 <p>From: <b>Lydia Ng, "Overview: ITK Registration Methods," SPIE 2005: Medical Image Registration and Segmentation with ITK, February 12, 2005</b>
-<br />
-File name: SPIE2005-RegistrationMethodsOverview.ppt <br />
+<br/>
+File name: SPIE2005-RegistrationMethodsOverview.ppt <br/>
 Available at:
-<a rel="nofollow" class="external free" href="http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments">http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments</a> <br />
+<a class="external free" href="http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments" rel="nofollow">http://www.itk.org/cgi-bin/cvsweb.cgi/CourseWare/Training/?root=InsightDocuments</a> <br/>
 Last accessed on: January 06, 2006
 </p>
 <h2><span class="mw-headline" id="Parameter_Selection">Parameter Selection</span></h2>
@@ -134,7 +134,7 @@ from GNUPlot to Excel).
 </p><p>For examples on how these plot will look like, please take
 a  look at the course in Image Registration:
 </p>
-<pre>    <a rel="nofollow" class="external free" href="http://www.cs.rpi.edu/courses/spring04/imagereg/">http://www.cs.rpi.edu/courses/spring04/imagereg/</a>
+<pre>    <a class="external free" href="http://www.cs.rpi.edu/courses/spring04/imagereg/" rel="nofollow">http://www.cs.rpi.edu/courses/spring04/imagereg/</a>
 </pre>
 <p>In particular, look at lectures 8 and 9.
 </p><p>[...] It is not productive to fight with the registration + optimization
@@ -144,7 +144,7 @@ parameters.  Once you figure out the parameters, you will not need
 to plot the Metric anymore.
 </p><p>Make sure that origin and spacing are correctly set in your images
 before you start computing all these metric plots."
-</p><p><br />
+</p><p><br/>
 </p>
 <pre>#include "itkImage.h"
 #include "itkImageFileReader.h"
@@ -185,7 +185,7 @@ int main( int argc, char * argv[] )
     }
   catch( itk::ExceptionObject &amp; excep )
     {
-    std::cerr &lt;&lt; "Exception catched&#160;!" &lt;&lt; std::endl;
+    std::cerr &lt;&lt; "Exception catched !" &lt;&lt; std::endl;
     std::cerr &lt;&lt; excep &lt;&lt; std::endl;
     }
 
@@ -230,7 +230,7 @@ int main( int argc, char * argv[] )
     }
   catch( itk::ExceptionObject &amp; excep )
     {
-    std::cerr &lt;&lt; "Exception catched&#160;!" &lt;&lt; std::endl;
+    std::cerr &lt;&lt; "Exception catched !" &lt;&lt; std::endl;
     std::cerr &lt;&lt; excep &lt;&lt; std::endl;
     return -1;
     }
@@ -258,18 +258,18 @@ int main( int argc, char * argv[] )
 
   return 0;
 }</pre>
-<p><br />
-<a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2004-April/008043.html">http://public.kitware.com/pipermail/insight-users/2004-April/008043.html</a>
-</p><p><br />
-</p><p><br />
+<p><br/>
+<a class="external free" href="http://public.kitware.com/pipermail/insight-users/2004-April/008043.html" rel="nofollow">http://public.kitware.com/pipermail/insight-users/2004-April/008043.html</a>
+</p><p><br/>
+</p><p><br/>
 <b><u>Optimizer-&gt;SetScales()</u></b>
-</p><p><br />
+</p><p><br/>
 The rule of thumb is to figure out how much each one of those
 parameters will change for your registration, and then rescale
 that range to [-1:1].
-</p><p><br />
+</p><p><br/>
 </p><p><u>In the case that you know the anticipated range of translations and rotations,</u>
-</p><p><br />
+</p><p><br/>
 "[...]if you are doing 2D rigid you will have a 2D transform with
 three parameters:
 </p>
@@ -288,10 +288,10 @@ radians in rotation, then you should put scales:
 <p>Of course, those will be just "good values to start with".
 You will still need to refine them according to the behavior
 of the optimizer."
-</p><p><a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2005-April/012896.html">http://public.kitware.com/pipermail/insight-users/2005-April/012896.html</a>
-</p><p><br />
+</p><p><a class="external free" href="http://public.kitware.com/pipermail/insight-users/2005-April/012896.html" rel="nofollow">http://public.kitware.com/pipermail/insight-users/2005-April/012896.html</a>
+</p><p><br/>
 </p><p><u>In the case that you do not know the anticipated range of translations and rotations,</u>
-</p><p><br />
+</p><p><br/>
 "[...]the recommendation for the scaling of translation parameters versus
 rotation parameter is to use a factor proportional to the diagonal
 length of the image.
@@ -324,21 +324,21 @@ to a similar numerical scale.
 are in radians, therefore in a range about -1:1, while translations are
 in millimeters, and for an image of 100mm you probably can expect
 translations as large as 50mm."
-</p><p><a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2004-July/009558.html">http://public.kitware.com/pipermail/insight-users/2004-July/009558.html</a>
-</p><p><br />
+</p><p><a class="external free" href="http://public.kitware.com/pipermail/insight-users/2004-July/009558.html" rel="nofollow">http://public.kitware.com/pipermail/insight-users/2004-July/009558.html</a>
+</p><p><br/>
 </p><p>In short,
-</p><p><br />
+</p><p><br/>
 "[...]for an 3D AffineTransform, you get 12 parameters: the
 first 9 are the coefficients of the matrix (representing
 rotation, scale and shearing) the last 3 are the components
 of a translation vector.  You want then to provide an
 array of 12 values with the first 9 being =1.0 and the last
 three being on the range of 1.0 / the image size (in millimeters)."
-</p><p><a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2002-October/001400.html">http://public.kitware.com/pipermail/insight-users/2002-October/001400.html</a>
-</p><p><br />
+</p><p><a class="external free" href="http://public.kitware.com/pipermail/insight-users/2002-October/001400.html" rel="nofollow">http://public.kitware.com/pipermail/insight-users/2002-October/001400.html</a>
+</p><p><br/>
 </p><p><b><u>itk::RegularStepGradientDescentOptimizer-&gt;SetMaximumStepLength()</u></b>
 </p><p><b><u>itk::RegularStepGradientDescentOptimizer-&gt;SetMinimumStepLength()</u></b>
-</p><p><br />
+</p><p><br/>
 "[...]There is no magic recipe for selecting one. You probably
 want to start experimenting with a small value (e.g. 0.01)
 and plot the metric evaluations during the registration
@@ -353,16 +353,16 @@ Metric values.
 </p><p>Step length issues are discussed in the course material
 from the "Image Registration Techniques" course at RPI.
 </p>
-<pre>  <a rel="nofollow" class="external free" href="http://www.cs.rpi.edu/courses/spring04/imagereg/">http://www.cs.rpi.edu/courses/spring04/imagereg/</a>
+<pre>  <a class="external free" href="http://www.cs.rpi.edu/courses/spring04/imagereg/" rel="nofollow">http://www.cs.rpi.edu/courses/spring04/imagereg/</a>
 </pre>
 <p>for example in lecture 9:
 </p>
-<pre>  <a rel="nofollow" class="external free" href="http://www.cs.rpi.edu/courses/spring04/imagereg/lecture09.ppt">http://www.cs.rpi.edu/courses/spring04/imagereg/lecture09.ppt</a>"
+<pre>  <a class="external free" href="http://www.cs.rpi.edu/courses/spring04/imagereg/lecture09.ppt" rel="nofollow">http://www.cs.rpi.edu/courses/spring04/imagereg/lecture09.ppt</a>"
 </pre>
-<p><br />
-<a rel="nofollow" class="external free" href="http://public.kitware.com/pipermail/insight-users/2004-July/009558.html">http://public.kitware.com/pipermail/insight-users/2004-July/009558.html</a>
-</p><p><br />
-</p><p><br />
+<p><br/>
+<a class="external free" href="http://public.kitware.com/pipermail/insight-users/2004-July/009558.html" rel="nofollow">http://public.kitware.com/pipermail/insight-users/2004-July/009558.html</a>
+</p><p><br/>
+</p><p><br/>
 </p>
 <h2><span class="mw-headline" id="Use_Cases">Use Cases</span></h2>
 <h3><span class="mw-headline" id="MultiResMIRegistration_Application">MultiResMIRegistration Application</span></h3>
@@ -391,18 +391,17 @@ and modality.
 </p><p>My heuristic for the translation scale comes from:
 if rotate about the center by x degrees how does that translate
 to motion at the edge of the image?"
-</p><p><a rel="nofollow" class="external free" href="http://www.itk.org/pipermail/insight-users/2002-April/000276.html">http://www.itk.org/pipermail/insight-users/2002-April/000276.html</a>
-</p><p><br />
+</p><p><a class="external free" href="http://www.itk.org/pipermail/insight-users/2002-April/000276.html" rel="nofollow">http://www.itk.org/pipermail/insight-users/2002-April/000276.html</a>
+</p><p><br/>
 </p>
 <h3><span class="mw-headline" id="CT-MRI_Brain_Registration">CT-MRI Brain Registration</span></h3>
 <h3><span class="mw-headline" id="PET-CT_Registration">PET-CT Registration</span></h3>
-<p><br />
+<p><br/>
 </p>
-<hr />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tbody><tr>
-<td bgcolor="#F9F9F9"><center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+<td bgcolor="#F9F9F9"><center><small>ITK: [<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>]</small></center>
 </td></tr></tbody></table>
 <!-- 
 NewPP limit report
@@ -426,10 +425,9 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    2.949      1 Template:ITK/Template/Footer
  39.74%    1.172      1 Template:ITK/Template/Categories
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:625-0!canonical and timestamp 20220120224212 and revision id 35200. Serialized with JSON.
  -->
 </div>
 <div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/ImageRegistration&amp;oldid=35200">https://public.kitware.com/Wiki/index.php?title=ITK/ImageRegistration&amp;oldid=35200</a>"</div></div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
-				<!-- end content --></body></html>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>
+<!-- end content --></body></html>

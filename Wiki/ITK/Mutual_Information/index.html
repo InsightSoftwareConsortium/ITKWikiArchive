@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Mutual Information - KitwarePublic</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://www.itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="https://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=ext.math.styles%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://www.itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=ext.math.styles%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -28,10 +29,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 }</script>
 </head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Mutual_Information skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><h2><span class="mw-headline" id="What_is_Mutual_Information">What is Mutual Information</span></h2>
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><h2><span class="mw-headline" id="What_is_Mutual_Information">What is Mutual Information</span></h2>
 <p>When you consider the pixel values of images A and B to be random variables, "a" and "b"; and estimate the entropy of their distributions you get
-</p><p><img class="mwe-math-fallback-png-inline tex" alt="" src="/Wiki/images/math/6/d/d/6dd7f7bf76639f3cf12edbe8ef87b3f2.png" />
-</p><p><img class="mwe-math-fallback-png-inline tex" alt="" src="/Wiki/images/math/9/7/3/973e1146f4a3b6aaa9ca01fd795d7721.png" />
+</p><p><img alt="" class="mwe-math-fallback-png-inline tex" src="/Wiki/images/math/6/d/d/6dd7f7bf76639f3cf12edbe8ef87b3f2.png"/>
+</p><p><img alt="" class="mwe-math-fallback-png-inline tex" src="/Wiki/images/math/9/7/3/973e1146f4a3b6aaa9ca01fd795d7721.png"/>
 </p><p>Note that log2 is the logarithm in base two, not the natural logarigthm that unfortunately is commonly used.
 </p><p>When you use log2(), the Units of entropy are "bit"s. It is again unfortunate that the usage of "bit" as unit of information measurement has been distorted in order to become the a symbol for binary encoding, o a unit of measurement for raw capacity of memory storage (along with its derivatives the byte, KiloByte, MegaByte... )
 </p><p>A digital image whose pixels are encoded in pixels of M bits, can have 2^M different grayscale values in a pixel and therfore its entropy can go up to the maximum theoretical value of log2(2^M) which, not coincidentally is equal to M.
@@ -43,9 +44,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <pre>         Lena Entropy  = 7.44 bits
 </pre>
-<p><br />
+<p><br/>
 Now if you consider the mutual information measure, you have the following situation:
-</p><p><br />
+</p><p><br/>
 </p>
 <pre>     Mutual Information = H(A) + H(B) - H(A,B)
 </pre>
@@ -55,14 +56,14 @@ Now if you consider the mutual information measure, you have the following situa
 </p>
 <pre>      H(A,B) is in theory bounded in [0:M2]
 </pre>
-<p><br />
-Note that if you use histograms with *less* bins than the actual digital encoding of the image, then your estimation of Entropy is bounded by the number of bins in your Histogram.&#160;!
+<p><br/>
+Note that if you use histograms with *less* bins than the actual digital encoding of the image, then your estimation of Entropy is bounded by the number of bins in your Histogram. !
 </p><p>For example if you use a histogram with 20 bins instead of 256 in order to estimate Lena's Entropy you will not get 7.44 bits, but only
 </p>
 <pre>                  3.99 bits
 </pre>
 <p>that reflects the fact that by quantizing the gray scale values in larger bins you lose information from the original image.
-</p><p><br />
+</p><p><br/>
 </p><p>For the particular case of Self-similarity, the entropies H(A) and H(B) are expected to be pretty much the same. Their difference arise only from interpolation errors and from the eventual effect of one image having corners outside of the extent of the other (e.g. if the image is rotated).
 </p><p>So, in general Mutual Information will give you
 </p>
@@ -81,10 +82,10 @@ Note that if you use histograms with *less* bins than the actual digital encodin
 </p>
 <pre>                     7.44 bits
 </pre>
-<p><br />
+<p><br/>
 Note that the reason why the measure of Mutual Information is reported as a negative number in ITK is because traditionally that has been used as a cost function for minimization.
 </p><p>However, in principle, Mutual information should be reported in the range [0,H(A)], where zero corresponds to two totally uncorrelated images and H(A) corresponds to perfectly correlated images, case in which H(A)=H(B).
-</p><p><br />
+</p><p><br/>
 To summarize, note that ITK is not using log2() but just log(), and note that the measure is reported as a negative number.
 </p><p>We just added a simple example for computing the Entropy of the pixel value distribution of an image to the directory:
 </p>
@@ -92,15 +93,13 @@ To summarize, note that ITK is not using log2() but just log(), and note that th
                          ImageEntropy1.cxx
 </pre>
 <p>You may find interesting to play with this example. E.g. you should try the effect of changing the number of bins in the histogram.
-</p><p><br />
+</p><p><br/>
 </p>
-<hr />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-
+<hr/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
 <tr>
-<td bgcolor="#F9F9F9"> <center><small>ITK: &#91;<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>&#93;</small></center>
+<td bgcolor="#F9F9F9"> <center><small>ITK: [<a href="/Wiki/ITK" title="ITK">Welcome</a> | <a href="/Wiki/Category:ITK" title="Category:ITK">Site Map</a>]</small></center>
 </td></tr></table>
-
 <!-- 
 NewPP limit report
 CPU time usage: 0.024 seconds
@@ -112,9 +111,8 @@ Template argument size: 0/2097152 bytes
 Highest expansion depth: 2/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:626-0!*!0!*!*!*!*!math=0 and timestamp 20150924071438 and revision id 45915
  -->
 </div><div class="printfooter">
 Retrieved from "<a href="http://www.itk.org/Wiki/index.php?title=ITK/Mutual_Information&amp;oldid=45915">http://www.itk.org/Wiki/index.php?title=ITK/Mutual_Information&amp;oldid=45915</a>"</div>
-		<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div>		<!-- end content --></body></html>
+<div class="catlinks" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/Category:ITK" title="Category:ITK">ITK</a></li></ul></div></div> <!-- end content --></body></html>
