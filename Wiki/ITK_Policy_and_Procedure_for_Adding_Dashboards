@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>ITK/Policy and Procedure for Adding Dashboards - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"da9df6d0c88ca25c62801949","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Policy_and_Procedure_for_Adding_Dashboards","wgTitle":"ITK/Policy and Procedure for Adding Dashboards","wgCurRevisionId":56358,"wgRevisionId":56358,"wgArticleId":3056,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Policy_and_Procedure_for_Adding_Dashboards","wgRelevantArticleId":3056,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],
-"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Policy_and_Procedure_for_Adding_Dashboards","wgInternalRedirectTargetUrl":"/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Policy_and_Procedure_for_Adding_Dashboards","wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
 <link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
@@ -18,7 +18,7 @@
 <link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
 <link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards"/>
+<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Policy_and_Procedure_for_Adding_Dashboards rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
 	<div id="column-content">
@@ -112,11 +112,11 @@ Note:
 <li>MinSizeRel -</li>
 <li>Release - Enable optimization (e.g. -O3 in gcc), disable debugging symbols.</li></ul>
 <h2><span class="mw-headline" id="Procedure">Procedure</span></h2>
-<p>The recommended method for dashboard submission is using <a rel="nofollow" class="external text" href="http://www.cmake.org/Wiki/CMake_Scripting_Of_CTest">ctest scripts</a>. Specifically, a small script that includes itk_common.cmake to do the bulk of the work. See <a rel="nofollow" class="external text" href="http://www.itk.org/Wiki/ITK/Git/Dashboard">here for itk_common.cmake details</a>. (See also the commented notes at the top of that script.)
+<p>The recommended method for dashboard submission is using <a rel="nofollow" class="external text" href="http://www.cmake.org/Wiki/CMake_Scripting_Of_CTest">ctest scripts</a>. Specifically, a small script that includes itk_common.cmake to do the bulk of the work. See <a rel="nofollow" class="external text" href="http://www.itk.org/ITKWikiArchive/Wiki/ITK/Git/Dashboard">here for itk_common.cmake details</a>. (See also the commented notes at the top of that script.)
 </p>
 <h3><span class="mw-headline" id="Preparing_a_Dashboard_Submission">Preparing a Dashboard Submission</span></h3>
 <h4><span id="New.2C_easier_way"></span><span class="mw-headline" id="New,_easier_way">New, easier way</span></h4>
-<ol><li>Follow <a rel="nofollow" class="external text" href="http://www.itk.org/Wiki/ITK/Git/Dashboard">the directions here</a> to get the latest itk_common.cmake.</li>
+<ol><li>Follow <a rel="nofollow" class="external text" href="http://www.itk.org/ITKWikiArchive/Wiki/ITK/Git/Dashboard">the directions here</a> to get the latest itk_common.cmake.</li>
 <li>Write a small ctest script according to the instructions at the top of itk_common.cmake.
 <ol><li>ctest -V -S <i>your_script_file</i></li></ol></li>
 <li>See also, the <a rel="nofollow" class="external text" href="http://insightsoftwareconsortium.github.io/ITKBarCamp-doc/SoftwareQuality/DashboardSubmission/index.html">ITK Bar Camp article</a>.</li></ol>
@@ -222,7 +222,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policy_and_Procedure_for_Adding_Dashboards&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedure_for_Adding_Dashboards&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedure_for_Adding_Dashboards&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policy_and_Procedure_for_Adding_Dashboards&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedure_for_Adding_Dashboards&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedure_for_Adding_Dashboards&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -232,7 +232,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policy_and_Procedure_for_Adding_Dashboards&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policy_and_Procedure_for_Adding_Dashboards&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

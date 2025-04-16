@@ -31,14 +31,14 @@
 				>ITK/Getting Started/Obtain/Linux</h1>
 			<div id="bodyContent" class="monobook-body">
 				<div id="siteSub">From KitwarePublic</div>
-				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Getting_Started" title="ITK/Getting Started">Getting Started</a>&lrm; | <a href="/Wiki/ITK/Getting_Started/Obtain" title="ITK/Getting Started/Obtain">Obtain</a></span></div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Getting_Started" title="ITK/Getting Started">Getting Started</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Obtain" title="ITK/Getting Started/Obtain">Obtain</a></span></div>
 				
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
 				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>In Linux, you have three choices of how to obtain ITK. In fact, one of the options allows you to skip <i>Step 2: Building</i> entirely!
-</p><p>Option 1: <a href="/Wiki/ITK/Source#Linux_Package_Distributions_.28Currently_ITK3_only.21.29" title="ITK/Source"> Download ITK from your package manager</a> (e.g. apt-get on Ubuntu, yum on Fedora, etc)
+</p><p>Option 1: <a href="/ITKWikiArchive/Wiki/ITK/Source#Linux_Package_Distributions_.28Currently_ITK3_only.21.29" title="ITK/Source"> Download ITK from your package manager</a> (e.g. apt-get on Ubuntu, yum on Fedora, etc)
 </p><p>Option 2: Download a release version of the source code. A release version has been marked as "approved and working" by the community. Simply download the latest release (e.g. InsightToolkit-4.1.0.tar.gz) on the <a rel="nofollow" class="external text" href="http://itk.org/ITK/resources/software.html">download page</a> and unzip (or untar) it. You now have the ITK source code!
-</p><p>Option 3: Download the <a href="/Wiki/ITK/Getting_Started_Obtain/Linux/Git" class="mw-redirect" title="ITK/Getting Started Obtain/Linux/Git">very latest version</a> of the source code.
+</p><p>Option 3: Download the <a href="/ITKWikiArchive/Wiki/ITK/Getting_Started_Obtain/Linux/Git" class="mw-redirect" title="ITK/Getting Started Obtain/Linux/Git">very latest version</a> of the source code.
 </p>
 <table class="wikitable">
 
@@ -48,11 +48,11 @@
 <td style="text-align: center; width: 30%;">Option 3
 </td></tr>
 <tr>
-<td>(NOT YET AVAILABLE FOR ITK4!): <a href="/Wiki/ITK/Source#Linux_Package_Distributions_.28Currently_ITK3_only.21.29" title="ITK/Source"> Download ITK from your package manager</a> (e.g. apt-get on Ubuntu, yum on Fedora, etc)
+<td>(NOT YET AVAILABLE FOR ITK4!): <a href="/ITKWikiArchive/Wiki/ITK/Source#Linux_Package_Distributions_.28Currently_ITK3_only.21.29" title="ITK/Source"> Download ITK from your package manager</a> (e.g. apt-get on Ubuntu, yum on Fedora, etc)
 </td>
 <td>Download a release version of the source code. A release version has been marked as "approved and working" by the community. Simply download the latest release (e.g. InsightToolkit-4.1.0.tar.gz) on the <a rel="nofollow" class="external text" href="http://itk.org/ITK/resources/software.html">download page</a> and unzip (or untar) it. You now have the ITK source code!
 </td>
-<td>Download the <a href="/Wiki/ITK/Getting_Started_Obtain/Linux/Git" class="mw-redirect" title="ITK/Getting Started Obtain/Linux/Git">very latest version</a> of the source code.
+<td>Download the <a href="/ITKWikiArchive/Wiki/ITK/Getting_Started_Obtain/Linux/Git" class="mw-redirect" title="ITK/Getting Started Obtain/Linux/Git">very latest version</a> of the source code.
 </td></tr></tbody></table>
 <table class="wikitable">
 
@@ -62,11 +62,11 @@
 <td style="text-align: center; width: 30%;background-color: red;">Advanced/Development
 </td></tr>
 <tr>
-<td>(NOT YET AVAILABLE FOR ITK4!): <a href="/Wiki/ITK/Source#Linux_Package_Distributions_.28Currently_ITK3_only.21.29" title="ITK/Source"> Download ITK from your package manager</a> (e.g. apt-get on Ubuntu, yum on Fedora, etc)
+<td>(NOT YET AVAILABLE FOR ITK4!): <a href="/ITKWikiArchive/Wiki/ITK/Source#Linux_Package_Distributions_.28Currently_ITK3_only.21.29" title="ITK/Source"> Download ITK from your package manager</a> (e.g. apt-get on Ubuntu, yum on Fedora, etc)
 </td>
 <td>Download a release version of the source code. A release version has been marked as "approved and working" by the community. Simply download the latest release (e.g. InsightToolkit-4.1.0.tar.gz) on the <a rel="nofollow" class="external text" href="http://itk.org/ITK/resources/software.html">download page</a> and unzip (or untar) it. You now have the ITK source code!
 </td>
-<td>Download the <a href="/Wiki/ITK/Getting_Started_Obtain/Linux/Git" class="mw-redirect" title="ITK/Getting Started Obtain/Linux/Git">very latest version</a> of the source code.
+<td>Download the <a href="/ITKWikiArchive/Wiki/ITK/Getting_Started_Obtain/Linux/Git" class="mw-redirect" title="ITK/Getting Started Obtain/Linux/Git">very latest version</a> of the source code.
 </td></tr></tbody></table>
 <!-- 
 NewPP limit report
@@ -106,7 +106,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Getting_Started/Obtain/Linux" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Getting_Started/Obtain/Linux&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Getting_Started/Obtain/Linux">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Getting_Started/Obtain/Linux&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Getting_Started/Obtain/Linux&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Obtain/Linux" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Getting_Started/Obtain/Linux&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Obtain/Linux">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Getting_Started/Obtain/Linux&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Getting_Started/Obtain/Linux&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -115,7 +115,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Getting_Started/Obtain/Linux" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Getting_Started/Obtain/Linux&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Obtain/Linux" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Getting_Started/Obtain/Linux&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

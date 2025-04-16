@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>ITK/Release 4 - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"332ad6a9a97500bc7e129bff","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4","wgTitle":"ITK/Release 4","wgCurRevisionId":48075,"wgRevisionId":48075,"wgArticleId":9513,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4","wgRelevantArticleId":9513,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4","wgInternalRedirectTargetUrl":
-"/Wiki/ITK/Release_4"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+"/ITKWikiArchive/Wiki/ITK/Release_4"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
 <link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
@@ -18,7 +18,7 @@
 <link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
 <link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4"/>
+<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4 rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
 	<div id="column-content">
@@ -49,38 +49,38 @@
 </div>
 
 <h1><span class="mw-headline" id="Overview">Overview</span></h1>
-<ul><li><a href="/Wiki/ITK/Release_4.0" class="mw-redirect" title="ITK/Release 4.0">Release 4.0</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.0" class="mw-redirect" title="ITK/Release 4.0">Release 4.0</a></li></ul>
 <h1><span class="mw-headline" id="Dashboard_of_ITKv4_Efforts">Dashboard of ITKv4 Efforts</span></h1>
 <h2><span class="mw-headline" id="Completed_Efforts">Completed Efforts</span></h2>
 <p>Defined as having examples, tests, migration guide, and documentation; as well as being accepted through gerrit
 </p>
 <ul><li>Modernizing ITK's Software Process
-<ul><li><a href="/Wiki/ITK/Release_4/Testing_Data" title="ITK/Release 4/Testing Data">Testing Data</a></li>
-<li><a href="/Wiki/ITK/Release_4/Testing_On_Demand" title="ITK/Release 4/Testing On Demand">Testing On Demand</a></li>
-<li><a href="/Wiki/ITK/Release_4/UnitTesting" title="ITK/Release 4/UnitTesting">Unit Testing</a></li></ul></li>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Testing_Data" title="ITK/Release 4/Testing Data">Testing Data</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Testing_On_Demand" title="ITK/Release 4/Testing On Demand">Testing On Demand</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/UnitTesting" title="ITK/Release 4/UnitTesting">Unit Testing</a></li></ul></li>
 <li>Managing Contributions
-<ul><li><a href="/Wiki/ITK/Release_4/Modularization" title="ITK/Release 4/Modularization">Modularization</a></li>
-<li><a href="/Wiki/ITK/Release_4/New_Code_Contribution_Process" title="ITK/Release 4/New Code Contribution Process">New Code Contribution Process</a></li></ul></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Modularization" title="ITK/Release 4/Modularization">Modularization</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/New_Code_Contribution_Process" title="ITK/Release 4/New Code Contribution Process">New Code Contribution Process</a></li></ul></li></ul>
 <h2><span class="mw-headline" id="Ongoing_Efforts">Ongoing Efforts</span></h2>
 <p>Defined as having completed design with work underway.  High likelihood of completion by Dec 31, 2011.
 </p>
-<ul><li><a href="/Wiki/ITK/Release_4/DICOM" title="ITK/Release 4/DICOM">DICOM</a></li>
-<li><a href="/Wiki/ITK/Release_4/Wrapping" title="ITK/Release 4/Wrapping">Wrapping</a></li>
-<li><a href="/Wiki/ITK/Release_4/SimpleITK" class="mw-redirect" title="ITK/Release 4/SimpleITK">SimpleITK</a></li>
-<li><a href="/Wiki/ITK/Release_4/Refactoring_Level_Set_Framework" title="ITK/Release 4/Refactoring Level Set Framework">Refactoring Level Set Framework</a></li>
-<li><a href="/Wiki/ITK/Release_4/Migration_Plan" title="ITK/Release 4/Migration Plan">Migration Plan</a></li>
-<li><a href="/Wiki/ITK/Release_4/Refactor_Numerical_Libraries" title="ITK/Release 4/Refactor Numerical Libraries">Refactor Numerical Libraries</a></li>
-<li><a href="/Wiki/ITK/Release_4/Why_Switch_to_ITKv4" title="ITK/Release 4/Why Switch to ITKv4">Why Switch to ITKv4</a></li>
-<li><a href="/Wiki/ITK/Release_4/Outreach" title="ITK/Release 4/Outreach">Outreach</a></li>
-<li><a href="/Wiki/ITK/Release_4/Refactoring_FEM_Framework" title="ITK/Release 4/Refactoring FEM Framework">Refactoring FEM Framework</a></li>
-<li><a href="/Wiki/ITK/Release_4/Enhancing_Image_Registration_Framework" title="ITK/Release 4/Enhancing Image Registration Framework">Enhancing Image Registration Framework</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/DICOM" title="ITK/Release 4/DICOM">DICOM</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping" title="ITK/Release 4/Wrapping">Wrapping</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/SimpleITK" class="mw-redirect" title="ITK/Release 4/SimpleITK">SimpleITK</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Refactoring_Level_Set_Framework" title="ITK/Release 4/Refactoring Level Set Framework">Refactoring Level Set Framework</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Migration_Plan" title="ITK/Release 4/Migration Plan">Migration Plan</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Refactor_Numerical_Libraries" title="ITK/Release 4/Refactor Numerical Libraries">Refactor Numerical Libraries</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Why_Switch_to_ITKv4" title="ITK/Release 4/Why Switch to ITKv4">Why Switch to ITKv4</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Outreach" title="ITK/Release 4/Outreach">Outreach</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Refactoring_FEM_Framework" title="ITK/Release 4/Refactoring FEM Framework">Refactoring FEM Framework</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Enhancing_Image_Registration_Framework" title="ITK/Release 4/Enhancing Image Registration Framework">Enhancing Image Registration Framework</a></li></ul>
 <h2><span id="Demonstrations.2FDiscussions"></span><span class="mw-headline" id="Demonstrations/Discussions">Demonstrations/Discussions</span></h2>
 <p>Defined as low likelihood of completion, e.g., limited to being a concept demonstration by Dec 31, 2011.
 </p>
-<ul><li><a href="/Wiki/ITK/Release_4/Coding_Style" title="ITK/Release 4/Coding Style">Coding Style</a></li>
-<li><a href="/Wiki/ITK/Release_4/SpatialObjects" title="ITK/Release 4/SpatialObjects">Spatial Objects</a></li>
-<li><a href="/Wiki/ITK/Release_4/GPU_Acceleration" title="ITK/Release 4/GPU Acceleration">GPU Acceleration</a></li>
-<li><a href="/Wiki/ITK/Release_4/Global_Code_Review" title="ITK/Release 4/Global Code Review">Global Code Review</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Coding_Style" title="ITK/Release 4/Coding Style">Coding Style</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/SpatialObjects" title="ITK/Release 4/SpatialObjects">Spatial Objects</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/GPU_Acceleration" title="ITK/Release 4/GPU Acceleration">GPU Acceleration</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Global_Code_Review" title="ITK/Release 4/Global Code Review">Global Code Review</a></li></ul>
 <h1><span class="mw-headline" id="A2D2s">A2D2s</span></h1>
 <table border="1">
 
@@ -218,7 +218,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -228,7 +228,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

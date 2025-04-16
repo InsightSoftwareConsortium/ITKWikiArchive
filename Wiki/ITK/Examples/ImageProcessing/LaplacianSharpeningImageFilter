@@ -124,7 +124,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">ITK/Examples/ImageProcessing/LaplacianSharpeningImageFilter</span></h1>
 	<div id="bodyContent" class="mw-body">
 		<div id="siteSub">From KitwarePublic</div>
-		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Examples" title="ITK/Examples">Examples</a></span></div>
+		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Examples" title="ITK/Examples">Examples</a></span></div>
 		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
 
 		<!-- start content -->
@@ -254,7 +254,7 @@ Once the tarball <i>LaplacianSharpeningImageFilter.tar</i> has been downloaded a
 </p><p><br />
 </p>
 <h2><span class="mw-headline" id="Building_All_of_the_Examples">Building All of the Examples</span></h2>
-<p>Many of the examples in the ITK Wiki Examples Collection require VTK. You can build all of the the examples by following <a href="/Wiki/ITK/Examples/Instructions/ForUsers#Build_all_of_the_examples" title="ITK/Examples/Instructions/ForUsers">these instructions</a>. If you are a new VTK user, you may want to try the <a href="/Wiki/ITK/Examples/Instructions/ForUsers#Use_the_Superbuild_to_build_a_proper_VTK_and_ITK" title="ITK/Examples/Instructions/ForUsers">Superbuild</a> which will build a proper ITK and VTK.
+<p>Many of the examples in the ITK Wiki Examples Collection require VTK. You can build all of the the examples by following <a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForUsers#Build_all_of_the_examples" title="ITK/Examples/Instructions/ForUsers">these instructions</a>. If you are a new VTK user, you may want to try the <a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForUsers#Use_the_Superbuild_to_build_a_proper_VTK_and_ITK" title="ITK/Examples/Instructions/ForUsers">Superbuild</a> which will build a proper ITK and VTK.
 </p>
 <h2><span class="mw-headline" id="ItkVtkGlue">ItkVtkGlue</span></h2>
 <h3><span class="mw-headline" id="ITK_.3E.3D_4">ITK &gt;= 4</span></h3>
@@ -289,7 +289,7 @@ Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/ImageP
 		<h3>Views</h3>
 		<div class="pBody">
 			<ul>
-				<li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Examples/ImageProcessing/LaplacianSharpeningImageFilter" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-nstab-main" class="selected"><a href="/ITKWikiArchive/Wiki/ITK/Examples/ImageProcessing/LaplacianSharpeningImageFilter" title="View the content page [c]" accesskey="c">Page</a></li>
 				<li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Examples/ImageProcessing/LaplacianSharpeningImageFilter&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
 				<li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Examples/ImageProcessing/LaplacianSharpeningImageFilter&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
 				<li id="ca-history"><a href="/Wiki/index.php?title=ITK/Examples/ImageProcessing/LaplacianSharpeningImageFilter&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>

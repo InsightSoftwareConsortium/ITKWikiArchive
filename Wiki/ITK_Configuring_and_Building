@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>ITK/Configuring and Building - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"03589708746c3bab16fe89b1","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Configuring_and_Building","wgTitle":"ITK/Configuring and Building","wgCurRevisionId":63170,"wgRevisionId":63170,"wgArticleId":622,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["ITK"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Configuring_and_Building","wgRelevantArticleId":622,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":
-"ITK_Configuring_and_Building","wgInternalRedirectTargetUrl":"/Wiki/ITK/Configuring_and_Building"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+"ITK_Configuring_and_Building","wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Configuring_and_Building"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
 <link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
@@ -18,7 +18,7 @@
 <link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
 <link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Configuring_and_Building"/>
+<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Configuring_and_Building"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Configuring_and_Building rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
 	<div id="column-content">
@@ -69,7 +69,7 @@
 <li><b>cmake-gui</b>: A Qt-based GUI.</li></ol>
 <p>To perform a CMake configuration, we need three things:
 </p>
-<ol><li><a href="/Wiki/ITK/Source" title="ITK/Source"> The source code directory</a>.</li>
+<ol><li><a href="/ITKWikiArchive/Wiki/ITK/Source" title="ITK/Source"> The source code directory</a>.</li>
 <li>A different directory to perform the build (make this directory manually).</li>
 <li>One of the three CMake executables.</li></ol>
 <p>Configuration variables can have different types, e.g. a boolean, a string, a filepath, etc.  By convention, most persistent configuration variable names are composed of all capital letters and underscores such as <i>BUILD_SHARED_LIBS</i>.  For this reason, they may resemble environmental variables, but they are not environmental variables.
@@ -161,15 +161,15 @@ unless you are an expert.
 </p>
 <h2><span class="mw-headline" id="Platform_Specific_Guides">Platform Specific Guides</span></h2>
 <h3><span class="mw-headline" id="Windows">Windows</span></h3>
-<ul><li><a href="/Wiki/ITK/Configuring_and_Building/VisualStudio" title="ITK/Configuring and Building/VisualStudio">Visual Studio</a></li>
-<li><a href="/Wiki/ITK/Configuring_and_Building/QtCreator" title="ITK/Configuring and Building/QtCreator">QtCreator</a></li>
-<li><a href="/Wiki/ITK/Configuring_and_Building/MinGW" title="ITK/Configuring and Building/MinGW">MinGW</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Configuring_and_Building/VisualStudio" title="ITK/Configuring and Building/VisualStudio">Visual Studio</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Configuring_and_Building/QtCreator" title="ITK/Configuring and Building/QtCreator">QtCreator</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Configuring_and_Building/MinGW" title="ITK/Configuring and Building/MinGW">MinGW</a></li></ul>
 <h2><span class="mw-headline" id="Wrapping_ITK">Wrapping ITK</span></h2>
 <p>ITK can be wrapped for several different languages such as Python, Tcl and Java. 
 </p>
-<ul><li><a href="/Wiki/ITK/Java_Wrapping" title="ITK/Java Wrapping">Java wrapping</a> guide</li>
-<li><a href="/Wiki/ITK/Python_Wrapping" title="ITK/Python Wrapping">Python wrapping</a> guide</li>
-<li><a href="/Wiki/ITK/WrapITK_Status" title="ITK/WrapITK Status">WrapITK status</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Java_Wrapping" title="ITK/Java Wrapping">Java wrapping</a> guide</li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Python_Wrapping" title="ITK/Python Wrapping">Python wrapping</a> guide</li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/WrapITK_Status" title="ITK/WrapITK Status">WrapITK status</a></li></ul>
 <p><br />
 </p>
 <hr />
@@ -218,7 +218,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Configuring_and_Building" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK/Configuring_and_Building" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Configuring_and_Building">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Configuring_and_Building&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Configuring_and_Building&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Configuring_and_Building" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK/Configuring_and_Building" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Configuring_and_Building">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Configuring_and_Building&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Configuring_and_Building&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -228,7 +228,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Configuring_and_Building" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK/Configuring_and_Building" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Configuring_and_Building" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK/Configuring_and_Building" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

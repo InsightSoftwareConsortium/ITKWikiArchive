@@ -29,13 +29,13 @@
 			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Git/Download</h1>
 			<div id="bodyContent" class="monobook-body">
 				<div id="siteSub">From KitwarePublic</div>
-				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Git" title="ITK/Git">Git</a></span></div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">Git</a></span></div>
 				
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
 				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r64789">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><table class="plainlinks metadata ambox ambox-notice" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><a href="/Wiki/WP:HISPAGES" title="WP:HISPAGES"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/30px-Historical.svg.png" decoding="async" width="30" height="38" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/45px-Historical.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/60px-Historical.svg.png 2x" /></a></div></td><td class="mbox-text"><div class="mbox-text-span"><b>This page is currently inactive and is retained for <a href="/Wiki/index.php?title=WP:HISPAGES&amp;action=edit&amp;redlink=1" class="new" title="WP:HISPAGES (page does not exist)">historical</a> reference.</b><br /><span style="font-size: 90%">Either the page is no longer relevant or consensus on its purpose has become unclear. To revive discussion, seek broader input via a forum such as the <a href="http://www.wikipedia.org/wiki/Village_pump_(proposals)" class="extiw" title="wikipedia:Village pump (proposals)">village pump</a>.</span> <span style="font-size: 90%"> </span></div></td></tr></tbody></table>
 <p>This page documents how to download ITK through <a rel="nofollow" class="external text" href="http://git-scm.com">Git</a>.
-See our <a href="/Wiki/ITK/Git" title="ITK/Git">table of contents</a> for more information.
+See our <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">table of contents</a> for more information.
 </p><p>Follow our <a href="/Wiki/Git/Download" title="Git/Download">Git download instructions</a> to install Git.
 </p>
 <h1><span class="mw-headline" id="Clone">Clone</span></h1>
@@ -89,7 +89,7 @@ clone with the latest changes may run
 </td></tr>
 <tr>
 <td>
-<p>Avoid making local changes unless you have read our <a href="/Wiki/ITK/Git/Develop" title="ITK/Git/Develop">developer instructions</a>.
+<p>Avoid making local changes unless you have read our <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop" title="ITK/Git/Develop">developer instructions</a>.
 </p>
 </td></tr></tbody></table>
 <h1><span class="mw-headline" id="Release">Release</span></h1>
@@ -184,7 +184,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Git/Download" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git/Download&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Git/Download">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git/Download&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git/Download&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Git/Download" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git/Download&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Git/Download">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git/Download&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git/Download&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -194,7 +194,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Git/Download" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git/Download&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Git/Download" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git/Download&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

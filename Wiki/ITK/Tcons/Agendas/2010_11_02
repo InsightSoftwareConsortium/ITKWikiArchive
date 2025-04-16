@@ -31,7 +31,7 @@
 				>ITK/Tcons/Agendas/2010 11 02</h1>
 			<div id="bodyContent" class="monobook-body">
 				<div id="siteSub">From KitwarePublic</div>
-				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Tcons" title="ITK/Tcons">Tcons</a>&lrm; | <a href="/Wiki/ITK/Tcons/Agendas" title="ITK/Tcons/Agendas">Agendas</a></span></div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Tcons" title="ITK/Tcons">Tcons</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Tcons/Agendas" title="ITK/Tcons/Agendas">Agendas</a></span></div>
 				
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
@@ -168,7 +168,7 @@
 <h2><span class="mw-headline" id="Open_Gerrit_Reviews">Open Gerrit Reviews</span></h2>
 <ul><li>We got new reviewers&#160;!
 <ul><li>Now we have 23</li>
-<li><a rel="nofollow" class="external free" href="http://www.itk.org/Wiki/ITK/Gerrit/Reviewers#From_Gerrit">http://www.itk.org/Wiki/ITK/Gerrit/Reviewers#From_Gerrit</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.itk.org/ITKWikiArchive/Wiki/ITK/Gerrit/Reviewers#From_Gerrit">http://www.itk.org/ITKWikiArchive/Wiki/ITK/Gerrit/Reviewers#From_Gerrit</a></li>
 <li><a rel="nofollow" class="external free" href="http://review.source.kitware.com/#admin,group,5">http://review.source.kitware.com/#admin,group,5</a></li></ul></li>
 <li>Open reviews
 <ul><li><a rel="nofollow" class="external text" href="http://review.source.kitware.com/#q,status:open,n,z">Currently open</a></li></ul></li>
@@ -206,7 +206,7 @@
 <ul><li><a href="/Wiki/ITKv4_DICOM_Communications_Discussion" title="ITKv4 DICOM Communications Discussion"> Beginnings of a requirements document</a>.  Comments welcome.</li>
 <li>Proposed <a href="/Wiki/ITK_Release_4/DICOM/Tcon_Proposal" class="mw-redirect" title="ITK Release 4/DICOM/Tcon Proposal"> TConf</a></li></ul>
 <h2><span class="mw-headline" id="Gerrit_Code_Review">Gerrit Code Review</span></h2>
-<ul><li>Details in the <a href="/Wiki/ITK/Gerrit" title="ITK/Gerrit">ITK Gerrit Wiki page</a></li>
+<ul><li>Details in the <a href="/ITKWikiArchive/Wiki/ITK/Gerrit" title="ITK/Gerrit">ITK Gerrit Wiki page</a></li>
 <li>URL: <a rel="nofollow" class="external free" href="http://review.source.kitware.com/">http://review.source.kitware.com/</a></li>
 <li>Are all developers registered?
 <ul><li>You only need an <a rel="nofollow" class="external text" href="http://openid.net/get-an-openid">OpenID</a></li></ul></li>
@@ -268,7 +268,7 @@
 <h1><span class="mw-headline" id="Software_Process">Software Process</span></h1>
 <h2><span class="mw-headline" id="Migration_to_Git">Migration to Git</span></h2>
 <ul><li>Migration Completed
-<ul><li>Procedure for contributing Patches: <a rel="nofollow" class="external free" href="http://www.itk.org/Wiki/ITK/Git#Contributing_Patches">http://www.itk.org/Wiki/ITK/Git#Contributing_Patches</a></li></ul></li>
+<ul><li>Procedure for contributing Patches: <a rel="nofollow" class="external free" href="http://www.itk.org/ITKWikiArchive/Wiki/ITK/Git#Contributing_Patches">http://www.itk.org/ITKWikiArchive/Wiki/ITK/Git#Contributing_Patches</a></li></ul></li>
 <li>Updating Dashboard Machines to Git</li>
 <li>Contractors to send information to Kitware about the developers who should receive Git write access.
 <ul><li>(include email and public SSH key)</li></ul></li></ul>
@@ -349,7 +349,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Tcons/Agendas/2010_11_02" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Tcons/Agendas/2010_11_02&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Tcons/Agendas/2010_11_02">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Tcons/Agendas/2010_11_02&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Tcons/Agendas/2010_11_02&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Tcons/Agendas/2010_11_02" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Tcons/Agendas/2010_11_02&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Tcons/Agendas/2010_11_02">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Tcons/Agendas/2010_11_02&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Tcons/Agendas/2010_11_02&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -358,7 +358,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Tcons/Agendas/2010_11_02" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Tcons/Agendas/2010_11_02&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Tcons/Agendas/2010_11_02" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Tcons/Agendas/2010_11_02&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

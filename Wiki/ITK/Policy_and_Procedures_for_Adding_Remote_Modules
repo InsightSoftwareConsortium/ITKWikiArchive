@@ -69,7 +69,7 @@ in the main ITK repository has two benefits:
 </p>
 <h1><span class="mw-headline" id="Procedure_for_Adding_a_Remote_Module">Procedure for Adding a Remote Module</span></h1>
 <ol><li>Publish an open access article describing the module in an online journal like the <a rel="nofollow" class="external text" href="http://insight-journal.org/">Insight Journal</a>.</li>
-<li><a href="/Wiki/ITK/Git/Develop" title="ITK/Git/Develop">Submit a Gerrit patch</a> that adds a file named Modules/Remote/&lt;module name&gt;.remote.cmake.  This file must have the following:
+<li><a href="/ITKWikiArchive/Wiki/ITK/Git/Develop" title="ITK/Git/Develop">Submit a Gerrit patch</a> that adds a file named Modules/Remote/&lt;module name&gt;.remote.cmake.  This file must have the following:
 <ol><li>Dashboard maintainer name and email in the comments.</li>
 <li>A call to the itk_fetch_module CMake function (documented in CMake/ITKModuleRemote.cmake) whose arguments are:
 <ol><li>The name of the remote module; <b>Note that in each &lt;remote module name&gt;.remote.cmake, the first argument of the function itk_fetch_module() is the name of the remote module, and it has to be consistent with the module name defined in the corresponding itk-module.cmake. To better distinguish the remote modules from the internal ITK modules, the names of the remote modules should NOT contain the "ITK" string prefix.</b></li>
@@ -113,7 +113,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -123,7 +123,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

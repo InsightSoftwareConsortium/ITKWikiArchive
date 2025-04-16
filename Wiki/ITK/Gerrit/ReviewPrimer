@@ -29,7 +29,7 @@
 			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Gerrit/ReviewPrimer</h1>
 			<div id="bodyContent" class="monobook-body">
 				<div id="siteSub">From KitwarePublic</div>
-				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Gerrit" title="ITK/Gerrit">Gerrit</a></span></div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Gerrit" title="ITK/Gerrit">Gerrit</a></span></div>
 				
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
@@ -72,7 +72,7 @@
 </div>
 
 <h2><span class="mw-headline" id="Prerequisites">Prerequisites</span></h2>
-<p>This primer assumes a working knowledge of how to build ITK.  No details will be given as to how to build and test the code (but they <a href="/Wiki/ITK_Getting_Started" class="mw-redirect" title="ITK Getting Started">can be found here</a>).  This primer also assumes a working knowledge of git.  Please see the <a href="/Wiki/ITK/Git" title="ITK/Git">ITK git pages</a> and/or git books (<a rel="nofollow" class="external text" href="http://progit.org/book/">ProGit</a>, <a rel="nofollow" class="external text" href="http://book.git-scm.com/%7Cgit">Community Book</a>, or <a rel="nofollow" class="external text" href="http://www.amazon.com/Version-Control-Git-Collaborative-Development/dp/0596520123">Version Control with Git</a>).
+<p>This primer assumes a working knowledge of how to build ITK.  No details will be given as to how to build and test the code (but they <a href="/Wiki/ITK_Getting_Started" class="mw-redirect" title="ITK Getting Started">can be found here</a>).  This primer also assumes a working knowledge of git.  Please see the <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">ITK git pages</a> and/or git books (<a rel="nofollow" class="external text" href="http://progit.org/book/">ProGit</a>, <a rel="nofollow" class="external text" href="http://book.git-scm.com/%7Cgit">Community Book</a>, or <a rel="nofollow" class="external text" href="http://www.amazon.com/Version-Control-Git-Collaborative-Development/dp/0596520123">Version Control with Git</a>).
 </p><p>Also required is a Gerrit change to review.  We will go through a <a rel="nofollow" class="external text" href="http://review.source.kitware.com/76">real life code review</a> of a change submitted to Gerrit.
 </p>
 <h2><span class="mw-headline" id="Select_an_open_change">Select an open change</span></h2>
@@ -179,7 +179,7 @@ Date:   Fri Sep 17 19:31:37 2010 -0500
 <p>Now that this change is ready, we can push it to the official ITK repository.  There are two methods for pushing changes, depending on your rights as an ITK developer.
 </p>
 <h3><span class="mw-headline" id="Staging_changes">Staging changes</span></h3>
-<p>Changes may pass through the <a rel="nofollow" class="external text" href="http://public.kitware.com/Wiki/Git/Workflow/Stage">ITK staging area</a>.  The basic instructions for this step are <a href="/Wiki/ITK/Git#Topic_Stage" title="ITK/Git">documented elsewhere</a>.
+<p>Changes may pass through the <a rel="nofollow" class="external text" href="http://public.kitware.com/Wiki/Git/Workflow/Stage">ITK staging area</a>.  The basic instructions for this step are <a href="/ITKWikiArchive/Wiki/ITK/Git#Topic_Stage" title="ITK/Git">documented elsewhere</a>.
 </p><p>First create a topic branch based on the changes we want to publish.
 </p>
 <pre>git checkout -b removeUnecessaryComments
@@ -322,7 +322,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Gerrit/ReviewPrimer" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Gerrit/ReviewPrimer&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Gerrit/ReviewPrimer">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Gerrit/ReviewPrimer&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Gerrit/ReviewPrimer&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Gerrit/ReviewPrimer" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Gerrit/ReviewPrimer&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Gerrit/ReviewPrimer">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Gerrit/ReviewPrimer&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Gerrit/ReviewPrimer&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -332,7 +332,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Gerrit/ReviewPrimer" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Gerrit/ReviewPrimer&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Gerrit/ReviewPrimer" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Gerrit/ReviewPrimer&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

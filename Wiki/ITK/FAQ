@@ -389,7 +389,7 @@ VTK_WRAP_HINTS:FILEPATH=/home/johndoe/src/VTK/Wrapping/hints
 <p>WrapITK allows you to use ITK from other languages.
 (Python, Java, Ruby, ...)
 </p>
-<ul><li><a href="/Wiki/ITK/Wrapping" title="ITK/Wrapping"> See the page about ITK wrappings</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Wrapping" title="ITK/Wrapping"> See the page about ITK wrappings</a></li></ul>
 <h3><span id="How_do_I_use_ITK_from_C.23_.NET.3F"></span><span class="mw-headline" id="How_do_I_use_ITK_from_C#_.NET?">How do I use ITK from C# .NET?</span></h3>
 <p>There are currently three options:
 </p>
@@ -400,7 +400,7 @@ VTK_WRAP_HINTS:FILEPATH=/home/johndoe/src/VTK/Wrapping/hints
 <li>A list of available filters can be found <a rel="nofollow" class="external text" href="http://www.itk.org/SimpleITKDoxygen/html/Filter_Coverage.html">here</a> (valid Sept 2012)</li></ul></li>
 <li>Manually wrap the desired functionality
 <ul><li>This option requires the most work, but is the most flexible, allowing you to use any ITK functionality you desire</li>
-<li>An example can be found <a href="/Wiki/ITK/Using_ITK_from_.NET" title="ITK/Using ITK from .NET">here</a></li></ul></li></ol>
+<li>An example can be found <a href="/ITKWikiArchive/Wiki/ITK/Using_ITK_from_.NET" title="ITK/Using ITK from .NET">here</a></li></ul></li></ol>
 <p>NOTE: WrapITK does not currently support C# language bindings, but could be made to do so.
 </p>
 <h2><span class="mw-headline" id="Using_the_Insight_Toolkit">Using the Insight Toolkit</span></h2>
@@ -467,11 +467,11 @@ au BufNewFile,BufRead *.txx set filetype=cpp
 </p>
 <h2><span class="mw-headline" id="Testing">Testing</span></h2>
 <h3><span id="Is_ITK_tested.3F"></span><span class="mw-headline" id="Is_ITK_tested?">Is ITK tested?</span></h3>
-<p>Please see this page: <a href="/Wiki/ITK/Testing" title="ITK/Testing">ITK/Testing</a>
+<p>Please see this page: <a href="/ITKWikiArchive/Wiki/ITK/Testing" title="ITK/Testing">ITK/Testing</a>
 </p>
 <h2><span class="mw-headline" id="Working_with_Image_Data">Working with Image Data</span></h2>
 <h3><span id="How_do_I_iterate_through_all_the_pixels_in_an_image.3F"></span><span class="mw-headline" id="How_do_I_iterate_through_all_the_pixels_in_an_image?">How do I iterate through all the pixels in an image?</span></h3>
-<p>Please see this example: <a rel="nofollow" class="external free" href="http://www.itk.org/Wiki/ITK/Examples/Iterators/ImageRegionIterator">http://www.itk.org/Wiki/ITK/Examples/Iterators/ImageRegionIterator</a> of itkImageRegionIterator.
+<p>Please see this example: <a rel="nofollow" class="external free" href="http://www.itk.org/ITKWikiArchive/Wiki/ITK/Examples/Iterators/ImageRegionIterator">http://www.itk.org/ITKWikiArchive/Wiki/ITK/Examples/Iterators/ImageRegionIterator</a> of itkImageRegionIterator.
 </p>
 <h3><span id="What_are_Hounsfield_Units.3F"></span><span class="mw-headline" id="What_are_Hounsfield_Units?">What are Hounsfield Units?</span></h3>
 <p>Hounsfield units were defined by Sir Godfrey N. Hounsfield, on of the pioneers of Computer Tomography for clinical applications.
@@ -518,11 +518,11 @@ In ITK, there is no such thing as 12bits Pixel Type, thus when instanciating you
 In case you have not made any change to your pixel buffer, implicitely the first 4 bits will be zero again. The only difference being that they are not as clearly declared as 12bits.
 </p>
 <h3><span id="I.27m_working_with_DICOM_images.2C_where_can_I_find_more_information.3F"></span><span class="mw-headline" id="I'm_working_with_DICOM_images,_where_can_I_find_more_information?">I'm working with DICOM images, where can I find more information?</span></h3>
-<p><a href="/Wiki/ITK/DICOM" title="ITK/DICOM">ITK/DICOM</a>
+<p><a href="/ITKWikiArchive/Wiki/ITK/DICOM" title="ITK/DICOM">ITK/DICOM</a>
 </p>
 <h2><span class="mw-headline" id="Data_Display">Data Display</span></h2>
 <h3><span id="What_imaging_software_is_available_for_displaying_medical_image_files.3F"></span><span class="mw-headline" id="What_imaging_software_is_available_for_displaying_medical_image_files?">What imaging software is available for displaying medical image files?</span></h3>
-<p>Please see the <a href="/Wiki/ITK/Third_Party_Applications" title="ITK/Third Party Applications"> third party applications</a> page for visualization applications that used ITK to perform Image reading/writing.
+<p>Please see the <a href="/ITKWikiArchive/Wiki/ITK/Third_Party_Applications" title="ITK/Third Party Applications"> third party applications</a> page for visualization applications that used ITK to perform Image reading/writing.
 </p>
 <h3><span id="When_I_view_the_output_of_my_program.2C_all_I_see_is_a_black_image._What_went_wrong.3F"></span><span class="mw-headline" id="When_I_view_the_output_of_my_program,_all_I_see_is_a_black_image._What_went_wrong?">When I view the output of my program, all I see is a black image. What went wrong?</span></h3>
 <p>ITK is capable of reading and writing data in a variety of formats and bit depths.  However many 'consumer' image programs only work with 8-bit data, so when you try to display a 16-bit data file the image will appear black.  The solution is to use an image display program that correctly handles these types of files.  A small selection is listed above.
@@ -606,7 +606,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/FAQ" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK/FAQ" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/FAQ">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/FAQ&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/FAQ&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/FAQ" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK/FAQ" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/FAQ">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/FAQ&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/FAQ&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -616,7 +616,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/FAQ" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK/FAQ" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/FAQ" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK/FAQ" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

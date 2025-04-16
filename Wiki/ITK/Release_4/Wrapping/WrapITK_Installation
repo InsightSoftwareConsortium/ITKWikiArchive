@@ -31,7 +31,7 @@
 				>ITK/Release 4/Wrapping/WrapITK Installation</h1>
 			<div id="bodyContent" class="monobook-body">
 				<div id="siteSub">From KitwarePublic</div>
-				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/Wiki/ITK/Release_4/Wrapping" title="ITK/Release 4/Wrapping">Wrapping</a></span></div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping" title="ITK/Release 4/Wrapping">Wrapping</a></span></div>
 				
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
@@ -46,9 +46,9 @@ Steps for WrapITK installation
 <li>Git <a rel="nofollow" class="external autonumber" href="http://www.itk.org/Wiki/Git/Download">[4]</a></li></ul>
 <p>optionally ( but we recommend it highly&#160;! )
 </p>
-<ul><li>ccache <a href="/Wiki/ITK/Release_4/Wrapping/ccache" title="ITK/Release 4/Wrapping/ccache">enabling ccache</a></li></ul>
+<ul><li>ccache <a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/ccache" title="ITK/Release 4/Wrapping/ccache">enabling ccache</a></li></ul>
 <h1><span class="mw-headline" id="Download_ITK">Download ITK</span></h1>
-<p>Download ITK as explained  <a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/ITK/Git/Download">| here </a>
+<p>Download ITK as explained  <a rel="nofollow" class="external text" href="http://www.vtk.org/ITKWikiArchive/Wiki/ITK/Git/Download">| here </a>
 </p>
 <h1><span class="mw-headline" id="Build_ITK">Build ITK</span></h1>
 <p>Create a BUILD directory and go there (example given for linux/mac)
@@ -70,10 +70,10 @@ cd BUILD
 <ul><li>WRAP_ITK_PYTHON</li>
 <li>WRAP_ITK_JAVA</li>
 <li>WRAP_ITK_TCL ...</li></ul>
-<p>Note that if you choose more than one, you might want to switch the following flag ON as well to sped up the process ( Examples of speed ups <a href="/Wiki/ITK/Release_4/Wrapping/WrapITK_Installation/Wrap_ITK_EXPLICIT" title="ITK/Release 4/Wrapping/WrapITK Installation/Wrap ITK EXPLICIT">here</a> ).
+<p>Note that if you choose more than one, you might want to switch the following flag ON as well to sped up the process ( Examples of speed ups <a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/WrapITK_Installation/Wrap_ITK_EXPLICIT" title="ITK/Release 4/Wrapping/WrapITK Installation/Wrap ITK EXPLICIT">here</a> ).
 </p>
 <ul><li>WRAP_ITK_EXPLICIT</li></ul>
-<p>Much improvement in building speed can be achieve by <a href="/Wiki/ITK/Release_4/Wrapping/ccache" title="ITK/Release 4/Wrapping/ccache">enabling ccache</a>. 
+<p>Much improvement in building speed can be achieve by <a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/ccache" title="ITK/Release 4/Wrapping/ccache">enabling ccache</a>. 
 </p><p>Now, keep configuring until the "generate" option appears. Generate. Compile.
 </p>
 <!-- 
@@ -114,7 +114,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Wrapping/WrapITK_Installation" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Wrapping/WrapITK_Installation&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Wrapping/WrapITK_Installation">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping/WrapITK_Installation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping/WrapITK_Installation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/WrapITK_Installation" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Wrapping/WrapITK_Installation&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/WrapITK_Installation">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping/WrapITK_Installation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping/WrapITK_Installation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -123,7 +123,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Wrapping/WrapITK_Installation" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Wrapping/WrapITK_Installation&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/WrapITK_Installation" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Wrapping/WrapITK_Installation&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

@@ -34,38 +34,38 @@
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
 				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><h2><span class="mw-headline" id="Release_Changelogs">Release Changelogs</span></h2>
-<ul><li><ul><li><a href="/Wiki/ITK/Release_4.12" title="ITK/Release 4.12">What is new in release 4.12</a> <a href="/Wiki/ITK/Release_4.12_Changed_From_Previous" title="ITK/Release 4.12 Changed From Previous">What changed since 4.11</a></li>
-<li><a href="/Wiki/ITK/Release_4.11" title="ITK/Release 4.11">What is new in release 4.11</a> <a href="/Wiki/ITK/Release_4.11_Changed_From_Previous" title="ITK/Release 4.11 Changed From Previous">What changed since 4.10</a></li>
-<li><a href="/Wiki/ITK/Release_4.10" title="ITK/Release 4.10">What is new in release 4.10</a> <a href="/Wiki/ITK/Release_4.10_Changed_From_Previous" title="ITK/Release 4.10 Changed From Previous">What changed since 4.9</a></li>
-<li><a href="/Wiki/ITK/Release_4.9" title="ITK/Release 4.9">What is new in release 4.9</a> <a href="/Wiki/ITK/Release_4.9_Changed_From_Previous" title="ITK/Release 4.9 Changed From Previous">What changed since 4.8</a></li>
-<li><a href="/Wiki/ITK/Release_4.8" title="ITK/Release 4.8">What is new in release 4.8</a> <a href="/Wiki/ITK/Release_4.8_Changed_From_Previous" title="ITK/Release 4.8 Changed From Previous">What changed since 4.7</a></li>
-<li><a href="/Wiki/ITK/Release_4.7" title="ITK/Release 4.7">What is new in release 4.7</a> <a href="/Wiki/ITK/Release_4.7_Changed_From_Previous" title="ITK/Release 4.7 Changed From Previous">What changed since 4.6</a></li>
-<li><a href="/Wiki/ITK/Release_4.6" title="ITK/Release 4.6">What is new in release 4.6</a> <a href="/Wiki/ITK/Release_4.6_Changed_From_Previous" title="ITK/Release 4.6 Changed From Previous">What changed since 4.5</a></li>
-<li><a href="/Wiki/ITK/Release_4.5" title="ITK/Release 4.5">What is new in release 4.5</a> <a href="/Wiki/ITK/Release_4.5_Changed_From_Previous" title="ITK/Release 4.5 Changed From Previous">What changed since 4.4</a></li>
-<li><a href="/Wiki/ITK/Release_4.4" title="ITK/Release 4.4">What is new in release 4.4</a> <a href="/Wiki/ITK/Release_4.4_Changed_From_Previous" title="ITK/Release 4.4 Changed From Previous">What changed since 4.3</a></li>
-<li><a href="/Wiki/ITK/Release_4.3" title="ITK/Release 4.3">What is new in release 4.3</a> <a href="/Wiki/ITK/Release_4.3_Changed_From_Previous" title="ITK/Release 4.3 Changed From Previous">What changed since 4.2</a></li>
-<li><a href="/Wiki/ITK/Release_4.2" title="ITK/Release 4.2">What is new in release 4.2</a> <a href="/Wiki/ITK/Release_4.2_Changed_From_Previous" title="ITK/Release 4.2 Changed From Previous">What changed since 4.1</a></li>
-<li><a href="/Wiki/ITK/Release_4.1" title="ITK/Release 4.1">What is new in release 4.1</a> <a href="/Wiki/ITK/Release_4.1_Changed_From_Previous" title="ITK/Release 4.1 Changed From Previous">What changed since 4.0</a></li>
+<ul><li><ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.12" title="ITK/Release 4.12">What is new in release 4.12</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.12_Changed_From_Previous" title="ITK/Release 4.12 Changed From Previous">What changed since 4.11</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.11" title="ITK/Release 4.11">What is new in release 4.11</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.11_Changed_From_Previous" title="ITK/Release 4.11 Changed From Previous">What changed since 4.10</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.10" title="ITK/Release 4.10">What is new in release 4.10</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.10_Changed_From_Previous" title="ITK/Release 4.10 Changed From Previous">What changed since 4.9</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.9" title="ITK/Release 4.9">What is new in release 4.9</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.9_Changed_From_Previous" title="ITK/Release 4.9 Changed From Previous">What changed since 4.8</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.8" title="ITK/Release 4.8">What is new in release 4.8</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.8_Changed_From_Previous" title="ITK/Release 4.8 Changed From Previous">What changed since 4.7</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.7" title="ITK/Release 4.7">What is new in release 4.7</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.7_Changed_From_Previous" title="ITK/Release 4.7 Changed From Previous">What changed since 4.6</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.6" title="ITK/Release 4.6">What is new in release 4.6</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.6_Changed_From_Previous" title="ITK/Release 4.6 Changed From Previous">What changed since 4.5</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.5" title="ITK/Release 4.5">What is new in release 4.5</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.5_Changed_From_Previous" title="ITK/Release 4.5 Changed From Previous">What changed since 4.4</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.4" title="ITK/Release 4.4">What is new in release 4.4</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.4_Changed_From_Previous" title="ITK/Release 4.4 Changed From Previous">What changed since 4.3</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.3" title="ITK/Release 4.3">What is new in release 4.3</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.3_Changed_From_Previous" title="ITK/Release 4.3 Changed From Previous">What changed since 4.2</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.2" title="ITK/Release 4.2">What is new in release 4.2</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.2_Changed_From_Previous" title="ITK/Release 4.2 Changed From Previous">What changed since 4.1</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.1" title="ITK/Release 4.1">What is new in release 4.1</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_4.1_Changed_From_Previous" title="ITK/Release 4.1 Changed From Previous">What changed since 4.0</a></li>
 <li><a href="/Wiki/ITK_Release_4/Migration_Plan/Release_Notes/ITKv4_Final_Release_Notes" title="ITK Release 4/Migration Plan/Release Notes/ITKv4 Final Release Notes"> What is new in release 4.0</a></li>
-<li><a href="/Wiki/ITK/Release_3.20" title="ITK/Release 3.20">What is new in release 3.20</a> <a href="/Wiki/ITK/Release_3.20_Changed_From_Previous" title="ITK/Release 3.20 Changed From Previous">What changed since 3.18</a></li>
-<li><a href="/Wiki/ITK/Release_3.18" title="ITK/Release 3.18">What is new in release 3.18</a> <a href="/Wiki/ITK/Release_3.18_Changed_From_Previous" title="ITK/Release 3.18 Changed From Previous">What changed since 3.16</a></li>
-<li><a href="/Wiki/ITK/Release_3.16" title="ITK/Release 3.16">What is new in release 3.16</a> <a href="/Wiki/ITK/Release_3.16_Changed_From_Previous" title="ITK/Release 3.16 Changed From Previous">What changed since 3.14</a></li>
-<li><a href="/Wiki/ITK/Release_3.14" title="ITK/Release 3.14">What is new in release 3.14</a> <a href="/Wiki/ITK/Release_3.14_Changed_From_Previous" title="ITK/Release 3.14 Changed From Previous">What changed since 3.12</a></li>
-<li><a href="/Wiki/ITK/Release_3.12" title="ITK/Release 3.12">What is new in release 3.12</a> <a href="/Wiki/ITK/Release_3.12_Changed_From_Previous" title="ITK/Release 3.12 Changed From Previous">What changed since 3.10</a></li></ul></li>
-<li><a href="/Wiki/ITK/Past_Releases" title="ITK/Past Releases"> Past Releases</a></li>
-<li><a href="/Wiki/ITK/Release_Schedule" title="ITK/Release Schedule">Schedule of upcoming releases</a></li></ul>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_3.20" title="ITK/Release 3.20">What is new in release 3.20</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_3.20_Changed_From_Previous" title="ITK/Release 3.20 Changed From Previous">What changed since 3.18</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_3.18" title="ITK/Release 3.18">What is new in release 3.18</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_3.18_Changed_From_Previous" title="ITK/Release 3.18 Changed From Previous">What changed since 3.16</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_3.16" title="ITK/Release 3.16">What is new in release 3.16</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_3.16_Changed_From_Previous" title="ITK/Release 3.16 Changed From Previous">What changed since 3.14</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_3.14" title="ITK/Release 3.14">What is new in release 3.14</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_3.14_Changed_From_Previous" title="ITK/Release 3.14 Changed From Previous">What changed since 3.12</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_3.12" title="ITK/Release 3.12">What is new in release 3.12</a> <a href="/ITKWikiArchive/Wiki/ITK/Release_3.12_Changed_From_Previous" title="ITK/Release 3.12 Changed From Previous">What changed since 3.10</a></li></ul></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Past_Releases" title="ITK/Past Releases"> Past Releases</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_Schedule" title="ITK/Release Schedule">Schedule of upcoming releases</a></li></ul>
 <h2><span class="mw-headline" id="ITK_Version_4">ITK Version 4</span></h2>
 <p>This section is an archive for the ITK community of the changes to the Insight Toolkit that were intended for the ITK Version for (ITKv4) effort.  This effort officially concluded with the release of ITK 4.2 in July 2012.  Items that were planned but not completed often have entries in the <a rel="nofollow" class="external text" href="http://issues.itk.org/">ITK issue tracker</a>.
 </p>
-<ul><li><a href="/Wiki/ITK/Release_4.0" class="mw-redirect" title="ITK/Release 4.0">Release 4.0 wish list</a></li>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4.0" class="mw-redirect" title="ITK/Release 4.0">Release 4.0 wish list</a></li>
 <li>This work is supported by ARRA funding from the NLM.</li>
-<li>More information is available here: <a href="/Wiki/ITK/Release_4_Planning" title="ITK/Release 4 Planning">Release 4 Planning</a>.</li>
+<li>More information is available here: <a href="/ITKWikiArchive/Wiki/ITK/Release_4_Planning" title="ITK/Release 4 Planning">Release 4 Planning</a>.</li>
 <li>The kick-off meeting for this project took place from <a rel="nofollow" class="external text" href="http://visual.nlm.nih.gov/itk/itk2010/agenda.html">June 28-July 2 in Bethesda</a>.</li>
 <li>We welcome the ITK community to comment on the proposed changes.</li>
-<li>The <a href="/Wiki/ITK/Fall_v4_2010_Meeting" title="ITK/Fall v4 2010 Meeting">Fall v4 2010 Meeting</a> took place November 8-10 in Iowa City.</li>
-<li>The <a href="/Wiki/ITK/Winter_v4_2011_Meeting" title="ITK/Winter v4 2011 Meeting">Winter_v4_2011_Meeting</a> took place on February 2-3 in Boston.</li>
-<li>The <a href="/Wiki/ITK/Summer_v4_2011_Meeting" title="ITK/Summer v4 2011 Meeting">Summer_v4_2011_Meeting</a> took place on June 28-29 in Chapel Hill, North Carolina.</li>
-<li>The <a href="/Wiki/ITK/Fall_v4_2011_Meeting" title="ITK/Fall v4 2011 Meeting">Fall_v4_2011_Meeting</a> took place on September 27-28 at the NLM in Bethesda, MD.</li></ul>
+<li>The <a href="/ITKWikiArchive/Wiki/ITK/Fall_v4_2010_Meeting" title="ITK/Fall v4 2010 Meeting">Fall v4 2010 Meeting</a> took place November 8-10 in Iowa City.</li>
+<li>The <a href="/ITKWikiArchive/Wiki/ITK/Winter_v4_2011_Meeting" title="ITK/Winter v4 2011 Meeting">Winter_v4_2011_Meeting</a> took place on February 2-3 in Boston.</li>
+<li>The <a href="/ITKWikiArchive/Wiki/ITK/Summer_v4_2011_Meeting" title="ITK/Summer v4 2011 Meeting">Summer_v4_2011_Meeting</a> took place on June 28-29 in Chapel Hill, North Carolina.</li>
+<li>The <a href="/ITKWikiArchive/Wiki/ITK/Fall_v4_2011_Meeting" title="ITK/Fall v4 2011 Meeting">Fall_v4_2011_Meeting</a> took place on September 27-28 at the NLM in Bethesda, MD.</li></ul>
 <!-- 
 NewPP limit report
 Cached time: 20250112085909
@@ -104,7 +104,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Releases" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Releases&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Releases">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Releases&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Releases&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Releases" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Releases&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Releases">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Releases&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Releases&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -114,7 +114,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Releases" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Releases&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Releases" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Releases&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

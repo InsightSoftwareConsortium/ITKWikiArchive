@@ -53,13 +53,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <h2><span class="mw-headline" id="Overview">Overview</span></h2>
 <ul>
-<li> <big><strong><a href="/Wiki/ITK/Getting_Started" title="ITK/Getting Started">Getting Started with ITK</a></strong></big>
+<li> <big><strong><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started" title="ITK/Getting Started">Getting Started with ITK</a></strong></big>
 </li>
-<li> <a href="/Wiki/ITK/About" title="ITK/About">About the Insight Toolkit</a>
+<li> <a href="/ITKWikiArchive/Wiki/ITK/About" title="ITK/About">About the Insight Toolkit</a>
 </li>
-<li> <a href="/Wiki/ITK/FAQ" title="ITK/FAQ">Frequently Asked Questions (FAQ)</a>
+<li> <a href="/ITKWikiArchive/Wiki/ITK/FAQ" title="ITK/FAQ">Frequently Asked Questions (FAQ)</a>
 </li>
-<li> <a href="/Wiki/ITK/License_Information" title="ITK/License Information"> License Information</a>
+<li> <a href="/ITKWikiArchive/Wiki/ITK/License_Information" title="ITK/License Information"> License Information</a>
 </li>
 </ul>
 <h2><span class="mw-headline" id="Software_Process">Software Process</span></h2>
@@ -72,22 +72,22 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 <li> <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=Insight&amp;date=">Nightly build dashboard</a>&#160;: View the build status on a variety of platforms.
 </li>
-<li> <a href="/Wiki/ITK/Development" title="ITK/Development"> Development</a>
+<li> <a href="/ITKWikiArchive/Wiki/ITK/Development" title="ITK/Development"> Development</a>
 </li>
 </ul>
 <h2><span class="mw-headline" id="Resources">Resources</span></h2>
 <ul>
-<li> <a href="/Wiki/ITK/Documentation" title="ITK/Documentation"> Documentation</a>
+<li> <a href="/ITKWikiArchive/Wiki/ITK/Documentation" title="ITK/Documentation"> Documentation</a>
 </li>
-<li> <a href="/Wiki/ITK/Community" title="ITK/Community"> Community Corner</a>
+<li> <a href="/ITKWikiArchive/Wiki/ITK/Community" title="ITK/Community"> Community Corner</a>
 </li>
-<li> <a href="/Wiki/ITK/Academic" title="ITK/Academic"> Academic Corner</a>
+<li> <a href="/ITKWikiArchive/Wiki/ITK/Academic" title="ITK/Academic"> Academic Corner</a>
 </li>
-<li> <a href="/Wiki/ITK/Professional" title="ITK/Professional"> Professional Corner</a>
+<li> <a href="/ITKWikiArchive/Wiki/ITK/Professional" title="ITK/Professional"> Professional Corner</a>
 </li>
-<li> <a href="/Wiki/ITK/Open_Science" title="ITK/Open Science"> Open Science</a>
+<li> <a href="/ITKWikiArchive/Wiki/ITK/Open_Science" title="ITK/Open Science"> Open Science</a>
 </li>
-<li> <a href="/Wiki/ITK/Other_Software" title="ITK/Other Software"> Other Software</a>
+<li> <a href="/ITKWikiArchive/Wiki/ITK/Other_Software" title="ITK/Other Software"> Other Software</a>
 </li>
 </ul>
 

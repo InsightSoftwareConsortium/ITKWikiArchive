@@ -36,9 +36,9 @@
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
 				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><h2><span class="mw-headline" id="WrapITK_Status">WrapITK Status</span></h2>
-<p>WrapITK is the <a rel="nofollow" class="external text" href="http://www.swig.org/">SWIG</a>-based dynamic language wrapping infrastructure for ITK.  SWIG supports a number of languages.  The WrapITK project was previously an external project, but it was integrated into the toolkit with ITK version 4. Currently, WrapITK generates wrapping for <a href="/Wiki/ITK/Java_Wrapping" title="ITK/Java Wrapping">Java</a> and <a href="/Wiki/ITK/Python_Wrapping" title="ITK/Python Wrapping">Python</a>.  Python is currently the best supported language.
+<p>WrapITK is the <a rel="nofollow" class="external text" href="http://www.swig.org/">SWIG</a>-based dynamic language wrapping infrastructure for ITK.  SWIG supports a number of languages.  The WrapITK project was previously an external project, but it was integrated into the toolkit with ITK version 4. Currently, WrapITK generates wrapping for <a href="/ITKWikiArchive/Wiki/ITK/Java_Wrapping" title="ITK/Java Wrapping">Java</a> and <a href="/ITKWikiArchive/Wiki/ITK/Python_Wrapping" title="ITK/Python Wrapping">Python</a>.  Python is currently the best supported language.
 </p><p>WrapITK has undergone considerable improvements recently, and platform support is continuously expanding.  Wrapping is currently support on Mac OSX, Windows, and Linux. 
-</p><p>To help improve WrapITK support, please consider <a href="/Wiki/ITK/Git" title="ITK/Git">contributing patches</a> or <a href="/Wiki/ITK/Git/Dashboard" title="ITK/Git/Dashboard">a WrapITK Nightly dashboard build</a>.
+</p><p>To help improve WrapITK support, please consider <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">contributing patches</a> or <a href="/ITKWikiArchive/Wiki/ITK/Git/Dashboard" title="ITK/Git/Dashboard">a WrapITK Nightly dashboard build</a>.
 </p><p>Conversion to/from Python <a rel="nofollow" class="external text" href="http://www.numpy.org/">NumPy</a> arrays and <i>itk::Image'</i>s is possible the with ITKBridgeNumpy Remote module.
 </p>
 <!-- 
@@ -79,7 +79,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/WrapITK_Status" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK/WrapITK_Status" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/WrapITK_Status">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/WrapITK_Status&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/WrapITK_Status&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/WrapITK_Status" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="mw-list-item"><a href="/Wiki/Talk:ITK/WrapITK_Status" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/WrapITK_Status">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/WrapITK_Status&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/WrapITK_Status&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -88,7 +88,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/WrapITK_Status" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK/WrapITK_Status" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/WrapITK_Status" title="Page">Page</a></li><li id="talk-mobile" class="mw-list-item"><a href="/Wiki/Talk:ITK/WrapITK_Status" title="Discussion">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

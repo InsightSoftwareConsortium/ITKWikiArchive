@@ -53,7 +53,7 @@
 <li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen46/html/index.html">Most recent release documentation</a></li>
 <li><a rel="nofollow" class="external text" href="http://www.itk.org/ITK/help/legacy_documentation.html">Legacy releases documentation</a></li></ul>
 <h2><span class="mw-headline" id="Examples">Examples</span></h2>
-<ul><li><a href="/Wiki/ITK/Examples" title="ITK/Examples">Examples Wiki: A community-maintained collection of examples of ITK classes and their uses.</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Examples" title="ITK/Examples">Examples Wiki: A community-maintained collection of examples of ITK classes and their uses.</a></li></ul>
 <ul><li><a rel="nofollow" class="external text" href="http://itk.org/ITKExamples">ITKExamples: Another community-maintained collection of examples of ITK classes and their uses documented with Sphinx.</a></li></ul>
 <ul><li><a rel="nofollow" class="external text" href="http://itk.org/gitweb?p=ITK.git;a=tree;f=Examples;hb=HEAD">Examples in the Git Repository</a></li></ul>
 <h2><span class="mw-headline" id="Webinars">Webinars</span></h2>
@@ -66,13 +66,13 @@
 <li><a rel="nofollow" class="external text" href="http://www.kitware.com/products/protraining.php"><b>Kitware Courses</b>: Multi-day workshops describing basic concepts and practices with interactive exercises and questioning.  Available at Kitware or on site.</a>  Some example material found in the recorded webinars.</li>
 <li><a rel="nofollow" class="external text" href="http://www.cs.cmu.edu/~galeotti/methods_course/"><b>Methods in Medical Image Analysis.</b> Carnegie Melon University.  Instruction by John Galeotti.  Slides available.  Video in the process of becoming available.</a></li>
 <li><a rel="nofollow" class="external text" href="http://www.dirkpadfield.com/BiologicalImageAnalysis/"><b>Biological Image Analysis.</b> Rensselaer Polytechnic Institute (RPI).  Instruction by Dirk Padfield.  Slides and ipython notebooks available.</a></li>
-<li><a href="/Wiki/ITK/Course_Ware" title="ITK/Course Ware"> Older courses </a></li></ul>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Course_Ware" title="ITK/Course Ware"> Older courses </a></li></ul>
 <h2><span class="mw-headline" id="Conference_Workshops">Conference Workshops</span></h2>
 <ul><li><a rel="nofollow" class="external text" href="http://midas3.kitware.com/midas/folder/9390">ITK-SimpleITK workshop held at the University of Wisconsin-Madison, January 2013</a></li>
-<li><a href="/Wiki/ITK/Release_4/Outreach/Conferences/MICCAI_2011/ITKv4" title="ITK/Release 4/Outreach/Conferences/MICCAI 2011/ITKv4">MICCAI 2011 ITK</a></li>
-<li><a href="/Wiki/ITK/Release_4/Outreach/Conferences/MICCAI_2011/SimpleITK" title="ITK/Release 4/Outreach/Conferences/MICCAI 2011/SimpleITK">MICCAI 2011 SimpleITK</a></li></ul>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Outreach/Conferences/MICCAI_2011/ITKv4" title="ITK/Release 4/Outreach/Conferences/MICCAI 2011/ITKv4">MICCAI 2011 ITK</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Outreach/Conferences/MICCAI_2011/SimpleITK" title="ITK/Release 4/Outreach/Conferences/MICCAI 2011/SimpleITK">MICCAI 2011 SimpleITK</a></li></ul>
 <h2><span class="mw-headline" id="Tutorials">Tutorials</span></h2>
-<ul><li><a href="/Wiki/ITK/Tutorials" title="ITK/Tutorials">Tutorials</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Tutorials" title="ITK/Tutorials">Tutorials</a></li></ul>
 <ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/HTML/Tutorials.htm"><b>Insight Toolkit Tutorials</b>: Presentations used for ITK Tutorials presented in conferences</a> See also the <a rel="nofollow" class="external text" href="http://insight-journal.org/browse/publication/70"><b>ITK Tutorial Presentation Slides</b></a>.</li></ul>
 <ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/CourseWare/Training/GettingStartedI-WebPage/img0.html"><b>Getting Started Tutorial</b>: The tutorial that will save you time before you install and build ITK.</a></li></ul>
 <h2><span class="mw-headline" id="Books">Books</span></h2>
@@ -130,7 +130,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Documentation" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Documentation&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Documentation">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Documentation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Documentation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Documentation" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Documentation&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Documentation">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Documentation&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Documentation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -140,7 +140,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Documentation" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Documentation&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Documentation" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Documentation&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

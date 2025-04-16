@@ -5,7 +5,7 @@
 <title>ITK/Examples/ImageProcessing/ScaleTransform - KitwarePublic</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="MediaWiki 1.16.1" />
-<link rel="canonical" href="/Wiki/ITK/Examples/ImageProcessing/ScaleTransform" />
+<link rel="canonical" href="/ITKWikiArchive/Wiki/ITK/Examples/ImageProcessing/ScaleTransform" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
 <link title="Creative Commons" type="application/rdf+xml" href="/Wiki/index.php?title=ITK/Examples/ImageProcessing/ScaleTransform&amp;action=creativecommons" rel="meta" />
@@ -169,7 +169,7 @@ wgRestrictionMove=[];
 	<h1 id="firstHeading" class="firstHeading">ITK/Examples/ImageProcessing/ScaleTransform</h1>
 	<div id="bodyContent">
 		<h3 id="siteSub">From KitwarePublic</h3>
-		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a> | <a href="/Wiki/ITK/Examples" title="ITK/Examples">Examples</a></span>(Redirected from <a href="/Wiki/index.php?title=ITK/Examples/WishList/ImageProcessing/ScaleTransform&amp;redirect=no" title="ITK/Examples/WishList/ImageProcessing/ScaleTransform">ITK/Examples/WishList/ImageProcessing/ScaleTransform</a>)</div>
+		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a> | <a href="/ITKWikiArchive/Wiki/ITK/Examples" title="ITK/Examples">Examples</a></span>(Redirected from <a href="/Wiki/index.php?title=ITK/Examples/WishList/ImageProcessing/ScaleTransform&amp;redirect=no" title="ITK/Examples/WishList/ImageProcessing/ScaleTransform">ITK/Examples/WishList/ImageProcessing/ScaleTransform</a>)</div>
 		<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
 		<!-- start content -->
 <p>In this example, we demonstrate the itkScaleTransform. By specifying the scale as 1.5, what we are actually doing is making the new image bigger than the old image in the physical space. When the image is resampled, the outer regions of the image are not overlapping the old image. Therefore, the resulting image appears to have shrunk, even though the scale factor was &gt; 1.
@@ -291,7 +291,7 @@ Expensive parser function count: 0/100
 
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8951-0!1!0!!en!2!edit=0 and timestamp 20111117054806 -->
 <div class="printfooter">
-Retrieved from "<a href="http://www.itk.org/Wiki/ITK/Examples/ImageProcessing/ScaleTransform">http://www.itk.org/Wiki/ITK/Examples/ImageProcessing/ScaleTransform</a>"</div>
+Retrieved from "<a href="http://www.itk.org/ITKWikiArchive/Wiki/ITK/Examples/ImageProcessing/ScaleTransform">http://www.itk.org/ITKWikiArchive/Wiki/ITK/Examples/ImageProcessing/ScaleTransform</a>"</div>
 		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
 				<div class="visualClear"></div>
 	</div>
@@ -301,7 +301,7 @@ Retrieved from "<a href="http://www.itk.org/Wiki/ITK/Examples/ImageProcessing/Sc
 		<h5>Views</h5>
 		<div class="pBody">
 			<ul>
-				 <li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Examples/ImageProcessing/ScaleTransform" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-nstab-main" class="selected"><a href="/ITKWikiArchive/Wiki/ITK/Examples/ImageProcessing/ScaleTransform" title="View the content page [c]" accesskey="c">Page</a></li>
 				 <li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Examples/ImageProcessing/ScaleTransform&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
 				 <li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Examples/ImageProcessing/ScaleTransform&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
 				 <li id="ca-history"><a href="/Wiki/index.php?title=ITK/Examples/ImageProcessing/ScaleTransform&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>

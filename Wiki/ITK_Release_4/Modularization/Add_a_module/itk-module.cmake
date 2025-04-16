@@ -10,7 +10,7 @@
 <link rel="EditURI" type="application/rsd+xml" href="http://www.itk.org/Wiki/api.php?action=rsd" />
 <link rel="copyright" href="https://creativecommons.org/licenses/by/2.5/" />
 <link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="canonical" href="/Wiki/ITK/Release_4/Modularization/Add_a_module/itk-module.cmake" />
+<link rel="canonical" href="/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/Add_a_module/itk-module.cmake" />
 <link rel="stylesheet" href="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
 <!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
@@ -71,7 +71,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">ITK/Release 4/Modularization/Add a module/itk-module.cmake</span></h1>
 	<div id="bodyContent" class="mw-body">
 		<div id="siteSub">From KitwarePublic</div>
-		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/Wiki/ITK/Release_4/Modularization" title="ITK/Release 4/Modularization">Modularization</a></span>(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/Modularization/Add_a_module/itk-module.cmake&amp;redirect=no" title="ITK Release 4/Modularization/Add a module/itk-module.cmake">ITK Release 4/Modularization/Add a module/itk-module.cmake</a>)</div>
+		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Release_4/Modularization" title="ITK/Release 4/Modularization">Modularization</a></span>(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/Modularization/Add_a_module/itk-module.cmake&amp;redirect=no" title="ITK Release 4/Modularization/Add a module/itk-module.cmake">ITK Release 4/Modularization/Add a module/itk-module.cmake</a>)</div>
 		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
 
 		<!-- start content -->
@@ -119,7 +119,7 @@ Retrieved from "<a href="http://www.itk.org/Wiki/index.php?title=ITK/Release_4/M
 		<h3>Views</h3>
 		<div class="pBody">
 			<ul>
-				<li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Release_4/Modularization/Add_a_module/itk-module.cmake" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-nstab-main" class="selected"><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/Add_a_module/itk-module.cmake" title="View the content page [c]" accesskey="c">Page</a></li>
 				<li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Modularization/Add_a_module/itk-module.cmake&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
 				<li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Release_4/Modularization/Add_a_module/itk-module.cmake&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
 				<li id="ca-history"><a href="/Wiki/index.php?title=ITK/Release_4/Modularization/Add_a_module/itk-module.cmake&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>

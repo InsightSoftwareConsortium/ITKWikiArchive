@@ -35,17 +35,17 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">ITK/Examples/Instructions/ForDevelopers</span></h1>
 	<div id="bodyContent" class="mw-body">
 		<div id="siteSub">From KitwarePublic</div>
-		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Examples" title="ITK/Examples">Examples</a>&lrm; | <a href="/Wiki/ITK/Examples/Instructions" title="ITK/Examples/Instructions">Instructions</a></span></div>
+		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Examples" title="ITK/Examples">Examples</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions" title="ITK/Examples/Instructions">Instructions</a></span></div>
 		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
 
 		<!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>The success of the ITK Wiki Examples depends on the contributions from the ITK user community. If you wish to contribute to this valuable resource, please follow these guidelines. If you are a Wiki Example User, <a href="/Wiki/ITK/Examples/Instructions/ForUsers" title="ITK/Examples/Instructions/ForUsers">go here</a> or a Wiki Example Administrator <a href="/Wiki/ITK/Examples/Instructions/ForAdministrators" title="ITK/Examples/Instructions/ForAdministrators">go here</a>.
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>The success of the ITK Wiki Examples depends on the contributions from the ITK user community. If you wish to contribute to this valuable resource, please follow these guidelines. If you are a Wiki Example User, <a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForUsers" title="ITK/Examples/Instructions/ForUsers">go here</a> or a Wiki Example Administrator <a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForAdministrators" title="ITK/Examples/Instructions/ForAdministrators">go here</a>.
 </p>
 <h2><span class="mw-headline" id="Create_an_Example">Create an Example</span></h2>
 <p>C++, Tcl, Python and Java examples are welcome. Examples should illustrate a single concept.
 </p>
 <h2><span class="mw-headline" id="Follow_the_Coding_Guidelines">Follow the Coding Guidelines</span></h2>
-<p>When you write an example, please follow the <a href="/Wiki/ITK/Examples/GuideLines" title="ITK/Examples/GuideLines">coding guidelines</a>. Create the example on your local system, compile and run it before you store it on the wiki.
+<p>When you write an example, please follow the <a href="/ITKWikiArchive/Wiki/ITK/Examples/GuideLines" title="ITK/Examples/GuideLines">coding guidelines</a>. Create the example on your local system, compile and run it before you store it on the wiki.
 </p>
 <h2><span class="mw-headline" id="Choose_a_Topic">Choose a Topic</span></h2>
 <p>The examples are organized by topic. Current topics include  etc.
@@ -110,7 +110,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <ul>
 <li> The "Show preview" button at the bottom next to "Save page" is a good idea - it will let you play around with things and see what they look like without actually uploading them to the wiki. When you are satisfied, you can then click "Save page".
 </li>
-<li> Look at one of the <a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/ITK/Examples/EdgesAndGradients/GradientMagnitudeImageFilter">existing example pages</a> for guidance.
+<li> Look at one of the <a rel="nofollow" class="external text" href="http://www.vtk.org/ITKWikiArchive/Wiki/ITK/Examples/EdgesAndGradients/GradientMagnitudeImageFilter">existing example pages</a> for guidance.
 </li>
 </ul>
 <h2><span class="mw-headline" id="Wiki_Example_Boilerplate">Wiki Example Boilerplate</span></h2>
@@ -180,7 +180,7 @@ Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/Instru
 		<h3>Views</h3>
 		<div class="pBody">
 			<ul>
-				<li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Examples/Instructions/ForDevelopers" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-nstab-main" class="selected"><a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForDevelopers" title="View the content page [c]" accesskey="c">Page</a></li>
 				<li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Examples/Instructions/ForDevelopers&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
 				<li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Examples/Instructions/ForDevelopers&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
 				<li id="ca-history"><a href="/Wiki/index.php?title=ITK/Examples/Instructions/ForDevelopers&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>

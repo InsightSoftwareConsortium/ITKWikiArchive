@@ -56,39 +56,39 @@
 <h2><span class="mw-headline" id="Backward_Compatibility">Backward Compatibility</span></h2>
 <ul><li><a rel="nofollow" class="external text" href="http://insightsoftwareconsortium.org/wiki/index.php/Administration-BackwardCompatibility">Backward Compatibility Policy</a></li></ul>
 <ul><li><a href="/Wiki/images/2/2d/ITKAPIChangePolicy.pdf" class="internal" title="ITKAPIChangePolicy.pdf">Backward Compatibility White Paper</a></li></ul>
-<ul><li><a href="/Wiki/ITK/Backward_Compatibility_Open_Discussion" title="ITK/Backward Compatibility Open Discussion">Backward Compatibility Open Discussion</a></li></ul>
-<ul><li><a href="/Wiki/ITK/Deprecation_Procedure" title="ITK/Deprecation Procedure">Deprecation Procedure</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Backward_Compatibility_Open_Discussion" title="ITK/Backward Compatibility Open Discussion">Backward Compatibility Open Discussion</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Deprecation_Procedure" title="ITK/Deprecation Procedure">Deprecation Procedure</a></li></ul>
 <h2><span class="mw-headline" id="Design_Principles">Design Principles</span></h2>
-<ul><li><a href="/Wiki/ITK/Design_Principles" title="ITK/Design Principles">Design Principles</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Design_Principles" title="ITK/Design Principles">Design Principles</a></li></ul>
 <h2><span class="mw-headline" id="Coding_Style">Coding Style</span></h2>
-<ul><li><a href="/Wiki/ITK/Coding_Style_Guide" title="ITK/Coding Style Guide">Coding Style Guidelines</a></li></ul>
-<ul><li><a href="/Wiki/ITK/Release_4/Coding_Style/KWStyle" title="ITK/Release 4/Coding Style/KWStyle">Procedure for Checking Style</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Coding_Style_Guide" title="ITK/Coding Style Guide">Coding Style Guidelines</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Coding_Style/KWStyle" title="ITK/Release 4/Coding Style/KWStyle">Procedure for Checking Style</a></li></ul>
 <h2><span class="mw-headline" id="Code_Coverage">Code Coverage</span></h2>
-<ul><li><a href="/Wiki/ITK/Code_Coverage_Practices" title="ITK/Code Coverage Practices">Code Coverage Practices</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Code_Coverage_Practices" title="ITK/Code Coverage Practices">Code Coverage Practices</a></li></ul>
 <h2><span class="mw-headline" id="Dynamic_Analysis">Dynamic Analysis</span></h2>
-<ul><li><a href="/Wiki/ITK/Dynamic_Analysis_Practices" title="ITK/Dynamic Analysis Practices">Dynamic Analysis Practices</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Dynamic_Analysis_Practices" title="ITK/Dynamic Analysis Practices">Dynamic Analysis Practices</a></li></ul>
 <h2><span class="mw-headline" id="Reporting_and_Fixing_Bugs">Reporting and Fixing Bugs</span></h2>
-<ul><li><a href="/Wiki/ITK/Procedure_for_Contributing_Bug_Fixes" title="ITK/Procedure for Contributing Bug Fixes">Policy and Procedures for Reporting and Fixing Bugs</a></li></ul>
-<ul><li><a href="/Wiki/ITK/Contribute" title="ITK/Contribute">Updated procedure for contributing through git</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Procedure_for_Contributing_Bug_Fixes" title="ITK/Procedure for Contributing Bug Fixes">Policy and Procedures for Reporting and Fixing Bugs</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Contribute" title="ITK/Contribute">Updated procedure for contributing through git</a></li></ul>
 <h2><span class="mw-headline" id="Contributing">Contributing</span></h2>
-<ul><li><a href="/Wiki/ITK/Policy_and_Procedures_for_Adding_Developers" title="ITK/Policy and Procedures for Adding Developers">Policy and Procedures for Adding Developers</a></li></ul>
-<ul><li><a href="/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards" title="ITK/Policy and Procedure for Adding Dashboards">Policy and Procedures for Adding Dashboards</a></li></ul>
-<ul><li><a href="/Wiki/ITK/Release_4/New_Code_Contribution_Process" title="ITK/Release 4/New Code Contribution Process">Policy and Procedures for Adding New Code</a></li></ul>
-<ul><li><a href="/Wiki/ITK/Release_4/Modularization/_Add_tests" title="ITK/Release 4/Modularization/ Add tests">Policy and Procedures for Adding Tests</a></li></ul>
-<ul><li><a href="/Wiki/ITK/Git/Develop/Data" title="ITK/Git/Develop/Data">Policy and Procedures for Adding Test Data</a></li></ul>
-<ul><li><a href="/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" title="ITK/Policy and Procedures for Adding Remote Modules">Policy and Procedures for Adding Remote Modules</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedures_for_Adding_Developers" title="ITK/Policy and Procedures for Adding Developers">Policy and Procedures for Adding Developers</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards" title="ITK/Policy and Procedure for Adding Dashboards">Policy and Procedures for Adding Dashboards</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/New_Code_Contribution_Process" title="ITK/Release 4/New Code Contribution Process">Policy and Procedures for Adding New Code</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/_Add_tests" title="ITK/Release 4/Modularization/ Add tests">Policy and Procedures for Adding Tests</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Git/Develop/Data" title="ITK/Git/Develop/Data">Policy and Procedures for Adding Test Data</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" title="ITK/Policy and Procedures for Adding Remote Modules">Policy and Procedures for Adding Remote Modules</a></li></ul>
 <h2><span class="mw-headline" id="Generating_a_Release">Generating a Release</span></h2>
-<ul><li><a href="/Wiki/ITK/Release_Schedule" title="ITK/Release Schedule">Release Schedule</a></li>
-<li><a href="/Wiki/ITK/How_to_make_a_Release" title="ITK/How to make a Release">Procedure for Generating a Release</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_Schedule" title="ITK/Release Schedule">Release Schedule</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/How_to_make_a_Release" title="ITK/How to make a Release">Procedure for Generating a Release</a></li></ul>
 <h2><span class="mw-headline" id="Internationalization">Internationalization</span></h2>
-<p><a href="/Wiki/ITK/Policy_and_Procedures_for_Internationalization" title="ITK/Policy and Procedures for Internationalization">Policy and Procedures for Internationalization</a>
+<p><a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedures_for_Internationalization" title="ITK/Policy and Procedures for Internationalization">Policy and Procedures for Internationalization</a>
 </p>
 <h2><span id="Other_Policies_.28Probably_should_be_moved.29"></span><span class="mw-headline" id="Other_Policies_(Probably_should_be_moved)">Other Policies (Probably should be moved)</span></h2>
-<ul><li><a href="/Wiki/ITK/Build_Instructions_for_Developers" title="ITK/Build Instructions for Developers">Build Instructions for Developers</a></li>
-<li><a href="/Wiki/ITK/Procedure_for_Contributing_New_Classes_and_Algorithms" title="ITK/Procedure for Contributing New Classes and Algorithms">Procedure for Contributing New Classes and Algorithms</a></li>
-<li><a href="/Wiki/ITK/Procedure_for_Contributing_Bug_Fixes" title="ITK/Procedure for Contributing Bug Fixes">Procedure for Contributing Bug Fixes</a></li>
-<li><a href="/Wiki/ITK/Procedure_for_Adding_a_Test" class="mw-redirect" title="ITK/Procedure for Adding a Test">Procedure for Adding a Test</a></li>
-<li><a href="/Wiki/ITK/Git" title="ITK/Git">ITK Git Instructions</a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Build_Instructions_for_Developers" title="ITK/Build Instructions for Developers">Build Instructions for Developers</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Procedure_for_Contributing_New_Classes_and_Algorithms" title="ITK/Procedure for Contributing New Classes and Algorithms">Procedure for Contributing New Classes and Algorithms</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Procedure_for_Contributing_Bug_Fixes" title="ITK/Procedure for Contributing Bug Fixes">Procedure for Contributing Bug Fixes</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Procedure_for_Adding_a_Test" class="mw-redirect" title="ITK/Procedure for Adding a Test">Procedure for Adding a Test</a></li>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">ITK Git Instructions</a></li></ul>
 <!-- 
 NewPP limit report
 Cached time: 20220523113941
@@ -127,7 +127,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Policies_and_Procedures" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policies_and_Procedures&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Policies_and_Procedures">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policies_and_Procedures&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policies_and_Procedures&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Policies_and_Procedures" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policies_and_Procedures&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Policies_and_Procedures">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policies_and_Procedures&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Policies_and_Procedures&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -136,7 +136,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Policies_and_Procedures" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policies_and_Procedures&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Policies_and_Procedures" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Policies_and_Procedures&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

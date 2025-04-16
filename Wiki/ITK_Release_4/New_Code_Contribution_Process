@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>ITK/Release 4/New Code Contribution Process - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"658fbf9aa40cc8f5f39a9a77","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/New_Code_Contribution_Process","wgTitle":"ITK/Release 4/New Code Contribution Process","wgCurRevisionId":44209,"wgRevisionId":44209,"wgArticleId":9201,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/New_Code_Contribution_Process","wgRelevantArticleId":9201,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],
-"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4/New_Code_Contribution_Process","wgInternalRedirectTargetUrl":"/Wiki/ITK/Release_4/New_Code_Contribution_Process"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4/New_Code_Contribution_Process","wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Release_4/New_Code_Contribution_Process"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
 <link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
@@ -18,7 +18,7 @@
 <link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
 <link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4/New_Code_Contribution_Process"/>
+<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4/New_Code_Contribution_Process"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_New_Code_Contribution_Process rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
 	<div id="column-content">
@@ -30,7 +30,7 @@
 			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Release 4/New Code Contribution Process</h1>
 			<div id="bodyContent" class="monobook-body">
 				<div id="siteSub">From KitwarePublic</div>
-				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/New_Code_Contribution_Process&amp;redirect=no" class="mw-redirect" title="ITK Release 4/New Code Contribution Process">ITK Release 4/New Code Contribution Process</a>)</span></div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/New_Code_Contribution_Process&amp;redirect=no" class="mw-redirect" title="ITK Release 4/New Code Contribution Process">ITK Release 4/New Code Contribution Process</a>)</span></div>
 				
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
@@ -134,20 +134,20 @@
 </p><p><br />
 </p>
 <h3><span class="mw-headline" id="Process">Process</span></h3>
-<ol><li>Follow <a href="/Wiki/ITK/Git" title="ITK/Git">the procedure to become an ITK developer and setup your environment</a>.</li>
+<ol><li>Follow <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">the procedure to become an ITK developer and setup your environment</a>.</li>
 <li><a rel="nofollow" class="external text" href="http://www.insight-journal.org/help/submission">Submit an article to the Insight Journal</a>
 <ul><li>Waived for ITKv4 contractors.</li></ul></li>
 <li>Follow <a href="/Wiki/ITK_Release_4/Modularization/Add_new_classes" class="mw-redirect" title="ITK Release 4/Modularization/Add new classes">the procedure to add a new class</a>.</li>
 <li>Review the code using the <a href="/Wiki/ITK_Release_4/Modularization/Code_Reviews/Checklist" class="mw-redirect" title="ITK Release 4/Modularization/Code Reviews/Checklist">Checklist</a></li>
-<li>Post as a <a href="/Wiki/ITK/Git/Develop#Workflow" title="ITK/Git/Develop">Gerrit Patch</a>
+<li>Post as a <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop#Workflow" title="ITK/Git/Develop">Gerrit Patch</a>
 <ol><li>Gerrit provides a Peer-review mechanism for the patch</li>
 <li>Gerrit uses <a href="/Wiki/ITK_Release_4/Testing_On_Demand/Tutorial" class="mw-redirect" title="ITK Release 4/Testing On Demand/Tutorial">Cdash@home</a> to provide automated testing of patches</li></ol></li>
-<li>After Gerrit peer-review approval, <a href="/Wiki/ITK/Git/Develop#Merge_a_Topic" title="ITK/Git/Develop">merge the topic</a>.</li></ol>
+<li>After Gerrit peer-review approval, <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop#Merge_a_Topic" title="ITK/Git/Develop">merge the topic</a>.</li></ol>
 <h2><span class="mw-headline" id="Internal_Modules">Internal Modules</span></h2>
 <p>Internal modules are full fledged modules that will be integrated with the ITK git repository and will be distributed as part of ITK.
 </p>
 <h3><span class="mw-headline" id="Process_2">Process</span></h3>
-<ol><li>Follow <a href="/Wiki/ITK/Git" title="ITK/Git">the procedure to become an ITK developer and setup your environment</a>.</li>
+<ol><li>Follow <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">the procedure to become an ITK developer and setup your environment</a>.</li>
 <li>Follow <a href="/Wiki/ITK_Release_4/Modularization/_Add_a_module" class="mw-redirect" title="ITK Release 4/Modularization/ Add a module"> the procedure to Add an Internal Module</a></li>
 <li>Create a topic branch</li>
 <li>Review the code using the <a href="/Wiki/ITK_Release_4/Modularization/Code_Reviews/Checklist" class="mw-redirect" title="ITK Release 4/Modularization/Code Reviews/Checklist">Checklist</a></li>
@@ -169,7 +169,7 @@
 <p>A bridge module depends on third party headers not distributed with ITK. A bridge module usually connects classes that interface to two or more toolkits.
 </p>
 <h3><span class="mw-headline" id="Process_3">Process</span></h3>
-<ol><li>Follow <a href="/Wiki/ITK/Git" title="ITK/Git">the procedure to become an ITK developer and setup your environment</a>.</li>
+<ol><li>Follow <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">the procedure to become an ITK developer and setup your environment</a>.</li>
 <li>Follow <a href="/Wiki/ITK_Release_4/Modularization/_Add_a_module" class="mw-redirect" title="ITK Release 4/Modularization/ Add a module"> the procedure to Add an Internal Module</a>.
 <ul><li>Place your module in the group <b>Bridge</b></li>
 <li>Create <i>itk-module-init.cmake</i>
@@ -195,7 +195,7 @@
 <p>External modules are ITK-like modules that cannot be included in ITK because of license issues or should not be included in ITK because of scope and/or specialized use.
 </p>
 <h3><span class="mw-headline" id="Process_4">Process</span></h3>
-<ol><li>Follow <a href="/Wiki/ITK/Git" title="ITK/Git">the procedure to become an ITK developer and setup your environment</a>.</li>
+<ol><li>Follow <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">the procedure to become an ITK developer and setup your environment</a>.</li>
 <li>Follow <a href="/Wiki/ITK_Release_4/Modularization/Add_an_external_module_(external_module)" class="mw-redirect" title="ITK Release 4/Modularization/Add an external module (external module)">the procedure to Add an External Module</a></li></ol>
 <h3><span class="mw-headline" id="Examples_3">Examples</span></h3>
 <ul><li>Lesion Sizing Toolkit
@@ -229,31 +229,31 @@
 <ul><li>find_package
 <ul><li>Volview Plugins</li>
 <li>V3D Plugins</li>
-<li><a href="/Wiki/ITK/Examples" title="ITK/Examples">ITK Wiki Examples</a></li></ul></li></ul>
+<li><a href="/ITKWikiArchive/Wiki/ITK/Examples" title="ITK/Examples">ITK Wiki Examples</a></li></ul></li></ul>
 <ul><li>Superbuild
 <ul><li><a rel="nofollow" class="external text" href="http://www.slicer.org/slicerWiki/index.php/Slicer4">Slicer4</a></li></ul></li></ul>
 <h2><span class="mw-headline" id="New_Data">New Data</span></h2>
 <p>Data may be needed as part of testing code and/or examples on how to run new classes, applications or layers.
 </p>
 <h3><span class="mw-headline" id="Process_7">Process</span></h3>
-<p>Please see the <a href="/Wiki/ITK/Git/Develop/Data" title="ITK/Git/Develop/Data">instructions on how to add data</a>.
+<p>Please see the <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop/Data" title="ITK/Git/Develop/Data">instructions on how to add data</a>.
 </p>
 <h2><span class="mw-headline" id="Bug_Fixes">Bug Fixes</span></h2>
 <p>Bug fixes are contributions that repair defects reported in the <a rel="nofollow" class="external text" href="http://issues.itk.org">JIRA Issue Tracker</a> or repair daily defects that creep into ITK.
 </p>
 <h3><span class="mw-headline" id="Process_8">Process</span></h3>
-<ol><li>Follow <a href="/Wiki/ITK/Git/Develop" title="ITK/Git/Develop">the procedure to become an ITK developer</a>.</li>
+<ol><li>Follow <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop" title="ITK/Git/Develop">the procedure to become an ITK developer</a>.</li>
 <li>To reference JIRA issue XY, add " (#ITK-XY)" to the END of the FIRST line." or <b>BUG: ITK-XY</b> as the commit prefix.</li>
-<li>Post as a <a href="/Wiki/ITK/Git/Develop#Workflow" title="ITK/Git/Develop">Gerrit Patch</a>
+<li>Post as a <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop#Workflow" title="ITK/Git/Develop">Gerrit Patch</a>
 <ol><li>Gerrit provides a Peer-review mechanism for the patch</li>
 <li>Gerrit uses <a href="/Wiki/ITK_Release_4/Testing_On_Demand/Tutorial" class="mw-redirect" title="ITK Release 4/Testing On Demand/Tutorial">Cdash@home</a> to provide automated testing of patches</li></ol></li>
-<li>After Gerrit peer-review approval, <a href="/Wiki/ITK/Git/Develop#Merge_a_Topic" title="ITK/Git/Develop">merge the topic</a>.</li></ol>
+<li>After Gerrit peer-review approval, <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop#Merge_a_Topic" title="ITK/Git/Develop">merge the topic</a>.</li></ol>
 <h2><span class="mw-headline" id="Wiki_Examples">Wiki Examples</span></h2>
 <p>Wiki examples are independent, compilable examples that illustrate ITK concepts.
 </p><p><b>Please Note:</b> The examples illustrate existing ITK classes and <b>do not</b> introduce new classes.
 </p>
 <h3><span class="mw-headline" id="Process_9">Process</span></h3>
-<p>Follow <a href="/Wiki/ITK/Examples/Instructions/ForDevelopers" title="ITK/Examples/Instructions/ForDevelopers">this procedure</a> to add a Wiki example.
+<p>Follow <a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForDevelopers" title="ITK/Examples/Instructions/ForDevelopers">this procedure</a> to add a Wiki example.
 </p>
 <h1><span class="mw-headline" id="ITKv4_Refactoring">ITKv4 Refactoring</span></h1>
 <p><a href="/Wiki/ITK_Release_4/The_Team/ITKv4_Development_Team" title="ITK Release 4/The Team/ITKv4 Development Team">ITKv4 Development Team</a>
@@ -360,7 +360,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/New_Code_Contribution_Process" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/New_Code_Contribution_Process&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/New_Code_Contribution_Process">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/New_Code_Contribution_Process&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/New_Code_Contribution_Process&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4/New_Code_Contribution_Process" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/New_Code_Contribution_Process&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4/New_Code_Contribution_Process">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/New_Code_Contribution_Process&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/New_Code_Contribution_Process&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -370,7 +370,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/New_Code_Contribution_Process" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/New_Code_Contribution_Process&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4/New_Code_Contribution_Process" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/New_Code_Contribution_Process&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

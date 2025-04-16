@@ -10,7 +10,7 @@
 <link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
 <link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
 <link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="canonical" href="/Wiki/ITK/Examples/Statistics/KdTreeBasedKmeansEstimator_3D" />
+<link rel="canonical" href="/ITKWikiArchive/Wiki/ITK/Examples/Statistics/KdTreeBasedKmeansEstimator_3D" />
 <link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
 <!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
@@ -36,12 +36,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 	<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">ITK/Examples/Statistics/KdTreeBasedKmeansEstimator 3D</span></h1>
 	<div id="bodyContent" class="mw-body">
 		<div id="siteSub">From KitwarePublic</div>
-		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Examples" title="ITK/Examples">Examples</a></span>(Redirected from <a href="/Wiki/index.php?title=ITK/Examples/Statistics/KdTreeBasedKMeansClustering_3D&amp;redirect=no" title="ITK/Examples/Statistics/KdTreeBasedKMeansClustering 3D">ITK/Examples/Statistics/KdTreeBasedKMeansClustering 3D</a>)<br />
+		<div id="contentSub"><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Examples" title="ITK/Examples">Examples</a></span>(Redirected from <a href="/Wiki/index.php?title=ITK/Examples/Statistics/KdTreeBasedKMeansClustering_3D&amp;redirect=no" title="ITK/Examples/Statistics/KdTreeBasedKMeansClustering 3D">ITK/Examples/Statistics/KdTreeBasedKMeansClustering 3D</a>)<br />
 				Redirect page</div>
 		<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
 
 		<!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="redirectMsg"><img src="/Wiki/skins/common/images/redirectltr.png" alt="#REDIRECT" /><span class="redirectText"><a href="/Wiki/ITK/Examples/Statistics/KdTreeBasedKmeansEstimator3D" title="ITK/Examples/Statistics/KdTreeBasedKmeansEstimator3D">ITK/Examples/Statistics/KdTreeBasedKmeansEstimator3D</a></span></div></div><div class="printfooter">
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="redirectMsg"><img src="/Wiki/skins/common/images/redirectltr.png" alt="#REDIRECT" /><span class="redirectText"><a href="/ITKWikiArchive/Wiki/ITK/Examples/Statistics/KdTreeBasedKmeansEstimator3D" title="ITK/Examples/Statistics/KdTreeBasedKmeansEstimator3D">ITK/Examples/Statistics/KdTreeBasedKmeansEstimator3D</a></span></div></div><div class="printfooter">
 Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/Statistics/KdTreeBasedKmeansEstimator_3D&amp;oldid=50651">http://itk.org/Wiki/index.php?title=ITK/Examples/Statistics/KdTreeBasedKmeansEstimator_3D&amp;oldid=50651</a>"</div>
 		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
 				<div class="visualClear"></div>
@@ -53,7 +53,7 @@ Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/Statis
 		<h3>Views</h3>
 		<div class="pBody">
 			<ul>
-				<li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/Examples/Statistics/KdTreeBasedKmeansEstimator_3D" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-nstab-main" class="selected"><a href="/ITKWikiArchive/Wiki/ITK/Examples/Statistics/KdTreeBasedKmeansEstimator_3D" title="View the content page [c]" accesskey="c">Page</a></li>
 				<li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/Examples/Statistics/KdTreeBasedKmeansEstimator_3D&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
 				<li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/Examples/Statistics/KdTreeBasedKmeansEstimator_3D&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
 				<li id="ca-history"><a href="/Wiki/index.php?title=ITK/Examples/Statistics/KdTreeBasedKmeansEstimator_3D&amp;action=history" rel="archives" title="Past revisions of this page [h]" accesskey="h">History</a></li>

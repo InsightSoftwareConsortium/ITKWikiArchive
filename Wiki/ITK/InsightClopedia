@@ -98,16 +98,16 @@
 <ul><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/Level_Sets&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/Level Sets (page does not exist)"> Level Sets</a>
 </li><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/Region_Growing_Segmentation_Filters&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/Region Growing Segmentation Filters (page does not exist)"> Region Growing Segmentation Filters</a>
 </li><li> Intensity-Based Image Segmentation Filters
-<ul><li> <a href="/Wiki/ITK/InsightClopedia/Watershed-based_Segmentation_Filters" title="ITK/InsightClopedia/Watershed-based Segmentation Filters"> Watershed-based Segmentation Filters</a>
+<ul><li> <a href="/ITKWikiArchive/Wiki/ITK/InsightClopedia/Watershed-based_Segmentation_Filters" title="ITK/InsightClopedia/Watershed-based Segmentation Filters"> Watershed-based Segmentation Filters</a>
 </li></ul>
-</li><li> <a href="/Wiki/ITK/InsightClopedia/MeanShiftClustering" title="ITK/InsightClopedia/MeanShiftClustering">Mean shift clustering</a>
-</li><li> <a href="/Wiki/ITK/InsightClopedia/kMeansClustering" title="ITK/InsightClopedia/kMeansClustering">k-Means clustering</a>
+</li><li> <a href="/ITKWikiArchive/Wiki/ITK/InsightClopedia/MeanShiftClustering" title="ITK/InsightClopedia/MeanShiftClustering">Mean shift clustering</a>
+</li><li> <a href="/ITKWikiArchive/Wiki/ITK/InsightClopedia/kMeansClustering" title="ITK/InsightClopedia/kMeansClustering">k-Means clustering</a>
 </li></ul>
 <a name="Image_Registration" id="Image_Registration"></a><h1> <span class="mw-headline"> Image Registration </span></h1>
-<ul><li> <a href="/Wiki/ITK/InsightClopedia/Registration" title="ITK/InsightClopedia/Registration"> Registration </a>
+<ul><li> <a href="/ITKWikiArchive/Wiki/ITK/InsightClopedia/Registration" title="ITK/InsightClopedia/Registration"> Registration </a>
 </li></ul>
 <a name="Meshes" id="Meshes"></a><h1> <span class="mw-headline"> Meshes </span></h1>
-<ul><li> <a href="/Wiki/ITK/InsightClopedia/Meshes" title="ITK/InsightClopedia/Meshes">Meshes</a>
+<ul><li> <a href="/ITKWikiArchive/Wiki/ITK/InsightClopedia/Meshes" title="ITK/InsightClopedia/Meshes">Meshes</a>
 </li></ul>
 <a name="Reading_and_Writing" id="Reading_and_Writing"></a><h1> <span class="mw-headline"> Reading and Writing </span></h1>
 <ul><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/DICOM&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/DICOM (page does not exist)">DICOM</a>
@@ -117,7 +117,7 @@
 <ul><li> <a href="/Wiki/index.php?title=ITK/InsightClopedia/Wrapping&amp;action=edit&amp;redlink=1" class="new" title="ITK/InsightClopedia/Wrapping (page does not exist)">Wrapping</a>
 </li></ul>
 <a name="DO.27s_and_DON.27Ts_of_ITK" id="DO.27s_and_DON.27Ts_of_ITK"></a><h1> <span class="mw-headline"> DO's and DON'Ts of ITK </span></h1>
-<ul><li> <a href="/Wiki/ITK/InsightClopedia/DOs_and_DONTs" title="ITK/InsightClopedia/DOs and DONTs">DOs_and_DONTs</a>
+<ul><li> <a href="/ITKWikiArchive/Wiki/ITK/InsightClopedia/DOs_and_DONTs" title="ITK/InsightClopedia/DOs and DONTs">DOs_and_DONTs</a>
 </li></ul>
 
 <!-- 
@@ -130,7 +130,7 @@ Expensive parser function count: 0/100
 
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:4958-0!1!0!!en!2!edit=0 and timestamp 20100821183914 -->
 <div class="printfooter">
-Retrieved from "<a href="http://www.itk.org/Wiki/ITK/InsightClopedia">http://www.itk.org/Wiki/ITK/InsightClopedia</a>"</div>
+Retrieved from "<a href="http://www.itk.org/ITKWikiArchive/Wiki/ITK/InsightClopedia">http://www.itk.org/ITKWikiArchive/Wiki/ITK/InsightClopedia</a>"</div>
 						<!-- end content -->
 						<div class="visualClear"></div>
 		</div>
@@ -142,7 +142,7 @@ Retrieved from "<a href="http://www.itk.org/Wiki/ITK/InsightClopedia">http://www
 		<div class="pBody">
 			<ul>
 	
-				 <li id="ca-nstab-main" class="selected"><a href="/Wiki/ITK/InsightClopedia" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-nstab-main" class="selected"><a href="/ITKWikiArchive/Wiki/ITK/InsightClopedia" title="View the content page [c]" accesskey="c">Page</a></li>
 				 <li id="ca-talk" class="new"><a href="/Wiki/index.php?title=Talk:ITK/InsightClopedia&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
 				 <li id="ca-viewsource"><a href="/Wiki/index.php?title=ITK/InsightClopedia&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
 				 <li id="ca-history"><a href="/Wiki/index.php?title=ITK/InsightClopedia&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>

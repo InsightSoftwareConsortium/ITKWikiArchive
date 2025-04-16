@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>ITK/Getting Started/Build - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"87a18b5c0da59dfc080ab6fa","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Getting_Started/Build","wgTitle":"ITK/Getting Started/Build","wgCurRevisionId":48783,"wgRevisionId":48783,"wgArticleId":10536,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Getting_Started/Build","wgRelevantArticleId":10536,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":
-"ITK/Getting_Started/Building","wgInternalRedirectTargetUrl":"/Wiki/ITK/Getting_Started/Build"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+"ITK/Getting_Started/Building","wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Getting_Started/Build"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
 <link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
@@ -19,7 +19,7 @@
 <link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
 <link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Getting_Started/Build"/>
+<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Getting_Started/Build"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Getting_Started_Build rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
 	<div id="column-content">
@@ -32,7 +32,7 @@
 				>ITK/Getting Started/Build</h1>
 			<div id="bodyContent" class="monobook-body">
 				<div id="siteSub">From KitwarePublic</div>
-				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Getting_Started" title="ITK/Getting Started">Getting Started</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK/Getting_Started/Building&amp;redirect=no" class="mw-redirect" title="ITK/Getting Started/Building">ITK/Getting Started/Building</a>)</span></div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Getting_Started" title="ITK/Getting Started">Getting Started</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK/Getting_Started/Building&amp;redirect=no" class="mw-redirect" title="ITK/Getting Started/Building">ITK/Getting Started/Building</a>)</span></div>
 				
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
@@ -41,19 +41,19 @@
 <table style="text-align: center;">
 
 <tbody><tr>
-<td style="padding: 20px 100px 20px 50px"><a href="/Wiki/ITK/Getting_Started/Build/Linux" title="ITK/Getting Started/Build/Linux"><img alt="Linux.jpg" src="/Wiki/images/thumb/6/6a/Linux.jpg/200px-Linux.jpg" decoding="async" width="200" height="200" srcset="/Wiki/images/6/6a/Linux.jpg 1.5x" /></a></td>
-<td style="padding: 20px 100px 20px 50px"><a href="/Wiki/ITK/Getting_Started/Build/Windows" title="ITK/Getting Started/Build/Windows"><img alt="Windows.png" src="/Wiki/images/thumb/b/ba/Windows.png/200px-Windows.png" decoding="async" width="200" height="200" srcset="/Wiki/images/thumb/b/ba/Windows.png/300px-Windows.png 1.5x, /Wiki/images/thumb/b/ba/Windows.png/400px-Windows.png 2x" /></a></td>
-<td style="padding: 20px 100px 20px 50px"><a href="/Wiki/ITK/Getting_Started/Build/Mac" title="ITK/Getting Started/Build/Mac"><img alt="Apple.png" src="/Wiki/images/thumb/7/7d/Apple.png/200px-Apple.png" decoding="async" width="200" height="234" srcset="/Wiki/images/thumb/7/7d/Apple.png/300px-Apple.png 1.5x, /Wiki/images/thumb/7/7d/Apple.png/400px-Apple.png 2x" /></a>
+<td style="padding: 20px 100px 20px 50px"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Build/Linux" title="ITK/Getting Started/Build/Linux"><img alt="Linux.jpg" src="/Wiki/images/thumb/6/6a/Linux.jpg/200px-Linux.jpg" decoding="async" width="200" height="200" srcset="/Wiki/images/6/6a/Linux.jpg 1.5x" /></a></td>
+<td style="padding: 20px 100px 20px 50px"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Build/Windows" title="ITK/Getting Started/Build/Windows"><img alt="Windows.png" src="/Wiki/images/thumb/b/ba/Windows.png/200px-Windows.png" decoding="async" width="200" height="200" srcset="/Wiki/images/thumb/b/ba/Windows.png/300px-Windows.png 1.5x, /Wiki/images/thumb/b/ba/Windows.png/400px-Windows.png 2x" /></a></td>
+<td style="padding: 20px 100px 20px 50px"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Build/Mac" title="ITK/Getting Started/Build/Mac"><img alt="Apple.png" src="/Wiki/images/thumb/7/7d/Apple.png/200px-Apple.png" decoding="async" width="200" height="234" srcset="/Wiki/images/thumb/7/7d/Apple.png/300px-Apple.png 1.5x, /Wiki/images/thumb/7/7d/Apple.png/400px-Apple.png 2x" /></a>
 </td></tr>
 <tr>
-<td><span style="font-size:200%"><a href="/Wiki/ITK/Getting_Started/Build/Linux" title="ITK/Getting Started/Build/Linux"> Linux</a></span></td>
-<td><span style="font-size:200%"><a href="/Wiki/ITK/Getting_Started/Build/Windows" title="ITK/Getting Started/Build/Windows"> Windows</a></span></td>
+<td><span style="font-size:200%"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Build/Linux" title="ITK/Getting Started/Build/Linux"> Linux</a></span></td>
+<td><span style="font-size:200%"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Build/Windows" title="ITK/Getting Started/Build/Windows"> Windows</a></span></td>
 <td><span style="font-size:200%"><a href="/Wiki/index.php?title=ITK/Getting_Started/Build/Mac&amp;action=edit&amp;redlink=1" class="new" title="ITK/Getting Started/Build/Mac (page does not exist)"> Mac</a></span>
 </td></tr></tbody></table>
 <p><br />
 General guidelines:
 </p>
-<ol><li><a href="/Wiki/ITK/Configuring_and_Building" title="ITK/Configuring and Building">Configuring and Building</a>: there are a few platform-specific notes that you need to consider</li></ol>
+<ol><li><a href="/ITKWikiArchive/Wiki/ITK/Configuring_and_Building" title="ITK/Configuring and Building">Configuring and Building</a>: there are a few platform-specific notes that you need to consider</li></ol>
 <!-- 
 NewPP limit report
 Cached time: 20220809113434
@@ -93,7 +93,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Getting_Started/Build" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Getting_Started/Build&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Getting_Started/Build">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Getting_Started/Build&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Getting_Started/Build&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Build" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Getting_Started/Build&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Build">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Getting_Started/Build&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Getting_Started/Build&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -102,7 +102,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Getting_Started/Build" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Getting_Started/Build&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Getting_Started/Build" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Getting_Started/Build&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

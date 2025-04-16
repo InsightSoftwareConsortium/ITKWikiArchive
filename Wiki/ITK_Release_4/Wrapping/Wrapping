@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>ITK/Release 4/Wrapping - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"0317ca3d85613259dc6d7cf0","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Wrapping","wgTitle":"ITK/Release 4/Wrapping","wgCurRevisionId":44305,"wgRevisionId":44305,"wgArticleId":5632,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Wrapping","wgRelevantArticleId":5632,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4/Wrapping",
-"wgInternalRedirectTargetUrl":"/Wiki/ITK/Release_4/Wrapping"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
+"wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
 <link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
@@ -19,7 +19,7 @@
 <link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
 <link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Release_4/Wrapping"/>
+<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Wrapping rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
 	<div id="column-content">
@@ -32,7 +32,7 @@
 				>ITK/Release 4/Wrapping</h1>
 			<div id="bodyContent" class="monobook-body">
 				<div id="siteSub">From KitwarePublic</div>
-				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/Wrapping&amp;redirect=no" class="mw-redirect" title="ITK Release 4/Wrapping">ITK Release 4/Wrapping</a>)</span></div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Release_4" title="ITK/Release 4">Release 4</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK_Release_4/Wrapping&amp;redirect=no" class="mw-redirect" title="ITK Release 4/Wrapping">ITK Release 4/Wrapping</a>)</span></div>
 				
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
@@ -83,22 +83,22 @@
 <li>Lua&#160;?</li>
 <li>Tcl&#160;?</li>
 <li>see simpleITK</li></ul>
-<p><a href="/Wiki/ITK/Release_4/Wrapping/Examples" title="ITK/Release 4/Wrapping/Examples">Comparative Examples</a>
+<p><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/Examples" title="ITK/Release 4/Wrapping/Examples">Comparative Examples</a>
 </p>
 <h1><span class="mw-headline" id="Required_Tools_and_Technology">Required Tools and Technology</span></h1>
-<p>Installation is detailled <a href="/Wiki/ITK/Release_4/Wrapping/WrapITK_Installation" title="ITK/Release 4/Wrapping/WrapITK Installation">here</a>
+<p>Installation is detailled <a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/WrapITK_Installation" title="ITK/Release 4/Wrapping/WrapITK Installation">here</a>
 </p>
 <h2><span class="mw-headline" id="tools">tools</span></h2>
 <ul><li>WrapITK.</li>
 <li>Swig</li>
 <li>GccXML</li></ul>
 <h2><span class="mw-headline" id="WrapITK_Configuration_and_Build_Process_Internals">WrapITK Configuration and Build Process Internals</span></h2>
-<ul><li><a href="/Wiki/ITK/Release_4/Wrapping/BuildProcess" title="ITK/Release 4/Wrapping/BuildProcess"> Build Process for Dummies </a></li></ul>
+<ul><li><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/BuildProcess" title="ITK/Release 4/Wrapping/BuildProcess"> Build Process for Dummies </a></li></ul>
 <h2><span class="mw-headline" id="Parallel_Build_Status">Parallel Build Status</span></h2>
 <ul><li><a href="/Wiki/ITK_Release_4/Wrapping/Parallel_Build_Status" class="mw-redirect" title="ITK Release 4/Wrapping/Parallel Build Status">Parallel Build Status</a></li></ul>
 <h1><span class="mw-headline" id="Discussions_and_TConfs">Discussions and TConfs</span></h1>
-<ul><li>19-07-2010 - NoAgenda                                      - <a href="/Wiki/ITK/Release_4/Wrapping/19072010_Minutes" title="ITK/Release 4/Wrapping/19072010 Minutes">Minutes</a></li>
-<li>13-08-2010 - <a href="/Wiki/ITK/Release_4/Wrapping/13082010_Agenda" title="ITK/Release 4/Wrapping/13082010 Agenda">Agenda</a> - <a href="/Wiki/ITK/Release_4/Wrapping/13082010_Minutes" title="ITK/Release 4/Wrapping/13082010 Minutes">Minutes</a></li></ul>
+<ul><li>19-07-2010 - NoAgenda                                      - <a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/19072010_Minutes" title="ITK/Release 4/Wrapping/19072010 Minutes">Minutes</a></li>
+<li>13-08-2010 - <a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/13082010_Agenda" title="ITK/Release 4/Wrapping/13082010 Agenda">Agenda</a> - <a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/13082010_Minutes" title="ITK/Release 4/Wrapping/13082010 Minutes">Minutes</a></li></ul>
 <h2><span class="mw-headline" id="Pending_Tasks">Pending Tasks</span></h2>
 <ul><li><a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/ITK_Release_4/Wrapping/Tasks">here</a></li></ul>
 <!-- 
@@ -139,7 +139,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Wrapping" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Wrapping&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Wrapping">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Wrapping&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Release_4/Wrapping&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -148,7 +148,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Release_4/Wrapping" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Wrapping&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Release_4/Wrapping&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

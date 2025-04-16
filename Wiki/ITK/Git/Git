@@ -51,11 +51,11 @@ Please select a task for further instructions:
 </td></tr>
 <tr>
 <td>
-<dl><dd><ul><li><span style="font-size: 1.5em"><a href="/Wiki/ITK/Git/Download" title="ITK/Git/Download">Download ITK</a> - Users start here</span></li></ul></dd></dl>
+<dl><dd><ul><li><span style="font-size: 1.5em"><a href="/ITKWikiArchive/Wiki/ITK/Git/Download" title="ITK/Git/Download">Download ITK</a> - Users start here</span></li></ul></dd></dl>
 </td></tr>
 <tr>
 <td>
-<dl><dd><ul><li><span style="font-size: 1.5em"><a href="/Wiki/ITK/Git/Develop" title="ITK/Git/Develop">Develop ITK</a> - Contributors start here</span></li></ul></dd></dl>
+<dl><dd><ul><li><span style="font-size: 1.5em"><a href="/ITKWikiArchive/Wiki/ITK/Git/Develop" title="ITK/Git/Develop">Develop ITK</a> - Contributors start here</span></li></ul></dd></dl>
 </td></tr>
 <tr>
 <td>
@@ -64,7 +64,7 @@ Please select a task for further instructions:
 </td></tr>
 <tr>
 <td>
-<dl><dd><ul><li><span style="font-size: 1.5em"><a href="/Wiki/ITK/Git/Dashboard" title="ITK/Git/Dashboard">Test ITK</a></span> - CDash client setup</li></ul></dd></dl>
+<dl><dd><ul><li><span style="font-size: 1.5em"><a href="/ITKWikiArchive/Wiki/ITK/Git/Dashboard" title="ITK/Git/Dashboard">Test ITK</a></span> - CDash client setup</li></ul></dd></dl>
 </td></tr>
 <tr>
 <td>
@@ -169,7 +169,7 @@ Please select a task for further instructions:
 <li><b>release-3.20</b>: Maintenance of the ITKv3 series</li>
 <li><b>nightly-master</b>: Follows <b>master</b>, updated at 01:00 UTC</li>
 <li><b>hooks</b>: Local commit hooks (<a href="/Wiki/Git/Hooks#Local" title="Git/Hooks">place</a> in .git/hooks)</li>
-<li><b>dashboard</b>: Dashboard script (<a href="/Wiki/ITK/Git/Dashboard" title="ITK/Git/Dashboard">setup</a> a CDash client)</li></ul>
+<li><b>dashboard</b>: Dashboard script (<a href="/ITKWikiArchive/Wiki/ITK/Git/Dashboard" title="ITK/Git/Dashboard">setup</a> a CDash client)</li></ul>
 <p>Release branches converted from CVS have been artificially merged into master.
 Actual releases have tags named by the release version number.
 </p>
@@ -216,7 +216,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Git" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Git">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Git" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Git">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -226,7 +226,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Git" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Git" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

@@ -134,11 +134,11 @@ Please enter a unique name for the XML document
 <ul><li>Once the XML document has been committed, push the topic branch to Gerrit for review</li></ul>
 <pre>(DescriptiveName)$ git gerrit-push
 </pre>
-<ul><li>For more details on the pushing a topic to Gerrit, see the <a href="/Wiki/ITK/Gerrit/Primer" title="ITK/Gerrit/Primer">Gerrit Primer</a></li>
+<ul><li>For more details on the pushing a topic to Gerrit, see the <a href="/ITKWikiArchive/Wiki/ITK/Gerrit/Primer" title="ITK/Gerrit/Primer">Gerrit Primer</a></li>
 <li>Make any changes desired by the members of the review committee</li></ul>
 <h2><span class="mw-headline" id="Step_4_-_Finalize_the_Change">Step 4 - Finalize the Change</span></h2>
 <ul><li>Once the patch, including the Migration Guide XML document, has been accepted by the reivew committee, the topic is ready to be merged into <i>master</i></li>
-<li>For instructions on merging to <i>master</i>, see the bottom of the <a href="/Wiki/ITK/Gerrit/Primer#Stage_changes_into_the_ITK_official_repository" title="ITK/Gerrit/Primer">Gerrit Primer</a></li></ul>
+<li>For instructions on merging to <i>master</i>, see the bottom of the <a href="/ITKWikiArchive/Wiki/ITK/Gerrit/Primer#Stage_changes_into_the_ITK_official_repository" title="ITK/Gerrit/Primer">Gerrit Primer</a></li></ul>
 <h1><span class="mw-headline" id="Manual_XML_Document_Generation">Manual XML Document Generation</span></h1>
 <ul><li>Create a new file in $ITK_SOURCE/Documentation/Migration/ with a unique name</li>
 <li>The file must follow the format:</li></ul>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <title>ITK/Git/Develop - KitwarePublic</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"6bff9fbdb88ee4829d8792ef","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Git/Develop","wgTitle":"ITK/Git/Develop","wgCurRevisionId":62139,"wgRevisionId":62139,"wgArticleId":8143,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Inactive project pages"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Git/Develop","wgRelevantArticleId":8143,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK/Git/Simple",
-"wgInternalRedirectTargetUrl":"/Wiki/ITK/Git/Develop"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","skins.monobook.scripts"];</script>
+"wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Git/Develop"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
 <link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
@@ -18,7 +18,7 @@
 <link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
 <link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
 <link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/Wiki/ITK/Git/Develop"/>
+<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Git/Develop"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Git_Develop rootpage-ITK skin-monobook action-view skin--responsive"><div id="globalWrapper">
 	<div id="column-content">
@@ -30,14 +30,14 @@
 			<h1 id="firstHeading" class="firstHeading mw-first-heading">ITK/Git/Develop</h1>
 			<div id="bodyContent" class="monobook-body">
 				<div id="siteSub">From KitwarePublic</div>
-				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/Wiki/ITK/Git" title="ITK/Git">Git</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK/Git/Simple&amp;redirect=no" class="mw-redirect" title="ITK/Git/Simple">ITK/Git/Simple</a>)</span></div>
+				<div id="contentSub" ><span class="subpages">&lt; <a href="/Wiki/ITK" title="ITK">ITK</a>&lrm; | <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">Git</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/Wiki/index.php?title=ITK/Git/Simple&amp;redirect=no" class="mw-redirect" title="ITK/Git/Simple">ITK/Git/Simple</a>)</span></div>
 				
 				<div id="jump-to-nav"></div><a href="#column-one" class="mw-jump-link">Jump to navigation</a><a href="#searchInput" class="mw-jump-link">Jump to search</a>
 				<!-- start content -->
 				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r64789">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><table class="plainlinks metadata ambox ambox-notice" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><a href="/Wiki/WP:HISPAGES" title="WP:HISPAGES"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/30px-Historical.svg.png" decoding="async" width="30" height="38" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/45px-Historical.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/60px-Historical.svg.png 2x" /></a></div></td><td class="mbox-text"><div class="mbox-text-span"><b>This page is currently inactive and is retained for <a href="/Wiki/index.php?title=WP:HISPAGES&amp;action=edit&amp;redlink=1" class="new" title="WP:HISPAGES (page does not exist)">historical</a> reference.</b><br /><span style="font-size: 90%">Either the page is no longer relevant or consensus on its purpose has become unclear. To revive discussion, seek broader input via a forum such as the <a href="http://www.wikipedia.org/wiki/Village_pump_(proposals)" class="extiw" title="wikipedia:Village pump (proposals)">village pump</a>.</span> <span style="font-size: 90%"> </span></div></td></tr></tbody></table>
 <p><br />
 </p><p>This page documents how to develop ITK through <a rel="nofollow" class="external text" href="http://git-scm.com">Git</a>.
-See our <a href="/Wiki/ITK/Git" title="ITK/Git">table of contents</a> for more information.
+See our <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">table of contents</a> for more information.
 </p><p><i>
 Git is an extremely powerful version control tool that supports many different "workflows" for indivudal development and collaboration.
 Here we document procedures used by the ITK development community.
@@ -54,7 +54,7 @@ Please see our <a href="/Wiki/Git/Resources" title="Git/Resources">Git resource 
 <tbody><tr>
 <td width="60%">
 <p>1.
-Register <a href="/Wiki/ITK/Git/Account#Gerrit" title="ITK/Git/Account">Gerrit access</a> and possibly <a href="/Wiki/ITK/Git/Account#Git" title="ITK/Git/Account">Git push access</a>.
+Register <a href="/ITKWikiArchive/Wiki/ITK/Git/Account#Gerrit" title="ITK/Git/Account">Gerrit access</a> and possibly <a href="/ITKWikiArchive/Wiki/ITK/Git/Account#Git" title="ITK/Git/Account">Git push access</a>.
 </p>
 </td></tr>
 <tr>
@@ -66,7 +66,7 @@ Optionally download our <a href="/Wiki/images/1/10/GitITKCheatSheet.pdf" class="
 <tr>
 <td>
 <p>3.
-Follow the <a href="/Wiki/ITK/Git/Download#Clone" title="ITK/Git/Download">download instructions</a> to create a local ITK clone:
+Follow the <a href="/ITKWikiArchive/Wiki/ITK/Git/Download#Clone" title="ITK/Git/Download">download instructions</a> to create a local ITK clone:
 </p>
 </td></tr>
 <tr>
@@ -123,7 +123,7 @@ Code Review
 </td></tr>
 <tr>
 <td>
-<dl><dd><ul><li><a href="#Share_a_Topic">Share a Topic</a> (requires <a href="/Wiki/ITK/Git/Account#Gerrit" title="ITK/Git/Account">Gerrit access</a>)</li></ul></dd></dl>
+<dl><dd><ul><li><a href="#Share_a_Topic">Share a Topic</a> (requires <a href="/ITKWikiArchive/Wiki/ITK/Git/Account#Gerrit" title="ITK/Git/Account">Gerrit access</a>)</li></ul></dd></dl>
 </td>
 <td align="center">
 <p><a rel="nofollow" class="external text" href="http://code.google.com/p/gerrit/">Gerrit Code Review</a>
@@ -141,7 +141,7 @@ Integrate Changes
 </td></tr>
 <tr>
 <td>
-<dl><dd><ul><li><a href="#Merge_a_Topic">Merge a Topic</a> (requires <a href="/Wiki/ITK/Git/Account#Git" title="ITK/Git/Account">Git push access</a>)</li></ul></dd></dl>
+<dl><dd><ul><li><a href="#Merge_a_Topic">Merge a Topic</a> (requires <a href="/ITKWikiArchive/Wiki/ITK/Git/Account#Git" title="ITK/Git/Account">Git push access</a>)</li></ul></dd></dl>
 </td></tr>
 <tr>
 <td>
@@ -217,7 +217,7 @@ A reader should have a general idea of the feature or fix to be developed given 
 <tr>
 <td>
 <dl><dd><code>$ edit <i>file1</i> <i>file2</i> <i>file3</i></code></dd>
-<dd><i>(To add data follow <a href="/Wiki/ITK/Git/Develop/Data#Add_Data" title="ITK/Git/Develop/Data">these instructions</a>.)</i></dd>
+<dd><i>(To add data follow <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop/Data#Add_Data" title="ITK/Git/Develop/Data">these instructions</a>.)</i></dd>
 <dd><code>$ git add <i>file1</i> <i>file2</i> <i>file3</i></code></dd>
 <dd><code>$ git commit</code></dd></dl>
 </td>
@@ -252,7 +252,7 @@ A reader should have a general idea of the feature or fix to be developed given 
 </td></tr></tbody></table>
 <h2><span class="mw-headline" id="Share_a_Topic">Share a Topic</span></h2>
 <p>When a topic is ready for review and possible inclusion, share it by pushing to Gerrit.
-Be sure you have registered for <a href="/Wiki/ITK/Git/Account#Gerrit" title="ITK/Git/Account">Gerrit access</a>.
+Be sure you have registered for <a href="/ITKWikiArchive/Wiki/ITK/Git/Account#Gerrit" title="ITK/Git/Account">Gerrit access</a>.
 </p>
 <table style="width: 100%">
 
@@ -292,20 +292,20 @@ Be sure you have registered for <a href="/Wiki/ITK/Git/Account#Gerrit" title="IT
 <tr>
 <td>
 <dl><dd><code>$ git gerrit-push</code></dd>
-<dd><i>(If the topic adds data see <a href="/Wiki/ITK/Git/Develop/Data#Push" title="ITK/Git/Develop/Data">this note</a>.)</i></dd></dl>
+<dd><i>(If the topic adds data see <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop/Data#Push" title="ITK/Git/Develop/Data">this note</a>.)</i></dd></dl>
 <p>or if you started the topic from the release branch:
 </p>
 <dl><dd><code>$ git push gerrit HEAD:refs/for/release/<i>my-topic</i> </code></dd></dl>
 </td>
 <td align="center">
-<p><a href="/Wiki/ITK/Git/Account#Firewall_blocks_SSH_traffic" title="ITK/Git/Account">Connection refused</a>?
+<p><a href="/ITKWikiArchive/Wiki/ITK/Git/Account#Firewall_blocks_SSH_traffic" title="ITK/Git/Account">Connection refused</a>?
 <br />
 <a rel="nofollow" class="external text" href="http://itk.org/gitweb?p=ITK.git;a=blob;f=Utilities/DevelopmentSetupScripts/SetupGitAliases.sh;hb=HEAD"><code>alias.gerrit-push</code></a>
 <br />
 (<a rel="nofollow" class="external text" href="http://itk.org/gitweb?p=ITK.git;a=blob;f=Utilities/Git/git-gerrit-push;hb=HEAD"><code>Utilities/Git/git-gerrit-push</code></a>)
 </p>
 </td></tr></tbody></table>
-<p>Find your change in the <a rel="nofollow" class="external text" href="http://review.source.kitware.com/p/ITK">ITK Gerrit</a> instance and add <a href="/Wiki/ITK/Gerrit/Reviewers" title="ITK/Gerrit/Reviewers">reviewers</a>.
+<p>Find your change in the <a rel="nofollow" class="external text" href="http://review.source.kitware.com/p/ITK">ITK Gerrit</a> instance and add <a href="/ITKWikiArchive/Wiki/ITK/Gerrit/Reviewers" title="ITK/Gerrit/Reviewers">reviewers</a>.
 </p>
 <h2><span class="mw-headline" id="Revise_a_Topic">Revise a Topic</span></h2>
 <p>If a topic is approved during Gerrit review, skip to the <a href="#Merge_a_Topic">next step</a>.
@@ -463,7 +463,7 @@ patch set in Gerrit.
 </td></tr>
 </tbody></table>
 <h2><span class="mw-headline" id="Merge_a_Topic">Merge a Topic</span></h2>
-<p><b>Only authorized developers with <a href="/Wiki/ITK/Git/Account#Git" title="ITK/Git/Account">Git push access</a> to <code>itk.org</code> may perform this step.</b>
+<p><b>Only authorized developers with <a href="/ITKWikiArchive/Wiki/ITK/Git/Account#Git" title="ITK/Git/Account">Git push access</a> to <code>itk.org</code> may perform this step.</b>
 </p><p>After a feature topic has been reviewed and approved in Gerrit, merge it into the upstream repository.
 </p>
 <table style="width: 100%">
@@ -603,7 +603,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Git/Develop" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git/Develop&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Git/Develop">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git/Develop&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git/Develop&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Git/Develop" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git/Develop&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Git/Develop">Read</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git/Develop&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Git/Develop&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -613,7 +613,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Git/Develop" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git/Develop&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Git/Develop" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Git/Develop&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>

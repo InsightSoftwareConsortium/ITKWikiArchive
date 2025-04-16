@@ -69,7 +69,7 @@
 <h3><span class="mw-headline" id="Build_systems">Build systems</span></h3>
 <ul><li>Always use CMake with ITK.  CMake has generators for most major build systems.  Attempting to, for example, use Visual Studio directly without CMake will make things much more difficult than they need to be.</li></ul>
 <ul><li>ITK does not distribute binaries on purpose.  An open source software development system has numerous advantages; one advantage is avoiding problems related building, distributing, and linking binaries.  Have your build system build ITK from source on the the same platform and with the same compiler to avoid these problems.  Git submodules and the CMake ExternalProject system can help with this.</li></ul>
-<ul><li>For a list of supported compilers, see the <a href="/Wiki/ITK_Release_4/Modern_C%2B%2B" title="ITK Release 4/Modern C++">supported compilers Wiki page</a>.  The most accurate and informative supported compiler information is the set of compilers reporting to the <a rel="nofollow" class="external text" href="http://public.kitware.com/dashboard.php?name=itk">nightly dashboard</a>.  To make your favorite compiler better supported, consider <a href="/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards" title="ITK/Policy and Procedure for Adding Dashboards">setting up a nightly dashboard submission</a>.</li></ul>
+<ul><li>For a list of supported compilers, see the <a href="/Wiki/ITK_Release_4/Modern_C%2B%2B" title="ITK Release 4/Modern C++">supported compilers Wiki page</a>.  The most accurate and informative supported compiler information is the set of compilers reporting to the <a rel="nofollow" class="external text" href="http://public.kitware.com/dashboard.php?name=itk">nightly dashboard</a>.  To make your favorite compiler better supported, consider <a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards" title="ITK/Policy and Procedure for Adding Dashboards">setting up a nightly dashboard submission</a>.</li></ul>
 <h2><span class="mw-headline" id="Linux">Linux</span></h2>
 <ul><li>ITK supports the latest GCC very well.</li>
 <li>LLVM support is good.</li>
@@ -78,7 +78,7 @@
 <ul><li>Use the latest version of Xcode or build LLVM from source for best results.</li></ul>
 <h2><span class="mw-headline" id="Windows">Windows</span></h2>
 <h3><span class="mw-headline" id="Avoid_old_versions_of_Visual_Studio">Avoid old versions of Visual Studio</span></h3>
-<p>Please avoid attempting to use ancient Visual Studio compilers, such as VS6, which has been <a href="/Wiki/ITK/10th_Anniversary_Activities/Compilers_Farewell_ITKv4" title="ITK/10th Anniversary Activities/Compilers Farewell ITKv4">put to rest</a>.  There are a number of preferable alternatives to an old version of Visual Studio.
+<p>Please avoid attempting to use ancient Visual Studio compilers, such as VS6, which has been <a href="/ITKWikiArchive/Wiki/ITK/10th_Anniversary_Activities/Compilers_Farewell_ITKv4" title="ITK/10th Anniversary Activities/Compilers Farewell ITKv4">put to rest</a>.  There are a number of preferable alternatives to an old version of Visual Studio.
 </p>
 <ul><li>The free-to-use <a rel="nofollow" class="external text" href="http://www.microsoft.com/express">Visual Studio Express versions</a>.</li>
 <li><a rel="nofollow" class="external text" href="http://www.mingw.org/">MinGW</a></li></ul>
@@ -133,7 +133,7 @@ Transclusion expansion time report (%,ms,calls,template)
 			<h3 id="p-cactions-label" >Page actions</h3>
 			<div class="pBody">
 				<ul >
-				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/Wiki/ITK/Compilers" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Compilers&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/Wiki/ITK/Compilers">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Compilers&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Compilers&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				<li id="ca-nstab-main" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Compilers" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Compilers&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li><li id="ca-view" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Compilers">View</a></li><li id="ca-viewsource" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Compilers&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="mw-list-item"><a href="/Wiki/index.php?title=ITK/Compilers&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
 				
 				</ul>
 			</div>
@@ -142,7 +142,7 @@ Transclusion expansion time report (%,ms,calls,template)
 	id="p-cactions-mobile" aria-labelledby="p-cactions-mobile-label">
 	<h3 id="p-cactions-mobile-label" >Page actions</h3>
 	<div class="pBody">
-		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/Wiki/ITK/Compilers" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Compilers&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
+		<ul ><li id="main-mobile" class="selected mw-list-item"><a href="/ITKWikiArchive/Wiki/ITK/Compilers" title="Page">Page</a></li><li id="talk-mobile" class="new mw-list-item"><a href="/Wiki/index.php?title=Talk:ITK/Compilers&amp;action=edit&amp;redlink=1" title=" (page does not exist)">Discussion</a></li><li id="ca-more" class="mw-list-item"><a href="#p-cactions">More</a></li><li id="ca-tools" class="mw-list-item"><a href="#p-tb" title="Tools">Tools</a></li></ul>
 		
 	</div>
 </div>
