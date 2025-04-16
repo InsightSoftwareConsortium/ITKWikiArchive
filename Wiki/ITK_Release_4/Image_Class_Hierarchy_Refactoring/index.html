@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK Release 4/Image Class Hierarchy Refactoring</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"8706d0222fc3b63140ae9499","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/Image_Class_Hierarchy_Refactoring","wgTitle":"ITK Release 4/Image Class Hierarchy Refactoring","wgCurRevisionId":32517,"wgRevisionId":32517,"wgArticleId":7059,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/Image_Class_Hierarchy_Refactoring","wgRelevantArticleId":7059,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],
 "wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Image_Class_Hierarchy_Refactoring rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Image_Class_Hierarchy_Refactoring"><span class="tocnumber">1</span> <span class="toctext">Image Class Hierarchy Refactoring</span></a>
 <ul>
@@ -77,27 +78,26 @@
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Image_Class_Hierarchy_Refactoring">Image Class Hierarchy Refactoring</span></h1>
 <p>The goal of this proposal is to refactor ITK's image class hierarchy to make adding other image types to ITK easier and to simplify the interface of image classes wherever possible. 
 </p>
 <h2><span class="mw-headline" id="Motivation">Motivation</span></h2>
 <p>ITK currently supports several types of image:
 </p>
-<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1Image.html">Image</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1VectorImage.html">VectorImage</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1SpecialCoordinatesImage.html">SpecialCoordinatesImage</a>
-<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1PhasedArray3DSpecialCoordinatesImage.html">PhasedArray3DSpecialCoordinatesImage</a></li></ul></li>
-<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxImage.html">BloxImage</a>
-<ul><li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxCoreAtomImage.html">BloxCoreAtomImage</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxBoundaryProfileImage.html">BloxBoundaryProfileImage</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxBoundaryPointImage.html">BloxBoundaryPointImage</a></li></ul></li>
-<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1SparseImage.html">SparseImage</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1LabelMap.html">LabelMap</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1ImageAdaptor.html">ImageAdaptors</a> and subclasses</li>
-<li><a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/646">Slice contiguous, sparse, and single-bit binary images</a> - Insight Journal article from Dan Mueller</li></ul>
+<ul><li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1Image.html" rel="nofollow">Image</a></li>
+<li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1VectorImage.html" rel="nofollow">VectorImage</a></li>
+<li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1SpecialCoordinatesImage.html" rel="nofollow">SpecialCoordinatesImage</a>
+<ul><li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1PhasedArray3DSpecialCoordinatesImage.html" rel="nofollow">PhasedArray3DSpecialCoordinatesImage</a></li></ul></li>
+<li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxImage.html" rel="nofollow">BloxImage</a>
+<ul><li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxCoreAtomImage.html" rel="nofollow">BloxCoreAtomImage</a></li>
+<li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxBoundaryProfileImage.html" rel="nofollow">BloxBoundaryProfileImage</a></li>
+<li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1BloxBoundaryPointImage.html" rel="nofollow">BloxBoundaryPointImage</a></li></ul></li>
+<li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1SparseImage.html" rel="nofollow">SparseImage</a></li>
+<li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1LabelMap.html" rel="nofollow">LabelMap</a></li>
+<li><a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1ImageAdaptor.html" rel="nofollow">ImageAdaptors</a> and subclasses</li>
+<li><a class="external text" href="http://www.insight-journal.org/browse/publication/646" rel="nofollow">Slice contiguous, sparse, and single-bit binary images</a> - Insight Journal article from Dan Mueller</li></ul>
 <p>Most of the image types supported by ITK assume that the image topology is an n-dimensional lattice and that voxels have regular physical spacing in each dimension. While it makes sense to preserve the topology assumption in a library focused on image analysis, the regular spacing assumption should be relaxed wherever possible. The regular spacing assumption covers many cases in biomedical imaging, but it is insufficient for certain types of images in other applications. For example, certain motorized stages used in fluorescence microscopes fail to achieve regular spacing in z when acquiring a 3D image. Helpfully, these stages report the positions of z-planes acquired during image stack collection. Assuming a regular z-spacing in place of the actual z-plane positions may result in significant errors in image analysis algorithms run on the image.
-</p><p>It is possible to create image types in ITK that do not assume regular spacing: <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1PhasedArray3DSpecialCoordinatesImage.html">PhasedArray3DSpecialCoordinatesImage</a> is an example. Nevertheless, its interface still has the SetSpacing() and GetSpacing() methods defined in the ImageBase class (and overriden in SpecialCoordinatesImage). These methods are required for compatibility in filter pipelines, but their presence in this class is misleading; they do nothing. Other types of images may consist of samples not associated with a physical space. For these image types, class methods for setting metadata about the physical embedding of the image are not needed.
+</p><p>It is possible to create image types in ITK that do not assume regular spacing: <a class="external text" href="http://www.itk.org/Doxygen320/html/classitk_1_1PhasedArray3DSpecialCoordinatesImage.html" rel="nofollow">PhasedArray3DSpecialCoordinatesImage</a> is an example. Nevertheless, its interface still has the SetSpacing() and GetSpacing() methods defined in the ImageBase class (and overriden in SpecialCoordinatesImage). These methods are required for compatibility in filter pipelines, but their presence in this class is misleading; they do nothing. Other types of images may consist of samples not associated with a physical space. For these image types, class methods for setting metadata about the physical embedding of the image are not needed.
 </p>
 <h2><span class="mw-headline" id="Goals">Goals</span></h2>
 <p>The primary goal in this refactoring is to produce a logical image class hierarchy in ITK that removes methods in image types where they are not needed.
@@ -137,8 +137,8 @@
 </p><p>Specific methods defined or overridden in each class are provided below.
 </p>
 <h3><span class="mw-headline" id="Class_Diagram">Class Diagram</span></h3>
-<p><map name="ITK Release 4_Image Class Hierarchy Refactoring_digraph G "> 
-</map></p><p><img class="" style="" alt="This is a graph with borders and nodes. Maybe there is an Imagemap used so the nodes may be linking to some Pages." src="/Wiki/images/graphviz/ITK Release 4_Image Class Hierarchy Refactoring_digraph G .png" usemap="#ITK Release 4_Image Class Hierarchy Refactoring_digraph G " />
+<p><map name="ITK Release 4_Image Class Hierarchy Refactoring_digraph G ">
+</map></p><p><img alt="This is a graph with borders and nodes. Maybe there is an Imagemap used so the nodes may be linking to some Pages." class="" src="/Wiki/images/graphviz/ITK Release 4_Image Class Hierarchy Refactoring_digraph G .png" style="" usemap="#ITK Release 4_Image Class Hierarchy Refactoring_digraph G "/>
 </p>
 <h2><span class="mw-headline" id="Image_Types">Image Types</span></h2>
 <h3><span class="mw-headline" id="ImageBase">ImageBase</span></h3>
@@ -283,7 +283,7 @@
 <li>Use concept checking in filters and image sources to check support for input/output image types?</li></ul>
 <h1><span class="mw-headline" id="Implementation_Plan">Implementation Plan</span></h1>
 <p>After all phases of implementation, existing tests must compile and pass.
-</p><p>A sample implementation encompassing phases 1-3 is available at <a rel="nofollow" class="external text" href="http://github.com/cquammen/ITK/tree/image-hierarchy-refactoring">GitHub</a>.
+</p><p>A sample implementation encompassing phases 1-3 is available at <a class="external text" href="http://github.com/cquammen/ITK/tree/image-hierarchy-refactoring" rel="nofollow">GitHub</a>.
 </p>
 <h2><span class="mw-headline" id="Phase_1">Phase 1</span></h2>
 <ul><li>Implement PhysicalImageBase&lt; unsigned int VDimension &gt;</li>
@@ -588,11 +588,10 @@ Unstrip post‐expand size: 385/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:7059-0!canonical and timestamp 20250110170901 and revision id 32517. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Image_Class_Hierarchy_Refactoring&amp;oldid=32517">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Image_Class_Hierarchy_Refactoring&amp;oldid=32517</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

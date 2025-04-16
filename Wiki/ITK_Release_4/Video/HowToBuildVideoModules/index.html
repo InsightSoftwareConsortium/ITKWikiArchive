@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK Release 4/Video/HowToBuildVideoModules</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"e110aa4278d600ea79b421ab","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/Video/HowToBuildVideoModules","wgTitle":"ITK Release 4/Video/HowToBuildVideoModules","wgCurRevisionId":54063,"wgRevisionId":54063,"wgArticleId":11769,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/Video/HowToBuildVideoModules","wgRelevantArticleId":11769,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],
 "wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Video_HowToBuildVideoModules rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>There are five video modules in ITKv4 at the moment: Core, Filtering, IO, BridgeOpenCV and BridgeOpenVXL.
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>There are five video modules in ITKv4 at the moment: Core, Filtering, IO, BridgeOpenCV and BridgeOpenVXL.
 </p><p>The first three modules(Core, Filtering and IO) do not depend on third party libraries.
 By default (when ITK_BUILD_ALL_MODULES is ON), the three modules are included in the build tree.
 </p><p>However, if you want to use BridgeOpenCV and BridgeOpenVXL,  make sure you have the newer versions
@@ -50,12 +51,12 @@ Get the source code using Git:
 <pre>        OpenCV_DIR = &lt;the path where you build the OpenCV&gt;
         
 </pre>
-<p><br />
+<p><br/>
 </p>
 <h2><span class="mw-headline" id="Build_BridgeVXL">Build BridgeVXL</span></h2>
 <p>1. Build VXL:     
 </p>
-<pre>       svn co <a rel="nofollow" class="external free" href="https://vxl.svn.sourceforge.net/svnroot/vxl/trunk">https://vxl.svn.sourceforge.net/svnroot/vxl/trunk</a> vxl
+<pre>       svn co <a class="external free" href="https://vxl.svn.sourceforge.net/svnroot/vxl/trunk" rel="nofollow">https://vxl.svn.sourceforge.net/svnroot/vxl/trunk</a> vxl
 </pre>
 <p>The revision number tested is 34805 ( 2012-04-23). Later version should work (not validated).
 Use CMake to build opencv with the following configuration:
@@ -82,14 +83,14 @@ ITKVideoBridgeVXL are:
 </p>
 <pre>        Module_ITKVideoBridgeVXL = ON  (need to manually toggle this option ON)
 </pre>
-<p>Then, set system library Paths for VXL accordingly&#160;:
+<p>Then, set system library Paths for VXL accordingly :
 </p>
 <pre>        VXL_DIR = &lt;the path where you build the VXL&gt;
 </pre>
-<p><br />
+<p><br/>
 </p>
 <h2><span class="mw-headline" id="Dashboard_submission">Dashboard submission</span></h2>
-<p>Currently, there is a linux nightly dashboard submission in <a rel="nofollow" class="external autonumber" href="http://open.cdash.org/index.php?project=Insight">[1]</a>.
+<p>Currently, there is a linux nightly dashboard submission in <a class="external autonumber" href="http://open.cdash.org/index.php?project=Insight" rel="nofollow">[1]</a>.
 Search for "Ubuntu-gcc-Release-Video" on the build name.
 </p>
 <!-- 
@@ -112,10 +113,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:11769-0!canonical and timestamp 20220525040231 and revision id 54063. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Video/HowToBuildVideoModules&amp;oldid=54063">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Video/HowToBuildVideoModules&amp;oldid=54063</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

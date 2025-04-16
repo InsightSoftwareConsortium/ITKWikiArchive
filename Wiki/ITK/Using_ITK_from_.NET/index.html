@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Using ITK from .NET</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"dc68b5172ac0354bc1b1f357","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Using_ITK_from_.NET","wgTitle":"ITK/Using ITK from .NET","wgCurRevisionId":49483,"wgRevisionId":49483,"wgArticleId":10963,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Using_ITK_from_.NET","wgRelevantArticleId":10963,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":
 "ready","user.styles":"ready","user":"ready","user.options":"loading","ext.pygments":"ready","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Using_ITK_from_NET rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>This page describes how to use ITK from .NET.
-<br />
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>This page describes how to use ITK from .NET.
+<br/>
 <b>NOTE: You must build ITK, wrapper DLL, and .NET exe all using the same target platform i.e. Win32/x86 or Win64/x64</b>
 </p>
 <ol>
 <li>
-Download <a rel="nofollow" class="external text" href="http://www.cmake.org/cmake/resources/software.html">CMake</a>, <a rel="nofollow" class="external text" href="http://www.itk.org/ITK/resources/software.html">ITK source code</a>, and <a rel="nofollow" class="external text" href="http://www.swig.org/download.html">SWIG</a>
+Download <a class="external text" href="http://www.cmake.org/cmake/resources/software.html" rel="nofollow">CMake</a>, <a class="external text" href="http://www.itk.org/ITK/resources/software.html" rel="nofollow">ITK source code</a>, and <a class="external text" href="http://www.swig.org/download.html" rel="nofollow">SWIG</a>
 </li>
 <li>
-Build ITK (see <a rel="nofollow" class="external text" href="http://www.itk.org/ITK/help/tutorials.html">here</a> for help)
+Build ITK (see <a class="external text" href="http://www.itk.org/ITK/help/tutorials.html" rel="nofollow">here</a> for help)
 </li>
 <li>
 Create the following <code style="font-size: medium">CMakeLists.txt</code> file:
@@ -51,7 +52,7 @@ Create the following <code style="font-size: medium">CMakeLists.txt</code> file:
 <li>
 Create the following <code style="font-size: medium">example.h</code> file:
 <div style="background: white; border: 1px dashed rgb(100, 100, 100); padding: 5px; margin: 10px 0px 10px 0px; font-size: medium">
-<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// File&#160;: example.h</span>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// File : example.h</span>
 <span class="cp">#ifndef __example_h</span>
 <span class="cp">#define __example_h</span>
 
@@ -62,7 +63,7 @@ Create the following <code style="font-size: medium">example.h</code> file:
     <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">input</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">output</span><span class="p">,</span> <span class="k">const</span> <span class="kt">double</span> <span class="n">sigma</span>
 <span class="p">);</span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;example.hxx&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"example.hxx"</span><span class="cp"></span>
 
 <span class="cp">#endif </span><span class="c1">// __example_h</span>
 </pre></div>
@@ -74,12 +75,12 @@ Create the following <code style="font-size: medium">example.hxx</code> file:
 <div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#ifndef __example_hxx</span>
 <span class="cp">#define __example_hxx</span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;example.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"example.h"</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;itkImage.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkImageFileReader.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkImageFileWriter.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkSmoothingRecursiveGaussianImageFilter.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkImage.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkImageFileReader.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkImageFileWriter.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkSmoothingRecursiveGaussianImageFilter.h"</span><span class="cp"></span>
 
 <span class="k">template</span><span class="o">&lt;</span><span class="k">class</span> <span class="nc">TPixel</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">VDimension</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">SmoothImage</span><span class="p">(</span>
@@ -114,15 +115,15 @@ Create the following <code style="font-size: medium">example.hxx</code> file:
 <li>
 Create the following <code style="font-size: medium">example.i</code> file (instructs SWIG how to generate the wrapper):
 <div style="background: white; border: 1px dashed rgb(100, 100, 100); padding: 5px; margin: 10px 0px 10px 0px; font-size: medium">
-<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// File&#160;: example.i</span>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// File : example.i</span>
 <span class="o">%</span><span class="n">module</span> <span class="n">example</span>
-<span class="o">%</span><span class="n">include</span> <span class="s">&quot;std_string.i&quot;</span>
+<span class="o">%</span><span class="n">include</span> <span class="s">"std_string.i"</span>
 
 <span class="o">%</span><span class="p">{</span>
-<span class="cp">#include</span> <span class="cpf">&quot;example.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"example.h"</span><span class="cp"></span>
 <span class="o">%</span><span class="p">}</span>
 
-<span class="o">%</span><span class="n">include</span> <span class="s">&quot;example.h&quot;</span>
+<span class="o">%</span><span class="n">include</span> <span class="s">"example.h"</span>
 
 <span class="o">%</span><span class="k">template</span><span class="p">(</span><span class="n">SmoothImageUC2</span><span class="p">)</span><span class="n">SmoothImage</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span><span class="p">;</span>
 <span class="o">%</span><span class="k">template</span><span class="p">(</span><span class="n">SmoothImageF2</span><span class="p">)</span> <span class="n">SmoothImage</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span><span class="p">;</span>
@@ -131,7 +132,7 @@ Create the following <code style="font-size: medium">example.i</code> file (inst
 </li>
 <li>
 Run SWIG using the following command: <code style="font-size: medium">swig -c++ -csharp -dllimport ExampleWrapper example.i</code>
-<br />
+<br/>
 The following files should be generated:
 <ul><li><code style="font-size: medium">example_wrap.cxx</code></li>
 <li><code style="font-size: medium">example.cs</code></li>
@@ -151,8 +152,8 @@ Create the following C# <code style="font-size: medium">runme.cs</code> file:
     <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">()</span> <span class="p">{</span>
         <span class="k">try</span> <span class="p">{</span>
             <span class="n">example</span><span class="p">.</span><span class="n">SmoothImageUC2</span><span class="p">(</span>
-                <span class="n">input</span><span class="p">:</span> <span class="s">&quot;C:/Temp/cthead1.png&quot;</span><span class="p">,</span>
-                <span class="n">output</span><span class="p">:</span> <span class="s">&quot;C:/Temp/cthead1-smooth.png&quot;</span><span class="p">,</span>
+                <span class="n">input</span><span class="p">:</span> <span class="s">"C:/Temp/cthead1.png"</span><span class="p">,</span>
+                <span class="n">output</span><span class="p">:</span> <span class="s">"C:/Temp/cthead1-smooth.png"</span><span class="p">,</span>
                 <span class="n">sigma</span><span class="p">:</span> <span class="m">5.0</span>
             <span class="p">);</span>
         <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span> <span class="p">{</span>
@@ -190,10 +191,9 @@ Unstrip post‐expand size: 10179/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:10963-0!canonical and timestamp 20220528200920 and revision id 49483. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Using_ITK_from_.NET&amp;oldid=49483">https://public.kitware.com/Wiki/index.php?title=ITK/Using_ITK_from_.NET&amp;oldid=49483</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

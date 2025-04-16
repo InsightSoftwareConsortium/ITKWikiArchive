@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/DICOM</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b80a25249f5cfc8d85eb44cb","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/DICOM","wgTitle":"ITK/DICOM","wgCurRevisionId":47448,"wgRevisionId":47448,"wgArticleId":10524,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/DICOM","wgRelevantArticleId":10524,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":
 "loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_DICOM rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><h3><span id="DICOM:_Rescale_Slope.2FIntercept"></span><span class="mw-headline" id="DICOM:_Rescale_Slope/Intercept">DICOM: Rescale Slope/Intercept</span></h3>
-<p>Another question that is often asked on insight-users is&#160;:
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><h3><span id="DICOM:_Rescale_Slope.2FIntercept"></span><span class="mw-headline" id="DICOM:_Rescale_Slope/Intercept">DICOM: Rescale Slope/Intercept</span></h3>
+<p>Another question that is often asked on insight-users is :
 I am trying to read/write a DICOM image, but the pixel data has changed (the scalar range has changed from input file).
-</p><p>This surely comes from the fact that you did not used the proper PixelType to instanciate your reader. You have to consider&#160;:
+</p><p>This surely comes from the fact that you did not used the proper PixelType to instanciate your reader. You have to consider :
 </p>
 <ul><li>Bits Allocated</li>
 <li>Bits Stored</li>
@@ -33,7 +34,7 @@ I am trying to read/write a DICOM image, but the pixel data has changed (the sca
 </p>
 <ul><li>Rescale Intercept</li>
 <li>Rescale Slope</li></ul>
-<p>For instance you can use the DicomImageReadPrintTags example in ITK/IO, or even better <a rel="nofollow" class="external text" href="http://apps.sourceforge.net/mediawiki/gdcm/index.php?title=Gdcminfo">gdcminfo</a>
+<p>For instance you can use the DicomImageReadPrintTags example in ITK/IO, or even better <a class="external text" href="http://apps.sourceforge.net/mediawiki/gdcm/index.php?title=Gdcminfo" rel="nofollow">gdcminfo</a>
 </p>
 <pre>$ DicomImageReadPrintTags image.dcm | grep "Slope\|Intercept\|Bits\|Pixel Rep"
 (0028|0100) Bits Allocated = 16
@@ -47,14 +48,14 @@ I am trying to read/write a DICOM image, but the pixel data has changed (the sca
 <pre> RWV = slope * SP + intercept
 </pre>
 <p>In which case you'll get signed value. Therefore you will need a signed short pixel to display the pixel value.
-</p><p>One might ask, how can I be sure that signed short will be enough for loading the stored pixel value&#160;? You have two clues: either look at pixel stored: 12bits, therefore you know that signed short will be enough. Or you can have a look sometimes at Smallest Image Pixel Value /  Largest Image Pixel Value. It will tell you what are the min/max in your stored image:
+</p><p>One might ask, how can I be sure that signed short will be enough for loading the stored pixel value ? You have two clues: either look at pixel stored: 12bits, therefore you know that signed short will be enough. Or you can have a look sometimes at Smallest Image Pixel Value /  Largest Image Pixel Value. It will tell you what are the min/max in your stored image:
 </p>
 <pre>$ DicomImageReadPrintTags image.dcm | grep "Image Pixel Value"
 (0028|0106) Smallest Image Pixel Value = 0
 (0028|0107) Largest Image Pixel Value = 4095
 </pre>
-<h3><span id="DICOM:_Why_did_the_header_of_my_DICOM_file_change_.3F"></span><span class="mw-headline" id="DICOM:_Why_did_the_header_of_my_DICOM_file_change_?">DICOM: Why did the header of my DICOM file change&#160;?</span></h3>
-<p>A common that frequently arises on ITK mailing list after using itk::GDCMImageIO to read, update and write out a DICOM file is: why did my header file changed during the update mechanism&#160;?
+<h3><span id="DICOM:_Why_did_the_header_of_my_DICOM_file_change_.3F"></span><span class="mw-headline" id="DICOM:_Why_did_the_header_of_my_DICOM_file_change_?">DICOM: Why did the header of my DICOM file change ?</span></h3>
+<p>A common that frequently arises on ITK mailing list after using itk::GDCMImageIO to read, update and write out a DICOM file is: why did my header file changed during the update mechanism ?
 </p><p>DICOM has a specific section on what is a 'DERIVED' image (PS 3.3-2008, C.7.6.1.1.2 Image Type)
 </p>
 <pre>If the pixel data of the derived Image is different from the pixel
@@ -90,8 +91,8 @@ identical content. It is however allowed that both files uses different transfer
 syntax uid (ie. they have a different binary representation on disk) (implicit/explicit, little/big endian).
 When a DICOM file is sent to a PACS, it is up to the implementor to decide what to do in case of duplicate SOP Instance UID. 
 In most case you should expect that the image is not resent, as standard garantee this is already the same object.
-</p><p><br />
-Warning: Adding Overlay is considered to 'affect professional interpretation' of the images. Thus new UIDs are required&#160;!
+</p><p><br/>
+Warning: Adding Overlay is considered to 'affect professional interpretation' of the images. Thus new UIDs are required !
 </p>
 <!-- 
 NewPP limit report
@@ -113,11 +114,10 @@ Unstrip post‐expand size: 998/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:10524-0!canonical and timestamp 20250120042034 and revision id 47448. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/DICOM&amp;oldid=47448">https://public.kitware.com/Wiki/index.php?title=ITK/DICOM&amp;oldid=47448</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

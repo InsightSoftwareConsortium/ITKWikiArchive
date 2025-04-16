@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Examples/ImageProcessing/Upsampling</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -117,7 +118,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 /*]]>*/
 </style></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_ImageProcessing_Upsampling skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Upsampling.cxx"><span class="tocnumber">1</span> <span class="toctext">Upsampling.cxx</span></a></li>
 <li class="toclevel-1"><a href="#CMakeLists.txt"><span class="tocnumber">2</span> <span class="toctext">CMakeLists.txt</span></a></li>
@@ -131,57 +132,56 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="Upsampling.cxx">Upsampling.cxx</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="coMULTI">/**
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cpp source-cpp"><pre class="de1"><span class="coMULTI">/**
   \file Upsampling.cxx
   \date 15 april 2011
   \author Francis Girard
-&#160;
+ 
   A simple example showing how to use the ResampleImageFilter and the 
   BSplineInterpolateImageFunction to (up)scale an image using bicubic
   interpolation.
 */</span>
-&#160;
-<span class="co2">#include &quot;itkImage.h&quot;</span>
-<span class="co2">#include &quot;itkImageFileReader.h&quot;</span>
-<span class="co2">#include &quot;itkImageFileWriter.h&quot;</span>
-<span class="co2">#include &quot;itkIdentityTransform.h&quot;</span>
-<span class="co2">#include &quot;itkBSplineInterpolateImageFunction.h&quot;</span>
-<span class="co2">#include &quot;itkResampleImageFilter.h&quot;</span>
-&#160;
+ 
+<span class="co2">#include "itkImage.h"</span>
+<span class="co2">#include "itkImageFileReader.h"</span>
+<span class="co2">#include "itkImageFileWriter.h"</span>
+<span class="co2">#include "itkIdentityTransform.h"</span>
+<span class="co2">#include "itkBSplineInterpolateImageFunction.h"</span>
+<span class="co2">#include "itkResampleImageFilter.h"</span>
+ 
 <span class="co2">#include &lt;iostream&gt;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span> <span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span> argv<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-  <span class="kw1">if</span><span class="br0">&#40;</span> argc <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">5</span> <span class="br0">&#41;</span> 
-  <span class="br0">&#123;</span> 
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Usage: &quot;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span> <span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span> argv<span class="br0">[</span><span class="br0">]</span> <span class="br0">)</span>
+<span class="br0">{</span>
+  <span class="kw1">if</span><span class="br0">(</span> argc <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">5</span> <span class="br0">)</span> 
+  <span class="br0">{</span> 
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Usage: "</span>
               <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span>
-              <span class="sy1">&lt;&lt;</span> argv<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span>
-              <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; inputImageFile outputImageFile nNewWidth nNewHeight&quot;</span>
+              <span class="sy1">&lt;&lt;</span> argv<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>
+              <span class="sy1">&lt;&lt;</span> <span class="st0">" inputImageFile outputImageFile nNewWidth nNewHeight"</span>
               <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-&#160;
+ 
     <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
-  <span class="br0">&#125;</span>
-&#160;
+  <span class="br0">}</span>
+ 
   <span class="co1">// Typedef's for pixel, image, reader and writer types</span>
   <span class="kw4">typedef</span> <span class="kw4">unsigned</span> <span class="kw4">char</span> T_InputPixel<span class="sy4">;</span>
   <span class="kw4">typedef</span> <span class="kw4">unsigned</span> <span class="kw4">char</span> T_OutputPixel<span class="sy4">;</span>
-&#160;
+ 
   <span class="co1">// Doesn't work for RGB pixels</span>
   <span class="co1">//typedef itk::CovariantVector&lt;unsigned char, 3&gt; T_InputPixel;</span>
   <span class="co1">//typedef itk::CovariantVector&lt;unsigned char, 3&gt; T_OutputPixel;</span>
-&#160;
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span>T_InputPixel, <span class="nu0">2</span><span class="sy1">&gt;</span> T_Image<span class="sy4">;</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ImageFileReader</span><span class="sy1">&lt;</span>T_Image<span class="sy1">&gt;</span> T_Reader<span class="sy4">;</span>
-&#160;
+ 
   <span class="kw4">typedef</span> <span class="kw4">unsigned</span> <span class="kw4">char</span> T_WritePixel<span class="sy4">;</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span>T_WritePixel, <span class="nu0">2</span><span class="sy1">&gt;</span> T_WriteImage<span class="sy4">;</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ImageFileWriter</span><span class="sy1">&lt;</span>T_WriteImage<span class="sy1">&gt;</span> T_Writer<span class="sy4">;</span>
-&#160;
-  <span class="co1">// Typedefs for the different (numerous!) elements of the &quot;resampling&quot;</span>
-&#160;
+ 
+  <span class="co1">// Typedefs for the different (numerous!) elements of the "resampling"</span>
+ 
   <span class="co1">// Identity transform.</span>
   <span class="co1">// We don't want any transform on our image except rescaling which is not</span>
   <span class="co1">// specified by a transform but by the input/output spacing as we will see</span>
@@ -189,7 +189,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="co1">// So no transform will be specified.</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">IdentityTransform</span><span class="sy1">&lt;</span><span class="kw4">double</span>, <span class="nu0">2</span><span class="sy1">&gt;</span>
                T_Transform<span class="sy4">;</span>
-&#160;
+ 
   <span class="co1">// If ITK resampler determines there is something to interpolate which is</span>
   <span class="co1">// usually the case when upscaling (!) then we must specify the interpolation</span>
   <span class="co1">// algorithm. In our case, we want bicubic interpolation. One way to implement</span>
@@ -197,40 +197,40 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="co1">// order will be specified with a method call later on.</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">BSplineInterpolateImageFunction</span><span class="sy1">&lt;</span>T_Image, <span class="kw4">double</span>, <span class="kw4">double</span><span class="sy1">&gt;</span>
                T_Interpolator<span class="sy4">;</span>
-&#160;
+ 
   <span class="co1">// The resampler type itself.</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ResampleImageFilter</span><span class="sy1">&lt;</span>T_Image, T_Image<span class="sy1">&gt;</span>
                T_ResampleFilter<span class="sy4">;</span>
-&#160;
-&#160;
+ 
+ 
   <span class="co1">// Prepare the reader and update it right away to know the sizes beforehand.</span>
-&#160;
-  T_Reader<span class="sy4">::</span><span class="me2">Pointer</span> pReader <span class="sy1">=</span> T_Reader<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  pReader<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span> argv<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  pReader<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  T_Reader<span class="sy4">::</span><span class="me2">Pointer</span> pReader <span class="sy1">=</span> T_Reader<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  pReader<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span> argv<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="br0">)</span><span class="sy4">;</span>
+  pReader<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Prepare the resampler.</span>
-&#160;
+ 
   <span class="co1">// Instantiate the transform and specify it should be the id transform.</span>
-  T_Transform<span class="sy4">::</span><span class="me2">Pointer</span> _pTransform <span class="sy1">=</span> T_Transform<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  _pTransform<span class="sy2">-</span><span class="sy1">&gt;</span>SetIdentity<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  T_Transform<span class="sy4">::</span><span class="me2">Pointer</span> _pTransform <span class="sy1">=</span> T_Transform<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  _pTransform<span class="sy2">-</span><span class="sy1">&gt;</span>SetIdentity<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Instantiate the b-spline interpolator and set it as the third order</span>
   <span class="co1">// for bicubic.</span>
-  T_Interpolator<span class="sy4">::</span><span class="me2">Pointer</span> _pInterpolator <span class="sy1">=</span> T_Interpolator<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  _pInterpolator<span class="sy2">-</span><span class="sy1">&gt;</span>SetSplineOrder<span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  T_Interpolator<span class="sy4">::</span><span class="me2">Pointer</span> _pInterpolator <span class="sy1">=</span> T_Interpolator<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  _pInterpolator<span class="sy2">-</span><span class="sy1">&gt;</span>SetSplineOrder<span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Instantiate the resampler. Wire in the transform and the interpolator.</span>
-  T_ResampleFilter<span class="sy4">::</span><span class="me2">Pointer</span> _pResizeFilter <span class="sy1">=</span> T_ResampleFilter<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetTransform<span class="br0">&#40;</span>_pTransform<span class="br0">&#41;</span><span class="sy4">;</span>
-  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInterpolator<span class="br0">&#40;</span>_pInterpolator<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  <span class="co1">// Set the output origin. You may shift the original image &quot;inside&quot; the</span>
+  T_ResampleFilter<span class="sy4">::</span><span class="me2">Pointer</span> _pResizeFilter <span class="sy1">=</span> T_ResampleFilter<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetTransform<span class="br0">(</span>_pTransform<span class="br0">)</span><span class="sy4">;</span>
+  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInterpolator<span class="br0">(</span>_pInterpolator<span class="br0">)</span><span class="sy4">;</span>
+ 
+  <span class="co1">// Set the output origin. You may shift the original image "inside" the</span>
   <span class="co1">// new image size by specifying something else than 0.0, 0.0 here.</span>
-&#160;
-  <span class="kw4">const</span> <span class="kw4">double</span> vfOutputOrigin<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span>  <span class="sy1">=</span> <span class="br0">&#123;</span> <span class="nu16">0.0</span>, <span class="nu16">0.0</span> <span class="br0">&#125;</span><span class="sy4">;</span>
-  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputOrigin<span class="br0">&#40;</span>vfOutputOrigin<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  <span class="kw4">const</span> <span class="kw4">double</span> vfOutputOrigin<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span>  <span class="sy1">=</span> <span class="br0">{</span> <span class="nu16">0.0</span>, <span class="nu16">0.0</span> <span class="br0">}</span><span class="sy4">;</span>
+  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputOrigin<span class="br0">(</span>vfOutputOrigin<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//     Compute and set the output spacing</span>
   <span class="co1">//     Compute the output spacing from input spacing and old and new sizes.</span>
   <span class="co1">//     </span>
@@ -251,69 +251,69 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="co1">//     done at step 2 there:</span>
   <span class="co1">//       http://itk.org/ITKWikiArchive/Wiki/ITK/Examples/DICOM/ResampleDICOM)</span>
   <span class="co1">//</span>
-  <span class="kw4">unsigned</span> <span class="kw4">int</span> nNewWidth <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span>argv<span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  <span class="kw4">unsigned</span> <span class="kw4">int</span> nNewHeight <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span>argv<span class="br0">&#91;</span><span class="nu0">4</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  <span class="kw4">unsigned</span> <span class="kw4">int</span> nNewWidth <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">(</span>argv<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw4">unsigned</span> <span class="kw4">int</span> nNewHeight <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">(</span>argv<span class="br0">[</span><span class="nu0">4</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Fetch original image size.</span>
   <span class="kw4">const</span> T_Image<span class="sy4">::</span><span class="me2">RegionType</span><span class="sy3">&amp;</span> inputRegion <span class="sy1">=</span> 
-                              pReader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  <span class="kw4">const</span> T_Image<span class="sy4">::</span><span class="me2">SizeType</span><span class="sy3">&amp;</span> vnInputSize <span class="sy1">=</span> inputRegion.<span class="me1">GetSize</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  <span class="kw4">unsigned</span> <span class="kw4">int</span> nOldWidth <span class="sy1">=</span> vnInputSize<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy4">;</span>
-  <span class="kw4">unsigned</span> <span class="kw4">int</span> nOldHeight <span class="sy1">=</span> vnInputSize<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span><span class="sy4">;</span>
-&#160;
+                              pReader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw4">const</span> T_Image<span class="sy4">::</span><span class="me2">SizeType</span><span class="sy3">&amp;</span> vnInputSize <span class="sy1">=</span> inputRegion.<span class="me1">GetSize</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw4">unsigned</span> <span class="kw4">int</span> nOldWidth <span class="sy1">=</span> vnInputSize<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span>
+  <span class="kw4">unsigned</span> <span class="kw4">int</span> nOldHeight <span class="sy1">=</span> vnInputSize<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="sy4">;</span>
+ 
   <span class="co1">// Fetch original image spacing.</span>
   <span class="kw4">const</span> T_Image<span class="sy4">::</span><span class="me2">SpacingType</span><span class="sy3">&amp;</span> vfInputSpacing <span class="sy1">=</span> 
-                                            pReader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>GetSpacing<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+                                            pReader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>GetSpacing<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
                                             <span class="co1">// Will be {1.0, 1.0} in the usual</span>
                                             <span class="co1">// case.</span>
-&#160;
-  <span class="kw4">double</span> vfOutputSpacing<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><span class="sy4">;</span>
-  vfOutputSpacing<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> vfInputSpacing<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy2">*</span> <span class="br0">&#40;</span><span class="kw4">double</span><span class="br0">&#41;</span> nOldWidth <span class="sy2">/</span> <span class="br0">&#40;</span><span class="kw4">double</span><span class="br0">&#41;</span> nNewWidth<span class="sy4">;</span>
-  vfOutputSpacing<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> vfInputSpacing<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy2">*</span> <span class="br0">&#40;</span><span class="kw4">double</span><span class="br0">&#41;</span> nOldHeight <span class="sy2">/</span> <span class="br0">&#40;</span><span class="kw4">double</span><span class="br0">&#41;</span> nNewHeight<span class="sy4">;</span>
-&#160;
+ 
+  <span class="kw4">double</span> vfOutputSpacing<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
+  vfOutputSpacing<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> vfInputSpacing<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy2">*</span> <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span> nOldWidth <span class="sy2">/</span> <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span> nNewWidth<span class="sy4">;</span>
+  vfOutputSpacing<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> vfInputSpacing<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy2">*</span> <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span> nOldHeight <span class="sy2">/</span> <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span> nNewHeight<span class="sy4">;</span>
+ 
   <span class="co1">// Set the output spacing. If you comment out the following line, the original</span>
   <span class="co1">// image will be simply put in the upper left corner of the new image without</span>
   <span class="co1">// any scaling.</span>
-  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputSpacing<span class="br0">&#40;</span>vfOutputSpacing<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputSpacing<span class="br0">(</span>vfOutputSpacing<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Set the output size as specified on the command line.</span>
-&#160;
-  itk<span class="sy4">::</span><span class="me2">Size</span><span class="sy1">&lt;</span><span class="nu0">2</span><span class="sy1">&gt;</span> vnOutputSize <span class="sy1">=</span> <span class="br0">&#123;</span> <span class="br0">&#123;</span>nNewWidth, nNewHeight<span class="br0">&#125;</span> <span class="br0">&#125;</span><span class="sy4">;</span>
-  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSize<span class="br0">&#40;</span>vnOutputSize<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  itk<span class="sy4">::</span><span class="me2">Size</span><span class="sy1">&lt;</span><span class="nu0">2</span><span class="sy1">&gt;</span> vnOutputSize <span class="sy1">=</span> <span class="br0">{</span> <span class="br0">{</span>nNewWidth, nNewHeight<span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
+  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSize<span class="br0">(</span>vnOutputSize<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Specify the input.</span>
-&#160;
-  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>pReader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  _pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>pReader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Write the result</span>
-  T_Writer<span class="sy4">::</span><span class="me2">Pointer</span> pWriter <span class="sy1">=</span> T_Writer<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  pWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span>argv<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  pWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>_pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  pWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  T_Writer<span class="sy4">::</span><span class="me2">Pointer</span> pWriter <span class="sy1">=</span> T_Writer<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  pWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span>argv<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+  pWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>_pResizeFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+  pWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw1">return</span> <span class="kw2">EXIT_SUCCESS</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span></pre></div></div>
 <h2><span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
+ 
 <span class="kw1">project</span><span class="sy0">(</span>Upsampling<span class="sy0">)</span>
-&#160;
+ 
 <span class="kw1">find_package</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
 <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">if</span> <span class="sy0">(</span>ITKVtkGlue_LOADED<span class="sy0">)</span>
   <span class="kw1">find_package</span><span class="sy0">(</span>VTK REQUIRED<span class="sy0">)</span>
   <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${VTK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">endif</span><span class="sy0">()</span>
-&#160;
+ 
 <span class="kw1">add_executable</span><span class="sy0">(</span>Upsampling MACOSX_BUNDLE Upsampling.cxx<span class="sy0">)</span>
-&#160;
-<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+ 
+<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>Upsampling ITKReview <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>Upsampling <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
+<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
 <h2><span class="mw-headline" id="Download_and_Build_Upsampling">Download and Build Upsampling</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:Upsampling.tar">here to download <i>Upsampling</i></a> and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:Upsampling.tar" rel="nofollow">here to download <i>Upsampling</i></a> and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>Upsampling.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd Upsampling/build
@@ -348,7 +348,7 @@ Once the tarball <i>Upsampling.tar</i> has been downloaded and extracted,
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span class="mw-headline" id="ITK_.3C_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -361,9 +361,7 @@ Template argument size: 110/2097152 bytes
 Highest expansion depth: 3/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9055-0!*!0!!en!*!* and timestamp 20150331042246 and revision id 50768
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/ImageProcessing/Upsampling&amp;oldid=50768">http://itk.org/Wiki/index.php?title=ITK/Examples/ImageProcessing/Upsampling&amp;oldid=50768</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

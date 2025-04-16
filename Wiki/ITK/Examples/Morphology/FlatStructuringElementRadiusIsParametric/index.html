@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Examples/Morphology/FlatStructuringElementRadiusIsParametric</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -117,13 +118,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 /*]]>*/
 </style></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_Morphology_FlatStructuringElementRadiusIsParametric skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="wikitable">
-
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><table class="wikitable">
 <tr>
-<th> <a href="/Wiki/File:Ball_ModeOff.png" class="image" title="Ball with mode off"><img alt="Ball with mode off" src="/Wiki/images/c/c5/Ball_ModeOff.png" width="200" height="200" /></a> </th>
-<th> <a href="/Wiki/File:Ball_ModeOn.png" class="image" title="Ball with mode on"><img alt="Ball with mode on" src="/Wiki/images/4/45/Ball_ModeOn.png" width="200" height="200" /></a> </th>
-<th> <a href="/Wiki/File:Annulus_ModeOff.png" class="image" title="Annulus with mode off"><img alt="Annulus with mode off" src="/Wiki/images/8/80/Annulus_ModeOff.png" width="200" height="200" /></a> </th>
-<th> <a href="/Wiki/File:Annulus_ModeOn.png" class="image" title="Annulus with mode on"><img alt="Annulus with mode on" src="/Wiki/images/5/52/Annulus_ModeOn.png" width="200" height="200" /></a>
+<th> <a class="image" href="/Wiki/File:Ball_ModeOff.png" title="Ball with mode off"><img alt="Ball with mode off" height="200" src="/Wiki/images/c/c5/Ball_ModeOff.png" width="200"/></a> </th>
+<th> <a class="image" href="/Wiki/File:Ball_ModeOn.png" title="Ball with mode on"><img alt="Ball with mode on" height="200" src="/Wiki/images/4/45/Ball_ModeOn.png" width="200"/></a> </th>
+<th> <a class="image" href="/Wiki/File:Annulus_ModeOff.png" title="Annulus with mode off"><img alt="Annulus with mode off" height="200" src="/Wiki/images/8/80/Annulus_ModeOff.png" width="200"/></a> </th>
+<th> <a class="image" href="/Wiki/File:Annulus_ModeOn.png" title="Annulus with mode on"><img alt="Annulus with mode on" height="200" src="/Wiki/images/5/52/Annulus_ModeOn.png" width="200"/></a>
 </th></tr>
 <tr>
 <td> Ball with mode off </td>
@@ -131,9 +131,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> Annulus with mode off </td>
 <td> Annulus with mode on
 </td></tr></table>
-<p><br />
+<p><br/>
 </p>
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#RadiusIsParametric"><span class="tocnumber">1</span> <span class="toctext">RadiusIsParametric</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Example_Measurements"><span class="tocnumber">2</span> <span class="toctext">Example Measurements</span></a></li>
@@ -149,260 +149,259 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="RadiusIsParametric">RadiusIsParametric</span></h2>
 <p>A Neighborhood has an N-dimensional radius.  The radius is defined separately for each dimension as the number of pixels that the neighborhood extends outward from the center pixel.  For example, a 2D Neighborhood object with a radius of 2x3 has sides of length 5x7.  However, in the case of balls and annuli, this definition is slightly different from the parametric definition of those objects.  For example, an ellipse of radius 2x3 has a diameter of 4x6, not 5x7. To have a diameter of 5x7, the radius would need to increase by 0.5 in each dimension.  Thus, the "radius" of the neighborhood and the "radius" of the object should be distinguished.
 </p><p>To accomplish this, the "ball" and "annulus" structuring elements have an optional flag called "radiusIsParametric" (off by default). Setting this flag to true will use the parametric definition of the object and will generate structuring elements with more accurate areas, which can be especially important when morphological operations are intended to remove or retain objects of particular sizes. When the mode is turned off (default), the radius is the same, but the object diameter is set to (radius*2)+1, which is the size of the neighborhood region. Thus, the original ball and annulus structuring elements have a systematic bias in the radius of +0.5 voxels in each dimension relative to the parametric definition of the radius. Thus, we recommend turning this mode on for more accurate structuring elements, but this mode is turned off by default for backward compatibility.
 </p>
 <h2><span class="mw-headline" id="Example_Measurements">Example Measurements</span></h2>
-<p>Here is the output of the test in the code below:<br />
-</p><p>2D ball of radius 5 with radiusIsParametric mode off:<br />
-Expected foreground area: 78.5398<br />
-Computed foreground area: 97<br />
-Foreground area error: 23.5042%<br />
-</p><p>2D ball of radius 5 with radiusIsParametric mode on:<br />
-Expected foreground area: 78.5398<br />
-Computed foreground area: 81<br />
-Foreground area error: 3.1324%<br />
-</p><p>2D annulus of radius 5 and thickness 2 with radiusIsParametric mode off:<br />
-Expected foreground area: 50.2655<br />
-Computed foreground area: 60<br />
-Foreground area error: 19.3662%<br />
-</p><p>2D annulus of radius 5 and thickness 2 with radiusIsParametric mode on:<br />
-Expected foreground area: 50.2655<br />
-Computed foreground area: 52<br />
-Foreground area error: 3.45071%<br />
-</p><p>3D ball of radius 5 with radiusIsParametric mode off:<br />
-Expected foreground area: 523.599<br />
-Computed foreground area: 739<br />
-Foreground area error: 41.1386%<br />
-</p><p>3D ball of radius 5 with radiusIsParametric mode on:<br />
-Expected foreground area: 523.599<br />
-Computed foreground area: 515<br />
-Foreground area error: 1.64224%<br />
-</p><p>3D annulus of radius 5 and thickness 2 with radiusIsParametric mode off:<br />
-Expected foreground area: 410.501<br />
-Computed foreground area: 560<br />
-Foreground area error: 36.4185%<br />
-</p><p>3D annulus of radius 5 and thickness 2 with radiusIsParametric mode on:<br />
-Expected foreground area: 410.501<br />
-Computed foreground area: 392<br />
-Foreground area error: 4.50703%<br />
-</p><p>4D ball of radius 5 with radiusIsParametric mode off:<br />
-Expected foreground area: 3084.25<br />
-Computed foreground area: 4785<br />
-Foreground area error: 55.143%<br />
-</p><p>4D ball of radius 5 with radiusIsParametric mode on:<br />
-Expected foreground area: 3084.25<br />
-Computed foreground area: 2929<br />
-Foreground area error: 5.03368%<br />
-</p><p>4D annulus of radius 5 and thickness 2 with radiusIsParametric mode off:<br />
-Expected foreground area: 2684.53<br />
-Computed foreground area: 4024<br />
-Foreground area error: 49.8957%<br />
-</p><p>4D annulus of radius 5 and thickness 2 with radiusIsParametric mode on:<br />
-Expected foreground area: 2684.53<br />
-Computed foreground area: 2504<br />
-Foreground area error: 6.72491%<br />
+<p>Here is the output of the test in the code below:<br/>
+</p><p>2D ball of radius 5 with radiusIsParametric mode off:<br/>
+Expected foreground area: 78.5398<br/>
+Computed foreground area: 97<br/>
+Foreground area error: 23.5042%<br/>
+</p><p>2D ball of radius 5 with radiusIsParametric mode on:<br/>
+Expected foreground area: 78.5398<br/>
+Computed foreground area: 81<br/>
+Foreground area error: 3.1324%<br/>
+</p><p>2D annulus of radius 5 and thickness 2 with radiusIsParametric mode off:<br/>
+Expected foreground area: 50.2655<br/>
+Computed foreground area: 60<br/>
+Foreground area error: 19.3662%<br/>
+</p><p>2D annulus of radius 5 and thickness 2 with radiusIsParametric mode on:<br/>
+Expected foreground area: 50.2655<br/>
+Computed foreground area: 52<br/>
+Foreground area error: 3.45071%<br/>
+</p><p>3D ball of radius 5 with radiusIsParametric mode off:<br/>
+Expected foreground area: 523.599<br/>
+Computed foreground area: 739<br/>
+Foreground area error: 41.1386%<br/>
+</p><p>3D ball of radius 5 with radiusIsParametric mode on:<br/>
+Expected foreground area: 523.599<br/>
+Computed foreground area: 515<br/>
+Foreground area error: 1.64224%<br/>
+</p><p>3D annulus of radius 5 and thickness 2 with radiusIsParametric mode off:<br/>
+Expected foreground area: 410.501<br/>
+Computed foreground area: 560<br/>
+Foreground area error: 36.4185%<br/>
+</p><p>3D annulus of radius 5 and thickness 2 with radiusIsParametric mode on:<br/>
+Expected foreground area: 410.501<br/>
+Computed foreground area: 392<br/>
+Foreground area error: 4.50703%<br/>
+</p><p>4D ball of radius 5 with radiusIsParametric mode off:<br/>
+Expected foreground area: 3084.25<br/>
+Computed foreground area: 4785<br/>
+Foreground area error: 55.143%<br/>
+</p><p>4D ball of radius 5 with radiusIsParametric mode on:<br/>
+Expected foreground area: 3084.25<br/>
+Computed foreground area: 2929<br/>
+Foreground area error: 5.03368%<br/>
+</p><p>4D annulus of radius 5 and thickness 2 with radiusIsParametric mode off:<br/>
+Expected foreground area: 2684.53<br/>
+Computed foreground area: 4024<br/>
+Foreground area error: 49.8957%<br/>
+</p><p>4D annulus of radius 5 and thickness 2 with radiusIsParametric mode on:<br/>
+Expected foreground area: 2684.53<br/>
+Computed foreground area: 2504<br/>
+Foreground area error: 6.72491%<br/>
 </p>
 <h2><span class="mw-headline" id="FlatStructuringElementRadiusIsParametric.cxx">FlatStructuringElementRadiusIsParametric.cxx</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &quot;itkFlatStructuringElement.h&quot;</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include "itkFlatStructuringElement.h"</span>
+ 
 <span class="co1">// Helper function</span>
 <span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> SEType<span class="sy1">&gt;</span>
-<span class="kw4">bool</span> ComputeAreaError<span class="br0">&#40;</span>SEType k, <span class="kw4">unsigned</span> <span class="kw4">int</span> thickness <span class="sy1">=</span> <span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">int</span>, <span class="kw4">char</span> <span class="sy2">*</span><span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+<span class="kw4">bool</span> ComputeAreaError<span class="br0">(</span>SEType k, <span class="kw4">unsigned</span> <span class="kw4">int</span> thickness <span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span>, <span class="kw4">char</span> <span class="sy2">*</span><span class="br0">[</span><span class="br0">]</span><span class="br0">)</span>
+<span class="br0">{</span>
   <span class="kw4">int</span> scalarRadius <span class="sy1">=</span> <span class="nu0">5</span><span class="sy4">;</span>
   <span class="kw4">int</span> scalarThickness <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
   <span class="kw4">bool</span> radiusIsParametric <span class="sy1">=</span> <span class="kw2">true</span><span class="sy4">;</span>
-&#160;
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">FlatStructuringElement</span><span class="sy1">&lt;</span> <span class="nu0">2</span> <span class="sy1">&gt;</span> SE2Type<span class="sy4">;</span>
   SE2Type<span class="sy4">::</span><span class="me2">RadiusType</span> r2<span class="sy4">;</span>
-  r2.<span class="me1">Fill</span><span class="br0">&#40;</span> scalarRadius <span class="br0">&#41;</span><span class="sy4">;</span>
+  r2.<span class="me1">Fill</span><span class="br0">(</span> scalarRadius <span class="br0">)</span><span class="sy4">;</span>
   SE2Type k2<span class="sy4">;</span>
-&#160;
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;2D ball of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode off:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k2 <span class="sy1">=</span> SE2Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">&#40;</span> r2 <span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k2<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"2D ball of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode off:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k2 <span class="sy1">=</span> SE2Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">(</span> r2 <span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k2<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Test the radiusIsParametric mode.</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;2D ball of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode on:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k2 <span class="sy1">=</span> SE2Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">&#40;</span>r2, radiusIsParametric<span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k2<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;2D annulus of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; and thickness &quot;</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode off:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k2 <span class="sy1">=</span> SE2Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">&#40;</span>r2,scalarThickness,<span class="kw2">false</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k2,scalarThickness<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"2D ball of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode on:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k2 <span class="sy1">=</span> SE2Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">(</span>r2, radiusIsParametric<span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k2<span class="br0">)</span><span class="sy4">;</span>
+ 
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"2D annulus of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" and thickness "</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode off:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k2 <span class="sy1">=</span> SE2Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">(</span>r2,scalarThickness,<span class="kw2">false</span><span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k2,scalarThickness<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Test the radiusIsParametric mode.</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;2D annulus of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; and thickness &quot;</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode on:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k2 <span class="sy1">=</span> SE2Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">&#40;</span>r2,scalarThickness,<span class="kw2">false</span>,radiusIsParametric<span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k2,scalarThickness<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"2D annulus of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" and thickness "</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode on:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k2 <span class="sy1">=</span> SE2Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">(</span>r2,scalarThickness,<span class="kw2">false</span>,radiusIsParametric<span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k2,scalarThickness<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">FlatStructuringElement</span><span class="sy1">&lt;</span> <span class="nu0">3</span> <span class="sy1">&gt;</span> SE3Type<span class="sy4">;</span>
   SE3Type<span class="sy4">::</span><span class="me2">RadiusType</span> r3<span class="sy4">;</span>
-  r3.<span class="me1">Fill</span><span class="br0">&#40;</span> scalarRadius <span class="br0">&#41;</span><span class="sy4">;</span>
+  r3.<span class="me1">Fill</span><span class="br0">(</span> scalarRadius <span class="br0">)</span><span class="sy4">;</span>
   SE3Type k3<span class="sy4">;</span>
-&#160;
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;3D ball of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode off:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k3 <span class="sy1">=</span> SE3Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">&#40;</span> r3 <span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k3<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"3D ball of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode off:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k3 <span class="sy1">=</span> SE3Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">(</span> r3 <span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k3<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Test the radiusIsParametric mode.</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;3D ball of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode on:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k3 <span class="sy1">=</span> SE3Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">&#40;</span>r3, radiusIsParametric<span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k3<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;3D annulus of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; and thickness &quot;</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode off:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k3 <span class="sy1">=</span> SE3Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">&#40;</span>r3,scalarThickness,<span class="kw2">false</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k3,scalarThickness<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"3D ball of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode on:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k3 <span class="sy1">=</span> SE3Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">(</span>r3, radiusIsParametric<span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k3<span class="br0">)</span><span class="sy4">;</span>
+ 
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"3D annulus of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" and thickness "</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode off:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k3 <span class="sy1">=</span> SE3Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">(</span>r3,scalarThickness,<span class="kw2">false</span><span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k3,scalarThickness<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Test the radiusIsParametric mode.</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;3D annulus of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; and thickness &quot;</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode on:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k3 <span class="sy1">=</span> SE3Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">&#40;</span>r3,scalarThickness,<span class="kw2">false</span>,radiusIsParametric<span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k3,scalarThickness<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"3D annulus of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" and thickness "</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode on:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k3 <span class="sy1">=</span> SE3Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">(</span>r3,scalarThickness,<span class="kw2">false</span>,radiusIsParametric<span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k3,scalarThickness<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">FlatStructuringElement</span><span class="sy1">&lt;</span> <span class="nu0">4</span> <span class="sy1">&gt;</span> SE4Type<span class="sy4">;</span>
   SE4Type<span class="sy4">::</span><span class="me2">RadiusType</span> r4<span class="sy4">;</span>
-  r4.<span class="me1">Fill</span><span class="br0">&#40;</span> scalarRadius <span class="br0">&#41;</span><span class="sy4">;</span>
+  r4.<span class="me1">Fill</span><span class="br0">(</span> scalarRadius <span class="br0">)</span><span class="sy4">;</span>
   SE4Type k4<span class="sy4">;</span>
-&#160;
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;4D ball of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode off:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k4 <span class="sy1">=</span> SE4Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">&#40;</span> r4 <span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k4<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"4D ball of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode off:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k4 <span class="sy1">=</span> SE4Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">(</span> r4 <span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k4<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Test the radiusIsParametric mode.</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;4D ball of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode on:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k4 <span class="sy1">=</span> SE4Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">&#40;</span>r4, radiusIsParametric<span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k4<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;4D annulus of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; and thickness &quot;</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode off:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k4 <span class="sy1">=</span> SE4Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">&#40;</span>r4,scalarThickness,<span class="kw2">false</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k4,scalarThickness<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"4D ball of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode on:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k4 <span class="sy1">=</span> SE4Type<span class="sy4">::</span><span class="me2">Ball</span><span class="br0">(</span>r4, radiusIsParametric<span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k4<span class="br0">)</span><span class="sy4">;</span>
+ 
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"4D annulus of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" and thickness "</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode off:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k4 <span class="sy1">=</span> SE4Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">(</span>r4,scalarThickness,<span class="kw2">false</span><span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k4,scalarThickness<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Test the radiusIsParametric mode.</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;4D annulus of radius &quot;</span> <span class="sy1">&lt;&lt;</span> scalarRadius
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; and thickness &quot;</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with radiusIsParametric mode on:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  k4 <span class="sy1">=</span> SE4Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">&#40;</span>r4,scalarThickness,<span class="kw2">false</span>,radiusIsParametric<span class="br0">&#41;</span><span class="sy4">;</span>
-  ComputeAreaError<span class="br0">&#40;</span>k4,scalarThickness<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"4D annulus of radius "</span> <span class="sy1">&lt;&lt;</span> scalarRadius
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" and thickness "</span> <span class="sy1">&lt;&lt;</span>  scalarThickness
+  <span class="sy1">&lt;&lt;</span> <span class="st0">" with radiusIsParametric mode on:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  k4 <span class="sy1">=</span> SE4Type<span class="sy4">::</span><span class="me2">Annulus</span><span class="br0">(</span>r4,scalarThickness,<span class="kw2">false</span>,radiusIsParametric<span class="br0">)</span><span class="sy4">;</span>
+  ComputeAreaError<span class="br0">(</span>k4,scalarThickness<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw1">return</span> <span class="kw2">EXIT_SUCCESS</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
+<span class="br0">}</span>
+ 
 <span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> SEType <span class="sy1">&gt;</span>
-<span class="kw4">bool</span> ComputeAreaError<span class="br0">&#40;</span>SEType k, <span class="kw4">unsigned</span> <span class="kw4">int</span> thickness<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+<span class="kw4">bool</span> ComputeAreaError<span class="br0">(</span>SEType k, <span class="kw4">unsigned</span> <span class="kw4">int</span> thickness<span class="br0">)</span>
+<span class="br0">{</span>
   <span class="kw4">float</span> expectedOuterForegroundArea <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
   <span class="kw4">float</span> expectedInnerForegroundArea<span class="sy4">;</span>
-  <span class="kw1">if</span><span class="br0">&#40;</span> thickness <span class="sy1">==</span> <span class="nu0">0</span> <span class="br0">&#41;</span>
-  <span class="br0">&#123;</span>
+  <span class="kw1">if</span><span class="br0">(</span> thickness <span class="sy1">==</span> <span class="nu0">0</span> <span class="br0">)</span>
+  <span class="br0">{</span>
     <span class="co1">// Circle/Ellipse has no inner area to subract.</span>
     expectedInnerForegroundArea <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-  <span class="br0">&#125;</span>
+  <span class="br0">}</span>
   <span class="kw1">else</span>
-  <span class="br0">&#123;</span>
+  <span class="br0">{</span>
     <span class="co1">// Annulus does have inner area to subract.</span>
     expectedInnerForegroundArea <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-  <span class="br0">&#125;</span>
-  <span class="kw1">if</span><span class="br0">&#40;</span> SEType<span class="sy4">::</span><span class="me2">NeighborhoodDimension</span> <span class="sy1">==</span> <span class="nu0">2</span><span class="br0">&#41;</span>
-  <span class="br0">&#123;</span>
+  <span class="br0">}</span>
+  <span class="kw1">if</span><span class="br0">(</span> SEType<span class="sy4">::</span><span class="me2">NeighborhoodDimension</span> <span class="sy1">==</span> <span class="nu0">2</span><span class="br0">)</span>
+  <span class="br0">{</span>
     expectedOuterForegroundArea <span class="sy2">*</span><span class="sy1">=</span> vnl_math<span class="sy4">::</span><span class="me2">pi</span><span class="sy4">;</span>
     expectedInnerForegroundArea <span class="sy2">*</span><span class="sy1">=</span> vnl_math<span class="sy4">::</span><span class="me2">pi</span><span class="sy4">;</span>
-  <span class="br0">&#125;</span>
-  <span class="kw1">else</span> <span class="kw1">if</span><span class="br0">&#40;</span> SEType<span class="sy4">::</span><span class="me2">NeighborhoodDimension</span> <span class="sy1">==</span> <span class="nu0">3</span> <span class="br0">&#41;</span>
-  <span class="br0">&#123;</span>
+  <span class="br0">}</span>
+  <span class="kw1">else</span> <span class="kw1">if</span><span class="br0">(</span> SEType<span class="sy4">::</span><span class="me2">NeighborhoodDimension</span> <span class="sy1">==</span> <span class="nu0">3</span> <span class="br0">)</span>
+  <span class="br0">{</span>
     expectedOuterForegroundArea <span class="sy2">*</span><span class="sy1">=</span> <span class="nu16">4.0</span><span class="sy2">/</span><span class="nu16">3.0</span> <span class="sy2">*</span> vnl_math<span class="sy4">::</span><span class="me2">pi</span><span class="sy4">;</span>
     expectedInnerForegroundArea <span class="sy2">*</span><span class="sy1">=</span> <span class="nu16">4.0</span><span class="sy2">/</span><span class="nu16">3.0</span> <span class="sy2">*</span> vnl_math<span class="sy4">::</span><span class="me2">pi</span><span class="sy4">;</span>
-  <span class="br0">&#125;</span>
-  <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">&#40;</span> SEType<span class="sy4">::</span><span class="me2">NeighborhoodDimension</span> <span class="sy1">==</span> <span class="nu0">4</span> <span class="br0">&#41;</span>
-  <span class="br0">&#123;</span>
+  <span class="br0">}</span>
+  <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span> SEType<span class="sy4">::</span><span class="me2">NeighborhoodDimension</span> <span class="sy1">==</span> <span class="nu0">4</span> <span class="br0">)</span>
+  <span class="br0">{</span>
     expectedOuterForegroundArea <span class="sy2">*</span><span class="sy1">=</span> <span class="nu16">0.5</span> <span class="sy2">*</span> vnl_math<span class="sy4">::</span><span class="me2">pi</span> <span class="sy2">*</span> vnl_math<span class="sy4">::</span><span class="me2">pi</span><span class="sy4">;</span>
     expectedInnerForegroundArea <span class="sy2">*</span><span class="sy1">=</span> <span class="nu16">0.5</span> <span class="sy2">*</span> vnl_math<span class="sy4">::</span><span class="me2">pi</span> <span class="sy2">*</span> vnl_math<span class="sy4">::</span><span class="me2">pi</span><span class="sy4">;</span>
-  <span class="br0">&#125;</span>
+  <span class="br0">}</span>
   <span class="kw1">else</span>
-  <span class="br0">&#123;</span>
+  <span class="br0">{</span>
     <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
-  <span class="br0">&#125;</span>
-  <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> SEType<span class="sy4">::</span><span class="me2">NeighborhoodDimension</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span>
-  <span class="br0">&#123;</span>
-    expectedOuterForegroundArea <span class="sy2">*</span><span class="sy1">=</span> k.<span class="me1">GetRadius</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="sy4">;</span>
-    expectedInnerForegroundArea <span class="sy2">*</span><span class="sy1">=</span> <span class="br0">&#40;</span>k.<span class="me1">GetRadius</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy2">-</span> thickness<span class="br0">&#41;</span><span class="sy4">;</span>
-  <span class="br0">&#125;</span>
-&#160;
+  <span class="br0">}</span>
+  <span class="kw1">for</span><span class="br0">(</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> SEType<span class="sy4">::</span><span class="me2">NeighborhoodDimension</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">)</span>
+  <span class="br0">{</span>
+    expectedOuterForegroundArea <span class="sy2">*</span><span class="sy1">=</span> k.<span class="me1">GetRadius</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span>i<span class="br0">]</span><span class="sy4">;</span>
+    expectedInnerForegroundArea <span class="sy2">*</span><span class="sy1">=</span> <span class="br0">(</span>k.<span class="me1">GetRadius</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span>i<span class="br0">]</span> <span class="sy2">-</span> thickness<span class="br0">)</span><span class="sy4">;</span>
+  <span class="br0">}</span>
+ 
   <span class="kw4">float</span> expectedForegroundArea <span class="sy1">=</span> expectedOuterForegroundArea <span class="sy2">-</span> expectedInnerForegroundArea<span class="sy4">;</span>
-&#160;
+ 
   <span class="co1">// Show the neighborhood if it is 2D.</span>
   <span class="kw2">typename</span> SEType<span class="sy4">::</span><span class="me2">Iterator</span> SEIt<span class="sy4">;</span>
-  <span class="kw1">if</span><span class="br0">&#40;</span> SEType<span class="sy4">::</span><span class="me2">NeighborhoodDimension</span> <span class="sy1">==</span> <span class="nu0">2</span> <span class="br0">&#41;</span>
-  <span class="br0">&#123;</span>
-    <span class="kw1">for</span><span class="br0">&#40;</span> SEIt <span class="sy1">=</span> k.<span class="me1">Begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> SEIt <span class="sy3">!</span><span class="sy1">=</span> k.<span class="me1">End</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>SEIt <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-      std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>SEIt <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>&quot;</span><span class="sy4">;</span>
-      <span class="kw1">if</span><span class="br0">&#40;</span> <span class="br0">&#40;</span>SEIt <span class="sy2">-</span> k.<span class="me1">Begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">+</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="sy2">%</span> k.<span class="me1">GetSize</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">==</span> <span class="nu0">0</span> <span class="br0">&#41;</span>
-      <span class="br0">&#123;</span>
+  <span class="kw1">if</span><span class="br0">(</span> SEType<span class="sy4">::</span><span class="me2">NeighborhoodDimension</span> <span class="sy1">==</span> <span class="nu0">2</span> <span class="br0">)</span>
+  <span class="br0">{</span>
+    <span class="kw1">for</span><span class="br0">(</span> SEIt <span class="sy1">=</span> k.<span class="me1">Begin</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> SEIt <span class="sy3">!</span><span class="sy1">=</span> k.<span class="me1">End</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>SEIt <span class="br0">)</span>
+    <span class="br0">{</span>
+      std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>SEIt <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>"</span><span class="sy4">;</span>
+      <span class="kw1">if</span><span class="br0">(</span> <span class="br0">(</span>SEIt <span class="sy2">-</span> k.<span class="me1">Begin</span><span class="br0">(</span><span class="br0">)</span><span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span> <span class="sy2">%</span> k.<span class="me1">GetSize</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">==</span> <span class="nu0">0</span> <span class="br0">)</span>
+      <span class="br0">{</span>
         std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-      <span class="br0">&#125;</span>
-    <span class="br0">&#125;</span>
-  <span class="br0">&#125;</span>
-&#160;
+      <span class="br0">}</span>
+    <span class="br0">}</span>
+  <span class="br0">}</span>
+ 
   <span class="co1">// Compute the area/volume.</span>
   <span class="kw4">float</span> computedForegroundArea <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-  <span class="kw1">for</span><span class="br0">&#40;</span> SEIt <span class="sy1">=</span> k.<span class="me1">Begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> SEIt <span class="sy3">!</span><span class="sy1">=</span> k.<span class="me1">End</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>SEIt <span class="br0">&#41;</span>
-  <span class="br0">&#123;</span>
-    <span class="kw1">if</span><span class="br0">&#40;</span> <span class="sy2">*</span>SEIt <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
+  <span class="kw1">for</span><span class="br0">(</span> SEIt <span class="sy1">=</span> k.<span class="me1">Begin</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> SEIt <span class="sy3">!</span><span class="sy1">=</span> k.<span class="me1">End</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>SEIt <span class="br0">)</span>
+  <span class="br0">{</span>
+    <span class="kw1">if</span><span class="br0">(</span> <span class="sy2">*</span>SEIt <span class="br0">)</span>
+    <span class="br0">{</span>
       computedForegroundArea<span class="sy2">++</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-  <span class="br0">&#125;</span>
-&#160;
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Expected foreground area: &quot;</span> <span class="sy1">&lt;&lt;</span> expectedForegroundArea <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Computed foreground area: &quot;</span> <span class="sy1">&lt;&lt;</span> computedForegroundArea <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Foreground area error: &quot;</span>
-  <span class="sy1">&lt;&lt;</span> <span class="nu0">100</span> <span class="sy2">*</span> vnl_math_abs<span class="br0">&#40;</span>expectedForegroundArea<span class="sy2">-</span>computedForegroundArea<span class="br0">&#41;</span><span class="sy2">/</span>expectedForegroundArea
-  <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;%&quot;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\n</span><span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-&#160;
+    <span class="br0">}</span>
+  <span class="br0">}</span>
+ 
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Expected foreground area: "</span> <span class="sy1">&lt;&lt;</span> expectedForegroundArea <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Computed foreground area: "</span> <span class="sy1">&lt;&lt;</span> computedForegroundArea <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Foreground area error: "</span>
+  <span class="sy1">&lt;&lt;</span> <span class="nu0">100</span> <span class="sy2">*</span> vnl_math_abs<span class="br0">(</span>expectedForegroundArea<span class="sy2">-</span>computedForegroundArea<span class="br0">)</span><span class="sy2">/</span>expectedForegroundArea
+  <span class="sy1">&lt;&lt;</span> <span class="st0">"%"</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span><span class="es1">\n</span>"</span><span class="sy4">;</span>
+ 
   <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span></pre></div></div>
 <h2><span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
+ 
 <span class="kw1">project</span><span class="sy0">(</span>FlatStructuringElementRadiusIsParametric<span class="sy0">)</span>
-&#160;
+ 
 <span class="kw1">find_package</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
 <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">if</span> <span class="sy0">(</span>ITKVtkGlue_LOADED<span class="sy0">)</span>
   <span class="kw1">find_package</span><span class="sy0">(</span>VTK REQUIRED<span class="sy0">)</span>
   <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${VTK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">endif</span><span class="sy0">()</span>
-&#160;
+ 
 <span class="kw1">add_executable</span><span class="sy0">(</span>FlatStructuringElementRadiusIsParametric MACOSX_BUNDLE FlatStructuringElementRadiusIsParametric.cxx<span class="sy0">)</span>
-&#160;
-<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+ 
+<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>FlatStructuringElementRadiusIsParametric ITKReview <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>FlatStructuringElementRadiusIsParametric <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
+<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
 <h2><span class="mw-headline" id="Download_and_Build_FlatStructuringElementRadiusIsParametric">Download and Build FlatStructuringElementRadiusIsParametric</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:FlatStructuringElementRadiusIsParametric.tar">here to download <i>FlatStructuringElementRadiusIsParametric</i></a> and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:FlatStructuringElementRadiusIsParametric.tar" rel="nofollow">here to download <i>FlatStructuringElementRadiusIsParametric</i></a> and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>FlatStructuringElementRadiusIsParametric.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd FlatStructuringElementRadiusIsParametric/build
@@ -437,7 +436,7 @@ Once the tarball <i>FlatStructuringElementRadiusIsParametric.tar</i> has been do
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span class="mw-headline" id="ITK_.3C_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -450,9 +449,7 @@ Template argument size: 440/2097152 bytes
 Highest expansion depth: 3/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:11823-0!*!0!!en!2!* and timestamp 20150331084929 and revision id 54358
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/Morphology/FlatStructuringElementRadiusIsParametric&amp;oldid=54358">http://itk.org/Wiki/index.php?title=ITK/Examples/Morphology/FlatStructuringElementRadiusIsParametric&amp;oldid=54358</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

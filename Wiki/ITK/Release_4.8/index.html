@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4.8</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"bc0f96c5dc8e05da9f1c2f22","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4.8","wgTitle":"ITK/Release 4.8","wgCurRevisionId":57995,"wgRevisionId":57995,"wgArticleId":12556,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4.8","wgRelevantArticleId":12556,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":
 "ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_8 rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>New Features
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>New Features
 </p>
-<hr />
+<hr/>
 <ul><li>Wrapping improvements</li></ul>
 <pre>- Wrapping now uses CastXML instead of GCCXML
 - The latest GCC, Clang, and MSVC are fully supported
- - Details: <a rel="nofollow" class="external free" href="http://kitware.com/blog/home/post/888">http://kitware.com/blog/home/post/888</a>
+ - Details: <a class="external free" href="http://kitware.com/blog/home/post/888" rel="nofollow">http://kitware.com/blog/home/post/888</a>
 - Cross-compilation and packaging support
- - Details: <a rel="nofollow" class="external free" href="http://kitware.com/blog/home/post/904">http://kitware.com/blog/home/post/904</a>
+ - Details: <a class="external free" href="http://kitware.com/blog/home/post/904" rel="nofollow">http://kitware.com/blog/home/post/904</a>
 - ITK_WRAP_VECTOR_COMPONENTS option to specify number of wrapped vector components
 - More classes wrapped
 </pre>
@@ -38,29 +39,29 @@
 - Clang 3.6.0
 - Better cross-compilation support (requires CMake 3.3)
 - Experimental support for Emscripten (JavaScript)
-  - Details: <a rel="nofollow" class="external free" href="http://kitware.com/blog/home/post/912">http://kitware.com/blog/home/post/912</a>
+  - Details: <a class="external free" href="http://kitware.com/blog/home/post/912" rel="nofollow">http://kitware.com/blog/home/post/912</a>
 - Experimental support for the Raspberry Pi
-  - Details: <a rel="nofollow" class="external free" href="http://kitware.com/blog/home/post/887">http://kitware.com/blog/home/post/887</a>
+  - Details: <a class="external free" href="http://kitware.com/blog/home/post/887" rel="nofollow">http://kitware.com/blog/home/post/887</a>
 - Experimental support for Android
-  - Details: <a rel="nofollow" class="external free" href="http://kitware.com/blog/home/post/893">http://kitware.com/blog/home/post/893</a>
+  - Details: <a class="external free" href="http://kitware.com/blog/home/post/893" rel="nofollow">http://kitware.com/blog/home/post/893</a>
 - Experimental support for MXE/MinGW-w64
-  - Details: <a rel="nofollow" class="external free" href="http://kitware.com/blog/home/post/883">http://kitware.com/blog/home/post/883</a>
+  - Details: <a class="external free" href="http://kitware.com/blog/home/post/883" rel="nofollow">http://kitware.com/blog/home/post/883</a>
 - Experimental support for the POWER8
-  - Details: <a rel="nofollow" class="external free" href="http://kitware.com/blog/home/post/891">http://kitware.com/blog/home/post/891</a>
+  - Details: <a class="external free" href="http://kitware.com/blog/home/post/891" rel="nofollow">http://kitware.com/blog/home/post/891</a>
 </pre>
 <ul><li>New Remote Modules</li></ul>
 <pre>- MinimalPathExtraction
-  - Insight Journal Article: <a rel="nofollow" class="external free" href="http://hdl.handle.net/1926/1332">http://hdl.handle.net/1926/1332</a>
+  - Insight Journal Article: <a class="external free" href="http://hdl.handle.net/1926/1332" rel="nofollow">http://hdl.handle.net/1926/1332</a>
 - BridgeNumPy
   - Convert itk.Image to NumPy array’s and back
 - LabelErodeDilate
-  - Insight Journal Article: <a rel="nofollow" class="external free" href="http://hdl.handle.net/10380/3399">http://hdl.handle.net/10380/3399</a>
+  - Insight Journal Article: <a class="external free" href="http://hdl.handle.net/10380/3399" rel="nofollow">http://hdl.handle.net/10380/3399</a>
 - ParabolicMorphology
-  - Insight Journal Article: <a rel="nofollow" class="external free" href="http://hdl.handle.net/1926/1370">http://hdl.handle.net/1926/1370</a>
+  - Insight Journal Article: <a class="external free" href="http://hdl.handle.net/1926/1370" rel="nofollow">http://hdl.handle.net/1926/1370</a>
 </pre>
 <ul><li>Infrastructure Improvements</li></ul>
 <pre>- An UpdateThirdPartyFromUpstream.sh script for 3rd party updates with Git subtree
-  - Details: <a rel="nofollow" class="external free" href="http://kitware.com/blog/home/post/899">http://kitware.com/blog/home/post/899</a>
+  - Details: <a class="external free" href="http://kitware.com/blog/home/post/899" rel="nofollow">http://kitware.com/blog/home/post/899</a>
 - Minimum required CMake version is now 2.8.9 
 - Many more modules can be built as shared libraries
 - ITK_USE_SYSTEM_LIBRARIES variable during initial configuration to turn on use of common system third party libraries by default
@@ -78,7 +79,7 @@
 </pre>
 <ul><li>Documentation Improvements</li></ul>
 <pre>- The ITK Software Guide is now available in HTML
-  - Details: <a rel="nofollow" class="external free" href="http://kitware.com/blog/home/post/890">http://kitware.com/blog/home/post/890</a>
+  - Details: <a class="external free" href="http://kitware.com/blog/home/post/890" rel="nofollow">http://kitware.com/blog/home/post/890</a>
 - Updates to the Software Guide, Doxygen, Wiki and Sphinx Examples
 </pre>
 <ul><li>Third Party Library Updates</li></ul>
@@ -110,10 +111,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:12556-0!canonical and timestamp 20220629113918 and revision id 57995. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4.8&amp;oldid=57995">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4.8&amp;oldid=57995</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

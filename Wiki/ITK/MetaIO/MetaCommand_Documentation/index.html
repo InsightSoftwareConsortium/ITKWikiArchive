@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/MetaIO/MetaCommand Documentation</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"5eb41ce9bb515a4312584e6a","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/MetaIO/MetaCommand_Documentation","wgTitle":"ITK/MetaIO/MetaCommand Documentation","wgCurRevisionId":47457,"wgRevisionId":47457,"wgArticleId":2918,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/MetaIO/MetaCommand_Documentation","wgRelevantArticleId":2918,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={
 "site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_MetaIO_MetaCommand_Documentation rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#MetaCommand"><span class="tocnumber">1</span> <span class="toctext">MetaCommand</span></a>
 <ul>
@@ -31,7 +32,6 @@
 <li class="toclevel-1 tocsection-4"><a href="#MetaOutput"><span class="tocnumber">2</span> <span class="toctext">MetaOutput</span></a></li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="MetaCommand">MetaCommand</span></h1>
 <h2><span class="mw-headline" id="Introduction:">Introduction:</span></h2>
 <p>Thanks to MetaCommand you can easily receive parameters in your software from the command line.The purpose of this class is to provide a unified framework for command line parsing.
@@ -55,29 +55,29 @@
 …
 </pre>
 <p>Moreover, The description of the parameters can be easily retrieve at runtime via
-./your_program –v&#160;: 
-</p><p><br />
+./your_program –v : 
+</p><p><br/>
 </p>
 <pre>$ ./AtlasSummation -v
-Usage&#160;: d:\Work\itkUNCApplications-VC++\bin\debug\AtlasSummation.exe
-[-oc &lt;filename&gt; &#160;: Image of count values for each voxel]
-[-ao &#160;: Adjust the mean origin to the input images]
-[-as &#160;: Adjust the mean size to fit the input images]
-[-stdev &lt;bool&gt; (true)&#160;: Is the sigma image standard deviation?]
-[-LT [number] (4)&#160;: lowerThreshold&#160;: Minimum number of contributing images for pixel to be counted in output]
-[-OS &lt;X&gt; &lt;Y&gt; &lt;Z&gt; &#160;: outputImageSize X Y Z&#160;: output size (can't use with adjust size)]
-[-OSp &lt;X&gt; &lt;Y&gt; &lt;Z&gt; &#160;: output spacing (default- initial image spacing)]
-&lt;infile&gt; &#160;: infile filename
-&lt;outputmean&gt; &#160;: output mean filename
-&lt;outputvar&gt; &#160;: output variance filename
+Usage : d:\Work\itkUNCApplications-VC++\bin\debug\AtlasSummation.exe
+[-oc &lt;filename&gt;  : Image of count values for each voxel]
+[-ao  : Adjust the mean origin to the input images]
+[-as  : Adjust the mean size to fit the input images]
+[-stdev &lt;bool&gt; (true) : Is the sigma image standard deviation?]
+[-LT [number] (4) : lowerThreshold : Minimum number of contributing images for pixel to be counted in output]
+[-OS &lt;X&gt; &lt;Y&gt; &lt;Z&gt;  : outputImageSize X Y Z : output size (can't use with adjust size)]
+[-OSp &lt;X&gt; &lt;Y&gt; &lt;Z&gt;  : output spacing (default- initial image spacing)]
+&lt;infile&gt;  : infile filename
+&lt;outputmean&gt;  : output mean filename
+&lt;outputvar&gt;  : output variance filename
 </pre>
 <p>All these advantages are provided for you in the MetaCommand class.
 </p>
 <h2><span class="mw-headline" id="MetaCommand_in_use:">MetaCommand in use:</span></h2>
-<p><b>Definitions:</b> 
+<p><b>Definitions:</b>
 </p><p>Metacommand differentiates the term ‘Option’ and ‘Field’. Basically an option can be placed anywhere in the command line as long as it is defined by a tag. On the other hand, the fields are placed in order and do not require any tag.
-</p><p><br />	 
-<b>Programmer’ point of view:</b> 
+</p><p><br/>
+<b>Programmer’ point of view:</b>
 </p><p>To use MetaCommand you have to include the file metaCommand.h in your code.
 </p>
 <pre>#include &lt;metaCommand.h&gt;
@@ -106,9 +106,9 @@ Usage&#160;: d:\Work\itkUNCApplications-VC++\bin\debug\AtlasSummation.exe
 <pre>AddField(std::string Name, std::string Description, 
          MetaCommand::TypeEnumType Type, bool ExternalData).
 </pre>
-<p>The first argument is the name of the field, the second his description, the third one his type and the last one indicates if that data is external to your application or not (e.g&#160;: a filename is external but the size of the input image is internal).
-</p><p><br />	
-<b>Example</b> 
+<p>The first argument is the name of the field, the second his description, the third one his type and the last one indicates if that data is external to your application or not (e.g : a filename is external but the size of the input image is internal).
+</p><p><br/>
+<b>Example</b>
 </p><p>Let’s define a command line like: ./example input.mha –w 2 output.mha 
 This will be coded as:
 </p>
@@ -127,7 +127,7 @@ if( !command.Parse(argc,argv) )
 return 1;
 }
 </pre>
-<p><br />
+<p><br/>
 Finally to access the different options, one of these 4 methods can be used:
 </p>
 <pre>   * GetValueAsString(Option option, std::string fieldName)
@@ -137,14 +137,14 @@ Finally to access the different options, one of these 4 methods can be used:
 </pre>
 <p>To recover the parameters of an option (tag + field), in the first argument of these methods the name of the tag has to be specified and in the second argument the name of the field.
 To recover the parameter of a single field you just need to specify the first argument: the name of the field.
-</p><p><br />
-<b>Example:</b> to access the parameters of the previous example&#160;:
+</p><p><br/>
+<b>Example:</b> to access the parameters of the previous example :
 </p>
 <pre>std::string imageIn = command.GetValueAsString("infile");
 std::string imageOut = command.GetValueAsString("Write","filename");
 int OutputType = command.GetValueAsInt(“Write","Type");
 </pre>
-<p><br />
+<p><br/>
 </p>
 <h1><span class="mw-headline" id="MetaOutput">MetaOutput</span></h1>
 <p>To use MetaOutput you have to include the file metaOutput.h in your code.
@@ -155,7 +155,7 @@ int OutputType = command.GetValueAsInt(“Write","Type");
 </p>
 <pre>MetaOutput output;
 </pre>
-<p>And you should be put this code, before the parsing&#160;:
+<p>And you should be put this code, before the parsing :
 </p>
 <pre> output.SetMetaCommand(&amp;command);
 </pre>
@@ -166,13 +166,13 @@ In that example , x is an int variable, and we need to see its value in BatchMak
  output.AddFloatField("Result","Computation Result",x); //Result will be the filed of output
  output.Write();
 </pre>
-<p>Now, you can access to the variable "x" via BatchMake with the command line&#160;:
+<p>Now, you can access to the variable "x" via BatchMake with the command line :
 </p>
 <pre>Run(output ${example})
 <b>Set(result example.Result)</b> 
 Echo(x = ${result})
 </pre>
-<p>But before that, you need to add this command line at the beginning of your script&#160;:
+<p>But before that, you need to add this command line at the beginning of your script :
 </p>
 <pre>SetAppOption(example.GenerateXMLMetaOutput 1)
 </pre>
@@ -196,11 +196,10 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:2918-0!canonical and timestamp 20240430095316 and revision id 47457. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/MetaIO/MetaCommand_Documentation&amp;oldid=47457">https://public.kitware.com/Wiki/index.php?title=ITK/MetaIO/MetaCommand_Documentation&amp;oldid=47457</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

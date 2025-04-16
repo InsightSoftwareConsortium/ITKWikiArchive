@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4/Modularization/Status</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"7065e22038ae545fc2aac102","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Modularization/Status","wgTitle":"ITK/Release 4/Modularization/Status","wgCurRevisionId":44255,"wgRevisionId":44255,"wgArticleId":8421,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Modularization/Status","wgRelevantArticleId":8421,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={
 "site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Modularization_Status rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><ul><li>Run the scripts of modularization:</li></ul>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><ul><li>Run the scripts of modularization:</li></ul>
 <p>The scripts are located in the monolithic/current ITK repository:&lt;ITK_SOURCE_DIR&gt;/Modularization. The "Manifest.txt" in this directory contains
 the list of the source codes that are moved from monolithic ITK to modularized ITK.
 </p><p>Run the script customRun.sh with the input parameter of the output directory name of the modularized ITK:
@@ -30,7 +31,7 @@ the list of the source codes that are moved from monolithic ITK to modularized I
  ./customRun.sh  &lt;HeadOfModuarITKTree&gt;
 </pre>
 <p>The script will first download the supporting modules and cmake packaging files from the <a href="/Wiki/ModularITKSupport_repository" title="ModularITKSupport repository">modularITKSupport repository</a> to &lt;HeadOfModuarITKTree&gt;, and then copy source files from the monolithic ITK to &lt;HeadOfModuarITKTree&gt; according to the manifest file (Manifest.txt). After running the scripts, &lt;HeadOfModuarITKTree&gt; contains the modularized ITK.
-</p><p><br />
+</p><p><br/>
 </p>
 <ul><li>Configure and build modular ITK.</li></ul>
 <pre> cd   &lt;path to bin&gt;/bin/modularITK
@@ -41,7 +42,7 @@ the list of the source codes that are moved from monolithic ITK to modularized I
 <p>Altogether there are about 90 modules in total (not including examples and reviews). 
 Currently itk-common's tests are up and running on the Dashboard on several different platforms:
 </p>
-<pre>   <a rel="nofollow" class="external free" href="http://www.cdash.org/CDash/index.php?project=Insight#ITKv4_Modularization">http://www.cdash.org/CDash/index.php?project=Insight#ITKv4_Modularization</a>
+<pre>   <a class="external free" href="http://www.cdash.org/CDash/index.php?project=Insight#ITKv4_Modularization" rel="nofollow">http://www.cdash.org/CDash/index.php?project=Insight#ITKv4_Modularization</a>
 </pre>
 <p>As we add more tests to modules we will turn those modules on for the dashboard.
 </p>
@@ -65,10 +66,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8421-0!canonical and timestamp 20230330233458 and revision id 44255. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/Status&amp;oldid=44255">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/Status&amp;oldid=44255</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

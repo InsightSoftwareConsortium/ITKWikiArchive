@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Examples/WishList/Segmentation/kMeansClustering</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="canonical" href="/ITKWikiArchive/Wiki/ITK/Examples/WishList/Segmentation/kMeansClustering" />
-<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="/ITKWikiArchive/Wiki/ITK/Examples/WishList/Segmentation/kMeansClustering" rel="canonical"/>
+<link href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -118,7 +119,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 /*]]>*/
 </style></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_WishList_Segmentation_kMeansClustering skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#kMeansClustering.cxx"><span class="tocnumber">1</span> <span class="toctext">kMeansClustering.cxx</span></a></li>
 <li class="toclevel-1"><a href="#CMakeLists.txt"><span class="tocnumber">2</span> <span class="toctext">CMakeLists.txt</span></a></li>
@@ -132,145 +133,144 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="kMeansClustering.cxx">kMeansClustering.cxx</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;itkImage.h&gt;</span>
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;itkImage.h&gt;</span>
 <span class="co2">#include &lt;itkImageFileReader.h&gt;</span>
 <span class="co2">#include &lt;itkImageFileWriter.h&gt;</span>
 <span class="co2">#include &lt;itkScalarImageKmeansImageFilter.h&gt;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span> <span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span> argv <span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span> <span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span> argv <span class="br0">[</span><span class="br0">]</span> <span class="br0">)</span>
+<span class="br0">{</span>
   <span class="co1">//sample usage</span>
   <span class="co1">//./kMeansClustering input.jpg output.jpg 1 3 0 100 200</span>
-&#160;
+ 
   <span class="co1">//verify command line arguments</span>
-  <span class="kw1">if</span><span class="br0">&#40;</span> argc <span class="sy1">&lt;</span> <span class="nu0">5</span> <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Usage: &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> argv<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; inputScalarImage outputLabeledImage contiguousLabels&quot;</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; numberOfClasses mean1 mean2... meanN &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  <span class="kw1">if</span><span class="br0">(</span> argc <span class="sy1">&lt;</span> <span class="nu0">5</span> <span class="br0">)</span>
+    <span class="br0">{</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Usage: "</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> argv<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" inputScalarImage outputLabeledImage contiguousLabels"</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" numberOfClasses mean1 mean2... meanN "</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+ 
   <span class="co1">//parse command line arguments</span>
-  <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span> inputImageFileName <span class="sy1">=</span> argv<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span><span class="sy4">;</span>
-  <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span> outputImageFileName <span class="sy1">=</span> argv<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><span class="sy4">;</span>
-  <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> useNonContiguousLabels <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> argv<span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> numberOfInitialClasses <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> argv<span class="br0">&#91;</span><span class="nu0">4</span><span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span> inputImageFileName <span class="sy1">=</span> argv<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="sy4">;</span>
+  <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span> outputImageFileName <span class="sy1">=</span> argv<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
+  <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> useNonContiguousLabels <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">(</span> argv<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> numberOfInitialClasses <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">(</span> argv<span class="br0">[</span><span class="nu0">4</span><span class="br0">]</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> argoffset <span class="sy1">=</span> <span class="nu0">5</span><span class="sy4">;</span>
-&#160;
-  <span class="kw1">if</span><span class="br0">&#40;</span> <span class="kw2">static_cast</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span>argc<span class="br0">&#41;</span> <span class="sy1">&lt;</span>
-      numberOfInitialClasses <span class="sy2">+</span> argoffset <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Error: &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> numberOfInitialClasses <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; classes has been specified &quot;</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;but no enough means have been provided in the command &quot;</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;line arguments &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+ 
+  <span class="kw1">if</span><span class="br0">(</span> <span class="kw2">static_cast</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span>argc<span class="br0">)</span> <span class="sy1">&lt;</span>
+      numberOfInitialClasses <span class="sy2">+</span> argoffset <span class="br0">)</span>
+    <span class="br0">{</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Error: "</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> numberOfInitialClasses <span class="sy1">&lt;&lt;</span> <span class="st0">" classes has been specified "</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"but no enough means have been provided in the command "</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"line arguments "</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+ 
   std<span class="sy4">::</span><span class="me2">vector</span><span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy1">&gt;</span> userMeans<span class="sy4">;</span>
-  <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> k <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> k <span class="sy1">&lt;</span> numberOfInitialClasses<span class="sy4">;</span> k<span class="sy2">++</span> <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    <span class="kw4">const</span> <span class="kw4">double</span> userProvidedInitialMean <span class="sy1">=</span> <span class="kw3">atof</span><span class="br0">&#40;</span> argv<span class="br0">&#91;</span>k<span class="sy2">+</span>argoffset<span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-    userMeans.<span class="me1">push_back</span><span class="br0">&#40;</span>userProvidedInitialMean<span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+  <span class="kw1">for</span><span class="br0">(</span> <span class="kw4">unsigned</span> k <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> k <span class="sy1">&lt;</span> numberOfInitialClasses<span class="sy4">;</span> k<span class="sy2">++</span> <span class="br0">)</span>
+    <span class="br0">{</span>
+    <span class="kw4">const</span> <span class="kw4">double</span> userProvidedInitialMean <span class="sy1">=</span> <span class="kw3">atof</span><span class="br0">(</span> argv<span class="br0">[</span>k<span class="sy2">+</span>argoffset<span class="br0">]</span> <span class="br0">)</span><span class="sy4">;</span>
+    userMeans.<span class="me1">push_back</span><span class="br0">(</span>userProvidedInitialMean<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+ 
   <span class="co1">// Define the pixel type and dimension of the image that we intend to</span>
   <span class="co1">// classify. </span>
-&#160;
+ 
   <span class="kw4">typedef</span> <span class="kw4">signed</span> <span class="kw4">short</span>       PixelType<span class="sy4">;</span>
   <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span>          Dimension <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
-&#160;
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span>PixelType, Dimension <span class="sy1">&gt;</span> ImageType<span class="sy4">;</span>
-&#160;
+ 
   <span class="co1">// create a reader  </span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ImageFileReader</span><span class="sy1">&lt;</span> ImageType <span class="sy1">&gt;</span> ReaderType<span class="sy4">;</span>
-  ReaderType<span class="sy4">::</span><span class="me2">Pointer</span> reader <span class="sy1">=</span> ReaderType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  reader<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span> inputImageFileName <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  ReaderType<span class="sy4">::</span><span class="me2">Pointer</span> reader <span class="sy1">=</span> ReaderType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  reader<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span> inputImageFileName <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Instantiate the ScalarImageKmeansImageFilter  </span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ScalarImageKmeansImageFilter</span><span class="sy1">&lt;</span> ImageType <span class="sy1">&gt;</span> KMeansFilterType<span class="sy4">;</span>
-&#160;
-  KMeansFilterType<span class="sy4">::</span><span class="me2">Pointer</span> kmeansFilter <span class="sy1">=</span> KMeansFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  kmeansFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> reader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  KMeansFilterType<span class="sy4">::</span><span class="me2">Pointer</span> kmeansFilter <span class="sy1">=</span> KMeansFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  kmeansFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> reader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Make the output image intellegable by expanding the range of output image values, if desired</span>
-&#160;
-  kmeansFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetUseNonContiguousLabels<span class="br0">&#40;</span> useNonContiguousLabels <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  kmeansFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetUseNonContiguousLabels<span class="br0">(</span> useNonContiguousLabels <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// initialize using the user input means</span>
-&#160;
-    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> k <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> k <span class="sy1">&lt;</span> numberOfInitialClasses<span class="sy4">;</span> k<span class="sy2">++</span> <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    kmeansFilter<span class="sy2">-</span><span class="sy1">&gt;</span>AddClassWithInitialMean<span class="br0">&#40;</span> userMeans<span class="br0">&#91;</span>k<span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+ 
+    <span class="kw1">for</span><span class="br0">(</span> <span class="kw4">unsigned</span> k <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> k <span class="sy1">&lt;</span> numberOfInitialClasses<span class="sy4">;</span> k<span class="sy2">++</span> <span class="br0">)</span>
+    <span class="br0">{</span>
+    kmeansFilter<span class="sy2">-</span><span class="sy1">&gt;</span>AddClassWithInitialMean<span class="br0">(</span> userMeans<span class="br0">[</span>k<span class="br0">]</span> <span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+ 
   <span class="co1">// Create and setup a writer</span>
-&#160;
+ 
   <span class="kw4">typedef</span> KMeansFilterType<span class="sy4">::</span><span class="me2">OutputImageType</span>  OutputImageType<span class="sy4">;</span>
-&#160;
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ImageFileWriter</span><span class="sy1">&lt;</span> OutputImageType <span class="sy1">&gt;</span> WriterType<span class="sy4">;</span>
-&#160;
-  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> writer <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> kmeansFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span> outputImageFileName <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> writer <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> kmeansFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span> outputImageFileName <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// execut the pipeline</span>
   <span class="kw2">try</span>
-    <span class="br0">&#123;</span>
-    writer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-  <span class="kw2">catch</span><span class="br0">&#40;</span> itk<span class="sy4">::</span><span class="me2">ExceptionObject</span> <span class="sy3">&amp;</span> excp <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Problem encountered while writing &quot;</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; image file&#160;: &quot;</span> <span class="sy1">&lt;&lt;</span> outputImageFileName <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    <span class="br0">{</span>
+    writer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+  <span class="kw2">catch</span><span class="br0">(</span> itk<span class="sy4">::</span><span class="me2">ExceptionObject</span> <span class="sy3">&amp;</span> excp <span class="br0">)</span>
+    <span class="br0">{</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Problem encountered while writing "</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" image file : "</span> <span class="sy1">&lt;&lt;</span> outputImageFileName <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
     std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> excp <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+ 
   <span class="co1">// inspect the means</span>
   KMeansFilterType<span class="sy4">::</span><span class="me2">ParametersType</span> estimatedMeans <span class="sy1">=</span> 
-                                            kmeansFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetFinalMeans<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> numberOfClasses <span class="sy1">=</span> estimatedMeans.<span class="me1">Size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  <span class="kw1">for</span> <span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span> <span class="sy4">;</span> i <span class="sy1">&lt;</span> numberOfClasses <span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;cluster[&quot;</span> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;] &quot;</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;    estimated mean&#160;: &quot;</span> <span class="sy1">&lt;&lt;</span> estimatedMeans<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+                                            kmeansFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetFinalMeans<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> numberOfClasses <span class="sy1">=</span> estimatedMeans.<span class="me1">Size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  <span class="kw1">for</span> <span class="br0">(</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span> <span class="sy4">;</span> i <span class="sy1">&lt;</span> numberOfClasses <span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">)</span>
+    <span class="br0">{</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"cluster["</span> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> <span class="st0">"] "</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"    estimated mean : "</span> <span class="sy1">&lt;&lt;</span> estimatedMeans<span class="br0">[</span>i<span class="br0">]</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+ 
   <span class="kw1">return</span> <span class="kw2">EXIT_SUCCESS</span><span class="sy4">;</span>
-&#160;
-<span class="br0">&#125;</span></pre></div></div>
+ 
+<span class="br0">}</span></pre></div></div>
 <h2><span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
+ 
 <span class="kw1">project</span><span class="sy0">(</span>kMeansClustering<span class="sy0">)</span>
-&#160;
+ 
 <span class="kw1">find_package</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
 <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">if</span> <span class="sy0">(</span>ITKVtkGlue_LOADED<span class="sy0">)</span>
   <span class="kw1">find_package</span><span class="sy0">(</span>VTK REQUIRED<span class="sy0">)</span>
   <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${VTK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">endif</span><span class="sy0">()</span>
-&#160;
+ 
 <span class="kw1">add_executable</span><span class="sy0">(</span>kMeansClustering MACOSX_BUNDLE kMeansClustering.cxx<span class="sy0">)</span>
-&#160;
-<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+ 
+<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>kMeansClustering ITKReview <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>kMeansClustering <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
+<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
 <h2><span class="mw-headline" id="Download_and_Build_kMeansClustering">Download and Build kMeansClustering</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:kMeansClustering.tar">here to download <i>kMeansClustering</i></a> and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:kMeansClustering.tar" rel="nofollow">here to download <i>kMeansClustering</i></a> and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>kMeansClustering.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd kMeansClustering/build
@@ -305,7 +305,7 @@ Once the tarball <i>kMeansClustering.tar</i> has been downloaded and extracted,
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span class="mw-headline" id="ITK_.3C_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -318,9 +318,7 @@ Template argument size: 176/2097152 bytes
 Highest expansion depth: 3/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:4957-0!*!0!!en!*!* and timestamp 20150330201000 and revision id 50874
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/WishList/Segmentation/kMeansClustering&amp;oldid=50874">http://itk.org/Wiki/index.php?title=ITK/Examples/WishList/Segmentation/kMeansClustering&amp;oldid=50874</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

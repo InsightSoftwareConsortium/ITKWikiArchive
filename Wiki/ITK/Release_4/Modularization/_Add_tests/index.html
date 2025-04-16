@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4/Modularization/ Add tests</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b1e2553c951db8582da127ed","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Modularization/_Add_tests","wgTitle":"ITK/Release 4/Modularization/ Add tests","wgCurRevisionId":59335,"wgRevisionId":59335,"wgArticleId":9029,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Modularization/_Add_tests","wgRelevantArticleId":9029,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};
 RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Modularization_Add_tests rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>The safe assumption behind testing is that "if it is not tested, it is broken".
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>The safe assumption behind testing is that "if it is not tested, it is broken".
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Non-regression_tests"><span class="tocnumber">1</span> <span class="toctext">Non-regression tests</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Regression_tests"><span class="tocnumber">2</span> <span class="toctext">Regression tests</span></a>
@@ -39,7 +40,6 @@ RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.option
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="Non-regression_tests">Non-regression tests</span></h2>
 <p>The same way it used to be, except the newer syntax in "add_test" command:
 </p><p>&lt;syntaxhighlight lang="cmake"&gt;
@@ -48,13 +48,13 @@ RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.option
 </pre>
 <pre>target_link_libraries(itkBinaryThresholdFilterTest ${ITK-BinaryThreshold_LIBRARIES})
      
-# adopt the modern CMake syntax&#160;:[NAME, COMMAND]
+# adopt the modern CMake syntax :[NAME, COMMAND]
 </pre>
 <pre>itk_add_test(NAME itkBinaryThresholdFilterTest  
         COMMAND itkBinaryThresholdFilterTest input.png output.png)
 </pre>
 <p>&lt;/syntaxhighlight&gt;
-</p><p><br />
+</p><p><br/>
 </p>
 <h2><span class="mw-headline" id="Regression_tests">Regression tests</span></h2>
 <h3><span class="mw-headline" id="Approach_A">Approach A</span></h3>
@@ -79,9 +79,9 @@ The CMake macro "CreateTestDriver" defined in
  itk_add_test(NAME  itkFooFilterTest2
           COMMAND  ITKFooFilterTestDriver  itkFooFilterTest2)
 </pre>
-<p><br />
+<p><br/>
 &lt;/syntaxhighlight&gt;
-</p><p><br />
+</p><p><br/>
 You can find Approach A used in most of the ITK modules.
 for example in
 </p>
@@ -90,7 +90,7 @@ for example in
 <h3><span class="mw-headline" id="Approach_B">Approach B</span></h3>
 <p>Stand-alone regression tests
 </p><p>There is also a test driver executable("itkTestdriver") designed for stand-alone regression tests. For instance, all the tests in Examples are stand-alone programs each has its own main function call, in which case, the approach A is not appropriate.
-</p><p><br />
+</p><p><br/>
 &lt;syntaxhighlight lang="cmake"&gt;
 </p>
 <pre>  add_exectuable(itkFooTest itkFooTest.cxx)
@@ -103,7 +103,7 @@ for example in
                       <b>$&lt;TARGET_FILE:</b>itkFooFilterTest<b>&gt;</b> input.png output.png)
 </pre>
 <p>&lt;/syntaxhighlight&gt;
-</p><p><br />
+</p><p><br/>
 The new syntax
 </p>
 <pre>    $&lt;TARGET_FILE: xxx&gt; 
@@ -114,10 +114,10 @@ The new syntax
 </p>
 <pre> ITK/Examples/Filtering/test/CMakeLists.txt
 </pre>
-<p><br />
+<p><br/>
 </p>
 <h2><span class="mw-headline" id="Add_testing_data_to_ITK">Add testing data to ITK</span></h2>
-<pre>  Please refer to: <a rel="nofollow" class="external text" href="http://www.itk.org/Wiki/index.php?title=ITK/Git/Develop/Data&amp;oldid=41775">| Add Data</a>
+<pre>  Please refer to: <a class="external text" href="http://www.itk.org/Wiki/index.php?title=ITK/Git/Develop/Data&amp;oldid=41775" rel="nofollow">| Add Data</a>
 </pre>
 <h2><span class="mw-headline" id="Writing_tests">Writing tests</span></h2>
 <h3><span class="mw-headline" id="Unit_tests">Unit tests</span></h3>
@@ -127,7 +127,7 @@ The new syntax
 <li>works invariably along time,</li>
 <li>works invariably across different platforms.</li></ul>
 <p>It also helps in detecting potential issues, and checking how a given class is affected by changes introduced in the code.
-</p><p>A direct consequence of writing and executing a test is that the <a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/Special:WhatLinksHere/ITK/Code_Coverage_Practices">code coverage</a> is improved.
+</p><p>A direct consequence of writing and executing a test is that the <a class="external text" href="http://www.vtk.org/Wiki/Special:WhatLinksHere/ITK/Code_Coverage_Practices" rel="nofollow">code coverage</a> is improved.
 When writing a unit test you should consider the following principles:
 </p>
 <ul><li>Make sure that all methods of the class being tested are exercised.</li>
@@ -145,7 +145,7 @@ When writing a unit test you should consider the following principles:
  // ...
  //
 </pre>
-<pre> if( itk::Math::FloatDifferenceULP( floatRepresentationfx1.asFloat, floatRepresentationfx2.asFloat )&#160;!= -1 )
+<pre> if( itk::Math::FloatDifferenceULP( floatRepresentationfx1.asFloat, floatRepresentationfx2.asFloat ) != -1 )
    {
    std::cout &lt;&lt; "Unexpected float distance." &lt;&lt; std::endl;
    testPassStatus = EXIT_FAILURE;
@@ -176,7 +176,7 @@ When writing a unit test you should consider the following principles:
  // ...
  //
 </pre>
-<pre> if( itk::Math::FloatDifferenceULP( floatRepresentationfx1.asFloat, floatRepresentationfx2.asFloat )&#160;!= -1 )
+<pre> if( itk::Math::FloatDifferenceULP( floatRepresentationfx1.asFloat, floatRepresentationfx2.asFloat ) != -1 )
    {
    std::cout &lt;&lt; "Unexpected float distance." &lt;&lt; std::endl;
    return EXIT_FAILURE;
@@ -221,11 +221,10 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9029-0!canonical and timestamp 20230926153257 and revision id 59335. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/_Add_tests&amp;oldid=59335">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/_Add_tests&amp;oldid=59335</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

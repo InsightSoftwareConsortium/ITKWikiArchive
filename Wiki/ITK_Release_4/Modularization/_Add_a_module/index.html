@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4/Modularization/ Add a module</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"7befd264480b718fe6c98da5","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Modularization/_Add_a_module","wgTitle":"ITK/Release 4/Modularization/ Add a module","wgCurRevisionId":44263,"wgRevisionId":44263,"wgArticleId":9032,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Modularization/_Add_a_module","wgRelevantArticleId":9032,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],
 "wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4/Modularization/_Add_a_module","wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/_Add_a_module"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/_Add_a_module"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/_Add_a_module" rel="canonical"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Modularization_Add_a_module rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Choose_a_group_for_your_module"><span class="tocnumber">1</span> <span class="toctext">Choose a group for your module</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Organize_the_source_tree"><span class="tocnumber">2</span> <span class="toctext">Organize the source tree</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a></li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Choose_a_group_for_your_module">Choose a group for your module</span></h1>
 <p>Add your module into  "ITK/CMake/ITKGroups.cmake" under a specific group. During the CMake step, CMake will pick up information from this file for configuration.
 </p>
@@ -37,25 +37,25 @@
 </p>
 <pre> ITK/Modules/&lt;GroupName&gt;/
 </pre>
-<p><br />
+<p><br/>
 In each module, there are subdirectories,
 </p>
 <ul><li>"include": header files (.h) and template source code (.hxx)</li>
 <li>"test": testing source code (.cxx)</li>
 <li>"src": source code (.cxx,.c)</li></ul>
-<p><br />
-The CMake components that are in need for  "ITKFOO" module in the Filtering group are&#160;:
+<p><br/>
+The CMake components that are in need for  "ITKFOO" module in the Filtering group are :
 </p>
-<ul><li><a href="/Wiki/ITK_Release_4/Modularization/Add_a_module/CMakeLists.txt" class="mw-redirect" title="ITK Release 4/Modularization/Add a module/CMakeLists.txt">Modules/Filtering/Foo/CMakeLists.txt</a></li>
-<li><a href="/Wiki/ITK_Release_4/Modularization/Add_a_module/itk-module.cmake" class="mw-redirect" title="ITK Release 4/Modularization/Add a module/itk-module.cmake">Modules/Filtering/Foo/itk-module.cmake</a></li>
-<li><a href="/Wiki/ITK_Release_4/Modularization/Add_a_module/test/CMakeLists.txt" class="mw-redirect" title="ITK Release 4/Modularization/Add a module/test/CMakeLists.txt">Modules/Filtering/Foo/test/CMakeLists.txt</a></li></ul>
+<ul><li><a class="mw-redirect" href="/Wiki/ITK_Release_4/Modularization/Add_a_module/CMakeLists.txt" title="ITK Release 4/Modularization/Add a module/CMakeLists.txt">Modules/Filtering/Foo/CMakeLists.txt</a></li>
+<li><a class="mw-redirect" href="/Wiki/ITK_Release_4/Modularization/Add_a_module/itk-module.cmake" title="ITK Release 4/Modularization/Add a module/itk-module.cmake">Modules/Filtering/Foo/itk-module.cmake</a></li>
+<li><a class="mw-redirect" href="/Wiki/ITK_Release_4/Modularization/Add_a_module/test/CMakeLists.txt" title="ITK Release 4/Modularization/Add a module/test/CMakeLists.txt">Modules/Filtering/Foo/test/CMakeLists.txt</a></li></ul>
 <p>If this module generates a library or libraries (has .cxx source files), the source CMakeLists.txt is needed: 
 </p>
-<ul><li><a href="/Wiki/ITK_Release_4/Modularization/Add_a_module/src/CMakeLists.txt" class="mw-redirect" title="ITK Release 4/Modularization/Add a module/src/CMakeLists.txt">Modules/Filtering/Foo/src/CMakeLists.txt</a></li></ul>
+<ul><li><a class="mw-redirect" href="/Wiki/ITK_Release_4/Modularization/Add_a_module/src/CMakeLists.txt" title="ITK Release 4/Modularization/Add a module/src/CMakeLists.txt">Modules/Filtering/Foo/src/CMakeLists.txt</a></li></ul>
 <h1><span class="mw-headline" id="Examples">Examples</span></h1>
 <ul><li>All modules in ITK.</li>
 <li>Adding a moule is easy!
-<ul><li>Arnaud did it without instructions:<a rel="nofollow" class="external autonumber" href="http://review.source.kitware.com/#change,1311">[1]</a> added "ITKFastMarching" module to ITK.</li></ul></li></ul>
+<ul><li>Arnaud did it without instructions:<a class="external autonumber" href="http://review.source.kitware.com/#change,1311" rel="nofollow">[1]</a> added "ITKFastMarching" module to ITK.</li></ul></li></ul>
 <!-- 
 NewPP limit report
 Cached time: 20250110230608
@@ -76,11 +76,10 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9032-0!canonical and timestamp 20250110230608 and revision id 44263. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/_Add_a_module&amp;oldid=44263">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/_Add_a_module&amp;oldid=44263</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

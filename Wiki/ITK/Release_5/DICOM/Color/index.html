@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 5/DICOM/Color</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"fd2d991383f3b423345c32e7","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_5/DICOM/Color","wgTitle":"ITK/Release 5/DICOM/Color","wgCurRevisionId":63976,"wgRevisionId":63976,"wgArticleId":14491,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_5/DICOM/Color","wgRelevantArticleId":14491,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready",
 "user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_5_DICOM_Color rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Multiple_Components_in_DICOM"><span class="tocnumber">1</span> <span class="toctext">Multiple Components in DICOM</span></a>
 <ul>
@@ -35,13 +36,12 @@
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Multiple_Components_in_DICOM">Multiple Components in DICOM</span></h1>
 <h2><span class="mw-headline" id="ITK_5.0">ITK 5.0</span></h2>
 <p>DICOM standard allow storing of image with more than one components. As of today, only 1 or 3 components are considered valid DICOM SOP Class instances (for all IODs).
 </p><p>By design the itk::GDCMImageIO was designed and implemented so that an input YBR_FULL image would be loaded as such (no implicit conversion to RGB was done). The main reason for that is that ITK is a processing toolkit, so quantitative analysis is supposed to be done on the best possible pixel representation. Since conversion from integer YBR_FULL to integer RGB colorspace is a lossy operation (truncation in floating point representation), the conversion has never been implemented.
 </p><p>As side note MONOCHROME1 color space is not converted to MONOCHROME2 (itk::GDCMImageIO / ITK 5.0)
-</p><p>ITK currently does not have any standard way of noting the color space of an Image. Originally, there was a direct mapping between the `ImageIOBase::PixelType` and the intended pixel type used for the template parameter in the `Image` class. Modern usage of ITK frequently uses the generalized `VectorImage` to hold multi-component images so there may even be less knowledge of the content in the Image buffer. Additionally, we need to consider the default behavior of `ConverPixeltBuffer` (<a rel="nofollow" class="external free" href="https://itk.org/Doxygen/html/classitk_1_1ConvertPixelBuffer.html">https://itk.org/Doxygen/html/classitk_1_1ConvertPixelBuffer.html</a>), which may be applied when an image is loaded by the `ImageFileReader`. For example if the ImageIO loads a 3 component pixel buffer and the ImageFileReader is templated over a scalar image default a RGB to Gray scale  conversion occurs based on the CIE luminance for the 3-components.
+</p><p>ITK currently does not have any standard way of noting the color space of an Image. Originally, there was a direct mapping between the `ImageIOBase::PixelType` and the intended pixel type used for the template parameter in the `Image` class. Modern usage of ITK frequently uses the generalized `VectorImage` to hold multi-component images so there may even be less knowledge of the content in the Image buffer. Additionally, we need to consider the default behavior of `ConverPixeltBuffer` (<a class="external free" href="https://itk.org/Doxygen/html/classitk_1_1ConvertPixelBuffer.html" rel="nofollow">https://itk.org/Doxygen/html/classitk_1_1ConvertPixelBuffer.html</a>), which may be applied when an image is loaded by the `ImageFileReader`. For example if the ImageIO loads a 3 component pixel buffer and the ImageFileReader is templated over a scalar image default a RGB to Gray scale  conversion occurs based on the CIE luminance for the 3-components.
 </p>
 <h2><span class="mw-headline" id="Issue">Issue</span></h2>
 <p>This behavior was considered ok, as long as the image was not directly loaded in viz application such as Slicer, where unexpectedly the image would appears with a weird color scheme. (original bug report from Mihail Isakov)
@@ -55,7 +55,6 @@
 </p><p>Current behavior of ITK 5.0:
 </p>
 <table border="1" style="text-align:center">
-
 <tbody><tr bgcolor="#abcdef">
 <th>Photometric Interpretation</th>
 <th>JPEG</th>
@@ -155,11 +154,10 @@
 <th style="background:red">no J2K plugin
 </th></tr>
 </tbody></table>
-<p><br />
+<p><br/>
 Desired behavior of ITK 5.0:
 </p>
 <table border="1" style="text-align:center">
-
 <tbody><tr bgcolor="#abcdef">
 <th>Photometric Interpretation</th>
 <th>JPEG</th>
@@ -274,10 +272,10 @@ When a Photometric Interpretation is specified in silver background, it means th
 <li>YBR_FULL / YBR_FULL_422 are converted to RGB</li></ol>
 <p>The requirements for quantitative analysis may be different, please list reqs here:
 </p>
-<ol><li>? Extract Luminance out of YBR&#160;?</li>
-<li>? Need MONOCHROME1 native support, because &lt;fill reason&#160;??&gt;</li>
-<li>? Is there a need to manipulated native palette data&#160;? I doubt so
-<ol><li>BL: The `ExpandRGBPalette` attribute was just added to `ImageIOBase`. TIFFImageIO support this option.  For feature consistency it would be nice for GDCMImageIO to support this feature. <a rel="nofollow" class="external free" href="https://itk.org/Doxygen/html/classitk_1_1ImageIOBase.html#a04804c60d755ae102e104261536a0f46">https://itk.org/Doxygen/html/classitk_1_1ImageIOBase.html#a04804c60d755ae102e104261536a0f46</a> <a rel="nofollow" class="external free" href="https://github.com/InsightSoftwareConsortium/ITK/pull/1219/files">https://github.com/InsightSoftwareConsortium/ITK/pull/1219/files</a></li></ol></li></ol>
+<ol><li>? Extract Luminance out of YBR ?</li>
+<li>? Need MONOCHROME1 native support, because &lt;fill reason ??&gt;</li>
+<li>? Is there a need to manipulated native palette data ? I doubt so
+<ol><li>BL: The `ExpandRGBPalette` attribute was just added to `ImageIOBase`. TIFFImageIO support this option.  For feature consistency it would be nice for GDCMImageIO to support this feature. <a class="external free" href="https://itk.org/Doxygen/html/classitk_1_1ImageIOBase.html#a04804c60d755ae102e104261536a0f46" rel="nofollow">https://itk.org/Doxygen/html/classitk_1_1ImageIOBase.html#a04804c60d755ae102e104261536a0f46</a> <a class="external free" href="https://github.com/InsightSoftwareConsortium/ITK/pull/1219/files" rel="nofollow">https://github.com/InsightSoftwareConsortium/ITK/pull/1219/files</a></li></ol></li></ol>
 <p>For ITK consistency it is important that the `ImageIOBase::PixelType` is set correctly so that users of the `ITK::ImageIOBase` API know generally what the image buffer is and how to load and use the image. We likely should improve the documentation in the ImageIOBase class about the expectations for how these are used. Here is a list of type pertinent to this discussion:
 </p>
 <ol><li>RGB
@@ -299,14 +297,14 @@ When a Photometric Interpretation is specified in silver background, it means th
 <li>DICOM mono1 min-is-white</li>
 <li>DICOM mono2 min-is-black</li>
 <li>DICOM YBR</li>
-<li><a rel="nofollow" class="external text" href="https://sourceforge.net/p/gdcm/gdcmdata/ci/master/tree/US-YBR_FULL_422-EVRLE.dcm%7C">DICOM YBR_422</a></li>
-<li><a rel="nofollow" class="external text" href="https://sourceforge.net/p/gdcm/gdcmdata/ci/master/tree/US-GE-4AICL142.dcm%7C">DICOM JPEG/YBR_422</a></li>
+<li><a class="external text" href="https://sourceforge.net/p/gdcm/gdcmdata/ci/master/tree/US-YBR_FULL_422-EVRLE.dcm%7C" rel="nofollow">DICOM YBR_422</a></li>
+<li><a class="external text" href="https://sourceforge.net/p/gdcm/gdcmdata/ci/master/tree/US-GE-4AICL142.dcm%7C" rel="nofollow">DICOM JPEG/YBR_422</a></li>
 <li>DICOM RGB</li>
 <li>DICOM YBR_RCT</li>
 <li>DICOM YBR_ICT</li></ol>
 <h2><span class="mw-headline" id="References">References</span></h2>
-<ul><li><a rel="nofollow" class="external free" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.3.html#sect_C.7.6.3.1.2">http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.3.html#sect_C.7.6.3.1.2</a></li>
-<li><a rel="nofollow" class="external free" href="http://gdcm.sourceforge.net/wiki/index.php/Color_Space_Transformations">http://gdcm.sourceforge.net/wiki/index.php/Color_Space_Transformations</a></li></ul>
+<ul><li><a class="external free" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.3.html#sect_C.7.6.3.1.2" rel="nofollow">http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.3.html#sect_C.7.6.3.1.2</a></li>
+<li><a class="external free" href="http://gdcm.sourceforge.net/wiki/index.php/Color_Space_Transformations" rel="nofollow">http://gdcm.sourceforge.net/wiki/index.php/Color_Space_Transformations</a></li></ul>
 <!-- 
 NewPP limit report
 Cached time: 20230922023932
@@ -327,11 +325,10 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:14491-0!canonical and timestamp 20230922023932 and revision id 63976. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_5/DICOM/Color&amp;oldid=63976">https://public.kitware.com/Wiki/index.php?title=ITK/Release_5/DICOM/Color&amp;oldid=63976</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

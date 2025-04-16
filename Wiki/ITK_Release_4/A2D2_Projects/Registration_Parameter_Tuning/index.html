@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK Release 4/A2D2 Projects/Registration Parameter Tuning</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"5ea6f4f74a94573cc9f73e06","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/A2D2_Projects/Registration_Parameter_Tuning","wgTitle":"ITK Release 4/A2D2 Projects/Registration Parameter Tuning","wgCurRevisionId":39058,"wgRevisionId":39058,"wgArticleId":5640,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/A2D2_Projects/Registration_Parameter_Tuning","wgRelevantArticleId":5640,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable"
 :!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","skins.monobook.styles":"ready"};RLPAGEMODULES=["ext.math.scripts","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=ext.math.styles%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=ext.math.styles%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_A2D2_Projects_Registration_Parameter_Tuning rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Motivation"><span class="tocnumber">1</span> <span class="toctext">Motivation</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Goal"><span class="tocnumber">2</span> <span class="toctext">Goal</span></a></li>
@@ -30,40 +31,39 @@
 <li class="toclevel-1 tocsection-5"><a href="#Ongoing"><span class="tocnumber">5</span> <span class="toctext">Ongoing</span></a></li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Motivation">Motivation</span></h1>
 <ol><li>ITK registration pipelines are highly parameterized.</li>
 <li>Registration performance highly dependent on the selected parameter values.</li>
 <li>Data specific magic numbers obtained empirically.</li></ol>
-<p>Look at your code and see how often the following magic numbers are used: {1…10}, {0,…10}, {5,10,15…}, {<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 10^{n}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mn>10</mn>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>n</mi>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle 10^{n}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eeff06a7c9ad9455cb809047cfc97a92c51e1bf7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.543ex; height:2.343ex;" alt="{\displaystyle 10^{n}}"/></span>}, {<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 2^{n}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <msup>
-          <mn>2</mn>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>n</mi>
-          </mrow>
-        </msup>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle 2^{n}}</annotation>
-  </semantics>
-</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8226f30650ee4fe4e640c6d2798127e80e9c160d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.381ex; height:2.343ex;" alt="{\displaystyle 2^{n}}"/></span>}, prime numbers, 42. Most likely, these are not optimal values.
+<p>Look at your code and see how often the following magic numbers are used: {1…10}, {0,…10}, {5,10,15…}, {<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle 10^{n}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msup>
+<mn>10</mn>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>n</mi>
+</mrow>
+</msup>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle 10^{n}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle 10^{n}}" aria-hidden="true" class="mwe-math-fallback-image-inline" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eeff06a7c9ad9455cb809047cfc97a92c51e1bf7" style="vertical-align: -0.338ex; width:3.543ex; height:2.343ex;"/></span>}, {<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle 2^{n}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msup>
+<mn>2</mn>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>n</mi>
+</mrow>
+</msup>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle 2^{n}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle 2^{n}}" aria-hidden="true" class="mwe-math-fallback-image-inline" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8226f30650ee4fe4e640c6d2798127e80e9c160d" style="vertical-align: -0.338ex; width:2.381ex; height:2.343ex;"/></span>}, prime numbers, 42. Most likely, these are not optimal values.
 </p>
 <h1><span class="mw-headline" id="Goal">Goal</span></h1>
 <p>The goal of this project to develop a framework for automated parameter tuning of ITK non-rigid
@@ -71,11 +71,11 @@ registration pipelines.
 </p><p>Formulate this task as an optimization over pipeline parameter values:
 </p>
 <ol><li>Use the tight coupling between registration and segmentation of image pairs.</li>
-<li>Optimized function based on comparison of the given image segmentation and that induced by the registration.<br /></li></ol>
-<p><a href="/Wiki/File:OptimizationFramework.jpg" class="image"><img alt="OptimizationFramework.jpg" src="/Wiki/images/thumb/1/10/OptimizationFramework.jpg/800px-OptimizationFramework.jpg" decoding="async" width="800" height="448" srcset="/Wiki/images/thumb/1/10/OptimizationFramework.jpg/1200px-OptimizationFramework.jpg 1.5x, /Wiki/images/thumb/1/10/OptimizationFramework.jpg/1600px-OptimizationFramework.jpg 2x" /></a>
+<li>Optimized function based on comparison of the given image segmentation and that induced by the registration.<br/></li></ol>
+<p><a class="image" href="/Wiki/File:OptimizationFramework.jpg"><img alt="OptimizationFramework.jpg" decoding="async" height="448" src="/Wiki/images/thumb/1/10/OptimizationFramework.jpg/800px-OptimizationFramework.jpg" srcset="/Wiki/images/thumb/1/10/OptimizationFramework.jpg/1200px-OptimizationFramework.jpg 1.5x, /Wiki/images/thumb/1/10/OptimizationFramework.jpg/1600px-OptimizationFramework.jpg 2x" width="800"/></a>
 </p>
 <h1><span class="mw-headline" id="Data">Data</span></h1>
-<p>The data used in the project can be found in <a rel="nofollow" class="external text" href="http://midas.kitware.com/community/view/33">this</a> MIDAS repository.
+<p>The data used in the project can be found in <a class="external text" href="http://midas.kitware.com/community/view/33" rel="nofollow">this</a> MIDAS repository.
 </p>
 <h1><span class="mw-headline" id="Team">Team</span></h1>
 <ul><li>Ziv Yaniv, PI, (Georgetown University)</li>
@@ -84,7 +84,7 @@ registration pipelines.
 <li>Ben Fuerst (Georgetown University/TUM)</li></ul>
 <h1><span class="mw-headline" id="Ongoing">Ongoing</span></h1>
 <ol><li>Analysis of the ITK optimization framework - <a href="/Wiki/Proposals:Refactoring_of_optimization_framework" title="Proposals:Refactoring of optimization framework">refactor ITK hierarchy</a> to distinguish between functions that provide derivative information and those that do not.</li>
-<li>XML reading with support for schema - <a rel="nofollow" class="external text" href="http://xerces.apache.org/xerces-c/">Xerces</a>, check license compatibility.</li>
+<li>XML reading with support for schema - <a class="external text" href="http://xerces.apache.org/xerces-c/" rel="nofollow">Xerces</a>, check license compatibility.</li>
 <li>Look into the use of <a href="/Wiki/Proposals:Condor" title="Proposals:Condor">Condor </a> for distributed computing.</li></ol>
 <!-- 
 NewPP limit report
@@ -106,10 +106,9 @@ Unstrip post‐expand size: 72/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:5640-0!canonical!math=5 and timestamp 20220817164551 and revision id 39058. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/A2D2_Projects/Registration_Parameter_Tuning&amp;oldid=39058">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/A2D2_Projects/Registration_Parameter_Tuning&amp;oldid=39058</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

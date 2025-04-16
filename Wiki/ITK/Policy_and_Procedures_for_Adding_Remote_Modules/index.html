@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Policy and Procedures for Adding Remote Modules</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"402fabd236e95ac8d2ced568","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Policy_and_Procedures_for_Adding_Remote_Modules","wgTitle":"ITK/Policy and Procedures for Adding Remote Modules","wgCurRevisionId":60846,"wgRevisionId":60846,"wgArticleId":10396,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Policy_and_Procedures_for_Adding_Remote_Modules","wgRelevantArticleId":10396,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,
 "wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Policy_and_Procedures_for_Adding_Remote_Modules rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Remote modules are downloaded at CMake configuration time into the <i>Remote</i> module group, i.e. into the <i>Modules/Remote</i> directory of the repository tree.  A Remote Module can be enabled by setting the target <i>Module_&lt;module name&gt;</i> CMake configuration variable to <i>ON</i> just like other ITK Modules.
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>Remote modules are downloaded at CMake configuration time into the <i>Remote</i> module group, i.e. into the <i>Modules/Remote</i> directory of the repository tree.  A Remote Module can be enabled by setting the target <i>Module_&lt;module name&gt;</i> CMake configuration variable to <i>ON</i> just like other ITK Modules.
 </p>
 <h1><span class="mw-headline" id="Purpose_of_Remote_Modules">Purpose of Remote Modules</span></h1>
 <p>The new modularization resulting from the ITKv4 effort provides a new level of
@@ -49,13 +50,13 @@ in the main ITK repository has two benefits:
 <ul><li>There is an article in an open access journal (such as the Insight Journal) describing the theory behind and usage of the module.</li>
 <li>There is a nightly build against ITK master on the CDash dashboard that builds and passes tests successfully.</li>
 <li>A name and contact email exists for the dashboard build.  The maintainer of the dashboard build does not necessarily need to be the original author of the Insight Journal article.</li>
-<li>The license should be compatible with the rest of the toolkit.  That is, it should be an <a rel="nofollow" class="external text" href="http://opensource.org/licenses">OSI approved license</a> without copyleft or non-commercial restrictions.  Ideally, it should be an Apache 2.0 license assigned to the "Insight Software Consortium" as found in the rest of the toolkit.</li></ul>
+<li>The license should be compatible with the rest of the toolkit.  That is, it should be an <a class="external text" href="http://opensource.org/licenses" rel="nofollow">OSI approved license</a> without copyleft or non-commercial restrictions.  Ideally, it should be an Apache 2.0 license assigned to the "Insight Software Consortium" as found in the rest of the toolkit.</li></ul>
 <p>At the beginning of the release candidate phase of a release, maintainers of failing module dashboard builds will be contacted.  If a module's dashboard submission is still failing at the last release candidate tagging, it will be removed before the final release.
 </p><p>Module names must be unique.
 </p><p>At no time in the future should a module in the main repository depend on Remote module.
 </p>
 <h1><span class="mw-headline" id="Procedure_for_Adding_a_Remote_Module">Procedure for Adding a Remote Module</span></h1>
-<ol><li>Publish an open access article describing the module in an online journal like the <a rel="nofollow" class="external text" href="http://insight-journal.org/">Insight Journal</a>.</li>
+<ol><li>Publish an open access article describing the module in an online journal like the <a class="external text" href="http://insight-journal.org/" rel="nofollow">Insight Journal</a>.</li>
 <li><a href="/ITKWikiArchive/Wiki/ITK/Git/Develop" title="ITK/Git/Develop">Submit a Gerrit patch</a> that adds a file named Modules/Remote/&lt;module name&gt;.remote.cmake.  This file must have the following:
 <ol><li>Dashboard maintainer name and email in the comments.</li>
 <li>A call to the itk_fetch_module CMake function (documented in CMake/ITKModuleRemote.cmake) whose arguments are:
@@ -82,11 +83,10 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:10396-0!canonical and timestamp 20250116161730 and revision id 60846. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;oldid=60846">https://public.kitware.com/Wiki/index.php?title=ITK/Policy_and_Procedures_for_Adding_Remote_Modules&amp;oldid=60846</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

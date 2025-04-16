@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Examples/IO/ImageFileReader</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -117,10 +118,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 /*]]>*/
 </style></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_IO_ImageFileReader skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="floatcenter"><a href="/Wiki/File:ITK_Examples_Baseline_IO_TestImageFileReader.png" class="image"><img alt="ITK Examples Baseline IO TestImageFileReader.png" src="/Wiki/images/9/99/ITK_Examples_Baseline_IO_TestImageFileReader.png" width="300" height="300" /></a></div>
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="floatcenter"><a class="image" href="/Wiki/File:ITK_Examples_Baseline_IO_TestImageFileReader.png"><img alt="ITK Examples Baseline IO TestImageFileReader.png" height="300" src="/Wiki/images/9/99/ITK_Examples_Baseline_IO_TestImageFileReader.png" width="300"/></a></div>
 <p>This example demonstrates how to read an image file into a itkImage. The file type is determined by the extension of the specified filename.
 </p>
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#ImageFileReader.cxx"><span class="tocnumber">1</span> <span class="toctext">ImageFileReader.cxx</span></a></li>
 <li class="toclevel-1"><a href="#CMakeLists.txt"><span class="tocnumber">2</span> <span class="toctext">CMakeLists.txt</span></a></li>
@@ -134,39 +135,38 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="ImageFileReader.cxx">ImageFileReader.cxx</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &quot;itkImage.h&quot;</span>
-<span class="co2">#include &quot;itkImageFileReader.h&quot;</span>
-&#160;
-<span class="co2">#include &quot;QuickView.h&quot;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-  <span class="kw1">if</span><span class="br0">&#40;</span> argc <span class="sy1">&lt;</span> <span class="nu0">2</span> <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Usage: &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> argv<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; inputImageFile&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include "itkImage.h"</span>
+<span class="co2">#include "itkImageFileReader.h"</span>
+ 
+<span class="co2">#include "QuickView.h"</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">[</span><span class="br0">]</span><span class="br0">)</span>
+<span class="br0">{</span>
+  <span class="kw1">if</span><span class="br0">(</span> argc <span class="sy1">&lt;</span> <span class="nu0">2</span> <span class="br0">)</span>
+    <span class="br0">{</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Usage: "</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> argv<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" inputImageFile"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span> <span class="kw4">double</span>, <span class="nu0">2</span> <span class="sy1">&gt;</span>         ImageType<span class="sy4">;</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ImageFileReader</span><span class="sy1">&lt;</span>ImageType<span class="sy1">&gt;</span> ReaderType<span class="sy4">;</span>
-&#160;
-  ReaderType<span class="sy4">::</span><span class="me2">Pointer</span> reader <span class="sy1">=</span> ReaderType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  reader<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span>argv<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  ReaderType<span class="sy4">::</span><span class="me2">Pointer</span> reader <span class="sy1">=</span> ReaderType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  reader<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span>argv<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   QuickView viewer<span class="sy4">;</span>
-  viewer.<span class="me1">AddImage</span><span class="sy1">&lt;</span>ImageType<span class="sy1">&gt;</span><span class="br0">&#40;</span>reader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  viewer.<span class="me1">Visualize</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  viewer.<span class="me1">AddImage</span><span class="sy1">&lt;</span>ImageType<span class="sy1">&gt;</span><span class="br0">(</span>reader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+  viewer.<span class="me1">Visualize</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw1">return</span> <span class="kw2">EXIT_SUCCESS</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span></pre></div></div>
 <h2><span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
+ 
 <span class="kw1">project</span><span class="sy0">(</span>ImageFileReader<span class="sy0">)</span>
-&#160;
+ 
 <span class="kw1">find_package</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
 <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">if</span> <span class="sy0">(</span>ITKVtkGlue_LOADED<span class="sy0">)</span>
@@ -177,12 +177,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${ItkVtkGlue_USE_FILE}</span><span class="sy0">)</span>
   <span class="kw1">set</span><span class="sy0">(</span>Glue ItkVtkGlue<span class="sy0">)</span>
 <span class="kw1">endif</span><span class="sy0">()</span>
-&#160;
+ 
 <span class="kw1">add_executable</span><span class="sy0">(</span>ImageFileReader MACOSX_BUNDLE ImageFileReader.cxx<span class="sy0">)</span>
 <span class="kw1">target_link_libraries</span><span class="sy0">(</span>ImageFileReader
   <span class="re0">${Glue}</span>  <span class="re0">${VTK_LIBRARIES}</span> <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span></pre></div></div>
 <h2><span class="mw-headline" id="Download_and_Build_ImageFileReader">Download and Build ImageFileReader</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:ImageFileReader.tar">here to download <i>ImageFileReader</i></a>. and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:ImageFileReader.tar" rel="nofollow">here to download <i>ImageFileReader</i></a>. and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>ImageFileReader.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd ImageFileReader/build 
@@ -208,7 +208,7 @@ Once the tarball <i>ImageFileReader.tar</i> has been downloaded and extracted,
 <pre>./ImageFileReader
 </pre>
 <p><b>WINDOWS USERS PLEASE NOTE:</b> Be sure to add the VTK and ITK bin directories to your path. This will resolve the VTK and ITK dll's at run time.
-</p><p><br />
+</p><p><br/>
 </p>
 <h2><span class="mw-headline" id="Building_All_of_the_Examples">Building All of the Examples</span></h2>
 <p>Many of the examples in the ITK Wiki Examples Collection require VTK. You can build all of the the examples by following <a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForUsers#Build_all_of_the_examples" title="ITK/Examples/Instructions/ForUsers">these instructions</a>. If you are a new VTK user, you may want to try the <a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForUsers#Use_the_Superbuild_to_build_a_proper_VTK_and_ITK" title="ITK/Examples/Instructions/ForUsers">Superbuild</a> which will build a proper ITK and VTK.
@@ -218,7 +218,7 @@ Once the tarball <i>ImageFileReader.tar</i> has been downloaded and extracted,
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span class="mw-headline" id="ITK_.3C_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -231,9 +231,7 @@ Template argument size: 150/2097152 bytes
 Highest expansion depth: 3/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:7738-0!*!0!!en!2!* and timestamp 20150331085038 and revision id 51574
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/IO/ImageFileReader&amp;oldid=51574">http://itk.org/Wiki/index.php?title=ITK/Examples/IO/ImageFileReader&amp;oldid=51574</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

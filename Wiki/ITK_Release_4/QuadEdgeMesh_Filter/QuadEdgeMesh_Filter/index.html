@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK Release 4/QuadEdgeMesh Filter</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c7faffaa255a61c83fbec91a","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/QuadEdgeMesh_Filter","wgTitle":"ITK Release 4/QuadEdgeMesh Filter","wgCurRevisionId":34198,"wgRevisionId":34198,"wgArticleId":6964,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/QuadEdgeMesh_Filter","wgRelevantArticleId":6964,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={
 "site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_QuadEdgeMesh_Filter rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#QuadEdgeMesh_Filters"><span class="tocnumber">1</span> <span class="toctext">QuadEdgeMesh Filters</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#TODO"><span class="tocnumber">2</span> <span class="toctext">TODO</span></a>
@@ -47,11 +48,10 @@
 <li class="toclevel-1 tocsection-14"><a href="#Infos"><span class="tocnumber">4</span> <span class="toctext">Infos</span></a></li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="QuadEdgeMesh_Filters">QuadEdgeMesh Filters</span></h1>
-<p><a rel="nofollow" class="external text" href="http://www.itk.org/Wiki/Proposals:New_Mesh_Class">original page</a>
+<p><a class="external text" href="http://www.itk.org/Wiki/Proposals:New_Mesh_Class" rel="nofollow">original page</a>
 </p><p>arnaud's comments on filters and data
-<a rel="nofollow" class="external text" href="http://www.itk.org/Wiki/ITK_Release_4/QuadEdgeMesh_Filter/DataProcessing">Data Processing</a>
+<a class="external text" href="http://www.itk.org/Wiki/ITK_Release_4/QuadEdgeMesh_Filter/DataProcessing" rel="nofollow">Data Processing</a>
 </p>
 <h1><span class="mw-headline" id="TODO">TODO</span></h1>
 <p>No specific order
@@ -62,28 +62,28 @@
 <h2><span class="mw-headline" id="Conditional_Iterators">Conditional Iterators</span></h2>
 <p>D. Doria has written mesh iterators for VTK. He has allowed the iterator to be a "conditional iterator" by subclassing and reimplementing the AddVertex function. It performs any test the user would like on the current vertex and the next vertex. (I.e. you can add the next vertex to the queue only if it is close enough (by any metric - distance, color, normal angle, etc) to the current vertex). 
 The current closest equivalent with QE would be itkQuadEdgeMeshFrontIterator and seems to be confusing and perhaps less flexible.
-</p><p>Here is D.D's superclass implementation <a rel="nofollow" class="external text" href="http://github.com/daviddoria/daviddoria-vtk/blob/VTK-ConditionalGraphIterators/Filtering/vtkGraphIterator.h">github link</a>
-</p><p>Here is D.D's derived class: (which shows 3 different conditions) <a rel="nofollow" class="external text" href="http://github.com/daviddoria/daviddoria-vtk/blob/VTK-ConditionalGraphIterators/Infovis/vtkGraphVertexDataConditionalIterator.cxx">github link</a>
+</p><p>Here is D.D's superclass implementation <a class="external text" href="http://github.com/daviddoria/daviddoria-vtk/blob/VTK-ConditionalGraphIterators/Filtering/vtkGraphIterator.h" rel="nofollow">github link</a>
+</p><p>Here is D.D's derived class: (which shows 3 different conditions) <a class="external text" href="http://github.com/daviddoria/daviddoria-vtk/blob/VTK-ConditionalGraphIterators/Infovis/vtkGraphVertexDataConditionalIterator.cxx" rel="nofollow">github link</a>
 </p>
 <h2><span class="mw-headline" id="Move_Existing_classes_out_of_review_-_DONE_-_Sept_2010">Move Existing classes out of review - <font color="green">DONE</font> - Sept 2010</span></h2>
 <ul><li>check coverage</li></ul>
 <h2><span class="mw-headline" id="Review_and_possibly_move_other_filters_from_Insight_Journal">Review and possibly move other filters from Insight Journal</span></h2>
 <ul><li>IOWA filters
-<ul><li>751 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/751">Assign Scalars Mesh Filter </a></li>
-<li>749 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/749">Histogram Matching Mesh Filter </a></li>
-<li>762 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/762">Mesh Similarity Calculator </a></li>
-<li>752 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/752">Mesh To List Adaptor </a></li>
-<li>750 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/750">Rescale Scalars Mesh Filter </a></li>
-<li>763 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/763">Warp Mesh Filter </a></li>
-<li>Filters in NAMIC Sandbox <a rel="nofollow" class="external text" href="http://svn.na-mic.org/NAMICSandBox/trunk/QuadEdgeMeshFilters/">here</a>
+<ul><li>751 - <a class="external text" href="http://www.insight-journal.org/browse/publication/751" rel="nofollow">Assign Scalars Mesh Filter </a></li>
+<li>749 - <a class="external text" href="http://www.insight-journal.org/browse/publication/749" rel="nofollow">Histogram Matching Mesh Filter </a></li>
+<li>762 - <a class="external text" href="http://www.insight-journal.org/browse/publication/762" rel="nofollow">Mesh Similarity Calculator </a></li>
+<li>752 - <a class="external text" href="http://www.insight-journal.org/browse/publication/752" rel="nofollow">Mesh To List Adaptor </a></li>
+<li>750 - <a class="external text" href="http://www.insight-journal.org/browse/publication/750" rel="nofollow">Rescale Scalars Mesh Filter </a></li>
+<li>763 - <a class="external text" href="http://www.insight-journal.org/browse/publication/763" rel="nofollow">Warp Mesh Filter </a></li>
+<li>Filters in NAMIC Sandbox <a class="external text" href="http://svn.na-mic.org/NAMICSandBox/trunk/QuadEdgeMeshFilters/" rel="nofollow">here</a>
 <ul><li>itkShiftScalarsQuadEdgeMeshFilter</li>
 <li>itkWindowScalarsQuadEdgeMeshFilter</li></ul></li></ul></li></ul>
-<ul><li>693 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/693">Reading a PTX file into an itkMesh</a></li>
-<li>687 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/687">Spherical Demons Registration of Spherical Surfaces</a> aka spherical demons</li>
-<li>680 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/680">Transforming an itkPointSet</a></li>
-<li>662 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/662">Iterative Smoothing of Field Data in Spherical Meshes</a> aka field smoothing</li>
-<li>645 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/645">Rotational Registration of Spherical Surfaces Represented as QuadEdge Meshes</a> aka rigid registration</li>
-<li>740 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/740">Cuberille Implicit Surface Polygonization </a></li></ul>
+<ul><li>693 - <a class="external text" href="http://insight-journal.com/browse/publication/693" rel="nofollow">Reading a PTX file into an itkMesh</a></li>
+<li>687 - <a class="external text" href="http://insight-journal.com/browse/publication/687" rel="nofollow">Spherical Demons Registration of Spherical Surfaces</a> aka spherical demons</li>
+<li>680 - <a class="external text" href="http://insight-journal.com/browse/publication/680" rel="nofollow">Transforming an itkPointSet</a></li>
+<li>662 - <a class="external text" href="http://insight-journal.com/browse/publication/662" rel="nofollow">Iterative Smoothing of Field Data in Spherical Meshes</a> aka field smoothing</li>
+<li>645 - <a class="external text" href="http://insight-journal.com/browse/publication/645" rel="nofollow">Rotational Registration of Spherical Surfaces Represented as QuadEdge Meshes</a> aka rigid registration</li>
+<li>740 - <a class="external text" href="http://insight-journal.com/browse/publication/740" rel="nofollow">Cuberille Implicit Surface Polygonization </a></li></ul>
 <h3><span class="mw-headline" id="FEM_Requirements">FEM Requirements</span></h3>
 <ul><li>associate data with points and cells</li>
 <li>templates are too hard and inflexible, you have to know in advance and/or create traits for each file format</li>
@@ -115,7 +115,7 @@ The current closest equivalent with QE would be itkQuadEdgeMeshFrontIterator and
 <li>see if we can have the complete framework leverage QE (note, if there is no topological change, it might be slower to use QE)</li></ul>
 <h3><span id="Improve_Simplex_.28M._Audette.29"></span><span class="mw-headline" id="Improve_Simplex_(M._Audette)">Improve Simplex (M. Audette)</span></h3>
 <p>M. Audette's adaptation of H. Delingette's simplex mesh, where he uses T1 and T2 operators to delete specific edges in order to explicitly control surface mesh resolution (prior to controlled-resolution tetrahedralization).
-</p><p>The operators are on page 119 of Herve's IJCV paper General Object Reconstruction Based on Simplex Meshes which can still be found <a rel="nofollow" class="external text" href="http://www-sop.inria.fr/asclepios/biblio/REP/publi.php?name=Author/DELINGETTE-H.html">here</a>.
+</p><p>The operators are on page 119 of Herve's IJCV paper General Object Reconstruction Based on Simplex Meshes which can still be found <a class="external text" href="http://www-sop.inria.fr/asclepios/biblio/REP/publi.php?name=Author/DELINGETTE-H.html" rel="nofollow">here</a>.
 </p><p>M. Audettes's adaptation appears in ICCV Workshop 2005:
 </p><p>Yanxi Liu, Tianzi Jiang, Changshui Zhang  (Eds.): Computer Vision for
 Biomedical Image Applications, First International Workshop, CVBIA
@@ -127,7 +127,7 @@ A Topologically Faithful, Tissue-Guided, Spatially Varying Meshing
 Strategy for Computing Patient-Specific Head Models for Endoscopic
 Pituitary Surgery Simulation. 178-188
 </p><p>(and later in Computer Aided Surgery...
-<a rel="nofollow" class="external text" href="http://www.informaworld.com/smpp/content~db=all~content=a770815634~frm=abslink">here</a> )
+<a class="external text" href="http://www.informaworld.com/smpp/content~db=all~content=a770815634~frm=abslink" rel="nofollow">here</a> )
 </p>
 <h1><span class="mw-headline" id="Log">Log</span></h1>
 <ul><li>09/2010 - Moved QE out of review</li>
@@ -138,45 +138,45 @@ Pituitary Surgery Simulation. 178-188
 <li>11/2010 - Zhu Wanlin put the MeshIO code (take 2) on github</li></ul>
 <h1><span class="mw-headline" id="Infos">Infos</span></h1>
 <ul><li>Original Papers
-<ul><li>A. Gouaillard, L. Florez, E. Boix, “A rigorous orientable 2-Manifold Data Structure for optimal Volume and discrete surface interaction”, Insight Journal, Vol. 5, July - Dec. '06. <a rel="nofollow" class="external text" href="http://www.insight-journal.com/browse/publication/122">here</a></li>
-<li>same thing in SFBI'06 <a rel="nofollow" class="external text" href="http://www.creatis.insa-lyon.fr/sfbi06/">here</a></li>
-<li>2008's Source article - Quad Edge Mesh Tutorial <a rel="nofollow" class="external text" href="http://www.kitware.com/products/archive/kitware_quarterly0408.pdf">here</a></li></ul></li></ul>
+<ul><li>A. Gouaillard, L. Florez, E. Boix, “A rigorous orientable 2-Manifold Data Structure for optimal Volume and discrete surface interaction”, Insight Journal, Vol. 5, July - Dec. '06. <a class="external text" href="http://www.insight-journal.com/browse/publication/122" rel="nofollow">here</a></li>
+<li>same thing in SFBI'06 <a class="external text" href="http://www.creatis.insa-lyon.fr/sfbi06/" rel="nofollow">here</a></li>
+<li>2008's Source article - Quad Edge Mesh Tutorial <a class="external text" href="http://www.kitware.com/products/archive/kitware_quarterly0408.pdf" rel="nofollow">here</a></li></ul></li></ul>
 <ul><li>Work in the NAMIC Comunity
-<ul><li>2008 Winter Project Week - Geometry and Topology processing of Meshes <a rel="nofollow" class="external text" href="http://www.na-mic.org/Wiki/index.php/2008_Winter_Project_Week_Geometry_and_Topology_processing_of_Meshes">here</a></li>
-<li>2009 Winter Project Week - Surface Processing (subdivision filter, conformal flattening) <a rel="nofollow" class="external text" href="http://www.na-mic.org/Wiki/index.php/2009_Winter_Project_Week_Surface_Processing">here</a></li></ul></li></ul>
+<ul><li>2008 Winter Project Week - Geometry and Topology processing of Meshes <a class="external text" href="http://www.na-mic.org/Wiki/index.php/2008_Winter_Project_Week_Geometry_and_Topology_processing_of_Meshes" rel="nofollow">here</a></li>
+<li>2009 Winter Project Week - Surface Processing (subdivision filter, conformal flattening) <a class="external text" href="http://www.na-mic.org/Wiki/index.php/2009_Winter_Project_Week_Surface_Processing" rel="nofollow">here</a></li></ul></li></ul>
 <ul><li>Own Insight Journal Publications
-<ul><li>Parameterization of discrete surfaces -  2007 July - December. <a rel="nofollow" class="external text" href="http://www.insight-journal.com/browse/publication/202">here</a></li>
-<li>Mutable Priority Queue Container - 2008 January - June. <a rel="nofollow" class="external text" href="http://www.insight-journal.com/browse/publication/244">here</a></li>
-<li>Surface Mesh Normals Filter - 2008 January - June. <a rel="nofollow" class="external text" href="http://www.insight-journal.com/browse/publication/303">here</a></li>
-<li>Surface Mesh Discrete Curvature Estimators - 2008 July - December. <a rel="nofollow" class="external text" href="http://www.insight-journal.com/browse/publication/302">here</a></li>
-<li>Triangular Meshes Delaunay Conforming Filter - 2008 July - December. <a rel="nofollow" class="external text" href="http://www.insight-journal.com/browse/publication/299">here</a></li>
-<li>Surface Meshes Incremental Decimation Framework - 2008 July - December. <a rel="nofollow" class="external text" href="http://www.insight-journal.com/browse/publication/298">here</a></li>
-<li>Surface Meshes Smoothing - 2009 January - June. <a rel="nofollow" class="external text" href="http://www.insight-journal.com/browse/publication/313">here</a></li></ul></li></ul>
+<ul><li>Parameterization of discrete surfaces -  2007 July - December. <a class="external text" href="http://www.insight-journal.com/browse/publication/202" rel="nofollow">here</a></li>
+<li>Mutable Priority Queue Container - 2008 January - June. <a class="external text" href="http://www.insight-journal.com/browse/publication/244" rel="nofollow">here</a></li>
+<li>Surface Mesh Normals Filter - 2008 January - June. <a class="external text" href="http://www.insight-journal.com/browse/publication/303" rel="nofollow">here</a></li>
+<li>Surface Mesh Discrete Curvature Estimators - 2008 July - December. <a class="external text" href="http://www.insight-journal.com/browse/publication/302" rel="nofollow">here</a></li>
+<li>Triangular Meshes Delaunay Conforming Filter - 2008 July - December. <a class="external text" href="http://www.insight-journal.com/browse/publication/299" rel="nofollow">here</a></li>
+<li>Surface Meshes Incremental Decimation Framework - 2008 July - December. <a class="external text" href="http://www.insight-journal.com/browse/publication/298" rel="nofollow">here</a></li>
+<li>Surface Meshes Smoothing - 2009 January - June. <a class="external text" href="http://www.insight-journal.com/browse/publication/313" rel="nofollow">here</a></li></ul></li></ul>
 <ul><li>other Insight Journal Publications Based on QuadEdgeMesh
 <ul><li>IOWA filters
-<ul><li>751 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/751">Assign Scalars Mesh Filter </a></li>
-<li>749 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/749">Histogram Matching Mesh Filter </a></li>
-<li>762 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/762">Mesh Similarity Calculator </a></li>
-<li>752 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/752">Mesh To List Adaptor </a></li>
-<li>750 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/750">Rescale Scalars Mesh Filter </a></li>
-<li>763 - <a rel="nofollow" class="external text" href="http://www.insight-journal.org/browse/publication/763">Warp Mesh Filter </a></li>
-<li>Filters in NAMIC Sandbox <a rel="nofollow" class="external text" href="http://svn.na-mic.org/NAMICSandBox/trunk/QuadEdgeMeshFilters/">here</a>
+<ul><li>751 - <a class="external text" href="http://www.insight-journal.org/browse/publication/751" rel="nofollow">Assign Scalars Mesh Filter </a></li>
+<li>749 - <a class="external text" href="http://www.insight-journal.org/browse/publication/749" rel="nofollow">Histogram Matching Mesh Filter </a></li>
+<li>762 - <a class="external text" href="http://www.insight-journal.org/browse/publication/762" rel="nofollow">Mesh Similarity Calculator </a></li>
+<li>752 - <a class="external text" href="http://www.insight-journal.org/browse/publication/752" rel="nofollow">Mesh To List Adaptor </a></li>
+<li>750 - <a class="external text" href="http://www.insight-journal.org/browse/publication/750" rel="nofollow">Rescale Scalars Mesh Filter </a></li>
+<li>763 - <a class="external text" href="http://www.insight-journal.org/browse/publication/763" rel="nofollow">Warp Mesh Filter </a></li>
+<li>Filters in NAMIC Sandbox <a class="external text" href="http://svn.na-mic.org/NAMICSandBox/trunk/QuadEdgeMeshFilters/" rel="nofollow">here</a>
 <ul><li>itkShiftScalarsQuadEdgeMeshFilter</li>
 <li>itkWindowScalarsQuadEdgeMeshFilter</li></ul></li></ul></li>
 <li>MIT Filters
-<ul><li>687 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/687">Spherical Demons Registration of Spherical Surfaces</a> aka spherical demons</li>
-<li>662 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/662">Iterative Smoothing of Field Data in Spherical Meshes</a> aka field smoothing</li>
-<li>645 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/645">Rotational Registration of Spherical Surfaces Represented as QuadEdge Meshes</a> aka rigid registration</li></ul></li>
+<ul><li>687 - <a class="external text" href="http://insight-journal.com/browse/publication/687" rel="nofollow">Spherical Demons Registration of Spherical Surfaces</a> aka spherical demons</li>
+<li>662 - <a class="external text" href="http://insight-journal.com/browse/publication/662" rel="nofollow">Iterative Smoothing of Field Data in Spherical Meshes</a> aka field smoothing</li>
+<li>645 - <a class="external text" href="http://insight-journal.com/browse/publication/645" rel="nofollow">Rotational Registration of Spherical Surfaces Represented as QuadEdge Meshes</a> aka rigid registration</li></ul></li>
 <li>Others
-<ul><li>693 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/693">Reading a PTX file into an itkMesh</a></li>
-<li>680 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/680">Transforming an itkPointSet</a></li>
-<li>740 - <a rel="nofollow" class="external text" href="http://insight-journal.com/browse/publication/740">Cuberille Implicit Surface Polygonization </a></li></ul></li></ul></li></ul>
+<ul><li>693 - <a class="external text" href="http://insight-journal.com/browse/publication/693" rel="nofollow">Reading a PTX file into an itkMesh</a></li>
+<li>680 - <a class="external text" href="http://insight-journal.com/browse/publication/680" rel="nofollow">Transforming an itkPointSet</a></li>
+<li>740 - <a class="external text" href="http://insight-journal.com/browse/publication/740" rel="nofollow">Cuberille Implicit Surface Polygonization </a></li></ul></li></ul></li></ul>
 <ul><li>Other Publications
-<ul><li>S. Valette, A. Gouaillard, R. Prost “Compression of 3D triangular meshes with progressive precision”, Computers &amp; Graphics,  Vol 28, No.1&#160; January , No, pp 35-42, 2004.</li>
-<li>A. Gouaillard, C. Odet,&#160; X. Gu, “Computing Shortest Cycles on Discrete Surfaces for Acurate Topological Modifications of Medical Image Isosurfaces”, In Proceedings of IEEE EMBC’05, Shanghai, September 11th-14th 2005.</li>
-<li>A. Gouaillard, A. Gelas,&#160; S. Valette,&#160; E. Boix and R. Prost, “Curvature-based Adaptive Remeshing for Wavelet-Based Multiresolution 3D Meshes”. In Proc. of International Conference on Image Processing ICIP’05,&#160; Genova, September 11th-14th 2005.</li>
-<li>A. Gouaillard, A. Gelas, S. Valette, E. Boix, R. Prost, “Remeshing Algorithm for Multiresolution Prior Model in Segmentation. &#160;In Proc. of International Conference on Image Processing, ICIP‘04, Singapore, October 24~27 October 2003, pp. 2753-2756.</li>
-<li>A. Gouaillard, T. Kanai, C. Odet,&#160; X. Gu, “Optimal Localization of Topological Artefacts on 3D Meshes”, The 11th Int. Conf. on Geometry and Graphics, 1-5 Aug., 2004, Guangzhou, China.</li></ul></li></ul>
+<ul><li>S. Valette, A. Gouaillard, R. Prost “Compression of 3D triangular meshes with progressive precision”, Computers &amp; Graphics,  Vol 28, No.1  January , No, pp 35-42, 2004.</li>
+<li>A. Gouaillard, C. Odet,  X. Gu, “Computing Shortest Cycles on Discrete Surfaces for Acurate Topological Modifications of Medical Image Isosurfaces”, In Proceedings of IEEE EMBC’05, Shanghai, September 11th-14th 2005.</li>
+<li>A. Gouaillard, A. Gelas,  S. Valette,  E. Boix and R. Prost, “Curvature-based Adaptive Remeshing for Wavelet-Based Multiresolution 3D Meshes”. In Proc. of International Conference on Image Processing ICIP’05,  Genova, September 11th-14th 2005.</li>
+<li>A. Gouaillard, A. Gelas, S. Valette, E. Boix, R. Prost, “Remeshing Algorithm for Multiresolution Prior Model in Segmentation.  In Proc. of International Conference on Image Processing, ICIP‘04, Singapore, October 24~27 October 2003, pp. 2753-2756.</li>
+<li>A. Gouaillard, T. Kanai, C. Odet,  X. Gu, “Optimal Localization of Topological Artefacts on 3D Meshes”, The 11th Int. Conf. on Geometry and Graphics, 1-5 Aug., 2004, Guangzhou, China.</li></ul></li></ul>
 <!-- 
 NewPP limit report
 Cached time: 20250110192153
@@ -197,11 +197,10 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:6964-0!canonical and timestamp 20250110192153 and revision id 34198. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/QuadEdgeMesh_Filter&amp;oldid=34198">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/QuadEdgeMesh_Filter&amp;oldid=34198</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

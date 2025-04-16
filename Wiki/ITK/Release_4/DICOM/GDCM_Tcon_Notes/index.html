@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4/DICOM/GDCM Tcon Notes</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"d63f0b28a9ce6f1bf5536213","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/DICOM/GDCM_Tcon_Notes","wgTitle":"ITK/Release 4/DICOM/GDCM Tcon Notes","wgCurRevisionId":44273,"wgRevisionId":44273,"wgArticleId":9071,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/DICOM/GDCM_Tcon_Notes","wgRelevantArticleId":9071,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={
 "site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_DICOM_GDCM_Tcon_Notes rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Luis Ibanez, Andrew Wasem and Mark Roden were in attendance of this meeting.
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>Luis Ibanez, Andrew Wasem and Mark Roden were in attendance of this meeting.
 The meeting was on the current and future progress of GDCM/ITK. 
-</p><p><br />
+</p><p><br/>
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Example_of_how_to_run_an_RT-STRUCT_in_VTK"><span class="tocnumber">1</span> <span class="toctext">Example of how to run an RT-STRUCT in VTK</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Streaming_of_DIcom_images_(from_PACS)"><span class="tocnumber">2</span> <span class="toctext">Streaming of DIcom images (from PACS)</span></a>
@@ -51,7 +52,6 @@ The meeting was on the current and future progress of GDCM/ITK.
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Example_of_how_to_run_an_RT-STRUCT_in_VTK">Example of how to run an RT-STRUCT in VTK</span></h1>
 <ul><li>src/gdcm/Utilities/VTK/Examples/Cxx/GenerateRTSTRUCT.cxx</li>
 <li>src/gdcm/Utilities/VTK/vtkGDCMPolyDataWriter.h</li></ul>
@@ -120,8 +120,8 @@ that have a single tile.
 of a group of individual JPEG images.  (e.g. like doing tiling
 by hand).
 </p>
-<hr />
-<p><br />
+<hr/>
+<p><br/>
 </p>
 <pre>Tag thePixelDataTag(0x7fe0, 0x0010);//must be LESS than the pixel
 </pre>
@@ -129,14 +129,14 @@ by hand).
 </p><p>This is the location where the pixel data buffer.
 </p><p>but in some cases, some images have more tags after this one,
 and that can confuse the stream reading.
-</p><p><br />
+</p><p><br/>
 </p>
 <h2><span class="mw-headline" id="GDCM_StreamingWriting">GDCM  StreamingWriting</span></h2>
 <p>The GDCM  StreamingWriting is not working at this point.
 </p><p>(something deep inside of gdcm).
-</p><p><br />
+</p><p><br/>
 --
-</p><p>gdcmStreamImageWriter.cxx &#160;: 346
+</p><p>gdcmStreamImageWriter.cxx  : 346
 </p><p>bool StreamImageWriter::CanWriteFile() const
 </p>
 <pre>bool hasTag818 = mFile.GetDataSet().FindDataElement(Tag(0x08,0x18));
@@ -146,20 +146,20 @@ if (!hasTag23 &amp;&amp; !hasTag818){
 be different from the one that it was read from.
 (unless you are an OEM... e.g. the manufacturer
 of a CT scanner.)
-</p><p><br />
+</p><p><br/>
 Then, when it gets to
 </p><p>bool StreamImageWriter::WriteImageInformation(){
 </p><p>it fails..
 </p><p>Line 110 describe how to read the tags.
 </p><p>Reading is done in 116.
-</p><p><br />
+</p><p><br/>
 The problem relates to the offset table...
 </p><p>and how it addresses space inside of the image.
 </p><p>This is mostly a problem when data is compressed.
 (streaming raw data will be easier, but it is not
 working now either...the output file is not readable.).
 </p><p>(its MD5 sum for the pixel buffer doesn't match after writing...)
-</p><p><br />
+</p><p><br/>
 </p>
 <h2><span class="mw-headline" id="StreamReader_in_GDCM">StreamReader in GDCM</span></h2>
 <p>The StreamReader in GDCM is intended to be used
@@ -181,7 +181,7 @@ by the ITK streaming reader.
 </p><p>A title is a "computer name", not an IP address.
 Every title connects to a specific port in the server
 </p><p>CEcho is the basic test function
-</p><p><br />
+</p><p><br/>
 </p><p>Then you construct your query:
 </p>
 <pre>/// This function will take a list of strings and tags and fill in a
@@ -206,30 +206,30 @@ static BaseRootQuery* ConstructQuery(ERootType inRootType,
 </p>
 <pre>  const KeyValuePairArrayType&amp; keys, bool inMove = false );
 </pre>
-<p><br />
+<p><br/>
 (it requires a fully form dataset).
-</p><p><br />
+</p><p><br/>
 BaseRootQuery = abstract class
-</p><p>2 types of queries&#160;: find &amp; move
+</p><p>2 types of queries : find &amp; move
 </p><p>"find" can be using a very generic expression.
 (can have wildcards).
 </p><p>ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition
 </p><p>gdcmFindPatientRootQuery.h
-</p><p><br />
+</p><p><br/>
 First figure out what tags are available:
 </p>
 <pre>std::vector&lt;Tag&gt; GetTagListByLevel(const EQueryLevel&amp; inQueryLevel);
 </pre>
-<p><br />
+<p><br/>
 this ties up to the "image interpretation layer" to the point where
 a juser can get this list of Tags and then select values from them
 to put them in a query and using to get actual data.
-</p><p><br />
+</p><p><br/>
 "move" queries are more strict than "find" ones
 (can't have wildcards).
 </p><p>This search will fail if it is not fully specified.
 </p>
-<hr />
+<hr/>
 <p>gdcmCompositeNetworkFunctions.cxx
 </p><p>bool CompositeNetworkFunctions::CStore( const char *remote, uint16_t portno,
 </p>
@@ -239,7 +239,7 @@ const char *aetitle, const char *call)
 <p>267
 </p><p>CStore command will move images to a server.
 </p>
-<hr />
+<hr/>
 <p>gdcmServiceClassUser.h
 </p>
 <pre>bool SendMove(const BaseRootQuery* query, const char *outputdir);
@@ -250,14 +250,14 @@ bool SendMove(const BaseRootQuery* query, std::vector&lt;DataSet&gt; &amp;retDat
 </p>
 <pre>a DICOM file was planned to be abstracted...)
 </pre>
-<hr />
+<hr/>
 <p>ITK application, creating an itk::Image using data
 from a remote server.
 </p><p>(list of use cases in another email from Mark...)
-</p><p><br />
+</p><p><br/>
 In order to define ITK functionalities, we
 should specify a list of clear use cases....
-</p><p><br />
+</p><p><br/>
 (Review emails from DICOM Taskforce February 23-24)
 (post the use cases in a Wiki page).
 </p>
@@ -281,10 +281,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9071-0!canonical and timestamp 20220123233708 and revision id 44273. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/DICOM/GDCM_Tcon_Notes&amp;oldid=44273">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/DICOM/GDCM_Tcon_Notes&amp;oldid=44273</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

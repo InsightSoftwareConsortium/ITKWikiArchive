@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter","wgTitle":"ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter","wgCurRevisionId":50963,"wgRevisionId":50963,"wgArticleId":9391,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter",
 "wgRelevantArticleId":9391,"wgRequestId":"fbd24796ab49425b657182d0","wgCSPNonce":!1,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","mediawiki.skinning.interface":"ready","mediawiki.skinning.content.externallinks":"ready","skins.monobook.responsive":"ready"};RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","skins.monobook.mobile"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.monobook.responsive&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
 <!--[if lt IE 9]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/screen-desktop.css?74a6a" media="screen"/><![endif]--><!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE60Fixes.css?1208f" media="screen"/><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/MonoBook/resources/IE70Fixes.css?4e4d4" media="screen"/><![endif]-->
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.34.1"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://itk.org/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.34.1" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 <!--[if lt IE 9]><script src="/Wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
 </head>
-<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Examples_WishList_LevelSets_SignedDanielssonDistanceMapImageFilter rootpage-ITK skin-monobook action-view"><!-- start content --><div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Examples_WishList_LevelSets_SignedDanielssonDistanceMapImageFilter rootpage-ITK skin-monobook action-view"><!-- start content --><div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div class="toc" id="toc"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#SignedDanielssonDistanceMapImageFilter.cxx"><span class="tocnumber">1</span> <span class="toctext">SignedDanielssonDistanceMapImageFilter.cxx</span></a></li>
 <li class="toclevel-1"><a href="#CMakeLists.txt"><span class="tocnumber">2</span> <span class="toctext">CMakeLists.txt</span></a></li>
@@ -35,14 +36,13 @@
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="SignedDanielssonDistanceMapImageFilter.cxx">SignedDanielssonDistanceMapImageFilter.cxx</span></h2>
-<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;itkImage.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkImageFileWriter.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkBinomialBlurImageFilter.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkRescaleIntensityImageFilter.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkSignedDanielssonDistanceMapImageFilter.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkContourExtractor2DImageFilter.h&quot;</span><span class="cp"></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#include</span> <span class="cpf">"itkImage.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkImageFileWriter.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkBinomialBlurImageFilter.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkRescaleIntensityImageFilter.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkSignedDanielssonDistanceMapImageFilter.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkContourExtractor2DImageFilter.h"</span><span class="cp"></span>
 
 <span class="k">typedef</span> <span class="n">itk</span><span class="o">::</span><span class="n">Image</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span>  <span class="n">UnsignedCharImageType</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">itk</span><span class="o">::</span><span class="n">Image</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span>  <span class="n">FloatImageType</span><span class="p">;</span>
@@ -69,7 +69,7 @@
 
   <span class="k">typedef</span>  <span class="n">itk</span><span class="o">::</span><span class="n">ImageFileWriter</span><span class="o">&lt;</span> <span class="n">UnsignedCharImageType</span>  <span class="o">&gt;</span> <span class="n">WriterType</span><span class="p">;</span>
   <span class="n">WriterType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">writer</span> <span class="o">=</span> <span class="n">WriterType</span><span class="o">::</span><span class="n">New</span><span class="p">();</span>
-  <span class="n">writer</span><span class="o">-&gt;</span><span class="n">SetFileName</span><span class="p">(</span><span class="s">&quot;output.png&quot;</span><span class="p">);</span>
+  <span class="n">writer</span><span class="o">-&gt;</span><span class="n">SetFileName</span><span class="p">(</span><span class="s">"output.png"</span><span class="p">);</span>
   <span class="n">writer</span><span class="o">-&gt;</span><span class="n">SetInput</span><span class="p">(</span><span class="n">rescaleFilter</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">());</span>
   <span class="n">writer</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">();</span>
   <span class="p">}</span>
@@ -82,7 +82,7 @@
   
   <span class="k">for</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">contourId</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">contourId</span> <span class="o">&lt;</span> <span class="n">contourExtractor2DImageFilter</span><span class="o">-&gt;</span><span class="n">GetNumberOfOutputs</span><span class="p">();</span> <span class="o">++</span><span class="n">contourId</span><span class="p">)</span>
     <span class="p">{</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Contour &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">contourId</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; has &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">contourExtractor2DImageFilter</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">(</span><span class="n">contourId</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">GetVertexList</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; points.&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Contour "</span> <span class="o">&lt;&lt;</span> <span class="n">contourId</span> <span class="o">&lt;&lt;</span> <span class="s">" has "</span> <span class="o">&lt;&lt;</span> <span class="n">contourExtractor2DImageFilter</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">(</span><span class="n">contourId</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">GetVertexList</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="s">" points."</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
     <span class="p">}</span>
   
   <span class="k">return</span> <span class="n">EXIT_SUCCESS</span><span class="p">;</span>
@@ -134,7 +134,7 @@
 
   <span class="k">typedef</span>  <span class="n">itk</span><span class="o">::</span><span class="n">ImageFileWriter</span><span class="o">&lt;</span> <span class="n">UnsignedCharImageType</span>  <span class="o">&gt;</span> <span class="n">WriterType</span><span class="p">;</span>
   <span class="n">WriterType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">writer</span> <span class="o">=</span> <span class="n">WriterType</span><span class="o">::</span><span class="n">New</span><span class="p">();</span>
-  <span class="n">writer</span><span class="o">-&gt;</span><span class="n">SetFileName</span><span class="p">(</span><span class="s">&quot;input.png&quot;</span><span class="p">);</span>
+  <span class="n">writer</span><span class="o">-&gt;</span><span class="n">SetFileName</span><span class="p">(</span><span class="s">"input.png"</span><span class="p">);</span>
   <span class="n">writer</span><span class="o">-&gt;</span><span class="n">SetInput</span><span class="p">(</span><span class="n">image</span><span class="p">);</span>
   <span class="n">writer</span><span class="o">-&gt;</span><span class="n">Update</span><span class="p">();</span>
 <span class="p">}</span>
@@ -153,14 +153,14 @@
 
 <span class="nb">add_executable</span><span class="p">(</span><span class="s">SignedDanielssonDistanceMapImageFilter</span> <span class="s">MACOSX_BUNDLE</span> <span class="s">SignedDanielssonDistanceMapImageFilter.cxx</span><span class="p">)</span>
 
-<span class="nb">if</span><span class="p">(</span> <span class="s2">&quot;${ITK_VERSION_MAJOR}&quot;</span> <span class="s">LESS</span> <span class="s">4</span> <span class="p">)</span>
+<span class="nb">if</span><span class="p">(</span> <span class="s2">"${ITK_VERSION_MAJOR}"</span> <span class="s">LESS</span> <span class="s">4</span> <span class="p">)</span>
   <span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">SignedDanielssonDistanceMapImageFilter</span> <span class="s">ITKReview</span> <span class="o">${</span><span class="nv">ITK_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
-<span class="nb">else</span><span class="p">(</span> <span class="s2">&quot;${ITK_VERSION_MAJOR}&quot;</span> <span class="s">LESS</span> <span class="s">4</span> <span class="p">)</span>
+<span class="nb">else</span><span class="p">(</span> <span class="s2">"${ITK_VERSION_MAJOR}"</span> <span class="s">LESS</span> <span class="s">4</span> <span class="p">)</span>
   <span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">SignedDanielssonDistanceMapImageFilter</span> <span class="o">${</span><span class="nv">ITK_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
-<span class="nb">endif</span><span class="p">(</span> <span class="s2">&quot;${ITK_VERSION_MAJOR}&quot;</span> <span class="s">LESS</span> <span class="s">4</span> <span class="p">)</span>
+<span class="nb">endif</span><span class="p">(</span> <span class="s2">"${ITK_VERSION_MAJOR}"</span> <span class="s">LESS</span> <span class="s">4</span> <span class="p">)</span>
 </pre></div>
 <h2><span class="mw-headline" id="Download_and_Build_SignedDanielssonDistanceMapImageFilter">Download and Build SignedDanielssonDistanceMapImageFilter</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="https://github.com/lorensen/ITKWikiExamplesTarballs/raw/master/SignedDanielssonDistanceMapImageFilter.tar">here to download <i>SignedDanielssonDistanceMapImageFilter</i></a> and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="https://github.com/lorensen/ITKWikiExamplesTarballs/raw/master/SignedDanielssonDistanceMapImageFilter.tar" rel="nofollow">here to download <i>SignedDanielssonDistanceMapImageFilter</i></a> and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>SignedDanielssonDistanceMapImageFilter.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd SignedDanielssonDistanceMapImageFilter/build
@@ -189,7 +189,7 @@ Once the tarball <i>SignedDanielssonDistanceMapImageFilter.tar</i> has been down
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span id="ITK_&lt;_4"></span><span class="mw-headline" id="ITK_.3C_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -213,9 +213,7 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%  129.065      1 Template:ITKCMakeLists
 100.00%  129.065      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9391-0!canonical and timestamp 20211130223032 and revision id 50963
  -->
-</div></div><div class="printfooter">
-Retrieved from "<a dir="ltr" href="https://itk.org/Wiki/index.php?title=ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;oldid=50963">https://itk.org/Wiki/index.php?title=ITK/Examples/WishList/LevelSets/SignedDanielssonDistanceMapImageFilter&amp;oldid=50963</a>"</div>
-<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div><!-- end content --></body></html>
+</div></div>
+<!-- end content --></body></html>

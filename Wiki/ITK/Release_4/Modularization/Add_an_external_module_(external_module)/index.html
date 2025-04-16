@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4/Modularization/Add an external module (external module)</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"ce0a026a62a758bf6f1ab016","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Modularization/Add_an_external_module_(external_module)","wgTitle":"ITK/Release 4/Modularization/Add an external module (external module)","wgCurRevisionId":54125,"wgRevisionId":54125,"wgArticleId":9254,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Modularization/Add_an_external_module_(external_module)","wgRelevantArticleId":9254,"wgIsProbablyEditable":
 false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Modularization_Add_an_external_module_external_module rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Synopsis"><span class="tocnumber">1</span> <span class="toctext">Synopsis</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Organization"><span class="tocnumber">2</span> <span class="toctext">Organization</span></a>
@@ -32,35 +33,34 @@ false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestric
 <li class="toclevel-1 tocsection-5"><a href="#Community_dissemination"><span class="tocnumber">3</span> <span class="toctext">Community dissemination</span></a></li>
 </ul>
 </div>
-
 <h3><span class="mw-headline" id="Synopsis">Synopsis</span></h3>
 <p>An External Module is distributed outside the ITK main repository, but it could be built into ITK as a module once downloaded into the local copy of ITK source tree.
 </p>
 <h3><span class="mw-headline" id="Organization">Organization</span></h3>
 <p>The organization of an External Module should be the same as an Internal Module: 
-<a href="/Wiki/ITK_Release_4/Modularization/_Add_a_module" class="mw-redirect" title="ITK Release 4/Modularization/ Add a module">Add a module (Internal Module)</a>
+<a class="mw-redirect" href="/Wiki/ITK_Release_4/Modularization/_Add_a_module" title="ITK Release 4/Modularization/ Add a module">Add a module (Internal Module)</a>
 </p><p>To build an External Module, users download it into a local copy of ITK source tree under: <i>ITK/Modules/External/</i>. Then simply rerun the CMake step to configure the new External Module together with other enabled ITK modules.
-</p><p><br />
+</p><p><br/>
 </p>
 <h4><span class="mw-headline" id="External_Module_Template">External Module Template</span></h4>
 <p>Here is a module template for your convenience to build your own module (thanks to Bradley Lowekamp), along with instructions:
 </p>
-<pre>* <a rel="nofollow" class="external free" href="https://github.com/blowekamp/itkExternalTemplate">https://github.com/blowekamp/itkExternalTemplate</a>
+<pre>* <a class="external free" href="https://github.com/blowekamp/itkExternalTemplate" rel="nofollow">https://github.com/blowekamp/itkExternalTemplate</a>
 </pre>
-<p><br />
+<p><br/>
 </p>
 <h4><span class="mw-headline" id="Testing_data">Testing data</span></h4>
 <p>Testing data, such an input and baseline images, are typically kept outside of the Git repository to keep the repository small.
-</p><p>The ITK method for handling test data is the <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop/Data#ExternalData" title="ITK/Git/Develop/Data"> CMake/ExternalData</a> method, where MD5 hashes of the data are stored in the repository, then the files corresponding to the hashes are fetched at build time from a list of data servers.  These data servers can be an Apache server you have at your webhost, a <a rel="nofollow" class="external text" href="http://midasplatform.org/">Midas server</a>, a Dropbox account, an Amazon S3 account, a Rackspace Cloud File account, etc.
+</p><p>The ITK method for handling test data is the <a href="/ITKWikiArchive/Wiki/ITK/Git/Develop/Data#ExternalData" title="ITK/Git/Develop/Data"> CMake/ExternalData</a> method, where MD5 hashes of the data are stored in the repository, then the files corresponding to the hashes are fetched at build time from a list of data servers.  These data servers can be an Apache server you have at your webhost, a <a class="external text" href="http://midasplatform.org/" rel="nofollow">Midas server</a>, a Dropbox account, an Amazon S3 account, a Rackspace Cloud File account, etc.
 </p><p>To use the ExternalData mechanism with your own data server:
 </p>
 <ol><li>Add testing data references in you <i>test/CMakeLists.txt</i> as you normally would, i.e. use <b>itk_add_test</b> and with <b>DATA{Baseline/image.mha}</b>.</li>
 <li>As usual, copy the image to its location specified within <i>DATA{}</i>.</li>
 <li>As usual, next time <i>cmake</i> is executed, a message will appear like: <i>Linked Modules/External/ITKMyNewModule/test/Baseline/image.mha.md5 to ExternalData MD5/a3519cb25bb2afeda999378a2f8103cc</i></li>
-<li>Copy the file <i>test/Baseline/.ExternalData_MD5_a3519cb25bb2afeda999378a2f8103cc</i> to a location on your publically available data server, such as <i><a rel="nofollow" class="external free" href="http://www.example.com/ITKExternalData/MD5/a3519cb25bb2afeda999378a2f8103cc">http://www.example.com/ITKExternalData/MD5/a3519cb25bb2afeda999378a2f8103cc</a></i>.</li>
-<li>In your ITK CMake configuration, set the value of <i>ExternalData_URL_TEMPLATES</i> to <i><a rel="nofollow" class="external free" href="http://www.example.com/ITKExternalData/%(algo)/%(hash)">http://www.example.com/ITKExternalData/%(algo)/%(hash)</a></i></li></ol>
+<li>Copy the file <i>test/Baseline/.ExternalData_MD5_a3519cb25bb2afeda999378a2f8103cc</i> to a location on your publically available data server, such as <i><a class="external free" href="http://www.example.com/ITKExternalData/MD5/a3519cb25bb2afeda999378a2f8103cc" rel="nofollow">http://www.example.com/ITKExternalData/MD5/a3519cb25bb2afeda999378a2f8103cc</a></i>.</li>
+<li>In your ITK CMake configuration, set the value of <i>ExternalData_URL_TEMPLATES</i> to <i><a class="external free" href="http://www.example.com/ITKExternalData/%(algo)/%(hash)" rel="nofollow">http://www.example.com/ITKExternalData/%(algo)/%(hash)</a></i></li></ol>
 <h3><span class="mw-headline" id="Community_dissemination">Community dissemination</span></h3>
-<p>An example is demonstrated in the Lesion Sizing Toolkit: <a rel="nofollow" class="external text" href="http://public.kitware.com/LesionSizingKit/index.php/Users/Build_LST_as_ITK_module">Lesion Sizing Toolkit Wiki</a>
+<p>An example is demonstrated in the Lesion Sizing Toolkit: <a class="external text" href="http://public.kitware.com/LesionSizingKit/index.php/Users/Build_LST_as_ITK_module" rel="nofollow">Lesion Sizing Toolkit Wiki</a>
 </p><p>Once you have your External Module, you can make it available as a <a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedures_for_Adding_Remote_Modules" title="ITK/Policy and Procedures for Adding Remote Modules"> Remote Module</a> so it has broader exposure to the ITK community.
 </p>
 <!-- 
@@ -83,11 +83,10 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9254-0!canonical and timestamp 20250116232436 and revision id 54125. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/Add_an_external_module_(external_module)&amp;oldid=54125">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/Add_an_external_module_(external_module)&amp;oldid=54125</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

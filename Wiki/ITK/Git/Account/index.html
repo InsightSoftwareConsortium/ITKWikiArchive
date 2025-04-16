@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Git/Account</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"9e73eb9609a7890318ce1c6d","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Git/Account","wgTitle":"ITK/Git/Account","wgCurRevisionId":59408,"wgRevisionId":59408,"wgArticleId":8142,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Git/Account","wgRelevantArticleId":8142,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready",
 "user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Git_Account rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>This page documents how to setup ITK developer accounts.
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>This page documents how to setup ITK developer accounts.
 See our <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">table of contents</a> for more information.
 </p>
 <h1><span class="mw-headline" id="Gerrit">Gerrit</span></h1>
-<p>Anyone may obtain access to the <a rel="nofollow" class="external text" href="http://review.source.kitware.com/p/ITK">ITK Gerrit Code Review</a> site to propose and review changes.
+<p>Anyone may obtain access to the <a class="external text" href="http://review.source.kitware.com/p/ITK" rel="nofollow">ITK Gerrit Code Review</a> site to propose and review changes.
 Follow these steps to set up access:
 </p>
-<ol><li>We use <a rel="nofollow" class="external text" href="https://github.com/">Github</a> OAuth, so sign in to your Github account. <i>Note: OAuth currently requests R/W access to GitHub repositories. However, none of the repositories will be modified.</i></li>
-<li>Sign in to <a rel="nofollow" class="external free" href="http://review.source.kitware.com">http://review.source.kitware.com</a> using the link in the upper right and approve when Github prompts</li>
-<li>Set all fields in your profile at <a rel="nofollow" class="external free" href="http://review.source.kitware.com/#/settings/">http://review.source.kitware.com/#/settings/</a></li>
-<li>Add your ssh public key at <a rel="nofollow" class="external free" href="http://review.source.kitware.com/#/settings/ssh-keys">http://review.source.kitware.com/#/settings/ssh-keys</a></li></ol>
+<ol><li>We use <a class="external text" href="https://github.com/" rel="nofollow">Github</a> OAuth, so sign in to your Github account. <i>Note: OAuth currently requests R/W access to GitHub repositories. However, none of the repositories will be modified.</i></li>
+<li>Sign in to <a class="external free" href="http://review.source.kitware.com" rel="nofollow">http://review.source.kitware.com</a> using the link in the upper right and approve when Github prompts</li>
+<li>Set all fields in your profile at <a class="external free" href="http://review.source.kitware.com/#/settings/" rel="nofollow">http://review.source.kitware.com/#/settings/</a></li>
+<li>Add your ssh public key at <a class="external free" href="http://review.source.kitware.com/#/settings/ssh-keys" rel="nofollow">http://review.source.kitware.com/#/settings/ssh-keys</a></li></ol>
 <h3><span class="mw-headline" id="Firewall_blocks_SSH_traffic">Firewall blocks SSH traffic</span></h3>
 <p><b>This is currently out of order, please send patches as messages to the mailing list</b>
 </p><p>If you are stuck behind a firewall that blocks SSH traffic (port 22), the following alternative URL may be used to push patches over HTTP (port 80):
 </p>
-<ol><li>For Gerrit user <i>bob</i>: <code>$ git config --global url.<a rel="nofollow" class="external free" href="http://bob@review.source.kitware.com/p/ITK.insteadOf">http://bob@review.source.kitware.com/p/ITK.insteadOf</a> bob@review.source.kitware.com:ITK</code></li>
-<li>Generate a password at <a rel="nofollow" class="external free" href="http://review.source.kitware.com/#/settings/http-password">http://review.source.kitware.com/#/settings/http-password</a></li>
+<ol><li>For Gerrit user <i>bob</i>: <code>$ git config --global url.<a class="external free" href="http://bob@review.source.kitware.com/p/ITK.insteadOf" rel="nofollow">http://bob@review.source.kitware.com/p/ITK.insteadOf</a> bob@review.source.kitware.com:ITK</code></li>
+<li>Generate a password at <a class="external free" href="http://review.source.kitware.com/#/settings/http-password" rel="nofollow">http://review.source.kitware.com/#/settings/http-password</a></li>
 <li>A password prompt will be presented when pushing patches to Gerrit.</li></ol>
 <p>This requires Git 1.6.6 or newer.
 </p>
@@ -45,7 +46,7 @@ Follow these steps to set up access:
 <p>Authorized community members may merge patches to the <code>itk.org</code> repositories, but <b>most community members do not need merge permissions</b>.  All patches from all community members go through Gerrit Code Review, and patches will be merged by one of the maintainers after it has been reviewed.
 </p><p>Follow these steps to set up access:
 </p>
-<ol><li>Submit your ssh public key to the <a rel="nofollow" class="external text" href="https://www.kitware.com/Admin/SendPassword.cgi">Kitware Password</a> form</li>
+<ol><li>Submit your ssh public key to the <a class="external text" href="https://www.kitware.com/Admin/SendPassword.cgi" rel="nofollow">Kitware Password</a> form</li>
 <li>Perform an <a href="/Wiki/Git/Publish#Authentication_Test" title="Git/Publish">authentication test</a>:
 <dl><dd><code>$ ssh git@itk.org info</code></dd></dl></li></ol>
 <!-- 
@@ -68,10 +69,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8142-0!canonical and timestamp 20220527070113 and revision id 59408. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Git/Account&amp;oldid=59408">https://public.kitware.com/Wiki/index.php?title=ITK/Git/Account&amp;oldid=59408</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

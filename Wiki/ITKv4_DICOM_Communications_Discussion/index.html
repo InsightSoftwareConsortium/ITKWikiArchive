@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITKv4 DICOM Communications Discussion</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"9a833e867e12bcb81115a7a6","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITKv4_DICOM_Communications_Discussion","wgTitle":"ITKv4 DICOM Communications Discussion","wgCurRevisionId":42382,"wgRevisionId":42382,"wgArticleId":6009,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITKv4_DICOM_Communications_Discussion","wgRelevantArticleId":6009,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};
 RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITKv4_DICOM_Communications_Discussion rootpage-ITKv4_DICOM_Communications_Discussion skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Use this page to discuss and capture scenarios for DICOM support in ITK, including but not limited too using DICOM Query/Retrieve (Q/R) to load images from source (PACS) systems. DIOM COmmunication is also sometimes called DICOM Protocol, or PACS support.
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>Use this page to discuss and capture scenarios for DICOM support in ITK, including but not limited too using DICOM Query/Retrieve (Q/R) to load images from source (PACS) systems. DIOM COmmunication is also sometimes called DICOM Protocol, or PACS support.
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#which_toolkit_-_Common_DICOM_API"><span class="tocnumber">1</span> <span class="toctext">which toolkit - Common DICOM API</span></a>
 <ul>
@@ -46,7 +47,7 @@ RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"
 <li class="toclevel-3 tocsection-14"><a href="#Bill_(Ryan)_comments"><span class="tocnumber">2.3.5</span> <span class="toctext">Bill (Ryan) comments</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-15"><a href="#how_to_test_against_PACS_automatically_?"><span class="tocnumber">2.4</span> <span class="toctext">how to test against PACS automatically&#160;?</span></a>
+<li class="toclevel-2 tocsection-15"><a href="#how_to_test_against_PACS_automatically_?"><span class="tocnumber">2.4</span> <span class="toctext">how to test against PACS automatically ?</span></a>
 <ul>
 <li class="toclevel-3 tocsection-16"><a href="#Contestants"><span class="tocnumber">2.4.1</span> <span class="toctext">Contestants</span></a></li>
 </ul>
@@ -58,7 +59,6 @@ RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="which_toolkit_-_Common_DICOM_API">which toolkit - Common DICOM API</span></h1>
 <h2><span class="mw-headline" id="GDCM">GDCM</span></h2>
 <p>GDCM 1.x is currently used for DICOM File I/O in ITK.  ITK V4 alpha will within a couple of week include gdcm 2.x. At this time it does not support the communications aspects of DICOM, such as StoreSCU/StoreSCP, C-FIND, C-MOVE, etc.  
@@ -73,7 +73,7 @@ RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"
 </p>
 <ul><li><i>Bill (ryan): Should it be?</i></li>
 <li><i>Alex: is the license compatible?</i>
-<ul><li><i>Alex: the global licence is not: <a rel="nofollow" class="external text" href="http://dicom.offis.de/evaluation.php.en">DCMTK Licencing</a> </i></li>
+<ul><li><i>Alex: the global licence is not: <a class="external text" href="http://dicom.offis.de/evaluation.php.en" rel="nofollow">DCMTK Licencing</a> </i></li>
 <li><i>steven and mathieu: you can recompile most of the DCMTK lib for it to be BSD.</i></li>
 <li><i>steven: in perticular, the communication nugget comes from CTN and should not pause any problem.</i></li></ul></li>
 <li><i>Alex: Is it compiling on all the platforms ITK is supposed to compile on?</i>
@@ -87,14 +87,14 @@ RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"
 <h2><span class="mw-headline" id="CTN">CTN</span></h2>
 <p>CTN is still alive (commit done on Jun 29 2010): 
 </p>
-<ul><li><a rel="nofollow" class="external free" href="http://mirctn.svn.sourceforge.net/viewvc/mirctn?revision=4518&amp;view=revision">http://mirctn.svn.sourceforge.net/viewvc/mirctn?revision=4518&amp;view=revision</a></li></ul>
+<ul><li><a class="external free" href="http://mirctn.svn.sourceforge.net/viewvc/mirctn?revision=4518&amp;view=revision" rel="nofollow">http://mirctn.svn.sourceforge.net/viewvc/mirctn?revision=4518&amp;view=revision</a></li></ul>
 <p>Project is at:
 </p>
-<ul><li><a rel="nofollow" class="external free" href="http://sourceforge.net/projects/mirctn/">http://sourceforge.net/projects/mirctn/</a></li></ul>
+<ul><li><a class="external free" href="http://sourceforge.net/projects/mirctn/" rel="nofollow">http://sourceforge.net/projects/mirctn/</a></li></ul>
 <p>License is:  License:  Apache License V2.0 
 Ref: 
 </p>
-<ul><li><a rel="nofollow" class="external free" href="http://sourceforge.net/projects/mirctn/develop">http://sourceforge.net/projects/mirctn/develop</a></li></ul>
+<ul><li><a class="external free" href="http://sourceforge.net/projects/mirctn/develop" rel="nofollow">http://sourceforge.net/projects/mirctn/develop</a></li></ul>
 <h2><span id="Others_Toolkits_.2F_libs"></span><span class="mw-headline" id="Others_Toolkits_/_libs">Others Toolkits / libs</span></h2>
 <p>New and better libs could appear in the 10 years lifetime of itk 4 that we might want to use. It is yet another argument in favor of a common third-lib agnostic DICOM API in ITK.
 </p>
@@ -102,7 +102,7 @@ Ref:
 <h2><span class="mw-headline" id="Scenarios_for_DICOM_communication">Scenarios for DICOM communication</span></h2>
 <ul><li>User wants to query a PACS system for a particular series.  The user only knows the Patient ID, Date of Exam and Series Description to look for.  Ultimately, the user wants this loaded in memory as an ITK Image object.</li></ul>
 <h2><span class="mw-headline" id="Standards">Standards</span></h2>
-<p>Most of the documentation for Verification, Storage and Query/Retrieve functionality can be found in <a rel="nofollow" class="external text" href="ftp://medical.nema.org/medical/dicom/2009/09_04pu.pdf">Part 4</a> of the <a rel="nofollow" class="external text" href="http://medical.nema.org/">DICOM Standard</a>.
+<p>Most of the documentation for Verification, Storage and Query/Retrieve functionality can be found in <a class="external text" href="ftp://medical.nema.org/medical/dicom/2009/09_04pu.pdf" rel="nofollow">Part 4</a> of the <a class="external text" href="http://medical.nema.org/" rel="nofollow">DICOM Standard</a>.
 </p>
 <h2><span class="mw-headline" id="Service_Classes">Service Classes</span></h2>
 <h3><span class="mw-headline" id="Verification">Verification</span></h3>
@@ -118,41 +118,41 @@ Ref:
 <h3><span class="mw-headline" id="Early_design_for_GDCM">Early design for GDCM</span></h3>
 <p>To clear things, an initial implementation has been uploaded to github as a starting point:
 </p>
-<ul><li><a rel="nofollow" class="external free" href="http://github.com/malaterre/ITKDICOM">http://github.com/malaterre/ITKDICOM</a></li></ul>
+<ul><li><a class="external free" href="http://github.com/malaterre/ITKDICOM" rel="nofollow">http://github.com/malaterre/ITKDICOM</a></li></ul>
 <h3><span id="Bill_.28Ryan.29_comments"></span><span class="mw-headline" id="Bill_(Ryan)_comments">Bill (Ryan) comments</span></h3>
 <p>C-MOVE functionality is definitely critical to a working DICOM implementation.  The C-GET mechanism is not always provided by the PACS systems, so we need to offer a C-MOVE request to get the images.
 </p><p>In order to retrieve images from a PACS, we'll have to provide mechanisms (new classes?/MetaDataDictionary?) for collecting the query parameters and holding the responses back from the server.  A user might want to query by PatientID or PatientsName, maybe for a particular Modality, and possibly for a given StudyDate.  Obviously, we'll want to provide the capability to query at any of the Query Levels, at both the Patient Root and Study Root Q/R Information Models.  From the results, the user can extract the appropriate Patient ID or various UID's needed to drill down to the lower levels.
 </p><p>It may be difficult at times to know when we've received all the images from a series.  What if the user fetches an entire study?  Should there be a local store of images or should it all be received into memory?  In the end, using ITK to read files from PACS should be as simple as reading images from a directory.  I
 </p><p>In the past we've used the DCMTK toolkit to provide the DICOM communications layer.  We were planning to use that as well for ITK, unless GDCM already provides that functionality.
 </p>
-<h2><span id="how_to_test_against_PACS_automatically_.3F"></span><span class="mw-headline" id="how_to_test_against_PACS_automatically_?">how to test against PACS automatically&#160;?</span></h2>
+<h2><span id="how_to_test_against_PACS_automatically_.3F"></span><span class="mw-headline" id="how_to_test_against_PACS_automatically_?">how to test against PACS automatically ?</span></h2>
 <p>( thanks to Steve Pieper)
 </p>
 <pre> I had a chance to ask Lawrence Tarbox of Washington University your question
- about dicom testing. &#160;Lawrence is a participant in CTK and a long-time dicom
+ about dicom testing.  Lawrence is a participant in CTK and a long-time dicom
  standards participant too (he's actually working on the hosted application
  specification, which we should ultimately be compatible with).
 
  For PACS-like testing, he pointed to two well established efforts, linked
- below. &#160;Lawrence knows people involved in these and thinks they might be
+ below.  Lawrence knows people involved in these and thinks they might be
  receptive to seeing integration with ctest and cdash if you want to pursue
- that. &#160;In any case I think we can learn a lot from these efforts.
+ that.  In any case I think we can learn a lot from these efforts.
 
- http://www.ihe.net/Connectathon/ &#160;(look for the MESA test suite)
+ http://www.ihe.net/Connectathon/  (look for the MESA test suite)
 
  http://www.dvtk.org/
 </pre>
 <h3><span class="mw-headline" id="Contestants">Contestants</span></h3>
-<ul><li><a rel="nofollow" class="external free" href="http://www.na-mic.org/Wiki/index.php/CTSC:ARRA:Mockup">http://www.na-mic.org/Wiki/index.php/CTSC:ARRA:Mockup</a></li>
-<li><a rel="nofollow" class="external free" href="http://www.dicomserver.co.uk/">http://www.dicomserver.co.uk/</a></li></ul>
+<ul><li><a class="external free" href="http://www.na-mic.org/Wiki/index.php/CTSC:ARRA:Mockup" rel="nofollow">http://www.na-mic.org/Wiki/index.php/CTSC:ARRA:Mockup</a></li>
+<li><a class="external free" href="http://www.dicomserver.co.uk/" rel="nofollow">http://www.dicomserver.co.uk/</a></li></ul>
 <p>Setting up a dcm4che server:
 </p>
-<ul><li><a rel="nofollow" class="external free" href="http://www.osirix-viewer.com/PACS.html">http://www.osirix-viewer.com/PACS.html</a></li></ul>
+<ul><li><a class="external free" href="http://www.osirix-viewer.com/PACS.html" rel="nofollow">http://www.osirix-viewer.com/PACS.html</a></li></ul>
 <h2><span class="mw-headline" id="Discussion_about_how_to_handle_non-image_data_in_ITK_pipeline">Discussion about how to handle non-image data in ITK pipeline</span></h2>
-<p><a href="/Wiki/ITK_Release_4/DICOM/MetaData" class="mw-redirect" title="ITK Release 4/DICOM/MetaData">ITK Release 4/DICOM/MetaData</a>
+<p><a class="mw-redirect" href="/Wiki/ITK_Release_4/DICOM/MetaData" title="ITK Release 4/DICOM/MetaData">ITK Release 4/DICOM/MetaData</a>
 </p>
 <h2><span class="mw-headline" id="GDCM_Milestone">GDCM Milestone</span></h2>
-<p><a rel="nofollow" class="external text" href="http://sourceforge.net/apps/trac/gdcm/milestone/%5BMM-10%5D%20-%20DICOM%20protocol%20for%20PACS%20support">Milestone</a>
+<p><a class="external text" href="http://sourceforge.net/apps/trac/gdcm/milestone/%5BMM-10%5D%20-%20DICOM%20protocol%20for%20PACS%20support" rel="nofollow">Milestone</a>
 </p>
 <h2><span class="mw-headline" id="user_case_for_pacs">user case for pacs</span></h2>
 <p>- copy to disk for caching and many other reasons.
@@ -177,10 +177,9 @@ Unstrip post‐expand size: 695/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:6009-0!canonical and timestamp 20220525205618 and revision id 42382. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITKv4_DICOM_Communications_Discussion&amp;oldid=42382">https://public.kitware.com/Wiki/index.php?title=ITKv4_DICOM_Communications_Discussion&amp;oldid=42382</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

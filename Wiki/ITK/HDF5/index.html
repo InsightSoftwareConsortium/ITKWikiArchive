@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/HDF5</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://www.itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="https://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://www.itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://www.itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -28,7 +29,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 }</script>
 </head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_HDF5 skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#HDF5_file_format_and_library"><span class="tocnumber">1</span> <span class="toctext">HDF5 file format and library</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Use_cases"><span class="tocnumber">2</span> <span class="toctext">Use cases</span></a>
@@ -69,7 +70,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <li class="toclevel-1 tocsection-22"><a href="#Base_path"><span class="tocnumber">5</span> <span class="toctext">Base path</span></a></li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="HDF5_file_format_and_library">HDF5 file format and library</span></h2>
 <p>HDF5 is both a file format and a library dedicated to reading and writing files in that format.
 </p><p>According to Wikipedia, "HDF5 include only two major types of object:
@@ -141,13 +141,13 @@ Because it uses B-trees to index table objects, HDF5 works well for Time series 
 </p>
 <h4><span class="mw-headline" id="Vector">Vector</span></h4>
 <p>This is stored as a 1D dataset of Dimension elements.
-</p><p><br />
+</p><p><br/>
 </p>
 <h3><span class="mw-headline" id="Composite_objects">Composite objects</span></h3>
 <p>Composite objects are store as groups in the HDF5 file and are made of one or more atomic or composite objects. Each object is named in the same way it is named in the ITK classes, without the leading "m_".
 </p>
 <h4><span class="mw-headline" id="ImageRegion">ImageRegion</span></h4>
-<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1ImageRegion.html">ImageRegion</a>.
+<p>This is the storage of the class <a class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1ImageRegion.html" rel="nofollow">ImageRegion</a>.
 </p>
 <table border="1">
 <tr>
@@ -168,7 +168,7 @@ Because it uses B-trees to index table objects, HDF5 works well for Time series 
 <p>TODO
 </p>
 <h4><span class="mw-headline" id="ImageBase">ImageBase</span></h4>
-<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1ImageBase.html">ImageBase</a>.
+<p>This is the storage of the class <a class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1ImageBase.html" rel="nofollow">ImageBase</a>.
 </p>
 <table border="1">
 <tr>
@@ -197,7 +197,7 @@ Because it uses B-trees to index table objects, HDF5 works well for Time series 
 <td>
 </td></tr></table>
 <h4><span class="mw-headline" id="Image">Image</span></h4>
-<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1Image.html">Image</a>.
+<p>This is the storage of the class <a class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1Image.html" rel="nofollow">Image</a>.
 Image inherits the members of <a href="#ImageBase"> ImageBase</a> and adds its own members.
 </p>
 <table border="1">
@@ -215,7 +215,7 @@ Image inherits the members of <a href="#ImageBase"> ImageBase</a> and adds its o
 The chunk size should be one on all the dimensions but x and y.
 </p>
 <h4><span class="mw-headline" id="LabelObjectLine">LabelObjectLine</span></h4>
-<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LabelObjectLine.html">LabelObjectLine</a>.
+<p>This is the storage of the class <a class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LabelObjectLine.html" rel="nofollow">LabelObjectLine</a>.
 </p>
 <table border="1">
 <tr>
@@ -234,7 +234,7 @@ The chunk size should be one on all the dimensions but x and y.
 <td> how do we describe this type?
 </td></tr></table>
 <h4><span class="mw-headline" id="LabelObject">LabelObject</span></h4>
-<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LabelObject.html">LabelObject</a>.
+<p>This is the storage of the class <a class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LabelObject.html" rel="nofollow">LabelObject</a>.
 </p>
 <table border="1">
 <tr>
@@ -253,7 +253,7 @@ The chunk size should be one on all the dimensions but x and y.
 <td> which type should be used? a group directly? an composite type?
 </td></tr></table>
 <h4><span class="mw-headline" id="LabelMap">LabelMap</span></h4>
-<p>This is the storage of the class <a rel="nofollow" class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LabelMap.html">LabelMap</a>.
+<p>This is the storage of the class <a class="external text" href="http://www.itk.org/Doxygen/html/classitk_1_1LabelMap.html" rel="nofollow">LabelMap</a>.
 LabelMap inherits the members of <a href="#ImageBase"> ImageBase</a> and adds its own members.
 </p>
 <table border="1">
@@ -281,9 +281,7 @@ Template argument size: 118/2097152 bytes
 Highest expansion depth: 2/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9066-0!*!0!!en!*!* and timestamp 20160422172537 and revision id 39373
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://www.itk.org/Wiki/index.php?title=ITK/HDF5&amp;oldid=39373">http://www.itk.org/Wiki/index.php?title=ITK/HDF5&amp;oldid=39373</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

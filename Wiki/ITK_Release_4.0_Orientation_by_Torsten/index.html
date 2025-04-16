@@ -1,26 +1,27 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en" dir="ltr">
+
+<html dir="ltr" lang="en">
 <head>
 <title>ITK Release 4.0 Orientation by Torsten</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="MediaWiki 1.16.0" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link title="Creative Commons" type="application/rdf+xml" href="/Wiki/index.php?title=ITK_Release_4.0_Orientation_by_Torsten&amp;action=creativecommons" rel="meta" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="/Wiki/skins/common/shared.css?270" media="screen" />
-<link rel="stylesheet" href="/Wiki/skins/common/commonPrint.css?270" media="print" />
-<link rel="stylesheet" href="/Wiki/skins/monobook/main.css?270" media="screen" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="MediaWiki 1.16.0" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="/Wiki/index.php?title=ITK_Release_4.0_Orientation_by_Torsten&amp;action=creativecommons" rel="meta" title="Creative Commons" type="application/rdf+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="/Wiki/skins/common/shared.css?270" media="screen" rel="stylesheet"/>
+<link href="/Wiki/skins/common/commonPrint.css?270" media="print" rel="stylesheet"/>
+<link href="/Wiki/skins/monobook/main.css?270" media="screen" rel="stylesheet"/>
 <!--[if lt IE 5.5000]><link rel="stylesheet" href="/Wiki/skins/monobook/IE50Fixes.css?270" media="screen" /><![endif]-->
 <!--[if IE 5.5000]><link rel="stylesheet" href="/Wiki/skins/monobook/IE55Fixes.css?270" media="screen" /><![endif]-->
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?270" media="screen" /><![endif]-->
 <!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?270" media="screen" /><![endif]-->
-<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
-<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" media="print" />
-<link rel="stylesheet" href="/Wiki/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
-<link rel="stylesheet" href="/Wiki/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" />
+<link href="/Wiki/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" rel="stylesheet"/>
+<link href="/Wiki/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" media="print" rel="stylesheet"/>
+<link href="/Wiki/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" rel="stylesheet"/>
+<link href="/Wiki/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" rel="stylesheet"/>
 <script>
 var skin="monobook",
 stylepath="/Wiki/skins",
@@ -61,7 +62,6 @@ wgRestrictionMove=[];
 </script><script src="/Wiki/skins/common/wikibits.js?270"></script>
 <script src="/Wiki/skins/common/ajax.js?270"></script>
 <script src="/Wiki/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook&amp;270"></script>
-
 </head>
 <body class="mediawiki ltr ns-0 ns-subject page-ITK_Release_4_0_Orientation_by_Torsten skin-monobook"><!-- start content -->
 <pre>
@@ -105,7 +105,7 @@ So here's what I did, based on the space abstraction laid out by Gordon
 Kindlman in the Nrrd file format specification.
 
 All images are read living in some physical space. For DICOM, that's
-LPS. For Nrrd, it's what's in the Nrrd &quot;space:&quot; field. For Analyze, it's
+LPS. For Nrrd, it's what's in the Nrrd "space:" field. For Analyze, it's
 whatever the Analyze orientation field is supposed to mean in my reading
 of the file format documentation.
 
@@ -123,9 +123,9 @@ identical to the space definition.
 
 2. coordinate space is changed to RAS. That does not affect the storage
 order of image pixels, but it changes the direction cosines by
-permutation and negation. As an example, &quot;LPS&quot; to &quot;RAS&quot; means x becomes
+permutation and negation. As an example, "LPS" to "RAS" means x becomes
 -x, y becomes -y, and z stays z. This also applies to the coordinate
-space origin. Different example: &quot;ARS&quot; to &quot;RAS&quot; means that x and
+space origin. Different example: "ARS" to "RAS" means that x and
 y elements are swapped in all direction vectors and also in the space
 origin.
 
@@ -157,7 +157,6 @@ list, and it's working for me.
 Best,
  Torsten
 </pre>
-
 <!-- 
 NewPP limit report
 Preprocessor node count: 4/1000000
@@ -165,8 +164,6 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3213-0!1!0!!en!2!edit=0 and timestamp 20100921222509 -->
-<div class="printfooter">
-Retrieved from "<a href="http://www.itk.org/Wiki/ITK_Release_4.0_Orientation_by_Torsten">http://www.itk.org/Wiki/ITK_Release_4.0_Orientation_by_Torsten</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+
+ <!-- end content --></body></html>

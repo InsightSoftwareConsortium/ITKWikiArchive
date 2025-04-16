@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Examples/ImageProcessing/TileImageFilter CreateVolume</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"7c0351dee42cd911b4c90080","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Examples/ImageProcessing/TileImageFilter_CreateVolume","wgTitle":"ITK/Examples/ImageProcessing/TileImageFilter CreateVolume","wgCurRevisionId":63529,"wgRevisionId":63529,"wgArticleId":8882,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Examples/ImageProcessing/TileImageFilter_CreateVolume","wgRelevantArticleId":8882,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable"
 :false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ITK/Examples/ImageProcessing/TileImageFilter","wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Examples/ImageProcessing/TileImageFilter_CreateVolume"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Examples/ImageProcessing/TileImageFilter_CreateVolume"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Examples/ImageProcessing/TileImageFilter_CreateVolume" rel="canonical"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Examples_ImageProcessing_TileImageFilter_CreateVolume rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;"><strong> Warning: </strong>The media wiki content on this page is no longer maintained.  The examples presented on the <a rel="nofollow" class="external free" href="https://itk.org/Wiki/*">https://itk.org/Wiki/*</a>  pages likely require ITK version 4.13 or earlier releases.   In many cases, the examples on this page no longer conform to the best practices for modern ITK versions.</div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;"><strong> Warning: </strong>The media wiki content on this page is no longer maintained.  The examples presented on the <a class="external free" href="https://itk.org/Wiki/*" rel="nofollow">https://itk.org/Wiki/*</a>  pages likely require ITK version 4.13 or earlier releases.   In many cases, the examples on this page no longer conform to the best practices for modern ITK versions.</div>
 <!-- 
 NewPP limit report
 Cached time: 20230609004244
@@ -45,11 +46,10 @@ Transclusion expansion time report (%,ms,calls,template)
  58.81%    3.623      1 Template:META_Box_Red
  28.31%    1.744      1 Template:META_Box
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8882-0!canonical and timestamp 20230609004244 and revision id 63529. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Examples/ImageProcessing/TileImageFilter_CreateVolume&amp;oldid=63529">https://public.kitware.com/Wiki/index.php?title=ITK/Examples/ImageProcessing/TileImageFilter_CreateVolume&amp;oldid=63529</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

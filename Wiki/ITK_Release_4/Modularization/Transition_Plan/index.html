@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4/Modularization/Transition Plan</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"cfc1d967de3abed4dcbb6b4e","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Modularization/Transition_Plan","wgTitle":"ITK/Release 4/Modularization/Transition Plan","wgCurRevisionId":44259,"wgRevisionId":44259,"wgArticleId":8880,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Modularization/Transition_Plan","wgRelevantArticleId":8880,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],
 "wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4/Modularization/Transition_Plan","wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/Transition_Plan"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/Transition_Plan"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/Transition_Plan" rel="canonical"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Modularization_Transition_Plan rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>This page describes the plan for transforming the current Monolithic ITK repository into a Modularized one.
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>This page describes the plan for transforming the current Monolithic ITK repository into a Modularized one.
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Major_Dates"><span class="tocnumber">1</span> <span class="toctext">Major Dates</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Git_Repository_Conversion"><span class="tocnumber">2</span> <span class="toctext">Git Repository Conversion</span></a>
@@ -37,7 +38,6 @@
 <li class="toclevel-1 tocsection-6"><a href="#Detailed_Plan"><span class="tocnumber">4</span> <span class="toctext">Detailed Plan</span></a></li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Major_Dates">Major Dates</span></h1>
 <ul><li>The target date for transforming the repository is <b>Friday March 4th 2011</b></li>
 <li>The repository should be reopen for normal activity by <b>Tuesday March 8th 2011</b></li></ul>
@@ -53,10 +53,9 @@
 <li>Push those to Gerrit (under the tag "WIP" (Work in Progress))</li></ul></li>
 <li>The Gerrit patches should be mergeable after the conversion, and the Kitware team will be available to help merge them for you.</li></ul>
 <h1><span class="mw-headline" id="Modularized_Dashboard">Modularized Dashboard</span></h1>
-<ul><li><a rel="nofollow" class="external free" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;display=project&amp;filtercount=2&amp;showfilters=1&amp;filtercombine=and&amp;field1=buildname/string&amp;compare1=61&amp;value1=Linux-gcc-modularITK&amp;field2=site/string&amp;compare2=61&amp;value2=FarAway.kitware&amp;collapse=0">http://www.cdash.org/CDash/index.php?project=ITKModular&amp;display=project&amp;filtercount=2&amp;showfilters=1&amp;filtercombine=and&amp;field1=buildname/string&amp;compare1=61&amp;value1=Linux-gcc-modularITK&amp;field2=site/string&amp;compare2=61&amp;value2=FarAway.kitware&amp;collapse=0</a></li></ul>
+<ul><li><a class="external free" href="http://www.cdash.org/CDash/index.php?project=ITKModular&amp;display=project&amp;filtercount=2&amp;showfilters=1&amp;filtercombine=and&amp;field1=buildname/string&amp;compare1=61&amp;value1=Linux-gcc-modularITK&amp;field2=site/string&amp;compare2=61&amp;value2=FarAway.kitware&amp;collapse=0" rel="nofollow">http://www.cdash.org/CDash/index.php?project=ITKModular&amp;display=project&amp;filtercount=2&amp;showfilters=1&amp;filtercombine=and&amp;field1=buildname/string&amp;compare1=61&amp;value1=Linux-gcc-modularITK&amp;field2=site/string&amp;compare2=61&amp;value2=FarAway.kitware&amp;collapse=0</a></li></ul>
 <h1><span class="mw-headline" id="Detailed_Plan">Detailed Plan</span></h1>
 <table border="1">
-
 <tbody><tr bgcolor="#abcdef">
 <th>Date</th>
 <th>Major Event</th>
@@ -119,10 +118,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8880-0!canonical and timestamp 20220519052022 and revision id 44259. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/Transition_Plan&amp;oldid=44259">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/Transition_Plan&amp;oldid=44259</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

@@ -1,71 +1,71 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK Release 4/Users Migration Guide/Developer Migration Guide Workflow</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"f4a47b1b4238928086aa1cd9","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/Users_Migration_Guide/Developer_Migration_Guide_Workflow","wgTitle":"ITK Release 4/Users Migration Guide/Developer Migration Guide Workflow","wgCurRevisionId":33594,"wgRevisionId":33594,"wgArticleId":7744,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/Users_Migration_Guide/Developer_Migration_Guide_Workflow","wgRelevantArticleId":7744,"wgIsProbablyEditable":
 !1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Users_Migration_Guide_Developer_Migration_Guide_Workflow rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p><a href="/Wiki/File:MigrationGuideWorkFlow.pdf" title="File:MigrationGuideWorkFlow.pdf">File:MigrationGuideWorkFlow.pdf</a>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p><a href="/Wiki/File:MigrationGuideWorkFlow.pdf" title="File:MigrationGuideWorkFlow.pdf">File:MigrationGuideWorkFlow.pdf</a>
 </p>
 <table border="1">
-
 <tbody><tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow1.png" class="image"><img alt="MigrationGuideWorkFlow1.png" src="/Wiki/images/1/1b/MigrationGuideWorkFlow1.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow1.png"><img alt="MigrationGuideWorkFlow1.png" decoding="async" height="488" src="/Wiki/images/1/1b/MigrationGuideWorkFlow1.png" width="650"/></a>
 </td>
 <td><b>Initial Setup</b>
 <ul><li>Published migration guide pulled directly from <i>master</i> XML files</li>
 <li>Sequestered applications compiling correctly</li></ul>
 </td></tr>
 <tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow2.png" class="image"><img alt="MigrationGuideWorkFlow2.png" src="/Wiki/images/5/5b/MigrationGuideWorkFlow2.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow2.png"><img alt="MigrationGuideWorkFlow2.png" decoding="async" height="488" src="/Wiki/images/5/5b/MigrationGuideWorkFlow2.png" width="650"/></a>
 </td>
 <td><b>Topic Branch</b>
 <ul><li>Standard git workflow</li></ul>
 </td></tr>
 <tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow3.png" class="image"><img alt="MigrationGuideWorkFlow3.png" src="/Wiki/images/f/f9/MigrationGuideWorkFlow3.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow3.png"><img alt="MigrationGuideWorkFlow3.png" decoding="async" height="488" src="/Wiki/images/f/f9/MigrationGuideWorkFlow3.png" width="650"/></a>
 </td>
 <td><b>Local Changes</b>
 <ul><li>Standard git workflow</li></ul>
 </td></tr>
 <tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow4.png" class="image"><img alt="MigrationGuideWorkFlow4.png" src="/Wiki/images/1/18/MigrationGuideWorkFlow4.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow4.png"><img alt="MigrationGuideWorkFlow4.png" decoding="async" height="488" src="/Wiki/images/1/18/MigrationGuideWorkFlow4.png" width="650"/></a>
 </td>
 <td><b>Migration Guide XML</b>
 <ul><li>Before pushing topic to Gerrit, must create a unique XML document that documents changes to API</li>
 <li>XML documents will live in the source tree in a new directory</li></ul>
 </td></tr>
 <tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow5.png" class="image"><img alt="MigrationGuideWorkFlow5.png" src="/Wiki/images/f/f6/MigrationGuideWorkFlow5.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow5.png"><img alt="MigrationGuideWorkFlow5.png" decoding="async" height="488" src="/Wiki/images/f/f6/MigrationGuideWorkFlow5.png" width="650"/></a>
 </td>
 <td><b>Gerrit Review</b>
 <ul><li>Standard Gerrit review process</li>
 <li>Make any necessary changes</li></ul>
 </td></tr>
 <tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow6.png" class="image"><img alt="MigrationGuideWorkFlow6.png" src="/Wiki/images/2/20/MigrationGuideWorkFlow6.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow6.png"><img alt="MigrationGuideWorkFlow6.png" decoding="async" height="488" src="/Wiki/images/2/20/MigrationGuideWorkFlow6.png" width="650"/></a>
 </td>
 <td><b>Finalize Migration Guide XML</b>
 <ul><li>Before review can be completed, the XML file must be revised to accurately reflect API changes</li></ul>
 </td></tr>
 <tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow7.png" class="image"><img alt="MigrationGuideWorkFlow7.png" src="/Wiki/images/6/62/MigrationGuideWorkFlow7.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow7.png"><img alt="MigrationGuideWorkFlow7.png" decoding="async" height="488" src="/Wiki/images/6/62/MigrationGuideWorkFlow7.png" width="650"/></a>
 </td>
 <td><b>Merge to master</b>
 <ul><li>Merge the topic branch to <i>master</i> in the normal manner using <i>stage</i></li>
@@ -73,24 +73,24 @@
 <li>Wait for nightly Sequestered Applications builds</li></ul>
 </td></tr>
 <tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow8.png" class="image"><img alt="MigrationGuideWorkFlow8.png" src="/Wiki/images/a/ab/MigrationGuideWorkFlow8.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow8.png"><img alt="MigrationGuideWorkFlow8.png" decoding="async" height="488" src="/Wiki/images/a/ab/MigrationGuideWorkFlow8.png" width="650"/></a>
 </td>
 <td><b>Applications Fail</b>
 </td></tr>
 <tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow9.png" class="image"><img alt="MigrationGuideWorkFlow9.png" src="/Wiki/images/2/24/MigrationGuideWorkFlow9.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow9.png"><img alt="MigrationGuideWorkFlow9.png" decoding="async" height="488" src="/Wiki/images/2/24/MigrationGuideWorkFlow9.png" width="650"/></a>
 </td>
 <td><b>Create Applications Topic Branch</b>
 <ul><li>Checkout current version of sequestered applications</li></ul>
 </td></tr>
 <tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow10.png" class="image"><img alt="MigrationGuideWorkFlow10.png" src="/Wiki/images/8/81/MigrationGuideWorkFlow10.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow10.png"><img alt="MigrationGuideWorkFlow10.png" decoding="async" height="488" src="/Wiki/images/8/81/MigrationGuideWorkFlow10.png" width="650"/></a>
 </td>
 <td><b>Fix Broken Applications</b>
 <ul><li>Make necessary changes to fix compilation errors for the applications</li></ul>
 </td></tr>
 <tr>
-<td><a href="/Wiki/File:MigrationGuideWorkFlow11.png" class="image"><img alt="MigrationGuideWorkFlow11.png" src="/Wiki/images/6/69/MigrationGuideWorkFlow11.png" decoding="async" width="650" height="488" /></a>
+<td><a class="image" href="/Wiki/File:MigrationGuideWorkFlow11.png"><img alt="MigrationGuideWorkFlow11.png" decoding="async" height="488" src="/Wiki/images/6/69/MigrationGuideWorkFlow11.png" width="650"/></a>
 </td>
 <td><b>Add Migration Guide Links</b>
 <ul><li>When committing changes to sequestered applications, developer will be asked for ID of Migration Guide Page</li>
@@ -116,10 +116,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:7744-0!canonical and timestamp 20221005043445 and revision id 33594. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide/Developer_Migration_Guide_Workflow&amp;oldid=33594">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide/Developer_Migration_Guide_Workflow&amp;oldid=33594</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

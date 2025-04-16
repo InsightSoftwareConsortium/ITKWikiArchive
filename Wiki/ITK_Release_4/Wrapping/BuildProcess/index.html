@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4/Wrapping/BuildProcess</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"b26f2c5a39fd7074eb55a5f6","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Wrapping/BuildProcess","wgTitle":"ITK/Release 4/Wrapping/BuildProcess","wgCurRevisionId":61911,"wgRevisionId":61911,"wgArticleId":9052,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Inactive project pages"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Wrapping/BuildProcess","wgRelevantArticleId":9052,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],
 "wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4/Wrapping/BuildProcess","wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/BuildProcess"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/BuildProcess"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4/Wrapping/BuildProcess" rel="canonical"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Wrapping_BuildProcess rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r64789">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><table class="plainlinks metadata ambox ambox-notice" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><a href="/Wiki/WP:HISPAGES" title="WP:HISPAGES"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/30px-Historical.svg.png" decoding="async" width="30" height="38" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/45px-Historical.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/60px-Historical.svg.png 2x" /></a></div></td><td class="mbox-text"><div class="mbox-text-span"><b>This page is currently inactive and is retained for <a href="/Wiki/index.php?title=WP:HISPAGES&amp;action=edit&amp;redlink=1" class="new" title="WP:HISPAGES (page does not exist)">historical</a> reference.</b><br /><span style="font-size: 90%">Either the page is no longer relevant or consensus on its purpose has become unclear. To revive discussion, seek broader input via a forum such as the <a href="http://www.wikipedia.org/wiki/Village_pump_(proposals)" class="extiw" title="wikipedia:Village pump (proposals)">village pump</a>.</span> <span style="font-size: 90%"> </span></div></td></tr></tbody></table>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r64789">.mw-parser-output .ambox{border:1px solid #a2a9b1;border-left:10px solid #36c;background-color:#fbfbfb;box-sizing:border-box}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid #b32424;background-color:#fee7e6}.mw-parser-output .ambox-delete{border-left:10px solid #b32424}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid #fc3}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(min-width:720px){.mw-parser-output .ambox{margin:0 10%}}</style><table class="plainlinks metadata ambox ambox-notice" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><a href="/Wiki/WP:HISPAGES" title="WP:HISPAGES"><img alt="" decoding="async" height="38" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/30px-Historical.svg.png" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/45px-Historical.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/60px-Historical.svg.png 2x" width="30"/></a></div></td><td class="mbox-text"><div class="mbox-text-span"><b>This page is currently inactive and is retained for <a class="new" href="/Wiki/index.php?title=WP:HISPAGES&amp;action=edit&amp;redlink=1" title="WP:HISPAGES (page does not exist)">historical</a> reference.</b><br/><span style="font-size: 90%">Either the page is no longer relevant or consensus on its purpose has become unclear. To revive discussion, seek broader input via a forum such as the <a class="extiw" href="http://www.wikipedia.org/wiki/Village_pump_(proposals)" title="wikipedia:Village pump (proposals)">village pump</a>.</span> <span style="font-size: 90%"> </span></div></td></tr></tbody></table>
 <p>Wrapping build is done in several steps.
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Configuration"><span class="tocnumber">1</span> <span class="toctext">Configuration</span></a>
 <ul>
@@ -76,7 +77,6 @@
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Configuration">Configuration</span></h1>
 <p>The configuration is done with with the tool used to build ITK: CMake. All the files cited in this section are located in the <b>ITK/Wrapping/WrapITK directory</b>.
 </p><p>During this step, the template instantiations are generated with a several CMake macros. For each macro call of the template instantiation process, some callback macros specific of each language generator are called to generate the files and the commands needed to build the wrappers.
@@ -151,7 +151,7 @@ The template instantiation and the code generation are completely separated.
 <h3><span class="mw-headline" id="WRAP_ITK_BINDINGS_INSTALL">WRAP_ITK_BINDINGS_INSTALL</span></h3>
 <ul><li><ul><li>This new macro is introduced to take care of installation of the generated files specifically</li>
 <li>With the introduction of this macro, the earlier WRAP_ITK_INSTALL macro will now be installing all the WrapITK configuration files in the directory pointed to by ${CMAKE_INSTALL_PREFIX} and ${WRAP_ITK_INSTALL_PREFIX}, Whereas the new macro will put all the generated proxies(python) and modules(java,python) in the directory ${CMAKE_INSTALL_PREFIX}/lib/ITK-${ITK_VERSION_MAJOR}.${ITK_VERSION_MINOR}</li></ul></li></ul>
-<p><br />
+<p><br/>
 </p>
 <h1><span class="mw-headline" id="Build">Build</span></h1>
 <h2><span class="mw-headline" id="Generation_XML_descriptions_of_instantiations">Generation XML descriptions of instantiations</span></h2>
@@ -172,7 +172,7 @@ The template instantiation and the code generation are completely separated.
 <li>Manually written python files which reside in WrapITK/Python</li>
 <li>Language specific (.i, .in) files in WrapITK/Configuration/Languages.</li></ol>
 <p>To summarize, WRAP_ITK_BINDINGS_INSTALL macro takes care of installation of 2,3, 4 and 6. Whereas the WRAP_ITK_INSTALL macro takes care of 1, 5 and 7.
-</p><p><br />
+</p><p><br/>
 </p>
 <h1><span class="mw-headline" id="External_Project">External Project</span></h1>
 <p>With WrapITK, an external project is a way to extend the wrapping with custom classes outside ITK. The exact same macros are reused, but a single library is generally produced. External projects can be built using ITK from its build tree or from its installed tree.
@@ -285,11 +285,10 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%   68.587      1 Template:Historical
  96.04%   65.873      1 Template:Mbox
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9052-0!canonical and timestamp 20250111125633 and revision id 61911. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Wrapping/BuildProcess&amp;oldid=61911">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Wrapping/BuildProcess&amp;oldid=61911</a>"</div></div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/Wiki/index.php?title=Category:Inactive_project_pages&amp;action=edit&amp;redlink=1" class="new" title="Category:Inactive project pages (page does not exist)">Inactive project pages</a></li></ul></div></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

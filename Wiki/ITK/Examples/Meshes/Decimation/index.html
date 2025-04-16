@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Examples/Meshes/Decimation</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -106,101 +107,100 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 /*]]>*/
 </style></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_Meshes_Decimation skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This example reads a sphere from a vtk file. It then decimates the mesh, attempting to get to a target number of triangles, N. It should be run with
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><p>This example reads a sphere from a vtk file. It then decimates the mesh, attempting to get to a target number of triangles, N. It should be run with
 </p>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="text source-text"><pre class="de1">./MeshDecimation sphere.vtk sphere_decimated.vtk N</pre></div></div>
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="text source-text"><pre class="de1">./MeshDecimation sphere.vtk sphere_decimated.vtk N</pre></div></div>
 <p>where N is the number of target triangles.
-</p><p>The sample sphere file is <a rel="nofollow" class="external text" href="http://www.itk.org/Wiki/images/8/89/Sphere.vtk.zip">here</a>.
+</p><p>The sample sphere file is <a class="external text" href="http://www.itk.org/Wiki/images/8/89/Sphere.vtk.zip" rel="nofollow">here</a>.
 </p>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;string&gt;</span>
 <span class="co2">#include &lt;sstream&gt;</span>
-&#160;
-<span class="co2">#include &quot;/home/doriad/src/Insight/Code/Review/itkVTKPolyDataReader.h&quot;</span>
-<span class="co2">#include &quot;/home/doriad/src/Insight/Code/Review/itkVTKPolyDataWriter.h&quot;</span>
-<span class="co2">#include &quot;itkQuadEdgeMesh.h&quot;</span>
-&#160;
-<span class="co2">#include &quot;itkQuadEdgeMeshDecimationCriteria.h&quot;</span>
-<span class="co2">#include &quot;itkQuadEdgeMeshSquaredEdgeLengthDecimation.h&quot;</span>
-&#160;
+ 
+<span class="co2">#include "/home/doriad/src/Insight/Code/Review/itkVTKPolyDataReader.h"</span>
+<span class="co2">#include "/home/doriad/src/Insight/Code/Review/itkVTKPolyDataWriter.h"</span>
+<span class="co2">#include "itkQuadEdgeMesh.h"</span>
+ 
+<span class="co2">#include "itkQuadEdgeMeshDecimationCriteria.h"</span>
+<span class="co2">#include "itkQuadEdgeMeshSquaredEdgeLengthDecimation.h"</span>
+ 
 <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> Dimension <span class="sy1">=</span> <span class="nu0">3</span><span class="sy4">;</span>
 <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">QuadEdgeMesh</span><span class="sy1">&lt;</span> <span class="kw4">float</span>, Dimension <span class="sy1">&gt;</span>   MeshType<span class="sy4">;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span> <span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">**</span> argv <span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-	<span class="kw1">if</span><span class="br0">&#40;</span>argc <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">4</span><span class="br0">&#41;</span>
-	<span class="br0">&#123;</span>
-		std<span class="sy4">::</span> <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Required arguments: InputFilename OutputFilename&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-		<span class="kw3">exit</span><span class="br0">&#40;</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	<span class="br0">&#125;</span>
-&#160;
-	std<span class="sy4">::</span><span class="me2">string</span> InputFilename <span class="sy1">=</span> argv<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span><span class="sy4">;</span>
-	std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Input file: &quot;</span> <span class="sy1">&lt;&lt;</span> InputFilename <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-&#160;
-	std<span class="sy4">::</span><span class="me2">string</span> OutputFilename <span class="sy1">=</span> argv<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><span class="sy4">;</span>
-	std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Output file: &quot;</span> <span class="sy1">&lt;&lt;</span> OutputFilename <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-&#160;
-	std<span class="sy4">::</span><span class="me2">string</span> strTriangleCount <span class="sy1">=</span> argv<span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span> <span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">**</span> argv <span class="br0">)</span>
+<span class="br0">{</span>
+	<span class="kw1">if</span><span class="br0">(</span>argc <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">4</span><span class="br0">)</span>
+	<span class="br0">{</span>
+		std<span class="sy4">::</span> <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Required arguments: InputFilename OutputFilename"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+		<span class="kw3">exit</span><span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
+	<span class="br0">}</span>
+ 
+	std<span class="sy4">::</span><span class="me2">string</span> InputFilename <span class="sy1">=</span> argv<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="sy4">;</span>
+	std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Input file: "</span> <span class="sy1">&lt;&lt;</span> InputFilename <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+ 
+	std<span class="sy4">::</span><span class="me2">string</span> OutputFilename <span class="sy1">=</span> argv<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
+	std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Output file: "</span> <span class="sy1">&lt;&lt;</span> OutputFilename <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+ 
+	std<span class="sy4">::</span><span class="me2">string</span> strTriangleCount <span class="sy1">=</span> argv<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span><span class="sy4">;</span>
 	std<span class="sy4">::</span><span class="me2">stringstream</span> ssTriangleCount<span class="sy4">;</span>
 	ssTriangleCount <span class="sy1">&lt;&lt;</span> strTriangleCount<span class="sy4">;</span>
 	<span class="kw4">unsigned</span> <span class="kw4">int</span> TriangleCount<span class="sy4">;</span>
 	ssTriangleCount <span class="sy1">&gt;&gt;</span> TriangleCount<span class="sy4">;</span>
-&#160;
+ 
 	<span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">VTKPolyDataReader</span><span class="sy1">&lt;</span> MeshType <span class="sy1">&gt;</span>  ReaderType<span class="sy4">;</span>
-&#160;
-	ReaderType<span class="sy4">::</span><span class="me2">Pointer</span> polyDataReader <span class="sy1">=</span> ReaderType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+	ReaderType<span class="sy4">::</span><span class="me2">Pointer</span> polyDataReader <span class="sy1">=</span> ReaderType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
 	<span class="kw4">typedef</span> ReaderType<span class="sy4">::</span><span class="me2">PointType</span>   PointType<span class="sy4">;</span>
 	<span class="kw4">typedef</span> ReaderType<span class="sy4">::</span><span class="me2">VectorType</span>  VectorType<span class="sy4">;</span>
-&#160;
-	polyDataReader<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span>InputFilename.<span class="me1">c_str</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+	polyDataReader<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span>InputFilename.<span class="me1">c_str</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+ 
 	<span class="kw2">try</span>
-	<span class="br0">&#123;</span>
-		std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Trying to read...&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-		polyDataReader<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	<span class="br0">&#125;</span>
-	<span class="kw2">catch</span><span class="br0">&#40;</span> itk<span class="sy4">::</span><span class="me2">ExceptionObject</span> <span class="sy3">&amp;</span> excp <span class="br0">&#41;</span>
-	<span class="br0">&#123;</span>
-		std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Error during Update() &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+	<span class="br0">{</span>
+		std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Trying to read..."</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+		polyDataReader<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+	<span class="br0">}</span>
+	<span class="kw2">catch</span><span class="br0">(</span> itk<span class="sy4">::</span><span class="me2">ExceptionObject</span> <span class="sy3">&amp;</span> excp <span class="br0">)</span>
+	<span class="br0">{</span>
+		std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Error during Update() "</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
 		std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> excp <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
 		<span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
-	<span class="br0">&#125;</span>
-&#160;
-	std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;polyDataReader:&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span> <span class="sy1">&lt;&lt;</span>
+	<span class="br0">}</span>
+ 
+	std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"polyDataReader:"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span> <span class="sy1">&lt;&lt;</span>
 			polyDataReader <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-&#160;
-	MeshType<span class="sy4">::</span><span class="me2">Pointer</span> mesh <span class="sy1">=</span> polyDataReader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+	MeshType<span class="sy4">::</span><span class="me2">Pointer</span> mesh <span class="sy1">=</span> polyDataReader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
 	<span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">NumberOfFacesCriterion</span><span class="sy1">&lt;</span>MeshType<span class="sy1">&gt;</span> CriterionType<span class="sy4">;</span>
-	CriterionType<span class="sy4">::</span><span class="me2">Pointer</span> criterion <span class="sy1">=</span> CriterionType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	criterion<span class="sy2">-</span><span class="sy1">&gt;</span>SetTopologicalChange<span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	criterion<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfElements<span class="br0">&#40;</span>TriangleCount<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+	CriterionType<span class="sy4">::</span><span class="me2">Pointer</span> criterion <span class="sy1">=</span> CriterionType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+	criterion<span class="sy2">-</span><span class="sy1">&gt;</span>SetTopologicalChange<span class="br0">(</span><span class="kw2">false</span><span class="br0">)</span><span class="sy4">;</span>
+	criterion<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfElements<span class="br0">(</span>TriangleCount<span class="br0">)</span><span class="sy4">;</span>
+ 
 	<span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">QuadEdgeMeshSquaredEdgeLengthDecimation</span><span class="sy1">&lt;</span>MeshType,MeshType,CriterionType<span class="sy1">&gt;</span> DecimationType<span class="sy4">;</span>
-&#160;
-	DecimationType<span class="sy4">::</span><span class="me2">Pointer</span> decimate <span class="sy1">=</span> DecimationType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	decimate<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>mesh<span class="br0">&#41;</span><span class="sy4">;</span>
-	decimate<span class="sy2">-</span><span class="sy1">&gt;</span>SetCriterion<span class="br0">&#40;</span>criterion<span class="br0">&#41;</span><span class="sy4">;</span>
-	decimate<span class="sy2">-</span><span class="sy1">&gt;</span>SetRelocate<span class="br0">&#40;</span><span class="kw2">true</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	decimate<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-	MeshType<span class="sy4">::</span><span class="me2">Pointer</span> OutputMesh <span class="sy1">=</span> decimate<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-	<span class="br0">&#123;</span>
+ 
+	DecimationType<span class="sy4">::</span><span class="me2">Pointer</span> decimate <span class="sy1">=</span> DecimationType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+	decimate<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>mesh<span class="br0">)</span><span class="sy4">;</span>
+	decimate<span class="sy2">-</span><span class="sy1">&gt;</span>SetCriterion<span class="br0">(</span>criterion<span class="br0">)</span><span class="sy4">;</span>
+	decimate<span class="sy2">-</span><span class="sy1">&gt;</span>SetRelocate<span class="br0">(</span><span class="kw2">true</span><span class="br0">)</span><span class="sy4">;</span>
+	decimate<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+	MeshType<span class="sy4">::</span><span class="me2">Pointer</span> OutputMesh <span class="sy1">=</span> decimate<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+	<span class="br0">{</span>
 	<span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">VTKPolyDataWriter</span><span class="sy1">&lt;</span> MeshType <span class="sy1">&gt;</span>  WriterType<span class="sy4">;</span>
-&#160;
-	WriterType<span class="sy4">::</span><span class="me2">Pointer</span> polyDataWriter <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-	polyDataWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span>OutputFilename.<span class="me1">c_str</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	polyDataWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>OutputMesh<span class="br0">&#41;</span><span class="sy4">;</span>
-	polyDataWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	polyDataWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Write<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	<span class="br0">&#125;</span>
-&#160;
+ 
+	WriterType<span class="sy4">::</span><span class="me2">Pointer</span> polyDataWriter <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+	polyDataWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span>OutputFilename.<span class="me1">c_str</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+	polyDataWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>OutputMesh<span class="br0">)</span><span class="sy4">;</span>
+	polyDataWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+	polyDataWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Write<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+	<span class="br0">}</span>
+ 
 	<span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
-
+<span class="br0">}</span></pre></div></div>
 <!-- 
 NewPP limit report
 CPU time usage: 0.064 seconds
@@ -212,9 +212,7 @@ Template argument size: 0/2097152 bytes
 Highest expansion depth: 2/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3938-0!*!*!*!*!*!* and timestamp 20150401132136 and revision id 35000
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/Meshes/Decimation&amp;oldid=35000">http://itk.org/Wiki/index.php?title=ITK/Examples/Meshes/Decimation&amp;oldid=35000</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

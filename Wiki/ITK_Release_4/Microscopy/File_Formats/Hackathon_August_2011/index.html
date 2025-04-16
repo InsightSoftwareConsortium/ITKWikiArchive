@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK Release 4/Microscopy/File Formats/Hackathon August 2011</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"2d5350d3c47d519634be36c9","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/Microscopy/File_Formats/Hackathon_August_2011","wgTitle":"ITK Release 4/Microscopy/File Formats/Hackathon August 2011","wgCurRevisionId":42363,"wgRevisionId":42363,"wgArticleId":9463,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/Microscopy/File_Formats/Hackathon_August_2011","wgRelevantArticleId":9463,"wgIsProbablyEditable":!1,
 "wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Microscopy_File_Formats_Hackathon_August_2011 rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Goals"><span class="tocnumber">1</span> <span class="toctext">Goals</span></a>
 <ul>
@@ -53,12 +54,11 @@
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Goals">Goals</span></h1>
 <h2><span class="mw-headline" id="TIFF_Update">TIFF Update</span></h2>
 <ul><li>Background
-<ul><li><a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/ITK_Release_4/Microscopy/File_Formats#TIFF_4.0">TIFF 4.0</a></li>
-<li><a rel="nofollow" class="external text" href="https://itk.icts.uiowa.edu/jira/browse/ITK-159">ITK-159 </a></li></ul></li>
+<ul><li><a class="external text" href="http://www.vtk.org/Wiki/ITK_Release_4/Microscopy/File_Formats#TIFF_4.0" rel="nofollow">TIFF 4.0</a></li>
+<li><a class="external text" href="https://itk.icts.uiowa.edu/jira/browse/ITK-159" rel="nofollow">ITK-159 </a></li></ul></li>
 <li>Tasks
 <ul><li>Complete update of TIFF 4.0 library</li>
 <li>Verify usage for TIFF files larger than 4Gb</li>
@@ -66,7 +66,7 @@
 <li>Verify usage for TIFF extra resolutions</li></ul></li></ul>
 <h2><span class="mw-headline" id="JPEG2000_Review">JPEG2000 Review</span></h2>
 <ul><li>Background
-<ul><li><a rel="nofollow" class="external text" href="http://www.vtk.org/Wiki/ITK_Release_4/Microscopy/File_Formats#JPEG2000">JPEG2000</a></li></ul></li>
+<ul><li><a class="external text" href="http://www.vtk.org/Wiki/ITK_Release_4/Microscopy/File_Formats#JPEG2000" rel="nofollow">JPEG2000</a></li></ul></li>
 <li>Tasks
 <ul><li>Verify usage for JPEG2000 files larger than 4Gb</li>
 <li>Verify usage for JPEG2000 streaming</li>
@@ -74,22 +74,22 @@
 <h2><span class="mw-headline" id="ITK_IO_API">ITK IO API</span></h2>
 <ul><li>Propose API for managing multi-resolution files</li>
 <li>Image Interpretation layer
-<ul><li><a href="/Wiki/images/7/73/ITK-ImageInterpretationLayer.odp" class="internal" title="ITK-ImageInterpretationLayer.odp">ODP</a></li>
-<li><a href="/Wiki/images/3/3e/ITK-ImageInterpretationLayer.pdf" class="internal" title="ITK-ImageInterpretationLayer.pdf">PDF</a></li></ul></li>
+<ul><li><a class="internal" href="/Wiki/images/7/73/ITK-ImageInterpretationLayer.odp" title="ITK-ImageInterpretationLayer.odp">ODP</a></li>
+<li><a class="internal" href="/Wiki/images/3/3e/ITK-ImageInterpretationLayer.pdf" title="ITK-ImageInterpretationLayer.pdf">PDF</a></li></ul></li>
 <li>Issues
 <ul><li>Some file formats ( i.e. TIFF ) support multi-images in a single file</li>
 <li>This can be used for multi-resolution or volumes, how should this be accessed? Should a Image IO present a set of images?</li>
 <li>The current ITK Image Pyramid is designed to maintain the physical center of the images. However for many sized images this lead to changing of physical locations of scale-space extrema.</li>
 <li>How do we indicate what type of operator was used to generate the multi-resolutions? Can we even know for certain filter formats?</li></ul></li></ul>
 <h2><span class="mw-headline" id="TIFF_Microscopy_Units">TIFF Microscopy Units</span></h2>
-<ul><li>What to do about lack of units in ITK spacing&#160;?
-<ul><li>mm&#160;?</li>
-<li>Introduce an enum type&#160;? a class&#160;?</li>
-<li>Introduce a units conversion class&#160;?
+<ul><li>What to do about lack of units in ITK spacing ?
+<ul><li>mm ?</li>
+<li>Introduce an enum type ? a class ?</li>
+<li>Introduce a units conversion class ?
 <ul><li>To centralize the computation and prevent inconsistent units conversion.
 <ul><li>Think of the Mars Rover...</li></ul></li></ul></li></ul></li></ul>
 <h2><span class="mw-headline" id="Bioformats_Patch">Bioformats Patch</span></h2>
-<ul><li>Review Gaetan's patch to interface to Bioformats&#160;?</li></ul>
+<ul><li>Review Gaetan's patch to interface to Bioformats ?</li></ul>
 <h1><span class="mw-headline" id="Participants">Participants</span></h1>
 <h2><span class="mw-headline" id="On_Site">On Site</span></h2>
 <ul><li>Brad Lowekamp</li>
@@ -113,19 +113,19 @@
 <li>3:30 Streaming tests on TIFF files</li>
 <li>5:30 Adjourn</li></ul>
 <h2><span class="mw-headline" id="Day_2">Day 2</span></h2>
-<ul><li>9:30am Image interpretation layer (database&#160;?)(Channels/Resolutions/Size)</li>
+<ul><li>9:30am Image interpretation layer (database ?)(Channels/Resolutions/Size)</li>
 <li>10:30am Managing files with internal multi-resolution</li>
 <li>11:30am Managing TIFF files with J2K compression</li>
 <li>12:30pm Lunch</li>
 <li>1:30pm Tests of JPEG2000 streaming</li>
 <li>3:30pm Tests of JPEG2000 multi-resolution</li>
 <li>4:00pm Adjourn</li></ul>
-<p><br />
+<p><br/>
 </p>
 <h1><span class="mw-headline" id="Results">Results</span></h1>
 <h2><span class="mw-headline" id="Completed">Completed</span></h2>
 <ul><li>Have working Gerrit patch with TIFF 4.0 Beta 7</li></ul>
-<p><a rel="nofollow" class="external free" href="http://review.source.kitware.com/#change,2510">http://review.source.kitware.com/#change,2510</a>
+<p><a class="external free" href="http://review.source.kitware.com/#change,2510" rel="nofollow">http://review.source.kitware.com/#change,2510</a>
 </p>
 <ul><li><ul><li>Five failing tests
 <ul><li>Only on Linux</li>
@@ -138,7 +138,7 @@
 <li>Succeeded to read a TIFF image larger than 4Gb</li>
 <li>Succeeded to write a TIFF image larger than 4Gb</li>
 <li>Uploaded Example Aperio files to MIDAS
-<ul><li><a rel="nofollow" class="external free" href="http://midas.kitware.com/community/view/61">http://midas.kitware.com/community/view/61</a></li></ul></li>
+<ul><li><a class="external free" href="http://midas.kitware.com/community/view/61" rel="nofollow">http://midas.kitware.com/community/view/61</a></li></ul></li>
 <li>Converted the Visible Human dataset to a single file, multi-frame TIFF image of size 13 Gb</li>
 <li class="mw-empty-elt"></li></ul>
 <h2><span class="mw-headline" id="Work_in_Progress">Work in Progress</span></h2>
@@ -164,10 +164,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9463-0!canonical and timestamp 20220521084922 and revision id 42363. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Microscopy/File_Formats/Hackathon_August_2011&amp;oldid=42363">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Microscopy/File_Formats/Hackathon_August_2011&amp;oldid=42363</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

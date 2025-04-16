@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Gerrit/ReviewPrimer</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"79347df480f88fc20a70c6f8","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Gerrit/ReviewPrimer","wgTitle":"ITK/Gerrit/ReviewPrimer","wgCurRevisionId":41281,"wgRevisionId":41281,"wgArticleId":7012,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Gerrit/ReviewPrimer","wgRelevantArticleId":7012,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":
 "ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Gerrit_ReviewPrimer rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Gerrit code reviews can be relatively straightforward, but also give the reviewer a chance to look deep into proposed changes building and testing those changes locally.  This primer is intended to guide the reader through the process of a deep review of a code change.
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>Gerrit code reviews can be relatively straightforward, but also give the reviewer a chance to look deep into proposed changes building and testing those changes locally.  This primer is intended to guide the reader through the process of a deep review of a code change.
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Prerequisites"><span class="tocnumber">1</span> <span class="toctext">Prerequisites</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Select_an_open_change"><span class="tocnumber">2</span> <span class="toctext">Select an open change</span></a></li>
@@ -57,19 +58,18 @@
 <li class="toclevel-1 tocsection-19"><a href="#Did_it_all_work?"><span class="tocnumber">8</span> <span class="toctext">Did it all work?</span></a></li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="Prerequisites">Prerequisites</span></h2>
-<p>This primer assumes a working knowledge of how to build ITK.  No details will be given as to how to build and test the code (but they <a href="/Wiki/ITK_Getting_Started" class="mw-redirect" title="ITK Getting Started">can be found here</a>).  This primer also assumes a working knowledge of git.  Please see the <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">ITK git pages</a> and/or git books (<a rel="nofollow" class="external text" href="http://progit.org/book/">ProGit</a>, <a rel="nofollow" class="external text" href="http://book.git-scm.com/%7Cgit">Community Book</a>, or <a rel="nofollow" class="external text" href="http://www.amazon.com/Version-Control-Git-Collaborative-Development/dp/0596520123">Version Control with Git</a>).
-</p><p>Also required is a Gerrit change to review.  We will go through a <a rel="nofollow" class="external text" href="http://review.source.kitware.com/76">real life code review</a> of a change submitted to Gerrit.
+<p>This primer assumes a working knowledge of how to build ITK.  No details will be given as to how to build and test the code (but they <a class="mw-redirect" href="/Wiki/ITK_Getting_Started" title="ITK Getting Started">can be found here</a>).  This primer also assumes a working knowledge of git.  Please see the <a href="/ITKWikiArchive/Wiki/ITK/Git" title="ITK/Git">ITK git pages</a> and/or git books (<a class="external text" href="http://progit.org/book/" rel="nofollow">ProGit</a>, <a class="external text" href="http://book.git-scm.com/%7Cgit" rel="nofollow">Community Book</a>, or <a class="external text" href="http://www.amazon.com/Version-Control-Git-Collaborative-Development/dp/0596520123" rel="nofollow">Version Control with Git</a>).
+</p><p>Also required is a Gerrit change to review.  We will go through a <a class="external text" href="http://review.source.kitware.com/76" rel="nofollow">real life code review</a> of a change submitted to Gerrit.
 </p>
 <h2><span class="mw-headline" id="Select_an_open_change">Select an open change</span></h2>
-<p>The primary review site for Gerrit/ITK is <a rel="nofollow" class="external text" href="http://review.source.kitware.com">http://review.source.kitware.com</a>.  From this page, changes may be reviewed, etc.  Our review will be of <a rel="nofollow" class="external text" href="http://review.source.kitware.com/79">Change I5e76253f: Removed unecessary commented out debugging code</a> commited on Sept. 17, 2010.  Because Gerrit is dynamic, this primer will include many screenshots, <a rel="nofollow" class="external text" href="http://www.urbandictionary.com/define.php?term=YMMV">YMMV</a>.
+<p>The primary review site for Gerrit/ITK is <a class="external text" href="http://review.source.kitware.com" rel="nofollow">http://review.source.kitware.com</a>.  From this page, changes may be reviewed, etc.  Our review will be of <a class="external text" href="http://review.source.kitware.com/79" rel="nofollow">Change I5e76253f: Removed unecessary commented out debugging code</a> commited on Sept. 17, 2010.  Because Gerrit is dynamic, this primer will include many screenshots, <a class="external text" href="http://www.urbandictionary.com/define.php?term=YMMV" rel="nofollow">YMMV</a>.
 </p><p>The screen below is from Gerrit and contains several sections of interest.
-</p><p><b>A</b> This section gives details of the change author (Hans Johnson), project(ITK), destination branch (master), topic (removeUnnecessaryComments), dates and status.<br />
-<b>B</b> This section is the commit message.  The <a rel="nofollow" class="external text" href="http://who-t.blogspot.com/2009/12/on-commit-messages.html">standard format</a> for a commit is a single line summary, blank line, and longer description of the change.<br />
-<b>C</b> This section gives the details of the reviewers.  A developer may request certain registered developers as reviewers for the change, and any Gerrit registered user may comment.<br />
-<b>D</b> This section gives details on the submitted code. It provides details on how to pull the changes from Gerrit.  At the bottom is a list of files changed and links to diffs.<br />
-</p><p><a href="/Wiki/File:ReviewOverview.png" class="image"><img alt="ReviewOverview.png" src="/Wiki/images/8/85/ReviewOverview.png" decoding="async" width="945" height="730" /></a>
+</p><p><b>A</b> This section gives details of the change author (Hans Johnson), project(ITK), destination branch (master), topic (removeUnnecessaryComments), dates and status.<br/>
+<b>B</b> This section is the commit message.  The <a class="external text" href="http://who-t.blogspot.com/2009/12/on-commit-messages.html" rel="nofollow">standard format</a> for a commit is a single line summary, blank line, and longer description of the change.<br/>
+<b>C</b> This section gives the details of the reviewers.  A developer may request certain registered developers as reviewers for the change, and any Gerrit registered user may comment.<br/>
+<b>D</b> This section gives details on the submitted code. It provides details on how to pull the changes from Gerrit.  At the bottom is a list of files changed and links to diffs.<br/>
+</p><p><a class="image" href="/Wiki/File:ReviewOverview.png"><img alt="ReviewOverview.png" decoding="async" height="730" src="/Wiki/images/8/85/ReviewOverview.png" width="945"/></a>
 </p>
 <h2><span class="mw-headline" id="Review_steps">Review steps</span></h2>
 <ul><li>Review the code in Gerrit</li>
@@ -80,17 +80,17 @@
 <li>If the change is ready, push it into the official repository</li></ul>
 <h3><span class="mw-headline" id="Review_the_code_in_Gerrit">Review the code in Gerrit</span></h3>
 <p>The Gerrit developers have created a very useful system for code review that includes helpful shortcuts.  The available shortcuts can be accessed by pressing the '?' key.
-<a href="/Wiki/File:ReviewShortcuts.png" class="image"><img alt="ReviewShortcuts.png" src="/Wiki/images/8/8d/ReviewShortcuts.png" decoding="async" width="1146" height="410" /></a>
-</p><p>From the <a rel="nofollow" class="external text" href="http://review.source.kitware.com/79">change we are reviewing</a>, press &lt;enter&gt; or "o" to open the diff viewer.  You may also press the <a rel="nofollow" class="external text" href="http://review.source.kitware.com/#patch,sidebyside,79,1,/COMMIT_MSG">"Side-by-Side" link</a> next to "Commit Message".  This brings up the difference viewer.
-</p><p><a href="/Wiki/File:ReviewCommitMessage.png" class="image"><img alt="ReviewCommitMessage.png" src="/Wiki/images/d/db/ReviewCommitMessage.png" decoding="async" width="1103" height="312" /></a>
+<a class="image" href="/Wiki/File:ReviewShortcuts.png"><img alt="ReviewShortcuts.png" decoding="async" height="410" src="/Wiki/images/8/8d/ReviewShortcuts.png" width="1146"/></a>
+</p><p>From the <a class="external text" href="http://review.source.kitware.com/79" rel="nofollow">change we are reviewing</a>, press &lt;enter&gt; or "o" to open the diff viewer.  You may also press the <a class="external text" href="http://review.source.kitware.com/#patch,sidebyside,79,1,/COMMIT_MSG" rel="nofollow">"Side-by-Side" link</a> next to "Commit Message".  This brings up the difference viewer.
+</p><p><a class="image" href="/Wiki/File:ReviewCommitMessage.png"><img alt="ReviewCommitMessage.png" decoding="async" height="312" src="/Wiki/images/d/db/ReviewCommitMessage.png" width="1103"/></a>
 </p><p>The first file to review is the commit message.  At the top of the screen are some options controlling the display of the diffs.  Change to suit your tastes.
 </p><p>Since there is not much to see, press <b>]</b> to move to the next file:
-</p><p><a href="/Wiki/File:ReviewNextFile.png" class="image"><img alt="ReviewNextFile.png" src="/Wiki/images/f/fb/ReviewNextFile.png" decoding="async" width="1105" height="422" /></a>
+</p><p><a class="image" href="/Wiki/File:ReviewNextFile.png"><img alt="ReviewNextFile.png" decoding="async" height="422" src="/Wiki/images/f/fb/ReviewNextFile.png" width="1105"/></a>
 </p><p>Lines 12-14 have been commented out in the change.  Individual lines in the diff may be commented on by double clicking the line (when you are logged in to Gerrit).  These comments are preserved in Gerrit and shown to the author and reviewers when the review is completed.
 </p><p>Let's comment on line 14:
-</p><p><a href="/Wiki/File:ReviewComment.png" class="image"><img alt="ReviewComment.png" src="/Wiki/images/c/ce/ReviewComment.png" decoding="async" width="566" height="293" /></a>
+</p><p><a class="image" href="/Wiki/File:ReviewComment.png"><img alt="ReviewComment.png" decoding="async" height="293" src="/Wiki/images/c/ce/ReviewComment.png" width="566"/></a>
 </p><p>Clicking "Save" when finished:
-</p><p><a href="/Wiki/File:ReviewSavedComment.png" class="image"><img alt="ReviewSavedComment.png" src="/Wiki/images/6/68/ReviewSavedComment.png" decoding="async" width="567" height="178" /></a>
+</p><p><a class="image" href="/Wiki/File:ReviewSavedComment.png"><img alt="ReviewSavedComment.png" decoding="async" height="178" src="/Wiki/images/6/68/ReviewSavedComment.png" width="567"/></a>
 </p>
 <h4><span class="mw-headline" id="Useful_navigation_commands">Useful navigation commands</span></h4>
 <ul><li><b>n</b> Move to next diff within a file.</li>
@@ -99,9 +99,9 @@
 <li><b>[</b> Move to previous file.</li>
 <li><b>f</b> Show/Hide list of files.</li></ul>
 <h3><span class="mw-headline" id="Use_git_to_pull_the_changes">Use git to pull the changes</span></h3>
-<p>Press <b>u</b> or click <a rel="nofollow" class="external text" href="http://review.source.kitware.com/79">"Up to changes"</a> to return to the main change page.
+<p>Press <b>u</b> or click <a class="external text" href="http://review.source.kitware.com/79" rel="nofollow">"Up to changes"</a> to return to the main change page.
 </p><p>Gerrit implements a full git server and provides hints as to how to pull this particular change.  Be aware, that the hints are mainly command lines.
-</p><p><a href="/Wiki/File:ReviewPatchSet.png" class="image"><img alt="ReviewPatchSet.png" src="/Wiki/images/d/d5/ReviewPatchSet.png" decoding="async" width="937" height="137" /></a>
+</p><p><a class="image" href="/Wiki/File:ReviewPatchSet.png"><img alt="ReviewPatchSet.png" decoding="async" height="137" src="/Wiki/images/d/d5/ReviewPatchSet.png" width="937"/></a>
 </p><p>Gerrit allows git to use anonymous HTTP, SSH and authenticated HTTP to pull changes.  The protocol is set using the radio buttons on the right hand side of the <i>Download</i> section of Patch Set 1.  Git has several different ways to pull the changes:
 </p>
 <ul><li><b>checkout</b>  Pull the change locally and set the current branch to be this change.</li>
@@ -110,9 +110,9 @@
 <li><b>patch</b> Pull the changes, and apply them to the current branch, but don't commit.</li></ul>
 <p>In our case, let's do a checkout using anonymous HTTP (the default).  Click the clipboard icon to the right of the git command to copy the proper command to the local clipboard and paste into a terminal:
 </p>
-<pre>git fetch <a rel="nofollow" class="external free" href="http://review.source.kitware.com/p/ITK">http://review.source.kitware.com/p/ITK</a> refs/changes/79/79/1 &amp;&amp; git checkout FETCH_HEAD
+<pre>git fetch <a class="external free" href="http://review.source.kitware.com/p/ITK" rel="nofollow">http://review.source.kitware.com/p/ITK</a> refs/changes/79/79/1 &amp;&amp; git checkout FETCH_HEAD
 </pre>
-<p><a href="/Wiki/File:ReviewPull.png" class="image"><img alt="ReviewPull.png" src="/Wiki/images/a/ac/ReviewPull.png" decoding="async" width="784" height="256" /></a>
+<p><a class="image" href="/Wiki/File:ReviewPull.png"><img alt="ReviewPull.png" decoding="async" height="256" src="/Wiki/images/a/ac/ReviewPull.png" width="784"/></a>
 </p><p>If you notice my command prompt:
 </p>
 <pre>revelation:ITK((no branch)) blezek$
@@ -137,7 +137,7 @@ Date:   Fri Sep 17 19:31:37 2010 -0500
 
     Removed unecessary commented out debugging code.
 </pre>
-<p>This is helpful, but we don't have the Gerrit Change-Id, so it's hard to push changes back into Gerrit.  It is possible to use <a rel="nofollow" class="external text" href="http://www.mail-archive.com/cmake-commits@cmake.org/msg00633.html">hooks written by Kitware</a> to add the Change-Id lines to the log automatically, and this is the advised way to work. If the Change-Id line is not present in any commits you pull there is no problem unless a commit is rebased or edited. In that case you can simply copy and paste the full Change-Id line into the last line of the commit. Assuming you would like to insert the Change-Id line into the last commit,
+<p>This is helpful, but we don't have the Gerrit Change-Id, so it's hard to push changes back into Gerrit.  It is possible to use <a class="external text" href="http://www.mail-archive.com/cmake-commits@cmake.org/msg00633.html" rel="nofollow">hooks written by Kitware</a> to add the Change-Id lines to the log automatically, and this is the advised way to work. If the Change-Id line is not present in any commits you pull there is no problem unless a commit is rebased or edited. In that case you can simply copy and paste the full Change-Id line into the last line of the commit. Assuming you would like to insert the Change-Id line into the last commit,
 </p>
 <pre>$ git commit --amend
 </pre>
@@ -159,21 +159,21 @@ Date:   Fri Sep 17 19:31:37 2010 -0500
 </p>
 <h2><span class="mw-headline" id="Score_the_change_with_comments">Score the change with comments</span></h2>
 <p>Back on the change page, we click the "Review" button to enter our review.
-</p><p><a href="/Wiki/File:ReviewComments.png" class="image"><img alt="ReviewComments.png" src="/Wiki/images/c/c8/ReviewComments.png" decoding="async" width="406" height="583" /></a>
+</p><p><a class="image" href="/Wiki/File:ReviewComments.png"><img alt="ReviewComments.png" decoding="async" height="583" src="/Wiki/images/c/c8/ReviewComments.png" width="406"/></a>
 </p><p>Typically, a change requires a score of +2 to be incorporated into the official repo.  Certain reviewers are granted the +2 ability, while normal reviewers can give a score of +1.  In this case, the changes were straightforward and so I scored a +2.
 </p>
 <h2><span id="If_the_change_is_ready.2C_push_it_into_the_official_repository"></span><span class="mw-headline" id="If_the_change_is_ready,_push_it_into_the_official_repository">If the change is ready, push it into the official repository</span></h2>
 <p>Now that this change is ready, we can push it to the official ITK repository.  There are two methods for pushing changes, depending on your rights as an ITK developer.
 </p>
 <h3><span class="mw-headline" id="Staging_changes">Staging changes</span></h3>
-<p>Changes may pass through the <a rel="nofollow" class="external text" href="http://public.kitware.com/Wiki/Git/Workflow/Stage">ITK staging area</a>.  The basic instructions for this step are <a href="/ITKWikiArchive/Wiki/ITK/Git#Topic_Stage" title="ITK/Git">documented elsewhere</a>.
+<p>Changes may pass through the <a class="external text" href="http://public.kitware.com/Wiki/Git/Workflow/Stage" rel="nofollow">ITK staging area</a>.  The basic instructions for this step are <a href="/ITKWikiArchive/Wiki/ITK/Git#Topic_Stage" title="ITK/Git">documented elsewhere</a>.
 </p><p>First create a topic branch based on the changes we want to publish.
 </p>
 <pre>git checkout -b removeUnecessaryComments
 </pre>
 <p>Next, we setup a remote corresponding to the staging area for ITK.
 </p>
-<pre>git remote add stage <a rel="nofollow" class="external free" href="git://itk.org/stage/ITK.git">git://itk.org/stage/ITK.git</a>
+<pre>git remote add stage <a class="external free" href="git://itk.org/stage/ITK.git" rel="nofollow">git://itk.org/stage/ITK.git</a>
 git config remote.stage.pushurl git@itk.org:stage/ITK.git
 </pre>
 <p>The first line adds a remote called "stage" to our repo, and the second line configures that remote to push via SSH.
@@ -217,7 +217,7 @@ No topics staged!
 </pre>
 <h3><span class="mw-headline" id="Direct_commit_to_the_ITK_repo">Direct commit to the ITK repo</span></h3>
 <p>Rather than use the somewhat unwieldy staging process, properly <a href="/Wiki/Git/Publish#Push_Access" title="Git/Publish">authorized developers</a> can directly push to the ITK official repo.  Since the changes are already pushed into the official repo, I'll just present the commands and not actually execute them.
-</p><p>In my <a href="/Wiki/Git/WorkflowPrimer" title="Git/WorkflowPrimer">workflow</a>, I have a <a rel="nofollow" class="external text" href="http://github.com/dblezek/ITK">public GitHub</a> clone of the <a rel="nofollow" class="external text" href="http://itk.org/gitweb?p=ITK.git;a=summary">official ITK</a> repo.  My local repo is cloned from my GitHub clone of ITK.  To push changes up to the official ITK repo, I can make a remote to have a shorthand.
+</p><p>In my <a href="/Wiki/Git/WorkflowPrimer" title="Git/WorkflowPrimer">workflow</a>, I have a <a class="external text" href="http://github.com/dblezek/ITK" rel="nofollow">public GitHub</a> clone of the <a class="external text" href="http://itk.org/gitweb?p=ITK.git;a=summary" rel="nofollow">official ITK</a> repo.  My local repo is cloned from my GitHub clone of ITK.  To push changes up to the official ITK repo, I can make a remote to have a shorthand.
 </p>
 <ul><li>Create the remote</li>
 <li>Fetch remote changes</li>
@@ -227,10 +227,10 @@ No topics staged!
 <h4><span class="mw-headline" id="Create_the_remote">Create the remote</span></h4>
 <p>A remote is a git shorthand for a URL.  We need to create the ITK remote:
 </p>
-<pre>git remote add ITK <a rel="nofollow" class="external free" href="git://itk.org/ITK.git">git://itk.org/ITK.git</a>           # The ITK remote
+<pre>git remote add ITK <a class="external free" href="git://itk.org/ITK.git" rel="nofollow">git://itk.org/ITK.git</a>           # The ITK remote
 git config remote.ITK.pushurl git@itk.org:ITK.git  # Change the push side to use SSH
 </pre>
-<p>By default, the pull and push URLs of ITK are <a rel="nofollow" class="external free" href="git://itk.org/ITK.git">git://itk.org/ITK.git</a>.  The git protocol is read only, so we need to configure the push side of the ITK remote to use SSH (git@itk.org:ITK.git is understood to be SSH).
+<p>By default, the pull and push URLs of ITK are <a class="external free" href="git://itk.org/ITK.git" rel="nofollow">git://itk.org/ITK.git</a>.  The git protocol is read only, so we need to configure the push side of the ITK remote to use SSH (git@itk.org:ITK.git is understood to be SSH).
 </p>
 <h4><span class="mw-headline" id="Fetch_remote_changes">Fetch remote changes</span></h4>
 <p>Let's fetch in the latest changes from the official ITK repo to make sure we are in sync:
@@ -248,27 +248,27 @@ From git://itk.org/ITK
  * [new branch]      release    -&gt; ITK/release
 </pre>
 <h4><span class="mw-headline" id="Create_a_topic_branch">Create a topic branch</span></h4>
-<p>Since I used <a rel="nofollow" class="external text" href="http://www.kernel.org/pub/software/scm/git/docs/git-fetch.html"><b>fetch</b></a>, the ITK repo's changes are stored locally.  I next need to check them out, and create a new branch:
+<p>Since I used <a class="external text" href="http://www.kernel.org/pub/software/scm/git/docs/git-fetch.html" rel="nofollow"><b>fetch</b></a>, the ITK repo's changes are stored locally.  I next need to check them out, and create a new branch:
 </p>
 <pre>revelation:ITK((no branch)) blezek$ git checkout -b GerritPrimer ITK/master
 Branch GerritPrimer set up to track remote branch master from ITK.
 Switched to a new branch 'GerritPrimer'
 </pre>
-<p>I've now created a branch called GerritPrimer.  git reminds me that it will now <a rel="nofollow" class="external text" href="http://book.git-scm.com/4_tracking_branches.html">track</a> ITK/master when I do fetches or pulls.  This may or may not be a good thing...
+<p>I've now created a branch called GerritPrimer.  git reminds me that it will now <a class="external text" href="http://book.git-scm.com/4_tracking_branches.html" rel="nofollow">track</a> ITK/master when I do fetches or pulls.  This may or may not be a good thing...
 </p>
 <h4><span class="mw-headline" id="Merge_local_changes">Merge local changes</span></h4>
 <p>Edit, test, commit (see <a href="/Wiki/Git/WorkflowPrimer" title="Git/WorkflowPrimer">Workflow Primer</a>).
 </p>
 <h4><span class="mw-headline" id="Push_new_changes_to_the_official_ITK_repo">Push new changes to the official ITK repo</span></h4>
-<p>Pushing changes is really straight forward.  Remember that GerritPrimer was configured to be a <a rel="nofollow" class="external text" href="http://book.git-scm.com/4_tracking_branches.html">tracking branch</a>?  This means that if we have GerritPrimer checked out, pushes and pulls interact with the ITK/master branch on the official repo.  Neat huh?
+<p>Pushing changes is really straight forward.  Remember that GerritPrimer was configured to be a <a class="external text" href="http://book.git-scm.com/4_tracking_branches.html" rel="nofollow">tracking branch</a>?  This means that if we have GerritPrimer checked out, pushes and pulls interact with the ITK/master branch on the official repo.  Neat huh?
 </p>
 <pre> git push    # Nothing will come of this
 </pre>
-<p><br />
+<p><br/>
 </p>
 <h2><span id="Did_it_all_work.3F"></span><span class="mw-headline" id="Did_it_all_work?">Did it all work?</span></h2>
-<p>Let's <a rel="nofollow" class="external text" href="http://review.source.kitware.com/#change,79">check back into Gerrit</a> to see if our push to the staging area and official repo was properly merged and picked up by Gerrit.
-</p><p><a href="/Wiki/File:ReviewMerged.png" class="image"><img alt="ReviewMerged.png" src="/Wiki/images/b/bf/ReviewMerged.png" decoding="async" width="937" height="830" /></a>
+<p>Let's <a class="external text" href="http://review.source.kitware.com/#change,79" rel="nofollow">check back into Gerrit</a> to see if our push to the staging area and official repo was properly merged and picked up by Gerrit.
+</p><p><a class="image" href="/Wiki/File:ReviewMerged.png"><img alt="ReviewMerged.png" decoding="async" height="830" src="/Wiki/images/b/bf/ReviewMerged.png" width="937"/></a>
 </p><p>Indeed, it is.  We can see the status is now <b>Merged</b> and an automatic comment has been added that the change has been successfully pushed to the official repo.
 </p>
 <!-- 
@@ -291,11 +291,10 @@ Unstrip post‐expand size: 1521/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:7012-0!canonical and timestamp 20230921130657 and revision id 41281. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Gerrit/ReviewPrimer&amp;oldid=41281">https://public.kitware.com/Wiki/index.php?title=ITK/Gerrit/ReviewPrimer&amp;oldid=41281</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

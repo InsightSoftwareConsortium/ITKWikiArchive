@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4.7</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"27582c0c562aac065c3748fb","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4.7","wgTitle":"ITK/Release 4.7","wgCurRevisionId":57161,"wgRevisionId":57161,"wgArticleId":12341,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4.7","wgRelevantArticleId":12341,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready",
 "user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_7 rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>New Features
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>New Features
 </p>
-<hr />
+<hr/>
 <ul><li>Documentation Improvements</li></ul>
 <pre> - Update Software Guide registration examples to ITKv4 framework
  - Wiki and Sphinx examples are indexed in Doxygen
@@ -30,7 +31,7 @@
 </pre>
 <ul><li>Filtering Improvements</li></ul>
 <pre> - New Laplacian deformation filter’s for QuadEdgeMesh’s
-   - IJ article: <a rel="nofollow" class="external free" href="http://hdl.handle.net/10380/3410">http://hdl.handle.net/10380/3410</a>
+   - IJ article: <a class="external free" href="http://hdl.handle.net/10380/3410" rel="nofollow">http://hdl.handle.net/10380/3410</a>
 - FFTComplexToComplexImageFilter out of Review, Vnl, FFTW implementations
 - Faster recursive Gaussian on VectorImage
 </pre>
@@ -45,16 +46,16 @@
 <pre> - New method to erase a MetaDataDictionary entry
  - New global method to set physical space tolerance
  - New, experimental thread pool support
- - NumericTraits::Zero and&#160;::One are deprecated in favor of&#160;::ZeroValue() and&#160;::OneValue()
+ - NumericTraits::Zero and ::One are deprecated in favor of ::ZeroValue() and ::OneValue()
  - VTK bridge modules only request required VTK modules
 </pre>
 <ul><li>New Remote Modules</li></ul>
 <pre> - Higher Order Accurate Gradient
-   - <a rel="nofollow" class="external free" href="http://hdl.handle.net/10380/3231">http://hdl.handle.net/10380/3231</a>
+   - <a class="external free" href="http://hdl.handle.net/10380/3231" rel="nofollow">http://hdl.handle.net/10380/3231</a>
  - IO Transform DCMTK
-   - <a rel="nofollow" class="external free" href="http://hdl.handle.net/10380/3468">http://hdl.handle.net/10380/3468</a>
+   - <a class="external free" href="http://hdl.handle.net/10380/3468" rel="nofollow">http://hdl.handle.net/10380/3468</a>
  - Subdivision Quad Edge Mesh Filters
-   - <a rel="nofollow" class="external free" href="http://hdl.handle.net/10380/3307">http://hdl.handle.net/10380/3307</a>
+   - <a class="external free" href="http://hdl.handle.net/10380/3307" rel="nofollow">http://hdl.handle.net/10380/3307</a>
 </pre>
 <ul><li>Registration improvements</li></ul>
 <pre> - LandmarkBasedTransformInitializer supports BSplineTransform
@@ -96,11 +97,10 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:12341-0!canonical and timestamp 20240713223949 and revision id 57161. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4.7&amp;oldid=57161">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4.7&amp;oldid=57161</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

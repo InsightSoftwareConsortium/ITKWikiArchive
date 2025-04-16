@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Examples/Instructions/ForAdministrators</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -63,10 +64,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 /*]]>*/
 </style></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_Instructions_ForAdministrators skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Wiki Example Administrators have write access to the <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples">git repository</a>. Wiki Example Developers do not need write access to the repository since the definitive copy of the source code resides on the Wiki. If you are a Wiki Example User <a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForUsers" title="ITK/Examples/Instructions/ForUsers"> go here</a> or a Wiki Example Developer<a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForDevelopers" title="ITK/Examples/Instructions/ForDevelopers"> go here</a>.
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><p>Wiki Example Administrators have write access to the <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples" rel="nofollow">git repository</a>. Wiki Example Developers do not need write access to the repository since the definitive copy of the source code resides on the Wiki. If you are a Wiki Example User <a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForUsers" title="ITK/Examples/Instructions/ForUsers"> go here</a> or a Wiki Example Developer<a href="/ITKWikiArchive/Wiki/ITK/Examples/Instructions/ForDevelopers" title="ITK/Examples/Instructions/ForDevelopers"> go here</a>.
 </p><p>Wiki Example Administrators maintain the CMakeLists.txt files, example input files, example regression baseline files and synchronization scripts.
 </p>
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Organization_of_the_Example_Repository"><span class="tocnumber">1</span> <span class="toctext">Organization of the Example Repository</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Administrator_Tasks"><span class="tocnumber">2</span> <span class="toctext">Administrator Tasks</span></a>
@@ -83,12 +84,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="Organization_of_the_Example_Repository">Organization of the Example Repository</span></h2>
-<p>The wiki examples are stored in a <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples">git repository</a> hosted at <a rel="nofollow" class="external text" href="http://github.com/">github</a>. The repository contains several types of files:
+<p>The wiki examples are stored in a <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples" rel="nofollow">git repository</a> hosted at <a class="external text" href="http://github.com/" rel="nofollow">github</a>. The repository contains several types of files:
 </p>
 <ul>
-<li> Top Level <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/CMakeLists.txt"><i>CMakeLists.txt</i></a> file
+<li> Top Level <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/CMakeLists.txt" rel="nofollow"><i>CMakeLists.txt</i></a> file
 </li>
 </ul>
 <dl>
@@ -96,47 +96,47 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </dd>
 </dl>
 <ul>
-<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/mwclient"><i>mwclient</i></a> files
+<li> <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/mwclient" rel="nofollow"><i>mwclient</i></a> files
 </li>
 </ul>
 <dl>
-<dd><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/mwclient/">mwclient</a> is a python framework to access MediaWiki's API. The ScrapeWiki script uses it to pull pages from the wiki and create example source files.
+<dd><a class="external text" href="http://sourceforge.net/projects/mwclient/" rel="nofollow">mwclient</a> is a python framework to access MediaWiki's API. The ScrapeWiki script uses it to pull pages from the wiki and create example source files.
 </dd>
 </dl>
 <ul>
-<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/Admin/ScrapeWiki"><i>Admin/ScrapeWiki</i></a>
+<li> <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/Admin/ScrapeWiki" rel="nofollow"><i>Admin/ScrapeWiki</i></a>
 </li>
 </ul>
 <dl>
-<dd> This is a python script that uses <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/mwclient/">mwclient</a> to access the pages of the wiki. It looks for pages in <a href="/ITKWikiArchive/Wiki/ITK/Examples" title="ITK/Examples">ITK/Examples</a>. For each page, it looks for second level headings and stores the code that lies between <pre>&lt;source&gt; and &lt;/source&gt;</pre> into a file in the proper topic subdirectory. Anyone, including users, can run this script. It updates the current directory with changes or new examples. If you run this script, be sure to re-run cmake.
+<dd> This is a python script that uses <a class="external text" href="http://sourceforge.net/projects/mwclient/" rel="nofollow">mwclient</a> to access the pages of the wiki. It looks for pages in <a href="/ITKWikiArchive/Wiki/ITK/Examples" title="ITK/Examples">ITK/Examples</a>. For each page, it looks for second level headings and stores the code that lies between <pre>&lt;source&gt; and &lt;/source&gt;</pre> into a file in the proper topic subdirectory. Anyone, including users, can run this script. It updates the current directory with changes or new examples. If you run this script, be sure to re-run cmake.
 </dd>
 </dl>
 <ul>
-<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/Admin/UploadBaselines"><i>Admin/UploadBaselines</i></a>
+<li> <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/Admin/UploadBaselines" rel="nofollow"><i>Admin/UploadBaselines</i></a>
 </li>
 </ul>
 <dl>
-<dd> This is a python script that uses <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/mwclient/">mwclient</a> to upload example baselines to the Wiki. The baselines are located in the Wiki git repository in <a rel="nofollow" class="external autonumber" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/Testing/Baseline">[1]</a>. The script walks through the git baselines and checks to see if the baselines exist on the Wiki. If the baseline does not exist on the Wiki, the script uploads it. If the baseline does exist on the Wiki the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/MD5">md5 hash</a> is checked to see if the image has changed.
+<dd> This is a python script that uses <a class="external text" href="http://sourceforge.net/projects/mwclient/" rel="nofollow">mwclient</a> to upload example baselines to the Wiki. The baselines are located in the Wiki git repository in <a class="external autonumber" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/Testing/Baseline" rel="nofollow">[1]</a>. The script walks through the git baselines and checks to see if the baselines exist on the Wiki. If the baseline does not exist on the Wiki, the script uploads it. If the baseline does exist on the Wiki the <a class="external text" href="http://en.wikipedia.org/wiki/MD5" rel="nofollow">md5 hash</a> is checked to see if the image has changed.
 </dd>
 </dl>
 <ul>
-<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/Admin/CheckPagesForImages"><i>Admin/CheckPagesForImages</i></a>
+<li> <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/Admin/CheckPagesForImages" rel="nofollow"><i>Admin/CheckPagesForImages</i></a>
 </li>
 </ul>
 <dl>
-<dd> This is a python script that uses <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/mwclient/">mwclient</a> to check each example to see if it should have a reference to a baseline image. If a baseline image exists for an example, the script looks for a ''&lt;div&gt;&lt;/div&gt;'' tag. This tag contains a reference for the baseline image for the example. If the tag is not found, the script generates a cut/paste line to edit the page as well as a cut/paste line that has the proper ''&lt;div&gt;&lt;/div&gt;'' for the baseline image.
+<dd> This is a python script that uses <a class="external text" href="http://sourceforge.net/projects/mwclient/" rel="nofollow">mwclient</a> to check each example to see if it should have a reference to a baseline image. If a baseline image exists for an example, the script looks for a ''&lt;div&gt;&lt;/div&gt;'' tag. This tag contains a reference for the baseline image for the example. If the tag is not found, the script generates a cut/paste line to edit the page as well as a cut/paste line that has the proper ''&lt;div&gt;&lt;/div&gt;'' for the baseline image.
 </dd>
 </dl>
 <ul>
-<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/SyncRepoWithWiki.sh"><i>SyncRepoWithWiki.sh</i></a>
+<li> <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/blob/master/SyncRepoWithWiki.sh" rel="nofollow"><i>SyncRepoWithWiki.sh</i></a>
 </li>
 </ul>
 <dl>
-<dd> This shell script runs <i>ScrapeWiki</i> to create source files for all wiki examples. Then it uses git to add, remove or modify the source code. The resulting repository is pushed to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples">the github repository</a>. The script is run nightly by a cronjob on a designated host (currently BillsBasement). <b>NOTE: this script should only be run by one individual (currently Lorensen)</b>.
+<dd> This shell script runs <i>ScrapeWiki</i> to create source files for all wiki examples. Then it uses git to add, remove or modify the source code. The resulting repository is pushed to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples" rel="nofollow">the github repository</a>. The script is run nightly by a cronjob on a designated host (currently BillsBasement). <b>NOTE: this script should only be run by one individual (currently Lorensen)</b>.
 </dd>
 </dl>
 <ul>
-<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/Testing/Data"><i>Testing/Data</i></a>
+<li> <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/Testing/Data" rel="nofollow"><i>Testing/Data</i></a>
 </li>
 </ul>
 <dl>
@@ -144,11 +144,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </dd>
 </dl>
 <ul>
-<li> <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/Testing/Baseline"><i>Testing/Baseline</i></a>
+<li> <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/tree/master/Testing/Baseline" rel="nofollow"><i>Testing/Baseline</i></a>
 </li>
 </ul>
 <dl>
-<dd> Examples that produce images are regression tested. <a rel="nofollow" class="external text" href="http://www.cmake.org/Wiki/CMake_Testing_With_CTest">ctest</a> runs the examples and when appropriate, compares the output  of the example to a baseline image. Each topic has a directory in Testing/Baseline. All administrators can add and modify baseline images. 
+<dd> Examples that produce images are regression tested. <a class="external text" href="http://www.cmake.org/Wiki/CMake_Testing_With_CTest" rel="nofollow">ctest</a> runs the examples and when appropriate, compares the output  of the example to a baseline image. Each topic has a directory in Testing/Baseline. All administrators can add and modify baseline images. 
 </dd>
 </dl>
 <ul>
@@ -177,30 +177,30 @@ cd <i><b>MyTopic</b></i>
 <li> Create a CMakeLists.txt file
 </li>
 </ul>
-<hr />
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">PROJECT</span> <span class="sy0">(</span>MyTopic<span class="sy0">)</span>
-&#160;
+<hr/>
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">PROJECT</span> <span class="sy0">(</span>MyTopic<span class="sy0">)</span>
+ 
 <span class="kw1">SET</span><span class="sy0">(</span>KIT MyTopic<span class="sy0">)</span>
 <span class="kw1">SET</span><span class="sy0">(</span>KIT_LIBS itkHybrid<span class="sy0">)</span>
-&#160;
+ 
 <span class="kw1">IF</span><span class="sy0">(</span><span class="kw3">NOT</span> WikiExamples_BINARY_DIR<span class="sy0">)</span>
   <span class="kw1">FIND_PACKAGE</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
   <span class="kw1">INCLUDE</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">ENDIF</span><span class="sy0">(</span><span class="kw3">NOT</span> WikiExamples_BINARY_DIR<span class="sy0">)</span>
-&#160;
+ 
 <span class="co1">#</span>
 <span class="co1"># Build all .cxx files in the directory</span>
 <span class="kw1">FILE</span><span class="sy0">(</span>GLOB ALL_FILES *.cxx<span class="sy0">)</span>
 <span class="kw1">foreach</span><span class="sy0">(</span>SOURCE_FILE <span class="re0">${ALL_FILES}</span><span class="sy0">)</span>
-  <span class="kw1">STRING</span><span class="sy0">(</span><span class="kw3">REPLACE</span> <span class="st0">&quot;.cxx&quot;</span> <span class="st0">&quot;&quot;</span> TMP <span class="re0">${SOURCE_FILE}</span><span class="sy0">)</span>
-  <span class="kw1">STRING</span><span class="sy0">(</span><span class="kw3">REPLACE</span> <span class="re0">${CMAKE_CURRENT_SOURCE_DIR}</span>/ <span class="st0">&quot;&quot;</span> EXAMPLE <span class="re0">${TMP}</span><span class="sy0">)</span>
+  <span class="kw1">STRING</span><span class="sy0">(</span><span class="kw3">REPLACE</span> <span class="st0">".cxx"</span> <span class="st0">""</span> TMP <span class="re0">${SOURCE_FILE}</span><span class="sy0">)</span>
+  <span class="kw1">STRING</span><span class="sy0">(</span><span class="kw3">REPLACE</span> <span class="re0">${CMAKE_CURRENT_SOURCE_DIR}</span>/ <span class="st0">""</span> EXAMPLE <span class="re0">${TMP}</span><span class="sy0">)</span>
   <span class="kw1">ADD_EXECUTABLE</span><span class="sy0">(</span><span class="re0">${EXAMPLE}</span> <span class="re0">${EXAMPLE}</span>.cxx<span class="sy0">)</span>
   <span class="kw1">TARGET_LINK_LIBRARIES</span><span class="sy0">(</span><span class="re0">${EXAMPLE}</span> <span class="re0">${KIT_LIBS}</span><span class="sy0">)</span>
 <span class="kw1">endforeach</span><span class="sy0">(</span>SOURCE_FILE<span class="sy0">)</span>
-&#160;
+ 
 <span class="co1"># Testing</span>
 <span class="kw1">INCLUDE</span><span class="sy0">(</span><span class="re0">${WikiExamples_SOURCE_DIR}</span>/CMake/ExamplesTesting.cmake<span class="sy0">)</span></pre></div></div>
-<hr />
+<hr/>
 <ul>
 <li> Add the directory to the main CMakeLists.txt file
 </li>
@@ -230,14 +230,14 @@ git commit -m "ENH: Added topic MyTopic and CMakeLists.txt file." CMakeLists.txt
 <p>By default, the <i>CMakeLists.txt</i> in a topic directory creates a small test driver for each .cxx file it finds. Then it creates an <b>ADD_TEST</b> command. The default <b>ADD_TEST</b> command assumes that the test has no arguments.
 </p><p>Some tests require arguments. To prevent the <b>ADD_TEST</b> from being generated, add any examples that require arguments to the list <b>NEEDS_ARGS</b>:
 </p>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1">  <span class="kw1">SET</span><span class="sy0">(</span>NEEDS_ARGS 
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1">  <span class="kw1">SET</span><span class="sy0">(</span>NEEDS_ARGS 
     Example1
     Example2
   <span class="sy0">)</span>
   <span class="kw1">INCLUDE</span><span class="sy0">(</span><span class="re0">${WikiExamples_SOURCE_DIR}</span>/CMake/ExamplesTesting.cmake<span class="sy0">)</span></pre></div></div>
 <p>Then, provide an <b>ADD_TEST</b> for each:
 </p>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1">  <span class="kw1">ADD_TEST</span><span class="sy0">(</span><span class="re0">${KIT}</span>-Example1 <span class="re0">${EXECUTABLE_OUTPUT_PATH}</span>/<span class="re0">${KIT}</span>CxxTests
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1">  <span class="kw1">ADD_TEST</span><span class="sy0">(</span><span class="re0">${KIT}</span>-Example1 <span class="re0">${EXECUTABLE_OUTPUT_PATH}</span>/<span class="re0">${KIT}</span>CxxTests
     TestExample1  arg1 arg2<span class="sy0">)</span>
   <span class="kw1">ADD_TEST</span><span class="sy0">(</span><span class="re0">${KIT}</span>-Example2 <span class="re0">${EXECUTABLE_OUTPUT_PATH}</span>/<span class="re0">${KIT}</span>CxxTests
     TestExample2  arg1 arg2 arg3<span class="sy0">)</span></pre></div></div>
@@ -276,11 +276,11 @@ git push
 </pre>
 <p>You must add this tag to the top of the example page:
 </p><p>
- &lt;div class=&quot;floatright&quot;&gt;[[File:ITK_Examples_Baseline_'Folder'_Test'TestName'.png]]&lt;/div&gt;
+ &lt;div class="floatright"&gt;[[File:ITK_Examples_Baseline_'Folder'_Test'TestName'.png]]&lt;/div&gt;
 
 </p><p>An example is:
 
- &lt;div class=&quot;floatright&quot;&gt;[[File:ITK_Examples_Baseline_Filtering_TestLandmarkTransform.png]]&lt;/div&gt;
+ &lt;div class="floatright"&gt;[[File:ITK_Examples_Baseline_Filtering_TestLandmarkTransform.png]]&lt;/div&gt;
 
 </p>
 <h3><span class="mw-headline" id="Add_example_input_data">Add example input data</span></h3>
@@ -307,12 +307,12 @@ git push
 <li> Or create a ctest script. A starting ctest script (SampleBuildTest.cmake) is created when you run cmake. You should edit this line so we know where the submissions is coming from:
 </li>
 </ul>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">set</span><span class="sy0">(</span>CTEST_SITE <span class="st0">&quot;BillsBasement&quot;</span><span class="sy0">)</span></pre></div></div>
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">set</span><span class="sy0">(</span>CTEST_SITE <span class="st0">"BillsBasement"</span><span class="sy0">)</span></pre></div></div>
 <p>Then you should comment one of these, depending on which type of build you would like to submit.
 </p>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">set</span><span class="sy0">(</span>DASHBOARD Nightly<span class="sy0">)</span>
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">set</span><span class="sy0">(</span>DASHBOARD Nightly<span class="sy0">)</span>
 <span class="kw1">set</span><span class="sy0">(</span>DASHBOARD Experimental<span class="sy0">)</span></pre></div></div>
-<hr />
+<hr/>
 <dl>
 <dd>Copy the edited SampleBuildTest.cmake to <i><b>/home/foo/</b></i>WikiExamples.ctest. This can be run nightly from a cronjob (crontab -e)
 </dd>
@@ -320,7 +320,7 @@ git push
 <pre>0 23 * * * ctest -S <i><b>/home/foo/</b></i>WikiExamples.ctest -V  &amp;&gt; <i><b>/home/foo/</b></i>WikiExamplesNightly.log
 </pre>
 <h3><span class="mw-headline" id="Check_the_dashboard_frequently.21">Check the dashboard frequently!</span></h3>
-<p><a rel="nofollow" class="external free" href="http://www.cdash.org/CDash/index.php?project=ITKWikiExamples">http://www.cdash.org/CDash/index.php?project=ITKWikiExamples</a>
+<p><a class="external free" href="http://www.cdash.org/CDash/index.php?project=ITKWikiExamples" rel="nofollow">http://www.cdash.org/CDash/index.php?project=ITKWikiExamples</a>
 </p>
 <h3><span class="mw-headline" id="Updating_the_links_in_the_ITK_Doxygen">Updating the links in the ITK Doxygen</span></h3>
 <p>To create a patch with the latest example links added in the ITK header files (which turn into links in the Doxygen), use
@@ -338,9 +338,7 @@ Template argument size: 0/2097152 bytes
 Highest expansion depth: 2/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8919-0!*!0!!en!*!* and timestamp 20150331054040 and revision id 53484
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/Instructions/ForAdministrators&amp;oldid=53484">http://itk.org/Wiki/index.php?title=ITK/Examples/Instructions/ForAdministrators&amp;oldid=53484</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

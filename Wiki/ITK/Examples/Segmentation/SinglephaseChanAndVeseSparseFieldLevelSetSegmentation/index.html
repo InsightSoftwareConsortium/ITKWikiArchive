@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Examples/WishList/Segmentation/SinglephaseChanAndVeseSparseFieldLevelSetSegmentation</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="canonical" href="/ITKWikiArchive/Wiki/ITK/Examples/WishList/Segmentation/SinglephaseChanAndVeseSparseFieldLevelSetSegmentation" />
-<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="/ITKWikiArchive/Wiki/ITK/Examples/WishList/Segmentation/SinglephaseChanAndVeseSparseFieldLevelSetSegmentation" rel="canonical"/>
+<link href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -118,7 +119,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 /*]]>*/
 </style></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_WishList_Segmentation_SinglephaseChanAndVeseSparseFieldLevelSetSegmentation skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#SinglephaseChanAndVeseSparseFieldLevelSetSegmentation.cxx"><span class="tocnumber">1</span> <span class="toctext">SinglephaseChanAndVeseSparseFieldLevelSetSegmentation.cxx</span></a></li>
 <li class="toclevel-1"><a href="#CMakeLists.txt"><span class="tocnumber">2</span> <span class="toctext">CMakeLists.txt</span></a></li>
@@ -132,9 +133,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="SinglephaseChanAndVeseSparseFieldLevelSetSegmentation.cxx">SinglephaseChanAndVeseSparseFieldLevelSetSegmentation.cxx</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// The use of the ScalarChanAndVeseSparseLevelSetImageFilter is</span>
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// The use of the ScalarChanAndVeseSparseLevelSetImageFilter is</span>
 <span class="co1">// illustrated in the following example. The implementation of this filter in</span>
 <span class="co1">// ITK is based on the paper by Chan And Vese.  This</span>
 <span class="co1">// implementation extends the functionality of the</span>
@@ -151,28 +151,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co1">// Let's start by including the headers of the main filters involved in the</span>
 <span class="co1">// preprocessing.</span>
 <span class="co1">//</span>
-&#160;
-&#160;
-<span class="co2">#include &quot;itkScalarChanAndVeseSparseLevelSetImageFilter.h&quot;</span>
-<span class="co2">#include &quot;itkScalarChanAndVeseLevelSetFunctionData.h&quot;</span>
-<span class="co2">#include &quot;itkConstrainedRegionBasedLevelSetFunctionSharedData.h&quot;</span>
-<span class="co2">#include &quot;itkFastMarchingImageFilter.h&quot;</span>
-<span class="co2">#include &quot;itkImageFileReader.h&quot;</span>
-<span class="co2">#include &quot;itkImageFileWriter.h&quot;</span>
-<span class="co2">#include &quot;itkImage.h&quot;</span>
-<span class="co2">#include &quot;itkAtanRegularizedHeavisideStepFunction.h&quot;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">int</span> argc, <span class="kw4">char</span><span class="sy2">**</span>argv<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-  <span class="kw1">if</span><span class="br0">&#40;</span> argc <span class="sy1">&lt;</span> <span class="nu0">6</span> <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Missing arguments&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Usage: &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> argv<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; featureImage outputImage&quot;</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; startx starty seedValue&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+ 
+ 
+<span class="co2">#include "itkScalarChanAndVeseSparseLevelSetImageFilter.h"</span>
+<span class="co2">#include "itkScalarChanAndVeseLevelSetFunctionData.h"</span>
+<span class="co2">#include "itkConstrainedRegionBasedLevelSetFunctionSharedData.h"</span>
+<span class="co2">#include "itkFastMarchingImageFilter.h"</span>
+<span class="co2">#include "itkImageFileReader.h"</span>
+<span class="co2">#include "itkImageFileWriter.h"</span>
+<span class="co2">#include "itkImage.h"</span>
+<span class="co2">#include "itkAtanRegularizedHeavisideStepFunction.h"</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc, <span class="kw4">char</span><span class="sy2">**</span>argv<span class="br0">)</span>
+<span class="br0">{</span>
+  <span class="kw1">if</span><span class="br0">(</span> argc <span class="sy1">&lt;</span> <span class="nu0">6</span> <span class="br0">)</span>
+    <span class="br0">{</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Missing arguments"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Usage: "</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> argv<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" featureImage outputImage"</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" startx starty seedValue"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+ 
   <span class="kw4">unsigned</span> <span class="kw4">int</span> nb_iteration <span class="sy1">=</span> <span class="nu0">500</span><span class="sy4">;</span>
   <span class="kw4">double</span> rms <span class="sy1">=</span> <span class="nu0">0</span>.<span class="sy4">;</span>
   <span class="kw4">double</span> epsilon <span class="sy1">=</span> <span class="nu0">1</span>.<span class="sy4">;</span>
@@ -183,7 +183,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="kw4">double</span> volume <span class="sy1">=</span> <span class="nu0">0</span>.<span class="sy4">;</span>
   <span class="kw4">double</span> l1 <span class="sy1">=</span> <span class="nu0">1</span>.<span class="sy4">;</span>
   <span class="kw4">double</span> l2 <span class="sy1">=</span> <span class="nu0">1</span>.<span class="sy4">;</span>
-&#160;
+ 
   <span class="co1">//</span>
   <span class="co1">//  We now define the image type using a particular pixel type and</span>
   <span class="co1">//  dimension. In this case the \code{float} type is used for the pixels</span>
@@ -192,51 +192,51 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> Dimension <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
   <span class="kw4">typedef</span> <span class="kw4">float</span> ScalarPixelType<span class="sy4">;</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span> ScalarPixelType, Dimension <span class="sy1">&gt;</span> InternalImageType<span class="sy4">;</span>
-&#160;
-&#160;
+ 
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ScalarChanAndVeseLevelSetFunctionData</span><span class="sy1">&lt;</span> InternalImageType,
     InternalImageType <span class="sy1">&gt;</span> DataHelperType<span class="sy4">;</span>
-&#160;
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ConstrainedRegionBasedLevelSetFunctionSharedData</span><span class="sy1">&lt;</span>
     InternalImageType, InternalImageType, DataHelperType <span class="sy1">&gt;</span> SharedDataHelperType<span class="sy4">;</span>
-&#160;
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ScalarChanAndVeseLevelSetFunction</span><span class="sy1">&lt;</span> InternalImageType,
     InternalImageType, SharedDataHelperType <span class="sy1">&gt;</span> LevelSetFunctionType<span class="sy4">;</span>
-&#160;
-&#160;
+ 
+ 
   <span class="co1">//  We declare now the type of the numerically discretized Step and Delta functions that</span>
   <span class="co1">//  will be used in the level-set computations for foreground and background regions</span>
   <span class="co1">//</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">AtanRegularizedHeavisideStepFunction</span><span class="sy1">&lt;</span> ScalarPixelType,
     ScalarPixelType <span class="sy1">&gt;</span>  DomainFunctionType<span class="sy4">;</span>
-&#160;
-  DomainFunctionType<span class="sy4">::</span><span class="me2">Pointer</span> domainFunction <span class="sy1">=</span> DomainFunctionType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  domainFunction<span class="sy2">-</span><span class="sy1">&gt;</span>SetEpsilon<span class="br0">&#40;</span> epsilon <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  DomainFunctionType<span class="sy4">::</span><span class="me2">Pointer</span> domainFunction <span class="sy1">=</span> DomainFunctionType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  domainFunction<span class="sy2">-</span><span class="sy1">&gt;</span>SetEpsilon<span class="br0">(</span> epsilon <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// We instantiate reader and writer types in the following lines.</span>
   <span class="co1">//</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ImageFileReader</span><span class="sy1">&lt;</span> InternalImageType <span class="sy1">&gt;</span> ReaderType<span class="sy4">;</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ImageFileWriter</span><span class="sy1">&lt;</span> InternalImageType <span class="sy1">&gt;</span> WriterType<span class="sy4">;</span>
-&#160;
-  ReaderType<span class="sy4">::</span><span class="me2">Pointer</span> reader <span class="sy1">=</span> ReaderType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> writer <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  reader<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span> argv<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  reader<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span> argv<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  InternalImageType<span class="sy4">::</span><span class="me2">Pointer</span> featureImage <span class="sy1">=</span> reader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  ReaderType<span class="sy4">::</span><span class="me2">Pointer</span> reader <span class="sy1">=</span> ReaderType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> writer <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  reader<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span> argv<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="br0">)</span><span class="sy4">;</span>
+  reader<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span> argv<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  InternalImageType<span class="sy4">::</span><span class="me2">Pointer</span> featureImage <span class="sy1">=</span> reader<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  We declare now the type of the FastMarchingImageFilter that</span>
   <span class="co1">//  will be used to generate the initial level set in the form of a distance</span>
   <span class="co1">//  map.</span>
   <span class="co1">//</span>
   <span class="kw4">typedef</span>  itk<span class="sy4">::</span><span class="me2">FastMarchingImageFilter</span><span class="sy1">&lt;</span> InternalImageType, InternalImageType <span class="sy1">&gt;</span>
     FastMarchingFilterType<span class="sy4">;</span>
-&#160;
-  FastMarchingFilterType<span class="sy4">::</span><span class="me2">Pointer</span>  fastMarching <span class="sy1">=</span> FastMarchingFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  FastMarchingFilterType<span class="sy4">::</span><span class="me2">Pointer</span>  fastMarching <span class="sy1">=</span> FastMarchingFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  The FastMarchingImageFilter requires the user to provide a seed</span>
   <span class="co1">//  point from which the level set will be generated. The user can actually</span>
   <span class="co1">//  pass not only one seed point but a set of them. Note the the</span>
@@ -250,44 +250,44 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="co1">//</span>
   <span class="kw4">typedef</span> FastMarchingFilterType<span class="sy4">::</span><span class="me2">NodeContainer</span>  NodeContainer<span class="sy4">;</span>
   <span class="kw4">typedef</span> FastMarchingFilterType<span class="sy4">::</span><span class="me2">NodeType</span>       NodeType<span class="sy4">;</span>
-&#160;
-  NodeContainer<span class="sy4">::</span><span class="me2">Pointer</span> seeds <span class="sy1">=</span> NodeContainer<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  NodeContainer<span class="sy4">::</span><span class="me2">Pointer</span> seeds <span class="sy1">=</span> NodeContainer<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   InternalImageType<span class="sy4">::</span><span class="me2">IndexType</span>  seedPosition<span class="sy4">;</span>
-&#160;
-  seedPosition<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> argv<span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  seedPosition<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> argv<span class="br0">&#91;</span><span class="nu0">4</span><span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  <span class="kw4">const</span> <span class="kw4">double</span> initialDistance <span class="sy1">=</span> <span class="kw3">atof</span><span class="br0">&#40;</span> argv<span class="br0">&#91;</span><span class="nu0">5</span><span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  seedPosition<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">(</span> argv<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="br0">)</span><span class="sy4">;</span>
+  seedPosition<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">(</span> argv<span class="br0">[</span><span class="nu0">4</span><span class="br0">]</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  <span class="kw4">const</span> <span class="kw4">double</span> initialDistance <span class="sy1">=</span> <span class="kw3">atof</span><span class="br0">(</span> argv<span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   NodeType node<span class="sy4">;</span>
-&#160;
+ 
   <span class="kw4">const</span> <span class="kw4">double</span> seedValue <span class="sy1">=</span> <span class="sy2">-</span> initialDistance<span class="sy4">;</span>
-&#160;
-  node.<span class="me1">SetValue</span><span class="br0">&#40;</span> seedValue <span class="br0">&#41;</span><span class="sy4">;</span>
-  node.<span class="me1">SetIndex</span><span class="br0">&#40;</span> seedPosition <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  node.<span class="me1">SetValue</span><span class="br0">(</span> seedValue <span class="br0">)</span><span class="sy4">;</span>
+  node.<span class="me1">SetIndex</span><span class="br0">(</span> seedPosition <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  The list of nodes is initialized and then every node is inserted using</span>
   <span class="co1">//  the \code{InsertElement()}.</span>
   <span class="co1">//</span>
-  seeds<span class="sy2">-</span><span class="sy1">&gt;</span>Initialize<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  seeds<span class="sy2">-</span><span class="sy1">&gt;</span>InsertElement<span class="br0">&#40;</span> <span class="nu0">0</span>, node <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-&#160;
+  seeds<span class="sy2">-</span><span class="sy1">&gt;</span>Initialize<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  seeds<span class="sy2">-</span><span class="sy1">&gt;</span>InsertElement<span class="br0">(</span> <span class="nu0">0</span>, node <span class="br0">)</span><span class="sy4">;</span>
+ 
+ 
   <span class="co1">//  The set of seed nodes is passed now to the</span>
   <span class="co1">//  FastMarchingImageFilter with the method</span>
   <span class="co1">//  \code{SetTrialPoints()}.</span>
   <span class="co1">//</span>
-  fastMarching<span class="sy2">-</span><span class="sy1">&gt;</span>SetTrialPoints<span class="br0">&#40;</span>  seeds  <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-&#160;
+  fastMarching<span class="sy2">-</span><span class="sy1">&gt;</span>SetTrialPoints<span class="br0">(</span>  seeds  <span class="br0">)</span><span class="sy4">;</span>
+ 
+ 
   <span class="co1">//  Since the FastMarchingImageFilter is used here just as a</span>
   <span class="co1">//  Distance Map generator. It does not require a speed image as input.</span>
   <span class="co1">//  Instead the constant value $1.0$ is passed using the</span>
   <span class="co1">//  \code{SetSpeedConstant()} method.</span>
   <span class="co1">//</span>
-  fastMarching<span class="sy2">-</span><span class="sy1">&gt;</span>SetSpeedConstant<span class="br0">&#40;</span> <span class="nu16">1.0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  fastMarching<span class="sy2">-</span><span class="sy1">&gt;</span>SetSpeedConstant<span class="br0">(</span> <span class="nu16">1.0</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  The FastMarchingImageFilter requires the user to specify the</span>
   <span class="co1">//  size of the image to be produced as output. This is done using the</span>
   <span class="co1">//  \code{SetOutputSize()}. Note that the size is obtained here from the</span>
@@ -295,30 +295,30 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="co1">//  only after the \code{Update()} methods of this filter has been called</span>
   <span class="co1">//  directly or indirectly.</span>
   <span class="co1">//</span>
-  fastMarching<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputSize<span class="br0">&#40;</span>
-    featureImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetBufferedRegion<span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">GetSize</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  fastMarching<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  fastMarching<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputSize<span class="br0">(</span>
+    featureImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetBufferedRegion<span class="br0">(</span><span class="br0">)</span>.<span class="me1">GetSize</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+  fastMarching<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  We declare now the type of the ScalarChanAndVeseSparseLevelSetImageFilter that</span>
   <span class="co1">//  will be used to generate a segmentation.</span>
   <span class="co1">//</span>
-&#160;
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ScalarChanAndVeseSparseLevelSetImageFilter</span><span class="sy1">&lt;</span> InternalImageType,
     InternalImageType, InternalImageType, LevelSetFunctionType,
     SharedDataHelperType <span class="sy1">&gt;</span> MultiLevelSetType<span class="sy4">;</span>
-&#160;
-  MultiLevelSetType<span class="sy4">::</span><span class="me2">Pointer</span> levelSetFilter <span class="sy1">=</span> MultiLevelSetType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  MultiLevelSetType<span class="sy4">::</span><span class="me2">Pointer</span> levelSetFilter <span class="sy1">=</span> MultiLevelSetType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  We set the function count to 1 since a single level-set is being evolved.</span>
   <span class="co1">//</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFunctionCount<span class="br0">&#40;</span> <span class="nu0">1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFunctionCount<span class="br0">(</span> <span class="nu0">1</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  Set the feature image and initial level-set image as output of the</span>
   <span class="co1">//  fast marching image filter.</span>
   <span class="co1">//</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFeatureImage<span class="br0">&#40;</span> featureImage <span class="br0">&#41;</span><span class="sy4">;</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetLevelSet<span class="br0">&#40;</span> <span class="nu0">0</span>, fastMarching<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFeatureImage<span class="br0">(</span> featureImage <span class="br0">)</span><span class="sy4">;</span>
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetLevelSet<span class="br0">(</span> <span class="nu0">0</span>, fastMarching<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  Once activiated the level set evolution will stop if the convergence</span>
   <span class="co1">//  criteria or if the maximum number of iterations is reached.  The</span>
   <span class="co1">//  convergence criteria is defined in terms of the root mean squared (RMS)</span>
@@ -330,70 +330,70 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="co1">//  algorithm before the zero set leaks through the regions of low gradient</span>
   <span class="co1">//  in the contour of the anatomical structure to be segmented.</span>
   <span class="co1">//</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfIterations<span class="br0">&#40;</span> nb_iteration <span class="br0">&#41;</span><span class="sy4">;</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetMaximumRMSError<span class="br0">&#40;</span> rms <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfIterations<span class="br0">(</span> nb_iteration <span class="br0">)</span><span class="sy4">;</span>
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetMaximumRMSError<span class="br0">(</span> rms <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  Often, in real applications, images have different pixel resolutions. In such</span>
   <span class="co1">//  cases, it is best to use the native spacings to compute derivatives etc rather</span>
   <span class="co1">//  than sampling the images.</span>
   <span class="co1">//</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetUseImageSpacing<span class="br0">&#40;</span> <span class="nu0">1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetUseImageSpacing<span class="br0">(</span> <span class="nu0">1</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  For large images, we may want to compute the level-set over the initial supplied</span>
   <span class="co1">//  level-set image. This saves a lot of memory.</span>
   <span class="co1">//</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInPlace<span class="br0">&#40;</span> <span class="kw2">false</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInPlace<span class="br0">(</span> <span class="kw2">false</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  For the level set with phase 0, set different parameters and weights. This may</span>
   <span class="co1">//  to be set in a loop for the case of multiple level-sets evolving simultaneously.</span>
   <span class="co1">//</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetDomainFunction<span class="br0">&#40;</span> domainFunction <span class="br0">&#41;</span><span class="sy4">;</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetCurvatureWeight<span class="br0">&#40;</span> curvature_weight <span class="br0">&#41;</span><span class="sy4">;</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetAreaWeight<span class="br0">&#40;</span> area_weight <span class="br0">&#41;</span><span class="sy4">;</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetReinitializationSmoothingWeight<span class="br0">&#40;</span> reinitialization_weight <span class="br0">&#41;</span><span class="sy4">;</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetVolumeMatchingWeight<span class="br0">&#40;</span> volume_weight <span class="br0">&#41;</span><span class="sy4">;</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetVolume<span class="br0">&#40;</span> volume <span class="br0">&#41;</span><span class="sy4">;</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetLambda1<span class="br0">&#40;</span> l1 <span class="br0">&#41;</span><span class="sy4">;</span>
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetLambda2<span class="br0">&#40;</span> l2 <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetDomainFunction<span class="br0">(</span> domainFunction <span class="br0">)</span><span class="sy4">;</span>
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetCurvatureWeight<span class="br0">(</span> curvature_weight <span class="br0">)</span><span class="sy4">;</span>
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetAreaWeight<span class="br0">(</span> area_weight <span class="br0">)</span><span class="sy4">;</span>
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetReinitializationSmoothingWeight<span class="br0">(</span> reinitialization_weight <span class="br0">)</span><span class="sy4">;</span>
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetVolumeMatchingWeight<span class="br0">(</span> volume_weight <span class="br0">)</span><span class="sy4">;</span>
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetVolume<span class="br0">(</span> volume <span class="br0">)</span><span class="sy4">;</span>
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetLambda1<span class="br0">(</span> l1 <span class="br0">)</span><span class="sy4">;</span>
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetDifferenceFunction<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>SetLambda2<span class="br0">(</span> l2 <span class="br0">)</span><span class="sy4">;</span>
+ 
+  levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> levelSetFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw2">try</span>
-    <span class="br0">&#123;</span>
-    writer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-  <span class="kw2">catch</span><span class="br0">&#40;</span> itk<span class="sy4">::</span><span class="me2">ExceptionObject</span> <span class="sy3">&amp;</span> excep <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Exception caught&#160;!&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    <span class="br0">{</span>
+    writer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+  <span class="kw2">catch</span><span class="br0">(</span> itk<span class="sy4">::</span><span class="me2">ExceptionObject</span> <span class="sy3">&amp;</span> excep <span class="br0">)</span>
+    <span class="br0">{</span>
+    std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Exception caught !"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
     std<span class="sy4">::</span><span class="kw3">cerr</span> <span class="sy1">&lt;&lt;</span> excep <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="sy2">-</span><span class="nu0">1</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+ 
   <span class="kw1">return</span> <span class="kw2">EXIT_SUCCESS</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span></pre></div></div>
 <h2><span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
+ 
 <span class="kw1">project</span><span class="sy0">(</span>SinglephaseChanAndVeseSparseFieldLevelSetSegmentation<span class="sy0">)</span>
-&#160;
+ 
 <span class="kw1">find_package</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
 <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">if</span> <span class="sy0">(</span>ITKVtkGlue_LOADED<span class="sy0">)</span>
   <span class="kw1">find_package</span><span class="sy0">(</span>VTK REQUIRED<span class="sy0">)</span>
   <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${VTK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">endif</span><span class="sy0">()</span>
-&#160;
+ 
 <span class="kw1">add_executable</span><span class="sy0">(</span>SinglephaseChanAndVeseSparseFieldLevelSetSegmentation MACOSX_BUNDLE SinglephaseChanAndVeseSparseFieldLevelSetSegmentation.cxx<span class="sy0">)</span>
-&#160;
-<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+ 
+<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>SinglephaseChanAndVeseSparseFieldLevelSetSegmentation ITKReview <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>SinglephaseChanAndVeseSparseFieldLevelSetSegmentation <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
+<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
 <h2><span class="mw-headline" id="Download_and_Build_SinglephaseChanAndVeseSparseFieldLevelSetSegmentation">Download and Build SinglephaseChanAndVeseSparseFieldLevelSetSegmentation</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:SinglephaseChanAndVeseSparseFieldLevelSetSegmentation.tar">here to download <i>SinglephaseChanAndVeseSparseFieldLevelSetSegmentation</i></a> and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:SinglephaseChanAndVeseSparseFieldLevelSetSegmentation.tar" rel="nofollow">here to download <i>SinglephaseChanAndVeseSparseFieldLevelSetSegmentation</i></a> and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>SinglephaseChanAndVeseSparseFieldLevelSetSegmentation.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd SinglephaseChanAndVeseSparseFieldLevelSetSegmentation/build
@@ -428,7 +428,7 @@ Once the tarball <i>SinglephaseChanAndVeseSparseFieldLevelSetSegmentation.tar</i
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span class="mw-headline" id="ITK_.3C_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -441,9 +441,7 @@ Template argument size: 583/2097152 bytes
 Highest expansion depth: 3/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9094-0!*!0!!en!*!* and timestamp 20150330190302 and revision id 51021
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/WishList/Segmentation/SinglephaseChanAndVeseSparseFieldLevelSetSegmentation&amp;oldid=51021">http://itk.org/Wiki/index.php?title=ITK/Examples/WishList/Segmentation/SinglephaseChanAndVeseSparseFieldLevelSetSegmentation&amp;oldid=51021</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

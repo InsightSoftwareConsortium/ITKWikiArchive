@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4/Wrapping/BuildProcess</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a319044caf08211799cefb20","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Wrapping/BuildProcess","wgTitle":"ITK/Release 4/Wrapping/BuildProcess","wgCurRevisionId":61911,"wgRevisionId":61911,"wgArticleId":9052,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia shortcut box first parameter needs fixing","Inactive project pages"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Wrapping/BuildProcess","wgRelevantArticleId":9052,"wgIsProbablyEditable":!1,
 "wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Wrapping_BuildProcess rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><table class="metadata plainlinks ambox ambox-notice" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/30px-Historical.svg.png" decoding="async" width="30" height="38" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/45px-Historical.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/60px-Historical.svg.png 2x" /></div></td><td class="mbox-text"><span class="mbox-text-span">{{#switch:|User|User talk=<b>This user {{#ifeq:ITK/Release 4/Wrapping|ITK/Release 4/Wrapping/BuildProcess||sub}}page is currently inactive and is retained for historical reference.</b> {{#if: |It was last updated {{{last}}}.}}<br />If you want to revive discussion regarding the subject, you might try contacting <a href="/Wiki/index.php?title=User_talk:ITK&amp;action=edit&amp;redlink=1" class="new" title="User talk:ITK (page does not exist)">the user in question</a> or seeking broader input via a forum such as the <a href="http://www.wikipedia.org/wiki/Village_pump_(proposals)" class="extiw" title="wikipedia:Village pump (proposals)">village pump</a>.|#default={{#switch:{{{type}}}|policy=<b>This former <a href="http://www.wikipedia.org/wiki/Policies_and_guidelines" class="extiw" title="wikipedia:Policies and guidelines">Wikipedia policy</a>, no longer backed by community consensus, is retained for historical reference.</b>|guideline=<b>This former <a href="http://www.wikipedia.org/wiki/Policies_and_guidelines" class="extiw" title="wikipedia:Policies and guidelines">Wikipedia guideline</a>, no longer backed by community consensus, is retained for historical reference.</b>|
-<p>|section=<b>This section is currently out-of-date and may contain errors but is retained for historical reference. </b>{{#if: || For peer-reviewed, authoritative guidance on ITK, see <a rel="nofollow" class="external text" href="https://itk.org/ITKSoftwareGuide/html/">The ITK Software Guide.</a>. Additional guidance can be found via the <a rel="nofollow" class="external text" href="https://itk.org/ITK/help/mailing.html">mailing lists</a>.}}
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><table class="metadata plainlinks ambox ambox-notice" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><img alt="" decoding="async" height="38" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/30px-Historical.svg.png" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/45px-Historical.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Historical.svg/60px-Historical.svg.png 2x" width="30"/></div></td><td class="mbox-text"><span class="mbox-text-span">{{#switch:|User|User talk=<b>This user {{#ifeq:ITK/Release 4/Wrapping|ITK/Release 4/Wrapping/BuildProcess||sub}}page is currently inactive and is retained for historical reference.</b> {{#if: |It was last updated {{{last}}}.}}<br/>If you want to revive discussion regarding the subject, you might try contacting <a class="new" href="/Wiki/index.php?title=User_talk:ITK&amp;action=edit&amp;redlink=1" title="User talk:ITK (page does not exist)">the user in question</a> or seeking broader input via a forum such as the <a class="extiw" href="http://www.wikipedia.org/wiki/Village_pump_(proposals)" title="wikipedia:Village pump (proposals)">village pump</a>.|#default={{#switch:{{{type}}}|policy=<b>This former <a class="extiw" href="http://www.wikipedia.org/wiki/Policies_and_guidelines" title="wikipedia:Policies and guidelines">Wikipedia policy</a>, no longer backed by community consensus, is retained for historical reference.</b>|guideline=<b>This former <a class="extiw" href="http://www.wikipedia.org/wiki/Policies_and_guidelines" title="wikipedia:Policies and guidelines">Wikipedia guideline</a>, no longer backed by community consensus, is retained for historical reference.</b>|
+<p>|section=<b>This section is currently out-of-date and may contain errors but is retained for historical reference. </b>{{#if: || For peer-reviewed, authoritative guidance on ITK, see <a class="external text" href="https://itk.org/ITKSoftwareGuide/html/" rel="nofollow">The ITK Software Guide.</a>. Additional guidance can be found via the <a class="external text" href="https://itk.org/ITK/help/mailing.html" rel="nofollow">mailing lists</a>.}}
 </p>
-|woundup=<b>This page has been closed down by <a href="http://www.wikipedia.org/wiki/Consensus" class="extiw" title="wikipedia:Consensus">community consensus</a>, and is retained only for historical reference.</b> For peer-reviewed, authoritative guidance on ITK, see <a rel="nofollow" class="external text" href="https://itk.org/ITKSoftwareGuide/html/">The ITK Software Guide.</a> If you wish to restart discussion on the status of this page, seek community input via the <a rel="nofollow" class="external text" href="https://itk.org/ITK/help/mailing.html">mailing lists</a>].|#default=<b>This section is currently out-of-date and may contain errors but is retained for historical reference. </b>{{#if: || For peer-reviewed, authoritative guidance on ITK, see <a rel="nofollow" class="external text" href="https://itk.org/ITKSoftwareGuide/html/">The ITK Software Guide.</a> Additional guidance can be found via the <a rel="nofollow" class="external text" href="https://discourse.itk.org">ITK Discourse</a>.}}}} {{#if: |{{{comment}}}|}} {{#if: |It was last updated {{{last}}}.}}  }}</span></td><td class="mbox-imageright"><div style="width:52px">{{#if: | <div role="note" class="shortcutbox plainlist noprint" style="float: right; border: 1px solid #aaa; background: #fff; margin: 0; padding: 0.3em; text-align: center; line-height: 1.4em; font-weight: bold; font-size: smaller;">{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if: |<span id=""></span> }}<a href="http://www.wikipedia.org/wiki/Shortcut" class="extiw" title="wikipedia:Shortcut">Shortcut{{#if:|s}}</a>:<ul>{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if: |<li>[[ ]]</li>}}</ul>
+|woundup=<b>This page has been closed down by <a class="extiw" href="http://www.wikipedia.org/wiki/Consensus" title="wikipedia:Consensus">community consensus</a>, and is retained only for historical reference.</b> For peer-reviewed, authoritative guidance on ITK, see <a class="external text" href="https://itk.org/ITKSoftwareGuide/html/" rel="nofollow">The ITK Software Guide.</a> If you wish to restart discussion on the status of this page, seek community input via the <a class="external text" href="https://itk.org/ITK/help/mailing.html" rel="nofollow">mailing lists</a>].|#default=<b>This section is currently out-of-date and may contain errors but is retained for historical reference. </b>{{#if: || For peer-reviewed, authoritative guidance on ITK, see <a class="external text" href="https://itk.org/ITKSoftwareGuide/html/" rel="nofollow">The ITK Software Guide.</a> Additional guidance can be found via the <a class="external text" href="https://discourse.itk.org" rel="nofollow">ITK Discourse</a>.}}}} {{#if: |{{{comment}}}|}} {{#if: |It was last updated {{{last}}}.}}  }}</span></td><td class="mbox-imageright"><div style="width:52px">{{#if: | <div class="shortcutbox plainlist noprint" role="note" style="float: right; border: 1px solid #aaa; background: #fff; margin: 0; padding: 0.3em; text-align: center; line-height: 1.4em; font-weight: bold; font-size: smaller;">{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if:|<span id=""></span> }}{{#if: |<span id=""></span> }}<a class="extiw" href="http://www.wikipedia.org/wiki/Shortcut" title="wikipedia:Shortcut">Shortcut{{#if:|s}}</a>:<ul>{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if:|<li>[[]]</li>}}{{#if: |<li>[[ ]]</li>}}</ul>
 </div>{{#if:
 <p>| {{#ifexist:
 </p>
@@ -35,7 +36,7 @@
 }} }}</div></td></tr></tbody></table><p>{{#switch:|User|User talk=|#default={{#ifeq:{{{category}}}|no||}}}}
 </p><p>Wrapping build is done in several steps.
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Configuration"><span class="tocnumber">1</span> <span class="toctext">Configuration</span></a>
 <ul>
@@ -87,7 +88,6 @@
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Configuration">Configuration</span></h1>
 <p>The configuration is done with with the tool used to build ITK: CMake. All the files cited in this section are located in the <b>ITK/Wrapping/WrapITK directory</b>.
 </p><p>During this step, the template instantiations are generated with a several CMake macros. For each macro call of the template instantiation process, some callback macros specific of each language generator are called to generate the files and the commands needed to build the wrappers.
@@ -162,7 +162,7 @@ The template instantiation and the code generation are completely separated.
 <h3><span class="mw-headline" id="WRAP_ITK_BINDINGS_INSTALL">WRAP_ITK_BINDINGS_INSTALL</span></h3>
 <ul><li><ul><li>This new macro is introduced to take care of installation of the generated files specifically</li>
 <li>With the introduction of this macro, the earlier WRAP_ITK_INSTALL macro will now be installing all the WrapITK configuration files in the directory pointed to by ${CMAKE_INSTALL_PREFIX} and ${WRAP_ITK_INSTALL_PREFIX}, Whereas the new macro will put all the generated proxies(python) and modules(java,python) in the directory ${CMAKE_INSTALL_PREFIX}/lib/ITK-${ITK_VERSION_MAJOR}.${ITK_VERSION_MINOR}</li></ul></li></ul>
-<p><br />
+<p><br/>
 </p>
 <h1><span class="mw-headline" id="Build">Build</span></h1>
 <h2><span class="mw-headline" id="Generation_XML_descriptions_of_instantiations">Generation XML descriptions of instantiations</span></h2>
@@ -183,7 +183,7 @@ The template instantiation and the code generation are completely separated.
 <li>Manually written python files which reside in WrapITK/Python</li>
 <li>Language specific (.i, .in) files in WrapITK/Configuration/Languages.</li></ol>
 <p>To summarize, WRAP_ITK_BINDINGS_INSTALL macro takes care of installation of 2,3, 4 and 6. Whereas the WRAP_ITK_INSTALL macro takes care of 1, 5 and 7.
-</p><p><br />
+</p><p><br/>
 </p>
 <h1><span class="mw-headline" id="External_Project">External Project</span></h1>
 <p>With WrapITK, an external project is a way to extend the wrapping with custom classes outside ITK. The exact same macros are reused, but a single library is generally produced. External projects can be built using ITK from its build tree or from its installed tree.
@@ -297,10 +297,9 @@ Transclusion expansion time report (%,ms,calls,template)
  96.68%   93.434      1 Template:Mbox
   5.00%    4.831      1 Template:Ombox/shortcut
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9052-0!canonical and timestamp 20220812184857 and revision id 61911. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Wrapping/BuildProcess&amp;oldid=61911">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Wrapping/BuildProcess&amp;oldid=61911</a>"</div></div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/Wiki/index.php?title=Category:Wikipedia_shortcut_box_first_parameter_needs_fixing&amp;action=edit&amp;redlink=1" class="new" title="Category:Wikipedia shortcut box first parameter needs fixing (page does not exist)">Wikipedia shortcut box first parameter needs fixing</a></li><li><a href="/Wiki/index.php?title=Category:Inactive_project_pages&amp;action=edit&amp;redlink=1" class="new" title="Category:Inactive project pages (page does not exist)">Inactive project pages</a></li></ul></div></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

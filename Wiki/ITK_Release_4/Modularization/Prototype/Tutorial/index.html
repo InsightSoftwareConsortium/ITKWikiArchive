@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4/Modularization/Prototype/Tutorial</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"8dde4ea25162b05dfbfeed58","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4/Modularization/Prototype/Tutorial","wgTitle":"ITK/Release 4/Modularization/Prototype/Tutorial","wgCurRevisionId":44251,"wgRevisionId":44251,"wgArticleId":7973,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4/Modularization/Prototype/Tutorial","wgRelevantArticleId":7973,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],
 "wgRestrictionMove":[],"wgRedirectedFrom":"ITK_Release_4/Modularization/Prototype/Tutorial","wgInternalRedirectTargetUrl":"/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/Prototype/Tutorial"};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["mediawiki.action.view.redirect","site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
-<link rel="canonical" href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/Prototype/Tutorial"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="https://public.kitware.com/ITKWikiArchive/Wiki/ITK/Release_4/Modularization/Prototype/Tutorial" rel="canonical"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Modularization_Prototype_Tutorial rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
@@ -35,7 +36,6 @@
 <li class="toclevel-1 tocsection-7"><a href="#Tests_with_MIDAS_data"><span class="tocnumber">4</span> <span class="toctext">Tests with MIDAS data</span></a></li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Overview">Overview</span></h1>
 <ul><li>Toy modular ITK design</li></ul>
 <p>This tutorial demonstrates the prototype of modularized ITK with a toy example containing seven modules required to build Nrrd image I/O programs. The seven library modules are:
@@ -50,21 +50,21 @@
 </pre>
 <ul><li>CMake prototyping</li></ul>
 <p>To enable ITK developers download and configure the whole modularized ITK package, we have prototyped several CMake packaging strategies. The major challenge is to manage dependencies between the modules. Two approaches have been proposed so far and are demonstrated in this tutorial. 
-</p><p>One method uses "add_subdirectory" to include ITK modules in correct order according to their dependencies. Git submodule <a rel="nofollow" class="external autonumber" href="https://git.wiki.kernel.org/index.php/GitSubmoduleTutorial">[1]</a> is used to obtain all the modules all together with version controls.  Here we refer this approach as "itk-complete" approach (Method A), which is designed for ITK developers. Another approach is to use the state-of-the-art cmake function "add_export_project" to automate the process of pulling selected modules from their repositories. Users can select the specific modules they need for their applications from the cmake gui. We refer to this second approach as "itk-optional" approach (Method B).
+</p><p>One method uses "add_subdirectory" to include ITK modules in correct order according to their dependencies. Git submodule <a class="external autonumber" href="https://git.wiki.kernel.org/index.php/GitSubmoduleTutorial" rel="nofollow">[1]</a> is used to obtain all the modules all together with version controls.  Here we refer this approach as "itk-complete" approach (Method A), which is designed for ITK developers. Another approach is to use the state-of-the-art cmake function "add_export_project" to automate the process of pulling selected modules from their repositories. Users can select the specific modules they need for their applications from the cmake gui. We refer to this second approach as "itk-optional" approach (Method B).
 </p>
 <h1><span class="mw-headline" id="Requirements">Requirements</span></h1>
 <ul><li>A computer with a network connection</li>
 <li>A build environment (gcc / VS)</li>
-<li>CMake 2.8.2 installed(<a rel="nofollow" class="external autonumber" href="http://www.cmake.org/cmake/resources/software.html">[2]</a>)</li>
-<li>Git 1.7.x.x installed (<a rel="nofollow" class="external autonumber" href="http://git-scm.com/download">[3]</a>)</li></ul>
+<li>CMake 2.8.2 installed(<a class="external autonumber" href="http://www.cmake.org/cmake/resources/software.html" rel="nofollow">[2]</a>)</li>
+<li>Git 1.7.x.x installed (<a class="external autonumber" href="http://git-scm.com/download" rel="nofollow">[3]</a>)</li></ul>
 <h1><span class="mw-headline" id="Build_and_test_toy_modular_ITK">Build and test toy modular ITK</span></h1>
 <h2><span class="mw-headline" id="Method_A:_itk-complete">Method A: itk-complete</span></h2>
-<p>Download the itk-complete superproject package to the source directory (/src) using Git&#160;: 
+<p>Download the itk-complete superproject package to the source directory (/src) using Git : 
 </p>
-<pre>git clone <a rel="nofollow" class="external free" href="git://www.kitware.com/itk/itk-complete.git">git://www.kitware.com/itk/itk-complete.git</a>
+<pre>git clone <a class="external free" href="git://www.kitware.com/itk/itk-complete.git" rel="nofollow">git://www.kitware.com/itk/itk-complete.git</a>
 </pre>
 <p>In the created itk-complete directory: ".gitsubmodule" file contains all submodules' urls; "itk-depends" module contains the dependencies among the modules and cmake codes to configure the superproject according to the dependencies. You will also see empty directories created for the seven modules. 
-</p><p>Download toy modular ITK modules using <a rel="nofollow" class="external text" href="https://git.wiki.kernel.org/index.php/GitSubmoduleTutorial">git submodule</a>&#160;:
+</p><p>Download toy modular ITK modules using <a class="external text" href="https://git.wiki.kernel.org/index.php/GitSubmoduleTutorial" rel="nofollow">git submodule</a> :
 </p>
 <pre># enter the itk-complete directory 
 cd itk-complete
@@ -86,7 +86,7 @@ make
 </p><p>Test itk-complete with an example application:
 </p>
 <pre> # get the test package app-itk-complete
- git clone <a rel="nofollow" class="external free" href="git://kwsource.kitwarein.com/itk/app-itk-complete.git">git://kwsource.kitwarein.com/itk/app-itk-complete.git</a>
+ git clone <a class="external free" href="git://kwsource.kitwarein.com/itk/app-itk-complete.git" rel="nofollow">git://kwsource.kitwarein.com/itk/app-itk-complete.git</a>
 </pre>
 <pre> # cmake configure and generate
  cd /bin/app-itk-complete
@@ -94,12 +94,12 @@ make
  # build and test
  make test
 </pre>
-<p>Two tests in the application are both related to nrrd image IO. The "itkNrrdVectorImageReadWriteTest" tests with a vector nrrd input image which is automatically downloaded from  <a rel="nofollow" class="external text" href="http://midas.kitware.com/item/view/268">MIDAS database</a>  at the testing time (<a rel="nofollow" class="external text" href="http://www.itk.org/Wiki/ITK_Release_4/Modularization/Prototype/Tutorial#Tests_with_MIDAS_data">Test with MIDAS data</a>).
+<p>Two tests in the application are both related to nrrd image IO. The "itkNrrdVectorImageReadWriteTest" tests with a vector nrrd input image which is automatically downloaded from  <a class="external text" href="http://midas.kitware.com/item/view/268" rel="nofollow">MIDAS database</a>  at the testing time (<a class="external text" href="http://www.itk.org/Wiki/ITK_Release_4/Modularization/Prototype/Tutorial#Tests_with_MIDAS_data" rel="nofollow">Test with MIDAS data</a>).
 </p>
 <h2><span class="mw-headline" id="Method_B:_itk-optional">Method B: itk-optional</span></h2>
 <p>Download the itk-optional package using Git to the source directory (/src): 
 </p>
-<pre>git clone <a rel="nofollow" class="external free" href="git://www.kitware.com/itk/itk-optional.git">git://www.kitware.com/itk/itk-optional.git</a>
+<pre>git clone <a class="external free" href="git://www.kitware.com/itk/itk-optional.git" rel="nofollow">git://www.kitware.com/itk/itk-optional.git</a>
 </pre>
 <pre># add the submodule repository URLs
 cd /src/itk-optional
@@ -120,7 +120,7 @@ make
 </p><p>Test itk-complete with an example application:
 </p>
 <pre> # get the test package app-itk-optional
- git clone <a rel="nofollow" class="external free" href="git://itk.org/itk/app-itk-optional.git">git://itk.org/itk/app-itk-optional.git</a>
+ git clone <a class="external free" href="git://itk.org/itk/app-itk-optional.git" rel="nofollow">git://itk.org/itk/app-itk-optional.git</a>
  # configure and build
  cd /bin/app-itk-optional
  ccmake /src/app-itk-optional
@@ -130,35 +130,35 @@ make
 <p>The repositories of the seven modules in the toy modular ITK are listed as follows. They can be build separately with manually specified (via cmake gui) paths for their required depending modules.
 </p>
 <pre>#itk-vnl
-  <a rel="nofollow" class="external free" href="git://www.kitware.com/itk/itk-vnl.git">git://www.kitware.com/itk/itk-vnl.git</a>
+  <a class="external free" href="git://www.kitware.com/itk/itk-vnl.git" rel="nofollow">git://www.kitware.com/itk/itk-vnl.git</a>
 </pre>
 <pre>#itksys
- <a rel="nofollow" class="external free" href="git://www.kitware.com/itk/itksys.git">git://www.kitware.com/itk/itksys.git</a>
+ <a class="external free" href="git://www.kitware.com/itk/itksys.git" rel="nofollow">git://www.kitware.com/itk/itksys.git</a>
 </pre>
 <pre>#itk-zlib
- <a rel="nofollow" class="external free" href="git://www.kitware.com/itk/itk-zlib.git">git://www.kitware.com/itk/itk-zlib.git</a>
+ <a class="external free" href="git://www.kitware.com/itk/itk-zlib.git" rel="nofollow">git://www.kitware.com/itk/itk-zlib.git</a>
 </pre>
 <pre>#nrrdio
-  <a rel="nofollow" class="external free" href="git://www.kitware.com/itk/nrrdio.git">git://www.kitware.com/itk/nrrdio.git</a>
+  <a class="external free" href="git://www.kitware.com/itk/nrrdio.git" rel="nofollow">git://www.kitware.com/itk/nrrdio.git</a>
 </pre>
 <pre>#itk-common
- <a rel="nofollow" class="external free" href="git://www.kitware.com/itk/itk-common.git">git://www.kitware.com/itk/itk-common.git</a>
+ <a class="external free" href="git://www.kitware.com/itk/itk-common.git" rel="nofollow">git://www.kitware.com/itk/itk-common.git</a>
 </pre>
 <pre>#itk-io-common
- <a rel="nofollow" class="external free" href="git://www.kitware.com/itk/itk-io-common.git">git://www.kitware.com/itk/itk-io-common.git</a>
+ <a class="external free" href="git://www.kitware.com/itk/itk-io-common.git" rel="nofollow">git://www.kitware.com/itk/itk-io-common.git</a>
 </pre>
 <pre>#itk-io-nrrd
- <a rel="nofollow" class="external free" href="git://www.kitware.com:itk/itk/itk-io-nrrd.git">git://www.kitware.com:itk/itk/itk-io-nrrd.git</a>
+ <a class="external free" href="git://www.kitware.com:itk/itk/itk-io-nrrd.git" rel="nofollow">git://www.kitware.com:itk/itk/itk-io-nrrd.git</a>
 </pre>
 <p>CTest results of those modules can be found on the dashboard:
 </p>
-<pre><a rel="nofollow" class="external free" href="http://www.cdash.org/CDash/index.php?project=Insight#ITKv4_Modularization">http://www.cdash.org/CDash/index.php?project=Insight#ITKv4_Modularization</a>
+<pre><a class="external free" href="http://www.cdash.org/CDash/index.php?project=Insight#ITKv4_Modularization" rel="nofollow">http://www.cdash.org/CDash/index.php?project=Insight#ITKv4_Modularization</a>
 </pre>
 <h1><span class="mw-headline" id="Tests_with_MIDAS_data">Tests with MIDAS data</span></h1>
 <p>The testing data in this tutorial are all stored remotely in MIDAS.
 Details of how to use MIDA data in testing can be found at:
 </p>
-<pre><a rel="nofollow" class="external free" href="http://www.kitware.com/midaswiki/index.php/MIDAS%2BCTest">http://www.kitware.com/midaswiki/index.php/MIDAS%2BCTest</a>
+<pre><a class="external free" href="http://www.kitware.com/midaswiki/index.php/MIDAS%2BCTest" rel="nofollow">http://www.kitware.com/midaswiki/index.php/MIDAS%2BCTest</a>
 </pre>
 <!-- 
 NewPP limit report
@@ -180,11 +180,10 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:7973-0!canonical and timestamp 20250110065348 and revision id 44251. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/Prototype/Tutorial&amp;oldid=44251">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4/Modularization/Prototype/Tutorial&amp;oldid=44251</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

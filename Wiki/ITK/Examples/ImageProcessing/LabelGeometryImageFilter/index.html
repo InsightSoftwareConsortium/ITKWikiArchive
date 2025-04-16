@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Examples/ImageProcessing/LabelGeometryImageFilter</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -117,7 +118,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 /*]]>*/
 </style></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_ImageProcessing_LabelGeometryImageFilter skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#LabelGeometryImageFilter.cxx"><span class="tocnumber">1</span> <span class="toctext">LabelGeometryImageFilter.cxx</span></a></li>
 <li class="toclevel-1"><a href="#CMakeLists.txt"><span class="tocnumber">2</span> <span class="toctext">CMakeLists.txt</span></a></li>
@@ -131,170 +132,169 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="LabelGeometryImageFilter.cxx">LabelGeometryImageFilter.cxx</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &quot;itkImage.h&quot;</span>
-<span class="co2">#include &quot;itkImageFileWriter.h&quot;</span>
-<span class="co2">#include &quot;itkImageRegionIterator.h&quot;</span>
-<span class="co2">#include &quot;itkLabelGeometryImageFilter.h&quot;</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include "itkImage.h"</span>
+<span class="co2">#include "itkImageFileWriter.h"</span>
+<span class="co2">#include "itkImageRegionIterator.h"</span>
+<span class="co2">#include "itkLabelGeometryImageFilter.h"</span>
+ 
 <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">char</span>, <span class="nu0">2</span><span class="sy1">&gt;</span>  ImageType<span class="sy4">;</span>
-<span class="kw4">static</span> <span class="kw4">void</span> CreateIntensityImage<span class="br0">&#40;</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="kw4">static</span> <span class="kw4">void</span> CreateLabelImage<span class="br0">&#40;</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">int</span>, <span class="kw4">char</span> <span class="sy2">*</span><span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+<span class="kw4">static</span> <span class="kw4">void</span> CreateIntensityImage<span class="br0">(</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">static</span> <span class="kw4">void</span> CreateLabelImage<span class="br0">(</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span>, <span class="kw4">char</span> <span class="sy2">*</span><span class="br0">[</span><span class="br0">]</span><span class="br0">)</span>
+<span class="br0">{</span>
   <span class="co1">// Create a label image that is 0 in the background and where the objects are labeled</span>
-  ImageType<span class="sy4">::</span><span class="me2">Pointer</span> labelImage <span class="sy1">=</span> ImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  CreateLabelImage<span class="br0">&#40;</span>labelImage<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  ImageType<span class="sy4">::</span><span class="me2">Pointer</span> labelImage <span class="sy1">=</span> ImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  CreateLabelImage<span class="br0">(</span>labelImage<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Create an intensity image.  Some LabelGeometry features (such as weighted centroid and integrated intensity)</span>
   <span class="co1">// depend on an intensity image.</span>
-  ImageType<span class="sy4">::</span><span class="me2">Pointer</span> intensityImage <span class="sy1">=</span> ImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  CreateIntensityImage<span class="br0">&#40;</span>intensityImage<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  ImageType<span class="sy4">::</span><span class="me2">Pointer</span> intensityImage <span class="sy1">=</span> ImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  CreateIntensityImage<span class="br0">(</span>intensityImage<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">LabelGeometryImageFilter</span><span class="sy1">&lt;</span> ImageType <span class="sy1">&gt;</span> LabelGeometryImageFilterType<span class="sy4">;</span>
-  LabelGeometryImageFilterType<span class="sy4">::</span><span class="me2">Pointer</span> labelGeometryImageFilter <span class="sy1">=</span> LabelGeometryImageFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> labelImage <span class="br0">&#41;</span><span class="sy4">;</span>
-  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetIntensityInput<span class="br0">&#40;</span> intensityImage <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  LabelGeometryImageFilterType<span class="sy4">::</span><span class="me2">Pointer</span> labelGeometryImageFilter <span class="sy1">=</span> LabelGeometryImageFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> labelImage <span class="br0">)</span><span class="sy4">;</span>
+  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetIntensityInput<span class="br0">(</span> intensityImage <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// These generate optional outputs.</span>
-  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>CalculatePixelIndicesOn<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>CalculateOrientedBoundingBoxOn<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>CalculateOrientedLabelRegionsOn<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  LabelGeometryImageFilterType<span class="sy4">::</span><span class="me2">LabelsType</span> allLabels <span class="sy1">=</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetLabels<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>CalculatePixelIndicesOn<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>CalculateOrientedBoundingBoxOn<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>CalculateOrientedLabelRegionsOn<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  LabelGeometryImageFilterType<span class="sy4">::</span><span class="me2">LabelsType</span> allLabels <span class="sy1">=</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetLabels<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
   LabelGeometryImageFilterType<span class="sy4">::</span><span class="me2">LabelsType</span><span class="sy4">::</span><span class="me2">iterator</span> allLabelsIt<span class="sy4">;</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Number of labels: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetNumberOfLabels<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Number of labels: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetNumberOfLabels<span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
   std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-&#160;
-  <span class="kw1">for</span><span class="br0">&#40;</span> allLabelsIt <span class="sy1">=</span> allLabels.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> allLabelsIt <span class="sy3">!</span><span class="sy1">=</span> allLabels.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> allLabelsIt<span class="sy2">++</span> <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
+ 
+  <span class="kw1">for</span><span class="br0">(</span> allLabelsIt <span class="sy1">=</span> allLabels.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> allLabelsIt <span class="sy3">!</span><span class="sy1">=</span> allLabels.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> allLabelsIt<span class="sy2">++</span> <span class="br0">)</span>
+    <span class="br0">{</span>
     LabelGeometryImageFilterType<span class="sy4">::</span><span class="me2">LabelPixelType</span> labelValue <span class="sy1">=</span> <span class="sy2">*</span>allLabelsIt<span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>Label: &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span>labelValue <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>Volume: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetVolume<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>Integrated Intensity: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetIntegratedIntensity<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>Centroid: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetCentroid<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>Weighted Centroid: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetWeightedCentroid<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>Axes Length: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetAxesLength<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>MajorAxisLength: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetMajorAxisLength<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>MinorAxisLength: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetMinorAxisLength<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>Eccentricity: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetEccentricity<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>Elongation: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetElongation<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>Orientation: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOrientation<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\t</span>Bounding box: &quot;</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetBoundingBox<span class="br0">&#40;</span>labelValue<span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-&#160;
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>Label: "</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>labelValue <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>Volume: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetVolume<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>Integrated Intensity: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetIntegratedIntensity<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>Centroid: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetCentroid<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>Weighted Centroid: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetWeightedCentroid<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>Axes Length: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetAxesLength<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>MajorAxisLength: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetMajorAxisLength<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>MinorAxisLength: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetMinorAxisLength<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>Eccentricity: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetEccentricity<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>Elongation: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetElongation<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>Orientation: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOrientation<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\t</span>Bounding box: "</span> <span class="sy1">&lt;&lt;</span> labelGeometryImageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetBoundingBox<span class="br0">(</span>labelValue<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+ 
     std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+ 
   <span class="kw1">return</span> <span class="kw2">EXIT_SUCCESS</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">void</span> CreateIntensityImage<span class="br0">&#40;</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">void</span> CreateIntensityImage<span class="br0">(</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">)</span>
+<span class="br0">{</span>
   <span class="co1">// Create a random image.</span>
   ImageType<span class="sy4">::</span><span class="me2">IndexType</span> start<span class="sy4">;</span>
-  start.<span class="me1">Fill</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  start.<span class="me1">Fill</span><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   ImageType<span class="sy4">::</span><span class="me2">SizeType</span> size<span class="sy4">;</span>
-  size.<span class="me1">Fill</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  size.<span class="me1">Fill</span><span class="br0">(</span><span class="nu0">20</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   ImageType<span class="sy4">::</span><span class="me2">RegionType</span> region<span class="sy4">;</span>
-  region.<span class="me1">SetSize</span><span class="br0">&#40;</span>size<span class="br0">&#41;</span><span class="sy4">;</span>
-  region.<span class="me1">SetIndex</span><span class="br0">&#40;</span>start<span class="br0">&#41;</span><span class="sy4">;</span>
-  image<span class="sy2">-</span><span class="sy1">&gt;</span>SetRegions<span class="br0">&#40;</span>region<span class="br0">&#41;</span><span class="sy4">;</span>
-  image<span class="sy2">-</span><span class="sy1">&gt;</span>Allocate<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  itk<span class="sy4">::</span><span class="me2">ImageRegionIterator</span><span class="sy1">&lt;</span>ImageType<span class="sy1">&gt;</span> imageIterator<span class="br0">&#40;</span>image,image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  region.<span class="me1">SetSize</span><span class="br0">(</span>size<span class="br0">)</span><span class="sy4">;</span>
+  region.<span class="me1">SetIndex</span><span class="br0">(</span>start<span class="br0">)</span><span class="sy4">;</span>
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>SetRegions<span class="br0">(</span>region<span class="br0">)</span><span class="sy4">;</span>
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>Allocate<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  itk<span class="sy4">::</span><span class="me2">ImageRegionIterator</span><span class="sy1">&lt;</span>ImageType<span class="sy1">&gt;</span> imageIterator<span class="br0">(</span>image,image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
   <span class="co1">// Make a random image</span>
   <span class="co1">// Create an unchanging seed.</span>
-  <span class="kw3">srand</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  <span class="kw1">while</span><span class="br0">&#40;</span><span class="sy3">!</span>imageIterator.<span class="me1">IsAtEnd</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    <span class="kw4">int</span> randomNumber <span class="sy1">=</span> <span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy2">%</span> <span class="nu0">255</span><span class="sy4">;</span>
-    imageIterator.<span class="me1">Set</span><span class="br0">&#40;</span> randomNumber <span class="br0">&#41;</span><span class="sy4">;</span>
+  <span class="kw3">srand</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw1">while</span><span class="br0">(</span><span class="sy3">!</span>imageIterator.<span class="me1">IsAtEnd</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+    <span class="kw4">int</span> randomNumber <span class="sy1">=</span> <span class="kw3">rand</span><span class="br0">(</span><span class="br0">)</span> <span class="sy2">%</span> <span class="nu0">255</span><span class="sy4">;</span>
+    imageIterator.<span class="me1">Set</span><span class="br0">(</span> randomNumber <span class="br0">)</span><span class="sy4">;</span>
     <span class="sy2">++</span>imageIterator<span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ImageFileWriter</span><span class="sy1">&lt;</span> ImageType  <span class="sy1">&gt;</span> WriterType<span class="sy4">;</span>
-  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> writer <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span><span class="st0">&quot;intensityImage.png&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>image<span class="br0">&#41;</span><span class="sy4">;</span>
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">void</span> CreateLabelImage<span class="br0">&#40;</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> writer <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span><span class="st0">"intensityImage.png"</span><span class="br0">)</span><span class="sy4">;</span>
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>image<span class="br0">)</span><span class="sy4">;</span>
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">void</span> CreateLabelImage<span class="br0">(</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">)</span>
+<span class="br0">{</span>
   <span class="co1">// Create a black image with labeled squares.</span>
   ImageType<span class="sy4">::</span><span class="me2">IndexType</span> start<span class="sy4">;</span>
-  start.<span class="me1">Fill</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  start.<span class="me1">Fill</span><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   ImageType<span class="sy4">::</span><span class="me2">SizeType</span> size<span class="sy4">;</span>
-  size.<span class="me1">Fill</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  size.<span class="me1">Fill</span><span class="br0">(</span><span class="nu0">20</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   ImageType<span class="sy4">::</span><span class="me2">RegionType</span> region<span class="sy4">;</span>
-  region.<span class="me1">SetSize</span><span class="br0">&#40;</span>size<span class="br0">&#41;</span><span class="sy4">;</span>
-  region.<span class="me1">SetIndex</span><span class="br0">&#40;</span>start<span class="br0">&#41;</span><span class="sy4">;</span>
-  image<span class="sy2">-</span><span class="sy1">&gt;</span>SetRegions<span class="br0">&#40;</span>region<span class="br0">&#41;</span><span class="sy4">;</span>
-  image<span class="sy2">-</span><span class="sy1">&gt;</span>Allocate<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  itk<span class="sy4">::</span><span class="me2">ImageRegionIterator</span><span class="sy1">&lt;</span>ImageType<span class="sy1">&gt;</span> imageIterator<span class="br0">&#40;</span>image,image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  region.<span class="me1">SetSize</span><span class="br0">(</span>size<span class="br0">)</span><span class="sy4">;</span>
+  region.<span class="me1">SetIndex</span><span class="br0">(</span>start<span class="br0">)</span><span class="sy4">;</span>
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>SetRegions<span class="br0">(</span>region<span class="br0">)</span><span class="sy4">;</span>
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>Allocate<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  itk<span class="sy4">::</span><span class="me2">ImageRegionIterator</span><span class="sy1">&lt;</span>ImageType<span class="sy1">&gt;</span> imageIterator<span class="br0">(</span>image,image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Make a square</span>
-  <span class="kw1">while</span><span class="br0">&#40;</span><span class="sy3">!</span>imageIterator.<span class="me1">IsAtEnd</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    <span class="kw1">if</span><span class="br0">&#40;</span><span class="br0">&#40;</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&gt;</span> <span class="nu0">5</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="br0">&#41;</span> <span class="sy3">&amp;&amp;</span>
-      <span class="br0">&#40;</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&gt;</span> <span class="nu0">5</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>
-        <span class="br0">&#123;</span>
-        imageIterator.<span class="me1">Set</span><span class="br0">&#40;</span><span class="nu0">85</span><span class="br0">&#41;</span><span class="sy4">;</span>
-        <span class="br0">&#125;</span>
-    <span class="kw1">else</span> <span class="kw1">if</span><span class="br0">&#40;</span><span class="br0">&#40;</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&gt;</span> <span class="nu0">11</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&lt;</span> <span class="nu0">17</span><span class="br0">&#41;</span> <span class="sy3">&amp;&amp;</span>
-      <span class="br0">&#40;</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&gt;</span> <span class="nu0">11</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&lt;</span> <span class="nu0">17</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>
-	<span class="br0">&#123;</span>
-	imageIterator.<span class="me1">Set</span><span class="br0">&#40;</span><span class="nu0">127</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	<span class="br0">&#125;</span>
-    <span class="kw1">else</span> <span class="kw1">if</span><span class="br0">&#40;</span><span class="br0">&#40;</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&gt;</span> <span class="nu0">11</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&lt;</span> <span class="nu0">17</span><span class="br0">&#41;</span> <span class="sy3">&amp;&amp;</span>
-      <span class="br0">&#40;</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&gt;</span> <span class="nu0">1</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&lt;</span> <span class="nu0">5</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>
-	<span class="br0">&#123;</span>
-	imageIterator.<span class="me1">Set</span><span class="br0">&#40;</span><span class="nu0">191</span><span class="br0">&#41;</span><span class="sy4">;</span>
-	<span class="br0">&#125;</span>
+  <span class="kw1">while</span><span class="br0">(</span><span class="sy3">!</span>imageIterator.<span class="me1">IsAtEnd</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+    <span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&gt;</span> <span class="nu0">5</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="br0">)</span> <span class="sy3">&amp;&amp;</span>
+      <span class="br0">(</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">&gt;</span> <span class="nu0">5</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="br0">)</span> <span class="br0">)</span>
+        <span class="br0">{</span>
+        imageIterator.<span class="me1">Set</span><span class="br0">(</span><span class="nu0">85</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="br0">}</span>
+    <span class="kw1">else</span> <span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&gt;</span> <span class="nu0">11</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&lt;</span> <span class="nu0">17</span><span class="br0">)</span> <span class="sy3">&amp;&amp;</span>
+      <span class="br0">(</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">&gt;</span> <span class="nu0">11</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">&lt;</span> <span class="nu0">17</span><span class="br0">)</span> <span class="br0">)</span>
+	<span class="br0">{</span>
+	imageIterator.<span class="me1">Set</span><span class="br0">(</span><span class="nu0">127</span><span class="br0">)</span><span class="sy4">;</span>
+	<span class="br0">}</span>
+    <span class="kw1">else</span> <span class="kw1">if</span><span class="br0">(</span><span class="br0">(</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&gt;</span> <span class="nu0">11</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&lt;</span> <span class="nu0">17</span><span class="br0">)</span> <span class="sy3">&amp;&amp;</span>
+      <span class="br0">(</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">&gt;</span> <span class="nu0">1</span> <span class="sy3">&amp;&amp;</span> imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">&lt;</span> <span class="nu0">5</span><span class="br0">)</span> <span class="br0">)</span>
+	<span class="br0">{</span>
+	imageIterator.<span class="me1">Set</span><span class="br0">(</span><span class="nu0">191</span><span class="br0">)</span><span class="sy4">;</span>
+	<span class="br0">}</span>
     <span class="kw1">else</span>
-        <span class="br0">&#123;</span>
-        imageIterator.<span class="me1">Set</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
-        <span class="br0">&#125;</span>
-&#160;
+        <span class="br0">{</span>
+        imageIterator.<span class="me1">Set</span><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="br0">}</span>
+ 
     <span class="sy2">++</span>imageIterator<span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+ 
   <span class="kw4">typedef</span>  itk<span class="sy4">::</span><span class="me2">ImageFileWriter</span><span class="sy1">&lt;</span> ImageType  <span class="sy1">&gt;</span> WriterType<span class="sy4">;</span>
-  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> writer <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span><span class="st0">&quot;image.png&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>image<span class="br0">&#41;</span><span class="sy4">;</span>
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> writer <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span><span class="st0">"image.png"</span><span class="br0">)</span><span class="sy4">;</span>
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>image<span class="br0">)</span><span class="sy4">;</span>
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <h2><span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
+ 
 <span class="kw1">project</span><span class="sy0">(</span>LabelGeometryImageFilter<span class="sy0">)</span>
-&#160;
+ 
 <span class="kw1">find_package</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
 <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">if</span> <span class="sy0">(</span>ITKVtkGlue_LOADED<span class="sy0">)</span>
   <span class="kw1">find_package</span><span class="sy0">(</span>VTK REQUIRED<span class="sy0">)</span>
   <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${VTK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">endif</span><span class="sy0">()</span>
-&#160;
+ 
 <span class="kw1">add_executable</span><span class="sy0">(</span>LabelGeometryImageFilter MACOSX_BUNDLE LabelGeometryImageFilter.cxx<span class="sy0">)</span>
-&#160;
-<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+ 
+<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>LabelGeometryImageFilter ITKReview <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>LabelGeometryImageFilter <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
+<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
 <h2><span class="mw-headline" id="Download_and_Build_LabelGeometryImageFilter">Download and Build LabelGeometryImageFilter</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:LabelGeometryImageFilter.tar">here to download <i>LabelGeometryImageFilter</i></a> and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:LabelGeometryImageFilter.tar" rel="nofollow">here to download <i>LabelGeometryImageFilter</i></a> and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>LabelGeometryImageFilter.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd LabelGeometryImageFilter/build
@@ -329,7 +329,7 @@ Once the tarball <i>LabelGeometryImageFilter.tar</i> has been downloaded and ext
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span class="mw-headline" id="ITK_.3C_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -342,9 +342,7 @@ Template argument size: 264/2097152 bytes
 Highest expansion depth: 3/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9354-0!*!0!!en!*!* and timestamp 20150330151240 and revision id 56090
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/ImageProcessing/LabelGeometryImageFilter&amp;oldid=56090">http://itk.org/Wiki/index.php?title=ITK/Examples/ImageProcessing/LabelGeometryImageFilter&amp;oldid=56090</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

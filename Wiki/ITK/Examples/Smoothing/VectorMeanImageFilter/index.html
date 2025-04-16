@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Examples/Smoothing/VectorMeanImageFilter</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"823a5a453ef7ff7616688577","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Examples/Smoothing/VectorMeanImageFilter","wgTitle":"ITK/Examples/Smoothing/VectorMeanImageFilter","wgCurRevisionId":56567,"wgRevisionId":56567,"wgArticleId":12192,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Examples/Smoothing/VectorMeanImageFilter","wgRelevantArticleId":12192,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],
 "wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.pygments":"ready","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Examples_Smoothing_VectorMeanImageFilter rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="floatcenter"><a href="/Wiki/File:ITK_Examples_Baseline_Smoothing_TestVectorMeanImageFilter.png" class="image"><img alt="ITK Examples Baseline Smoothing TestVectorMeanImageFilter.png" src="/Wiki/images/6/64/ITK_Examples_Baseline_Smoothing_TestVectorMeanImageFilter.png" decoding="async" width="600" height="300" /></a></div>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div class="floatcenter"><a class="image" href="/Wiki/File:ITK_Examples_Baseline_Smoothing_TestVectorMeanImageFilter.png"><img alt="ITK Examples Baseline Smoothing TestVectorMeanImageFilter.png" decoding="async" height="300" src="/Wiki/images/6/64/ITK_Examples_Baseline_Smoothing_TestVectorMeanImageFilter.png" width="600"/></a></div>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#VectorMeanImageFilter.cxx"><span class="tocnumber">1</span> <span class="toctext">VectorMeanImageFilter.cxx</span></a></li>
 <li class="toclevel-1"><a href="#CMakeLists.txt"><span class="tocnumber">2</span> <span class="toctext">CMakeLists.txt</span></a></li>
@@ -36,29 +37,28 @@
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="VectorMeanImageFilter.cxx">VectorMeanImageFilter.cxx</span></h2>
-<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;itkMeanImageFilter.h&quot;</span><span class="cp"></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">#include</span> <span class="cpf">"itkMeanImageFilter.h"</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;itkImage.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkImageFileReader.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkRGBPixel.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkVector.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;itkVectorCastImageFilter.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkImage.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkImageFileReader.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkRGBPixel.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkVector.h"</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itkVectorCastImageFilter.h"</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;itksys/SystemTools.hxx&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"itksys/SystemTools.hxx"</span><span class="cp"></span>
 
 <span class="cp">#include</span> <span class="cpf">&lt;sstream&gt;</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;QuickView.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">"QuickView.h"</span><span class="cp"></span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
 <span class="p">{</span>
   <span class="c1">// Verify command line arguments</span>
   <span class="k">if</span><span class="p">(</span> <span class="n">argc</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">)</span>
     <span class="p">{</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Usage: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; InputImageFile [radius]&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">"Usage: "</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" InputImageFile [radius]"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="n">EXIT_FAILURE</span><span class="p">;</span>
     <span class="p">}</span>
   <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">inputFilename</span> <span class="o">=</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
@@ -89,7 +89,7 @@
   <span class="n">meanFilter</span><span class="o">-&gt;</span><span class="n">SetRadius</span><span class="p">(</span><span class="n">radius</span><span class="p">);</span>
   <span class="n">meanFilter</span><span class="o">-&gt;</span><span class="n">SetInput</span><span class="p">(</span><span class="n">reader</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">());</span>
 
-  <span class="c1">// Cast the custom Vector&#39;s to RGBPixel&#39;s</span>
+  <span class="c1">// Cast the custom Vector's to RGBPixel's</span>
   <span class="n">CastType</span><span class="o">::</span><span class="n">Pointer</span> <span class="n">castReader</span> <span class="o">=</span> <span class="n">CastType</span><span class="o">::</span><span class="n">New</span><span class="p">();</span>
   <span class="n">castReader</span><span class="o">-&gt;</span><span class="n">SetInput</span><span class="p">(</span><span class="n">reader</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">());</span>
 
@@ -103,7 +103,7 @@
     <span class="n">itksys</span><span class="o">::</span><span class="n">SystemTools</span><span class="o">::</span><span class="n">GetFilenameName</span><span class="p">(</span><span class="n">inputFilename</span><span class="p">));</span>  
 
   <span class="n">std</span><span class="o">::</span><span class="n">stringstream</span> <span class="n">desc</span><span class="p">;</span>
-  <span class="n">desc</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;MeanImageFilter, radius = &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">radius</span><span class="p">;</span>
+  <span class="n">desc</span> <span class="o">&lt;&lt;</span> <span class="s">"MeanImageFilter, radius = "</span> <span class="o">&lt;&lt;</span> <span class="n">radius</span><span class="p">;</span>
   <span class="n">viewer</span><span class="p">.</span><span class="n">AddRGBImage</span><span class="p">(</span>
     <span class="n">castMean</span><span class="o">-&gt;</span><span class="n">GetOutput</span><span class="p">(),</span>
     <span class="nb">true</span><span class="p">,</span>
@@ -114,7 +114,7 @@
   <span class="k">return</span> <span class="n">EXIT_SUCCESS</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
-<p><br />
+<p><br/>
 </p>
 <h2><span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
 <div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.9.5</span><span class="p">)</span>
@@ -137,7 +137,7 @@
   <span class="o">${</span><span class="nv">Glue</span><span class="o">}</span>  <span class="o">${</span><span class="nv">VTK_LIBRARIES</span><span class="o">}</span> <span class="o">${</span><span class="nv">ITK_LIBRARIES</span><span class="o">}</span><span class="p">)</span>
 </pre></div>
 <h2><span class="mw-headline" id="Download_and_Build_VectorMeanImageFilter">Download and Build VectorMeanImageFilter</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="https://github.com/lorensen/ITKWikiExamplesTarballs/raw/master/VectorMeanImageFilter.tar">here to download <i>VectorMeanImageFilter</i></a>. and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="https://github.com/lorensen/ITKWikiExamplesTarballs/raw/master/VectorMeanImageFilter.tar" rel="nofollow">here to download <i>VectorMeanImageFilter</i></a>. and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>VectorMeanImageFilter.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd VectorMeanImageFilter/build 
@@ -166,7 +166,7 @@ Once the tarball <i>VectorMeanImageFilter.tar</i> has been downloaded and extrac
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span id="ITK_.3C_4"></span><span class="mw-headline" id="ITK_&lt;_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -189,10 +189,9 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%  142.065      1 Template:ITKVTKCMakeLists
 100.00%  142.065      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:12192-0!canonical and timestamp 20221003235911 and revision id 56567. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Examples/Smoothing/VectorMeanImageFilter&amp;oldid=56567">https://public.kitware.com/Wiki/index.php?title=ITK/Examples/Smoothing/VectorMeanImageFilter&amp;oldid=56567</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

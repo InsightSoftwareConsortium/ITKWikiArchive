@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK Release 4/Modern C++</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"429d3c624b370e01e04b3244","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/Modern_C++","wgTitle":"ITK Release 4/Modern C++","wgCurRevisionId":61996,"wgRevisionId":61996,"wgArticleId":8590,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/Modern_C++","wgRelevantArticleId":8590,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":
 "ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Modern_C rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Goal"><span class="tocnumber">1</span> <span class="toctext">Goal</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Path"><span class="tocnumber">2</span> <span class="toctext">Path</span></a></li>
@@ -38,11 +39,10 @@
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Goal">Goal</span></h1>
 <ul><li>Take advantage of advances in C++</li></ul>
 <h1><span class="mw-headline" id="Path">Path</span></h1>
-<ul><li>Target popular compilers that are compatible with the C++98 and/or C++03 standard (<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/C%2B%2B03#Language_standard">http://en.wikipedia.org/wiki/C%2B%2B03#Language_standard</a>).</li></ul>
+<ul><li>Target popular compilers that are compatible with the C++98 and/or C++03 standard (<a class="external free" href="http://en.wikipedia.org/wiki/C%2B%2B03#Language_standard" rel="nofollow">http://en.wikipedia.org/wiki/C%2B%2B03#Language_standard</a>).</li></ul>
 <h1><span class="mw-headline" id="Specifics">Specifics</span></h1>
 <p>The following lists specify what compilers will be supported and what compilers will not be supported in the first release of ITKv4.
 </p>
@@ -61,7 +61,7 @@
 <li>gcc prior to 3.4</li>
 <li>Darwin ppc (Until 2015)</li></ul>
 <h2><span class="mw-headline" id="Will_Support">Will Support</span></h2>
-<p>As a general statement, we support compilers that submit nightly to the <a rel="nofollow" class="external text" href="http://www.cdash.org/CDash/index.php?project=Insight">ITK dashboard</a>. Currently these include:
+<p>As a general statement, we support compilers that submit nightly to the <a class="external text" href="http://www.cdash.org/CDash/index.php?project=Insight" rel="nofollow">ITK dashboard</a>. Currently these include:
 </p>
 <h3><span class="mw-headline" id="Fully_Committed_to_Support">Fully Committed to Support</span></h3>
 <ul><li>GCC 4.x</li>
@@ -78,7 +78,7 @@
 <li>Win32-mingw-gcc-4.5</li>
 <li>Apple clang-600.0.56</li>
 <li>Clang 3.3 and later</li></ul>
-<p><br />
+<p><br/>
 The following table illustrate the phase-out schedule of multiple compilers.
 </p><p>The stage "If community supported" means that ITK will only support that compiler if volunteers from the community commit to submitting Nightly Dashboard builds and to address/fix any problem that may arise in those platforms.
 </p>
@@ -119,76 +119,76 @@ The following table illustrate the phase-out schedule of multiple compilers.
 <td>2026
 </td></tr>
 <tr>
-<td>[<a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Microsoft_Visual_Studio#Version_history%7C">"VisualStudio 7.1"</a>]
+<td>[<a class="external text" href="http://en.wikipedia.org/wiki/Microsoft_Visual_Studio#Version_history%7C" rel="nofollow">"VisualStudio 7.1"</a>]
 </td>
-<td colspan="1" bgcolor="green">
+<td bgcolor="green" colspan="1">
 </td>
-<td colspan="1" bgcolor="yellow">
+<td bgcolor="yellow" colspan="1">
 </td>
-<td colspan="5" bgcolor="red">
+<td bgcolor="red" colspan="5">
 </td></tr>
 <tr>
 <td>Visual Studio 8
 </td>
-<td colspan="3" bgcolor="green">
+<td bgcolor="green" colspan="3">
 </td>
-<td colspan="1" bgcolor="yellow">
+<td bgcolor="yellow" colspan="1">
 </td>
-<td colspan="5" bgcolor="red">
+<td bgcolor="red" colspan="5">
 </td></tr>
 <tr>
 <td>Visual Studio 9
 </td>
-<td colspan="8" bgcolor="green">
+<td bgcolor="green" colspan="8">
 </td>
-<td colspan="1" bgcolor="yellow">
+<td bgcolor="yellow" colspan="1">
 </td>
-<td colspan="5" bgcolor="red">
+<td bgcolor="red" colspan="5">
 </td></tr>
 <tr>
 <td>Visual Studio 10
 </td>
-<td colspan="10" bgcolor="green">
+<td bgcolor="green" colspan="10">
 </td>
-<td colspan="1" bgcolor="yellow">
+<td bgcolor="yellow" colspan="1">
 </td>
-<td colspan="3" bgcolor="red">
+<td bgcolor="red" colspan="3">
 </td></tr>
 <tr>
 <td>GCC 3.4
 </td>
-<td colspan="1" bgcolor="green">
+<td bgcolor="green" colspan="1">
 </td>
-<td colspan="1" bgcolor="yellow">
+<td bgcolor="yellow" colspan="1">
 </td>
-<td colspan="5" bgcolor="red">
+<td bgcolor="red" colspan="5">
 </td></tr>
 <tr>
 <td>GCC 4.2
 </td>
-<td colspan="5" bgcolor="green">
+<td bgcolor="green" colspan="5">
 </td>
-<td colspan="1" bgcolor="yellow">
+<td bgcolor="yellow" colspan="1">
 </td>
-<td colspan="5" bgcolor="red">
+<td bgcolor="red" colspan="5">
 </td></tr>
 <tr>
 <td>GCC 4.4
 </td>
-<td colspan="8" bgcolor="green">
+<td bgcolor="green" colspan="8">
 </td>
-<td colspan="1" bgcolor="yellow">
+<td bgcolor="yellow" colspan="1">
 </td>
-<td colspan="5" bgcolor="red">
+<td bgcolor="red" colspan="5">
 </td></tr>
 <tr>
 <td>GCC 4.9
 </td>
-<td colspan="14" bgcolor="green">
+<td bgcolor="green" colspan="14">
 </td>
-<td colspan="1" bgcolor="yellow">
+<td bgcolor="yellow" colspan="1">
 </td>
-<td colspan="5" bgcolor="red">
+<td bgcolor="red" colspan="5">
 </td></tr></tbody></table>
 <h3><span class="mw-headline" id="Legend">Legend</span></h3>
 <table border="0">
@@ -196,13 +196,13 @@ The following table illustrate the phase-out schedule of multiple compilers.
 <td>
 </td></tr>
 <tr>
-<td colspan="2" bgcolor="green">Fully Supported
+<td bgcolor="green" colspan="2">Fully Supported
 </td></tr>
 <tr>
-<td colspan="2" bgcolor="yellow">Phase Out
+<td bgcolor="yellow" colspan="2">Phase Out
 </td></tr>
 <tr>
-<td colspan="2" bgcolor="red">If community supported
+<td bgcolor="red" colspan="2">If community supported
 </td></tr></tbody></table>
 <!-- 
 NewPP limit report
@@ -224,10 +224,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8590-0!canonical and timestamp 20220523091829 and revision id 61996. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Modern_C%2B%2B&amp;oldid=61996">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Modern_C%2B%2B&amp;oldid=61996</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

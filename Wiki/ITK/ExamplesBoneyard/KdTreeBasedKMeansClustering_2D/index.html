@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/ExamplesBoneyard/KdTreeBasedKMeansClustering 2D</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c96314b7baf1bcdea8a0b044","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ITK/ExamplesBoneyard/KdTreeBasedKMeansClustering_2D","wgTitle":"ITK/ExamplesBoneyard/KdTreeBasedKMeansClustering 2D","wgCurRevisionId":49493,"wgRevisionId":49493,"wgArticleId":8095,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/ExamplesBoneyard/KdTreeBasedKMeansClustering_2D","wgRelevantArticleId":8095,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,
 "wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.38.6"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.38.6" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_ExamplesBoneyard_KdTreeBasedKMeansClustering_2D rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#ITK_Classes_Demonstrated"><span class="tocnumber">2</span> <span class="toctext">ITK Classes Demonstrated</span></a></li>
@@ -37,7 +38,6 @@
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="Description">Description</span></h2>
 <p>Cluster a collection of measurements using the KMeans algorithm. The name "KdTreeBased" indicates that this is an efficient implementation which uses a KdTree.
 </p>
@@ -84,7 +84,7 @@
 <pre> MeasurementVectorType mv;
  double mean = 100;
  double standardDeviation = 30;
- for ( unsigned int i = 0&#160;; i &lt; 100&#160;; ++i )
+ for ( unsigned int i = 0 ; i &lt; 100 ; ++i )
    {
    mv[0] = ( normalGenerator-&gt;GetVariate() * standardDeviation ) + mean;
    mv[1] = ( normalGenerator-&gt;GetVariate() * standardDeviation ) + mean;
@@ -94,7 +94,7 @@
 <pre> normalGenerator-&gt;Initialize( 3024 );
  mean = 200;
  standardDeviation = 30;
- for ( unsigned int i = 0&#160;; i &lt; 100&#160;; ++i )
+ for ( unsigned int i = 0 ; i &lt; 100 ; ++i )
    {
    mv[0] = ( normalGenerator-&gt;GetVariate() * standardDeviation ) + mean;
    mv[1] = ( normalGenerator-&gt;GetVariate() * standardDeviation ) + mean;
@@ -127,10 +127,10 @@
 </pre>
 <pre> EstimatorType::ParametersType estimatedMeans = estimator-&gt;GetParameters();
 </pre>
-<pre> for ( unsigned int i = 0&#160;; i &lt; 4&#160;; i+=2 )
+<pre> for ( unsigned int i = 0 ; i &lt; 4 ; i+=2 )
    {
    std::cout &lt;&lt; "cluster[" &lt;&lt; i &lt;&lt; "] " &lt;&lt; std::endl;
-   std::cout &lt;&lt; "    estimated mean&#160;: " &lt;&lt; estimatedMeans[i] &lt;&lt; " , " &lt;&lt; estimatedMeans[i+1] &lt;&lt; std::endl;
+   std::cout &lt;&lt; "    estimated mean : " &lt;&lt; estimatedMeans[i] &lt;&lt; " , " &lt;&lt; estimatedMeans[i+1] &lt;&lt; std::endl;
    }
 </pre>
 <pre> typedef itk::Statistics::DistanceToCentroidMembershipFunction&lt; MeasurementVectorType &gt;
@@ -159,7 +159,7 @@
  classLabelsVector.push_back( 100 );
  classLabelsVector.push_back( 200 );
 </pre>
-<p><br />
+<p><br/>
 </p>
 <pre> MembershipFunctionVectorObjectType::Pointer membershipFunctionsObject =
    MembershipFunctionVectorObjectType::New();
@@ -169,10 +169,10 @@
 </pre>
 <pre> MembershipFunctionType::CentroidType origin( sample-&gt;GetMeasurementVectorSize() );
  int index = 0;
- for ( unsigned int i = 0&#160;; i &lt; 2&#160;; i++ )
+ for ( unsigned int i = 0 ; i &lt; 2 ; i++ )
    {
    MembershipFunctionPointer membershipFunction = MembershipFunctionType::New();
-   for ( unsigned int j = 0&#160;; j &lt; sample-&gt;GetMeasurementVectorSize(); j++ )
+   for ( unsigned int j = 0 ; j &lt; sample-&gt;GetMeasurementVectorSize(); j++ )
      {
      origin[j] = estimatedMeans[index++];
      }
@@ -185,7 +185,7 @@
 <pre> const ClassifierType::MembershipSampleType* membershipSample = classifier-&gt;GetOutput();
  ClassifierType::MembershipSampleType::ConstIterator iter = membershipSample-&gt;Begin();
 </pre>
-<pre> while ( iter&#160;!= membershipSample-&gt;End() )
+<pre> while ( iter != membershipSample-&gt;End() )
    {
    std::cout &lt;&lt; "measurement vector = " &lt;&lt; iter.GetMeasurementVector()
              &lt;&lt; "class label = " &lt;&lt; iter.GetClassLabel()
@@ -200,7 +200,7 @@
    vtkSmartPointer&lt;vtkPoints&gt;::New();
 </pre>
 <pre> iter = membershipSample-&gt;Begin();
- while ( iter&#160;!= membershipSample-&gt;End() )
+ while ( iter != membershipSample-&gt;End() )
    {
    if(iter.GetClassLabel() == 100)
      {
@@ -301,7 +301,7 @@ target_link_libraries(KdTreeBasedKMeansClustering_2D
 <p>&lt;/syntaxhighlight&gt;
 </p>
 <h2><span class="mw-headline" id="Download_and_Build_KdTreeBasedKMeansClustering_2D">Download and Build KdTreeBasedKMeansClustering_2D</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="https://github.com/lorensen/ITKWikiExamplesTarballs/raw/master/KdTreeBasedKMeansClustering_2D.tar">here to download <i>KdTreeBasedKMeansClustering_2D</i></a>. and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="https://github.com/lorensen/ITKWikiExamplesTarballs/raw/master/KdTreeBasedKMeansClustering_2D.tar" rel="nofollow">here to download <i>KdTreeBasedKMeansClustering_2D</i></a>. and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>KdTreeBasedKMeansClustering_2D.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd KdTreeBasedKMeansClustering_2D/build 
@@ -330,7 +330,7 @@ Once the tarball <i>KdTreeBasedKMeansClustering_2D.tar</i> has been downloaded a
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span id="ITK_.3C_4"></span><span class="mw-headline" id="ITK_&lt;_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -353,11 +353,10 @@ Transclusion expansion time report (%,ms,calls,template)
 100.00%    2.712      1 Template:ITKVTKCMakeLists
 100.00%    2.712      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8095-0!canonical and timestamp 20231201085346 and revision id 49493. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/ExamplesBoneyard/KdTreeBasedKMeansClustering_2D&amp;oldid=49493">https://public.kitware.com/Wiki/index.php?title=ITK/ExamplesBoneyard/KdTreeBasedKMeansClustering_2D&amp;oldid=49493</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body>
+</div>
+
+<!-- end content --></body>
 </html>

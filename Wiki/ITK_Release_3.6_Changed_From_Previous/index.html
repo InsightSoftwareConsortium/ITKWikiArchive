@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK Release 3.6 Changed From Previous</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4929c90bb6b9063fbf8883b4","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_3.6_Changed_From_Previous","wgTitle":"ITK Release 3.6 Changed From Previous","wgCurRevisionId":11987,"wgRevisionId":11987,"wgArticleId":3092,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_3.6_Changed_From_Previous","wgRelevantArticleId":3092,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};
 RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_3_6_Changed_From_Previous rootpage-ITK_Release_3_6_Changed_From_Previous skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>This release covers the period September 23, 2007 through April 13, 2008
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>This release covers the period September 23, 2007 through April 13, 2008
 </p>
 <h2><span class="mw-headline" id="Changes_in_this_Release">Changes in this Release</span></h2>
 <pre>
@@ -753,7 +754,7 @@ Code/Common/itkBSplineDeformableTransform
     BUG: Now correctly handles directions
 
 Code/Common/itkBSplineDeformableTransform
-    BUG: in&#160;::SetParameters not all parameters were being passed.
+    BUG: in ::SetParameters not all parameters were being passed.
     BUG: Now correctly handles directions
     BUG: 6123. Internal parameters vector is null at construction, causing a crash when GetParameters() is called. Set internal parameters to point to an existing internal parameters buffer at construction time. Added an exception if the parameters vector is null when GetParameters() is called.
 
@@ -797,13 +798,13 @@ Code/Common/itkDerivativeOperator
 Code/Common/itkDerivativeOperator
 
 Code/Common/itkElasticBodyReciprocalSplineKernelTransform
-    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+    BUG: itkLegacyMacro was not used properly (misplaced ;). This resulted in incorrect deprecation warnings.
 
 Code/Common/itkElasticBodyReciprocalSplineKernelTransform
     BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
 
 Code/Common/itkElasticBodySplineKernelTransform
-    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+    BUG: itkLegacyMacro was not used properly (misplaced ;). This resulted in incorrect deprecation warnings.
 
 Code/Common/itkElasticBodySplineKernelTransform
     BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
@@ -865,7 +866,7 @@ Code/Common/itkImageTransformHelper
     BUG: 5637. ImageTransformHelper computations wrong for 1D.
 
 Code/Common/itkImportImageContainer
-    BUG:&#160;::Reserve was not adjusting size properly if the newly resuted size was less than the capacity. ENH: Added&#160;::Capacity() to return capacity.
+    BUG: ::Reserve was not adjusting size properly if the newly resuted size was less than the capacity. ENH: Added ::Capacity() to return capacity.
 
 Code/Common/itkImportImageContainer
     COMP: cast ImportPointer to void * for printing.
@@ -887,7 +888,7 @@ Code/Common/itkKLMSegmentationRegion
     BUG: 0006196. ITK has many 64 to 32 bit truncations.
 
 Code/Common/itkKernelTransform
-    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+    BUG: itkLegacyMacro was not used properly (misplaced ;). This resulted in incorrect deprecation warnings.
 
 Code/Common/itkKernelTransform
     BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
@@ -1052,13 +1053,13 @@ Code/Common/itkTextOutput
     BUG: 0005803. Class has itkNewMacro, but no itkTypeMacro. Added itkTypeMacro.
 
 Code/Common/itkThinPlateR2LogRSplineKernelTransform
-    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+    BUG: itkLegacyMacro was not used properly (misplaced ;). This resulted in incorrect deprecation warnings.
 
 Code/Common/itkThinPlateR2LogRSplineKernelTransform
     BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
 
 Code/Common/itkThinPlateSplineKernelTransform
-    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+    BUG: itkLegacyMacro was not used properly (misplaced ;). This resulted in incorrect deprecation warnings.
 
 Code/Common/itkThinPlateSplineKernelTransform
     BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
@@ -1113,7 +1114,7 @@ Code/Common/itkVersor
     BUG: 6069. Versor was imncompatible with float type. In GetAngle, the two args to atan2 were of a different type. Added a cast to RealType for second argument.
 
 Code/Common/itkVolumeSplineKernelTransform
-    BUG: itkLegacyMacro was not used properly (misplaced&#160;;). This resulted in incorrect deprecation warnings.
+    BUG: itkLegacyMacro was not used properly (misplaced ;). This resulted in incorrect deprecation warnings.
 
 Code/Common/itkVolumeSplineKernelTransform
     BUG: compiler errors if ITK_LEGACY_REMOVE is set to ON.
@@ -1702,10 +1703,10 @@ Code/Review/itkQuadEdgeMeshToQuadEdgeMeshFilter
 
 Code/Review/itkQuadEdgeMeshTopologyChecker
     COMP: changed insight journal handle to new location.
-    BUG: memory leaks because QuadEdgeTopologyChecker was created with new rather than New(). Moved constructor and destructor into protected section. Changed test to use&#160;::New() rather than new.
+    BUG: memory leaks because QuadEdgeTopologyChecker was created with new rather than New(). Moved constructor and destructor into protected section. Changed test to use ::New() rather than new.
 
 Code/Review/itkQuadEdgeMeshTopologyChecker
-    BUG: memory leaks because QuadEdgeTopologyChecker was created with new rather than New(). Moved constructor and destructor into protected section. Changed test to use&#160;::New() rather than new.
+    BUG: memory leaks because QuadEdgeTopologyChecker was created with new rather than New(). Moved constructor and destructor into protected section. Changed test to use ::New() rather than new.
 
 Code/Review/itkQuadEdgeMeshTraits
     COMP: changed insight journal handle to new location.
@@ -2442,7 +2443,7 @@ Testing/Code/Review/itkQuadEdgeMeshDeleteEdgeTest
 
 Testing/Code/Review/itkQuadEdgeMeshEulerOperatorsTest
     ENH: JoinVertex now handle the degenerated cases where the modification would lead to topological Modifications. In that case, the modification is not done. I might want to add a flag that let the user know why the modification has not been done. In case of topological change, the user could then choose to switch to another EulerOp which would allow it.
-    BUG: memory leaks because QuadEdgeTopologyChecker was created with new rather than New(). Moved constructor and destructor into protected section. Changed test to use&#160;::New() rather than new.
+    BUG: memory leaks because QuadEdgeTopologyChecker was created with new rather than New(). Moved constructor and destructor into protected section. Changed test to use ::New() rather than new.
 
 Testing/Code/Review/itkQuadEdgeMeshIteratorTest
     COMP: warning about unused variable.
@@ -2874,7 +2875,7 @@ Utilities/NrrdIO/NrrdConfigure.h.in
 Utilities/NrrdIO/NrrdIO
 
 Utilities/expat/CMakeLists.txt
-Utilities/expat as expected by itkIncludeDirectories.cmake (and the natural organization of the source tree). You guys need an installation dashboard&#160;:) Was caught on KWWidgets dashmacmini1 dashboard.
+Utilities/expat as expected by itkIncludeDirectories.cmake (and the natural organization of the source tree). You guys need an installation dashboard :) Was caught on KWWidgets dashmacmini1 dashboard.
 
 Utilities/expat/expatConfig.h.in
     BUG: [6100] Change big endian constant to use defined one on Apple, to avoid using the TRY_RUN value on universal builds.
@@ -3865,10 +3866,9 @@ Unstrip post‐expand size: 165137/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:3092-0!canonical and timestamp 20220807103307 and revision id 11987. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_3.6_Changed_From_Previous&amp;oldid=11987">https://public.kitware.com/Wiki/index.php?title=ITK_Release_3.6_Changed_From_Previous&amp;oldid=11987</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK Release 4/Users Migration Guide/Migration Guide XML Samples</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c33fdad96b7458e78943951a","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples","wgTitle":"ITK Release 4/Users Migration Guide/Migration Guide XML Samples","wgCurRevisionId":33803,"wgRevisionId":33803,"wgArticleId":8038,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples","wgRelevantArticleId":8038,"wgIsProbablyEditable":!1,
 "wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.pygments":"ready","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=ext.pygments%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Users_Migration_Guide_Migration_Guide_XML_Samples rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><h1><span class="mw-headline" id="Sample_Files">Sample Files</span></h1>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><h1><span class="mw-headline" id="Sample_Files">Sample Files</span></h1>
 <p>The wiki is not particularly friendly about uploading xml documents (security issue I think), so the following page shows two examples directly.
 </p><p><a href="/Wiki/ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Format" title="ITK Release 4/Users Migration Guide/Migration Guide XML Format">Format Specification</a>
 </p>
 <h2><span class="mw-headline" id="Example_1_-_Move_GetLength_and_SetLength_from_MeasurementVectorTraits_to_NumericTraits">Example 1 - Move GetLength and SetLength from MeasurementVectorTraits to NumericTraits</span></h2>
-<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 
 <span class="c">&lt;!--***************************************************************************</span>
 <span class="c">**</span>
@@ -50,7 +51,7 @@
 <span class="c">**      rational for making them.</span>
 <span class="c">**</span>
 <span class="c">**    - &lt;SampleCode&gt;: Code snippet either manually written or automatically</span>
-<span class="c">**      harvested from the patch&#39;s changes that illustrates how to update the</span>
+<span class="c">**      harvested from the patch's changes that illustrates how to update the</span>
 <span class="c">**      API from the old version to the new version. This element must contain</span>
 <span class="c">**      two child elements, &lt;Old&gt; and &lt;New&gt;. As their names suggest, these two</span>
 <span class="c">**      elements contain the snippets of old API code and new API code .</span>
@@ -71,27 +72,27 @@
 <span class="c">**      automatically fix errors in user code. The current list of automatic</span>
 <span class="c">**      fix types is:</span>
 <span class="c">**</span>
-<span class="c">**      - &quot;FileRename&quot;: Find and replace the file name with the new one. Must</span>
+<span class="c">**      - "FileRename": Find and replace the file name with the new one. Must</span>
 <span class="c">**        include &lt;Old&gt; and &lt;New&gt; child elements.</span>
 <span class="c">**</span>
-<span class="c">**      - &quot;ClassRename&quot;: Find and replace the name of a class. Must include</span>
+<span class="c">**      - "ClassRename": Find and replace the name of a class. Must include</span>
 <span class="c">**        &lt;Old&gt; and &lt;New&gt; child elements.</span>
 <span class="c">**</span>
-<span class="c">**      - &quot;ClassMove&quot;: Include the new location of the class. Must include</span>
+<span class="c">**      - "ClassMove": Include the new location of the class. Must include</span>
 <span class="c">**        &lt;Old&gt; and &lt;New&gt; child elements. Will warn the user that the old</span>
 <span class="c">**        include file may be able to be removed but will not automatically</span>
 <span class="c">**        remove it.</span>
 <span class="c">**</span>
-<span class="c">**      - &quot;MethodRename&quot;: Find and replace the name of the method. Must include</span>
+<span class="c">**      - "MethodRename": Find and replace the name of the method. Must include</span>
 <span class="c">**        &lt;Old&gt; and &lt;New&gt; child elements.</span>
 <span class="c">**</span>
-<span class="c">**      - &quot;MethodMove&quot;: Find and replace the name of a method. Only works if</span>
-<span class="c">**        the method&#39;s signature hasn&#39;t changed. Must include &lt;Old&gt; and &lt;New&gt;</span>
+<span class="c">**      - "MethodMove": Find and replace the name of a method. Only works if</span>
+<span class="c">**        the method's signature hasn't changed. Must include &lt;Old&gt; and &lt;New&gt;</span>
 <span class="c">**        child elements.</span>
 <span class="c">**</span>
-<span class="c">**      - &quot;NamespaceChange&quot;: Find object from the old namespace and update its</span>
-<span class="c">**        namespace. This may not fix instances where &quot;using namespace&quot; is used</span>
-<span class="c">**        so the migration tool should warn the user wherever the object&#39;s</span>
+<span class="c">**      - "NamespaceChange": Find object from the old namespace and update its</span>
+<span class="c">**        namespace. This may not fix instances where "using namespace" is used</span>
+<span class="c">**        so the migration tool should warn the user wherever the object's</span>
 <span class="c">**        signature is found without a namespace attached. Must include &lt;Old&gt;</span>
 <span class="c">**        and &lt;New&gt; child elements.</span>
 <span class="c">**</span>
@@ -100,11 +101,11 @@
 <span class="c">**      will cause the migration tool to flag a section of the code for</span>
 <span class="c">**      revision. The current type list is:</span>
 <span class="c">**</span>
-<span class="c">**      - &quot;MethodRefactor&quot;: Flag the user anywhere the changed method is</span>
-<span class="c">**        called. Should be used any time a method&#39;s signature changes. Must</span>
+<span class="c">**      - "MethodRefactor": Flag the user anywhere the changed method is</span>
+<span class="c">**        called. Should be used any time a method's signature changes. Must</span>
 <span class="c">**        include an &lt;Old&gt; child element.</span>
 <span class="c">**</span>
-<span class="c">**      - &quot;GeneralRefactor&quot;: Flag the user anywhere that the text specified in</span>
+<span class="c">**      - "GeneralRefactor": Flag the user anywhere that the text specified in</span>
 <span class="c">**        the &lt;Old&gt; child element is found.</span>
 <span class="c">**</span>
 <span class="c">****************************************************************************--&gt;</span>
@@ -220,13 +221,13 @@
   <span class="c">&lt;!--</span>
 <span class="c">  ** Migration guide rules</span>
 <span class="c">  **--&gt;</span>
-  <span class="nt">&lt;MigrationFix-Manual</span> <span class="na">type=</span><span class="s">&quot;MethodRefactor&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;MigrationFix-Manual</span> <span class="na">type=</span><span class="s">"MethodRefactor"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;Old&gt;</span>
     MeasurementVectorTraits::GetLength
     <span class="nt">&lt;/Old&gt;</span>
   <span class="nt">&lt;/MigrationFix-Manual&gt;</span>
 
-  <span class="nt">&lt;MigrationFix-Manual</span> <span class="na">type=</span><span class="s">&quot;MethodRefactor&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;MigrationFix-Manual</span> <span class="na">type=</span><span class="s">"MethodRefactor"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;Old&gt;</span>
     MeasurementVectorTraits::SetLength
     <span class="nt">&lt;/Old&gt;</span>
@@ -236,7 +237,7 @@
 <span class="nt">&lt;/Change&gt;</span>
 </pre></div>
 <h2><span class="mw-headline" id="Example_2_-_Improve_Attribute_Names_for_Label_Objects">Example 2 - Improve Attribute Names for Label Objects</span></h2>
-<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 
 <span class="c">&lt;!--***************************************************************************</span>
 <span class="c">**</span>
@@ -490,10 +491,9 @@ Unstrip post‐expand size: 21744/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8038-0!canonical and timestamp 20220924101440 and revision id 33803. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples&amp;oldid=33803">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide/Migration_Guide_XML_Samples&amp;oldid=33803</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

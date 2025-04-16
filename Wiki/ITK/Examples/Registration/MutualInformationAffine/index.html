@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Examples/Registration/MutualInformationAffine</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -117,7 +118,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 /*]]>*/
 </style></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_Registration_MutualInformationAffine skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#MutualInformationAffine.cxx"><span class="tocnumber">1</span> <span class="toctext">MutualInformationAffine.cxx</span></a></li>
 <li class="toclevel-1"><a href="#CMakeLists.txt"><span class="tocnumber">2</span> <span class="toctext">CMakeLists.txt</span></a></li>
@@ -131,75 +132,74 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="MutualInformationAffine.cxx">MutualInformationAffine.cxx</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &quot;itkImageRegistrationMethod.h&quot;</span>
-<span class="co2">#include &quot;itkAffineTransform.h&quot;</span>
-<span class="co2">#include &quot;itkMutualInformationImageToImageMetric.h&quot;</span>
-<span class="co2">#include &quot;itkGradientDescentOptimizer.h&quot;</span>
-<span class="co2">#include &quot;itkNormalizeImageFilter.h&quot;</span>
-<span class="co2">#include &quot;itkDiscreteGaussianImageFilter.h&quot;</span>
-<span class="co2">#include &quot;itkResampleImageFilter.h&quot;</span>
-<span class="co2">#include &quot;itkCastImageFilter.h&quot;</span>
-<span class="co2">#include &quot;itkCheckerBoardImageFilter.h&quot;</span>
-<span class="co2">#include &quot;itkEllipseSpatialObject.h&quot;</span>
-<span class="co2">#include &quot;itkSpatialObjectToImageFilter.h&quot;</span>
-<span class="co2">#include &quot;itkImageFileWriter.h&quot;</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include "itkImageRegistrationMethod.h"</span>
+<span class="co2">#include "itkAffineTransform.h"</span>
+<span class="co2">#include "itkMutualInformationImageToImageMetric.h"</span>
+<span class="co2">#include "itkGradientDescentOptimizer.h"</span>
+<span class="co2">#include "itkNormalizeImageFilter.h"</span>
+<span class="co2">#include "itkDiscreteGaussianImageFilter.h"</span>
+<span class="co2">#include "itkResampleImageFilter.h"</span>
+<span class="co2">#include "itkCastImageFilter.h"</span>
+<span class="co2">#include "itkCheckerBoardImageFilter.h"</span>
+<span class="co2">#include "itkEllipseSpatialObject.h"</span>
+<span class="co2">#include "itkSpatialObjectToImageFilter.h"</span>
+<span class="co2">#include "itkImageFileWriter.h"</span>
+ 
 <span class="kw4">const</span>    <span class="kw4">unsigned</span> <span class="kw4">int</span>    Dimension <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
 <span class="kw4">typedef</span>  <span class="kw4">unsigned</span> <span class="kw4">char</span>           PixelType<span class="sy4">;</span>
-&#160;
+ 
 <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span> PixelType, Dimension <span class="sy1">&gt;</span>  ImageType<span class="sy4">;</span>
-&#160;
-<span class="kw4">static</span> <span class="kw4">void</span> CreateEllipseImage<span class="br0">&#40;</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="kw4">static</span> <span class="kw4">void</span> CreateCircleImage<span class="br0">&#40;</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span> <span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+ 
+<span class="kw4">static</span> <span class="kw4">void</span> CreateEllipseImage<span class="br0">(</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">static</span> <span class="kw4">void</span> CreateCircleImage<span class="br0">(</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span> <span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">[</span><span class="br0">]</span> <span class="br0">)</span>
+<span class="br0">{</span>
   <span class="co1">// Generate synthetic fixed and moving images</span>
-  ImageType<span class="sy4">::</span><span class="me2">Pointer</span>  fixedImage <span class="sy1">=</span> ImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  CreateCircleImage<span class="br0">&#40;</span>fixedImage<span class="br0">&#41;</span><span class="sy4">;</span>
-  ImageType<span class="sy4">::</span><span class="me2">Pointer</span> movingImage <span class="sy1">=</span> ImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  CreateEllipseImage<span class="br0">&#40;</span>movingImage<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  ImageType<span class="sy4">::</span><span class="me2">Pointer</span>  fixedImage <span class="sy1">=</span> ImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  CreateCircleImage<span class="br0">(</span>fixedImage<span class="br0">)</span><span class="sy4">;</span>
+  ImageType<span class="sy4">::</span><span class="me2">Pointer</span> movingImage <span class="sy1">=</span> ImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  CreateEllipseImage<span class="br0">(</span>movingImage<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Write the two synthetic inputs</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ImageFileWriter</span><span class="sy1">&lt;</span> ImageType <span class="sy1">&gt;</span>  WriterType<span class="sy4">;</span>
-&#160;
-  WriterType<span class="sy4">::</span><span class="me2">Pointer</span>      fixedWriter <span class="sy1">=</span>  WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  fixedWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span><span class="st0">&quot;fixed.png&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  fixedWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> fixedImage<span class="br0">&#41;</span><span class="sy4">;</span>
-  fixedWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  WriterType<span class="sy4">::</span><span class="me2">Pointer</span>      movingWriter <span class="sy1">=</span>  WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  movingWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span><span class="st0">&quot;moving.png&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  movingWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> movingImage<span class="br0">&#41;</span><span class="sy4">;</span>
-  movingWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  WriterType<span class="sy4">::</span><span class="me2">Pointer</span>      fixedWriter <span class="sy1">=</span>  WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  fixedWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span><span class="st0">"fixed.png"</span><span class="br0">)</span><span class="sy4">;</span>
+  fixedWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> fixedImage<span class="br0">)</span><span class="sy4">;</span>
+  fixedWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  WriterType<span class="sy4">::</span><span class="me2">Pointer</span>      movingWriter <span class="sy1">=</span>  WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  movingWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span><span class="st0">"moving.png"</span><span class="br0">)</span><span class="sy4">;</span>
+  movingWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> movingImage<span class="br0">)</span><span class="sy4">;</span>
+  movingWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// We use floats internally</span>
   <span class="kw4">typedef</span>   <span class="kw4">float</span>                                    InternalPixelType<span class="sy4">;</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span> <span class="kw4">float</span>, Dimension<span class="sy1">&gt;</span> InternalImageType<span class="sy4">;</span>
-&#160;
+ 
   <span class="co1">// Normalize the images</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">NormalizeImageFilter</span><span class="sy1">&lt;</span>ImageType, InternalImageType<span class="sy1">&gt;</span> NormalizeFilterType<span class="sy4">;</span>
-&#160;
-  NormalizeFilterType<span class="sy4">::</span><span class="me2">Pointer</span> fixedNormalizer <span class="sy1">=</span> NormalizeFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  NormalizeFilterType<span class="sy4">::</span><span class="me2">Pointer</span> movingNormalizer <span class="sy1">=</span> NormalizeFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  fixedNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>  fixedImage<span class="br0">&#41;</span><span class="sy4">;</span>
-  movingNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> movingImage<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  NormalizeFilterType<span class="sy4">::</span><span class="me2">Pointer</span> fixedNormalizer <span class="sy1">=</span> NormalizeFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  NormalizeFilterType<span class="sy4">::</span><span class="me2">Pointer</span> movingNormalizer <span class="sy1">=</span> NormalizeFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  fixedNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>  fixedImage<span class="br0">)</span><span class="sy4">;</span>
+  movingNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> movingImage<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Smooth the normalized images</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">DiscreteGaussianImageFilter</span><span class="sy1">&lt;</span>InternalImageType,InternalImageType<span class="sy1">&gt;</span> GaussianFilterType<span class="sy4">;</span>
-&#160;
-  GaussianFilterType<span class="sy4">::</span><span class="me2">Pointer</span> fixedSmoother  <span class="sy1">=</span> GaussianFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  GaussianFilterType<span class="sy4">::</span><span class="me2">Pointer</span> movingSmoother <span class="sy1">=</span> GaussianFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  fixedSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>SetVariance<span class="br0">&#40;</span> <span class="nu16">2.0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  movingSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>SetVariance<span class="br0">&#40;</span> <span class="nu16">2.0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  fixedSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> fixedNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  movingSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> movingNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  GaussianFilterType<span class="sy4">::</span><span class="me2">Pointer</span> fixedSmoother  <span class="sy1">=</span> GaussianFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  GaussianFilterType<span class="sy4">::</span><span class="me2">Pointer</span> movingSmoother <span class="sy1">=</span> GaussianFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  fixedSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>SetVariance<span class="br0">(</span> <span class="nu16">2.0</span> <span class="br0">)</span><span class="sy4">;</span>
+  movingSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>SetVariance<span class="br0">(</span> <span class="nu16">2.0</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  fixedSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> fixedNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+  movingSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> movingNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">AffineTransform</span><span class="sy1">&lt;</span> <span class="kw4">double</span>, Dimension <span class="sy1">&gt;</span> TransformType<span class="sy4">;</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">GradientDescentOptimizer</span>                  OptimizerType<span class="sy4">;</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">LinearInterpolateImageFunction</span><span class="sy1">&lt;</span>
@@ -211,19 +211,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">MutualInformationImageToImageMetric</span><span class="sy1">&lt;</span>
                                           InternalImageType,
                                           InternalImageType <span class="sy1">&gt;</span>    MetricType<span class="sy4">;</span>
-&#160;
-  TransformType<span class="sy4">::</span><span class="me2">Pointer</span>      transform     <span class="sy1">=</span> TransformType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  OptimizerType<span class="sy4">::</span><span class="me2">Pointer</span>      optimizer     <span class="sy1">=</span> OptimizerType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  InterpolatorType<span class="sy4">::</span><span class="me2">Pointer</span>   interpolator  <span class="sy1">=</span> InterpolatorType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  RegistrationType<span class="sy4">::</span><span class="me2">Pointer</span>   registration  <span class="sy1">=</span> RegistrationType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetOptimizer<span class="br0">&#40;</span>     optimizer     <span class="br0">&#41;</span><span class="sy4">;</span>
-  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetTransform<span class="br0">&#40;</span>     transform     <span class="br0">&#41;</span><span class="sy4">;</span>
-  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetInterpolator<span class="br0">&#40;</span>  interpolator  <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  MetricType<span class="sy4">::</span><span class="me2">Pointer</span>         metric        <span class="sy1">=</span> MetricType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetMetric<span class="br0">&#40;</span> metric  <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  TransformType<span class="sy4">::</span><span class="me2">Pointer</span>      transform     <span class="sy1">=</span> TransformType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  OptimizerType<span class="sy4">::</span><span class="me2">Pointer</span>      optimizer     <span class="sy1">=</span> OptimizerType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  InterpolatorType<span class="sy4">::</span><span class="me2">Pointer</span>   interpolator  <span class="sy1">=</span> InterpolatorType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  RegistrationType<span class="sy4">::</span><span class="me2">Pointer</span>   registration  <span class="sy1">=</span> RegistrationType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetOptimizer<span class="br0">(</span>     optimizer     <span class="br0">)</span><span class="sy4">;</span>
+  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetTransform<span class="br0">(</span>     transform     <span class="br0">)</span><span class="sy4">;</span>
+  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetInterpolator<span class="br0">(</span>  interpolator  <span class="br0">)</span><span class="sy4">;</span>
+ 
+  MetricType<span class="sy4">::</span><span class="me2">Pointer</span>         metric        <span class="sy1">=</span> MetricType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetMetric<span class="br0">(</span> metric  <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">//  The metric requires a number of parameters to be selected, including</span>
   <span class="co1">//  the standard deviation of the Gaussian kernel for the fixed image</span>
   <span class="co1">//  density estimate, the standard deviation of the kernel for the moving</span>
@@ -234,34 +234,34 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="co1">//  shown that a kernel standard deviation of $0.4$ works well for images</span>
   <span class="co1">//  which have been normalized to a mean of zero and unit variance.  We</span>
   <span class="co1">//  will follow this empirical rule in this example.</span>
-&#160;
-  metric<span class="sy2">-</span><span class="sy1">&gt;</span>SetFixedImageStandardDeviation<span class="br0">&#40;</span>  <span class="nu16">0.4</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  metric<span class="sy2">-</span><span class="sy1">&gt;</span>SetMovingImageStandardDeviation<span class="br0">&#40;</span> <span class="nu16">0.4</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetFixedImage<span class="br0">&#40;</span>    fixedSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span>    <span class="br0">&#41;</span><span class="sy4">;</span>
-  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetMovingImage<span class="br0">&#40;</span>   movingSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span>   <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  fixedNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+ 
+  metric<span class="sy2">-</span><span class="sy1">&gt;</span>SetFixedImageStandardDeviation<span class="br0">(</span>  <span class="nu16">0.4</span> <span class="br0">)</span><span class="sy4">;</span>
+  metric<span class="sy2">-</span><span class="sy1">&gt;</span>SetMovingImageStandardDeviation<span class="br0">(</span> <span class="nu16">0.4</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetFixedImage<span class="br0">(</span>    fixedSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span>    <span class="br0">)</span><span class="sy4">;</span>
+  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetMovingImage<span class="br0">(</span>   movingSmoother<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span>   <span class="br0">)</span><span class="sy4">;</span>
+ 
+  fixedNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
   ImageType<span class="sy4">::</span><span class="me2">RegionType</span> fixedImageRegion <span class="sy1">=</span>
-       fixedNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>GetBufferedRegion<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetFixedImageRegion<span class="br0">&#40;</span> fixedImageRegion <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+       fixedNormalizer<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>GetBufferedRegion<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetFixedImageRegion<span class="br0">(</span> fixedImageRegion <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span> RegistrationType<span class="sy4">::</span><span class="me2">ParametersType</span> ParametersType<span class="sy4">;</span>
-  ParametersType initialParameters<span class="br0">&#40;</span> transform<span class="sy2">-</span><span class="sy1">&gt;</span>GetNumberOfParameters<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  ParametersType initialParameters<span class="br0">(</span> transform<span class="sy2">-</span><span class="sy1">&gt;</span>GetNumberOfParameters<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// rotation matrix (identity)</span>
-  initialParameters<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu16">1.0</span><span class="sy4">;</span>  <span class="co1">// R(0,0)</span>
-  initialParameters<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span>  <span class="co1">// R(0,1)</span>
-  initialParameters<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span>  <span class="co1">// R(1,0)</span>
-  initialParameters<span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu16">1.0</span><span class="sy4">;</span>  <span class="co1">// R(1,1)</span>
-&#160;
+  initialParameters<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu16">1.0</span><span class="sy4">;</span>  <span class="co1">// R(0,0)</span>
+  initialParameters<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span>  <span class="co1">// R(0,1)</span>
+  initialParameters<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span>  <span class="co1">// R(1,0)</span>
+  initialParameters<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu16">1.0</span><span class="sy4">;</span>  <span class="co1">// R(1,1)</span>
+ 
   <span class="co1">// translation vector</span>
-  initialParameters<span class="br0">&#91;</span><span class="nu0">4</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span>
-  initialParameters<span class="br0">&#91;</span><span class="nu0">5</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span>
-&#160;
-  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetInitialTransformParameters<span class="br0">&#40;</span> initialParameters <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  <span class="co1">//  Software Guide&#160;: BeginLatex</span>
+  initialParameters<span class="br0">[</span><span class="nu0">4</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span>
+  initialParameters<span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span>
+ 
+  registration<span class="sy2">-</span><span class="sy1">&gt;</span>SetInitialTransformParameters<span class="br0">(</span> initialParameters <span class="br0">)</span><span class="sy4">;</span>
+ 
+  <span class="co1">//  Software Guide : BeginLatex</span>
   <span class="co1">//</span>
   <span class="co1">//  We should now define the number of spatial samples to be considered in</span>
   <span class="co1">//  the metric computation. Note that we were forced to postpone this setting</span>
@@ -288,20 +288,20 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="co1">//  of the Metric if the noise in their values results in more iterations</span>
   <span class="co1">//  being required by the optimizer to converge. You must then study the</span>
   <span class="co1">//  behavior of the metric values as the iterations progress.</span>
-&#160;
-  <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> numberOfPixels <span class="sy1">=</span> fixedImageRegion.<span class="me1">GetNumberOfPixels</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> numberOfPixels <span class="sy1">=</span> fixedImageRegion.<span class="me1">GetNumberOfPixels</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> numberOfSamples <span class="sy1">=</span>
-                        <span class="kw2">static_cast</span><span class="sy1">&lt;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> <span class="sy1">&gt;</span><span class="br0">&#40;</span> numberOfPixels <span class="sy2">*</span> <span class="nu16">0.01</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  metric<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfSpatialSamples<span class="br0">&#40;</span> numberOfSamples <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  <span class="co1">//optimizer-&gt;SetLearningRate( 15.0 ); //&quot;All the sampled point mapped to outside of the moving image&quot;</span>
+                        <span class="kw2">static_cast</span><span class="sy1">&lt;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> <span class="sy1">&gt;</span><span class="br0">(</span> numberOfPixels <span class="sy2">*</span> <span class="nu16">0.01</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  metric<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfSpatialSamples<span class="br0">(</span> numberOfSamples <span class="br0">)</span><span class="sy4">;</span>
+ 
+  <span class="co1">//optimizer-&gt;SetLearningRate( 15.0 ); //"All the sampled point mapped to outside of the moving image"</span>
   <span class="co1">//optimizer-&gt;SetLearningRate( 1.0 );</span>
-  optimizer<span class="sy2">-</span><span class="sy1">&gt;</span>SetLearningRate<span class="br0">&#40;</span> <span class="nu16">0.1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  optimizer<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfIterations<span class="br0">&#40;</span> <span class="nu0">1000</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  optimizer<span class="sy2">-</span><span class="sy1">&gt;</span>MaximizeOn<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// We want to maximize mutual information (the default of the optimizer is to minimize)</span>
-&#160;
+  optimizer<span class="sy2">-</span><span class="sy1">&gt;</span>SetLearningRate<span class="br0">(</span> <span class="nu16">0.1</span> <span class="br0">)</span><span class="sy4">;</span>
+  optimizer<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfIterations<span class="br0">(</span> <span class="nu0">1000</span> <span class="br0">)</span><span class="sy4">;</span>
+  optimizer<span class="sy2">-</span><span class="sy1">&gt;</span>MaximizeOn<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// We want to maximize mutual information (the default of the optimizer is to minimize)</span>
+ 
   <span class="co1">// Note that large values of the learning rate will make the optimizer</span>
   <span class="co1">// unstable. Small values, on the other hand, may result in the optimizer</span>
   <span class="co1">// needing too many iterations in order to walk to the extrema of the cost</span>
@@ -317,188 +317,188 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <span class="co1">// optimizer step length is proportional to the Metric values themselves.</span>
   <span class="co1">// Metrics with large values will require you to use smaller values for the</span>
   <span class="co1">// learning rate in order to maintain a similar optimizer behavior.</span>
-&#160;
+ 
   <span class="kw2">try</span>
-    <span class="br0">&#123;</span>
-    registration<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Optimizer stop condition: &quot;</span>
-              <span class="sy1">&lt;&lt;</span> registration<span class="sy2">-</span><span class="sy1">&gt;</span>GetOptimizer<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="sy1">&gt;</span>GetStopConditionDescription<span class="br0">&#40;</span><span class="br0">&#41;</span>
+    <span class="br0">{</span>
+    registration<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Optimizer stop condition: "</span>
+              <span class="sy1">&lt;&lt;</span> registration<span class="sy2">-</span><span class="sy1">&gt;</span>GetOptimizer<span class="br0">(</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>GetStopConditionDescription<span class="br0">(</span><span class="br0">)</span>
               <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-  <span class="kw2">catch</span><span class="br0">&#40;</span> itk<span class="sy4">::</span><span class="me2">ExceptionObject</span> <span class="sy3">&amp;</span> err <span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;ExceptionObject caught&#160;!&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+  <span class="kw2">catch</span><span class="br0">(</span> itk<span class="sy4">::</span><span class="me2">ExceptionObject</span> <span class="sy3">&amp;</span> err <span class="br0">)</span>
+    <span class="br0">{</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"ExceptionObject caught !"</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
     std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> err <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
-  ParametersType finalParameters <span class="sy1">=</span> registration<span class="sy2">-</span><span class="sy1">&gt;</span>GetLastTransformParameters<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Final Parameters: &quot;</span> <span class="sy1">&lt;&lt;</span> finalParameters <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-&#160;
-  <span class="kw4">unsigned</span> <span class="kw4">int</span> numberOfIterations <span class="sy1">=</span> optimizer<span class="sy2">-</span><span class="sy1">&gt;</span>GetCurrentIteration<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  <span class="kw4">double</span> bestValue <span class="sy1">=</span> optimizer<span class="sy2">-</span><span class="sy1">&gt;</span>GetValue<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    <span class="br0">}</span>
+ 
+  ParametersType finalParameters <span class="sy1">=</span> registration<span class="sy2">-</span><span class="sy1">&gt;</span>GetLastTransformParameters<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Final Parameters: "</span> <span class="sy1">&lt;&lt;</span> finalParameters <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+ 
+  <span class="kw4">unsigned</span> <span class="kw4">int</span> numberOfIterations <span class="sy1">=</span> optimizer<span class="sy2">-</span><span class="sy1">&gt;</span>GetCurrentIteration<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  <span class="kw4">double</span> bestValue <span class="sy1">=</span> optimizer<span class="sy2">-</span><span class="sy1">&gt;</span>GetValue<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Print out results</span>
   std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Result = &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; Iterations    = &quot;</span> <span class="sy1">&lt;&lt;</span> numberOfIterations <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; Metric value  = &quot;</span> <span class="sy1">&lt;&lt;</span> bestValue          <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; Numb. Samples = &quot;</span> <span class="sy1">&lt;&lt;</span> numberOfSamples    <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
-&#160;
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"Result = "</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" Iterations    = "</span> <span class="sy1">&lt;&lt;</span> numberOfIterations <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" Metric value  = "</span> <span class="sy1">&lt;&lt;</span> bestValue          <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" Numb. Samples = "</span> <span class="sy1">&lt;&lt;</span> numberOfSamples    <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ResampleImageFilter</span><span class="sy1">&lt;</span>
                             ImageType,
                             ImageType <span class="sy1">&gt;</span>    ResampleFilterType<span class="sy4">;</span>
-&#160;
-  TransformType<span class="sy4">::</span><span class="me2">Pointer</span> finalTransform <span class="sy1">=</span> TransformType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  finalTransform<span class="sy2">-</span><span class="sy1">&gt;</span>SetParameters<span class="br0">&#40;</span> finalParameters <span class="br0">&#41;</span><span class="sy4">;</span>
-  finalTransform<span class="sy2">-</span><span class="sy1">&gt;</span>SetFixedParameters<span class="br0">&#40;</span> transform<span class="sy2">-</span><span class="sy1">&gt;</span>GetFixedParameters<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  ResampleFilterType<span class="sy4">::</span><span class="me2">Pointer</span> resample <span class="sy1">=</span> ResampleFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetTransform<span class="br0">&#40;</span> finalTransform <span class="br0">&#41;</span><span class="sy4">;</span>
-  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> movingImage<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetSize<span class="br0">&#40;</span>    fixedImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">GetSize</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputOrigin<span class="br0">&#40;</span>  fixedImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetOrigin<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputSpacing<span class="br0">&#40;</span> fixedImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetSpacing<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputDirection<span class="br0">&#40;</span> fixedImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetDirection<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetDefaultPixelValue<span class="br0">&#40;</span> <span class="nu0">100</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  WriterType<span class="sy4">::</span><span class="me2">Pointer</span>      writer <span class="sy1">=</span>  WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span><span class="st0">&quot;output.png&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span> resample<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span>   <span class="br0">&#41;</span><span class="sy4">;</span>
-  writer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  TransformType<span class="sy4">::</span><span class="me2">Pointer</span> finalTransform <span class="sy1">=</span> TransformType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  finalTransform<span class="sy2">-</span><span class="sy1">&gt;</span>SetParameters<span class="br0">(</span> finalParameters <span class="br0">)</span><span class="sy4">;</span>
+  finalTransform<span class="sy2">-</span><span class="sy1">&gt;</span>SetFixedParameters<span class="br0">(</span> transform<span class="sy2">-</span><span class="sy1">&gt;</span>GetFixedParameters<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  ResampleFilterType<span class="sy4">::</span><span class="me2">Pointer</span> resample <span class="sy1">=</span> ResampleFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetTransform<span class="br0">(</span> finalTransform <span class="br0">)</span><span class="sy4">;</span>
+  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> movingImage<span class="br0">)</span><span class="sy4">;</span>
+ 
+  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetSize<span class="br0">(</span>    fixedImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">(</span><span class="br0">)</span>.<span class="me1">GetSize</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputOrigin<span class="br0">(</span>  fixedImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetOrigin<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputSpacing<span class="br0">(</span> fixedImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetSpacing<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutputDirection<span class="br0">(</span> fixedImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetDirection<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+  resample<span class="sy2">-</span><span class="sy1">&gt;</span>SetDefaultPixelValue<span class="br0">(</span> <span class="nu0">100</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  WriterType<span class="sy4">::</span><span class="me2">Pointer</span>      writer <span class="sy1">=</span>  WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span><span class="st0">"output.png"</span><span class="br0">)</span><span class="sy4">;</span>
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span> resample<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span>   <span class="br0">)</span><span class="sy4">;</span>
+  writer<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw1">return</span> <span class="kw2">EXIT_SUCCESS</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-&#160;
-<span class="kw4">void</span> CreateEllipseImage<span class="br0">&#40;</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+<span class="br0">}</span>
+ 
+ 
+<span class="kw4">void</span> CreateEllipseImage<span class="br0">(</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">)</span>
+<span class="br0">{</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">EllipseSpatialObject</span><span class="sy1">&lt;</span> Dimension <span class="sy1">&gt;</span>   EllipseType<span class="sy4">;</span>
-&#160;
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">SpatialObjectToImageFilter</span><span class="sy1">&lt;</span>
     EllipseType, ImageType <span class="sy1">&gt;</span>   SpatialObjectToImageFilterType<span class="sy4">;</span>
-&#160;
+ 
   SpatialObjectToImageFilterType<span class="sy4">::</span><span class="me2">Pointer</span> imageFilter <span class="sy1">=</span>
-    SpatialObjectToImageFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    SpatialObjectToImageFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   ImageType<span class="sy4">::</span><span class="me2">SizeType</span> size<span class="sy4">;</span>
-  size<span class="br0">&#91;</span> <span class="nu0">0</span> <span class="br0">&#93;</span> <span class="sy1">=</span>  <span class="nu0">100</span><span class="sy4">;</span>
-  size<span class="br0">&#91;</span> <span class="nu0">1</span> <span class="br0">&#93;</span> <span class="sy1">=</span>  <span class="nu0">100</span><span class="sy4">;</span>
-&#160;
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSize<span class="br0">&#40;</span> size <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  size<span class="br0">[</span> <span class="nu0">0</span> <span class="br0">]</span> <span class="sy1">=</span>  <span class="nu0">100</span><span class="sy4">;</span>
+  size<span class="br0">[</span> <span class="nu0">1</span> <span class="br0">]</span> <span class="sy1">=</span>  <span class="nu0">100</span><span class="sy4">;</span>
+ 
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSize<span class="br0">(</span> size <span class="br0">)</span><span class="sy4">;</span>
+ 
   ImageType<span class="sy4">::</span><span class="me2">SpacingType</span> spacing<span class="sy4">;</span>
-  spacing.<span class="me1">Fill</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSpacing<span class="br0">&#40;</span>spacing<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  EllipseType<span class="sy4">::</span><span class="me2">Pointer</span> ellipse    <span class="sy1">=</span> EllipseType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  spacing.<span class="me1">Fill</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSpacing<span class="br0">(</span>spacing<span class="br0">)</span><span class="sy4">;</span>
+ 
+  EllipseType<span class="sy4">::</span><span class="me2">Pointer</span> ellipse    <span class="sy1">=</span> EllipseType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
   EllipseType<span class="sy4">::</span><span class="me2">ArrayType</span> radiusArray<span class="sy4">;</span>
-  radiusArray<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
-  radiusArray<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">20</span><span class="sy4">;</span>
-  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetRadius<span class="br0">&#40;</span>radiusArray<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  radiusArray<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
+  radiusArray<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">20</span><span class="sy4">;</span>
+  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetRadius<span class="br0">(</span>radiusArray<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span> EllipseType<span class="sy4">::</span><span class="me2">TransformType</span>                 TransformType<span class="sy4">;</span>
-  TransformType<span class="sy4">::</span><span class="me2">Pointer</span> transform <span class="sy1">=</span> TransformType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  transform<span class="sy2">-</span><span class="sy1">&gt;</span>SetIdentity<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  TransformType<span class="sy4">::</span><span class="me2">Pointer</span> transform <span class="sy1">=</span> TransformType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  transform<span class="sy2">-</span><span class="sy1">&gt;</span>SetIdentity<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   TransformType<span class="sy4">::</span><span class="me2">OutputVectorType</span>  translation<span class="sy4">;</span>
   TransformType<span class="sy4">::</span><span class="me2">CenterType</span>        center<span class="sy4">;</span>
-&#160;
-  translation<span class="br0">&#91;</span> <span class="nu0">0</span> <span class="br0">&#93;</span> <span class="sy1">=</span>  <span class="nu0">65</span><span class="sy4">;</span>
-  translation<span class="br0">&#91;</span> <span class="nu0">1</span> <span class="br0">&#93;</span> <span class="sy1">=</span>  <span class="nu0">45</span><span class="sy4">;</span>
-  transform<span class="sy2">-</span><span class="sy1">&gt;</span>Translate<span class="br0">&#40;</span> translation, <span class="kw2">false</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetObjectToParentTransform<span class="br0">&#40;</span> transform <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>ellipse<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetDefaultInsideValue<span class="br0">&#40;</span><span class="nu0">255</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetDefaultOutsideValue<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetUseObjectValue<span class="br0">&#40;</span> <span class="kw2">true</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutsideValue<span class="br0">&#40;</span> <span class="nu0">0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  image<span class="sy2">-</span><span class="sy1">&gt;</span>Graft<span class="br0">&#40;</span>imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">void</span> CreateCircleImage<span class="br0">&#40;</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+ 
+  translation<span class="br0">[</span> <span class="nu0">0</span> <span class="br0">]</span> <span class="sy1">=</span>  <span class="nu0">65</span><span class="sy4">;</span>
+  translation<span class="br0">[</span> <span class="nu0">1</span> <span class="br0">]</span> <span class="sy1">=</span>  <span class="nu0">45</span><span class="sy4">;</span>
+  transform<span class="sy2">-</span><span class="sy1">&gt;</span>Translate<span class="br0">(</span> translation, <span class="kw2">false</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetObjectToParentTransform<span class="br0">(</span> transform <span class="br0">)</span><span class="sy4">;</span>
+ 
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>ellipse<span class="br0">)</span><span class="sy4">;</span>
+ 
+  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetDefaultInsideValue<span class="br0">(</span><span class="nu0">255</span><span class="br0">)</span><span class="sy4">;</span>
+  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetDefaultOutsideValue<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetUseObjectValue<span class="br0">(</span> <span class="kw2">true</span> <span class="br0">)</span><span class="sy4">;</span>
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutsideValue<span class="br0">(</span> <span class="nu0">0</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>Graft<span class="br0">(</span>imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="br0">}</span>
+ 
+<span class="kw4">void</span> CreateCircleImage<span class="br0">(</span>ImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">)</span>
+<span class="br0">{</span>
  <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">EllipseSpatialObject</span><span class="sy1">&lt;</span> Dimension <span class="sy1">&gt;</span>   EllipseType<span class="sy4">;</span>
-&#160;
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">SpatialObjectToImageFilter</span><span class="sy1">&lt;</span>
     EllipseType, ImageType <span class="sy1">&gt;</span>   SpatialObjectToImageFilterType<span class="sy4">;</span>
-&#160;
+ 
   SpatialObjectToImageFilterType<span class="sy4">::</span><span class="me2">Pointer</span> imageFilter <span class="sy1">=</span>
-    SpatialObjectToImageFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    SpatialObjectToImageFilterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   ImageType<span class="sy4">::</span><span class="me2">SizeType</span> size<span class="sy4">;</span>
-  size<span class="br0">&#91;</span> <span class="nu0">0</span> <span class="br0">&#93;</span> <span class="sy1">=</span>  <span class="nu0">100</span><span class="sy4">;</span>
-  size<span class="br0">&#91;</span> <span class="nu0">1</span> <span class="br0">&#93;</span> <span class="sy1">=</span>  <span class="nu0">100</span><span class="sy4">;</span>
-&#160;
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSize<span class="br0">&#40;</span> size <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  size<span class="br0">[</span> <span class="nu0">0</span> <span class="br0">]</span> <span class="sy1">=</span>  <span class="nu0">100</span><span class="sy4">;</span>
+  size<span class="br0">[</span> <span class="nu0">1</span> <span class="br0">]</span> <span class="sy1">=</span>  <span class="nu0">100</span><span class="sy4">;</span>
+ 
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSize<span class="br0">(</span> size <span class="br0">)</span><span class="sy4">;</span>
+ 
   ImageType<span class="sy4">::</span><span class="me2">SpacingType</span> spacing<span class="sy4">;</span>
-  spacing.<span class="me1">Fill</span><span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSpacing<span class="br0">&#40;</span>spacing<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  EllipseType<span class="sy4">::</span><span class="me2">Pointer</span> ellipse    <span class="sy1">=</span> EllipseType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  spacing.<span class="me1">Fill</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetSpacing<span class="br0">(</span>spacing<span class="br0">)</span><span class="sy4">;</span>
+ 
+  EllipseType<span class="sy4">::</span><span class="me2">Pointer</span> ellipse    <span class="sy1">=</span> EllipseType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
   EllipseType<span class="sy4">::</span><span class="me2">ArrayType</span> radiusArray<span class="sy4">;</span>
-  radiusArray<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
-  radiusArray<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
-  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetRadius<span class="br0">&#40;</span>radiusArray<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  radiusArray<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
+  radiusArray<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
+  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetRadius<span class="br0">(</span>radiusArray<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span> EllipseType<span class="sy4">::</span><span class="me2">TransformType</span>                 TransformType<span class="sy4">;</span>
-  TransformType<span class="sy4">::</span><span class="me2">Pointer</span> transform <span class="sy1">=</span> TransformType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  transform<span class="sy2">-</span><span class="sy1">&gt;</span>SetIdentity<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  TransformType<span class="sy4">::</span><span class="me2">Pointer</span> transform <span class="sy1">=</span> TransformType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  transform<span class="sy2">-</span><span class="sy1">&gt;</span>SetIdentity<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   TransformType<span class="sy4">::</span><span class="me2">OutputVectorType</span>  translation<span class="sy4">;</span>
   TransformType<span class="sy4">::</span><span class="me2">CenterType</span>        center<span class="sy4">;</span>
-&#160;
-  translation<span class="br0">&#91;</span> <span class="nu0">0</span> <span class="br0">&#93;</span> <span class="sy1">=</span>  <span class="nu0">50</span><span class="sy4">;</span>
-  translation<span class="br0">&#91;</span> <span class="nu0">1</span> <span class="br0">&#93;</span> <span class="sy1">=</span>  <span class="nu0">50</span><span class="sy4">;</span>
-  transform<span class="sy2">-</span><span class="sy1">&gt;</span>Translate<span class="br0">&#40;</span> translation, <span class="kw2">false</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetObjectToParentTransform<span class="br0">&#40;</span> transform <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>ellipse<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetDefaultInsideValue<span class="br0">&#40;</span><span class="nu0">255</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetDefaultOutsideValue<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetUseObjectValue<span class="br0">&#40;</span> <span class="kw2">true</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutsideValue<span class="br0">&#40;</span> <span class="nu0">0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  image<span class="sy2">-</span><span class="sy1">&gt;</span>Graft<span class="br0">&#40;</span>imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+ 
+  translation<span class="br0">[</span> <span class="nu0">0</span> <span class="br0">]</span> <span class="sy1">=</span>  <span class="nu0">50</span><span class="sy4">;</span>
+  translation<span class="br0">[</span> <span class="nu0">1</span> <span class="br0">]</span> <span class="sy1">=</span>  <span class="nu0">50</span><span class="sy4">;</span>
+  transform<span class="sy2">-</span><span class="sy1">&gt;</span>Translate<span class="br0">(</span> translation, <span class="kw2">false</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetObjectToParentTransform<span class="br0">(</span> transform <span class="br0">)</span><span class="sy4">;</span>
+ 
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>ellipse<span class="br0">)</span><span class="sy4">;</span>
+ 
+  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetDefaultInsideValue<span class="br0">(</span><span class="nu0">255</span><span class="br0">)</span><span class="sy4">;</span>
+  ellipse<span class="sy2">-</span><span class="sy1">&gt;</span>SetDefaultOutsideValue<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetUseObjectValue<span class="br0">(</span> <span class="kw2">true</span> <span class="br0">)</span><span class="sy4">;</span>
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>SetOutsideValue<span class="br0">(</span> <span class="nu0">0</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
+  imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>Graft<span class="br0">(</span>imageFilter<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <h2><span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
+ 
 <span class="kw1">project</span><span class="sy0">(</span>MutualInformationAffine<span class="sy0">)</span>
-&#160;
+ 
 <span class="kw1">find_package</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
 <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">if</span> <span class="sy0">(</span>ITKVtkGlue_LOADED<span class="sy0">)</span>
   <span class="kw1">find_package</span><span class="sy0">(</span>VTK REQUIRED<span class="sy0">)</span>
   <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${VTK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">endif</span><span class="sy0">()</span>
-&#160;
+ 
 <span class="kw1">add_executable</span><span class="sy0">(</span>MutualInformationAffine MACOSX_BUNDLE MutualInformationAffine.cxx<span class="sy0">)</span>
-&#160;
-<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+ 
+<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>MutualInformationAffine ITKReview <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>MutualInformationAffine <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
+<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
 <h2><span class="mw-headline" id="Download_and_Build_MutualInformationAffine">Download and Build MutualInformationAffine</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:MutualInformationAffine.tar">here to download <i>MutualInformationAffine</i></a> and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:MutualInformationAffine.tar" rel="nofollow">here to download <i>MutualInformationAffine</i></a> and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>MutualInformationAffine.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd MutualInformationAffine/build
@@ -533,7 +533,7 @@ Once the tarball <i>MutualInformationAffine.tar</i> has been downloaded and extr
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span class="mw-headline" id="ITK_.3C_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -546,9 +546,7 @@ Template argument size: 253/2097152 bytes
 Highest expansion depth: 3/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:8566-0!*!0!!en!*!* and timestamp 20150401052232 and revision id 50975
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/Registration/MutualInformationAffine&amp;oldid=50975">http://itk.org/Wiki/index.php?title=ITK/Examples/Registration/MutualInformationAffine&amp;oldid=50975</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

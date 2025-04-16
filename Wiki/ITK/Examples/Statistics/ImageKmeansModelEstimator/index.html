@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8"/>
 <title>ITK/Examples/WishList/Statistics/ImageKmeansModelEstimator</title>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-<meta name="generator" content="MediaWiki 1.23.8" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="http://itk.org/Wiki/api.php?action=rsd" />
-<link rel="copyright" href="http://creativecommons.org/licenses/by/2.5/" />
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="canonical" href="/ITKWikiArchive/Wiki/ITK/Examples/WishList/Statistics/ImageKmeansModelEstimator" />
-<link rel="stylesheet" href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" />
+<meta content="IE=EDGE" http-equiv="X-UA-Compatible"/>
+<meta content="MediaWiki 1.23.8" name="generator"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="http://itk.org/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="http://creativecommons.org/licenses/by/2.5/" rel="copyright"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
+<link href="/ITKWikiArchive/Wiki/ITK/Examples/WishList/Statistics/ImageKmeansModelEstimator" rel="canonical"/>
+<link href="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.monobook.styles&amp;only=styles&amp;skin=monobook&amp;*" rel="stylesheet"/>
 <!--[if IE 6]><link rel="stylesheet" href="/Wiki/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
-<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<!--[if IE 7]><link rel="stylesheet" href="/Wiki/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta content="" name="ResourceLoaderDynamicStyles"/>
 <style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
 /* cache key: KitwarePublicWikiDB:resourceloader:filter:minify-css:7:f67a91830b2c06c30170e182d61a9a1b */</style>
 <script src="http://itk.org/Wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
@@ -118,9 +119,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 /*]]>*/
 </style></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ITK_Examples_WishList_Statistics_ImageKmeansModelEstimator skin-monobook action-view"><!-- start content -->
-<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Segfault on line 102 (int classLabel = membershipIterator.GetClassLabel();))
+<div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><p>Segfault on line 102 (int classLabel = membershipIterator.GetClassLabel();))
 </p>
-<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<div class="toc" id="toc"><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#ImageKmeansModelEstimator.cxx"><span class="tocnumber">1</span> <span class="toctext">ImageKmeansModelEstimator.cxx</span></a></li>
 <li class="toclevel-1"><a href="#CMakeLists.txt"><span class="tocnumber">2</span> <span class="toctext">CMakeLists.txt</span></a></li>
@@ -134,212 +135,211 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ul>
 </div>
-
 <h2><span class="mw-headline" id="ImageKmeansModelEstimator.cxx">ImageKmeansModelEstimator.cxx</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &quot;itkImage.h&quot;</span>
-<span class="co2">#include &quot;itkListSample.h&quot;</span>
-<span class="co2">#include &quot;itkVector.h&quot;</span>
-<span class="co2">#include &quot;itkImageKmeansModelEstimator.h&quot;</span>
-<span class="co2">#include &quot;itkImageRegionIteratorWithIndex.h&quot;</span>
-<span class="co2">#include &quot;itkImageToListSampleAdaptor.h&quot;</span>
-<span class="co2">#include &quot;itkDistanceToCentroidMembershipFunction.h&quot;</span>
-<span class="co2">#include &quot;itkSampleClassifierFilter.h&quot;</span>
-<span class="co2">#include &quot;itkMinimumDecisionRule.h&quot;</span>
-<span class="co2">#include &quot;itkImageFileWriter.h&quot;</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include "itkImage.h"</span>
+<span class="co2">#include "itkListSample.h"</span>
+<span class="co2">#include "itkVector.h"</span>
+<span class="co2">#include "itkImageKmeansModelEstimator.h"</span>
+<span class="co2">#include "itkImageRegionIteratorWithIndex.h"</span>
+<span class="co2">#include "itkImageToListSampleAdaptor.h"</span>
+<span class="co2">#include "itkDistanceToCentroidMembershipFunction.h"</span>
+<span class="co2">#include "itkSampleClassifierFilter.h"</span>
+<span class="co2">#include "itkMinimumDecisionRule.h"</span>
+<span class="co2">#include "itkImageFileWriter.h"</span>
+ 
 <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Vector</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">char</span>,<span class="nu0">3</span><span class="sy1">&gt;</span> MeasurementVectorType<span class="sy4">;</span>
 <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span>MeasurementVectorType,<span class="nu0">2</span><span class="sy1">&gt;</span> ColorImageType<span class="sy4">;</span>
 <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Image</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">char</span>,<span class="nu0">2</span><span class="sy1">&gt;</span> ScalarImageType<span class="sy4">;</span>
-&#160;
-<span class="kw4">static</span> <span class="kw4">void</span> CreateImage<span class="br0">&#40;</span>ColorImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">int</span>, <span class="kw4">char</span><span class="sy2">*</span> <span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+ 
+<span class="kw4">static</span> <span class="kw4">void</span> CreateImage<span class="br0">(</span>ColorImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span>, <span class="kw4">char</span><span class="sy2">*</span> <span class="br0">[</span><span class="br0">]</span> <span class="br0">)</span>
+<span class="br0">{</span>
   <span class="co1">// Create a demo image</span>
-  ColorImageType<span class="sy4">::</span><span class="me2">Pointer</span> image <span class="sy1">=</span> ColorImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  CreateImage<span class="br0">&#40;</span>image<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  ColorImageType<span class="sy4">::</span><span class="me2">Pointer</span> image <span class="sy1">=</span> ColorImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  CreateImage<span class="br0">(</span>image<span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Compute pixel clusters using KMeans</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Statistics</span><span class="sy4">::</span><span class="me2">DistanceToCentroidMembershipFunction</span><span class="sy1">&lt;</span> MeasurementVectorType <span class="sy1">&gt;</span>  MembershipFunctionType <span class="sy4">;</span>
   <span class="kw4">typedef</span> MembershipFunctionType<span class="sy4">::</span><span class="me2">Pointer</span> MembershipFunctionPointer <span class="sy4">;</span>
   <span class="kw4">typedef</span> std<span class="sy4">::</span><span class="me2">vector</span><span class="sy1">&lt;</span> MembershipFunctionPointer <span class="sy1">&gt;</span>  MembershipFunctionPointerVector<span class="sy4">;</span>
-&#160;
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">ImageKmeansModelEstimator</span><span class="sy1">&lt;</span>ColorImageType, MembershipFunctionType<span class="sy1">&gt;</span>  ImageKmeansModelEstimatorType<span class="sy4">;</span>
-&#160;
-  ImageKmeansModelEstimatorType<span class="sy4">::</span><span class="me2">Pointer</span> kmeansEstimator <span class="sy1">=</span> ImageKmeansModelEstimatorType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetInputImage<span class="br0">&#40;</span>image<span class="br0">&#41;</span><span class="sy4">;</span>
-  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfModels<span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetThreshold<span class="br0">&#40;</span><span class="nu16">0.01</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetOffsetAdd<span class="br0">&#40;</span> <span class="nu16">0.01</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetOffsetMultiply<span class="br0">&#40;</span> <span class="nu16">0.01</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetMaxSplitAttempts<span class="br0">&#40;</span> <span class="nu0">10</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+ 
+  ImageKmeansModelEstimatorType<span class="sy4">::</span><span class="me2">Pointer</span> kmeansEstimator <span class="sy1">=</span> ImageKmeansModelEstimatorType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetInputImage<span class="br0">(</span>image<span class="br0">)</span><span class="sy4">;</span>
+  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfModels<span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span><span class="sy4">;</span>
+  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetThreshold<span class="br0">(</span><span class="nu16">0.01</span> <span class="br0">)</span><span class="sy4">;</span>
+  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetOffsetAdd<span class="br0">(</span> <span class="nu16">0.01</span> <span class="br0">)</span><span class="sy4">;</span>
+  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetOffsetMultiply<span class="br0">(</span> <span class="nu16">0.01</span> <span class="br0">)</span><span class="sy4">;</span>
+  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>SetMaxSplitAttempts<span class="br0">(</span> <span class="nu0">10</span> <span class="br0">)</span><span class="sy4">;</span>
+  kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Classify each pixel</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Statistics</span><span class="sy4">::</span><span class="me2">ListSample</span><span class="sy1">&lt;</span> MeasurementVectorType <span class="sy1">&gt;</span> SampleType <span class="sy4">;</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Statistics</span><span class="sy4">::</span><span class="me2">SampleClassifierFilter</span><span class="sy1">&lt;</span> SampleType <span class="sy1">&gt;</span> ClassifierType<span class="sy4">;</span>
-  ClassifierType<span class="sy4">::</span><span class="me2">Pointer</span> classifier <span class="sy1">=</span> ClassifierType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  ClassifierType<span class="sy4">::</span><span class="me2">Pointer</span> classifier <span class="sy1">=</span> ClassifierType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Statistics</span><span class="sy4">::</span><span class="me2">MinimumDecisionRule</span> DecisionRuleType<span class="sy4">;</span>
-  DecisionRuleType<span class="sy4">::</span><span class="me2">Pointer</span> decisionRule <span class="sy1">=</span> DecisionRuleType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>SetDecisionRule<span class="br0">&#40;</span>decisionRule<span class="br0">&#41;</span><span class="sy4">;</span>
-  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfClasses<span class="br0">&#40;</span><span class="nu0">3</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  DecisionRuleType<span class="sy4">::</span><span class="me2">Pointer</span> decisionRule <span class="sy1">=</span> DecisionRuleType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>SetDecisionRule<span class="br0">(</span>decisionRule<span class="br0">)</span><span class="sy4">;</span>
+  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>SetNumberOfClasses<span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span> ClassifierType<span class="sy4">::</span><span class="me2">ClassLabelVectorObjectType</span>               ClassLabelVectorObjectType<span class="sy4">;</span>
   <span class="kw4">typedef</span> ClassifierType<span class="sy4">::</span><span class="me2">ClassLabelVectorType</span>                     ClassLabelVectorType<span class="sy4">;</span>
   <span class="kw4">typedef</span> ClassifierType<span class="sy4">::</span><span class="me2">MembershipFunctionVectorObjectType</span>       MembershipFunctionVectorObjectType<span class="sy4">;</span>
   <span class="kw4">typedef</span> ClassifierType<span class="sy4">::</span><span class="me2">MembershipFunctionVectorType</span>             MembershipFunctionVectorType<span class="sy4">;</span>
-&#160;
+ 
   <span class="co1">// Setup membership functions</span>
-  MembershipFunctionPointerVector kmeansMembershipFunctions <span class="sy1">=</span> kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>GetMembershipFunctions<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  MembershipFunctionVectorObjectType<span class="sy4">::</span><span class="me2">Pointer</span>  membershipFunctionsVectorObject <span class="sy1">=</span> MembershipFunctionVectorObjectType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>SetMembershipFunctions<span class="br0">&#40;</span>membershipFunctionsVectorObject<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  MembershipFunctionVectorType <span class="sy3">&amp;</span>  membershipFunctionsVector <span class="sy1">=</span> membershipFunctionsVectorObject<span class="sy2">-</span><span class="sy1">&gt;</span>Get<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  <span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> kmeansMembershipFunctions.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    membershipFunctionsVector.<span class="me1">push_back</span><span class="br0">&#40;</span>kmeansMembershipFunctions<span class="br0">&#91;</span>i<span class="br0">&#93;</span>.<span class="me1">GetPointer</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+  MembershipFunctionPointerVector kmeansMembershipFunctions <span class="sy1">=</span> kmeansEstimator<span class="sy2">-</span><span class="sy1">&gt;</span>GetMembershipFunctions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  MembershipFunctionVectorObjectType<span class="sy4">::</span><span class="me2">Pointer</span>  membershipFunctionsVectorObject <span class="sy1">=</span> MembershipFunctionVectorObjectType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>SetMembershipFunctions<span class="br0">(</span>membershipFunctionsVectorObject<span class="br0">)</span><span class="sy4">;</span>
+ 
+  MembershipFunctionVectorType <span class="sy3">&amp;</span>  membershipFunctionsVector <span class="sy1">=</span> membershipFunctionsVectorObject<span class="sy2">-</span><span class="sy1">&gt;</span>Get<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  <span class="kw1">for</span><span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> kmeansMembershipFunctions.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> i<span class="sy2">++</span><span class="br0">)</span>
+    <span class="br0">{</span>
+    membershipFunctionsVector.<span class="me1">push_back</span><span class="br0">(</span>kmeansMembershipFunctions<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">GetPointer</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+ 
   <span class="co1">// Setup class labels</span>
-  ClassLabelVectorObjectType<span class="sy4">::</span><span class="me2">Pointer</span>  classLabelsObject <span class="sy1">=</span> ClassLabelVectorObjectType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>SetClassLabels<span class="br0">&#40;</span> classLabelsObject <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  ClassLabelVectorType <span class="sy3">&amp;</span>  classLabelsVector <span class="sy1">=</span> classLabelsObject<span class="sy2">-</span><span class="sy1">&gt;</span>Get<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  classLabelsVector.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">50</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  classLabelsVector.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">150</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-  classLabelsVector.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">250</span> <span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  ClassLabelVectorObjectType<span class="sy4">::</span><span class="me2">Pointer</span>  classLabelsObject <span class="sy1">=</span> ClassLabelVectorObjectType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>SetClassLabels<span class="br0">(</span> classLabelsObject <span class="br0">)</span><span class="sy4">;</span>
+ 
+  ClassLabelVectorType <span class="sy3">&amp;</span>  classLabelsVector <span class="sy1">=</span> classLabelsObject<span class="sy2">-</span><span class="sy1">&gt;</span>Get<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  classLabelsVector.<span class="me1">push_back</span><span class="br0">(</span> <span class="nu0">50</span> <span class="br0">)</span><span class="sy4">;</span>
+  classLabelsVector.<span class="me1">push_back</span><span class="br0">(</span> <span class="nu0">150</span> <span class="br0">)</span><span class="sy4">;</span>
+  classLabelsVector.<span class="me1">push_back</span><span class="br0">(</span> <span class="nu0">250</span> <span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Perform the classification</span>
   <span class="kw4">typedef</span> itk<span class="sy4">::</span><span class="me2">Statistics</span><span class="sy4">::</span><span class="me2">ImageToListSampleAdaptor</span><span class="sy1">&lt;</span> ColorImageType <span class="sy1">&gt;</span> SampleAdaptorType<span class="sy4">;</span>
-  SampleAdaptorType<span class="sy4">::</span><span class="me2">Pointer</span> sample <span class="sy1">=</span> SampleAdaptorType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  sample<span class="sy2">-</span><span class="sy1">&gt;</span>SetImage<span class="br0">&#40;</span>image<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>sample<span class="br0">&#41;</span><span class="sy4">;</span>
-  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  SampleAdaptorType<span class="sy4">::</span><span class="me2">Pointer</span> sample <span class="sy1">=</span> SampleAdaptorType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  sample<span class="sy2">-</span><span class="sy1">&gt;</span>SetImage<span class="br0">(</span>image<span class="br0">)</span><span class="sy4">;</span>
+ 
+  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>sample<span class="br0">)</span><span class="sy4">;</span>
+  classifier<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Prepare the output image</span>
-  ScalarImageType<span class="sy4">::</span><span class="me2">Pointer</span> outputImage <span class="sy1">=</span> ScalarImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  outputImage<span class="sy2">-</span><span class="sy1">&gt;</span>SetRegions<span class="br0">&#40;</span>image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  outputImage<span class="sy2">-</span><span class="sy1">&gt;</span>Allocate<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  outputImage<span class="sy2">-</span><span class="sy1">&gt;</span>FillBuffer<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  ScalarImageType<span class="sy4">::</span><span class="me2">Pointer</span> outputImage <span class="sy1">=</span> ScalarImageType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  outputImage<span class="sy2">-</span><span class="sy1">&gt;</span>SetRegions<span class="br0">(</span>image<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+  outputImage<span class="sy2">-</span><span class="sy1">&gt;</span>Allocate<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  outputImage<span class="sy2">-</span><span class="sy1">&gt;</span>FillBuffer<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Setup the membership iterator</span>
-  <span class="kw4">const</span> ClassifierType<span class="sy4">::</span><span class="me2">MembershipSampleType</span><span class="sy2">*</span> membershipSample <span class="sy1">=</span> classifier<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  ClassifierType<span class="sy4">::</span><span class="me2">MembershipSampleType</span><span class="sy4">::</span><span class="me2">ConstIterator</span> membershipIterator <span class="sy1">=</span> membershipSample<span class="sy2">-</span><span class="sy1">&gt;</span>Begin<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  <span class="kw4">const</span> ClassifierType<span class="sy4">::</span><span class="me2">MembershipSampleType</span><span class="sy2">*</span> membershipSample <span class="sy1">=</span> classifier<span class="sy2">-</span><span class="sy1">&gt;</span>GetOutput<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  ClassifierType<span class="sy4">::</span><span class="me2">MembershipSampleType</span><span class="sy4">::</span><span class="me2">ConstIterator</span> membershipIterator <span class="sy1">=</span> membershipSample<span class="sy2">-</span><span class="sy1">&gt;</span>Begin<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="co1">// Setup the output image iterator - this is automatically synchronized with the membership iterator since the sample is an adaptor</span>
-  itk<span class="sy4">::</span><span class="me2">ImageRegionIteratorWithIndex</span><span class="sy1">&lt;</span>ScalarImageType<span class="sy1">&gt;</span> outputIterator<span class="br0">&#40;</span>outputImage,outputImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  outputIterator.<span class="me1">GoToBegin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  <span class="kw1">while</span><span class="br0">&#40;</span>membershipIterator <span class="sy3">!</span><span class="sy1">=</span> membershipSample<span class="sy2">-</span><span class="sy1">&gt;</span>End<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    <span class="kw4">int</span> classLabel <span class="sy1">=</span> membershipIterator.<span class="me1">GetClassLabel</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="co1">//std::cout &lt;&lt; &quot;Class label: &quot; &lt;&lt; classLabel &lt;&lt; std::endl;</span>
-    outputIterator.<span class="me1">Set</span><span class="br0">&#40;</span>classLabel<span class="br0">&#41;</span><span class="sy4">;</span>
+  itk<span class="sy4">::</span><span class="me2">ImageRegionIteratorWithIndex</span><span class="sy1">&lt;</span>ScalarImageType<span class="sy1">&gt;</span> outputIterator<span class="br0">(</span>outputImage,outputImage<span class="sy2">-</span><span class="sy1">&gt;</span>GetLargestPossibleRegion<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+  outputIterator.<span class="me1">GoToBegin</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  <span class="kw1">while</span><span class="br0">(</span>membershipIterator <span class="sy3">!</span><span class="sy1">=</span> membershipSample<span class="sy2">-</span><span class="sy1">&gt;</span>End<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+    <span class="kw4">int</span> classLabel <span class="sy1">=</span> membershipIterator.<span class="me1">GetClassLabel</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="co1">//std::cout &lt;&lt; "Class label: " &lt;&lt; classLabel &lt;&lt; std::endl;</span>
+    outputIterator.<span class="me1">Set</span><span class="br0">(</span>classLabel<span class="br0">)</span><span class="sy4">;</span>
     <span class="sy2">++</span>membershipIterator<span class="sy4">;</span>
     <span class="sy2">++</span>outputIterator<span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+ 
   <span class="kw4">typedef</span>  itk<span class="sy4">::</span><span class="me2">ImageFileWriter</span><span class="sy1">&lt;</span> ColorImageType  <span class="sy1">&gt;</span> WriterType<span class="sy4">;</span>
-  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> inputWriter <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  inputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span><span class="st0">&quot;input.mha&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  inputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>image<span class="br0">&#41;</span><span class="sy4">;</span>
-  inputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  WriterType<span class="sy4">::</span><span class="me2">Pointer</span> inputWriter <span class="sy1">=</span> WriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  inputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span><span class="st0">"input.mha"</span><span class="br0">)</span><span class="sy4">;</span>
+  inputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>image<span class="br0">)</span><span class="sy4">;</span>
+  inputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
   <span class="kw4">typedef</span>  itk<span class="sy4">::</span><span class="me2">ImageFileWriter</span><span class="sy1">&lt;</span> ScalarImageType  <span class="sy1">&gt;</span> ScalarWriterType<span class="sy4">;</span>
-  ScalarWriterType<span class="sy4">::</span><span class="me2">Pointer</span> outputWriter <span class="sy1">=</span> ScalarWriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  outputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">&#40;</span><span class="st0">&quot;output.mha&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-  outputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">&#40;</span>outputImage<span class="br0">&#41;</span><span class="sy4">;</span>
-  outputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-&#160;
+  ScalarWriterType<span class="sy4">::</span><span class="me2">Pointer</span> outputWriter <span class="sy1">=</span> ScalarWriterType<span class="sy4">::</span><span class="me2">New</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  outputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetFileName<span class="br0">(</span><span class="st0">"output.mha"</span><span class="br0">)</span><span class="sy4">;</span>
+  outputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>SetInput<span class="br0">(</span>outputImage<span class="br0">)</span><span class="sy4">;</span>
+  outputWriter<span class="sy2">-</span><span class="sy1">&gt;</span>Update<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+ 
   <span class="kw1">return</span> <span class="kw2">EXIT_SUCCESS</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">void</span> CreateImage<span class="br0">&#40;</span>ColorImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">void</span> CreateImage<span class="br0">(</span>ColorImageType<span class="sy4">::</span><span class="me2">Pointer</span> image<span class="br0">)</span>
+<span class="br0">{</span>
   <span class="co1">// Create a black image with a red square and a green square</span>
   ColorImageType<span class="sy4">::</span><span class="me2">RegionType</span> region<span class="sy4">;</span>
   ColorImageType<span class="sy4">::</span><span class="me2">IndexType</span> start<span class="sy4">;</span>
-  start<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-  start<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-&#160;
+  start<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+  start<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+ 
   ColorImageType<span class="sy4">::</span><span class="me2">SizeType</span> size<span class="sy4">;</span>
-  size<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">200</span><span class="sy4">;</span>
-  size<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">300</span><span class="sy4">;</span>
-&#160;
-  region.<span class="me1">SetSize</span><span class="br0">&#40;</span>size<span class="br0">&#41;</span><span class="sy4">;</span>
-  region.<span class="me1">SetIndex</span><span class="br0">&#40;</span>start<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  image<span class="sy2">-</span><span class="sy1">&gt;</span>SetRegions<span class="br0">&#40;</span>region<span class="br0">&#41;</span><span class="sy4">;</span>
-  image<span class="sy2">-</span><span class="sy1">&gt;</span>Allocate<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-  itk<span class="sy4">::</span><span class="me2">ImageRegionIterator</span><span class="sy1">&lt;</span>ColorImageType<span class="sy1">&gt;</span> imageIterator<span class="br0">&#40;</span>image,region<span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+  size<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">200</span><span class="sy4">;</span>
+  size<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">300</span><span class="sy4">;</span>
+ 
+  region.<span class="me1">SetSize</span><span class="br0">(</span>size<span class="br0">)</span><span class="sy4">;</span>
+  region.<span class="me1">SetIndex</span><span class="br0">(</span>start<span class="br0">)</span><span class="sy4">;</span>
+ 
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>SetRegions<span class="br0">(</span>region<span class="br0">)</span><span class="sy4">;</span>
+  image<span class="sy2">-</span><span class="sy1">&gt;</span>Allocate<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+  itk<span class="sy4">::</span><span class="me2">ImageRegionIterator</span><span class="sy1">&lt;</span>ColorImageType<span class="sy1">&gt;</span> imageIterator<span class="br0">(</span>image,region<span class="br0">)</span><span class="sy4">;</span>
+ 
   itk<span class="sy4">::</span><span class="me2">Vector</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">char</span>, <span class="nu0">3</span><span class="sy1">&gt;</span> redPixel<span class="sy4">;</span>
-  redPixel<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">255</span><span class="sy4">;</span>
-  redPixel<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-  redPixel<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-&#160;
+  redPixel<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">255</span><span class="sy4">;</span>
+  redPixel<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+  redPixel<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+ 
   itk<span class="sy4">::</span><span class="me2">Vector</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">char</span>, <span class="nu0">3</span><span class="sy1">&gt;</span> greenPixel<span class="sy4">;</span>
-  greenPixel<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-  greenPixel<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">255</span><span class="sy4">;</span>
-  greenPixel<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-&#160;
+  greenPixel<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+  greenPixel<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">255</span><span class="sy4">;</span>
+  greenPixel<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+ 
   itk<span class="sy4">::</span><span class="me2">Vector</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span> <span class="kw4">char</span>, <span class="nu0">3</span><span class="sy1">&gt;</span> blackPixel<span class="sy4">;</span>
-  blackPixel<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-  blackPixel<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-  blackPixel<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-&#160;
-  <span class="kw1">while</span><span class="br0">&#40;</span><span class="sy3">!</span>imageIterator.<span class="me1">IsAtEnd</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-    <span class="kw1">if</span><span class="br0">&#40;</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&gt;</span> <span class="nu0">100</span> <span class="sy3">&amp;&amp;</span>
-      imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&lt;</span> <span class="nu0">150</span> <span class="sy3">&amp;&amp;</span>
-      imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&gt;</span> <span class="nu0">100</span> <span class="sy3">&amp;&amp;</span>
-      imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&lt;</span> <span class="nu0">150</span><span class="br0">&#41;</span>
-      <span class="br0">&#123;</span>
-      imageIterator.<span class="me1">Set</span><span class="br0">&#40;</span>redPixel<span class="br0">&#41;</span><span class="sy4">;</span>
-      <span class="br0">&#125;</span>
-    <span class="kw1">else</span> <span class="kw1">if</span><span class="br0">&#40;</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&gt;</span> <span class="nu0">50</span> <span class="sy3">&amp;&amp;</span>
-      imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&lt;</span> <span class="nu0">70</span> <span class="sy3">&amp;&amp;</span>
-      imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&gt;</span> <span class="nu0">50</span> <span class="sy3">&amp;&amp;</span>
-      imageIterator.<span class="me1">GetIndex</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&lt;</span> <span class="nu0">70</span><span class="br0">&#41;</span>
-      <span class="br0">&#123;</span>
-      imageIterator.<span class="me1">Set</span><span class="br0">&#40;</span>greenPixel<span class="br0">&#41;</span><span class="sy4">;</span>
-      <span class="br0">&#125;</span>
+  blackPixel<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+  blackPixel<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+  blackPixel<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+ 
+  <span class="kw1">while</span><span class="br0">(</span><span class="sy3">!</span>imageIterator.<span class="me1">IsAtEnd</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+    <span class="kw1">if</span><span class="br0">(</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&gt;</span> <span class="nu0">100</span> <span class="sy3">&amp;&amp;</span>
+      imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&lt;</span> <span class="nu0">150</span> <span class="sy3">&amp;&amp;</span>
+      imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">&gt;</span> <span class="nu0">100</span> <span class="sy3">&amp;&amp;</span>
+      imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">&lt;</span> <span class="nu0">150</span><span class="br0">)</span>
+      <span class="br0">{</span>
+      imageIterator.<span class="me1">Set</span><span class="br0">(</span>redPixel<span class="br0">)</span><span class="sy4">;</span>
+      <span class="br0">}</span>
+    <span class="kw1">else</span> <span class="kw1">if</span><span class="br0">(</span>imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&gt;</span> <span class="nu0">50</span> <span class="sy3">&amp;&amp;</span>
+      imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">&lt;</span> <span class="nu0">70</span> <span class="sy3">&amp;&amp;</span>
+      imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">&gt;</span> <span class="nu0">50</span> <span class="sy3">&amp;&amp;</span>
+      imageIterator.<span class="me1">GetIndex</span><span class="br0">(</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">&lt;</span> <span class="nu0">70</span><span class="br0">)</span>
+      <span class="br0">{</span>
+      imageIterator.<span class="me1">Set</span><span class="br0">(</span>greenPixel<span class="br0">)</span><span class="sy4">;</span>
+      <span class="br0">}</span>
     <span class="kw1">else</span>
-      <span class="br0">&#123;</span>
-      imageIterator.<span class="me1">Set</span><span class="br0">&#40;</span>blackPixel<span class="br0">&#41;</span><span class="sy4">;</span>
-      <span class="br0">&#125;</span>
-&#160;
+      <span class="br0">{</span>
+      imageIterator.<span class="me1">Set</span><span class="br0">(</span>blackPixel<span class="br0">)</span><span class="sy4">;</span>
+      <span class="br0">}</span>
+ 
     <span class="sy2">++</span>imageIterator<span class="sy4">;</span>
-  <span class="br0">&#125;</span>
-<span class="br0">&#125;</span></pre></div></div>
+  <span class="br0">}</span>
+<span class="br0">}</span></pre></div></div>
 <h2><span class="mw-headline" id="CMakeLists.txt">CMakeLists.txt</span></h2>
-<div dir="ltr" class="mw-geshi mw-code mw-content-ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
-&#160;
+<div class="mw-geshi mw-code mw-content-ltr" dir="ltr"><div class="cmake source-cmake"><pre class="de1"><span class="kw1">cmake_minimum_required</span><span class="sy0">(</span><span class="kw3">VERSION</span> 2.8<span class="sy0">)</span>
+ 
 <span class="kw1">project</span><span class="sy0">(</span>ImageKmeansModelEstimator<span class="sy0">)</span>
-&#160;
+ 
 <span class="kw1">find_package</span><span class="sy0">(</span>ITK REQUIRED<span class="sy0">)</span>
 <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${ITK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">if</span> <span class="sy0">(</span>ITKVtkGlue_LOADED<span class="sy0">)</span>
   <span class="kw1">find_package</span><span class="sy0">(</span>VTK REQUIRED<span class="sy0">)</span>
   <span class="kw1">include</span><span class="sy0">(</span><span class="re0">${VTK_USE_FILE}</span><span class="sy0">)</span>
 <span class="kw1">endif</span><span class="sy0">()</span>
-&#160;
+ 
 <span class="kw1">add_executable</span><span class="sy0">(</span>ImageKmeansModelEstimator MACOSX_BUNDLE ImageKmeansModelEstimator.cxx<span class="sy0">)</span>
-&#160;
-<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+ 
+<span class="kw1">if</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>ImageKmeansModelEstimator ITKReview <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
+<span class="kw1">else</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span>
   <span class="kw1">target_link_libraries</span><span class="sy0">(</span>ImageKmeansModelEstimator <span class="re0">${ITK_LIBRARIES}</span><span class="sy0">)</span>
-<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">&quot;<span class="es1">${ITK_VERSION_MAJOR}</span>&quot;</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
+<span class="kw1">endif</span><span class="sy0">(</span> <span class="st0">"<span class="es1">${ITK_VERSION_MAJOR}</span>"</span> <span class="kw3">LESS</span> 4 <span class="sy0">)</span></pre></div></div>
 <h2><span class="mw-headline" id="Download_and_Build_ImageKmeansModelEstimator">Download and Build ImageKmeansModelEstimator</span></h2>
-<p>Click <a rel="nofollow" class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:ImageKmeansModelEstimator.tar">here to download <i>ImageKmeansModelEstimator</i></a> and its <i>CMakeLists.txt</i> file.
+<p>Click <a class="external text" href="http://gitorious.org/itkwikiexamplestarballs/itkwikiexamplestarballs/raw/master:ImageKmeansModelEstimator.tar" rel="nofollow">here to download <i>ImageKmeansModelEstimator</i></a> and its <i>CMakeLists.txt</i> file.
 Once the tarball <i>ImageKmeansModelEstimator.tar</i> has been downloaded and extracted,
 </p>
 <pre>cd ImageKmeansModelEstimator/build
@@ -374,7 +374,7 @@ Once the tarball <i>ImageKmeansModelEstimator.tar</i> has been downloaded and ex
 <p>For examples that use QuickView (which depends on VTK), you must have built ITK with Module_ITKVtkGlue=ON.
 </p>
 <h3><span class="mw-headline" id="ITK_.3C_4">ITK &lt; 4</span></h3>
-<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a rel="nofollow" class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
+<p>Some of the ITK Examples require VTK to display the images. If you download the entire ITK Wiki Examples Collection, the ItkVtkGlue directory will be included and configured. If you wish to just build a few examples, then you will need to <a class="external text" href="https://github.com/InsightSoftwareConsortium/ITKWikiExamples/raw/master/ItkVtkGlue.tar.gz" rel="nofollow">download ItkVtkGlue</a> and build it. When you run cmake it will ask you to specify the location of the ItkVtkGlue binary directory.
 </p>
 <!-- 
 NewPP limit report
@@ -387,9 +387,7 @@ Template argument size: 275/2097152 bytes
 Highest expansion depth: 3/40
 Expensive parser function count: 0/100
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9701-0!*!0!!en!*!* and timestamp 20150331220805 and revision id 50910
  -->
-</div><div class="printfooter">
-Retrieved from "<a href="http://itk.org/Wiki/index.php?title=ITK/Examples/WishList/Statistics/ImageKmeansModelEstimator&amp;oldid=50910">http://itk.org/Wiki/index.php?title=ITK/Examples/WishList/Statistics/ImageKmeansModelEstimator&amp;oldid=50910</a>"</div>
-		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content --></body></html>
+</div>
+ <!-- end content --></body></html>

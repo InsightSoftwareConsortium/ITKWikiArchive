@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Compilers</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"5e8c555a1a8eca23441fb00f","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Compilers","wgTitle":"ITK/Compilers","wgCurRevisionId":48513,"wgRevisionId":48513,"wgArticleId":10225,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Compilers","wgRelevantArticleId":10225,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready",
 "user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","mediawiki.toc","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Compilers rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="en"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Compilers"><span class="tocnumber">1</span> <span class="toctext">Compilers</span></a>
 <ul>
@@ -47,7 +48,6 @@
 </li>
 </ul>
 </div>
-
 <h1><span class="mw-headline" id="Compilers">Compilers</span></h1>
 <p>This page contains information and tips on using compilers and build systems with ITK.
 </p>
@@ -55,19 +55,19 @@
 <h3><span class="mw-headline" id="Build_systems">Build systems</span></h3>
 <ul><li>Always use CMake with ITK.  CMake has generators for most major build systems.  Attempting to, for example, use Visual Studio directly without CMake will make things much more difficult than they need to be.</li></ul>
 <ul><li>ITK does not distribute binaries on purpose.  An open source software development system has numerous advantages; one advantage is avoiding problems related building, distributing, and linking binaries.  Have your build system build ITK from source on the the same platform and with the same compiler to avoid these problems.  Git submodules and the CMake ExternalProject system can help with this.</li></ul>
-<ul><li>For a list of supported compilers, see the <a href="/Wiki/ITK_Release_4/Modern_C%2B%2B" title="ITK Release 4/Modern C++">supported compilers Wiki page</a>.  The most accurate and informative supported compiler information is the set of compilers reporting to the <a rel="nofollow" class="external text" href="http://public.kitware.com/dashboard.php?name=itk">nightly dashboard</a>.  To make your favorite compiler better supported, consider <a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards" title="ITK/Policy and Procedure for Adding Dashboards">setting up a nightly dashboard submission</a>.</li></ul>
+<ul><li>For a list of supported compilers, see the <a href="/Wiki/ITK_Release_4/Modern_C%2B%2B" title="ITK Release 4/Modern C++">supported compilers Wiki page</a>.  The most accurate and informative supported compiler information is the set of compilers reporting to the <a class="external text" href="http://public.kitware.com/dashboard.php?name=itk" rel="nofollow">nightly dashboard</a>.  To make your favorite compiler better supported, consider <a href="/ITKWikiArchive/Wiki/ITK/Policy_and_Procedure_for_Adding_Dashboards" title="ITK/Policy and Procedure for Adding Dashboards">setting up a nightly dashboard submission</a>.</li></ul>
 <h2><span class="mw-headline" id="Linux">Linux</span></h2>
 <ul><li>ITK supports the latest GCC very well.</li>
 <li>LLVM support is good.</li>
-<li>The "Unix Makefile" CMake generator support is very good.  Recent CMake generator support for the <a rel="nofollow" class="external text" href="http://martine.github.com/ninja/">Ninja build system</a> is experimental, but most experiments have been successful.</li></ul>
+<li>The "Unix Makefile" CMake generator support is very good.  Recent CMake generator support for the <a class="external text" href="http://martine.github.com/ninja/" rel="nofollow">Ninja build system</a> is experimental, but most experiments have been successful.</li></ul>
 <h2><span class="mw-headline" id="Mac">Mac</span></h2>
 <ul><li>Use the latest version of Xcode or build LLVM from source for best results.</li></ul>
 <h2><span class="mw-headline" id="Windows">Windows</span></h2>
 <h3><span class="mw-headline" id="Avoid_old_versions_of_Visual_Studio">Avoid old versions of Visual Studio</span></h3>
 <p>Please avoid attempting to use ancient Visual Studio compilers, such as VS6, which has been <a href="/ITKWikiArchive/Wiki/ITK/10th_Anniversary_Activities/Compilers_Farewell_ITKv4" title="ITK/10th Anniversary Activities/Compilers Farewell ITKv4">put to rest</a>.  There are a number of preferable alternatives to an old version of Visual Studio.
 </p>
-<ul><li>The free-to-use <a rel="nofollow" class="external text" href="http://www.microsoft.com/express">Visual Studio Express versions</a>.</li>
-<li><a rel="nofollow" class="external text" href="http://www.mingw.org/">MinGW</a></li></ul>
+<ul><li>The free-to-use <a class="external text" href="http://www.microsoft.com/express" rel="nofollow">Visual Studio Express versions</a>.</li>
+<li><a class="external text" href="http://www.mingw.org/" rel="nofollow">MinGW</a></li></ul>
 <h3><span class="mw-headline" id="Make_based_build_systems">Make based build systems</span></h3>
 <p>The Visual Studio GUI may be very slow when it tries to handle a large project like ITK.  These problems can be avoided with a make based build system.
 </p>
@@ -76,10 +76,10 @@
 </p>
 <ul><li>nmake</li>
 <li>jom</li></ul>
-<p>To use either of these systems, you must set the appropriate environment variables as <a rel="nofollow" class="external text" href="http://www.cmake.org/Wiki/CMake_Generator_Specific_Information">specified here</a>.  Then, specify the appropriate build system generator with CMake.  NMake comes with Visual Studio, but does not perform parallel builds.  JOM is similar to NMake, but it can perform parallel builds, so it is preferred.
+<p>To use either of these systems, you must set the appropriate environment variables as <a class="external text" href="http://www.cmake.org/Wiki/CMake_Generator_Specific_Information" rel="nofollow">specified here</a>.  Then, specify the appropriate build system generator with CMake.  NMake comes with Visual Studio, but does not perform parallel builds.  JOM is similar to NMake, but it can perform parallel builds, so it is preferred.
 </p>
 <h4><span class="mw-headline" id="MinGW_compiler">MinGW compiler</span></h4>
-<p>CMake can generate Makefiles for the <b>make</b> executable to be executed in the MSYS shell.  Make based build systems are also the backend for GUI tools like the <a rel="nofollow" class="external text" href="http://www.codeblocks.org/">CodeBlocks IDE</a> or the <a rel="nofollow" class="external text" href="http://qt.nokia.com/products/developer-tools/">QtCreator IDE</a>, which conveniently come packaged with the MinGW compiler.
+<p>CMake can generate Makefiles for the <b>make</b> executable to be executed in the MSYS shell.  Make based build systems are also the backend for GUI tools like the <a class="external text" href="http://www.codeblocks.org/" rel="nofollow">CodeBlocks IDE</a> or the <a class="external text" href="http://qt.nokia.com/products/developer-tools/" rel="nofollow">QtCreator IDE</a>, which conveniently come packaged with the MinGW compiler.
 </p>
 <!-- 
 NewPP limit report
@@ -101,10 +101,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:10225-0!canonical and timestamp 20220816033243 and revision id 48513. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Compilers&amp;oldid=48513">https://public.kitware.com/Wiki/index.php?title=ITK/Compilers&amp;oldid=48513</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

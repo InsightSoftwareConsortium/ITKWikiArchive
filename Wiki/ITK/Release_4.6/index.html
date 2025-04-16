@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK/Release 4.6</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"4ee50b50c313613c51c168d3","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK/Release_4.6","wgTitle":"ITK/Release 4.6","wgCurRevisionId":56618,"wgRevisionId":56618,"wgArticleId":12208,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK/Release_4.6","wgRelevantArticleId":12208,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":
 "ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_6 rootpage-ITK skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>New Documentation
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p>New Documentation
 </p>
-<hr />
+<hr/>
 <p>Our documentation continues to improve.  Remote modules are now grouped in the Doxygen Module page [1]. A number of new examples were added to the Sphinx repository and the Wiki, which can now also be build as Remote modules. The Software Guide was split into two books and configure and build instructions were revised.
-</p><p>[1] <a rel="nofollow" class="external free" href="http://www.itk.org/Doxygen/html/modules.html">http://www.itk.org/Doxygen/html/modules.html</a>
+</p><p>[1] <a class="external free" href="http://www.itk.org/Doxygen/html/modules.html" rel="nofollow">http://www.itk.org/Doxygen/html/modules.html</a>
 </p><p>New Features
 </p>
-<hr />
+<hr/>
 <ul><li>CMake improvements</li></ul>
 <pre> - Improved Remote Module support
  - Add ITK_FORBID_DOWNLOADS for package maintainers
@@ -37,7 +38,7 @@
 <ul><li>Filtering Improvements</li></ul>
 <pre> - Moved TransformToDisplacementField out of Review
  - An entire noise image generation module
-   - <a rel="nofollow" class="external free" href="http://hdl.handle.net/10380/3158">http://hdl.handle.net/10380/3158</a>
+   - <a class="external free" href="http://hdl.handle.net/10380/3158" rel="nofollow">http://hdl.handle.net/10380/3158</a>
  - Better pipeline support for ResampleImageFilter
  - Move MagnitudeAndPhaseToComplexImageFilter out of Review
  - Setters for LabelMap overlay filters
@@ -60,16 +61,16 @@
 </pre>
 <ul><li>New Remote Modules</li></ul>
 <pre> - Skull stripper
-   - <a rel="nofollow" class="external free" href="http://hdl.handle.net/10380/3353">http://hdl.handle.net/10380/3353</a>
+   - <a class="external free" href="http://hdl.handle.net/10380/3353" rel="nofollow">http://hdl.handle.net/10380/3353</a>
  - Wiki examples
  - Sphinx examples
  - Variational registration
-   - <a rel="nofollow" class="external free" href="http://hdl.handle.net/10380/3460">http://hdl.handle.net/10380/3460</a>
+   - <a class="external free" href="http://hdl.handle.net/10380/3460" rel="nofollow">http://hdl.handle.net/10380/3460</a>
  - AnalyzeObjectMapIO
-   - <a rel="nofollow" class="external free" href="http://hdl.handle.net/1926/593">http://hdl.handle.net/1926/593</a>
+   - <a class="external free" href="http://hdl.handle.net/1926/593" rel="nofollow">http://hdl.handle.net/1926/593</a>
  - FDFImageIO
  - SplitComponents
-   - <a rel="nofollow" class="external free" href="http://hdl.handle.net/10380/320">http://hdl.handle.net/10380/320</a>
+   - <a class="external free" href="http://hdl.handle.net/10380/320" rel="nofollow">http://hdl.handle.net/10380/320</a>
 </pre>
 <ul><li>Registrationv4 improvements</li></ul>
 <pre> - v4 regular step gradient descent optimizer
@@ -119,10 +120,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:12208-0!canonical and timestamp 20220630004528 and revision id 56618. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK/Release_4.6&amp;oldid=56618">https://public.kitware.com/Wiki/index.php?title=ITK/Release_4.6&amp;oldid=56618</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>

@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html class="client-nojs" lang="en" dir="ltr">
+
+<html class="client-nojs" dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="utf-8"/>
 <title>ITK Release 4/Users Migration Guide Installation</title>
 <script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"5ea1d0cbfb43515fb026d322","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ITK_Release_4/Users_Migration_Guide_Installation","wgTitle":"ITK Release 4/Users Migration Guide Installation","wgCurRevisionId":40144,"wgRevisionId":40144,"wgArticleId":9190,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ITK_Release_4/Users_Migration_Guide_Installation","wgRelevantArticleId":9190,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":
 [],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.monobook.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.monobook.scripts"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 });});</script>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=skins.monobook.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
 <script async="" src="/Wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=monobook"></script>
-<meta name="ResourceLoaderDynamicStyles" content=""/>
-<link rel="stylesheet" href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook"/>
-<meta name="generator" content="MediaWiki 1.37.1"/>
-<meta name="format-detection" content="telephone=no"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
-<link rel="shortcut icon" href="/favicon.ico"/>
-<link rel="search" type="application/opensearchdescription+xml" href="/Wiki/opensearch_desc.php" title="KitwarePublic (en)"/>
-<link rel="EditURI" type="application/rsd+xml" href="https://public.kitware.com/Wiki/api.php?action=rsd"/>
-<link rel="license" href="https://creativecommons.org/licenses/by/2.5/"/>
-<link rel="alternate" type="application/atom+xml" title="KitwarePublic Atom feed" href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+<link href="/Wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=monobook" rel="stylesheet"/>
+<meta content="MediaWiki 1.37.1" name="generator"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" name="viewport"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/Wiki/opensearch_desc.php" rel="search" title="KitwarePublic (en)" type="application/opensearchdescription+xml"/>
+<link href="https://public.kitware.com/Wiki/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://creativecommons.org/licenses/by/2.5/" rel="license"/>
+<link href="/Wiki/index.php?title=Special:RecentChanges&amp;feed=atom" rel="alternate" title="KitwarePublic Atom feed" type="application/atom+xml"/>
 </head>
 <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-ITK_Release_4_Users_Migration_Guide_Installation rootpage-ITK_Release_4 skin-monobook action-view skin--responsive"><!-- start content -->
-				<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p><a href="/Wiki/ITK_Release_4/Users_Migration_Guide" title="ITK Release 4/Users Migration Guide">&lt; Users Migration Guide</a>
+<div class="mw-body-content mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><div class="mw-parser-output"><p><a href="/Wiki/ITK_Release_4/Users_Migration_Guide" title="ITK Release 4/Users Migration Guide">&lt; Users Migration Guide</a>
 </p>
 <h1><span class="mw-headline" id="Install">Install</span></h1>
-<p>The Migration guide is based on the open source solution phpMyFaq <a rel="nofollow" class="external free" href="http://www.phpmyfaq.de">http://www.phpmyfaq.de</a>
+<p>The Migration guide is based on the open source solution phpMyFaq <a class="external free" href="http://www.phpmyfaq.de" rel="nofollow">http://www.phpmyfaq.de</a>
 </p><p><b>1 - Get the source code</b>
-<a rel="nofollow" class="external free" href="https://github.com/charles-marion/itk-migrationfaq">https://github.com/charles-marion/itk-migrationfaq</a>
+<a class="external free" href="https://github.com/charles-marion/itk-migrationfaq" rel="nofollow">https://github.com/charles-marion/itk-migrationfaq</a>
 </p><p><b>2 - Install PhpMyFaq</b>
 </p>
 <ul><li>Install Apache and Mysql</li>
 <li>Copy the source code in you web directory.</li>
-<li>Using your browse, go to  <a rel="nofollow" class="external free" href="http://localhost/itk-migrationfaq/install">http://localhost/itk-migrationfaq/install</a> and follow the instructions</li>
+<li>Using your browse, go to  <a class="external free" href="http://localhost/itk-migrationfaq/install" rel="nofollow">http://localhost/itk-migrationfaq/install</a> and follow the instructions</li>
 <li>Run the SQL script located in itk-migrationfaq\sql</li></ul>
 <p><b>3 - Configure </b>
 Go to the administration part and create a category. The automatic posts will be posted in this category
@@ -40,17 +41,17 @@ Go to the administration part and create a category. The automatic posts will be
 <p>The ITK Faq has an API which allows you to automatically add a migration post using an XML File. The XML file should be linked to a change and should be hosted by Gerrit.
 </p><p>This file contains all the information of the change: title, description, files...
 Here is an example:
-<a rel="nofollow" class="external free" href="http://review.source.kitware.com/cat/224%2C1%2CMigration/DecoupleNumericTraitsFromContainers.xml">http://review.source.kitware.com/cat/224%2C1%2CMigration/DecoupleNumericTraitsFromContainers.xml</a>
+<a class="external free" href="http://review.source.kitware.com/cat/224%2C1%2CMigration/DecoupleNumericTraitsFromContainers.xml" rel="nofollow">http://review.source.kitware.com/cat/224%2C1%2CMigration/DecoupleNumericTraitsFromContainers.xml</a>
 </p><p>Here are the steps to automatically create a post: 
 </p>
 <ul><li>Get the URL of the xml file (which should be zipped). On the Gerrit page (used as an example), there is a download link.</li>
 <li>Choose a FAQ category. You can use its ID or its name.</li>
 <li>Trigger the creation of the post by going to this URL using your parameters:</li></ul>
-<p><a rel="nofollow" class="external free" href="http://thefaqwebsite/itk-migrationfaq/api.php?action=addItkChange&amp;path=XML_FILE_URL&amp;key=SECURITY_KEY&amp;category=CATEGORY">http://thefaqwebsite/itk-migrationfaq/api.php?action=addItkChange&amp;path=XML_FILE_URL&amp;key=SECURITY_KEY&amp;category=CATEGORY</a>
+<p><a class="external free" href="http://thefaqwebsite/itk-migrationfaq/api.php?action=addItkChange&amp;path=XML_FILE_URL&amp;key=SECURITY_KEY&amp;category=CATEGORY" rel="nofollow">http://thefaqwebsite/itk-migrationfaq/api.php?action=addItkChange&amp;path=XML_FILE_URL&amp;key=SECURITY_KEY&amp;category=CATEGORY</a>
 </p>
 <h1><span class="mw-headline" id="Post_errors">Post errors</span></h1>
 <p>The API accepts CDASH files. You can post these files to attach errors to a post.
-</p><p>To submit the file, send it using the Put method to the url:  <a rel="nofollow" class="external free" href="http://thefaqwebsite/itk-migrationfaq/itkfaq/api.php?action=addItkErrors&amp;key=SECURITY_KEY&amp;change=MIGRATION_ID">http://thefaqwebsite/itk-migrationfaq/itkfaq/api.php?action=addItkErrors&amp;key=SECURITY_KEY&amp;change=MIGRATION_ID</a>
+</p><p>To submit the file, send it using the Put method to the url:  <a class="external free" href="http://thefaqwebsite/itk-migrationfaq/itkfaq/api.php?action=addItkErrors&amp;key=SECURITY_KEY&amp;change=MIGRATION_ID" rel="nofollow">http://thefaqwebsite/itk-migrationfaq/itkfaq/api.php?action=addItkErrors&amp;key=SECURITY_KEY&amp;change=MIGRATION_ID</a>
 </p>
 <!-- 
 NewPP limit report
@@ -72,10 +73,9 @@ Unstrip post‐expand size: 0/5000000 bytes
 Transclusion expansion time report (%,ms,calls,template)
 100.00%    0.000      1 -total
 -->
-
 <!-- Saved in parser cache with key KitwarePublicWikiDB:pcache:idhash:9190-0!canonical and timestamp 20220702224147 and revision id 40144. Serialized with JSON.
  -->
 </div>
-<div class="printfooter">Retrieved from "<a dir="ltr" href="https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide_Installation&amp;oldid=40144">https://public.kitware.com/Wiki/index.php?title=ITK_Release_4/Users_Migration_Guide_Installation&amp;oldid=40144</a>"</div></div>
-				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
-				<!-- end content --></body></html>
+</div>
+
+<!-- end content --></body></html>
